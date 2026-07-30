@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import snapshot from "@/data/official-snapshot.json";
+import snapshot from "@/data/snapshots/official-snapshot.json";
 import { loadOfficialStatistics } from "@/lib/official-statistics";
 import type { StatisticsPayload } from "@/lib/types";
 

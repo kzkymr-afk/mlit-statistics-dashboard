@@ -41,3 +41,15 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# runtime statistics data
+/data/raw/*
+!/data/raw/.gitkeep
+/data/normalized/*
+!/data/normalized/.gitkeep
+/data/database/*
+!/data/database/.gitkeep
+/data/exports/*
+!/data/exports/.gitkeep
+/data/cache/*
+!/data/cache/.gitkeep

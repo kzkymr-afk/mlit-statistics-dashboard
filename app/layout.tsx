@@ -22,10 +22,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol =
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
-  const imageUrl = `${protocol}://${host}/og.png`;
-  const title = "国交省統計パネル";
+  const imageUrl = `${protocol}://${host}/og-building-annual.png`;
+  const title = "建築着工統計・年度データ | 国交省統計パネル";
   const description =
-    "国土交通省の公式統計を、必要な項目だけ収集・可視化・出力するダッシュボード。";
+    "建築物着工統計の2013年度以降の全Excelを表で閲覧し、任意項目を折れ線・棒・左右2軸でグラフ化。";
 
   return {
     title,

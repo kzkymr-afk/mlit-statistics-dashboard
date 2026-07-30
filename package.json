@@ -12,7 +12,9 @@
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "sync:data": "node --experimental-strip-types scripts/sync-official-data.mjs"
+    "sync:data": "node --experimental-strip-types scripts/sync-official-data.mjs",
+    "sync:building-annual": "node scripts/sync-building-annual-files.mjs && node scripts/build-building-annual-catalog.mjs",
+    "catalog:building-annual": "node scripts/build-building-annual-catalog.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

@@ -23,30 +23,45 @@ async function render(path = "/") {
   );
 }
 
-test("住宅着工ダッシュボードをサーバーレンダリングする", async () => {
+test("建築着工統計の年度データ画面をサーバーレンダリングする", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
   assert.match(html, /<html lang="ja">/);
-  assert.match(html, /住宅着工ダッシュボード/);
-  assert.match(html, /必要な数字だけ/);
-  assert.match(html, /最新データを取得/);
+  assert.match(html, /建築着工統計・年度データ/);
+  assert.match(html, /必要な表を開いて/);
+  assert.match(html, /2013–2025年度/);
+  assert.match(html, /折れ線／棒、左軸／右軸/);
   assert.match(html, /CSV出力/);
-  assert.match(html, /都道府県別ランキング/);
+  assert.match(html, /e-Statの公式一覧を開く/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 
-test("保存済みデータに公式出典と47都道府県を保持する", async () => {
+test("保存済み目録に2013年度以降の公式Excel全件を保持する", async () => {
   const raw = await readFile(
-    new URL("../data/official-snapshot.json", import.meta.url),
+    new URL("../data/catalogs/building-annual.json", import.meta.url),
     "utf8",
   );
   const data = JSON.parse(raw);
-  assert.equal(data.metadata.organization, "国土交通省");
-  assert.match(data.metadata.sourceList, /^https:\/\/www\.e-stat\.go\.jp\//);
-  assert.ok(data.monthly.length >= 60);
-  assert.equal(data.prefectures.length, 47);
-  assert.match(data.metadata.surveyPeriod, /^\d{4}-\d{2}$/);
+  assert.equal(data.organization, "国土交通省");
+  assert.equal(data.fiscalYearFrom, 2013);
+  assert.equal(data.fiscalYearTo, 2025);
+  assert.equal(data.fileCount, 351);
+  assert.equal(data.records.length, 351);
+  assert.ok(data.groups.length >= 30);
+  assert.ok(data.totalBytes > 380_000_000);
+  assert.ok(
+    data.records.every(
+      (record) =>
+        /^https:\/\/www\.e-stat\.go\.jp\//.test(record.sourcePage) &&
+        /^https:\/\/www\.e-stat\.go\.jp\//.test(record.downloadUrl) &&
+        /^[a-f0-9]{64}$/.test(record.sha256),
+    ),
+  );
+  assert.deepEqual(
+    [...new Set(data.records.map((record) => record.fiscalYear))].sort(),
+    Array.from({ length: 13 }, (_, index) => 2013 + index),
+  );
 });

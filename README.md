@@ -2,34 +2,66 @@
 
 国土交通省の公式統計から必要な項目だけを収集し、グラフ・表・CSVで使えるようにするウェブアプリです。
 
-初版では「建築着工統計調査・住宅着工統計」を対象に、全国月次と都道府県別のデータを扱います。
+初版では「建築着工統計調査・建築物着工統計（年度次）」を対象に、
+2013〜2025年度の公式Excel全351件を扱います。
 
-## 現在の収集項目
+- 任意の統計表・年度・シートを表形式で閲覧
+- 表内検索とページ移動
+- 数値セルから同一項目の年度推移を自動照合
+- 折れ線／棒グラフ、左軸／右軸、最大4系列
+- グラフ用データのCSV出力
+- 2024年度の分割表は年度推移上で合算
 
-- 新設住宅着工戸数（総数）
-- 持家
-- 貸家
-- 給与住宅
-- 分譲住宅
-- マンション
-- 一戸建て
-- 床面積
-- 前年同月比
+## 配置
+
+運用アプリとして、Businessワークスペースの次の場所に配置します。
+
+```text
+/Volumes/SSD_External/Business/Apps/2026-07_mlit-statistics-dashboard
+```
+
+アプリのソースコードとデータ格納領域を同じプロジェクト内に置きつつ、
+取得データやDBはGit管理対象から外します。詳しい用途は `data/README.md` を参照してください。
+
+```text
+data/
+├── catalogs/     アプリが読み込む収集台帳・項目定義
+├── raw/          公式APIレスポンス・Excel原本
+├── normalized/   共通形式へ整形したデータ
+├── database/     ローカルSQLiteなどの永続DB
+├── snapshots/    アプリ同梱の表示用スナップショット
+├── exports/      CSV・Excelなどの利用者向け出力
+└── cache/        再生成できる一時データ
+```
+
+## 現在の収録範囲
+
+- 統計: 建築着工統計調査・建築物着工統計
+- 周期: 年度次
+- 年度: 2013〜2025年度
+- 原本: e-Stat掲載のExcel 351件（約385MB）
+- 目録: 出典URL、統計表ID、公開日、容量、SHA-256
 
 ## データ取得
 
-国土交通省が e-Stat で公開する最新Excelを自動検出し、全国時系列と47都道府県のデータに整形します。
+国土交通省が e-Stat で公開する年度次Excelを年度別に自動検出して保存します。
 
-- 公式説明: https://www.mlit.go.jp/statistics/details/t-other-2_tk_000214.html
-- e-Stat掲載一覧: https://www.e-stat.go.jp/stat-search/files?cycle=1&layout=datalist&page=1&tclass1=000001048390&tclass2val=0&toukei=00600120&tstat=000001016966
+- e-Stat掲載一覧: https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600120&tstat=000001016965&cycle=8&tclass1val=0
 
-取得に失敗した場合も、最後に保存した公式データを表示します。保存値の更新は `npm run sync:data` で行います。
+建築物着工統計の年度次Excelを2013年度以降まとめて取得する場合は、
+`npm run sync:building-annual` を使います。原本は
+`data/raw/building-starts/annual/`、収集台帳は
+`data/catalogs/building-annual.json` に保存します。
+
+公開アプリに約385MBの原本は同梱せず、検証済みの収集台帳を使って
+選択されたe-Stat公式Excelだけを表示時に取得します。ローカル原本は
+Businessフォルダのバックアップ対象として保持します。
 
 ## 起動と確認
 
 ```bash
 npm install
-npm run sync:data
+npm run sync:building-annual
 npm run dev
 npm run build
 node --test tests/rendered-html.test.mjs
