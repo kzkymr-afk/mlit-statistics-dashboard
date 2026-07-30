@@ -12,8 +12,10 @@ import type {
   AnnualCatalog,
   AnnualCatalogRecord,
   AnnualTablePayload,
-  AnnualValuePayload,
-  CellDescriptor,
+  StaticDataManifest,
+  StaticSeriesBundle,
+  StaticTableMeta,
+  StaticTablePage,
   TableRow,
 } from "@/lib/annual-building-types";
 
@@ -38,6 +40,7 @@ type ChartSeries = {
 };
 
 const SERIES_COLORS = ["#356df3", "#20a779", "#d88928", "#7c63d9"];
+const staticJsonCache = new Map<string, Promise<unknown>>();
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP", {
@@ -261,9 +264,120 @@ function SeriesChart({ series }: { series: ChartSeries[] }) {
 
 async function fetchJson<T>(input: RequestInfo | URL, init?: RequestInit) {
   const response = await fetch(input, init);
-  const body = (await response.json()) as T & { error?: string };
-  if (!response.ok) throw new Error(body.error ?? "データを取得できませんでした。");
-  return body;
+  if (!response.ok) {
+    let message = "データを取得できませんでした。";
+    try {
+      const body = (await response.json()) as { error?: string };
+      message = body.error ?? message;
+    } catch {
+      // GitHub Pagesの404 HTMLなど、JSON以外のエラー本文は既定文言にする。
+    }
+    throw new Error(message);
+  }
+  const path =
+    typeof input === "string"
+      ? input
+      : input instanceof URL
+        ? input.pathname
+        : input.url;
+  if (path.endsWith(".gz")) {
+    if (!response.body || typeof DecompressionStream === "undefined") {
+      throw new Error(
+        "このブラウザは圧縮統計データの表示に対応していません。最新版のEdgeまたはChromeで開いてください。",
+      );
+    }
+    const decompressed = response.body.pipeThrough(
+      new DecompressionStream("gzip"),
+    );
+    return (await new Response(decompressed).json()) as T;
+  }
+  return (await response.json()) as T;
+}
+
+function fetchStaticJson<T>(path: string) {
+  const cached = staticJsonCache.get(path);
+  if (cached) return cached as Promise<T>;
+  const request = fetchJson<T>(path).catch((error) => {
+    staticJsonCache.delete(path);
+    throw error;
+  });
+  staticJsonCache.set(path, request);
+  return request;
+}
+
+function normalizedSearch(value: string) {
+  return value
+    .normalize("NFKC")
+    .replace(/\s+/g, "")
+    .toLowerCase();
+}
+
+async function loadStaticTable(options: {
+  datasetId: string;
+  statInfId: string;
+  sheetName?: string;
+  offset: number;
+  query: string;
+}): Promise<AnnualTablePayload> {
+  const manifest = await fetchStaticJson<StaticDataManifest>(
+    "data/manifest.json",
+  );
+  const table = manifest.tables.find(
+    (item) =>
+      item.datasetId === options.datasetId &&
+      item.statInfId === options.statInfId,
+  );
+  if (!table) throw new Error("公開データに指定した統計表がありません。");
+  const sheet =
+    table.sheets.find((item) => item.name === options.sheetName) ??
+    table.sheets[0];
+  if (!sheet) throw new Error("公開データに表示できるシートがありません。");
+  const meta = await fetchStaticJson<StaticTableMeta>(sheet.metaUrl);
+  const query = normalizedSearch(options.query);
+  let matchingIndexes: number[];
+  if (query) {
+    const search = await fetchStaticJson<{
+      rows: Array<{ index: number; text: string }>;
+    }>(meta.searchUrl);
+    matchingIndexes = search.rows
+      .filter((row) => row.text.toLowerCase().includes(query))
+      .map((row) => row.index);
+  } else {
+    matchingIndexes = Array.from({ length: meta.rowCount }, (_, index) => index);
+  }
+  const offset = Math.min(
+    Math.max(0, options.offset),
+    Math.max(0, matchingIndexes.length - 1),
+  );
+  const wantedIndexes = matchingIndexes.slice(offset, offset + meta.pageSize);
+  const pageIndexes = Array.from(
+    new Set(wantedIndexes.map((index) => Math.floor(index / meta.pageSize))),
+  );
+  const pages = await Promise.all(
+    pageIndexes.map((pageIndex) =>
+      fetchStaticJson<StaticTablePage>(
+        meta.pageUrlTemplate.replace("{page}", String(pageIndex)),
+      ),
+    ),
+  );
+  const rowsByIndex = new Map(
+    pages.flatMap((page) => page.rows.map((row) => [row.index, row] as const)),
+  );
+  return {
+    record: table,
+    sheetName: sheet.name,
+    sheetNames: table.sheets.map((item) => item.name),
+    rows: wantedIndexes
+      .map((index) => rowsByIndex.get(index))
+      .filter((row): row is TableRow => Boolean(row)),
+    columnLabels: meta.columnLabels,
+    rowCount: meta.rowCount,
+    columnCount: meta.columnCount,
+    matchingRowCount: matchingIndexes.length,
+    offset,
+    limit: meta.pageSize,
+    query: options.query,
+  };
 }
 
 export default function AnnualBuildingExplorer({
@@ -284,7 +398,7 @@ export default function AnnualBuildingExplorer({
   const [query, setQuery] = useState("");
   const [queryDraft, setQueryDraft] = useState("");
   const [table, setTable] = useState<AnnualTablePayload | null>(null);
-  const [tableLoading, setTableLoading] = useState(false);
+  const [tableLoading, setTableLoading] = useState(true);
   const [error, setError] = useState("");
   const [series, setSeries] = useState<ChartSeries[]>([]);
   const catalog =
@@ -306,35 +420,35 @@ export default function AnnualBuildingExplorer({
 
   useEffect(() => {
     if (!statInfId) return;
-    const controller = new AbortController();
-    const parameters = new URLSearchParams({
-      dataset: datasetId,
+    let active = true;
+    loadStaticTable({
+      datasetId,
       statInfId,
-      offset: String(offset),
-      limit: "80",
-    });
-    if (sheetName) parameters.set("sheet", sheetName);
-    if (query) parameters.set("q", query);
-
-    fetchJson<AnnualTablePayload>(
-      `/api/building-annual/table?${parameters.toString()}`,
-      { signal: controller.signal },
-    )
+      sheetName,
+      offset,
+      query,
+    })
       .then((payload) => {
+        if (!active) return;
         setTable(payload);
         setError("");
       })
       .catch((loadError) => {
-        if (loadError instanceof Error && loadError.name === "AbortError") return;
+        if (!active) return;
+        setTable(null);
         setError(
           loadError instanceof Error
             ? loadError.message
             : "統計表を読み込めませんでした。",
         );
       })
-      .finally(() => setTableLoading(false));
+      .finally(() => {
+        if (active) setTableLoading(false);
+      });
 
-    return () => controller.abort();
+    return () => {
+      active = false;
+    };
   }, [datasetId, statInfId, sheetName, offset, query]);
 
   const updateSeries = useCallback(
@@ -347,26 +461,18 @@ export default function AnnualBuildingExplorer({
   );
 
   const addSeries = useCallback(
-    async (row: TableRow, columnIndex: number, value: number) => {
+    async (row: TableRow, columnIndex: number) => {
       if (!table || !group || series.length >= 4) return;
-      const descriptor: CellDescriptor = {
-        sourceStatInfId: table.record.statInfId,
-        rowIndex: row.index,
-        columnIndex,
-        rowLabel: row.rowLabel,
-        columnLabel:
-          table.columnLabels[columnIndex] || `列 ${columnName(columnIndex)}`,
-      };
-      const id = `${group.id}-${table.sheetName}-${row.index}-${columnIndex}-${Date.now()}`;
-      const label = `${descriptor.rowLabel}｜${descriptor.columnLabel}`;
+      const reference = row.series?.[columnIndex];
+      if (!reference?.bundleUrl) {
+        setError("この数値は年度系列として照合できませんでした。");
+        return;
+      }
+      const id = `${reference.id}-${Date.now()}`;
+      const label = `${row.rowLabel}｜${
+        table.columnLabels[columnIndex] || `列 ${columnName(columnIndex)}`
+      }`;
       const color = SERIES_COLORS[series.length % SERIES_COLORS.length];
-      const groupRecords = catalog.records
-        .filter(
-          (record) =>
-            record.groupId === group.id &&
-            record.statInfId !== table.record.statInfId,
-        )
-        .sort((a, b) => a.fiscalYear - b.fiscalYear);
 
       setSeries((current) => [
         ...current,
@@ -382,79 +488,31 @@ export default function AnnualBuildingExplorer({
           sourceGroupId: group.id,
         },
       ]);
-
-      const results: AnnualValuePayload[] = [
-        {
-          statInfId: table.record.statInfId,
-          fiscalYear: table.record.fiscalYear,
-          variantLabel: table.record.variantLabel,
-          value,
-          matchedRowIndex: row.index,
-          matchedColumnIndex: columnIndex,
-        },
-      ];
-      let cursor = 0;
-      let completed = 1;
-      const totalRecords = groupRecords.length + 1;
-      const worker = async () => {
-        while (cursor < groupRecords.length) {
-          const currentIndex = cursor;
-          cursor += 1;
-          const record = groupRecords[currentIndex];
-          try {
-            const payload = await fetchJson<AnnualValuePayload>(
-              "/api/building-annual/value",
-              {
-                method: "POST",
-                headers: { "content-type": "application/json" },
-                body: JSON.stringify({
-                  datasetId,
-                  statInfId: record.statInfId,
-                  sheetName: table.sheetName,
-                  descriptor,
-                }),
-              },
-            );
-            results.push(payload);
-          } catch {
-            results.push({
-              statInfId: record.statInfId,
-              fiscalYear: record.fiscalYear,
-              variantLabel: record.variantLabel,
-              value: null,
-              matchedRowIndex: null,
-              matchedColumnIndex: null,
-            });
-          }
-          completed += 1;
-          updateSeries(id, {
-            progress: Math.round((completed / totalRecords) * 100),
-          });
-        }
-      };
-      await Promise.all(
-        Array.from({ length: Math.min(2, groupRecords.length) }, () => worker()),
-      );
-
-      const points = Array.from({ length: 13 }, (_, index) => {
-        const fiscalYear = 2013 + index;
-        const values = results
-          .filter(
-            (result) =>
-              result.fiscalYear === fiscalYear && result.value !== null,
-          )
-          .map((result) => result.value as number);
-        return {
-          fiscalYear,
-          value:
-            values.length > 0
-              ? values.reduce((total, current) => total + current, 0)
-              : null,
-        };
-      });
-      updateSeries(id, { points, loading: false, progress: 100 });
+      try {
+        const bundle = await fetchStaticJson<StaticSeriesBundle>(
+          reference.bundleUrl,
+        );
+        const selected = bundle.series[reference.id];
+        if (!selected) throw new Error("年度系列が公開データにありません。");
+        updateSeries(id, {
+          label: selected.label || label,
+          points: selected.points.map((point) => ({
+            fiscalYear: point.fiscalYear,
+            value: point.value,
+          })),
+          loading: false,
+          progress: 100,
+        });
+      } catch (loadError) {
+        setSeries((current) => current.filter((item) => item.id !== id));
+        setError(
+          loadError instanceof Error
+            ? loadError.message
+            : "年度系列を読み込めませんでした。",
+        );
+      }
     },
-    [catalog.records, datasetId, group, series.length, table, updateSeries],
+    [group, series.length, table, updateSeries],
   );
 
   const exportChartCsv = () => {
@@ -525,7 +583,7 @@ export default function AnnualBuildingExplorer({
           <span>
             <strong>原本を保存済み</strong>
             <small>
-              2013–2025年度 / {catalog.fileCount} Excel
+              2013–2025年度 / ローカルDBから公開
             </small>
           </span>
         </div>
@@ -553,19 +611,19 @@ export default function AnnualBuildingExplorer({
 
         <section className="annual-hero">
           <div>
-            <p className="eyebrow">ALL ANNUAL EXCEL FILES, ONE WORKSPACE</p>
+            <p className="eyebrow">NORMALIZED LOCAL DATA, READ-ONLY WEB VIEW</p>
             <h2>
               必要な表を開いて、
               <br />
               <em>数字をそのまま年度比較。</em>
             </h2>
             <p className="hero-copy">
-              国土交通省「{catalog.title}」の年度次Excelを2013年度以降すべて保存。
+              国土交通省「{catalog.title}」をローカルで正規化し、閲覧用データとして公開。
               表の数値セルを選ぶだけで、折れ線・棒グラフ・左右2軸を組み合わせられます。
             </p>
           </div>
           <div className="coverage-card">
-            <span>LOCAL ARCHIVE</span>
+            <span>LOCAL SOURCE ARCHIVE</span>
             <strong>{formatBytes(catalog.totalBytes)}</strong>
             <p>公式Excel原本・SHA-256付き</p>
             <div className="coverage-line">
@@ -604,7 +662,7 @@ export default function AnnualBuildingExplorer({
               <p className="section-kicker">01 / SELECT DATA</p>
               <h3>見る統計表を選ぶ</h3>
               <p className="panel-subtitle">
-                表の種類と年度を選択すると、公式Excelの内容をそのまま開きます。
+                表の種類と年度を選択すると、正規化済みの公開データを開きます。
               </p>
             </div>
             <span className="record-badge">
@@ -760,7 +818,9 @@ export default function AnnualBuildingExplorer({
             <span className="table-count">
               {table
                 ? `${formatNumber(table.matchingRowCount)}行中 ${formatNumber(pageStart)}–${formatNumber(pageEnd)}行`
-                : "読み込み中"}
+                : tableLoading
+                  ? "読み込み中"
+                  : "表示できません"}
             </span>
           </form>
 
@@ -802,7 +862,7 @@ export default function AnnualBuildingExplorer({
                                 <button
                                   type="button"
                                   disabled={series.length >= 4}
-                                  onClick={() => addSeries(row, column, cell)}
+                                  onClick={() => addSeries(row, column)}
                                 >
                                   {formatNumber(cell)}
                                 </button>
@@ -818,7 +878,11 @@ export default function AnnualBuildingExplorer({
                 </tbody>
               </table>
             ) : (
-              <div className="table-placeholder">公式Excelを読み込んでいます…</div>
+              <div className="table-placeholder">
+                {tableLoading
+                  ? "公開用データを読み込んでいます…"
+                  : "表を表示できません。再読み込みしてください。"}
+              </div>
             )}
           </div>
           <div className="pagination">
@@ -963,14 +1027,17 @@ export default function AnnualBuildingExplorer({
             </a>
           </div>
           <p className="source-footnote">
-            原本ExcelはBusinessフォルダ内に年度別保存。画面表示時は目録で検証したe-Stat公式ファイルを参照します。
+            原本ExcelはBusinessフォルダ内に年度別保存し、画面では検証済みDBから生成した読み取り専用データを参照します。
             同一年度に分割表がある場合はグラフ上で合算し、原表自体は改変しません。
           </p>
         </section>
 
         <footer>
           <span>MLIT STATISTICS PANEL</span>
-          <p>出典：政府統計の総合窓口 e-Stat / 国土交通省</p>
+          <p>
+            出典：政府統計の総合窓口 e-Stat / 国土交通省
+            ・本サイトは国土交通省の公式サイトではありません
+          </p>
         </footer>
       </main>
     </div>

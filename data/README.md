@@ -26,12 +26,15 @@
 - 原本のファイル名または取得識別子
 
 `raw/`、`normalized/`、`database/` は運用データなので、GitHubではなく
-Businessフォルダを対象にしたバックアップで保護します。
+Businessフォルダを対象にしたバックアップで保護します。最新版の
+SQLite圧縮版だけは、Pages再構築用としてGitHub Releaseの
+`data-current` に保存します。
 
 ## 現在の原本
 
 - `raw/building-starts/annual/<年度>/` — 建築物着工統計
 - `raw/construction-orders-major-50/annual/<年度>/` — 受注動態（大手50社）
 
-対応する収集台帳は `catalogs/` に保存し、公開アプリには原本ではなく
-台帳だけを同梱します。
+対応する収集台帳は `catalogs/` に保存します。公開アプリには原本を
+同梱せず、SQLiteから生成した80行単位の表・検索索引・年度系列束だけを
+`public/data/` 経由で配布します。
