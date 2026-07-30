@@ -8,6 +8,7 @@ export const dynamic = "force-dynamic";
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as {
+      datasetId?: string;
       statInfId?: string;
       sheetName?: string;
       descriptor?: CellDescriptor;
@@ -16,6 +17,7 @@ export async function POST(request: Request) {
       throw new Error("統計ファイルとセルの指定が必要です。");
     }
     const payload = await loadAnnualValue({
+      datasetId: body.datasetId,
       statInfId: body.statInfId,
       sheetName: body.sheetName,
       descriptor: body.descriptor,

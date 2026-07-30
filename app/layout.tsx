@@ -22,10 +22,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol =
     requestHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
-  const imageUrl = `${protocol}://${host}/og-building-annual.png`;
-  const title = "建築着工統計・年度データ | 国交省統計パネル";
+  const imageUrl = `${protocol}://${host}/og.png`;
+  const title = "建設統計・年度データ | 国交省統計パネル";
   const description =
-    "建築物着工統計の2013年度以降の全Excelを表で閲覧し、任意項目を折れ線・棒・左右2軸でグラフ化。";
+    "建築物着工統計と受注動態（大手50社）の2013年度以降の全Excelを、表・折れ線・棒・左右2軸で比較。";
 
   return {
     title,

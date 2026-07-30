@@ -1,6 +1,7 @@
 import * as XLSX from "xlsx";
 
-import catalogJson from "@/data/catalogs/building-annual.json";
+import buildingCatalogJson from "@/data/catalogs/building-annual.json";
+import ordersCatalogJson from "@/data/catalogs/orders-major50-annual.json";
 import type {
   AnnualCatalog,
   AnnualCatalogRecord,
@@ -10,10 +11,22 @@ import type {
   TableCell,
 } from "@/lib/annual-building-types";
 
-export const annualCatalog = catalogJson as AnnualCatalog;
+export const annualCatalogs = [
+  buildingCatalogJson as AnnualCatalog,
+  ordersCatalogJson as AnnualCatalog,
+];
+export const annualCatalog = annualCatalogs[0];
 
+const catalogById = new Map(
+  annualCatalogs.map((catalog) => [catalog.datasetId, catalog]),
+);
 const recordById = new Map(
-  annualCatalog.records.map((record) => [record.statInfId, record]),
+  annualCatalogs.flatMap((catalog) =>
+    catalog.records.map(
+      (record) =>
+        [`${catalog.datasetId}:${record.statInfId}`, record] as const,
+    ),
+  ),
 );
 const workbookCache = new Map<string, Promise<XLSX.WorkBook>>();
 
@@ -29,6 +42,30 @@ function displayText(value: unknown) {
   return String(value ?? "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function semanticLabel(value: unknown) {
+  const noise = new Set([
+    "",
+    "***",
+    "民間等",
+    "非製造業",
+    "民",
+    "非",
+    "製",
+    "造",
+    "業",
+    "百万円",
+    "%",
+    "％",
+  ]);
+  return String(value ?? "")
+    .split("/")
+    .map(cleanText)
+    .filter((part) => !noise.has(part))
+    .map((part) => part.replace(/^単位[:：]?/, ""))
+    .filter(Boolean)
+    .join("/");
 }
 
 function serializableCell(value: unknown): TableCell {
@@ -151,17 +188,17 @@ function findCell(
     };
   }
   if (isNumeric(sameValue)) {
-    const sameRow = cleanText(
+    const sameRow = semanticLabel(
       rowLabel(rows, descriptor.rowIndex, descriptor.columnIndex),
     );
-    const sameColumn = cleanText(
+    const sameColumn = semanticLabel(
       columnLabel(rows, descriptor.rowIndex, descriptor.columnIndex),
     );
     if (
-      (!cleanText(descriptor.rowLabel) ||
-        sameRow === cleanText(descriptor.rowLabel)) &&
-      (!cleanText(descriptor.columnLabel) ||
-        sameColumn === cleanText(descriptor.columnLabel))
+      (!semanticLabel(descriptor.rowLabel) ||
+        sameRow === semanticLabel(descriptor.rowLabel)) &&
+      (!semanticLabel(descriptor.columnLabel) ||
+        sameColumn === semanticLabel(descriptor.columnLabel))
     ) {
       return {
         value: sameValue,
@@ -171,8 +208,8 @@ function findCell(
     }
   }
 
-  const wantedRow = cleanText(descriptor.rowLabel);
-  const wantedColumn = cleanText(descriptor.columnLabel);
+  const wantedRow = semanticLabel(descriptor.rowLabel);
+  const wantedColumn = semanticLabel(descriptor.columnLabel);
   for (let row = 0; row < rows.length; row += 1) {
     if (!rows[row]?.some(isNumeric)) continue;
     const candidateColumns = rows[row]
@@ -180,8 +217,9 @@ function findCell(
       .filter(({ value }) => isNumeric(value));
     for (const candidate of candidateColumns) {
       if (
-        wantedRow === cleanText(rowLabel(rows, row, candidate.column)) &&
-        wantedColumn === cleanText(columnLabel(rows, row, candidate.column))
+        wantedRow === semanticLabel(rowLabel(rows, row, candidate.column)) &&
+        wantedColumn ===
+          semanticLabel(columnLabel(rows, row, candidate.column))
       ) {
         return {
           value: candidate.value as number,
@@ -194,8 +232,12 @@ function findCell(
   return null;
 }
 
-function getRecord(statInfId: string) {
-  const record = recordById.get(statInfId);
+function getRecord(datasetId: string | undefined, statInfId: string) {
+  const resolvedDatasetId = datasetId || annualCatalog.datasetId;
+  if (!catalogById.has(resolvedDatasetId)) {
+    throw new Error("指定された統計は収録されていません。");
+  }
+  const record = recordById.get(`${resolvedDatasetId}:${statInfId}`);
   if (!record) throw new Error("目録にない統計ファイルです。");
   return record;
 }
@@ -267,13 +309,14 @@ function selectSheet(workbook: XLSX.WorkBook, requestedSheet?: string) {
 }
 
 export async function loadAnnualTable(options: {
+  datasetId?: string;
   statInfId: string;
   sheetName?: string;
   offset?: number;
   limit?: number;
   query?: string;
 }): Promise<AnnualTablePayload> {
-  const record = getRecord(options.statInfId);
+  const record = getRecord(options.datasetId, options.statInfId);
   const workbook = await fetchWorkbook(record);
   const { sheetName, sheet } = selectSheet(workbook, options.sheetName);
   const { rows, rowCount, columnCount } = readGrid(sheet);
@@ -327,11 +370,12 @@ export async function loadAnnualTable(options: {
 }
 
 export async function loadAnnualValue(options: {
+  datasetId?: string;
   statInfId: string;
   sheetName?: string;
   descriptor: CellDescriptor;
 }): Promise<AnnualValuePayload> {
-  const record = getRecord(options.statInfId);
+  const record = getRecord(options.datasetId, options.statInfId);
   const workbook = await fetchWorkbook(record);
   const { sheet } = selectSheet(workbook, options.sheetName);
   const { rows } = readGrid(sheet);

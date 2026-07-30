@@ -6,35 +6,18 @@ import { fileURLToPath } from "node:url";
 const PROJECT_ROOT = fileURLToPath(new URL("../", import.meta.url));
 const MANIFEST_PATH = resolve(
   PROJECT_ROOT,
-  "data/normalized/building-starts/annual/manifest.json",
+  "data/normalized/construction-orders-major-50/annual/manifest.json",
 );
 const CATALOG_PATH = resolve(
   PROJECT_ROOT,
-  "data/catalogs/building-annual.json",
+  "data/catalogs/orders-major50-annual.json",
 );
 
 function cleanTitle(value) {
   return value
     .replace(/\s+/g, " ")
-    .replace(
-      "構造別、用途別、規模別（鉄骨造）",
-      "構造別（鉄骨造）、用途別、規模別",
-    )
-    .replace("用途別、工事種別", "用途別、工事種類別")
-    .replace("【年次・年度次】集計事項／集計範囲 一覧", "【年次・年度次】集計事項／集計範囲")
+    .replace(/[（(](?:平成|令和)[^）)]+[）)]$/u, "")
     .trim();
-}
-
-function splitVariant(title) {
-  const cleaned = cleanTitle(title);
-  const match = cleaned.match(/^(.*?)(（令和[^）]+分）)$/);
-  if (!match) {
-    return { baseTitle: cleaned, variantLabel: "" };
-  }
-  return {
-    baseTitle: cleanTitle(match[1]),
-    variantLabel: match[2],
-  };
 }
 
 function groupId(title) {
@@ -43,14 +26,14 @@ function groupId(title) {
 
 const manifest = JSON.parse(await readFile(MANIFEST_PATH, "utf8"));
 const records = manifest.files.map((file) => {
-  const { baseTitle, variantLabel } = splitVariant(file.title);
+  const baseTitle = cleanTitle(file.title);
   return {
     fiscalYear: file.fiscalYear,
     fiscalYearLabel: `${file.fiscalYear}年度`,
     tableNumber: file.tableNumber,
     title: file.title,
     baseTitle,
-    variantLabel,
+    variantLabel: "",
     groupId: groupId(baseTitle),
     statInfId: file.statInfId,
     fileId: file.fileId,
@@ -98,11 +81,12 @@ records.sort(
 );
 
 const catalog = {
-  datasetId: "building-starts",
+  datasetId: "orders-major50",
   title: manifest.title,
-  organization: "国土交通省",
+  organization: manifest.organization,
   governmentStatisticsCode: manifest.governmentStatisticsCode,
   providedStatisticsId: manifest.providedStatisticsId,
+  classificationId: manifest.classificationId,
   sourceUrl: manifest.sourceUrl,
   fiscalYearFrom: manifest.fiscalYearFrom,
   fiscalYearTo: manifest.fiscalYearTo,

@@ -25,6 +25,7 @@ export type AnnualCatalogRecord = {
 };
 
 export type AnnualCatalog = {
+  datasetId: string;
   title: string;
   organization: string;
   governmentStatisticsCode: string;

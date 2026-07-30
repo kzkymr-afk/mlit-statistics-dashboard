@@ -38,8 +38,6 @@ type ChartSeries = {
 };
 
 const SERIES_COLORS = ["#356df3", "#20a779", "#d88928", "#7c63d9"];
-const SOURCE_URL =
-  "https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600120&tstat=000001016965&cycle=8&tclass1val=0";
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP", {
@@ -64,6 +62,22 @@ function columnName(index: number) {
 
 function recordLabel(record: AnnualCatalogRecord) {
   return `${record.fiscalYearLabel}${record.variantLabel ? ` ${record.variantLabel}` : ""}`;
+}
+
+function datasetLabel(catalog: AnnualCatalog) {
+  return catalog.datasetId === "orders-major50"
+    ? "受注動態（大手50社）"
+    : "建築着工統計";
+}
+
+function preferredGroup(catalog: AnnualCatalog) {
+  return (
+    catalog.groups.find((group) =>
+      catalog.datasetId === "orders-major50"
+        ? group.title === "結果表"
+        : group.title.startsWith("用途別、構造別／"),
+    ) ?? catalog.groups[0]
+  );
 }
 
 function niceMaximum(value: number) {
@@ -253,17 +267,16 @@ async function fetchJson<T>(input: RequestInfo | URL, init?: RequestInit) {
 }
 
 export default function AnnualBuildingExplorer({
-  catalog,
+  catalogs,
 }: {
-  catalog: AnnualCatalog;
+  catalogs: AnnualCatalog[];
 }) {
-  const defaultGroup =
-    catalog.groups.find((group) =>
-      group.title.startsWith("用途別、構造別／"),
-    ) ?? catalog.groups[0];
-  const defaultRecord = catalog.records
+  const defaultCatalog = catalogs[0];
+  const defaultGroup = preferredGroup(defaultCatalog);
+  const defaultRecord = defaultCatalog.records
     .filter((record) => record.groupId === defaultGroup?.id)
     .sort((a, b) => b.fiscalYear - a.fiscalYear)[0];
+  const [datasetId, setDatasetId] = useState(defaultCatalog.datasetId);
   const [groupId, setGroupId] = useState(defaultGroup?.id ?? "");
   const [statInfId, setStatInfId] = useState(defaultRecord?.statInfId ?? "");
   const [sheetName, setSheetName] = useState("");
@@ -274,6 +287,9 @@ export default function AnnualBuildingExplorer({
   const [tableLoading, setTableLoading] = useState(false);
   const [error, setError] = useState("");
   const [series, setSeries] = useState<ChartSeries[]>([]);
+  const catalog =
+    catalogs.find((candidate) => candidate.datasetId === datasetId) ??
+    defaultCatalog;
 
   const records = useMemo(
     () =>
@@ -292,6 +308,7 @@ export default function AnnualBuildingExplorer({
     if (!statInfId) return;
     const controller = new AbortController();
     const parameters = new URLSearchParams({
+      dataset: datasetId,
       statInfId,
       offset: String(offset),
       limit: "80",
@@ -318,7 +335,7 @@ export default function AnnualBuildingExplorer({
       .finally(() => setTableLoading(false));
 
     return () => controller.abort();
-  }, [statInfId, sheetName, offset, query]);
+  }, [datasetId, statInfId, sheetName, offset, query]);
 
   const updateSeries = useCallback(
     (id: string, patch: Partial<ChartSeries>) => {
@@ -391,6 +408,7 @@ export default function AnnualBuildingExplorer({
                 method: "POST",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify({
+                  datasetId,
                   statInfId: record.statInfId,
                   sheetName: table.sheetName,
                   descriptor,
@@ -436,7 +454,7 @@ export default function AnnualBuildingExplorer({
       });
       updateSeries(id, { points, loading: false, progress: 100 });
     },
-    [catalog.records, group, series.length, table, updateSeries],
+    [catalog.records, datasetId, group, series.length, table, updateSeries],
   );
 
   const exportChartCsv = () => {
@@ -465,7 +483,7 @@ export default function AnnualBuildingExplorer({
     );
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = "建築着工統計_年度推移.csv";
+    anchor.download = `${datasetLabel(catalog)}_年度推移.csv`;
     anchor.click();
     URL.revokeObjectURL(url);
   };
@@ -506,7 +524,9 @@ export default function AnnualBuildingExplorer({
           <i className="status-light" />
           <span>
             <strong>原本を保存済み</strong>
-            <small>2013–2025年度 / 351 Excel</small>
+            <small>
+              2013–2025年度 / {catalog.fileCount} Excel
+            </small>
           </span>
         </div>
       </aside>
@@ -514,14 +534,18 @@ export default function AnnualBuildingExplorer({
       <main id="top">
         <header className="topbar">
           <div>
-            <p>BUILDING STARTS / ANNUAL</p>
-            <h1>建築着工統計・年度データ</h1>
+            <p>MLIT OFFICIAL STATISTICS / ANNUAL</p>
+            <h1>{datasetLabel(catalog)}・年度データ</h1>
           </div>
           <div className="topbar-actions">
             <span className="latest-period">
               収録 <strong>2013–2025年度</strong>
             </span>
-            <a className="button secondary source-button" href={SOURCE_URL} target="_blank">
+            <a
+              className="button secondary source-button"
+              href={catalog.sourceUrl}
+              target="_blank"
+            >
               e-Stat原表 ↗
             </a>
           </div>
@@ -536,7 +560,7 @@ export default function AnnualBuildingExplorer({
               <em>数字をそのまま年度比較。</em>
             </h2>
             <p className="hero-copy">
-              国土交通省「建築物着工統計」の年度次Excelを2013年度以降すべて保存。
+              国土交通省「{catalog.title}」の年度次Excelを2013年度以降すべて保存。
               表の数値セルを選ぶだけで、折れ線・棒グラフ・左右2軸を組み合わせられます。
             </p>
           </div>
@@ -588,6 +612,38 @@ export default function AnnualBuildingExplorer({
             </span>
           </div>
           <div className="dataset-controls">
+            <label>
+              <span>統計</span>
+              <select
+                value={datasetId}
+                onChange={(event) => {
+                  const nextCatalog =
+                    catalogs.find(
+                      (candidate) => candidate.datasetId === event.target.value,
+                    ) ?? catalogs[0];
+                  const nextGroup = preferredGroup(nextCatalog);
+                  const nextRecord = nextCatalog.records
+                    .filter((record) => record.groupId === nextGroup?.id)
+                    .sort((a, b) => b.fiscalYear - a.fiscalYear)[0];
+                  setDatasetId(nextCatalog.datasetId);
+                  setGroupId(nextGroup?.id ?? "");
+                  setStatInfId(nextRecord?.statInfId ?? "");
+                  setSheetName("");
+                  setOffset(0);
+                  setQuery("");
+                  setQueryDraft("");
+                  setSeries([]);
+                  setTable(null);
+                  setTableLoading(true);
+                }}
+              >
+                {catalogs.map((candidate) => (
+                  <option key={candidate.datasetId} value={candidate.datasetId}>
+                    {datasetLabel(candidate)}
+                  </option>
+                ))}
+              </select>
+            </label>
             <label>
               <span>統計表</span>
               <select
@@ -908,7 +964,7 @@ export default function AnnualBuildingExplorer({
           </div>
           <p className="source-footnote">
             原本ExcelはBusinessフォルダ内に年度別保存。画面表示時は目録で検証したe-Stat公式ファイルを参照します。
-            2024年度の分割値はグラフ上で合算し、原表自体は改変しません。
+            同一年度に分割表がある場合はグラフ上で合算し、原表自体は改変しません。
           </p>
         </section>
 

@@ -10,6 +10,7 @@ export async function GET(request: Request) {
 
   try {
     const payload = await loadAnnualTable({
+      datasetId: parameters.get("dataset") ?? undefined,
       statInfId,
       sheetName: parameters.get("sheet") ?? undefined,
       offset: Number(parameters.get("offset") ?? 0),

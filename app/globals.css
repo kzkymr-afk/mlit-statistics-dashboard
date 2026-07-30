@@ -1172,7 +1172,10 @@ select:focus-visible {
 .dataset-controls {
   display: grid;
   gap: 13px;
-  grid-template-columns: minmax(0, 2fr) minmax(210px, 0.7fr);
+  grid-template-columns:
+    minmax(190px, 0.65fr)
+    minmax(0, 1.6fr)
+    minmax(180px, 0.55fr);
   margin-top: 24px;
 }
 

@@ -27,3 +27,11 @@
 
 `raw/`、`normalized/`、`database/` は運用データなので、GitHubではなく
 Businessフォルダを対象にしたバックアップで保護します。
+
+## 現在の原本
+
+- `raw/building-starts/annual/<年度>/` — 建築物着工統計
+- `raw/construction-orders-major-50/annual/<年度>/` — 受注動態（大手50社）
+
+対応する収集台帳は `catalogs/` に保存し、公開アプリには原本ではなく
+台帳だけを同梱します。
