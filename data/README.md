@@ -28,7 +28,8 @@
 `raw/`、`normalized/`、`database/` は運用データなので、GitHubではなく
 Businessフォルダを対象にしたバックアップで保護します。最新版の
 SQLite圧縮版だけは、Pages再構築用としてGitHub Releaseの
-`data-current` に保存します。
+`data-current` に保存します。GitHub側で大型SQLiteを毎回再解析しない
+ため、生成済み `pages-data.tar` も同じReleaseへ保存します。
 
 ## 現在の原本
 

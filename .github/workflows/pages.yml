@@ -24,8 +24,11 @@ permissions:
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  # 大型Excelの変換はUbuntuのnode:sqliteで異常終了するため、
+  # ローカルと同系統のmacOSランナーで週次更新する。
+  refresh:
+    if: github.event_name == 'schedule' || inputs.refresh_data == true
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -38,39 +41,57 @@ jobs:
           ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
         run: npm run sync:estat-api
       - name: Refresh official Excel sources
-        if: github.event_name == 'schedule' || inputs.refresh_data == true
         run: |
           npm run sync:building-annual
           npm run sync:orders-major50-annual
+      - name: Build the database and static data
+        run: |
           npm run db:build-local
-      - name: Download the current normalized database
-        if: github.event_name != 'schedule' && inputs.refresh_data != true
+          npm run data:export-pages
+          npm run test:data
+      - name: Save the current database and Pages data
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p data/database
-          gh release download data-current \
-            --pattern 'mlit-statistics.sqlite.gz' \
-            --dir data/database
-          gzip -d data/database/mlit-statistics.sqlite.gz
-      - name: Save refreshed database as the current release
-        if: github.event_name == 'schedule' || inputs.refresh_data == true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
+          mkdir -p data/exports
           gzip -c data/database/mlit-statistics.sqlite > data/database/mlit-statistics.sqlite.gz
+          tar -cf data/exports/pages-data.tar -C public data
           if gh release view data-current >/dev/null 2>&1; then
             gh release upload data-current \
               data/database/mlit-statistics.sqlite.gz \
+              data/exports/pages-data.tar \
               --clobber
           else
             gh release create data-current \
               data/database/mlit-statistics.sqlite.gz \
+              data/exports/pages-data.tar \
               --title "Current normalized data" \
               --notes "GitHub Pages公開用の最新正規化データです。"
           fi
-      - name: Export read-only Pages data
-        run: npm run data:export-pages
+
+  build:
+    needs: [refresh]
+    if: always() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.13.0
+          cache: npm
+      - run: npm ci
+      - name: Download prepared Pages data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p public
+          gh release download data-current \
+            --pattern 'pages-data.tar' \
+            --dir public
+          tar -xf public/pages-data.tar -C public
+          rm public/pages-data.tar
+      - name: Verify read-only data
+        run: npm run test:data
       - name: Build static application
         run: npm run build:pages
       - uses: actions/configure-pages@v5

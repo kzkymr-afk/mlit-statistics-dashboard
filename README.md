@@ -92,6 +92,7 @@ GitHub Pages（会社PCから閲覧）
 - 補完: API未収録・確認中のExcel
 - 公開: GitHub Pagesの静的JSON
 - GitHub Release: Pages再構築用の最新SQLite圧縮版
+- GitHub Release: Ubuntu側で再変換しないためのPages用データアーカイブ
 
 会社PCからの接続確認:
 https://kzkymr-afk.github.io/mlit-data-orders-major50/
@@ -117,8 +118,10 @@ Finderから `公開データを更新.command` を開くと、公式データ�
 GitHub Pages更新開始までを一括実行します。
 
 GitHub Actionsは毎週火曜05:23（日本時間）にもExcelの更新確認、
-DB再構築、Pages再公開を行います。手動実行時に `refresh_data` を有効に
-すると、GitHub上でも同じ全更新を実行できます。
+DB再構築、Pages再公開をmacOSランナーで行います。通常のPages公開は
+Releaseに保存した生成済みデータを展開するだけなので、大型SQLiteを
+Ubuntu上で再解析しません。手動実行時に `refresh_data` を有効にすると、
+GitHub上でも同じ全更新を実行できます。
 
 e-Stat APIを主系として統計表IDを照合するには、GitHubリポジトリの
 Actions secret `ESTAT_APP_ID` と、ローカルの同名環境変数にe-Statの
