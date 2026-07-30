@@ -46,6 +46,7 @@ export type TableRow = {
   index: number;
   cells: TableCell[];
   rowLabel: string;
+  series?: Array<StaticSeriesReference | null>;
 };
 
 export type AnnualTablePayload = {
@@ -77,4 +78,73 @@ export type AnnualValuePayload = {
   value: number | null;
   matchedRowIndex: number | null;
   matchedColumnIndex: number | null;
+};
+
+export type StaticSeriesReference = {
+  id: string;
+  bundleUrl: string | null;
+};
+
+export type StaticSheetSummary = {
+  sheetIndex: number;
+  name: string;
+  rowCount: number;
+  columnCount: number;
+  unit: string | null;
+  pageSize: number;
+  pageCount: number;
+  metaUrl: string;
+};
+
+export type StaticTableIndexEntry = AnnualCatalogRecord & {
+  datasetId: string;
+  sourceKind: string;
+  sourceStatus: string;
+  sheets: StaticSheetSummary[];
+};
+
+export type StaticDataManifest = {
+  schemaVersion: number;
+  snapshotId: string;
+  generatedAt: string;
+  source: string;
+  tables: StaticTableIndexEntry[];
+};
+
+export type StaticTableMeta = StaticSheetSummary & {
+  schemaVersion: number;
+  record: StaticTableIndexEntry;
+  columnLabels: string[];
+  searchUrl: string;
+  pageUrlTemplate: string;
+};
+
+export type StaticTablePage = {
+  schemaVersion: number;
+  statInfId: string;
+  sheetIndex: number;
+  pageIndex: number;
+  pageSize: number;
+  rows: TableRow[];
+};
+
+export type StaticSeriesPayload = {
+  id: string;
+  label: string;
+  rowLabel: string;
+  columnLabel: string;
+  unit: string | null;
+  points: Array<{
+    fiscalYear: number;
+    value: number | null;
+    sourceFileIds: string[];
+  }>;
+};
+
+export type StaticSeriesBundle = {
+  schemaVersion: number;
+  datasetId: string;
+  groupId: string;
+  sheetIndex: number;
+  series: Record<string, StaticSeriesPayload>;
 };

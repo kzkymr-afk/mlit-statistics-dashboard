@@ -1,0 +1,90 @@
+name: Publish GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refresh_data:
+        description: "e-StatのExcelを再取得してDBを更新する"
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # 毎週火曜 05:23 JST（月曜 20:23 UTC）
+    - cron: "23 20 * * 1"
+
+concurrency:
+  group: publish-mlit-statistics
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.13.0
+          cache: npm
+      - run: npm ci
+      - name: Refresh the e-Stat API inventory when configured
+        env:
+          ESTAT_APP_ID: ${{ secrets.ESTAT_APP_ID }}
+        run: npm run sync:estat-api
+      - name: Refresh official Excel sources
+        if: github.event_name == 'schedule' || inputs.refresh_data == true
+        run: |
+          npm run sync:building-annual
+          npm run sync:orders-major50-annual
+          npm run db:build-local
+      - name: Download the current normalized database
+        if: github.event_name != 'schedule' && inputs.refresh_data != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/database
+          gh release download data-current \
+            --pattern 'mlit-statistics.sqlite.gz' \
+            --dir data/database
+          gzip -d data/database/mlit-statistics.sqlite.gz
+      - name: Save refreshed database as the current release
+        if: github.event_name == 'schedule' || inputs.refresh_data == true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gzip -c data/database/mlit-statistics.sqlite > data/database/mlit-statistics.sqlite.gz
+          if gh release view data-current >/dev/null 2>&1; then
+            gh release upload data-current \
+              data/database/mlit-statistics.sqlite.gz \
+              --clobber
+          else
+            gh release create data-current \
+              data/database/mlit-statistics.sqlite.gz \
+              --title "Current normalized data" \
+              --notes "GitHub Pages公開用の最新正規化データです。"
+          fi
+      - name: Export read-only Pages data
+        run: npm run data:export-pages
+      - name: Build static application
+        run: npm run build:pages
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

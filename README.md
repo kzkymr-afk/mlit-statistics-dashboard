@@ -2,7 +2,7 @@
 
 国土交通省の公式統計から必要な項目だけを収集し、グラフ・表・CSVで使えるようにするウェブアプリです。
 
-現在は次の年度次統計を対象に、2013〜2025年度の公式Excelを扱います。
+現在は次の年度次統計を対象に、2013〜2025年度の公式データを扱います。
 
 - 建築着工統計調査・建築物着工統計：351件、約385MB
 - 建設工事受注動態統計調査・大手50社：48件、約1.62MB
@@ -62,9 +62,42 @@ data/
 `data/raw/construction-orders-major-50/annual/`、収集台帳は
 `data/catalogs/orders-major50-annual.json` に保存します。
 
-公開アプリに約385MBの原本は同梱せず、検証済みの収集台帳を使って
-選択されたe-Stat公式Excelだけを表示時に取得します。ローカル原本は
-Businessフォルダのバックアップ対象として保持します。
+約385MBのExcel原本はローカルだけに保持します。更新時にSQLiteへ
+正規化し、GitHub Pagesには表ページと年度系列へ分割した読み取り専用
+データだけを公開します。画面表示時のe-StatアクセスやExcel解析は
+行いません。
+
+2026年7月30日の実測:
+
+- SQLite: 約322MB
+- Pages用分割データ: 約359MB
+- 公開目録: 約477KB
+- 表ページ: 80行単位
+- 最大個別ファイル: 約0.47MB
+
+## データと閲覧の構成
+
+```text
+e-Stat API／Excel原本
+        ↓ 自宅Macで更新
+data/database/mlit-statistics.sqlite
+        ↓ 閲覧用に分割
+public/data/
+        ↓ GitHub Actions
+GitHub Pages（会社PCから閲覧）
+```
+
+- 正本: ローカルSQLite
+- 主系: e-Stat API（`ESTAT_APP_ID`設定後）
+- 補完: API未収録・確認中のExcel
+- 公開: GitHub Pagesの静的JSON
+- GitHub Release: Pages再構築用の最新SQLite圧縮版
+
+会社PCからの接続確認:
+https://kzkymr-afk.github.io/mlit-data-orders-major50/
+
+本番アプリ:
+https://kzkymr-afk.github.io/mlit-statistics-dashboard/
 
 ## 起動と確認
 
@@ -72,10 +105,25 @@ Businessフォルダのバックアップ対象として保持します。
 npm install
 npm run sync:building-annual
 npm run sync:orders-major50-annual
+npm run db:build-local
+npm run data:export-pages
+npm run build:pages
 npm run dev
 npm run build
 node --test tests/rendered-html.test.mjs
 ```
+
+Finderから `公開データを更新.command` を開くと、公式データ確認から
+GitHub Pages更新開始までを一括実行します。
+
+GitHub Actionsは毎週火曜05:23（日本時間）にもExcelの更新確認、
+DB再構築、Pages再公開を行います。手動実行時に `refresh_data` を有効に
+すると、GitHub上でも同じ全更新を実行できます。
+
+e-Stat APIを主系として統計表IDを照合するには、GitHubリポジトリの
+Actions secret `ESTAT_APP_ID` と、ローカルの同名環境変数にe-Statの
+アプリケーションIDを設定します。未設定・API未収録・照合中の項目は
+Excel取得を利用します。
 
 ## 項目追加の考え方
 
