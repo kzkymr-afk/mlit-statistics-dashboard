@@ -30,7 +30,7 @@ npm run build:pages
 
 echo "4/5 項目レジストリと系列分割データをGitHubへ保存"
 mkdir -p data/exports
-tar -czf data/exports/system-pages-data.tar.gz -C public system
+COPYFILE_DISABLE=1 tar -czf data/exports/system-pages-data.tar.gz -C public system
 if gh release view data-current >/dev/null 2>&1; then
   gh release upload data-current \
     data/exports/system-pages-data.tar.gz \
