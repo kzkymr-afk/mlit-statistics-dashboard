@@ -1223,6 +1223,88 @@ select:focus-visible {
   color: #f3a0a6;
 }
 
+.system-cycle-filter {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 8px;
+  padding: 0 4px 14px;
+}
+
+.system-cycle-heading,
+.system-statistics-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px 0 9px;
+}
+
+.system-cycle-heading small,
+.system-statistics-heading small {
+  color: #9eb2d0;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.system-cycle-heading span,
+.system-statistics-heading span {
+  color: #8ab5f7;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.system-cycle-options {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.system-sidebar nav .system-cycle-options button {
+  align-items: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  display: grid;
+  gap: 2px;
+  min-height: 45px;
+  padding: 8px 9px;
+}
+
+.system-sidebar nav .system-cycle-options button:last-child {
+  grid-column: 1 / -1;
+  min-height: 39px;
+}
+
+.system-cycle-options button strong {
+  color: #aab7ca;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.system-cycle-options button small {
+  color: #65748c;
+  font-size: 7px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.system-sidebar nav .system-cycle-options button:hover,
+.system-sidebar nav .system-cycle-options button.active {
+  background: rgba(35, 103, 209, 0.22);
+  border-color: rgba(114, 168, 255, 0.32);
+}
+
+.system-cycle-options button.active strong {
+  color: white;
+}
+
+.system-cycle-options button.active small {
+  color: #8ab5f7;
+}
+
+.system-statistics-heading {
+  margin-bottom: -6px;
+}
+
 .system-nav-group {
   display: grid;
   gap: 5px;
@@ -2039,6 +2121,41 @@ select:focus-visible {
   }
 
   .system-favorites {
+    display: none;
+  }
+
+  .system-cycle-filter {
+    padding: 0 0 10px;
+  }
+
+  .system-cycle-heading,
+  .system-statistics-heading {
+    display: none;
+  }
+
+  .system-cycle-options {
+    grid-template-columns: 1fr;
+  }
+
+  .system-sidebar nav .system-cycle-options button,
+  .system-sidebar nav .system-cycle-options button:not(.active) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 31px;
+    padding: 6px 4px;
+  }
+
+  .system-sidebar nav .system-cycle-options button:last-child {
+    grid-column: auto;
+    min-height: 31px;
+  }
+
+  .system-cycle-options button strong {
+    font-size: 8px;
+  }
+
+  .system-cycle-options button small {
     display: none;
   }
 

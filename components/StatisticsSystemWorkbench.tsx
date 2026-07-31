@@ -16,6 +16,12 @@ import {
   normalizeFavorites,
   upsertFavorite,
 } from "@/lib/statistics-favorites.mjs";
+import {
+  ALL_CYCLES,
+  filterTablesByNavigation,
+  preferredTableId,
+  tableMatchesCycle,
+} from "@/lib/statistics-navigation.mjs";
 
 type DatasetSummary = {
   id: string;
@@ -123,6 +129,7 @@ type ChartKind = "line" | "bar";
 type ChartAxis = "left" | "right";
 type AxisSettingKey = "min" | "max" | "step";
 type AxisSettings = Record<AxisSettingKey, string>;
+type CycleFilter = "年度次" | "年次" | "月次" | "四半期" | "all";
 
 type FavoriteItem = {
   id: string;
@@ -177,29 +184,86 @@ const DEFAULT_TABLE_IDS: Record<string, string> = {
   "construction-materials": "excel-00600060-prefecture-index",
   "building-stock": "excel-00600940-private-national",
 };
-const DATASET_ORDER = [
-  "building-starts",
-  "building-starts-monthly",
-  "orders-major50",
-  "orders-major50-monthly",
-  "renovation",
-  "construction-investment",
-  "construction-output",
-  "construction-work",
-  "construction-deflator",
-  "construction-labor",
-  "construction-materials",
-  "building-stock",
+const CYCLE_OPTIONS: Array<{
+  id: CycleFilter;
+  label: string;
+  detail: string;
+}> = [
+  { id: "年度次", label: "年度", detail: "4–3月" },
+  { id: "年次", label: "年次", detail: "暦年" },
+  { id: "月次", label: "月次", detail: "毎月" },
+  { id: "四半期", label: "四半期", detail: "3か月" },
+  { id: "all", label: "すべて", detail: "全周期" },
 ];
+const STATISTICS_FAMILIES = [
+  {
+    id: "building-starts",
+    title: "建築着工統計",
+    datasetIds: ["building-starts", "building-starts-monthly"],
+    cycles: ["年度次", "年次", "月次"],
+  },
+  {
+    id: "orders-major50",
+    title: "受注動態（大手50社）",
+    datasetIds: ["orders-major50", "orders-major50-monthly"],
+    cycles: ["年度次", "月次"],
+  },
+  {
+    id: "renovation",
+    title: "建築物リフォーム・リニューアル調査",
+    datasetIds: ["renovation"],
+    cycles: ["年度次", "四半期"],
+  },
+  {
+    id: "construction-investment",
+    title: "建設投資見通し",
+    datasetIds: ["construction-investment"],
+    cycles: ["年度次"],
+  },
+  {
+    id: "construction-output",
+    title: "建設総合統計（出来高・手持ち）",
+    datasetIds: ["construction-output"],
+    cycles: ["年度次", "年次", "月次"],
+  },
+  {
+    id: "construction-work",
+    title: "建設工事施工統計調査",
+    datasetIds: ["construction-work"],
+    cycles: ["年度次"],
+  },
+  {
+    id: "construction-deflator",
+    title: "建設工事費デフレーター",
+    datasetIds: ["construction-deflator"],
+    cycles: ["年度次", "四半期", "月次"],
+  },
+  {
+    id: "construction-labor",
+    title: "建設労働需給調査",
+    datasetIds: ["construction-labor"],
+    cycles: ["月次"],
+  },
+  {
+    id: "construction-materials",
+    title: "主要建設資材需給・価格動向調査",
+    datasetIds: ["construction-materials"],
+    cycles: ["月次"],
+  },
+  {
+    id: "building-stock",
+    title: "建築物ストック統計",
+    datasetIds: ["building-stock"],
+    cycles: ["年次"],
+  },
+] as const;
 const DATASET_GROUPS = [
   {
     id: "demand",
     title: "需要・受注",
-    datasetIds: [
+    statisticsIds: [
       "building-starts",
-      "building-starts-monthly",
       "orders-major50",
-      "orders-major50-monthly",
       "renovation",
       "construction-investment",
     ],
@@ -207,12 +271,12 @@ const DATASET_GROUPS = [
   {
     id: "production",
     title: "出来高・業界",
-    datasetIds: ["construction-output", "construction-work"],
+    statisticsIds: ["construction-output", "construction-work"],
   },
   {
     id: "supply",
     title: "コスト・供給",
-    datasetIds: [
+    statisticsIds: [
       "construction-deflator",
       "construction-labor",
       "construction-materials",
@@ -221,7 +285,7 @@ const DATASET_GROUPS = [
   {
     id: "stock",
     title: "建築ストック",
-    datasetIds: ["building-stock"],
+    statisticsIds: ["building-stock"],
   },
 ];
 const MAX_JSON_CACHE_ENTRIES = 10;
@@ -242,6 +306,20 @@ function formatNumber(value: number) {
 
 function normalizeSearch(value: string) {
   return value.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+}
+
+function statisticsIdForDataset(datasetId: string) {
+  return (
+    STATISTICS_FAMILIES.find((statistics) =>
+      statistics.datasetIds.some((candidate) => candidate === datasetId),
+    )?.id ?? datasetId
+  );
+}
+
+function displayCycle(cycle: string) {
+  if (cycle === "年度次") return "年度";
+  if (cycle === ALL_CYCLES) return "すべて";
+  return cycle;
 }
 
 function selectionLabelFor(
@@ -742,7 +820,8 @@ function downloadCsv(
 export default function StatisticsSystemWorkbench() {
   const [catalog, setCatalog] = useState<SystemCatalog | null>(null);
   const [catalogError, setCatalogError] = useState("");
-  const [datasetId, setDatasetId] = useState("building-starts");
+  const [cycleFilter, setCycleFilter] = useState<CycleFilter>("年度次");
+  const [statisticsId, setStatisticsId] = useState("building-starts");
   const [tableSearch, setTableSearch] = useState("");
   const [tableId, setTableId] = useState("");
   const [meta, setMeta] = useState<TableMeta | null>(null);
@@ -807,40 +886,58 @@ export default function StatisticsSystemWorkbench() {
       .catch((error) => setCatalogError(String(error.message ?? error)));
   }, []);
 
-  const datasetTables = useMemo(() => {
+  const statisticsForCycle = useCallback(
+    (cycle: CycleFilter) =>
+      STATISTICS_FAMILIES.filter((statistics) => {
+        if (!catalog) {
+          return (
+            cycle === ALL_CYCLES ||
+            statistics.cycles.some((candidate) => candidate === cycle)
+          );
+        }
+        return catalog.tables.some(
+          (table) =>
+            statistics.datasetIds.some(
+              (datasetId) => datasetId === table.datasetId,
+            ) && tableMatchesCycle(table, cycle),
+        );
+      }),
+    [catalog],
+  );
+  const availableStatistics = statisticsForCycle(cycleFilter);
+  const activeStatistics =
+    STATISTICS_FAMILIES.find((statistics) => statistics.id === statisticsId) ??
+    availableStatistics[0] ??
+    STATISTICS_FAMILIES[0];
+  const eligibleTables = filterTablesByNavigation(
+    catalog?.tables ?? [],
+    activeStatistics.datasetIds,
+    cycleFilter,
+  ) as TableSummary[];
+  const datasetTables = (() => {
     const normalized = normalizeSearch(tableSearch);
-    return (catalog?.tables ?? [])
+    return eligibleTables
       .filter(
-      (table) =>
-        table.datasetId === datasetId &&
+        (table) =>
         (!normalized ||
           normalizeSearch(
             `${table.title} ${table.statisticsName} ${table.id}`,
           ).includes(normalized)),
       )
       .toSorted((left, right) => {
-        const preferredId = DEFAULT_TABLE_IDS[datasetId];
-        if (left.id === preferredId) return -1;
-        if (right.id === preferredId) return 1;
+        const leftPreferred = left.id === DEFAULT_TABLE_IDS[left.datasetId];
+        const rightPreferred = right.id === DEFAULT_TABLE_IDS[right.datasetId];
+        if (leftPreferred && !rightPreferred) return -1;
+        if (!leftPreferred && rightPreferred) return 1;
         return left.title.localeCompare(right.title, "ja");
       });
-  }, [catalog, datasetId, tableSearch]);
+  })();
 
-  const effectiveTableId = useMemo(() => {
-    const current = catalog?.tables.find(
-      (table) => table.id === tableId && table.datasetId === datasetId,
-    );
-    return (
-      current?.id ??
-      catalog?.tables.find(
-        (table) =>
-          table.datasetId === datasetId &&
-          table.id === DEFAULT_TABLE_IDS[datasetId],
-      )?.id ??
-      catalog?.tables.find((table) => table.datasetId === datasetId)?.id ??
-      ""
-    );
-  }, [catalog, datasetId, tableId]);
+  const effectiveTableId = preferredTableId(
+    eligibleTables,
+    tableId,
+    DEFAULT_TABLE_IDS,
+  );
 
   useEffect(() => {
     const table = catalog?.tables.find(
@@ -1072,18 +1169,20 @@ export default function StatisticsSystemWorkbench() {
   };
 
   const applyFavorite = (favorite: FavoriteItem) => {
-    const tableExists = catalog?.tables.some(
+    const favoriteTable = catalog?.tables.find(
       (table) =>
         table.id === favorite.tableId &&
         table.datasetId === favorite.datasetId,
     );
-    if (!tableExists) {
+    if (!favoriteTable) {
       setMessage(
         "保存した統計表が現在の公開データにありません。お気に入りを削除して選び直してください。",
       );
       return;
     }
     setTableSearch("");
+    setCycleFilter(favoriteTable.cycle as CycleFilter);
+    setStatisticsId(statisticsIdForDataset(favorite.datasetId));
     if (meta?.table.id === favorite.tableId) {
       setSelections(selectionsFromFavorite(meta, favorite));
       setTimeFrom(
@@ -1100,7 +1199,6 @@ export default function StatisticsSystemWorkbench() {
       return;
     }
     pendingFavoriteRef.current = favorite;
-    setDatasetId(favorite.datasetId);
     setTableId(favorite.tableId);
     setLoadingMeta(true);
   };
@@ -1190,25 +1288,31 @@ export default function StatisticsSystemWorkbench() {
       [axis]: { ...current[axis], [key]: value },
     }));
   };
-  const availableDatasets = (
-    catalog?.datasets ?? [
-      { id: "building-starts", title: "建築着工統計" },
-      { id: "building-starts-monthly", title: "建築着工統計（月次主要系列）" },
-      { id: "orders-major50", title: "受注動態（大手50社）" },
-      { id: "orders-major50-monthly", title: "受注動態・大手50社（月次）" },
-      { id: "renovation", title: "建築物リフォーム・リニューアル調査" },
-      { id: "construction-investment", title: "建設投資見通し" },
-      { id: "construction-output", title: "建設総合統計（出来高・手持ち）" },
-      { id: "construction-work", title: "建設工事施工統計調査" },
-      { id: "construction-deflator", title: "建設工事費デフレーター" },
-      { id: "construction-labor", title: "建設労働需給調査" },
-      { id: "construction-materials", title: "主要建設資材需給・価格動向調査" },
-      { id: "building-stock", title: "建築物ストック統計" },
-    ]
-  ).toSorted(
-    (left, right) =>
-      DATASET_ORDER.indexOf(left.id) - DATASET_ORDER.indexOf(right.id),
-  );
+  const selectCycle = (cycle: CycleFilter) => {
+    if (cycle === cycleFilter) return;
+    const nextStatistics = statisticsForCycle(cycle);
+    const nextStatisticsId = nextStatistics.some(
+      (statistics) => statistics.id === statisticsId,
+    )
+      ? statisticsId
+      : nextStatistics[0]?.id;
+    const nextStatisticsFamily = STATISTICS_FAMILIES.find(
+      (statistics) => statistics.id === nextStatisticsId,
+    );
+    const nextTables = nextStatisticsFamily
+      ? (filterTablesByNavigation(
+          catalog?.tables ?? [],
+          nextStatisticsFamily.datasetIds,
+          cycle,
+        ) as TableSummary[])
+      : [];
+    const nextTableId = preferredTableId(nextTables, "", DEFAULT_TABLE_IDS);
+    setCycleFilter(cycle);
+    if (nextStatisticsId) setStatisticsId(nextStatisticsId);
+    setTableId("");
+    setTableSearch("");
+    setLoadingMeta(Boolean(nextTableId && nextTableId !== effectiveTableId));
+  };
 
   return (
     <div className="system-shell">
@@ -1266,32 +1370,64 @@ export default function StatisticsSystemWorkbench() {
               </div>
             ))}
           </div>
+          <div className="system-cycle-filter">
+            <div className="system-cycle-heading">
+              <small>集計周期</small>
+              <span>{displayCycle(cycleFilter)}</span>
+            </div>
+            <div
+              className="system-cycle-options"
+              role="group"
+              aria-label="集計周期を選択"
+            >
+              {CYCLE_OPTIONS.map((option) => (
+                <button
+                  type="button"
+                  key={option.id}
+                  className={cycleFilter === option.id ? "active" : ""}
+                  aria-pressed={cycleFilter === option.id}
+                  onClick={() => selectCycle(option.id)}
+                  title={`${option.label}（${option.detail}）`}
+                >
+                  <strong>{option.label}</strong>
+                  <small>{option.detail}</small>
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="system-statistics-heading">
+            <small>該当する統計</small>
+            <span>{availableStatistics.length}</span>
+          </div>
           {DATASET_GROUPS.map((group) => {
-            const datasets = availableDatasets.filter((dataset) =>
-              group.datasetIds.includes(dataset.id),
+            const statisticsItems = availableStatistics.filter((statistics) =>
+              group.statisticsIds.some((id) => id === statistics.id),
             );
-            if (datasets.length === 0) return null;
+            if (statisticsItems.length === 0) return null;
             return (
               <div className="system-nav-group" key={group.id}>
                 <small>{group.title}</small>
-                {datasets.map((dataset) => (
+                {statisticsItems.map((statistics) => (
                   <button
                     type="button"
-                    key={dataset.id}
-                    className={datasetId === dataset.id ? "active" : ""}
+                    key={statistics.id}
+                    className={statisticsId === statistics.id ? "active" : ""}
                     onClick={() => {
-                      setDatasetId(dataset.id);
+                      if (statisticsId === statistics.id) return;
+                      setStatisticsId(statistics.id);
+                      setTableId("");
                       setTableSearch("");
                       setLoadingMeta(true);
                     }}
                   >
                     <span>
-                      {String(DATASET_ORDER.indexOf(dataset.id) + 1).padStart(
-                        2,
-                        "0",
-                      )}
+                      {String(
+                        STATISTICS_FAMILIES.findIndex(
+                          (item) => item.id === statistics.id,
+                        ) + 1,
+                      ).padStart(2, "0")}
                     </span>
-                    {dataset.title}
+                    {statistics.title}
                   </button>
                 ))}
               </div>
@@ -1314,6 +1450,7 @@ export default function StatisticsSystemWorkbench() {
             <h1>必要な統計項目だけを取り出す</h1>
           </div>
           <div className="system-badges">
+            <span>{displayCycle(cycleFilter)}</span>
             <span>2013年度以降</span>
             <span>出典付き</span>
           </div>
@@ -1334,8 +1471,8 @@ export default function StatisticsSystemWorkbench() {
         <section className="system-workflow" aria-label="統計条件の指定">
           <div className="system-step">
             <span>STEP 1</span>
-            <strong>統計表</strong>
-            <small>{datasetTables.length}件</small>
+            <strong>周期・統計</strong>
+            <small>{activeStatistics.title}</small>
           </div>
           <div className="system-step active">
             <span>STEP 2</span>
@@ -1371,16 +1508,17 @@ export default function StatisticsSystemWorkbench() {
                   key={table.id}
                   className={table.id === effectiveTableId ? "selected" : ""}
                   onClick={() => {
+                    if (table.id === effectiveTableId) return;
                     setTableId(table.id);
                     setLoadingMeta(true);
                   }}
                 >
                   <strong>{table.title}</strong>
                   <span>
-                    {table.id === DEFAULT_TABLE_IDS[datasetId]
+                    {table.id === DEFAULT_TABLE_IDS[table.datasetId]
                       ? "基本表 · "
                       : ""}
-                    {table.cycle} ·{" "}
+                    {displayCycle(table.cycle)} ·{" "}
                     {table.seriesCount.toLocaleString("ja-JP")}系列
                   </span>
                   <small>{table.id}</small>
@@ -1412,7 +1550,7 @@ export default function StatisticsSystemWorkbench() {
                   <span>{meta.table.statisticsName}</span>
                   <strong>{meta.table.title}</strong>
                   <small>
-                    統計表ID {meta.table.id} · {meta.table.cycle}
+                    統計表ID {meta.table.id} · {displayCycle(meta.table.cycle)}
                   </small>
                 </div>
                 <div className="system-filters">
