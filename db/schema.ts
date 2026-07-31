@@ -3,6 +3,7 @@ import {
   index,
   integer,
   primaryKey,
+  real,
   sqliteTable,
   text,
   uniqueIndex,
@@ -112,10 +113,8 @@ export const ingestionRuns = sqliteTable("ingestion_runs", {
   startedAt: text("started_at").notNull(),
   completedAt: text("completed_at"),
   status: text("status").notNull(),
-  sourceFileCount: integer("source_file_count").notNull().default(0),
-  sheetCount: integer("sheet_count").notNull().default(0),
-  numericCellCount: integer("numeric_cell_count").notNull().default(0),
-  compressedBytes: integer("compressed_bytes").notNull().default(0),
+  tableCount: integer("table_count").notNull().default(0),
+  observationCount: integer("observation_count").notNull().default(0),
   error: text("error"),
 });
 
@@ -136,5 +135,201 @@ export const sourceMappings = sqliteTable(
       table.groupId,
       table.sourceKind,
     ),
+  ],
+);
+
+/**
+ * ここから下が統計システムの正本。
+ *
+ * Excelの行列位置ではなく、e-Statが持つ統計表・分類コード・時間コードを
+ * そのまま保持する。上のsheetPayloads/seriesBundlesは旧Excelビューアとの
+ * 移行期間だけ残し、この層から分析用スナップショットを生成する。
+ */
+export const statisticalTables = sqliteTable(
+  "statistical_tables",
+  {
+    id: text("id").primaryKey(),
+    datasetId: text("dataset_id")
+      .notNull()
+      .references(() => datasets.id),
+    title: text("title").notNull(),
+    statisticsName: text("statistics_name").notNull(),
+    cycle: text("cycle").notNull(),
+    surveyDate: text("survey_date"),
+    openDate: text("open_date"),
+    updatedDate: text("updated_date"),
+    totalNumber: integer("total_number"),
+    sourceKind: text("source_kind").notNull(),
+    sourceUrl: text("source_url").notNull(),
+    registryStatus: text("registry_status").notNull(),
+    fetchedAt: text("fetched_at").notNull(),
+  },
+  (table) => [
+    index("statistical_tables_dataset_idx").on(table.datasetId),
+    index("statistical_tables_title_idx").on(table.title),
+  ],
+);
+
+export const dimensions = sqliteTable(
+  "dimensions",
+  {
+    id: text("id").primaryKey(),
+    tableId: text("table_id")
+      .notNull()
+      .references(() => statisticalTables.id),
+    apiKey: text("api_key").notNull(),
+    name: text("name").notNull(),
+    description: text("description"),
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (table) => [
+    uniqueIndex("dimensions_table_api_key_idx").on(
+      table.tableId,
+      table.apiKey,
+    ),
+  ],
+);
+
+export const dimensionValues = sqliteTable(
+  "dimension_values",
+  {
+    dimensionId: text("dimension_id")
+      .notNull()
+      .references(() => dimensions.id),
+    code: text("code").notNull(),
+    name: text("name").notNull(),
+    level: integer("level"),
+    parentCode: text("parent_code"),
+    unit: text("unit"),
+    sortOrder: integer("sort_order").notNull(),
+  },
+  (table) => [
+    primaryKey({ columns: [table.dimensionId, table.code] }),
+    index("dimension_values_name_idx").on(table.name),
+  ],
+);
+
+export const statisticalConcepts = sqliteTable(
+  "statistical_concepts",
+  {
+    id: text("id").primaryKey(),
+    datasetId: text("dataset_id")
+      .notNull()
+      .references(() => datasets.id),
+    name: text("name").notNull(),
+    category: text("category").notNull(),
+    description: text("description"),
+    aliasesJson: text("aliases_json").notNull().default("[]"),
+    defaultUnit: text("default_unit"),
+    status: text("status").notNull(),
+  },
+  (table) => [
+    index("statistical_concepts_dataset_category_idx").on(
+      table.datasetId,
+      table.category,
+    ),
+  ],
+);
+
+export const conceptMappings = sqliteTable(
+  "concept_mappings",
+  {
+    id: text("id").primaryKey(),
+    conceptId: text("concept_id")
+      .notNull()
+      .references(() => statisticalConcepts.id),
+    tableId: text("table_id")
+      .notNull()
+      .references(() => statisticalTables.id),
+    selectorJson: text("selector_json").notNull(),
+    sourceKind: text("source_kind").notNull(),
+    status: text("status").notNull(),
+    reviewedAt: text("reviewed_at"),
+    note: text("note"),
+  },
+  (table) => [
+    index("concept_mappings_concept_idx").on(table.conceptId),
+    index("concept_mappings_table_idx").on(table.tableId),
+  ],
+);
+
+export const series = sqliteTable(
+  "series",
+  {
+    id: text("id").primaryKey(),
+    tableId: text("table_id")
+      .notNull()
+      .references(() => statisticalTables.id),
+    label: text("label").notNull(),
+    unit: text("unit"),
+    firstTimeCode: text("first_time_code"),
+    lastTimeCode: text("last_time_code"),
+    timeMask: integer("time_mask").notNull().default(0),
+    observationCount: integer("observation_count").notNull().default(0),
+    status: text("status").notNull(),
+  },
+  (table) => [
+    index("series_table_idx").on(table.tableId),
+    index("series_label_idx").on(table.label),
+  ],
+);
+
+export const seriesDimensions = sqliteTable(
+  "series_dimensions",
+  {
+    seriesId: text("series_id")
+      .notNull()
+      .references(() => series.id),
+    dimensionId: text("dimension_id")
+      .notNull()
+      .references(() => dimensions.id),
+    valueCode: text("value_code").notNull(),
+  },
+  (table) => [
+    primaryKey({
+      columns: [table.seriesId, table.dimensionId],
+    }),
+    index("series_dimensions_value_idx").on(
+      table.dimensionId,
+      table.valueCode,
+    ),
+  ],
+);
+
+export const observationSources = sqliteTable(
+  "observation_sources",
+  {
+    id: text("id").primaryKey(),
+    sourceKind: text("source_kind").notNull(),
+    tableId: text("table_id").references(() => statisticalTables.id),
+    sourceUrl: text("source_url").notNull(),
+    localPath: text("local_path"),
+    sha256: text("sha256"),
+    publishedAt: text("published_at"),
+    retrievedAt: text("retrieved_at").notNull(),
+  },
+  (table) => [index("observation_sources_table_idx").on(table.tableId)],
+);
+
+export const observations = sqliteTable(
+  "observations",
+  {
+    seriesId: text("series_id")
+      .notNull()
+      .references(() => series.id),
+    timeCode: text("time_code").notNull(),
+    value: text("value"),
+    numericValue: real("numeric_value"),
+    unit: text("unit"),
+    annotation: text("annotation"),
+    status: text("status").notNull(),
+    sourceId: text("source_id")
+      .notNull()
+      .references(() => observationSources.id),
+    fetchedAt: text("fetched_at").notNull(),
+  },
+  (table) => [
+    primaryKey({ columns: [table.seriesId, table.timeCode] }),
+    index("observations_time_idx").on(table.timeCode),
   ],
 );
