@@ -305,7 +305,7 @@ test("項目レジストリから系列・年度値・出典まで辿れる", ()
       ).toString("utf8"),
     );
     assert.equal(bundle.series[seriesId][0], "m2");
-    assert.equal(bundle.series[seriesId][1], 3);
+    assert.equal(bundle.series[seriesId][1], "x3");
     assert.equal(bundle.series[seriesId][2].length, 1);
     assert.equal(bundle.series[seriesId][2][0][1], 12345.6);
     assert.equal(bundle.series[seriesId][2][0][2], null);

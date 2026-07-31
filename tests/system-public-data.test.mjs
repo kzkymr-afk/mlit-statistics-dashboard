@@ -20,7 +20,7 @@ async function readGzipJson(path) {
 test("公開データは統計表・公式分類・観測値のv2形式である", async () => {
   const catalog = await readJson("system/catalog.json");
   assert.equal(catalog.schemaVersion, 2);
-  assert.equal(catalog.source, "estat-api-normalized-sqlite");
+  assert.equal(catalog.source, "estat-normalized-sqlite");
   assert.ok(catalog.tables.length > 0);
   assert.ok(
     catalog.tables.some((table) => table.datasetId === "building-starts"),
@@ -31,6 +31,22 @@ test("公開データは統計表・公式分類・観測値のv2形式である
   assert.ok(
     catalog.tables.some((table) => table.datasetId === "renovation"),
   );
+  for (const datasetId of [
+    "building-starts-monthly",
+    "orders-major50-monthly",
+    "construction-output",
+    "construction-deflator",
+    "construction-investment",
+    "construction-work",
+    "construction-labor",
+    "construction-materials",
+    "building-stock",
+  ]) {
+    assert.ok(
+      catalog.tables.some((table) => table.datasetId === datasetId),
+      `${datasetId}が必要です`,
+    );
+  }
   assert.ok(
     catalog.tables.every(
       (table) =>
@@ -46,7 +62,7 @@ test("公開データは統計表・公式分類・観測値のv2形式である
   assert.ok(
     catalog.tables.every(
       (table) =>
-        /^https:\/\/www\.e-stat\.go\.jp\/dbview\?sid=/.test(
+        /^https:\/\/www\.e-stat\.go\.jp\//.test(
           catalog.sources[table.id]?.sourceUrl ?? "",
         ),
     ),
@@ -83,11 +99,7 @@ test("統計表メタ情報はExcelシートではなく公式分類コードを
 test("実データの系列分割は軽量形式で値・暗黙0・出典を復元できる", async () => {
   const shardDirectory = new URL("system/shards/", publicRoot);
   const shardFiles = (await readdir(shardDirectory))
-    .filter((name) =>
-      /^(building-starts|orders-major50|renovation)-[a-f0-9]{2}\.json\.gz$/.test(
-        name,
-      ),
-    )
+    .filter((name) => /^[a-z0-9-]+-[a-f0-9]{2}\.json\.gz$/.test(name))
     .sort();
   assert.ok(shardFiles.length >= 256);
 

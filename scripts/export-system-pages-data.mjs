@@ -39,8 +39,12 @@ const SHARD_BUILD_DIR = EXTERNAL_SHARD_DIR
 const SERIES_ASSET_BASE_URL = (
   process.env.MLIT_SERIES_ASSET_BASE_URL || "system/shards"
 ).replace(/\/$/, "");
-const ONLY_DATASET_ID =
-  process.env.MLIT_SYSTEM_ONLY_DATASET?.trim() ?? "";
+const ONLY_DATASET_IDS = (
+  process.env.MLIT_SYSTEM_ONLY_DATASET?.trim() ?? ""
+)
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean);
 
 if (!existsSync(DATABASE_PATH)) {
   throw new Error(
@@ -49,13 +53,13 @@ if (!existsSync(DATABASE_PATH)) {
   );
 }
 
-if (ONLY_DATASET_ID && EXTERNAL_SHARD_DIR) {
+if (ONLY_DATASET_IDS.length > 0 && EXTERNAL_SHARD_DIR) {
   throw new Error(
     "データセット差分生成と外部分割ディレクトリは同時に指定できません。",
   );
 }
 if (existsSync(BUILD_DIR)) rmSync(BUILD_DIR, { recursive: true });
-if (ONLY_DATASET_ID) {
+if (ONLY_DATASET_IDS.length > 0) {
   if (!existsSync(OUTPUT_DIR)) {
     throw new Error(
       "差分生成の基になる公開データがありません。先に全体生成が必要です。",
@@ -121,16 +125,20 @@ function publicPath(path) {
 }
 
 const db = new DatabaseSync(DATABASE_PATH, { readOnly: true });
-if (ONLY_DATASET_ID) {
-  const knownDataset = db
-    .prepare("SELECT 1 FROM datasets WHERE id = ?")
-    .get(ONLY_DATASET_ID);
-  if (!knownDataset) {
-    throw new Error(`未登録のデータセットです: ${ONLY_DATASET_ID}`);
+if (ONLY_DATASET_IDS.length > 0) {
+  for (const datasetId of ONLY_DATASET_IDS) {
+    const knownDataset = db
+      .prepare("SELECT 1 FROM datasets WHERE id = ?")
+      .get(datasetId);
+    if (!knownDataset) {
+      throw new Error(`未登録のデータセットです: ${datasetId}`);
+    }
   }
   for (const fileName of readdirSync(SHARD_BUILD_DIR)) {
     if (
-      fileName.startsWith(`${ONLY_DATASET_ID}-`) &&
+      ONLY_DATASET_IDS.some((datasetId) =>
+        fileName.startsWith(`${datasetId}-`),
+      ) &&
       fileName.endsWith(".json.gz")
     ) {
       unlinkSync(resolve(SHARD_BUILD_DIR, fileName));
@@ -218,12 +226,12 @@ const seriesProjection = `
          CASE
            WHEN s.time_mask_text IS NOT NULL
              THEN 'x' || s.time_mask_text
-           ELSE s.time_mask
+           ELSE 'x' || printf('%x', s.time_mask)
          END AS timeMask,
          o.time_code AS timeCode, o.value, o.numeric_value AS numericValue,
          o.annotation, o.status`;
 const seriesRowsStatement = db.prepare(
-  ONLY_DATASET_ID
+  ONLY_DATASET_IDS.length > 0
     ? `${seriesProjection}
          FROM statistical_tables t
               INDEXED BY statistical_tables_dataset_idx
@@ -231,7 +239,7 @@ const seriesRowsStatement = db.prepare(
               INDEXED BY series_table_idx
            ON s.table_id = t.id
          LEFT JOIN observations o ON o.series_id = s.id
-        WHERE t.dataset_id = ?
+        WHERE t.dataset_id IN (${ONLY_DATASET_IDS.map(() => "?").join(", ")})
         ORDER BY s.id, o.time_code`
     : `${seriesProjection}
          FROM series s
@@ -249,8 +257,8 @@ for (const table of tables) {
   }));
   const metaPath = `tables/${table.id}/meta.json.gz`;
   if (
-    ONLY_DATASET_ID &&
-    table.datasetId !== ONLY_DATASET_ID &&
+    ONLY_DATASET_IDS.length > 0 &&
+    !ONLY_DATASET_IDS.includes(table.datasetId) &&
     existsSync(resolve(BUILD_DIR, metaPath))
   ) {
     tableIndex.push({
@@ -361,8 +369,8 @@ function flushPrefix() {
   }
 }
 
-const seriesRows = ONLY_DATASET_ID
-  ? seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH, ONLY_DATASET_ID)
+const seriesRows = ONLY_DATASET_IDS.length > 0
+  ? seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH, ...ONLY_DATASET_IDS)
   : seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH);
 for (const row of seriesRows) {
   if (row.prefix !== currentPrefix) {
@@ -396,7 +404,7 @@ const generatedAt = new Date().toISOString();
 writeJson("catalog.json", {
   schemaVersion: 2,
   generatedAt,
-  source: "estat-api-normalized-sqlite",
+  source: "estat-normalized-sqlite",
   datasets,
   tables: tableIndex,
   sources,
@@ -414,7 +422,7 @@ if (EXTERNAL_SHARD_DIR) {
 process.stdout.write(
   `system pages data: ${OUTPUT_DIR}\n` +
     `series shards: ${SHARD_OUTPUT_DIR}\n` +
-    `updated dataset: ${ONLY_DATASET_ID || "all"}\n` +
+    `updated dataset: ${ONLY_DATASET_IDS.join(",") || "all"}\n` +
     `tables: ${tableIndex.length}\n` +
     `series bundles: ${bundleCount}\n`,
 );

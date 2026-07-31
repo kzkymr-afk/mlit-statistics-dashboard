@@ -139,13 +139,64 @@ type SelectedSeries = {
 const COLORS = ["#2367d1", "#0f8c72", "#d17a17", "#7459c6", "#c14953"];
 const DEFAULT_TABLE_IDS: Record<string, string> = {
   "building-starts": "0003119773",
+  "building-starts-monthly": "0003119745",
   "orders-major50": "0003126300",
+  "orders-major50-monthly": "0003126275",
   renovation: "0003360953",
+  "construction-output": "0003458439",
+  "construction-deflator": "0004055083",
+  "construction-investment": "0004030738",
+  "construction-work": "0004016760",
+  "construction-labor": "excel-00600050-national-shortage",
+  "construction-materials": "excel-00600060-prefecture-index",
+  "building-stock": "excel-00600940-private-national",
 };
 const DATASET_ORDER = [
   "building-starts",
+  "building-starts-monthly",
   "orders-major50",
+  "orders-major50-monthly",
   "renovation",
+  "construction-investment",
+  "construction-output",
+  "construction-work",
+  "construction-deflator",
+  "construction-labor",
+  "construction-materials",
+  "building-stock",
+];
+const DATASET_GROUPS = [
+  {
+    id: "demand",
+    title: "需要・受注",
+    datasetIds: [
+      "building-starts",
+      "building-starts-monthly",
+      "orders-major50",
+      "orders-major50-monthly",
+      "renovation",
+      "construction-investment",
+    ],
+  },
+  {
+    id: "production",
+    title: "出来高・業界",
+    datasetIds: ["construction-output", "construction-work"],
+  },
+  {
+    id: "supply",
+    title: "コスト・供給",
+    datasetIds: [
+      "construction-deflator",
+      "construction-labor",
+      "construction-materials",
+    ],
+  },
+  {
+    id: "stock",
+    title: "建築ストック",
+    datasetIds: ["building-stock"],
+  },
 ];
 const MAX_JSON_CACHE_ENTRIES = 10;
 const jsonCache = new Map<string, Promise<unknown>>();
@@ -852,6 +903,25 @@ export default function StatisticsSystemWorkbench() {
       ),
     [selectedSeries],
   );
+  const availableDatasets = (
+    catalog?.datasets ?? [
+      { id: "building-starts", title: "建築着工統計" },
+      { id: "building-starts-monthly", title: "建築着工統計（月次主要系列）" },
+      { id: "orders-major50", title: "受注動態（大手50社）" },
+      { id: "orders-major50-monthly", title: "受注動態・大手50社（月次）" },
+      { id: "renovation", title: "建築物リフォーム・リニューアル調査" },
+      { id: "construction-investment", title: "建設投資見通し" },
+      { id: "construction-output", title: "建設総合統計（出来高・手持ち）" },
+      { id: "construction-work", title: "建設工事施工統計調査" },
+      { id: "construction-deflator", title: "建設工事費デフレーター" },
+      { id: "construction-labor", title: "建設労働需給調査" },
+      { id: "construction-materials", title: "主要建設資材需給・価格動向調査" },
+      { id: "building-stock", title: "建築物ストック統計" },
+    ]
+  ).toSorted(
+    (left, right) =>
+      DATASET_ORDER.indexOf(left.id) - DATASET_ORDER.indexOf(right.id),
+  );
 
   return (
     <div className="system-shell">
@@ -864,40 +934,43 @@ export default function StatisticsSystemWorkbench() {
           </div>
         </div>
         <nav aria-label="統計の選択">
-          {(catalog?.datasets ?? [
-            { id: "building-starts", title: "建築着工統計" },
-            { id: "orders-major50", title: "受注動態（大手50社）" },
-            {
-              id: "renovation",
-              title: "建築物リフォーム・リニューアル調査",
-            },
-          ])
-            .toSorted(
-              (left, right) =>
-                DATASET_ORDER.indexOf(left.id) -
-                DATASET_ORDER.indexOf(right.id),
-            )
-            .map((dataset, index) => (
-            <button
-              type="button"
-              key={dataset.id}
-              className={datasetId === dataset.id ? "active" : ""}
-              onClick={() => {
-                setDatasetId(dataset.id);
-                setTableSearch("");
-                setLoadingMeta(true);
-              }}
-            >
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              {dataset.title}
-            </button>
-            ))}
+          {DATASET_GROUPS.map((group) => {
+            const datasets = availableDatasets.filter((dataset) =>
+              group.datasetIds.includes(dataset.id),
+            );
+            if (datasets.length === 0) return null;
+            return (
+              <div className="system-nav-group" key={group.id}>
+                <small>{group.title}</small>
+                {datasets.map((dataset) => (
+                  <button
+                    type="button"
+                    key={dataset.id}
+                    className={datasetId === dataset.id ? "active" : ""}
+                    onClick={() => {
+                      setDatasetId(dataset.id);
+                      setTableSearch("");
+                      setLoadingMeta(true);
+                    }}
+                  >
+                    <span>
+                      {String(DATASET_ORDER.indexOf(dataset.id) + 1).padStart(
+                        2,
+                        "0",
+                      )}
+                    </span>
+                    {dataset.title}
+                  </button>
+                ))}
+              </div>
+            );
+          })}
         </nav>
         <div className="system-status">
           <i className={catalog ? "ready" : ""} />
           <div>
             <strong>{catalog ? "正規化DB接続済み" : "データ接続待ち"}</strong>
-            <small>e-Stat DB/API 主系</small>
+            <small>e-Stat DB/API 主系 · Excel補完</small>
           </div>
         </div>
       </aside>
@@ -995,7 +1068,7 @@ export default function StatisticsSystemWorkbench() {
               </div>
               {meta ? (
                 <a href={meta.table.sourceUrl} target="_blank" rel="noreferrer">
-                  e-Stat原典
+                  公式原典
                 </a>
               ) : null}
             </div>
