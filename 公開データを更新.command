@@ -21,6 +21,7 @@ npm run sync:estat-api:resume
 echo "2/5 Excel補完原本の更新確認"
 npm run sync:building-annual
 npm run sync:orders-major50-annual
+npm run sync:estat-excel
 
 echo "3/5 項目レジストリと分割データを生成・検証"
 npm run data:publish-system

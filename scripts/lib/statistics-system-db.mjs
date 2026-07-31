@@ -191,14 +191,23 @@ export function upsertDataset(db, dataset) {
   );
 }
 
-export function upsertStatisticalTable(db, datasetId, table, fetchedAt) {
-  const sourceUrl = `https://www.e-stat.go.jp/dbview?sid=${encodeURIComponent(table.id)}`;
+export function upsertStatisticalTable(
+  db,
+  datasetId,
+  table,
+  fetchedAt,
+  {
+    sourceKind = "estat-api",
+    sourceUrl = `https://www.e-stat.go.jp/dbview?sid=${encodeURIComponent(table.id)}`,
+    registryStatus = "discovered",
+  } = {},
+) {
   db.prepare(
     `INSERT INTO statistical_tables (
        id, dataset_id, title, statistics_name, cycle, survey_date,
        open_date, updated_date, total_number, source_kind, source_url,
        registry_status, fetched_at
-     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, 'estat-api', ?, 'discovered', ?)
+     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT(id) DO UPDATE SET
        dataset_id = excluded.dataset_id,
        title = excluded.title,
@@ -208,7 +217,9 @@ export function upsertStatisticalTable(db, datasetId, table, fetchedAt) {
        open_date = excluded.open_date,
        updated_date = excluded.updated_date,
        total_number = excluded.total_number,
+       source_kind = excluded.source_kind,
        source_url = excluded.source_url,
+       registry_status = excluded.registry_status,
        fetched_at = excluded.fetched_at`,
   ).run(
     table.id,
@@ -220,7 +231,9 @@ export function upsertStatisticalTable(db, datasetId, table, fetchedAt) {
     table.openDate || null,
     table.updatedDate || null,
     table.overallTotalNumber || null,
+    sourceKind,
     sourceUrl,
+    registryStatus,
     fetchedAt,
   );
 }
@@ -278,17 +291,39 @@ export function replaceDimensions(db, tableId, dimensions) {
 
 export function upsertObservationSource(
   db,
-  { id, tableId, sourceUrl, publishedAt, retrievedAt },
+  {
+    id,
+    tableId,
+    sourceUrl,
+    publishedAt,
+    retrievedAt,
+    sourceKind = "estat-api",
+    localPath = null,
+    sha256 = null,
+  },
 ) {
   db.prepare(
     `INSERT INTO observation_sources (
-       id, source_kind, table_id, source_url, published_at, retrieved_at
-     ) VALUES (?, 'estat-api', ?, ?, ?, ?)
+       id, source_kind, table_id, source_url, local_path, sha256,
+       published_at, retrieved_at
+     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT(id) DO UPDATE SET
+       source_kind = excluded.source_kind,
        source_url = excluded.source_url,
+       local_path = excluded.local_path,
+       sha256 = excluded.sha256,
        published_at = excluded.published_at,
        retrieved_at = excluded.retrieved_at`,
-  ).run(id, tableId, sourceUrl, publishedAt || null, retrievedAt);
+  ).run(
+    id,
+    sourceKind,
+    tableId,
+    sourceUrl,
+    localPath,
+    sha256,
+    publishedAt || null,
+    retrievedAt,
+  );
 }
 
 export function makeObservationWriter(
@@ -486,7 +521,7 @@ export function makeObservationWriter(
           observation.unit || null,
           observation.annotation || null,
           observation.status,
-          sourceId,
+          observation.sourceId || sourceId,
           fetchedAt,
         );
       }

@@ -5,14 +5,16 @@
 
 ## 現在の状態
 
-2026年7月31日時点で、e-Stat DB/APIから2013年度以降を取得し、
-正規化SQLiteへ格納済みです。
+2026年7月31日時点で、e-Stat DB/APIを主系、APIにDB表がない統計の
+公式Excelを補完系として、2013年・2013年度以降を正規化SQLiteへ
+格納済みです。
 
-- 統計表: 156表（建築着工106表、大手50社7表、リニューアル43表）
-- 公式分類の組み合わせ: 17,746,972系列
-- 2013年度以降の公表値: 184,160,237件
-- 正規化SQLite: 約28GB
-- 取得済み公式API原本: 約27GB
+- 統計カテゴリ: 12（需要・受注、出来高、業界、コスト、供給、ストック）
+- 統計表: 225表
+- 公式分類の組み合わせ: 17,761,564系列
+- 2013年・2013年度以降の公表値: 185,481,872件
+- 正規化SQLite: 約29GB
+- GitHub Pages用の圧縮データ: 約501MB
 
 公表された数値の0は、年度マスクと組み合わせて欠測と区別しながら
 暗黙保持します。このため、SQLiteの観測値行は非0・欠測・秘匿・
@@ -59,14 +61,41 @@ data/
 
 ## 収録範囲
 
-- 統計: 建築着工統計調査・建築物着工統計
-- 統計: 建設工事受注動態統計調査・大手50社
-- 統計: 建築物リフォーム・リニューアル調査
-- 周期: 年次・年度次・四半期
+### 需要・受注
+
+- 建築着工統計調査・建築物着工統計（年次全106表、月次主要22表）
+- 建設工事受注動態統計調査・大手50社（年次7表、月次14表）
+- 建築物リフォーム・リニューアル調査（年度次・四半期43表）
+- 建設投資見通し（全国・地域別の最新長期時系列2表）
+
+### 出来高・業界
+
+- 建設総合統計（出来高・手持ちの主要7表）
+- 建設工事施工統計調査（完成工事高・就業者・受注高・付加価値・原価の17表）
+
+### コスト・供給
+
+- 建設工事費デフレーター（現行2020年度基準の月次・四半期・年度次3表）
+- 建設労働需給調査（10職種の全国過不足率・月次、Excel補完）
+- 主要建設資材需給・価格動向調査（都道府県別の価格・需給・在庫、Excel補完）
+
+### 建築ストック
+
+- 建築物ストック統計（住宅、法人等非住宅、公共非住宅、Excel補完）
+
+### 共通条件
+
+- 周期: 月次・四半期・年次・年度次
 - 時点: 2013年・2013年度以降
 - 主系: e-Stat DB/APIの統計表、公式分類、全観測値
-- 補完原本: e-Stat掲載の年度次Excel
+- 補完原本: e-Stat掲載の公式Excel
 - 出典: 統計表ID、公式URL、公表・取得日時、単位、注釈
+
+建築着工の月次DB全59表は、2013年以降だけでも約6.8億観測となり
+GitHub Pagesの公開容量を超えるため、全国・都道府県・用途・構造・
+建築主・民間非居住・季節調整など、営業・経営で継続比較する22表を
+統計表レジストリで明示選定しています。追加したい表はIDを同じ
+レジストリへ登録する方式です。
 
 ## データ取得
 
@@ -76,6 +105,13 @@ data/
 - e-Stat掲載一覧: https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600120&tstat=000001016965&cycle=8&tclass1val=0
 - 大手50社: https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600130&tstat=000001015811&cycle=8&tclass1=000001015812&tclass2val=0
 - リニューアル: https://www.e-stat.go.jp/stat-search/files?toukei=00600900&tstat=000001031111
+- 建設総合統計: https://www.e-stat.go.jp/stat-search?toukei=00600260
+- 建設工事費デフレーター: https://www.e-stat.go.jp/stat-search?toukei=00600270
+- 建設投資見通し: https://www.e-stat.go.jp/stat-search/database?toukei=00600870
+- 建設工事施工統計調査: https://www.e-stat.go.jp/stat-search/database?toukei=00600130&tstat=000001015810
+- 建設労働需給調査: https://www.e-stat.go.jp/stat-search/files?toukei=00600050
+- 主要建設資材需給・価格動向調査: https://www.e-stat.go.jp/stat-search/files?toukei=00600060
+- 建築物ストック統計: https://www.e-stat.go.jp/statistics/00600940
 
 建築物着工統計の年度次Excelを2013年度以降まとめて取得する場合は、
 `npm run sync:building-annual` を使います。原本は
@@ -91,6 +127,11 @@ data/
 `data/raw/api/renovation/`へ保存します。100時点を超える月別時間軸は
 可変長マスクで保持し、0と欠測を区別します。公開データだけを差分生成する場合は
 `npm run data:publish-system:renovation`を使います。
+
+経営・営業向けの追加統計は、DB表を
+`npm run sync:estat-api:management`、Excel補完統計を
+`npm run sync:estat-excel`で更新します。どちらも同じSQLite構造へ入り、
+画面では取得方式を意識せず同じ表・グラフ・CSV機能で利用できます。
 
 Excel原本と正規化SQLiteはローカルだけに保持します。GitHub Pagesには
 画面、項目レジストリと、系列IDの先頭2桁でデータセットごとに
@@ -133,6 +174,7 @@ https://kzkymr-afk.github.io/mlit-statistics-dashboard/
 ```bash
 npm install
 npm run sync:estat-api:resume
+npm run sync:estat-excel
 npm run data:publish-system
 npm run build:pages
 npm run dev:pages
@@ -154,6 +196,8 @@ Excel補完します。IDはGit、Pages、Releaseには保存しません。
 npm run sync:estat-inventory  # DB統計表と公式分類の棚卸し
 npm run sync:estat-api        # 2013年度以降の数値を正規化DBへ保存
 npm run sync:estat-api:resume # 完了表・取得済みページを再利用して更新
+npm run sync:estat-api:management # 追加した経営・営業向けDB表だけを更新
+npm run sync:estat-excel      # 労務・資材・ストックのExcel補完を更新
 npm run test:system           # 項目・分類・系列・値・出典の経路を検証
 ```
 

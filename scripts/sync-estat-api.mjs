@@ -55,10 +55,13 @@ const tableArgumentIndex = process.argv.indexOf("--table");
 const ONLY_TABLE_ID =
   tableArgumentIndex >= 0 ? process.argv[tableArgumentIndex + 1] : "";
 const datasetArgumentIndex = process.argv.indexOf("--dataset");
-const ONLY_DATASET_ID =
+const ONLY_DATASET_ARGUMENT =
   datasetArgumentIndex >= 0
     ? process.argv[datasetArgumentIndex + 1]
     : "";
+const ONLY_DATASET_IDS = new Set(
+  ONLY_DATASET_ARGUMENT.split(",").map((value) => value.trim()).filter(Boolean),
+);
 
 const targets = [
   {
@@ -95,6 +98,75 @@ const targets = [
     fiscalYearFrom: 2013,
     matches(entry) {
       return /^(年度次|四半期)$/.test(entry.cycle);
+    },
+  },
+  {
+    id: "building-starts-monthly",
+    title: "建築着工統計（月次主要系列）",
+    governmentStatisticsCode: "00600120",
+    providedStatisticsId: "000001016965",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?cycle=1&toukei=00600120&tstat=000001016965",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return entry.cycle === "月次";
+    },
+  },
+  {
+    id: "orders-major50-monthly",
+    title: "受注動態・大手50社（月次）",
+    governmentStatisticsCode: "00600130",
+    providedStatisticsId: "000001015811",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?cycle=1&toukei=00600130&tstat=000001015811",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return entry.cycle === "月次";
+    },
+  },
+  {
+    id: "construction-output",
+    title: "建設総合統計（出来高・手持ち）",
+    governmentStatisticsCode: "00600260",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?toukei=00600260",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return /^(月次|年次|年度次)$/.test(entry.cycle);
+    },
+  },
+  {
+    id: "construction-deflator",
+    title: "建設工事費デフレーター",
+    governmentStatisticsCode: "00600270",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?toukei=00600270",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return /^(月次|四半期|年度次)$/.test(entry.cycle);
+    },
+  },
+  {
+    id: "construction-investment",
+    title: "建設投資見通し",
+    governmentStatisticsCode: "00600870",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?toukei=00600870",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return entry.cycle === "年度次";
+    },
+  },
+  {
+    id: "construction-work",
+    title: "建設工事施工統計調査",
+    governmentStatisticsCode: "00600130",
+    providedStatisticsId: "000001015810",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?toukei=00600130&tstat=000001015810",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return entry.cycle === "年度次";
     },
   },
 ];
@@ -180,7 +252,7 @@ const existingGlobalIndexCount = Number(
 );
 const rebuildGlobalIndexes =
   !RESUME ||
-  !ONLY_DATASET_ID ||
+  ONLY_DATASET_IDS.size === 0 ||
   existingGlobalIndexCount !== requiredGlobalIndexes.length;
 if (rebuildGlobalIndexes) {
   db.exec(`
@@ -304,7 +376,9 @@ function backfillTableTimeMasks({
 
 try {
   for (const target of targets) {
-    if (ONLY_DATASET_ID && target.id !== ONLY_DATASET_ID) continue;
+    if (ONLY_DATASET_IDS.size > 0 && !ONLY_DATASET_IDS.has(target.id)) {
+      continue;
+    }
     upsertDataset(db, target);
     const inventoryResponse = await client.statsList({
       statsCode: target.governmentStatisticsCode,

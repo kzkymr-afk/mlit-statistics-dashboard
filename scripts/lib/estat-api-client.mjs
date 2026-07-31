@@ -8,7 +8,8 @@ function apiError(path, response, body) {
   const status =
     body?.GET_STATS_LIST?.RESULT ??
     body?.GET_META_INFO?.RESULT ??
-    body?.GET_STATS_DATA?.RESULT;
+    body?.GET_STATS_DATA?.RESULT ??
+    body?.GET_DATA_CATALOG?.RESULT;
   const message =
     status?.ERROR_MSG ??
     status?.STATUS ??
@@ -76,7 +77,8 @@ export class EStatApiClient {
         const result =
           body?.GET_STATS_LIST?.RESULT ??
           body?.GET_META_INFO?.RESULT ??
-          body?.GET_STATS_DATA?.RESULT;
+          body?.GET_STATS_DATA?.RESULT ??
+          body?.GET_DATA_CATALOG?.RESULT;
         const status = Number(result?.STATUS ?? 0);
         if (status !== 0) {
           const error = apiError(path, response, body);
@@ -107,6 +109,10 @@ export class EStatApiClient {
       statsDataId,
       explanationGetFlg: "Y",
     });
+  }
+
+  async dataCatalog(parameters) {
+    return this.request("getDataCatalog", parameters);
   }
 
   async statsData(
