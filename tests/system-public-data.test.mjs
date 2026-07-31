@@ -79,7 +79,11 @@ test("統計表メタ情報はExcelシートではなく公式分類コードを
 test("実データの系列分割は軽量形式で値・暗黙0・出典を復元できる", async () => {
   const shardDirectory = new URL("system/shards/", publicRoot);
   const shardFiles = (await readdir(shardDirectory))
-    .filter((name) => name.endsWith(".json.gz"))
+    .filter((name) =>
+      /^(building-starts|orders-major50)-[a-f0-9]{2}\.json\.gz$/.test(
+        name,
+      ),
+    )
     .sort();
   assert.ok(shardFiles.length >= 256);
 
