@@ -1,6 +1,8 @@
 import {
+  constants as fsConstants,
   copyFileSync,
   existsSync,
+  linkSync,
   mkdirSync,
   readFileSync,
   renameSync,
@@ -83,6 +85,18 @@ const targets = [
       return /年/.test(entry.cycle);
     },
   },
+  {
+    id: "renovation",
+    title: "建築物リフォーム・リニューアル調査",
+    governmentStatisticsCode: "00600900",
+    providedStatisticsId: "000001031111",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/files?toukei=00600900&tstat=000001031111",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return /^(年度次|四半期)$/.test(entry.cycle);
+    },
+  },
 ];
 
 if (!APP_ID) {
@@ -142,14 +156,39 @@ function readCachedDataPage(path) {
 
 if (existsSync(BUILD_PATH) && !RESUME) rmSync(BUILD_PATH);
 if (RESUME && !existsSync(BUILD_PATH) && existsSync(DATABASE_PATH)) {
-  copyFileSync(DATABASE_PATH, BUILD_PATH);
+  copyFileSync(
+    DATABASE_PATH,
+    BUILD_PATH,
+    fsConstants.COPYFILE_FICLONE,
+  );
 }
 const db = openStatisticsDatabase(BUILD_PATH);
-db.exec(`
-  DROP INDEX IF EXISTS observations_time_idx;
-  DROP INDEX IF EXISTS series_label_idx;
-  DROP INDEX IF EXISTS series_dimensions_value_idx;
-`);
+const requiredGlobalIndexes = [
+  "observations_time_idx",
+  "series_label_idx",
+  "series_dimensions_value_idx",
+];
+const existingGlobalIndexCount = Number(
+  db
+    .prepare(
+      `SELECT COUNT(*) AS count
+         FROM sqlite_master
+        WHERE type = 'index'
+          AND name IN (?, ?, ?)`,
+    )
+    .get(...requiredGlobalIndexes)?.count ?? 0,
+);
+const rebuildGlobalIndexes =
+  !RESUME ||
+  !ONLY_DATASET_ID ||
+  existingGlobalIndexCount !== requiredGlobalIndexes.length;
+if (rebuildGlobalIndexes) {
+  db.exec(`
+    DROP INDEX IF EXISTS observations_time_idx;
+    DROP INDEX IF EXISTS series_label_idx;
+    DROP INDEX IF EXISTS series_dimensions_value_idx;
+  `);
+}
 const client = new EStatApiClient({ appId: APP_ID });
 const runId = randomUUID();
 const startedAt = new Date().toISOString();
@@ -213,6 +252,7 @@ function backfillTableTimeMasks({
   db.prepare(
     `UPDATE series
         SET time_mask = 0,
+            time_mask_text = NULL,
             observation_count = 0,
             first_time_code = NULL,
             last_time_code = NULL
@@ -386,7 +426,9 @@ try {
               .prepare(
                 `SELECT COUNT(*) AS count
                    FROM series
-                  WHERE table_id = ? AND time_mask = 0`,
+                  WHERE table_id = ?
+                    AND time_mask = 0
+                    AND time_mask_text IS NULL`,
               )
               .get(table.id)?.count ?? 0,
           );
@@ -456,7 +498,12 @@ try {
           }
         }
 
-        const timeFilter = { cdTime: allowedTimeCodes.join(",") };
+        // e-StatのcdTimeは100コードまで。100時点を超える表は
+        // 表全体を取得し、正規化時に2013年度以降へ絞り込む。
+        const timeFilter =
+          allowedTimeCodes.length <= 100
+            ? { cdTime: allowedTimeCodes.join(",") }
+            : {};
         const seriesCache = { identity: "", seriesId: "" };
         const processDataPage = (
           dataResponse,
@@ -657,19 +704,31 @@ try {
             table_count = ?, observation_count = ?
       WHERE id = ?`,
   ).run(new Date().toISOString(), tableCount, observationCount, runId);
-  db.exec(`
-    CREATE INDEX IF NOT EXISTS observations_time_idx
-      ON observations(time_code);
-    CREATE INDEX IF NOT EXISTS series_label_idx
-      ON series(label);
-    CREATE INDEX IF NOT EXISTS series_dimensions_value_idx
-      ON series_dimensions(dimension_id, value_code);
-  `);
+  if (rebuildGlobalIndexes) {
+    db.exec(`
+      CREATE INDEX IF NOT EXISTS observations_time_idx
+        ON observations(time_code);
+      CREATE INDEX IF NOT EXISTS series_label_idx
+        ON series(label);
+      CREATE INDEX IF NOT EXISTS series_dimensions_value_idx
+        ON series_dimensions(dimension_id, value_code);
+    `);
+  }
   db.exec("PRAGMA optimize");
   db.close();
 
   if (existsSync(DATABASE_PATH)) {
-    copyFileSync(DATABASE_PATH, `${DATABASE_PATH}.previous`);
+    const previousPath = `${DATABASE_PATH}.previous`;
+    const pendingPreviousPath = `${previousPath}.${runId}.linking`;
+    try {
+      linkSync(DATABASE_PATH, pendingPreviousPath);
+      renameSync(pendingPreviousPath, previousPath);
+    } catch {
+      if (existsSync(pendingPreviousPath)) {
+        rmSync(pendingPreviousPath);
+      }
+      copyFileSync(DATABASE_PATH, previousPath);
+    }
   }
   renameSync(BUILD_PATH, DATABASE_PATH);
   process.stdout.write(

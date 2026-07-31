@@ -8,15 +8,15 @@
 2026年7月31日時点で、e-Stat DB/APIから2013年度以降を取得し、
 正規化SQLiteへ格納済みです。
 
-- 統計表: 113表（建築着工106表、大手50社7表）
-- 公式分類の組み合わせ: 17,738,304系列
-- 2013年度以降の公表値: 184,037,295件
+- 統計表: 156表（建築着工106表、大手50社7表、リニューアル43表）
+- 公式分類の組み合わせ: 17,746,972系列
+- 2013年度以降の公表値: 184,160,237件
 - 正規化SQLite: 約28GB
 - 取得済み公式API原本: 約27GB
 
 公表された数値の0は、年度マスクと組み合わせて欠測と区別しながら
 暗黙保持します。このため、SQLiteの観測値行は非0・欠測・秘匿・
-注記付きの42,976,170行に抑え、画面では元の184,037,295件を復元します。
+注記付きの43,078,077行に抑え、画面では元の184,160,237件を復元します。
 
 旧公開版のExcel原本ビュー、取得台帳、SHA-256は原典確認用に残しますが、
 シートやセルを選ぶ操作と、そのための`sheet_payloads` /
@@ -61,7 +61,8 @@ data/
 
 - 統計: 建築着工統計調査・建築物着工統計
 - 統計: 建設工事受注動態統計調査・大手50社
-- 周期: 年次・年度次
+- 統計: 建築物リフォーム・リニューアル調査
+- 周期: 年次・年度次・四半期
 - 時点: 2013年・2013年度以降
 - 主系: e-Stat DB/APIの統計表、公式分類、全観測値
 - 補完原本: e-Stat掲載の年度次Excel
@@ -74,6 +75,7 @@ data/
 
 - e-Stat掲載一覧: https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600120&tstat=000001016965&cycle=8&tclass1val=0
 - 大手50社: https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00600130&tstat=000001015811&cycle=8&tclass1=000001015812&tclass2val=0
+- リニューアル: https://www.e-stat.go.jp/stat-search/files?toukei=00600900&tstat=000001031111
 
 建築物着工統計の年度次Excelを2013年度以降まとめて取得する場合は、
 `npm run sync:building-annual` を使います。原本は
@@ -84,6 +86,11 @@ data/
 `npm run sync:orders-major50-annual` を使います。原本は
 `data/raw/construction-orders-major-50/annual/`、収集台帳は
 `data/catalogs/orders-major50-annual.json` に保存します。
+
+リニューアル調査はe-Stat DB/APIの年度次・四半期43表を主系として
+`data/raw/api/renovation/`へ保存します。100時点を超える月別時間軸は
+可変長マスクで保持し、0と欠測を区別します。公開データだけを差分生成する場合は
+`npm run data:publish-system:renovation`を使います。
 
 Excel原本と正規化SQLiteはローカルだけに保持します。GitHub Pagesには
 画面、項目レジストリと、系列IDの先頭2桁でデータセットごとに

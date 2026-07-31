@@ -99,7 +99,7 @@ type BundlePoint = [
 
 type CompactBundleSeries = [
   unit: string | null,
-  timeMask: number,
+  timeMask: number | string,
   points: BundlePoint[],
 ];
 
@@ -120,7 +120,7 @@ type SelectedSeries = {
   coordinates: Record<string, string>;
   label: string;
   unit: string | null;
-  timeMask: number;
+  timeMask: number | string;
   points: ObservationPoint[];
   chartKind: ChartKind;
   axis: ChartAxis;
@@ -140,7 +140,13 @@ const COLORS = ["#2367d1", "#0f8c72", "#d17a17", "#7459c6", "#c14953"];
 const DEFAULT_TABLE_IDS: Record<string, string> = {
   "building-starts": "0003119773",
   "orders-major50": "0003126300",
+  renovation: "0003360953",
 };
+const DATASET_ORDER = [
+  "building-starts",
+  "orders-major50",
+  "renovation",
+];
 const MAX_JSON_CACHE_ENTRIES = 10;
 const jsonCache = new Map<string, Promise<unknown>>();
 
@@ -222,6 +228,16 @@ function defaultDimensionValue(dimension: Dimension) {
 
 function timeLabel(value: DimensionValue) {
   return value.name || value.code;
+}
+
+function timeMaskIncludes(timeMask: number | string, index: number) {
+  const normalizedMask =
+    typeof timeMask === "string"
+      ? BigInt(`0x${timeMask.replace(/^x/, "")}`)
+      : BigInt(timeMask);
+  return (
+    (normalizedMask & (BigInt(1) << BigInt(index))) !== BigInt(0)
+  );
 }
 
 function DimensionPicker({
@@ -749,7 +765,7 @@ export default function StatisticsSystemWorkbench() {
         .map((item, index) => ({ item, index }))
         .filter(
           ({ item, index }) =>
-            (seriesTimeMask & 2 ** index) !== 0 &&
+            timeMaskIncludes(seriesTimeMask, index) &&
             (!timeFrom || item.code >= timeFrom) &&
             (!timeTo || item.code <= timeTo),
         )
@@ -851,7 +867,17 @@ export default function StatisticsSystemWorkbench() {
           {(catalog?.datasets ?? [
             { id: "building-starts", title: "建築着工統計" },
             { id: "orders-major50", title: "受注動態（大手50社）" },
-          ]).map((dataset) => (
+            {
+              id: "renovation",
+              title: "建築物リフォーム・リニューアル調査",
+            },
+          ])
+            .toSorted(
+              (left, right) =>
+                DATASET_ORDER.indexOf(left.id) -
+                DATASET_ORDER.indexOf(right.id),
+            )
+            .map((dataset, index) => (
             <button
               type="button"
               key={dataset.id}
@@ -862,10 +888,10 @@ export default function StatisticsSystemWorkbench() {
                 setLoadingMeta(true);
               }}
             >
-              <span>{dataset.id === "building-starts" ? "01" : "02"}</span>
+              <span>{String(index + 1).padStart(2, "0")}</span>
               {dataset.title}
             </button>
-          ))}
+            ))}
         </nav>
         <div className="system-status">
           <i className={catalog ? "ready" : ""} />
