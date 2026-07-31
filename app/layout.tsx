@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "建設統計・年度データ | 国交省統計パネル";
+const title = "国交省統計システム | 必要な項目を表・グラフ・CSVへ";
 const description =
-  "建築物着工統計と受注動態（大手50社）の2013年度以降を、表・折れ線・棒・左右2軸で比較。";
+  "建築着工統計と受注動態（大手50社）を、e-Statの公式分類コードで選び、2013年度以降の表・折れ線・棒・左右2軸・CSVへ出力。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -29,13 +29,11 @@ export const metadata: Metadata = {
     description,
     type: "website",
     locale: "ja_JP",
-    images: [{ url: "og.png", width: 1200, height: 630 }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description,
-    images: ["og.png"],
   },
 };
 

@@ -6,17 +6,19 @@ async function render() {
   return readFile(new URL("../out/index.html", import.meta.url), "utf8");
 }
 
-test("建築着工統計の年度データ画面をサーバーレンダリングする", async () => {
+test("統計項目と分類条件を選ぶシステム画面をサーバーレンダリングする", async () => {
   const html = await render();
   assert.match(html, /<html lang="ja">/);
   assert.match(html, /建築着工統計/);
-  assert.match(html, /年度データ/);
   assert.match(html, /受注動態（大手50社）/);
-  assert.match(html, /必要な表を開いて/);
-  assert.match(html, /2013–2025年度/);
-  assert.match(html, /折れ線／棒、左軸／右軸/);
+  assert.match(html, /必要な統計項目だけを取り出す/);
+  assert.match(html, /統計表レジストリ/);
+  assert.match(html, /分類条件を指定/);
+  assert.match(html, /表・グラフ・CSV/);
+  assert.match(html, /折れ線／棒と左右2軸/);
   assert.match(html, /CSV出力/);
-  assert.match(html, /e-Statの公式一覧を開く/);
+  assert.match(html, /e-Stat DB\/API 主系/);
+  assert.doesNotMatch(html, /シート|数値セルをクリック/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 

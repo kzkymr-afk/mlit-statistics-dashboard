@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "datasets": {
+    "building-starts": {
+      "selectionMode": "annual-cycle",
+      "tableIds": [],
+      "status": "official-code-filter",
+      "note": "政府統計コード00600120の年次・年度次DB統計表を対象にする。"
+    },
+    "orders-major50": {
+      "selectionMode": "explicit-table-registry",
+      "tableIds": [
+        "0003126247",
+        "0003126248",
+        "0003126265",
+        "0003126266",
+        "0003126281",
+        "0003126300",
+        "0003126301"
+      ],
+      "status": "confirmed",
+      "note": "e-Statの提供分類「大手50社」配下にある年度次DB統計表。タイトルだけでは大手50社を識別できないため、統計表IDを明示管理する。"
+    }
+  }
+}

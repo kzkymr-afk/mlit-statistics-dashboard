@@ -8,7 +8,7 @@
 | `catalogs/` | アプリが読み込む収集台帳・項目定義 | 対象 |
 | `raw/` | 公式APIレスポンス、取得したExcelなどの原本 | 対象外 |
 | `normalized/` | 統計横断で扱える共通形式へ整形したJSON・CSV・Parquet | 対象外 |
-| `database/` | ローカルSQLite、更新用DB、索引 | 対象外 |
+| `database/` | 正規化SQLite、更新用DB、索引 | 対象外 |
 | `snapshots/` | 取得失敗時にも画面表示できる配布用スナップショット | 対象 |
 | `exports/` | 利用者が画面から出力したCSV・Excel | 対象外 |
 | `cache/` | 再取得・再生成できる一時ファイル | 対象外 |
@@ -25,11 +25,20 @@
 - 公表・改訂年月
 - 原本のファイル名または取得識別子
 
+正本は `database/mlit-statistics-system.sqlite` です。統計表、公式分類コード、
+系列、年度別観測値、単位、注釈、出典を別テーブルで保持します。
+`database/mlit-statistics.sqlite` は旧Excelビュー用で、正本ではありません。
+
+2026年7月31日時点の正本は、113統計表、17,738,304系列、
+2013年度以降184,037,295件の公表値を収録しています。数値の0は
+欠測と区別できる年度マスクで暗黙保持し、非0・欠測・秘匿・注記付きの
+42,976,170行だけを `observations` に保存します。
+
 `raw/`、`normalized/`、`database/` は運用データなので、GitHubではなく
-Businessフォルダを対象にしたバックアップで保護します。最新版の
-SQLite圧縮版だけは、Pages再構築用としてGitHub Releaseの
-`data-current` に保存します。GitHub側で大型SQLiteを毎回再解析しない
-ため、生成済み `pages-data.tar` も同じReleaseへ保存します。
+Businessフォルダを対象にしたバックアップで保護します。SQLite本体は
+GitHubへアップロードしません。公開用に生成した項目レジストリと
+系列ID先頭2桁で分割した圧縮観測値だけをPages用アーカイブとして、GitHub Releaseの
+`data-current` に保存します。
 
 ## 現在の原本
 
@@ -37,5 +46,6 @@ SQLite圧縮版だけは、Pages再構築用としてGitHub Releaseの
 - `raw/construction-orders-major-50/annual/<年度>/` — 受注動態（大手50社）
 
 対応する収集台帳は `catalogs/` に保存します。公開アプリには原本を
-同梱せず、SQLiteから生成した80行単位の表・検索索引・年度系列束だけを
-`public/data/` 経由で配布します。
+同梱せず、正規化SQLiteから項目レジストリ、分類候補、系列の年度値を
+`public/system/` へ生成します。
+`public/data/` は旧Excelビュー用です。
