@@ -8,6 +8,8 @@ import {
   useState,
 } from "react";
 
+import { buildAxisScale } from "@/lib/chart-scale.mjs";
+
 type DatasetSummary = {
   id: string;
   title: string;
@@ -112,6 +114,8 @@ type SeriesBundle = {
 
 type ChartKind = "line" | "bar";
 type ChartAxis = "left" | "right";
+type AxisSettingKey = "min" | "max" | "step";
+type AxisSettings = Record<AxisSettingKey, string>;
 
 type SelectedSeries = {
   id: string;
@@ -200,6 +204,13 @@ const DATASET_GROUPS = [
 ];
 const MAX_JSON_CACHE_ENTRIES = 10;
 const jsonCache = new Map<string, Promise<unknown>>();
+
+function emptyAxisSettings(): Record<ChartAxis, AxisSettings> {
+  return {
+    left: { min: "", max: "", step: "" },
+    right: { min: "", max: "", step: "" },
+  };
+}
 
 function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP", {
@@ -363,32 +374,47 @@ function DimensionPicker({
   );
 }
 
-function extent(values: number[], includeZero: boolean) {
-  if (values.length === 0) return { min: 0, max: 1 };
-  let min = Math.min(...values);
-  let max = Math.max(...values);
-  if (includeZero) {
-    min = Math.min(0, min);
-    max = Math.max(0, max);
+function optionalAxisNumber(value: string) {
+  if (!value.trim()) return null;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function resolvedAxisSettings(settings: AxisSettings) {
+  return {
+    min: optionalAxisNumber(settings.min),
+    max: optionalAxisNumber(settings.max),
+    step: optionalAxisNumber(settings.step),
+  };
+}
+
+function axisSettingsError(settings: AxisSettings) {
+  const { min, max, step } = resolvedAxisSettings(settings);
+  if (min !== null && max !== null && min >= max) {
+    return "最大値は最小値より大きくしてください。";
   }
-  if (min === max) {
-    const padding = Math.abs(min || 1) * 0.1;
-    min -= padding;
-    max += padding;
-  } else {
-    const padding = (max - min) * 0.08;
-    min -= padding;
-    max += padding;
+  if (step !== null && step <= 0) {
+    return "目盛間隔は0より大きい数値にしてください。";
   }
-  return { min, max };
+  if (
+    min !== null &&
+    max !== null &&
+    step !== null &&
+    (max - min) / step > 50
+  ) {
+    return "目盛りが多すぎます。間隔を大きくしてください。";
+  }
+  return "";
 }
 
 function SystemChart({
   series,
   timeLabels,
+  axisSettings,
 }: {
   series: SelectedSeries[];
   timeLabels: Map<string, string>;
+  axisSettings: Record<ChartAxis, AxisSettings>;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -426,20 +452,32 @@ function SystemChart({
               .map((point) => point.numericValue)
               .filter((value): value is number => value !== null),
           );
-      const leftExtent = extent(
+      const leftScale = buildAxisScale(
         valuesFor("left"),
-        series.some((item) => item.axis === "left" && item.chartKind === "bar"),
+        {
+          includeZero: series.some(
+            (item) => item.axis === "left" && item.chartKind === "bar",
+          ),
+          ...resolvedAxisSettings(axisSettings.left),
+        },
       );
-      const rightExtent = extent(
+      const rightScale = buildAxisScale(
         valuesFor("right"),
-        series.some((item) => item.axis === "right" && item.chartKind === "bar"),
+        {
+          includeZero: series.some(
+            (item) => item.axis === "right" && item.chartKind === "bar",
+          ),
+          ...resolvedAxisSettings(axisSettings.right),
+        },
       );
+      const hasLeftAxis = series.some((item) => item.axis === "left");
+      const hasRightAxis = series.some((item) => item.axis === "right");
       const x = (timeCode: string) => {
         const index = times.indexOf(timeCode);
         return plot.left + (width * index) / Math.max(1, times.length - 1);
       };
       const y = (value: number, axis: ChartAxis) => {
-        const range = axis === "left" ? leftExtent : rightExtent;
+        const range = axis === "left" ? leftScale : rightScale;
         return (
           plot.bottom -
           (height * (value - range.min)) / Math.max(1e-9, range.max - range.min)
@@ -449,33 +487,41 @@ function SystemChart({
       context.font =
         '10px "SFMono-Regular", "Hiragino Sans", "Yu Gothic", sans-serif';
       context.lineWidth = 1;
-      for (let tick = 0; tick <= 4; tick += 1) {
-        const lineY = plot.bottom - (height * tick) / 4;
+      const primaryScale = hasLeftAxis ? leftScale : rightScale;
+      const primaryAxis: ChartAxis = hasLeftAxis ? "left" : "right";
+      for (const tick of primaryScale.ticks) {
+        const lineY = y(tick, primaryAxis);
         context.strokeStyle = "#e1e7ef";
         context.beginPath();
         context.moveTo(plot.left, lineY);
         context.lineTo(plot.right, lineY);
         context.stroke();
-        context.fillStyle = "#6c7789";
-        context.textAlign = "right";
-        context.fillText(
-          formatNumber(
-            leftExtent.min +
-              ((leftExtent.max - leftExtent.min) * tick) / 4,
-          ),
-          plot.left - 9,
-          lineY + 3,
-        );
-        if (series.some((item) => item.axis === "right")) {
+      }
+
+      if (hasLeftAxis) {
+        for (const tick of leftScale.ticks) {
+          const lineY = y(tick, "left");
+          context.strokeStyle = "#aeb8c6";
+          context.beginPath();
+          context.moveTo(plot.left - 4, lineY);
+          context.lineTo(plot.left, lineY);
+          context.stroke();
+          context.fillStyle = "#6c7789";
+          context.textAlign = "right";
+          context.fillText(formatNumber(tick), plot.left - 9, lineY + 3);
+        }
+      }
+      if (hasRightAxis) {
+        for (const tick of rightScale.ticks) {
+          const lineY = y(tick, "right");
+          context.strokeStyle = "#aeb8c6";
+          context.beginPath();
+          context.moveTo(plot.right, lineY);
+          context.lineTo(plot.right + 4, lineY);
+          context.stroke();
+          context.fillStyle = "#6c7789";
           context.textAlign = "left";
-          context.fillText(
-            formatNumber(
-              rightExtent.min +
-                ((rightExtent.max - rightExtent.min) * tick) / 4,
-            ),
-            plot.right + 9,
-            lineY + 3,
-          );
+          context.fillText(formatNumber(tick), plot.right + 9, lineY + 3);
         }
       }
 
@@ -496,8 +542,15 @@ function SystemChart({
         18,
         width / Math.max(2, times.length) / Math.max(1, bars.length),
       );
+      context.save();
+      context.beginPath();
+      context.rect(plot.left, plot.top, width, height);
+      context.clip();
       bars.forEach((item, itemIndex) => {
-        const zeroY = y(0, item.axis);
+        const zeroY = Math.min(
+          plot.bottom,
+          Math.max(plot.top, y(0, item.axis)),
+        );
         item.points.forEach((point) => {
           if (point.numericValue === null) return;
           const pointY = y(point.numericValue, item.axis);
@@ -548,13 +601,14 @@ function SystemChart({
             context.fill();
           }
         });
+      context.restore();
     };
 
     draw();
     const observer = new ResizeObserver(draw);
     observer.observe(canvas);
     return () => observer.disconnect();
-  }, [series, timeLabels]);
+  }, [axisSettings, series, timeLabels]);
 
   return (
     <canvas
@@ -644,6 +698,8 @@ export default function StatisticsSystemWorkbench() {
   const [timeFrom, setTimeFrom] = useState("");
   const [timeTo, setTimeTo] = useState("");
   const [selectedSeries, setSelectedSeries] = useState<SelectedSeries[]>([]);
+  const [axisSettings, setAxisSettings] =
+    useState<Record<ChartAxis, AxisSettings>>(emptyAxisSettings);
   const [loadingMeta, setLoadingMeta] = useState(false);
   const [addingSeries, setAddingSeries] = useState(false);
   const [message, setMessage] = useState("");
@@ -903,6 +959,55 @@ export default function StatisticsSystemWorkbench() {
       ),
     [selectedSeries],
   );
+  const axisScales = useMemo(() => {
+    const scaleFor = (axis: ChartAxis) =>
+      buildAxisScale(
+        selectedSeries
+          .filter((item) => item.axis === axis)
+          .flatMap((item) =>
+            item.points
+              .map((point) => point.numericValue)
+              .filter((value): value is number => value !== null),
+          ),
+        {
+          includeZero: selectedSeries.some(
+            (item) => item.axis === axis && item.chartKind === "bar",
+          ),
+          ...resolvedAxisSettings(axisSettings[axis]),
+        },
+      );
+    return { left: scaleFor("left"), right: scaleFor("right") };
+  }, [axisSettings, selectedSeries]);
+  const axisUnits = useMemo(
+    () => ({
+      left: [...new Set(
+        selectedSeries
+          .filter((item) => item.axis === "left")
+          .map((item) => item.unit)
+          .filter(Boolean),
+      )].join(" / "),
+      right: [...new Set(
+        selectedSeries
+          .filter((item) => item.axis === "right")
+          .map((item) => item.unit)
+          .filter(Boolean),
+      )].join(" / "),
+    }),
+    [selectedSeries],
+  );
+  const hasCustomAxisSettings = Object.values(axisSettings).some((settings) =>
+    Object.values(settings).some((value) => value.trim()),
+  );
+  const updateAxisSetting = (
+    axis: ChartAxis,
+    key: AxisSettingKey,
+    value: string,
+  ) => {
+    setAxisSettings((current) => ({
+      ...current,
+      [axis]: { ...current[axis], [key]: value },
+    }));
+  };
   const availableDatasets = (
     catalog?.datasets ?? [
       { id: "building-starts", title: "建築着工統計" },
@@ -1210,9 +1315,91 @@ export default function StatisticsSystemWorkbench() {
                   </div>
                 ))}
               </div>
+              <div className="system-axis-settings">
+                <div className="system-axis-heading">
+                  <div>
+                    <strong>Y軸設定</strong>
+                    <small>
+                      空欄は自動。自動時は1・2・5刻みの見やすい目盛りに調整します。
+                    </small>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setAxisSettings(emptyAxisSettings())}
+                    disabled={!hasCustomAxisSettings}
+                  >
+                    自動に戻す
+                  </button>
+                </div>
+                <div className="system-axis-grid">
+                  {(["left", "right"] as const).map((axis) => {
+                    const axisLabel = axis === "left" ? "左軸" : "右軸";
+                    const error = axisSettingsError(axisSettings[axis]);
+                    const scale = axisScales[axis];
+                    const seriesCount = selectedSeries.filter(
+                      (item) => item.axis === axis,
+                    ).length;
+                    return (
+                      <fieldset
+                        key={axis}
+                        className={error ? "invalid" : ""}
+                      >
+                        <legend>
+                          {axisLabel}
+                          <small>
+                            {seriesCount
+                              ? `${seriesCount}系列 · ${axisUnits[axis] || "単位なし"}`
+                              : "系列なし"}
+                          </small>
+                        </legend>
+                        <div className="system-axis-inputs">
+                          {([
+                            ["min", "最小値"],
+                            ["max", "最大値"],
+                            ["step", "目盛間隔"],
+                          ] as const).map(([key, inputLabel]) => (
+                            <label key={key}>
+                              <span>{inputLabel}</span>
+                              <input
+                                type="number"
+                                inputMode="decimal"
+                                step="any"
+                                value={axisSettings[axis][key]}
+                                placeholder="自動"
+                                onChange={(event) =>
+                                  updateAxisSetting(
+                                    axis,
+                                    key,
+                                    event.target.value,
+                                  )
+                                }
+                                aria-label={`${axisLabel}の${inputLabel}`}
+                                aria-invalid={Boolean(error)}
+                              />
+                            </label>
+                          ))}
+                        </div>
+                        {error ? (
+                          <small className="system-axis-error">{error}</small>
+                        ) : seriesCount ? (
+                          <small className="system-axis-preview">
+                            現在: {formatNumber(scale.min)} ～{" "}
+                            {formatNumber(scale.max)}／{formatNumber(scale.step)}刻み
+                          </small>
+                        ) : (
+                          <small className="system-axis-preview">
+                            系列をこの軸に割り当てると反映されます。
+                          </small>
+                        )}
+                      </fieldset>
+                    );
+                  })}
+                </div>
+              </div>
               <SystemChart
                 series={selectedSeries}
                 timeLabels={outputTimeLabels}
+                axisSettings={axisSettings}
               />
             </>
           ) : (
@@ -1220,7 +1407,7 @@ export default function StatisticsSystemWorkbench() {
               <span>QUERY → SERIES</span>
               <strong>分類条件を選び、「この系列を追加」</strong>
               <p>
-                最大5系列まで。折れ線／棒と左右2軸を系列ごとに指定できます。
+                最大5系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
               </p>
             </div>
           )}

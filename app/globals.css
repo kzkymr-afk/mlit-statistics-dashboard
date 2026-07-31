@@ -1649,6 +1649,135 @@ select:focus-visible {
   cursor: pointer;
 }
 
+.system-axis-settings {
+  background: #f8fafc;
+  border: 1px solid #e3e8ef;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  padding: 12px;
+}
+
+.system-axis-heading {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.system-axis-heading > div {
+  display: grid;
+  gap: 2px;
+}
+
+.system-axis-heading strong {
+  font-size: 10px;
+}
+
+.system-axis-heading small,
+.system-axis-preview {
+  color: var(--system-muted);
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.system-axis-heading button {
+  background: white;
+  border: 1px solid var(--system-border);
+  border-radius: 6px;
+  color: var(--system-blue);
+  cursor: pointer;
+  font: inherit;
+  font-size: 8px;
+  min-height: 28px;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.system-axis-heading button:disabled {
+  color: #9aa4b2;
+  cursor: default;
+  opacity: 0.65;
+}
+
+.system-axis-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.system-axis-grid fieldset {
+  border: 1px solid #dce3ec;
+  border-radius: 7px;
+  margin: 0;
+  min-width: 0;
+  padding: 8px 9px 9px;
+}
+
+.system-axis-grid fieldset.invalid {
+  border-color: #c96c73;
+}
+
+.system-axis-grid legend {
+  align-items: baseline;
+  display: flex;
+  font-size: 9px;
+  font-weight: 800;
+  gap: 7px;
+  padding: 0 4px;
+}
+
+.system-axis-grid legend small {
+  color: var(--system-muted);
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.system-axis-inputs {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.system-axis-inputs label {
+  display: grid;
+  gap: 4px;
+}
+
+.system-axis-inputs label span {
+  color: #5d6878;
+  font-size: 8px;
+}
+
+.system-axis-inputs input {
+  background: white;
+  border: 1px solid var(--system-border);
+  border-radius: 6px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 9px;
+  min-height: 30px;
+  min-width: 0;
+  padding: 0 7px;
+  width: 100%;
+}
+
+.system-axis-inputs input:focus {
+  border-color: var(--system-blue);
+  outline: 2px solid rgba(35, 103, 209, 0.12);
+}
+
+.system-axis-preview,
+.system-axis-error {
+  display: block;
+  margin-top: 7px;
+}
+
+.system-axis-error {
+  color: #a64049;
+  font-size: 8px;
+}
+
 .system-chart {
   display: block;
   height: 360px;
@@ -1858,6 +1987,10 @@ select:focus-visible {
 
   .system-time-range .system-primary {
     grid-column: 1 / -1;
+  }
+
+  .system-axis-settings {
+    min-width: 660px;
   }
 
   .system-chart {
