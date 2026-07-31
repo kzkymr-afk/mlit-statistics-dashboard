@@ -101,6 +101,7 @@ export function openStatisticsDatabase(path) {
       first_time_code TEXT,
       last_time_code TEXT,
       time_mask INTEGER NOT NULL DEFAULT 0,
+      time_mask_text TEXT,
       observation_count INTEGER NOT NULL DEFAULT 0,
       status TEXT NOT NULL
     ) STRICT;
@@ -157,6 +158,9 @@ export function openStatisticsDatabase(path) {
     db.exec(
       "ALTER TABLE series ADD COLUMN time_mask INTEGER NOT NULL DEFAULT 0",
     );
+  }
+  if (!seriesColumns.includes("time_mask_text")) {
+    db.exec("ALTER TABLE series ADD COLUMN time_mask_text TEXT");
   }
   db.prepare(
     `INSERT INTO system_meta(key, value) VALUES ('schema_version', ?)
@@ -304,13 +308,14 @@ export function makeObservationWriter(
   // 系列・軸情報を書き直さず、観測値だけを保存する。
   let lastSeriesId = "";
   const sortedTimeCodes = [...timeCodes].sort();
+  const usesVariableLengthMask = sortedTimeCodes.length > 62;
   const timeBitByCode = new Map(
     sortedTimeCodes.map((timeCode, index) => [
       timeCode,
-      2 ** index,
+      1n << BigInt(index),
     ]),
   );
-  let currentTimeMask = 0;
+  let currentTimeMask = 0n;
   let currentFirstTimeCode = "";
   let currentLastTimeCode = "";
   const insertSeries = db.prepare(
@@ -325,6 +330,25 @@ export function makeObservationWriter(
   const updateSeriesTimeMask = db.prepare(
     `UPDATE series
         SET time_mask = time_mask | ?,
+            first_time_code = CASE
+              WHEN first_time_code IS NULL OR ? < first_time_code THEN ?
+              ELSE first_time_code
+            END,
+            last_time_code = CASE
+              WHEN last_time_code IS NULL OR ? > last_time_code THEN ?
+              ELSE last_time_code
+            END
+      WHERE id = ?`,
+  );
+  const readSeriesVariableMask = db.prepare(
+    `SELECT time_mask_text AS timeMaskText
+       FROM series
+      WHERE id = ?`,
+  );
+  const updateSeriesVariableMask = db.prepare(
+    `UPDATE series
+        SET time_mask_text = ?,
+            observation_count = ?,
             first_time_code = CASE
               WHEN first_time_code IS NULL OR ? < first_time_code THEN ?
               ELSE first_time_code
@@ -366,16 +390,37 @@ export function makeObservationWriter(
   );
 
   const flushSeriesState = () => {
-    if (!lastSeriesId || currentTimeMask === 0) return;
-    updateSeriesTimeMask.run(
-      currentTimeMask,
-      currentFirstTimeCode,
-      currentFirstTimeCode,
-      currentLastTimeCode,
-      currentLastTimeCode,
-      lastSeriesId,
-    );
-    currentTimeMask = 0;
+    if (!lastSeriesId || currentTimeMask === 0n) return;
+    if (usesVariableLengthMask) {
+      const existingMaskText =
+        readSeriesVariableMask.get(lastSeriesId)?.timeMaskText;
+      const existingMask = existingMaskText
+        ? BigInt(`0x${existingMaskText}`)
+        : 0n;
+      const mergedMask = existingMask | currentTimeMask;
+      const observationCount = mergedMask
+        .toString(2)
+        .replaceAll("0", "").length;
+      updateSeriesVariableMask.run(
+        mergedMask.toString(16),
+        observationCount,
+        currentFirstTimeCode,
+        currentFirstTimeCode,
+        currentLastTimeCode,
+        currentLastTimeCode,
+        lastSeriesId,
+      );
+    } else {
+      updateSeriesTimeMask.run(
+        currentTimeMask,
+        currentFirstTimeCode,
+        currentFirstTimeCode,
+        currentLastTimeCode,
+        currentLastTimeCode,
+        lastSeriesId,
+      );
+    }
+    currentTimeMask = 0n;
     currentFirstTimeCode = "";
     currentLastTimeCode = "";
   };
@@ -410,7 +455,7 @@ export function makeObservationWriter(
           }
           lastSeriesId = observation.seriesId;
         }
-        const timeBit = timeBitByCode.get(observation.timeCode) ?? 0;
+        const timeBit = timeBitByCode.get(observation.timeCode) ?? 0n;
         currentTimeMask |= timeBit;
         if (
           !currentFirstTimeCode ||
@@ -466,7 +511,7 @@ export function makeObservationWriter(
 
 export function finalizeTable(db, tableId, timeCodes = []) {
   const sortedTimeCodes = [...timeCodes].sort();
-  if (sortedTimeCodes.length > 0) {
+  if (sortedTimeCodes.length > 0 && sortedTimeCodes.length <= 62) {
     const bitCountExpression = sortedTimeCodes
       .map((_, index) => `((time_mask >> ${index}) & 1)`)
       .join(" + ");
@@ -475,7 +520,7 @@ export function finalizeTable(db, tableId, timeCodes = []) {
           SET observation_count = ${bitCountExpression}
         WHERE table_id = ?`,
     ).run(tableId);
-  } else {
+  } else if (sortedTimeCodes.length === 0) {
     db.prepare(
       `UPDATE series
           SET first_time_code = (

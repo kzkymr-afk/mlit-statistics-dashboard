@@ -24,6 +24,7 @@
     "sync:estat-api": "node --env-file-if-exists=.env.local scripts/sync-estat-api.mjs",
     "sync:estat-api:resume": "node --env-file-if-exists=.env.local scripts/sync-estat-api.mjs --resume",
     "data:publish-system": "node scripts/export-system-pages-data.mjs",
+    "data:publish-system:renovation": "MLIT_SYSTEM_ONLY_DATASET=renovation node scripts/export-system-pages-data.mjs",
     "sync:estat-inventory": "node --env-file-if-exists=.env.local scripts/sync-estat-api.mjs --inventory-only",
     "sync:data": "node --experimental-strip-types scripts/sync-official-data.mjs",
     "sync:building-annual": "node scripts/sync-building-annual-files.mjs && node scripts/build-building-annual-catalog.mjs",

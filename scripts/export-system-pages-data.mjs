@@ -1,9 +1,12 @@
 import {
+  cpSync,
   existsSync,
   mkdirSync,
+  readdirSync,
   renameSync,
   rmSync,
   statSync,
+  unlinkSync,
   writeFileSync,
 } from "node:fs";
 import { createHash } from "node:crypto";
@@ -36,6 +39,8 @@ const SHARD_BUILD_DIR = EXTERNAL_SHARD_DIR
 const SERIES_ASSET_BASE_URL = (
   process.env.MLIT_SERIES_ASSET_BASE_URL || "system/shards"
 ).replace(/\/$/, "");
+const ONLY_DATASET_ID =
+  process.env.MLIT_SYSTEM_ONLY_DATASET?.trim() ?? "";
 
 if (!existsSync(DATABASE_PATH)) {
   throw new Error(
@@ -44,8 +49,22 @@ if (!existsSync(DATABASE_PATH)) {
   );
 }
 
+if (ONLY_DATASET_ID && EXTERNAL_SHARD_DIR) {
+  throw new Error(
+    "データセット差分生成と外部分割ディレクトリは同時に指定できません。",
+  );
+}
 if (existsSync(BUILD_DIR)) rmSync(BUILD_DIR, { recursive: true });
-mkdirSync(BUILD_DIR, { recursive: true });
+if (ONLY_DATASET_ID) {
+  if (!existsSync(OUTPUT_DIR)) {
+    throw new Error(
+      "差分生成の基になる公開データがありません。先に全体生成が必要です。",
+    );
+  }
+  cpSync(OUTPUT_DIR, BUILD_DIR, { recursive: true });
+} else {
+  mkdirSync(BUILD_DIR, { recursive: true });
+}
 if (EXTERNAL_SHARD_DIR) {
   if (existsSync(SHARD_BUILD_DIR)) {
     rmSync(SHARD_BUILD_DIR, { recursive: true });
@@ -56,6 +75,7 @@ if (EXTERNAL_SHARD_DIR) {
 function writeBuffer(path, value) {
   const target = resolve(BUILD_DIR, path);
   mkdirSync(dirname(target), { recursive: true });
+  if (existsSync(target)) unlinkSync(target);
   writeFileSync(target, value);
   if (statSync(target).size > MAX_GITHUB_FILE_BYTES) {
     throw new Error(
@@ -81,6 +101,7 @@ function writeShard(datasetId, prefix, value) {
     `${datasetId}-${prefix}.json.gz`,
   );
   mkdirSync(dirname(target), { recursive: true });
+  if (existsSync(target)) unlinkSync(target);
   writeFileSync(
     target,
     gzipSync(Buffer.from(JSON.stringify(value)), { level: 9 }),
@@ -100,6 +121,22 @@ function publicPath(path) {
 }
 
 const db = new DatabaseSync(DATABASE_PATH, { readOnly: true });
+if (ONLY_DATASET_ID) {
+  const knownDataset = db
+    .prepare("SELECT 1 FROM datasets WHERE id = ?")
+    .get(ONLY_DATASET_ID);
+  if (!knownDataset) {
+    throw new Error(`未登録のデータセットです: ${ONLY_DATASET_ID}`);
+  }
+  for (const fileName of readdirSync(SHARD_BUILD_DIR)) {
+    if (
+      fileName.startsWith(`${ONLY_DATASET_ID}-`) &&
+      fileName.endsWith(".json.gz")
+    ) {
+      unlinkSync(resolve(SHARD_BUILD_DIR, fileName));
+    }
+  }
+}
 const datasets = db
   .prepare(
     `SELECT id, title,
@@ -175,16 +212,33 @@ const seriesCoordinatesStatement = db.prepare(
      JOIN dimensions d ON d.id = sd.dimension_id
     WHERE sd.series_id = ?`,
 );
+const seriesProjection = `
+  SELECT substr(s.id, 1, ?) AS prefix, s.id AS seriesId,
+         t.dataset_id AS datasetId, s.unit,
+         CASE
+           WHEN s.time_mask_text IS NOT NULL
+             THEN 'x' || s.time_mask_text
+           ELSE s.time_mask
+         END AS timeMask,
+         o.time_code AS timeCode, o.value, o.numeric_value AS numericValue,
+         o.annotation, o.status`;
 const seriesRowsStatement = db.prepare(
-  `SELECT substr(s.id, 1, ?) AS prefix, s.id AS seriesId,
-          t.dataset_id AS datasetId, s.unit, s.time_mask AS timeMask,
-          o.time_code AS timeCode, o.value, o.numeric_value AS numericValue,
-          o.annotation, o.status
-     FROM series s
-          INDEXED BY sqlite_autoindex_series_1
-     CROSS JOIN statistical_tables t ON t.id = s.table_id
-     LEFT JOIN observations o ON o.series_id = s.id
-    ORDER BY s.id, o.time_code`,
+  ONLY_DATASET_ID
+    ? `${seriesProjection}
+         FROM statistical_tables t
+              INDEXED BY statistical_tables_dataset_idx
+         JOIN series s
+              INDEXED BY series_table_idx
+           ON s.table_id = t.id
+         LEFT JOIN observations o ON o.series_id = s.id
+        WHERE t.dataset_id = ?
+        ORDER BY s.id, o.time_code`
+    : `${seriesProjection}
+         FROM series s
+              INDEXED BY sqlite_autoindex_series_1
+         CROSS JOIN statistical_tables t ON t.id = s.table_id
+         LEFT JOIN observations o ON o.series_id = s.id
+        ORDER BY s.id, o.time_code`,
 );
 
 const tableIndex = [];
@@ -194,6 +248,17 @@ for (const table of tables) {
     values: dimensionValueStatement.all(dimension.id),
   }));
   const metaPath = `tables/${table.id}/meta.json.gz`;
+  if (
+    ONLY_DATASET_ID &&
+    table.datasetId !== ONLY_DATASET_ID &&
+    existsSync(resolve(BUILD_DIR, metaPath))
+  ) {
+    tableIndex.push({
+      ...table,
+      metaUrl: publicPath(metaPath),
+    });
+    continue;
+  }
   let defaultSelection = Object.fromEntries(
     dimensions
       .filter((dimension) => dimension.apiKey !== "time")
@@ -296,7 +361,10 @@ function flushPrefix() {
   }
 }
 
-for (const row of seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH)) {
+const seriesRows = ONLY_DATASET_ID
+  ? seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH, ONLY_DATASET_ID)
+  : seriesRowsStatement.iterate(BUNDLE_PREFIX_LENGTH);
+for (const row of seriesRows) {
   if (row.prefix !== currentPrefix) {
     flushPrefix();
     currentPrefix = row.prefix;
@@ -346,6 +414,7 @@ if (EXTERNAL_SHARD_DIR) {
 process.stdout.write(
   `system pages data: ${OUTPUT_DIR}\n` +
     `series shards: ${SHARD_OUTPUT_DIR}\n` +
+    `updated dataset: ${ONLY_DATASET_ID || "all"}\n` +
     `tables: ${tableIndex.length}\n` +
     `series bundles: ${bundleCount}\n`,
 );

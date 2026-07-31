@@ -313,6 +313,110 @@ test("項目レジストリから系列・年度値・出典まで辿れる", ()
       catalog.sources[table.id].sourceUrl,
       `https://www.e-stat.go.jp/dbview?sid=${table.id}`,
     );
+
+    const incrementalExportResult = spawnSync(
+      process.execPath,
+      [
+        resolve(
+          import.meta.dirname,
+          "../scripts/export-system-pages-data.mjs",
+        ),
+      ],
+      {
+        env: {
+          ...process.env,
+          MLIT_SYSTEM_DATABASE_PATH: resolve(
+            temporaryDirectory,
+            "statistics.sqlite",
+          ),
+          MLIT_SYSTEM_PUBLIC_DIR: publicDirectory,
+          MLIT_SYSTEM_ONLY_DATASET: "building-starts",
+        },
+        encoding: "utf8",
+      },
+    );
+    assert.equal(
+      incrementalExportResult.status,
+      0,
+      incrementalExportResult.stderr,
+    );
+    assert.match(
+      incrementalExportResult.stdout,
+      /updated dataset: building-starts/,
+    );
+  } finally {
+    rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("月別の62時点目以降も可変長マスクで欠落させない", () => {
+  const temporaryDirectory = mkdtempSync(
+    resolve(tmpdir(), "mlit-statistics-quarterly-mask-"),
+  );
+  try {
+    const db = openStatisticsDatabase(
+      resolve(temporaryDirectory, "statistics.sqlite"),
+    );
+    const dataset = {
+      id: "renovation",
+      title: "建築物リフォーム・リニューアル調査",
+      governmentStatisticsCode: "00600900",
+      providedStatisticsId: "000001031111",
+      sourceUrl: "https://www.e-stat.go.jp/",
+      fiscalYearFrom: 2013,
+    };
+    const table = normalizeStatsList(statsListFixture)[0];
+    const dimensions = normalizeMetaInfo(metaFixture, table.id);
+    const timeCodes = Array.from(
+      { length: 80 },
+      (_, index) =>
+        `${2013 + Math.floor(index / 12)}${String((index % 12) + 1).padStart(2, "0")}0000`,
+    );
+    upsertDataset(db, dataset);
+    upsertStatisticalTable(
+      db,
+      dataset.id,
+      table,
+      "2026-07-31T00:00:00Z",
+    );
+    replaceDimensions(db, table.id, dimensions);
+    const write = makeObservationWriter(db, {
+      tableId: table.id,
+      dimensions,
+      sourceId: "",
+      fetchedAt: "2026-07-31T00:00:00Z",
+      timeCodes,
+      storeObservationValues: false,
+      seriesLabel: () => "四半期系列",
+    });
+    write(
+      timeCodes.map((timeCode) =>
+        normalizeObservation(
+          {
+            "@tab": "10",
+            "@area": "13000",
+            "@cat01": "01",
+            "@time": timeCode,
+            "@unit": "㎡",
+            $: "0",
+          },
+          table.id,
+        ),
+      ),
+    );
+    write.finish();
+    finalizeTable(db, table.id, timeCodes);
+    const series = db
+      .prepare(
+        `SELECT time_mask AS timeMask, time_mask_text AS timeMaskText,
+                observation_count AS observationCount
+           FROM series`,
+      )
+      .get();
+    assert.equal(series.timeMask, 0);
+    assert.equal(series.timeMaskText, (2n ** 80n - 1n).toString(16));
+    assert.equal(series.observationCount, 80);
+    db.close();
   } finally {
     rmSync(temporaryDirectory, { recursive: true, force: true });
   }
