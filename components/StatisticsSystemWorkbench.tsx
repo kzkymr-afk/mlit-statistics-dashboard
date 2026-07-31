@@ -9,6 +9,13 @@ import {
 } from "react";
 
 import { buildAxisScale } from "@/lib/chart-scale.mjs";
+import {
+  FAVORITES_STORAGE_KEY,
+  MAX_FAVORITES,
+  favoriteIdFor,
+  normalizeFavorites,
+  upsertFavorite,
+} from "@/lib/statistics-favorites.mjs";
 
 type DatasetSummary = {
   id: string;
@@ -117,6 +124,21 @@ type ChartAxis = "left" | "right";
 type AxisSettingKey = "min" | "max" | "step";
 type AxisSettings = Record<AxisSettingKey, string>;
 
+type FavoriteItem = {
+  id: string;
+  datasetId: string;
+  tableId: string;
+  tableTitle: string;
+  statisticsName: string;
+  label: string;
+  selections: Record<string, string>;
+  timeFrom: string;
+  timeTo: string;
+  timeFromLabel: string;
+  timeToLabel: string;
+  savedAt: string;
+};
+
 type SelectedSeries = {
   id: string;
   tableId: string;
@@ -220,6 +242,36 @@ function formatNumber(value: number) {
 
 function normalizeSearch(value: string) {
   return value.normalize("NFKC").replace(/\s+/g, "").toLowerCase();
+}
+
+function selectionLabelFor(
+  meta: TableMeta,
+  selections: Record<string, string>,
+) {
+  return (
+    meta.dimensions
+      .filter((dimension) => dimension.apiKey !== "time")
+      .map((dimension) => {
+        const code = selections[dimension.apiKey];
+        return dimension.values.find((value) => value.code === code)?.name ?? code;
+      })
+      .filter(Boolean)
+      .join(" / ") || "総数"
+  );
+}
+
+function selectionsFromFavorite(meta: TableMeta, favorite: FavoriteItem) {
+  const nextSelections: Record<string, string> = {};
+  for (const dimension of meta.dimensions) {
+    if (dimension.apiKey === "time") continue;
+    const savedCode = favorite.selections[dimension.apiKey];
+    nextSelections[dimension.apiKey] =
+      dimension.values.some((value) => value.code === savedCode)
+        ? savedCode
+        : meta.defaultSelection[dimension.apiKey] ??
+          defaultDimensionValue(dimension);
+  }
+  return nextSelections;
 }
 
 async function fetchJson<T>(path: string): Promise<T> {
@@ -700,9 +752,48 @@ export default function StatisticsSystemWorkbench() {
   const [selectedSeries, setSelectedSeries] = useState<SelectedSeries[]>([]);
   const [axisSettings, setAxisSettings] =
     useState<Record<ChartAxis, AxisSettings>>(emptyAxisSettings);
+  const [favorites, setFavorites] = useState<FavoriteItem[]>([]);
+  const [favoritesLoaded, setFavoritesLoaded] = useState(false);
+  const pendingFavoriteRef = useRef<FavoriteItem | null>(null);
   const [loadingMeta, setLoadingMeta] = useState(false);
   const [addingSeries, setAddingSeries] = useState(false);
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (cancelled) return;
+      try {
+        const stored = window.localStorage.getItem(FAVORITES_STORAGE_KEY);
+        setFavorites(
+          normalizeFavorites(stored ? JSON.parse(stored) : []) as FavoriteItem[],
+        );
+      } catch {
+        setFavorites([]);
+      } finally {
+        setFavoritesLoaded(true);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!favoritesLoaded) return;
+    try {
+      window.localStorage.setItem(
+        FAVORITES_STORAGE_KEY,
+        JSON.stringify(favorites),
+      );
+    } catch {
+      queueMicrotask(() =>
+        setMessage(
+          "このブラウザではお気に入りを保存できません。サイトデータの保存設定を確認してください。",
+        ),
+      );
+    }
+  }, [favorites, favoritesLoaded]);
 
   useEffect(() => {
     fetchJson<SystemCatalog>("system/catalog.json")
@@ -760,13 +851,21 @@ export default function StatisticsSystemWorkbench() {
     fetchJson<TableMeta>(table.metaUrl)
       .then((value) => {
         if (cancelled) return;
-        const nextSelections: Record<string, string> = {};
-        for (const dimension of value.dimensions) {
-          if (dimension.apiKey === "time") continue;
-          nextSelections[dimension.apiKey] =
-            value.defaultSelection[dimension.apiKey] ??
-            defaultDimensionValue(dimension);
-        }
+        const pendingFavorite =
+          pendingFavoriteRef.current?.tableId === value.table.id
+            ? pendingFavoriteRef.current
+            : null;
+        const nextSelections = pendingFavorite
+          ? selectionsFromFavorite(value, pendingFavorite)
+          : Object.fromEntries(
+              value.dimensions
+                .filter((dimension) => dimension.apiKey !== "time")
+                .map((dimension) => [
+                  dimension.apiKey,
+                  value.defaultSelection[dimension.apiKey] ??
+                    defaultDimensionValue(dimension),
+                ]),
+            );
         const time = value.dimensions.find(
           (dimension) => dimension.apiKey === "time",
         );
@@ -775,13 +874,31 @@ export default function StatisticsSystemWorkbench() {
           return !Number.isFinite(year) || year >= 2013;
         }).toSorted((left, right) => left.code.localeCompare(right.code));
         setSelections(nextSelections);
-        setTimeFrom(availableTimes[0]?.code ?? "");
-        setTimeTo(availableTimes.at(-1)?.code ?? "");
+        setTimeFrom(
+          pendingFavorite &&
+              availableTimes.some(
+                (item) => item.code === pendingFavorite.timeFrom,
+              )
+            ? pendingFavorite.timeFrom
+            : availableTimes[0]?.code ?? "",
+        );
+        setTimeTo(
+          pendingFavorite &&
+              availableTimes.some((item) => item.code === pendingFavorite.timeTo)
+            ? pendingFavorite.timeTo
+            : availableTimes.at(-1)?.code ?? "",
+        );
         setMeta(value);
-        setMessage("");
+        setMessage(
+          pendingFavorite
+            ? `「${pendingFavorite.label}」の保存条件を選択しました。`
+            : "",
+        );
+        if (pendingFavorite) pendingFavoriteRef.current = null;
       })
       .catch((error) => {
         if (cancelled) return;
+        pendingFavoriteRef.current = null;
         setMeta(null);
         setMessage(String(error.message ?? error));
       })
@@ -831,18 +948,7 @@ export default function StatisticsSystemWorkbench() {
       }
       const [seriesUnit, seriesTimeMask, compactPoints] = compactSeries;
       const seriesTableId = meta.table.id;
-      const seriesLabel =
-        meta.dimensions
-          .filter((dimension) => dimension.apiKey !== "time")
-          .map((dimension) => {
-            const code = selections[dimension.apiKey];
-            return (
-              dimension.values.find((value) => value.code === code)?.name ??
-              code
-            );
-          })
-          .filter(Boolean)
-          .join(" / ") || "総数";
+      const seriesLabel = selectionLabelFor(meta, selections);
       const source = catalog?.sources[seriesTableId];
       const storedPoints = new Map(
         compactPoints.map(
@@ -929,6 +1035,82 @@ export default function StatisticsSystemWorkbench() {
     timeTo,
     timeValues,
   ]);
+
+  const currentFavoriteId = meta
+    ? favoriteIdFor(meta.table.id, selections)
+    : "";
+  const currentFavorite = favorites.find(
+    (favorite) => favorite.id === currentFavoriteId,
+  );
+  const currentFavoriteIsExact =
+    currentFavorite?.timeFrom === timeFrom && currentFavorite?.timeTo === timeTo;
+
+  const saveCurrentFavorite = () => {
+    if (!meta) return;
+    const favorite: FavoriteItem = {
+      id: favoriteIdFor(meta.table.id, selections),
+      datasetId: meta.table.datasetId,
+      tableId: meta.table.id,
+      tableTitle: meta.table.title,
+      statisticsName: meta.table.statisticsName,
+      label: selectionLabelFor(meta, selections),
+      selections: { ...selections },
+      timeFrom,
+      timeTo,
+      timeFromLabel: timeLabels.get(timeFrom) ?? timeFrom,
+      timeToLabel: timeLabels.get(timeTo) ?? timeTo,
+      savedAt: new Date().toISOString(),
+    };
+    setFavorites(
+      (current) => upsertFavorite(current, favorite) as FavoriteItem[],
+    );
+    setMessage(
+      currentFavorite
+        ? `「${favorite.label}」のお気に入りを更新しました。`
+        : `「${favorite.label}」をよく使う項目に保存しました。`,
+    );
+  };
+
+  const applyFavorite = (favorite: FavoriteItem) => {
+    const tableExists = catalog?.tables.some(
+      (table) =>
+        table.id === favorite.tableId &&
+        table.datasetId === favorite.datasetId,
+    );
+    if (!tableExists) {
+      setMessage(
+        "保存した統計表が現在の公開データにありません。お気に入りを削除して選び直してください。",
+      );
+      return;
+    }
+    setTableSearch("");
+    if (meta?.table.id === favorite.tableId) {
+      setSelections(selectionsFromFavorite(meta, favorite));
+      setTimeFrom(
+        timeValues.some((item) => item.code === favorite.timeFrom)
+          ? favorite.timeFrom
+          : timeValues[0]?.code ?? "",
+      );
+      setTimeTo(
+        timeValues.some((item) => item.code === favorite.timeTo)
+          ? favorite.timeTo
+          : timeValues.at(-1)?.code ?? "",
+      );
+      setMessage(`「${favorite.label}」の保存条件を選択しました。`);
+      return;
+    }
+    pendingFavoriteRef.current = favorite;
+    setDatasetId(favorite.datasetId);
+    setTableId(favorite.tableId);
+    setLoadingMeta(true);
+  };
+
+  const removeFavorite = (favorite: FavoriteItem) => {
+    setFavorites((current) =>
+      current.filter((item) => item.id !== favorite.id),
+    );
+    setMessage(`「${favorite.label}」をよく使う項目から削除しました。`);
+  };
 
   const updateSeries = (
     id: string,
@@ -1039,6 +1221,51 @@ export default function StatisticsSystemWorkbench() {
           </div>
         </div>
         <nav aria-label="統計の選択">
+          <div className="system-favorites">
+            <div className="system-favorites-heading">
+              <small>よく使う項目</small>
+              {favorites.length ? <span>{favorites.length}</span> : null}
+            </div>
+            {favorites.length === 0 ? (
+              <p>
+                分類条件を選び、
+                <br />
+                お気に入りとして保存
+              </p>
+            ) : null}
+            {favorites.map((favorite) => (
+              <div className="system-favorite-row" key={favorite.id}>
+                <button
+                  type="button"
+                  className={`system-favorite-select ${
+                    currentFavoriteId === favorite.id ? "active" : ""
+                  }`}
+                  onClick={() => applyFavorite(favorite)}
+                  title={`${favorite.tableTitle} — ${favorite.label}`}
+                >
+                  <span aria-hidden="true">★</span>
+                  <span className="system-favorite-copy">
+                    <strong>{favorite.label}</strong>
+                    <small>
+                      {favorite.statisticsName || favorite.tableTitle}
+                      {favorite.timeFromLabel && favorite.timeToLabel
+                        ? ` · ${favorite.timeFromLabel}–${favorite.timeToLabel}`
+                        : ""}
+                    </small>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="system-favorite-remove"
+                  onClick={() => removeFavorite(favorite)}
+                  aria-label={`${favorite.label}をよく使う項目から削除`}
+                  title="よく使う項目から削除"
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
           {DATASET_GROUPS.map((group) => {
             const datasets = availableDatasets.filter((dataset) =>
               group.datasetIds.includes(dataset.id),
@@ -1232,14 +1459,39 @@ export default function StatisticsSystemWorkbench() {
                       ))}
                     </select>
                   </label>
-                  <button
-                    type="button"
-                    className="system-primary"
-                    onClick={addSeries}
-                    disabled={addingSeries || selectedSeries.length >= 5}
-                  >
-                    {addingSeries ? "取得中…" : "この系列を追加"}
-                  </button>
+                  <div className="system-query-actions">
+                    <button
+                      type="button"
+                      className="system-secondary"
+                      onClick={saveCurrentFavorite}
+                      disabled={
+                        !favoritesLoaded ||
+                        currentFavoriteIsExact ||
+                        (!currentFavorite && favorites.length >= MAX_FAVORITES)
+                      }
+                      title={
+                        !currentFavorite && favorites.length >= MAX_FAVORITES
+                          ? `よく使う項目は${MAX_FAVORITES}件までです。`
+                          : undefined
+                      }
+                    >
+                      {!favoritesLoaded
+                        ? "読み込み中…"
+                        : currentFavoriteIsExact
+                          ? "★ 保存済み"
+                          : currentFavorite
+                            ? "★ 保存を更新"
+                            : "☆ よく使う項目に保存"}
+                    </button>
+                    <button
+                      type="button"
+                      className="system-primary"
+                      onClick={addSeries}
+                      disabled={addingSeries || selectedSeries.length >= 5}
+                    >
+                      {addingSeries ? "取得中…" : "この系列を追加"}
+                    </button>
+                  </div>
                 </div>
               </>
             ) : !loadingMeta && !catalogError ? (

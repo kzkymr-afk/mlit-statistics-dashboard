@@ -15,6 +15,8 @@ test("統計項目と分類条件を選ぶシステム画面をサーバーレ�
   assert.match(html, /統計表レジストリ/);
   assert.match(html, /分類条件を指定/);
   assert.match(html, /表・グラフ・CSV/);
+  assert.match(html, /よく使う項目/);
+  assert.match(html, /お気に入りとして保存/);
   assert.match(html, /左右2軸、軸の最小・最大・目盛間隔/);
   assert.match(html, /CSV出力/);
   assert.match(html, /e-Stat DB\/API 主系/);
