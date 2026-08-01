@@ -301,6 +301,9 @@ const DATASET_GROUPS = [
 ];
 const MAX_JSON_CACHE_ENTRIES = 10;
 const jsonCache = new Map<string, Promise<unknown>>();
+const REMOTE_SYSTEM_DATA_URL = (
+  process.env.NEXT_PUBLIC_MLIT_SYSTEM_BASE_URL ?? ""
+).replace(/\/$/, "");
 
 function emptyAxisSettings(): Record<ChartAxis, AxisSettings> {
   return {
@@ -364,10 +367,14 @@ function selectionsFromFavorite(meta: TableMeta, favorite: FavoriteItem) {
 }
 
 async function fetchJson<T>(path: string): Promise<T> {
-  const cached = jsonCache.get(path);
+  const requestPath =
+    REMOTE_SYSTEM_DATA_URL && path.startsWith("system/")
+      ? `${REMOTE_SYSTEM_DATA_URL}/${path.slice("system/".length)}`
+      : path;
+  const cached = jsonCache.get(requestPath);
   if (cached) return cached as Promise<T>;
   const request = (async () => {
-    const response = await fetch(path, { cache: "no-store" });
+    const response = await fetch(requestPath, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(
         response.status === 404
@@ -375,7 +382,7 @@ async function fetchJson<T>(path: string): Promise<T> {
           : "統計データを読み込めませんでした。",
       );
     }
-    if (path.endsWith(".gz")) {
+    if (requestPath.endsWith(".gz")) {
       if (!response.body || typeof DecompressionStream === "undefined") {
         throw new Error(
           "圧縮データに対応した最新版のEdgeまたはChromeで開いてください。",
@@ -388,10 +395,10 @@ async function fetchJson<T>(path: string): Promise<T> {
     }
     return (await response.json()) as T;
   })().catch((error) => {
-    jsonCache.delete(path);
+    jsonCache.delete(requestPath);
     throw error;
   });
-  jsonCache.set(path, request);
+  jsonCache.set(requestPath, request);
   while (jsonCache.size > MAX_JSON_CACHE_ENTRIES) {
     const oldestPath = jsonCache.keys().next().value;
     if (!oldestPath) break;

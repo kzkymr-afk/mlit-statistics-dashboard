@@ -158,5 +158,7 @@ npm run ai:stats -- bundle \
 
 公開URLの `/llms.txt` と `/system/ai/catalog.json` を入口にできます。各統計表の
 `aiMetaUrl` は非圧縮JSONで、分類コードと公開シャードの復元仕様を持ちます。
+共有サイト版も同じGitHub Pagesの公開スナップショットを参照するため、数値と
+分類コードはGitHub Pages版と一致します。
 ただし、ローカルDBを使えるCodex / Claude CodeではMCPの方が高速で、誤った分類の
 組み合わせも検出できるため、MCPを優先してください。
