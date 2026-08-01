@@ -1667,6 +1667,17 @@ select:focus-visible {
   margin-top: 5px;
 }
 
+.system-dataset-note {
+  background: #fff8e8;
+  border: 1px solid #f0d79a;
+  border-radius: 7px;
+  color: #77551c;
+  font-size: 10px;
+  line-height: 1.65;
+  margin: -5px 0 17px;
+  padding: 9px 11px;
+}
+
 .system-filters {
   display: grid;
   gap: 12px;

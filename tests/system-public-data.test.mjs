@@ -41,6 +41,7 @@ test("公開データは統計表・公式分類・観測値のv2形式である
     "construction-labor",
     "construction-materials",
     "building-stock",
+    "nikkenren-group-orders",
   ]) {
     assert.ok(
       catalog.tables.some((table) => table.datasetId === datasetId),
@@ -60,13 +61,61 @@ test("公開データは統計表・公式分類・観測値のv2形式である
     catalog.tables.length,
   );
   assert.ok(
-    catalog.tables.every(
-      (table) =>
-        /^https:\/\/www\.e-stat\.go\.jp\//.test(
-          catalog.sources[table.id]?.sourceUrl ?? "",
-        ),
-    ),
+    catalog.tables.every((table) => {
+      const sourceUrl = catalog.sources[table.id]?.sourceUrl ?? "";
+      return table.datasetId === "nikkenren-group-orders"
+        ? /^https:\/\/www\.nikkenren\.com\//.test(sourceUrl)
+        : /^https:\/\/www\.e-stat\.go\.jp\//.test(sourceUrl);
+    }),
   );
+});
+
+test("日建連受注高は5グループ×5指標を年度系列として公開する", async () => {
+  const catalog = await readJson("system/catalog.json");
+  const table = catalog.tables.find(
+    (item) => item.id === "nikkenren-group-orders-annual",
+  );
+  assert.ok(table);
+  assert.equal(table.datasetId, "nikkenren-group-orders");
+  assert.equal(table.sourceKind, "nikkenren-excel");
+  assert.equal(table.seriesCount, 25);
+  assert.equal(table.observationCount, 325);
+
+  const meta = await readGzipJson(table.metaUrl);
+  const measure = meta.dimensions.find((item) => item.apiKey === "tab");
+  const group = meta.dimensions.find((item) => item.apiKey === "cat01");
+  const time = meta.dimensions.find((item) => item.apiKey === "time");
+  assert.deepEqual(
+    measure.values.map((item) => item.name),
+    ["建築全体", "国内建築", "海外建築", "民間建築", "官庁建築"],
+  );
+  assert.deepEqual(
+    group.values.map((item) => item.name),
+    ["第1グループ", "第2グループ", "第3グループ", "第4グループ", "第5グループ"],
+  );
+  assert.equal(time.values.length, 13);
+  assert.match(time.values[0].name, /^2013年度（会員97社）$/);
+  assert.match(time.values.at(-1).name, /^2025年度（会員96社）$/);
+  assert.ok(!measure.values.some((item) => /その他/.test(item.name)));
+  assert.ok(!group.values.some((item) => item.name === "合計"));
+
+  const identity = Object.entries(meta.defaultSelection)
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([key, value]) => `${key}=${value}`)
+    .join("\u001f");
+  const seriesId = createHash("sha256")
+    .update(`${table.id}\u001f${identity}`)
+    .digest("hex")
+    .slice(0, 32);
+  const bundle = await readGzipJson(
+    `system/shards/nikkenren-group-orders-${seriesId.slice(0, 2)}.json.gz`,
+  );
+  const series = bundle.series[seriesId];
+  assert.ok(series);
+  assert.equal(series[0], "百万円");
+  assert.equal(series[2].length, 13);
+  assert.deepEqual(series[2][0].slice(0, 2), ["2013100000", 4845277]);
+  assert.deepEqual(series[2].at(-1).slice(0, 2), ["2025100000", 7827139]);
 });
 
 test("統計表メタ情報はExcelシートではなく公式分類コードを持つ", async () => {

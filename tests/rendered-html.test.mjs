@@ -11,6 +11,7 @@ test("統計項目と分類条件を選ぶシステム画面をサーバーレ�
   assert.match(html, /<html lang="ja">/);
   assert.match(html, /建築着工統計/);
   assert.match(html, /受注動態（大手50社）/);
+  assert.match(html, /日建連・企業規模別受注高/);
   assert.match(html, /必要な統計項目だけを取り出す/);
   assert.match(html, /統計表レジストリ/);
   assert.match(html, /分類条件を指定/);
@@ -28,6 +29,7 @@ test("統計項目と分類条件を選ぶシステム画面をサーバーレ�
   assert.match(html, /左右2軸、軸の最小・最大・目盛間隔/);
   assert.match(html, /CSV出力/);
   assert.match(html, /e-Stat DB\/API 主系/);
+  assert.match(html, /公式Excel／日建連補完/);
   assert.doesNotMatch(html, /シート|数値セルをクリック/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
