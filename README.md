@@ -44,6 +44,30 @@
 収録されている統計だけを選びます。「すべて」では全周期を横断して探せます。
 Excelシートの選択は通常画面に出しません。
 
+## AIから利用する
+
+CodexとClaude Code向けに、同じ正規化SQLiteを直接検索する
+`mlit-statistics` MCPを同梱しています。AIは画面をクリックせず、統計表の検索、
+公式分類コードの確認、系列取得、複数系列の表・グラフ・CSV・出典一式の作成を
+再現可能な手順で行えます。画面で人が選んだ条件は「AI用JSON」でも出力できます。
+
+```bash
+npm run ai:stats -- help
+npm run ai:stats -- search --query "着工 床面積"
+npm run ai:stats -- bundle \
+  --spec examples/ai-report-spec.json \
+  --out outputs/ai/example
+```
+
+資料パッケージはSVG、横持ち/縦持ちCSV、完全JSON、出典JSON、再生成定義を
+同時に出力します。社内・他社データも `customSeries` として加えられます。
+詳しいMCPツール、Codex / Claude Codeの接続、データ解釈ルールは
+[`docs/AI_ANALYSIS_GUIDE.md`](docs/AI_ANALYSIS_GUIDE.md)を参照してください。
+
+GitHub Pagesには `/llms.txt`、`/llms-full.txt`、
+`/system/ai/catalog.json` も置き、公開ページを参照するAIが統計表と分類構造を
+機械可読形式で確認できるようにします。
+
 ## 配置
 
 運用アプリとして、Businessワークスペースの次の場所に配置します。

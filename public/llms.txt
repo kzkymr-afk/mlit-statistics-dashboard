@@ -1,0 +1,12 @@
+# 建設統計パネル
+
+国土交通省e-Stat、国交省公式Excel、日建連の建設統計を、公式分類コード付きの
+正規化DBとして検索・比較・グラフ化するアプリです。
+
+AI向け入口:
+- 詳細ガイド: llms-full.txt
+- 機械可読カタログ: system/ai/catalog.json
+- 人向け画面: index.html
+
+ローカルのCodex / Claude Codeでは、リポジトリに設定済みの
+`mlit-statistics` MCPを優先してください。

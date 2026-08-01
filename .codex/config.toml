@@ -1,0 +1,11 @@
+[mcp_servers.mlit_statistics]
+command = "node"
+args = ["scripts/mcp-statistics-server.mjs"]
+cwd = "/Volumes/SSD_External/Business/Apps/2026-07_mlit-statistics-dashboard"
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+enabled = true
+default_tools_approval_mode = "writes"
+
+[mcp_servers.mlit_statistics.env]
+MLIT_SYSTEM_DATABASE_PATH = "data/database/mlit-statistics-system.sqlite"

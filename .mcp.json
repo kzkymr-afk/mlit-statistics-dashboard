@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mlit-statistics": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["scripts/mcp-statistics-server.mjs"],
+      "env": {
+        "MLIT_SYSTEM_DATABASE_PATH": "data/database/mlit-statistics-system.sqlite"
+      }
+    }
+  }
+}
