@@ -158,6 +158,7 @@ type SelectedSeries = {
   chartKind: ChartKind;
   axis: ChartAxis;
   color: string;
+  sourceLabel: string;
   sources: Record<
     string,
     {
@@ -183,6 +184,7 @@ const DEFAULT_TABLE_IDS: Record<string, string> = {
   "construction-labor": "excel-00600050-national-shortage",
   "construction-materials": "excel-00600060-prefecture-index",
   "building-stock": "excel-00600940-private-national",
+  "nikkenren-group-orders": "nikkenren-group-orders-annual",
 };
 const CYCLE_OPTIONS: Array<{
   id: CycleFilter;
@@ -218,6 +220,12 @@ const STATISTICS_FAMILIES = [
     id: "construction-investment",
     title: "建設投資見通し",
     datasetIds: ["construction-investment"],
+    cycles: ["年度次"],
+  },
+  {
+    id: "nikkenren-group-orders",
+    title: "日建連・企業規模別受注高",
+    datasetIds: ["nikkenren-group-orders"],
     cycles: ["年度次"],
   },
   {
@@ -266,6 +274,7 @@ const DATASET_GROUPS = [
       "orders-major50",
       "renovation",
       "construction-investment",
+      "nikkenren-group-orders",
     ],
   },
   {
@@ -810,7 +819,7 @@ function downloadCsv(
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = `国交省統計_${new Date().toISOString().slice(0, 10)}.csv`;
+  anchor.download = `建設統計_${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(anchor);
   anchor.click();
   anchor.remove();
@@ -1105,6 +1114,10 @@ export default function StatisticsSystemWorkbench() {
           chartKind: "line",
           axis: current.length === 0 ? "left" : "left",
           color: COLORS[current.length % COLORS.length],
+          sourceLabel:
+            meta.table.sourceKind === "nikkenren-excel"
+              ? "日建連"
+              : "e-Stat",
           sources: source
             ? {
                 [source.sourceId]: {
@@ -1438,7 +1451,7 @@ export default function StatisticsSystemWorkbench() {
           <i className={catalog ? "ready" : ""} />
           <div>
             <strong>{catalog ? "正規化DB接続済み" : "データ接続待ち"}</strong>
-            <small>e-Stat DB/API 主系 · Excel補完</small>
+            <small>e-Stat DB/API 主系 · 公式Excel／日建連補完</small>
           </div>
         </div>
       </aside>
@@ -1446,7 +1459,7 @@ export default function StatisticsSystemWorkbench() {
       <main className="system-main">
         <header className="system-topbar">
           <div>
-            <p>国土交通省 / e-Stat</p>
+            <p>国土交通省 / e-Stat / 日建連</p>
             <h1>必要な統計項目だけを取り出す</h1>
           </div>
           <div className="system-badges">
@@ -1462,7 +1475,7 @@ export default function StatisticsSystemWorkbench() {
             <h2>統計項目レジストリを準備中です</h2>
             <p>{catalogError}</p>
             <p>
-              旧Excelビューは正本にせず、e-Statの公式分類コードと観測値から
+              旧Excelビューは正本にせず、公式分類コードと正規化した観測値から
               再生成します。
             </p>
           </section>
@@ -1553,6 +1566,13 @@ export default function StatisticsSystemWorkbench() {
                     統計表ID {meta.table.id} · {displayCycle(meta.table.cycle)}
                   </small>
                 </div>
+                {meta.table.datasetId === "nikkenren-group-orders" ? (
+                  <p className="system-dataset-note">
+                    第1～第5グループを収録。年度により集計対象の会員社数が
+                    96～98社で変わるため、同一企業群の厳密な比較ではありません。
+                    年度選択と数値表には各年度の対象社数も表示します。
+                  </p>
+                ) : null}
                 <div className="system-filters">
                   {meta.dimensions
                     .filter((dimension) => dimension.apiKey !== "time")
@@ -1860,7 +1880,7 @@ export default function StatisticsSystemWorkbench() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {item.label} — e-Stat
+                    {item.label} — {item.sourceLabel}
                   </a>
                 )),
               )}

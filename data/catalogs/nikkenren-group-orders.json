@@ -1,0 +1,964 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "nikkenren-group-orders",
+  "title": "日建連会員・企業規模別受注高",
+  "unit": "百万円",
+  "fiscalYearFrom": 2013,
+  "fiscalYearTo": 2025,
+  "retrievedAt": "2026-08-01T01:25:39.454Z",
+  "sourceFolderUrl": "https://drive.google.com/drive/folders/1kQAUe-U-SAVvTS2CCQLCCmH8TvQEkQQy",
+  "sourceOrganization": "一般社団法人日本建設業連合会",
+  "measures": [
+    {
+      "code": "building-total",
+      "name": "建築全体",
+      "sourceColumn": "受注総額 > 建築"
+    },
+    {
+      "code": "domestic-building",
+      "name": "国内建築",
+      "sourceColumn": "国内 > 建築"
+    },
+    {
+      "code": "overseas-building",
+      "name": "海外建築",
+      "sourceColumn": "海外 > 建築"
+    },
+    {
+      "code": "private-building",
+      "name": "民間建築",
+      "sourceColumn": "民間 > 建築"
+    },
+    {
+      "code": "public-building",
+      "name": "官庁建築",
+      "sourceColumn": "官公庁 > 建築"
+    }
+  ],
+  "groupCodes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "notes": [
+    "第1グループから第5グループのみを表示対象とする。",
+    "合計行と「その他建築」は整合性検証にのみ使用し、表示系列には含めない。",
+    "集計対象となる日建連会員社数は年度により異なるため、同一企業コホートの厳密比較ではない。"
+  ],
+  "years": [
+    {
+      "fiscalYear": 2013,
+      "sheetId": "1KI76RMyJSQrqp6CuzQDHN_0apaDA34ey2bxsAfD_4Mg",
+      "heading": "企業規模別受注高（日建連会員97社）",
+      "memberCount": 97,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2013/04～2014/03",
+          "buildingTotal": 4845277,
+          "domesticBuilding": 4536150,
+          "privateBuilding": 3979798,
+          "publicBuilding": 555460,
+          "otherBuilding": 892,
+          "overseasBuilding": 309127
+        },
+        {
+          "group": "2",
+          "period": "2013/04～2014/03",
+          "buildingTotal": 2583329,
+          "domesticBuilding": 2479517,
+          "privateBuilding": 2157619,
+          "publicBuilding": 318280,
+          "otherBuilding": 3618,
+          "overseasBuilding": 103812
+        },
+        {
+          "group": "3",
+          "period": "2013/04～2014/03",
+          "buildingTotal": 943389,
+          "domesticBuilding": 933202,
+          "privateBuilding": 755464,
+          "publicBuilding": 174981,
+          "otherBuilding": 2757,
+          "overseasBuilding": 10187
+        },
+        {
+          "group": "4",
+          "period": "2013/04～2014/03",
+          "buildingTotal": 581248,
+          "domesticBuilding": 571092,
+          "privateBuilding": 496823,
+          "publicBuilding": 74269,
+          "otherBuilding": 0,
+          "overseasBuilding": 10156
+        },
+        {
+          "group": "5",
+          "period": "2013/04～2014/03",
+          "buildingTotal": 396678,
+          "domesticBuilding": 396678,
+          "privateBuilding": 334075,
+          "publicBuilding": 60428,
+          "otherBuilding": 2175,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 9349921,
+        "domesticBuilding": 8916639,
+        "privateBuilding": 7723779,
+        "publicBuilding": 1183418,
+        "otherBuilding": 9442,
+        "overseasBuilding": 433282
+      },
+      "sourceFileId": "1y79TJgMOa1LtmB683TOolhzL2FaY9R4y",
+      "sourceFileName": "日建連_企業規模別受注高(201403期-3月).xls",
+      "sourceUrl": "https://drive.google.com/file/d/1y79TJgMOa1LtmB683TOolhzL2FaY9R4y/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1KI76RMyJSQrqp6CuzQDHN_0apaDA34ey2bxsAfD_4Mg/edit"
+    },
+    {
+      "fiscalYear": 2014,
+      "sheetId": "16QmshhG1PccEWR3cbNJxIR5vmN4quHzq9b4fYn5qy4U",
+      "heading": "企業規模別受注高（日建連会員98社）",
+      "memberCount": 98,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2014/04～2015/03",
+          "buildingTotal": 4874269,
+          "domesticBuilding": 4714541,
+          "privateBuilding": 4101182,
+          "publicBuilding": 603908,
+          "otherBuilding": 9451,
+          "overseasBuilding": 159728
+        },
+        {
+          "group": "2",
+          "period": "2014/04～2015/03",
+          "buildingTotal": 2938654,
+          "domesticBuilding": 2725828,
+          "privateBuilding": 2333355,
+          "publicBuilding": 390960,
+          "otherBuilding": 1513,
+          "overseasBuilding": 212826
+        },
+        {
+          "group": "3",
+          "period": "2014/04～2015/03",
+          "buildingTotal": 963822,
+          "domesticBuilding": 940485,
+          "privateBuilding": 757956,
+          "publicBuilding": 168303,
+          "otherBuilding": 14226,
+          "overseasBuilding": 23337
+        },
+        {
+          "group": "4",
+          "period": "2014/04～2015/03",
+          "buildingTotal": 636501,
+          "domesticBuilding": 626809,
+          "privateBuilding": 484699,
+          "publicBuilding": 140042,
+          "otherBuilding": 2068,
+          "overseasBuilding": 9692
+        },
+        {
+          "group": "5",
+          "period": "2014/04～2015/03",
+          "buildingTotal": 490975,
+          "domesticBuilding": 490975,
+          "privateBuilding": 390777,
+          "publicBuilding": 98307,
+          "otherBuilding": 1891,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 9904221,
+        "domesticBuilding": 9498638,
+        "privateBuilding": 8067969,
+        "publicBuilding": 1401520,
+        "otherBuilding": 29149,
+        "overseasBuilding": 405583
+      },
+      "sourceFileId": "1WMmzJWypHkKh29SOU4AXGlAQYh74lAB4",
+      "sourceFileName": "日建連_企業規模別受注高(201503期-3月).xls",
+      "sourceUrl": "https://drive.google.com/file/d/1WMmzJWypHkKh29SOU4AXGlAQYh74lAB4/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/16QmshhG1PccEWR3cbNJxIR5vmN4quHzq9b4fYn5qy4U/edit"
+    },
+    {
+      "fiscalYear": 2015,
+      "sheetId": "1m1ksFVUoTEmzk8QhfOgPxh1ho7CAHpyH1w-C-rVopFM",
+      "heading": "企業規模別受注高（日建連会員98社）",
+      "memberCount": 98,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2015/04～2016/03",
+          "buildingTotal": 5237343,
+          "domesticBuilding": 5175618,
+          "privateBuilding": 4565500,
+          "publicBuilding": 609809,
+          "otherBuilding": 309,
+          "overseasBuilding": 61725
+        },
+        {
+          "group": "2",
+          "period": "2015/04～2016/03",
+          "buildingTotal": 3083039,
+          "domesticBuilding": 2830645,
+          "privateBuilding": 2470980,
+          "publicBuilding": 348417,
+          "otherBuilding": 11248,
+          "overseasBuilding": 252394
+        },
+        {
+          "group": "3",
+          "period": "2015/04～2016/03",
+          "buildingTotal": 960920,
+          "domesticBuilding": 947447,
+          "privateBuilding": 781914,
+          "publicBuilding": 150074,
+          "otherBuilding": 15459,
+          "overseasBuilding": 13473
+        },
+        {
+          "group": "4",
+          "period": "2015/04～2016/03",
+          "buildingTotal": 654204,
+          "domesticBuilding": 653408,
+          "privateBuilding": 542689,
+          "publicBuilding": 109753,
+          "otherBuilding": 966,
+          "overseasBuilding": 796
+        },
+        {
+          "group": "5",
+          "period": "2015/04～2016/03",
+          "buildingTotal": 470062,
+          "domesticBuilding": 470062,
+          "privateBuilding": 374395,
+          "publicBuilding": 95559,
+          "otherBuilding": 108,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 10405568,
+        "domesticBuilding": 10077180,
+        "privateBuilding": 8735478,
+        "publicBuilding": 1313612,
+        "otherBuilding": 28090,
+        "overseasBuilding": 328388
+      },
+      "sourceFileId": "1zoXVB1kojVXvsTzzCjzqD3u-5RfUMG5R",
+      "sourceFileName": "日建連_企業規模別受注高(201603期-3月).xls",
+      "sourceUrl": "https://drive.google.com/file/d/1zoXVB1kojVXvsTzzCjzqD3u-5RfUMG5R/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1m1ksFVUoTEmzk8QhfOgPxh1ho7CAHpyH1w-C-rVopFM/edit"
+    },
+    {
+      "fiscalYear": 2016,
+      "sheetId": "1bUEUDyk0NU7qJ1i-TJGe2IympCUNuVHShLirYL3_-x4",
+      "heading": "企業規模別受注高（日建連会員97社）",
+      "memberCount": 97,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2016/04～2017/03",
+          "buildingTotal": 5199226,
+          "domesticBuilding": 5137657,
+          "privateBuilding": 4488163,
+          "publicBuilding": 647857,
+          "otherBuilding": 1637,
+          "overseasBuilding": 61569
+        },
+        {
+          "group": "2",
+          "period": "2016/04～2017/03",
+          "buildingTotal": 3102650,
+          "domesticBuilding": 2982999,
+          "privateBuilding": 2650793,
+          "publicBuilding": 330447,
+          "otherBuilding": 1759,
+          "overseasBuilding": 119651
+        },
+        {
+          "group": "3",
+          "period": "2016/04～2017/03",
+          "buildingTotal": 982964,
+          "domesticBuilding": 973080,
+          "privateBuilding": 836671,
+          "publicBuilding": 120393,
+          "otherBuilding": 16016,
+          "overseasBuilding": 9884
+        },
+        {
+          "group": "4",
+          "period": "2016/04～2017/03",
+          "buildingTotal": 592008,
+          "domesticBuilding": 583359,
+          "privateBuilding": 487564,
+          "publicBuilding": 95739,
+          "otherBuilding": 56,
+          "overseasBuilding": 8649
+        },
+        {
+          "group": "5",
+          "period": "2016/04～2017/03",
+          "buildingTotal": 449674,
+          "domesticBuilding": 449674,
+          "privateBuilding": 381090,
+          "publicBuilding": 68584,
+          "otherBuilding": 0,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 10326522,
+        "domesticBuilding": 10126769,
+        "privateBuilding": 8844281,
+        "publicBuilding": 1263020,
+        "otherBuilding": 19468,
+        "overseasBuilding": 199753
+      },
+      "sourceFileId": "1HZsKCXXzGnbRgddFuksZJ70kVimWYA4h",
+      "sourceFileName": "日建連_企業規模別受注高(201703期-3月).xls",
+      "sourceUrl": "https://drive.google.com/file/d/1HZsKCXXzGnbRgddFuksZJ70kVimWYA4h/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1bUEUDyk0NU7qJ1i-TJGe2IympCUNuVHShLirYL3_-x4/edit"
+    },
+    {
+      "fiscalYear": 2017,
+      "sheetId": "1Ip-kpK_zlkEFxmepMJtr3jLcr6y8LQc41BSapNmysaU",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2017/04～2018/03",
+          "buildingTotal": 5426004,
+          "domesticBuilding": 5261693,
+          "privateBuilding": 4703409,
+          "publicBuilding": 556872,
+          "otherBuilding": 1412,
+          "overseasBuilding": 164311
+        },
+        {
+          "group": "2",
+          "period": "2017/04～2018/03",
+          "buildingTotal": 3153008,
+          "domesticBuilding": 3061669,
+          "privateBuilding": 2772995,
+          "publicBuilding": 279166,
+          "otherBuilding": 9508,
+          "overseasBuilding": 91339
+        },
+        {
+          "group": "3",
+          "period": "2017/04～2018/03",
+          "buildingTotal": 927423,
+          "domesticBuilding": 921309,
+          "privateBuilding": 767896,
+          "publicBuilding": 136224,
+          "otherBuilding": 17189,
+          "overseasBuilding": 6114
+        },
+        {
+          "group": "4",
+          "period": "2017/04～2018/03",
+          "buildingTotal": 619526,
+          "domesticBuilding": 612386,
+          "privateBuilding": 529088,
+          "publicBuilding": 83282,
+          "otherBuilding": 16,
+          "overseasBuilding": 7140
+        },
+        {
+          "group": "5",
+          "period": "2017/04～2018/03",
+          "buildingTotal": 477893,
+          "domesticBuilding": 477893,
+          "privateBuilding": 406643,
+          "publicBuilding": 71244,
+          "otherBuilding": 6,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 10603854,
+        "domesticBuilding": 10334950,
+        "privateBuilding": 9180031,
+        "publicBuilding": 1126788,
+        "otherBuilding": 28131,
+        "overseasBuilding": 268904
+      },
+      "sourceFileId": "1NKGgLlIf-ygwlEPzkUVRzDpp5UURfKux",
+      "sourceFileName": "日建連_企業規模別受注高(201803期-3月).xls",
+      "sourceUrl": "https://drive.google.com/file/d/1NKGgLlIf-ygwlEPzkUVRzDpp5UURfKux/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1Ip-kpK_zlkEFxmepMJtr3jLcr6y8LQc41BSapNmysaU/edit"
+    },
+    {
+      "fiscalYear": 2018,
+      "sheetId": "1aBy4EFhlMA5x0faLpPqP1qxNqxTdKA-wtX1mE0b24X8",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2018/04～2019/03",
+          "buildingTotal": 5885099,
+          "domesticBuilding": 5794406,
+          "privateBuilding": 5381071,
+          "publicBuilding": 412888,
+          "otherBuilding": 447,
+          "overseasBuilding": 90693
+        },
+        {
+          "group": "2",
+          "period": "2018/04～2019/03",
+          "buildingTotal": 3508248,
+          "domesticBuilding": 3348876,
+          "privateBuilding": 3001083,
+          "publicBuilding": 344454,
+          "otherBuilding": 3339,
+          "overseasBuilding": 159372
+        },
+        {
+          "group": "3",
+          "period": "2018/04～2019/03",
+          "buildingTotal": 1075106,
+          "domesticBuilding": 1068763,
+          "privateBuilding": 887706,
+          "publicBuilding": 175657,
+          "otherBuilding": 5400,
+          "overseasBuilding": 6343
+        },
+        {
+          "group": "4",
+          "period": "2018/04～2019/03",
+          "buildingTotal": 827976,
+          "domesticBuilding": 816580,
+          "privateBuilding": 718425,
+          "publicBuilding": 97103,
+          "otherBuilding": 1052,
+          "overseasBuilding": 11396
+        },
+        {
+          "group": "5",
+          "period": "2018/04～2019/03",
+          "buildingTotal": 551395,
+          "domesticBuilding": 551395,
+          "privateBuilding": 484181,
+          "publicBuilding": 67214,
+          "otherBuilding": 0,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 11847824,
+        "domesticBuilding": 11580020,
+        "privateBuilding": 10472466,
+        "publicBuilding": 1097316,
+        "otherBuilding": 10238,
+        "overseasBuilding": 267804
+      },
+      "sourceFileId": "10nlCLkuCiWb23xoP4jvmaeIuaOQStsVV",
+      "sourceFileName": "日建連_企業規模別受注高(201903期-3月)○.xls",
+      "sourceUrl": "https://drive.google.com/file/d/10nlCLkuCiWb23xoP4jvmaeIuaOQStsVV/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1aBy4EFhlMA5x0faLpPqP1qxNqxTdKA-wtX1mE0b24X8/edit"
+    },
+    {
+      "fiscalYear": 2019,
+      "sheetId": "16FuyTkRJ2N1GoPkHg8dSYVkzOB6KI24yWLfTiufl9fc",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2019/04～2020/03",
+          "buildingTotal": 5332899,
+          "domesticBuilding": 5076908,
+          "privateBuilding": 4579106,
+          "publicBuilding": 494367,
+          "otherBuilding": 3435,
+          "overseasBuilding": 255991
+        },
+        {
+          "group": "2",
+          "period": "2019/04～2020/03",
+          "buildingTotal": 3020911,
+          "domesticBuilding": 2956681,
+          "privateBuilding": 2627646,
+          "publicBuilding": 324636,
+          "otherBuilding": 4399,
+          "overseasBuilding": 64230
+        },
+        {
+          "group": "3",
+          "period": "2019/04～2020/03",
+          "buildingTotal": 985906,
+          "domesticBuilding": 977189,
+          "privateBuilding": 783824,
+          "publicBuilding": 176490,
+          "otherBuilding": 16875,
+          "overseasBuilding": 8717
+        },
+        {
+          "group": "4",
+          "period": "2019/04～2020/03",
+          "buildingTotal": 646281,
+          "domesticBuilding": 635212,
+          "privateBuilding": 532933,
+          "publicBuilding": 102239,
+          "otherBuilding": 40,
+          "overseasBuilding": 11069
+        },
+        {
+          "group": "5",
+          "period": "2019/04～2020/03",
+          "buildingTotal": 435698,
+          "domesticBuilding": 435695,
+          "privateBuilding": 361965,
+          "publicBuilding": 72934,
+          "otherBuilding": 796,
+          "overseasBuilding": 3
+        }
+      ],
+      "total": {
+        "buildingTotal": 10421695,
+        "domesticBuilding": 10081685,
+        "privateBuilding": 8885474,
+        "publicBuilding": 1170666,
+        "otherBuilding": 25545,
+        "overseasBuilding": 340010
+      },
+      "sourceFileId": "1_75Ez7yeJtlClq4r9RV3Q52c7gInbgV0",
+      "sourceFileName": "日建連_企業規模別受注高(202003期-3月)○.xls",
+      "sourceUrl": "https://drive.google.com/file/d/1_75Ez7yeJtlClq4r9RV3Q52c7gInbgV0/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/16FuyTkRJ2N1GoPkHg8dSYVkzOB6KI24yWLfTiufl9fc/edit"
+    },
+    {
+      "fiscalYear": 2020,
+      "sheetId": "1rTsoVpGnIcRNr3_RCdd3qYBpwU1MWS0Iee-2yTJusFQ",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2020/04～2021/03",
+          "buildingTotal": 5137570,
+          "domesticBuilding": 5095796,
+          "privateBuilding": 4474858,
+          "publicBuilding": 612647,
+          "otherBuilding": 8291,
+          "overseasBuilding": 41774
+        },
+        {
+          "group": "2",
+          "period": "2020/04～2021/03",
+          "buildingTotal": 2858754,
+          "domesticBuilding": 2687264,
+          "privateBuilding": 2416373,
+          "publicBuilding": 270838,
+          "otherBuilding": 53,
+          "overseasBuilding": 171490
+        },
+        {
+          "group": "3",
+          "period": "2020/04～2021/03",
+          "buildingTotal": 877444,
+          "domesticBuilding": 872898,
+          "privateBuilding": 724382,
+          "publicBuilding": 130334,
+          "otherBuilding": 18182,
+          "overseasBuilding": 4546
+        },
+        {
+          "group": "4",
+          "period": "2020/04～2021/03",
+          "buildingTotal": 654456,
+          "domesticBuilding": 650637,
+          "privateBuilding": 534302,
+          "publicBuilding": 116167,
+          "otherBuilding": 168,
+          "overseasBuilding": 3819
+        },
+        {
+          "group": "5",
+          "period": "2020/04～2021/03",
+          "buildingTotal": 437591,
+          "domesticBuilding": 437591,
+          "privateBuilding": 353983,
+          "publicBuilding": 82236,
+          "otherBuilding": 1372,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 9965815,
+        "domesticBuilding": 9744186,
+        "privateBuilding": 8503898,
+        "publicBuilding": 1212222,
+        "otherBuilding": 28066,
+        "overseasBuilding": 221629
+      },
+      "sourceFileId": "12bQ8n5tTJUku1L28Ut_l97kcjBQVAAPR",
+      "sourceFileName": "日建連_企業規模別受注高(202103期-3月)○.xls",
+      "sourceUrl": "https://drive.google.com/file/d/12bQ8n5tTJUku1L28Ut_l97kcjBQVAAPR/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1rTsoVpGnIcRNr3_RCdd3qYBpwU1MWS0Iee-2yTJusFQ/edit"
+    },
+    {
+      "fiscalYear": 2021,
+      "sheetId": "1oGX-hoyCIRK4CAbEZr5cibXtlhjtTFjMLo9zwVr6cPA",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2021/04～2022/2",
+          "buildingTotal": 5511603,
+          "domesticBuilding": 5452059,
+          "privateBuilding": 5001245,
+          "publicBuilding": 449933,
+          "otherBuilding": 881,
+          "overseasBuilding": 59544
+        },
+        {
+          "group": "2",
+          "period": "2021/04～2022/2",
+          "buildingTotal": 3127802,
+          "domesticBuilding": 3094557,
+          "privateBuilding": 2690303,
+          "publicBuilding": 395631,
+          "otherBuilding": 8623,
+          "overseasBuilding": 33245
+        },
+        {
+          "group": "3",
+          "period": "2021/04～2022/2",
+          "buildingTotal": 975148,
+          "domesticBuilding": 963200,
+          "privateBuilding": 813544,
+          "publicBuilding": 142812,
+          "otherBuilding": 6844,
+          "overseasBuilding": 11948
+        },
+        {
+          "group": "4",
+          "period": "2021/04～2022/2",
+          "buildingTotal": 726019,
+          "domesticBuilding": 714391,
+          "privateBuilding": 641886,
+          "publicBuilding": 72125,
+          "otherBuilding": 380,
+          "overseasBuilding": 11628
+        },
+        {
+          "group": "5",
+          "period": "2021/04～2022/2",
+          "buildingTotal": 518904,
+          "domesticBuilding": 518904,
+          "privateBuilding": 446966,
+          "publicBuilding": 69899,
+          "otherBuilding": 2039,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 10859476,
+        "domesticBuilding": 10743111,
+        "privateBuilding": 9593944,
+        "publicBuilding": 1130400,
+        "otherBuilding": 18767,
+        "overseasBuilding": 116365
+      },
+      "sourceFileId": "1nc-x6p4CKnXrwmAXVHyp6Pa8Y8ZJgUKR",
+      "sourceFileName": "日建連_企業規模別受注高(202203期-3月)○.xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/1nc-x6p4CKnXrwmAXVHyp6Pa8Y8ZJgUKR/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1oGX-hoyCIRK4CAbEZr5cibXtlhjtTFjMLo9zwVr6cPA/edit"
+    },
+    {
+      "fiscalYear": 2022,
+      "sheetId": "1vcHqEFr7_-ByccccZzhIm62gnYCEZ1qYMxB5hVuWF3I",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2022/04～2023/3",
+          "buildingTotal": 6047500,
+          "domesticBuilding": 6012037,
+          "privateBuilding": 5515233,
+          "publicBuilding": 491366,
+          "otherBuilding": 5438,
+          "overseasBuilding": 35463
+        },
+        {
+          "group": "2",
+          "period": "2022/04～2023/3",
+          "buildingTotal": 3265702,
+          "domesticBuilding": 3094783,
+          "privateBuilding": 2636148,
+          "publicBuilding": 442418,
+          "otherBuilding": 16217,
+          "overseasBuilding": 170919
+        },
+        {
+          "group": "3",
+          "period": "2022/04～2023/3",
+          "buildingTotal": 1141621,
+          "domesticBuilding": 1137700,
+          "privateBuilding": 942808,
+          "publicBuilding": 150046,
+          "otherBuilding": 44846,
+          "overseasBuilding": 3921
+        },
+        {
+          "group": "4",
+          "period": "2022/04～2023/3",
+          "buildingTotal": 844076,
+          "domesticBuilding": 831384,
+          "privateBuilding": 731869,
+          "publicBuilding": 99081,
+          "otherBuilding": 434,
+          "overseasBuilding": 12692
+        },
+        {
+          "group": "5",
+          "period": "2022/04～2023/3",
+          "buildingTotal": 486473,
+          "domesticBuilding": 486473,
+          "privateBuilding": 401990,
+          "publicBuilding": 81557,
+          "otherBuilding": 2926,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 11785372,
+        "domesticBuilding": 11562377,
+        "privateBuilding": 10228048,
+        "publicBuilding": 1264468,
+        "otherBuilding": 69861,
+        "overseasBuilding": 222995
+      },
+      "sourceFileId": "1BPlgJzIPESuraLoRiTN4uhq_bOc-fayO",
+      "sourceFileName": "日建連_企業規模別受注高(202303期-3月)○.xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/1BPlgJzIPESuraLoRiTN4uhq_bOc-fayO/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1vcHqEFr7_-ByccccZzhIm62gnYCEZ1qYMxB5hVuWF3I/edit"
+    },
+    {
+      "fiscalYear": 2023,
+      "sheetId": "1ZEdPIZ6_bWx3YnBo2fl_pCUEJUY5GCFksmiEsxyi7Nk",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2023/04～2024/3",
+          "buildingTotal": 6583350,
+          "domesticBuilding": 6489157,
+          "privateBuilding": 6024692,
+          "publicBuilding": 455653,
+          "otherBuilding": 8812,
+          "overseasBuilding": 94193
+        },
+        {
+          "group": "2",
+          "period": "2023/04～2024/3",
+          "buildingTotal": 3478514,
+          "domesticBuilding": 3345248,
+          "privateBuilding": 2827761,
+          "publicBuilding": 503391,
+          "otherBuilding": 14096,
+          "overseasBuilding": 133266
+        },
+        {
+          "group": "3",
+          "period": "2023/04～2024/3",
+          "buildingTotal": 1184854,
+          "domesticBuilding": 1169387,
+          "privateBuilding": 966795,
+          "publicBuilding": 182906,
+          "otherBuilding": 19686,
+          "overseasBuilding": 15467
+        },
+        {
+          "group": "4",
+          "period": "2023/04～2024/3",
+          "buildingTotal": 842988,
+          "domesticBuilding": 828357,
+          "privateBuilding": 678872,
+          "publicBuilding": 149037,
+          "otherBuilding": 448,
+          "overseasBuilding": 14631
+        },
+        {
+          "group": "5",
+          "period": "2023/04～2024/3",
+          "buildingTotal": 503349,
+          "domesticBuilding": 503349,
+          "privateBuilding": 425223,
+          "publicBuilding": 76296,
+          "otherBuilding": 1830,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 12593055,
+        "domesticBuilding": 12335498,
+        "privateBuilding": 10923343,
+        "publicBuilding": 1367283,
+        "otherBuilding": 44872,
+        "overseasBuilding": 257557
+      },
+      "sourceFileId": "1GeOuN4jirpOhVVhxTKDELpVBmcO8QmdN",
+      "sourceFileName": "日建連_企業規模別受注高(202403期-3月)○.xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/1GeOuN4jirpOhVVhxTKDELpVBmcO8QmdN/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1ZEdPIZ6_bWx3YnBo2fl_pCUEJUY5GCFksmiEsxyi7Nk/edit"
+    },
+    {
+      "fiscalYear": 2024,
+      "sheetId": "1pmd264-KcXXe3jVa_Jsf9N40bHAS2cs3_EblDwoWMY0",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2024/04～2025/3",
+          "buildingTotal": 6972796,
+          "domesticBuilding": 6891040,
+          "privateBuilding": 6499388,
+          "publicBuilding": 390417,
+          "otherBuilding": 1235,
+          "overseasBuilding": 81756
+        },
+        {
+          "group": "2",
+          "period": "2024/04～2025/3",
+          "buildingTotal": 3910091,
+          "domesticBuilding": 3819238,
+          "privateBuilding": 3324445,
+          "publicBuilding": 471362,
+          "otherBuilding": 23431,
+          "overseasBuilding": 90853
+        },
+        {
+          "group": "3",
+          "period": "2024/04～2025/3",
+          "buildingTotal": 1266777,
+          "domesticBuilding": 1256163,
+          "privateBuilding": 1051580,
+          "publicBuilding": 182419,
+          "otherBuilding": 22164,
+          "overseasBuilding": 10614
+        },
+        {
+          "group": "4",
+          "period": "2024/04～2025/3",
+          "buildingTotal": 931952,
+          "domesticBuilding": 911622,
+          "privateBuilding": 763480,
+          "publicBuilding": 147665,
+          "otherBuilding": 477,
+          "overseasBuilding": 20330
+        },
+        {
+          "group": "5",
+          "period": "2024/04～2025/3",
+          "buildingTotal": 589473,
+          "domesticBuilding": 589473,
+          "privateBuilding": 483404,
+          "publicBuilding": 100214,
+          "otherBuilding": 5855,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 13671089,
+        "domesticBuilding": 13467536,
+        "privateBuilding": 12122297,
+        "publicBuilding": 1292077,
+        "otherBuilding": 53162,
+        "overseasBuilding": 203553
+      },
+      "sourceFileId": "1nGVrxoHE33CoCtE7iR2hDsD9WVkuNK8M",
+      "sourceFileName": "日建連_企業規模別受注高(202503期-3月)○.xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/1nGVrxoHE33CoCtE7iR2hDsD9WVkuNK8M/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/1pmd264-KcXXe3jVa_Jsf9N40bHAS2cs3_EblDwoWMY0/edit"
+    },
+    {
+      "fiscalYear": 2025,
+      "sheetId": "17AgFkTH8oEDp_Pbqe1uOqVv1nvvLkHcZIH38Kx1wQA4",
+      "heading": "企業規模別受注高（日建連会員96社）",
+      "memberCount": 96,
+      "groups": [
+        {
+          "group": "1",
+          "period": "2025/04～2026/3",
+          "buildingTotal": 7827139,
+          "domesticBuilding": 7716170,
+          "privateBuilding": 7095073,
+          "publicBuilding": 606623,
+          "otherBuilding": 14474,
+          "overseasBuilding": 110969
+        },
+        {
+          "group": "2",
+          "period": "2025/04～2026/3",
+          "buildingTotal": 4127321,
+          "domesticBuilding": 4080112,
+          "privateBuilding": 3594884,
+          "publicBuilding": 474494,
+          "otherBuilding": 10734,
+          "overseasBuilding": 47209
+        },
+        {
+          "group": "3",
+          "period": "2025/04～2026/3",
+          "buildingTotal": 1309051,
+          "domesticBuilding": 1290688,
+          "privateBuilding": 1046967,
+          "publicBuilding": 233152,
+          "otherBuilding": 10569,
+          "overseasBuilding": 18363
+        },
+        {
+          "group": "4",
+          "period": "2025/04～2026/3",
+          "buildingTotal": 945793,
+          "domesticBuilding": 922467,
+          "privateBuilding": 763213,
+          "publicBuilding": 158599,
+          "otherBuilding": 655,
+          "overseasBuilding": 23326
+        },
+        {
+          "group": "5",
+          "period": "2025/04～2026/3",
+          "buildingTotal": 556193,
+          "domesticBuilding": 556193,
+          "privateBuilding": 462796,
+          "publicBuilding": 91922,
+          "otherBuilding": 1475,
+          "overseasBuilding": 0
+        }
+      ],
+      "total": {
+        "buildingTotal": 14765497,
+        "domesticBuilding": 14565630,
+        "privateBuilding": 12962933,
+        "publicBuilding": 1564790,
+        "otherBuilding": 37907,
+        "overseasBuilding": 199867
+      },
+      "sourceFileId": "1yEesf779_ysrDtMZ3Pp4hJRwve9bMD2n",
+      "sourceFileName": "日建連_企業規模別受注高(202603期-3月)○.xlsx",
+      "sourceUrl": "https://drive.google.com/file/d/1yEesf779_ysrDtMZ3Pp4hJRwve9bMD2n/view",
+      "confirmationSheetUrl": "https://docs.google.com/spreadsheets/d/17AgFkTH8oEDp_Pbqe1uOqVv1nvvLkHcZIH38Kx1wQA4/edit"
+    }
+  ],
+  "officialSourceUrl": "https://www.nikkenren.com/publication/research.html",
+  "officialArchiveUrl": "https://www.nikkenren.com/publication/archive.html"
+}

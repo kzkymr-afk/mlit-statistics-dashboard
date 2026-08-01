@@ -1,24 +1,25 @@
 # 国交省統計システム
 
-国土交通省の公式統計を、Excelの行列ではなく「統計項目・分類条件・期間」で選び、
-表・グラフ・CSVへ出力するためのデータ基盤兼ウェブアプリです。
+国土交通省と日建連の建設統計を、Excelの行列ではなく
+「統計項目・分類条件・期間」で選び、表・グラフ・CSVへ出力するための
+データ基盤兼ウェブアプリです。
 
 ## 現在の状態
 
-2026年7月31日時点で、e-Stat DB/APIを主系、APIにDB表がない統計の
+2026年8月1日時点で、e-Stat DB/APIを主系、APIにDB表がない統計の
 公式Excelを補完系として、2013年・2013年度以降を正規化SQLiteへ
 格納済みです。
 
-- 統計カテゴリ: 12（需要・受注、出来高、業界、コスト、供給、ストック）
-- 統計表: 225表
-- 公式分類の組み合わせ: 17,761,564系列
-- 2013年・2013年度以降の公表値: 185,481,872件
+- 統計カテゴリ: 13（需要・受注、出来高、業界、コスト、供給、ストック）
+- 統計表: 226表
+- 公式分類の組み合わせ: 17,761,589系列
+- 2013年・2013年度以降の公表値: 185,482,197件
 - 正規化SQLite: 約29GB
 - GitHub Pages用の圧縮データ: 約501MB
 
 公表された数値の0は、年度マスクと組み合わせて欠測と区別しながら
 暗黙保持します。このため、SQLiteの観測値行は非0・欠測・秘匿・
-注記付きの43,078,077行に抑え、画面では元の184,160,237件を復元します。
+注記付きの43,078,402行に抑え、画面では元の公表値を復元します。
 
 旧公開版のExcel原本ビュー、取得台帳、SHA-256は原典確認用に残しますが、
 シートやセルを選ぶ操作と、そのための`sheet_payloads` /
@@ -73,6 +74,7 @@ data/
 - 建設工事受注動態統計調査・大手50社（年次7表、月次14表）
 - 建築物リフォーム・リニューアル調査（年度次・四半期43表）
 - 建設投資見通し（全国・地域別の最新長期時系列2表）
+- 日建連会員・企業規模別受注高（第1～第5グループ、年度次、5指標）
 
 ### 出来高・業界
 
@@ -94,7 +96,7 @@ data/
 - 周期: 月次・四半期・年次・年度次
 - 時点: 2013年・2013年度以降
 - 主系: e-Stat DB/APIの統計表、公式分類、全観測値
-- 補完原本: e-Stat掲載の公式Excel
+- 補完原本: e-Stat掲載の公式Excel、日建連の受注実績調査Excel
 - 出典: 統計表ID、公式URL、公表・取得日時、単位、注釈
 
 建築着工の月次DB全59表は、2013年以降だけでも約6.8億観測となり
@@ -118,6 +120,8 @@ GitHub Pagesの公開容量を超えるため、全国・都道府県・用途�
 - 建設労働需給調査: https://www.e-stat.go.jp/stat-search/files?toukei=00600050
 - 主要建設資材需給・価格動向調査: https://www.e-stat.go.jp/stat-search/files?toukei=00600060
 - 建築物ストック統計: https://www.e-stat.go.jp/statistics/00600940
+- 日建連・受注実績調査: https://www.nikkenren.com/publication/research.html
+- 日建連・月別調査アーカイブ: https://www.nikkenren.com/publication/archive.html
 
 建築物着工統計の年度次Excelを2013年度以降まとめて取得する場合は、
 `npm run sync:building-annual` を使います。原本は
@@ -139,6 +143,14 @@ GitHub Pagesの公開容量を超えるため、全国・都道府県・用途�
 `npm run sync:estat-excel`で更新します。どちらも同じSQLite構造へ入り、
 画面では取得方式を意識せず同じ表・グラフ・CSV機能で利用できます。
 
+日建連の企業規模別受注高は、2013～2025年度について第1～第5グループの
+「建築全体・国内建築・海外建築・民間建築・官庁建築」を収録します。
+原表の合計行とその他建築は検算だけに使い、表示系列にはしません。
+年度ごとの対象社数（96～98社）を時間軸名と注釈に保持するため、対象社数の
+変化を確認したうえで比較できます。正規化DBへの登録は
+`npm run sync:nikkenren-orders`、公開差分生成は
+`npm run data:publish-system:nikkenren`です。
+
 Excel原本と正規化SQLiteはローカルだけに保持します。GitHub Pagesには
 画面、項目レジストリと、系列IDの先頭2桁でデータセットごとに
 分割した圧縮観測値を配置します。
@@ -152,7 +164,8 @@ Excel原本と正規化SQLiteはローカルだけに保持します。GitHub Pa
    ↓
 統計項目レジストリ
    ├─ e-Stat DB/API（主系）
-   └─ Excel取得（DB未収録・確認中）
+   ├─ e-Stat Excel取得（DB未収録・確認中）
+   └─ 日建連 Excel取得（企業規模別受注高）
              ↓
 data/database/mlit-statistics-system.sqlite
   ├─ statistical_tables
@@ -181,6 +194,7 @@ https://kzkymr-afk.github.io/mlit-statistics-dashboard/
 npm install
 npm run sync:estat-api:resume
 npm run sync:estat-excel
+npm run sync:nikkenren-orders
 npm run data:publish-system
 npm run build:pages
 npm run dev:pages
@@ -204,6 +218,7 @@ npm run sync:estat-api        # 2013年度以降の数値を正規化DBへ保存
 npm run sync:estat-api:resume # 完了表・取得済みページを再利用して更新
 npm run sync:estat-api:management # 追加した経営・営業向けDB表だけを更新
 npm run sync:estat-excel      # 労務・資材・ストックのExcel補完を更新
+npm run sync:nikkenren-orders # 日建連の5グループ×5指標を正規化DBへ登録
 npm run test:system           # 項目・分類・系列・値・出典の経路を検証
 ```
 

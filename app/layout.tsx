@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 const title = "国交省統計システム | 必要な項目を表・グラフ・CSVへ";
 const description =
-  "建築着工統計、受注動態（大手50社）、建築物リフォーム・リニューアル調査を、e-Statの公式分類コードで選び、2013年度以降の表・折れ線・棒・左右2軸・CSVへ出力。";
+  "建築着工統計、受注動態（大手50社）、リニューアル調査、日建連の企業規模別受注高を、公式分類で選び、2013年度以降の表・折れ線・棒・左右2軸・CSVへ出力。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
