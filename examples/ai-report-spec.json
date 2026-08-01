@@ -1,0 +1,46 @@
+{
+  "title": "日建連 第1グループ 建築受注高",
+  "subtitle": "2013～2025年度、建築全体と海外建築の比較",
+  "width": 1200,
+  "height": 675,
+  "series": [
+    {
+      "tableId": "nikkenren-group-orders-annual",
+      "selections": {
+        "tab": "building-total",
+        "cat01": "1"
+      },
+      "from": "2013",
+      "to": "2025",
+      "label": "建築全体",
+      "chartKind": "bar",
+      "axis": "left",
+      "color": "#2367d1"
+    },
+    {
+      "tableId": "nikkenren-group-orders-annual",
+      "selections": {
+        "tab": "overseas-building",
+        "cat01": "1"
+      },
+      "from": "2013",
+      "to": "2025",
+      "label": "海外建築",
+      "chartKind": "line",
+      "axis": "right",
+      "color": "#d17a17"
+    }
+  ],
+  "axes": {
+    "left": {
+      "min": 0,
+      "max": null,
+      "step": null
+    },
+    "right": {
+      "min": 0,
+      "max": null,
+      "step": null
+    }
+  }
+}

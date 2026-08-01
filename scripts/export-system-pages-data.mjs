@@ -14,6 +14,8 @@ import { dirname, relative, resolve } from "node:path";
 import { gzipSync } from "node:zlib";
 import { DatabaseSync } from "node:sqlite";
 
+import { exportAiCatalog } from "./lib/export-ai-catalog.mjs";
+
 const ROOT = resolve(import.meta.dirname, "..");
 const DATABASE_PATH = resolve(
   ROOT,
@@ -410,6 +412,7 @@ writeJson("catalog.json", {
   sources,
 });
 db.close();
+exportAiCatalog(BUILD_DIR);
 
 if (existsSync(OUTPUT_DIR)) rmSync(OUTPUT_DIR, { recursive: true });
 renameSync(BUILD_DIR, OUTPUT_DIR);

@@ -11,15 +11,16 @@
     "dev:pages": "next dev",
     "build:pages": "GITHUB_PAGES=true next build",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
-    "test": "npm run build:pages && node --test tests/rendered-html.test.mjs tests/chart-scale.test.mjs tests/statistics-favorites.test.mjs tests/statistics-navigation.test.mjs tests/nikkenren-group-orders.test.mjs",
+    "test": "npm run build:pages && node --test tests/rendered-html.test.mjs tests/chart-scale.test.mjs tests/statistics-favorites.test.mjs tests/statistics-navigation.test.mjs tests/nikkenren-group-orders.test.mjs tests/statistics-ai.test.mjs",
     "test:data": "node --test tests/static-data.test.mjs",
-    "test:system": "node --test tests/statistics-system.test.mjs",
+    "test:system": "node --test tests/statistics-system.test.mjs tests/statistics-ai.test.mjs",
     "test:system-public": "node --test tests/system-public-data.test.mjs tests/nikkenren-group-orders.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "db:build-local": "node --expose-gc scripts/build-local-database.mjs",
     "data:export-pages": "node scripts/export-pages-data.mjs",
     "data:export-system-pages": "node scripts/export-system-pages-data.mjs",
+    "data:export-ai": "node scripts/export-ai-catalog.mjs",
     "data:prepare-pages": "npm run db:build-local && npm run data:export-pages",
     "sync:estat-api": "node --env-file-if-exists=.env.local scripts/sync-estat-api.mjs",
     "sync:estat-api:resume": "node --env-file-if-exists=.env.local scripts/sync-estat-api.mjs --resume",
@@ -35,14 +36,18 @@
     "sync:building-annual": "node scripts/sync-building-annual-files.mjs && node scripts/build-building-annual-catalog.mjs",
     "catalog:building-annual": "node scripts/build-building-annual-catalog.mjs",
     "sync:orders-major50-annual": "node scripts/sync-orders-major50-annual-files.mjs && node scripts/build-orders-major50-annual-catalog.mjs",
-    "catalog:orders-major50-annual": "node scripts/build-orders-major50-annual-catalog.mjs"
+    "catalog:orders-major50-annual": "node scripts/build-orders-major50-annual-catalog.mjs",
+    "ai:stats": "node scripts/statistics-ai.mjs",
+    "ai:mcp": "node scripts/mcp-statistics-server.mjs"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",

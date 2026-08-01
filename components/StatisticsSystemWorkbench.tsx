@@ -102,6 +102,7 @@ type ObservationPoint = {
   annotation: string | null;
   status: string;
   sourceId: string;
+  implicitNumericZero: boolean;
 };
 
 type BundlePoint = [
@@ -148,6 +149,7 @@ type FavoriteItem = {
 
 type SelectedSeries = {
   id: string;
+  datasetId: string;
   tableId: string;
   tableTitle: string;
   coordinates: Record<string, string>;
@@ -826,6 +828,51 @@ function downloadCsv(
   window.setTimeout(() => URL.revokeObjectURL(url), 0);
 }
 
+function downloadAiJson(
+  series: SelectedSeries[],
+  axisSettings: Record<ChartAxis, AxisSettings>,
+  axisScales: Record<ChartAxis, ReturnType<typeof buildAxisScale>>,
+) {
+  const payload = {
+    schemaVersion: "1.0",
+    generatedAt: new Date().toISOString(),
+    purpose:
+      "AIによる建設業界分析・比較・レポート作成用。数値引用時はtableId、coordinates、sourcesを保持する。",
+    chart: {
+      axes: axisSettings,
+      resolvedScales: axisScales,
+    },
+    series: series.map((item) => ({
+      id: item.id,
+      datasetId: item.datasetId,
+      tableId: item.tableId,
+      tableTitle: item.tableTitle,
+      label: item.label,
+      unit: item.unit,
+      coordinates: item.coordinates,
+      chartKind: item.chartKind,
+      axis: item.axis,
+      color: item.color,
+      observations: item.points.map((point) => ({
+        ...point,
+        timeLabel: item.timeLabels[point.timeCode] ?? point.timeCode,
+      })),
+      sources: item.sources,
+    })),
+  };
+  const blob = new Blob([`${JSON.stringify(payload, null, 2)}\n`], {
+    type: "application/json;charset=utf-8",
+  });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = `建設統計_AI分析用_${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
 export default function StatisticsSystemWorkbench() {
   const [catalog, setCatalog] = useState<SystemCatalog | null>(null);
   const [catalogError, setCatalogError] = useState("");
@@ -1076,6 +1123,7 @@ export default function StatisticsSystemWorkbench() {
               annotation,
               status: exceptionalStatus ?? "confirmed_value",
               sourceId: source?.sourceId ?? "",
+              implicitNumericZero: false,
             },
           ],
         ),
@@ -1098,12 +1146,14 @@ export default function StatisticsSystemWorkbench() {
               annotation: null,
               status: "confirmed_value",
               sourceId: source?.sourceId ?? "",
+              implicitNumericZero: true,
             },
         );
       setSelectedSeries((current) => [
         ...current,
         {
           id,
+          datasetId: meta.table.datasetId,
           tableId: seriesTableId,
           tableTitle: meta.table.title,
           coordinates: { ...selections },
@@ -1665,15 +1715,26 @@ export default function StatisticsSystemWorkbench() {
               <span>OUTPUT</span>
               <h2>比較グラフ</h2>
             </div>
-            <button
-              type="button"
-              onClick={() =>
-                downloadCsv(selectedSeries, outputTimeLabels)
-              }
-              disabled={selectedSeries.length === 0}
-            >
-              CSV出力
-            </button>
+            <div className="system-output-actions">
+              <button
+                type="button"
+                onClick={() =>
+                  downloadAiJson(selectedSeries, axisSettings, axisScales)
+                }
+                disabled={selectedSeries.length === 0}
+              >
+                AI用JSON
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  downloadCsv(selectedSeries, outputTimeLabels)
+                }
+                disabled={selectedSeries.length === 0}
+              >
+                CSV出力
+              </button>
+            </div>
           </div>
 
           {selectedSeries.length ? (

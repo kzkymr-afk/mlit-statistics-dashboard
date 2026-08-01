@@ -1,0 +1,28 @@
+# 建設統計パネル — AI利用ガイド
+
+## 目的
+
+建設業界、自社、同業他社の分析に必要な公的統計を、Excelのセル位置ではなく
+統計表ID・公式分類コード・時間コードで再現可能に取得します。
+
+## 公開データ
+
+1. `system/ai/catalog.json` から統計分野と統計表を検索する。
+2. 各tableの `aiMetaUrl` を開き、time以外の全分類コードを確認する。
+3. ローカル環境ではMCPまたはCLIで値を取得する。公開シャードを直接読む場合は
+   aiMetaUrl内のseriesAccess仕様に従う。
+
+## ローカルAIの標準手順
+
+- MCP: `search_statistical_tables` → `get_table_schema` →
+  `query_statistics` → 必要なら `create_report_bundle`
+- CLI: `npm run ai:stats -- help`
+
+## 出力と出典
+
+`create_report_bundle` はSVG、横持ちCSV、縦持ちCSV、完全JSON、出典JSON、
+再生成用query-specを出力します。折れ線/棒、左右2軸、Y軸の最小・最大・
+目盛間隔を指定できます。社内・他社データはcustomSeriesとして追加できます。
+
+レポートでは必ず統計表ID、分類コード、対象期間、単位、出典URLを保持し、
+欠測・秘匿・公表0を区別してください。

@@ -70,6 +70,25 @@ test("公開データは統計表・公式分類・観測値のv2形式である
   );
 });
 
+test("AI向け公開カタログは全統計表の非圧縮分類スキーマを持つ", async () => {
+  const catalog = await readJson("system/catalog.json");
+  const aiCatalog = await readJson("system/ai/catalog.json");
+  assert.equal(aiCatalog.schemaVersion, "1.0");
+  assert.equal(aiCatalog.datasets.length, catalog.datasets.length);
+  assert.equal(aiCatalog.tables.length, catalog.tables.length);
+  const nikkenren = aiCatalog.tables.find(
+    (item) => item.id === "nikkenren-group-orders-annual",
+  );
+  assert.ok(nikkenren);
+  const meta = await readJson(
+    nikkenren.aiMetaUrl.replace(/^system\//, "system/"),
+  );
+  assert.equal(meta.table.id, nikkenren.id);
+  assert.ok(meta.dimensions.some((item) => item.apiKey === "time"));
+  assert.match(meta.seriesAccess.identity, /SHA-256/);
+  assert.equal(meta.seriesAccess.implicitNumericZero, true);
+});
+
 test("日建連受注高は5グループ×5指標を年度系列として公開する", async () => {
   const catalog = await readJson("system/catalog.json");
   const table = catalog.tables.find(

@@ -1547,7 +1547,8 @@ select:focus-visible {
 }
 
 .system-panel-heading > a,
-.system-panel-heading > button {
+.system-panel-heading > button,
+.system-output-actions button {
   background: white;
   border: 1px solid var(--system-border);
   border-radius: 7px;
@@ -1558,9 +1559,15 @@ select:focus-visible {
   padding: 8px 11px;
 }
 
-.system-panel-heading > button:disabled {
+.system-panel-heading > button:disabled,
+.system-output-actions button:disabled {
   color: #a2acba;
   cursor: not-allowed;
+}
+
+.system-output-actions {
+  display: flex;
+  gap: 8px;
 }
 
 .system-search,
