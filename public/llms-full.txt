@@ -2,8 +2,8 @@
 
 ## 目的
 
-建設業界、自社、同業他社の分析に必要な公的統計を、Excelのセル位置ではなく
-統計表ID・公式分類コード・時間コードで再現可能に取得します。
+建設業界、自社、同業他社の分析に必要な公的統計とBuildBase会社別データを、
+Excelのセル位置ではなく統計表ID・分類コード・時間コードで再現可能に取得します。
 
 ## 公開データ
 
@@ -26,3 +26,15 @@
 
 レポートでは必ず統計表ID、分類コード、対象期間、単位、出典URLを保持し、
 欠測・秘匿・公表0を区別してください。
+
+## BuildBase会社別データ
+
+- tableId: `buildbase-company-annual`
+- `tab`: 比較項目（売上高、利益、受注、人員、建物用途別受注高等）
+- `cat01`: 会社
+- `time`: 2015～2025年度
+- 空欄状態: `not_disclosed` または `publication_pending`
+
+ローカルでの取得例:
+
+`npm run ai:stats -- query --table buildbase-company-annual --select tab=rd_expense --select cat01=KAJIMA --from 2024 --to 2024`

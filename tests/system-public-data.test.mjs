@@ -42,6 +42,7 @@ test("公開データは統計表・公式分類・観測値のv2形式である
     "construction-materials",
     "building-stock",
     "nikkenren-group-orders",
+    "buildbase-company-comparison",
   ]) {
     assert.ok(
       catalog.tables.some((table) => table.datasetId === datasetId),
@@ -65,6 +66,8 @@ test("公開データは統計表・公式分類・観測値のv2形式である
       const sourceUrl = catalog.sources[table.id]?.sourceUrl ?? "";
       return table.datasetId === "nikkenren-group-orders"
         ? /^https:\/\/www\.nikkenren\.com\//.test(sourceUrl)
+        : table.datasetId === "buildbase-company-comparison"
+          ? /\/buildbase-data\/$/.test(sourceUrl)
         : /^https:\/\/www\.e-stat\.go\.jp\//.test(sourceUrl);
     }),
   );
@@ -168,6 +171,7 @@ test("実データの系列分割は軽量形式で値・暗黙0・出典を復�
   const shardDirectory = new URL("system/shards/", publicRoot);
   const shardFiles = (await readdir(shardDirectory))
     .filter((name) => /^[a-z0-9-]+-[a-f0-9]{2}\.json\.gz$/.test(name))
+    .filter((name) => !name.startsWith("buildbase-company-comparison-"))
     .sort();
   assert.ok(shardFiles.length >= 256);
 
@@ -209,6 +213,72 @@ test("実データの系列分割は軽量形式で値・暗黙0・出典を復�
           point[1] === 0 &&
           (point[3] === null || point[3] === "")
         ),
+    ),
+  );
+});
+
+test("BuildBase会社別データは確定値・非開示・公表待ちを区別して公開する", async () => {
+  const catalog = await readJson("system/catalog.json");
+  const table = catalog.tables.find(
+    (item) => item.id === "buildbase-company-annual",
+  );
+  assert.ok(table);
+  assert.equal(table.datasetId, "buildbase-company-comparison");
+  assert.equal(table.sourceKind, "buildbase-public-disclosures");
+  assert.equal(table.seriesCount, 1_134);
+  assert.equal(table.observationCount, 12_150);
+
+  const meta = await readGzipJson(table.metaUrl);
+  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 54);
+  assert.equal(meta.dimensions.find((item) => item.apiKey === "cat01").values.length, 21);
+  assert.equal(meta.dimensions.find((item) => item.apiKey === "time").values.length, 11);
+
+  async function seriesFor(selections) {
+    const identity = Object.entries(selections)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, value]) => `${key}=${value}`)
+      .join("\u001f");
+    const seriesId = createHash("sha256")
+      .update(`${table.id}\u001f${identity}`)
+      .digest("hex")
+      .slice(0, 32);
+    const bundle = await readGzipJson(
+      `system/shards/buildbase-company-comparison-${seriesId.slice(0, 2)}.json.gz`,
+    );
+    return bundle.series[seriesId];
+  }
+
+  const researchExpense = await seriesFor({
+    tab: "rd_expense",
+    cat01: "KAJIMA",
+  });
+  assert.ok(researchExpense);
+  assert.ok(
+    researchExpense[2].some(
+      (point) => point[0] === "2024100000" && point[1] === 22_207,
+    ),
+  );
+
+  const pendingEngineers = await seriesFor({
+    tab: "architecture_engineers_1st_class",
+    cat01: "ANDO_HAZAMA",
+  });
+  assert.ok(
+    pendingEngineers[2].some(
+      (point) =>
+        point[0] === "2025100000" &&
+        point[1] === null &&
+        point[4] === "publication_pending",
+    ),
+  );
+
+  const notDisclosed = await seriesFor({
+    tab: "building_orders_use_office",
+    cat01: "ASANUMA",
+  });
+  assert.ok(
+    notDisclosed[2].some(
+      (point) => point[1] === null && point[4] === "not_disclosed",
     ),
   );
 });

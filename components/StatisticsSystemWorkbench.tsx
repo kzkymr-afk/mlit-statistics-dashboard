@@ -201,6 +201,12 @@ const CYCLE_OPTIONS: Array<{
 ];
 const STATISTICS_FAMILIES = [
   {
+    id: "buildbase-company-comparison",
+    title: "ゼネコン会社別データ",
+    datasetIds: ["buildbase-company-comparison"],
+    cycles: ["年度次"],
+  },
+  {
     id: "building-starts",
     title: "建築着工統計",
     datasetIds: ["building-starts", "building-starts-monthly"],
@@ -269,6 +275,11 @@ const STATISTICS_FAMILIES = [
 ] as const;
 const DATASET_GROUPS = [
   {
+    id: "company",
+    title: "企業比較",
+    statisticsIds: ["buildbase-company-comparison"],
+  },
+  {
     id: "demand",
     title: "需要・受注",
     statisticsIds: [
@@ -316,6 +327,27 @@ function formatNumber(value: number) {
   return new Intl.NumberFormat("ja-JP", {
     maximumFractionDigits: 2,
   }).format(value);
+}
+
+const POINT_STATUS_LABELS: Record<string, string> = {
+  not_disclosed: "非開示",
+  publication_pending: "公表待ち",
+  missing: "欠測",
+  suppressed: "秘匿",
+};
+
+function pointDisplayValue(point: ObservationPoint | undefined) {
+  if (!point) return "—";
+  if (point.numericValue !== null) return formatNumber(point.numericValue);
+  return POINT_STATUS_LABELS[point.status] || point.value || "—";
+}
+
+function sourceLabelFor(sourceKind: string) {
+  if (sourceKind === "nikkenren-excel") return "日建連";
+  if (sourceKind === "buildbase-public-disclosures") {
+    return "BuildBase（公開資料集約）";
+  }
+  return "e-Stat";
 }
 
 function normalizeSearch(value: string) {
@@ -790,7 +822,7 @@ function downloadCsv(
     ...times.map((timeCode) => [
       timeCode,
       timeLabels.get(timeCode) ?? timeCode,
-      ...pointMaps.map((points) => points.get(timeCode)?.value ?? ""),
+      ...pointMaps.map((points) => pointDisplayValue(points.get(timeCode))),
     ]),
     [],
     [
@@ -884,7 +916,9 @@ export default function StatisticsSystemWorkbench() {
   const [catalog, setCatalog] = useState<SystemCatalog | null>(null);
   const [catalogError, setCatalogError] = useState("");
   const [cycleFilter, setCycleFilter] = useState<CycleFilter>("年度次");
-  const [statisticsId, setStatisticsId] = useState("building-starts");
+  const [statisticsId, setStatisticsId] = useState(
+    "buildbase-company-comparison",
+  );
   const [tableSearch, setTableSearch] = useState("");
   const [tableId, setTableId] = useState("");
   const [meta, setMeta] = useState<TableMeta | null>(null);
@@ -1171,10 +1205,7 @@ export default function StatisticsSystemWorkbench() {
           chartKind: "line",
           axis: current.length === 0 ? "left" : "left",
           color: COLORS[current.length % COLORS.length],
-          sourceLabel:
-            meta.table.sourceKind === "nikkenren-excel"
-              ? "日建連"
-              : "e-Stat",
+          sourceLabel: sourceLabelFor(meta.table.sourceKind),
           sources: source
             ? {
                 [source.sourceId]: {
@@ -1508,7 +1539,7 @@ export default function StatisticsSystemWorkbench() {
           <i className={catalog ? "ready" : ""} />
           <div>
             <strong>{catalog ? "正規化DB接続済み" : "データ接続待ち"}</strong>
-            <small>e-Stat DB/API 主系 · 公式Excel／日建連補完</small>
+            <small>国交省統計 · 日建連 · BuildBase企業データ</small>
           </div>
         </div>
       </aside>
@@ -1516,8 +1547,12 @@ export default function StatisticsSystemWorkbench() {
       <main className="system-main">
         <header className="system-topbar">
           <div>
-            <p>国土交通省 / e-Stat / 日建連</p>
-            <h1>必要な統計項目だけを取り出す</h1>
+            <p>国土交通省 / e-Stat / 日建連 / BuildBase</p>
+            <h1>
+              {activeStatistics.id === "buildbase-company-comparison"
+                ? "ゼネコン各社の確定値を比較する"
+                : "必要な統計項目だけを取り出す"}
+            </h1>
           </div>
           <div className="system-badges">
             <span>{displayCycle(cycleFilter)}</span>
@@ -1925,11 +1960,16 @@ export default function StatisticsSystemWorkbench() {
                           (entry) => entry.timeCode === timeCode,
                         );
                         return (
-                          <td key={item.id}>
-                            {point?.numericValue === null ||
-                            point?.numericValue === undefined
-                              ? point?.value || "—"
-                              : formatNumber(point.numericValue)}
+                          <td
+                            key={item.id}
+                            className={
+                              point?.status && point.status !== "confirmed_value"
+                                ? `system-cell-status status-${point.status}`
+                                : undefined
+                            }
+                            title={point?.annotation || undefined}
+                          >
+                            {pointDisplayValue(point)}
                           </td>
                         );
                       })}
