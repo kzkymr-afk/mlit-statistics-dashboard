@@ -21,6 +21,47 @@
   --font-mono: var(--font-geist-mono), "SFMono-Regular", monospace;
 }
 
+.buildbase-guide {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 48px 28px 72px;
+}
+
+.buildbase-guide header {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+}
+
+.buildbase-guide header span {
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.buildbase-guide h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: 0;
+  margin: 10px 0 12px;
+}
+
+.buildbase-guide h2 {
+  font-size: 20px;
+  letter-spacing: 0;
+  margin: 34px 0 12px;
+}
+
+.buildbase-guide p,
+.buildbase-guide li {
+  color: #48546a;
+  line-height: 1.85;
+}
+
+.buildbase-guide a {
+  color: var(--blue-dark);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2074,6 +2115,28 @@ select:focus-visible {
   border-bottom: 1px solid #e8ecf1;
   padding: 9px 11px;
   text-align: right;
+}
+
+.system-data-table td.system-cell-status {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.system-data-table td.status-not_disclosed {
+  background: #f3f5f8;
+  color: #697486;
+}
+
+.system-data-table td.status-publication_pending {
+  background: var(--amber-soft);
+  color: #975b15;
+}
+
+.system-data-table td.status-missing,
+.system-data-table td.status-suppressed {
+  background: #f8eef0;
+  color: #9b4c52;
 }
 
 .system-data-table thead th {

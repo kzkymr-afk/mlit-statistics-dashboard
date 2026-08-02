@@ -87,6 +87,23 @@ npm run ai:stats -- bundle \
   --out outputs/ai/nikkenren-group1
 ```
 
+BuildBaseの会社別確定値も同じCLIで取得できます。
+
+```bash
+npm run ai:stats -- search --query "会社別 売上高"
+npm run ai:stats -- schema \
+  --table buildbase-company-annual \
+  --dimension tab --value-search "受注高"
+npm run ai:stats -- query \
+  --table buildbase-company-annual \
+  --select tab=building_orders_use_office \
+  --select cat01=KAJIMA \
+  --from 2020 --to 2025
+```
+
+会社別データでは、数値のない年度を0と解釈しません。`not_disclosed`は確認済みの
+非開示、`publication_pending`は情報源の公表待ちです。
+
 ## 資料パッケージ
 
 `bundle` / `create_report_bundle` は次を同じフォルダへ出力します。

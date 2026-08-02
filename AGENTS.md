@@ -20,3 +20,7 @@ Excelのセル位置を根拠にせず、`mlit_statistics` MCP または
 
 `customSeries` で社内・他社データを加える場合は、値だけでなく単位、期間、資料名、
 URLまたはローカルパス、取得日を `source` に記録する。
+
+BuildBaseの会社別確定値は `npm run sync:buildbase` で正規化DBへ同期する。
+公開画面では未入力を0に変換せず、`not_disclosed` と
+`publication_pending` を保持する。生の抽出ログ、ローカルパス、非公開GitHub URLは公開しない。

@@ -23,13 +23,16 @@ npm run sync:building-annual
 npm run sync:orders-major50-annual
 npm run sync:estat-excel
 
-echo "3/5 項目レジストリと分割データを生成・検証"
+echo "3/6 BuildBaseの会社別確定値を同期"
+npm run sync:buildbase
+
+echo "4/6 項目レジストリと分割データを生成・検証"
 npm run data:publish-system
 npm run test:system
 npm run test:system-public
 npm run build:pages
 
-echo "4/5 項目レジストリと系列分割データをGitHubへ保存"
+echo "5/6 項目レジストリと系列分割データをGitHubへ保存"
 mkdir -p data/exports
 COPYFILE_DISABLE=1 tar -czf data/exports/system-pages-data.tar.gz -C public system
 if gh release view data-current >/dev/null 2>&1; then
@@ -43,7 +46,7 @@ else
     --notes "GitHub Pages公開用の最新項目レジストリと分割データです。"
 fi
 
-echo "5/5 GitHub Pagesの更新を開始"
+echo "6/6 GitHub Pagesの更新を開始"
 gh workflow run pages.yml
 
 echo
