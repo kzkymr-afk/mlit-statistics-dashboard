@@ -2,7 +2,11 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { DatabaseSync } from "node:sqlite";
 
-import { compactText, seriesIdFor } from "./estat-normalize.mjs";
+import {
+  compactText,
+  fiscalYearFromTimeCode,
+  seriesIdFor,
+} from "./estat-normalize.mjs";
 
 const ROOT = resolve(import.meta.dirname, "../..");
 export const DEFAULT_DATABASE_PATH = resolve(
@@ -94,15 +98,13 @@ function parseTimeBoundary(raw, timeValues, side) {
   );
 }
 
-function decodeTimeMask(hexMask, timeValues) {
+// ビット位置は取込時のallowedTimeCodes（fiscal_year_from以降の時間コードを
+// 昇順に並べた列）に対応する。全時間軸ではない点に注意。
+function decodeTimeMask(hexMask, timeCodes) {
   if (!hexMask) return new Set();
   const mask = BigInt(`0x${hexMask}`);
   return new Set(
-    timeValues
-      .map((item, index) =>
-        (mask & (1n << BigInt(index))) !== 0n ? item.code : null,
-      )
-      .filter(Boolean),
+    timeCodes.filter((_, index) => (mask & (1n << BigInt(index))) !== 0n),
   );
 }
 
@@ -417,7 +419,21 @@ export class StatisticsQueryEngine {
     if (fromCode && toCode && fromCode > toCode) {
       throw new Error(`開始時点 ${fromCode} は終了時点 ${toCode} より後です。`);
     }
-    const availableCodes = decodeTimeMask(series.timeMaskHex, timeValues);
+    const fiscalYearFloor =
+      this.db
+        .prepare("SELECT fiscal_year_from AS fiscalYearFrom FROM datasets WHERE id = ?")
+        .get(table.datasetId)?.fiscalYearFrom ?? null;
+    const maskTimeCodes = timeValues
+      .map((item) => item.code)
+      .filter((code) => {
+        const fiscalYear = fiscalYearFromTimeCode(code);
+        return (
+          fiscalYear !== null &&
+          (fiscalYearFloor === null || fiscalYear >= fiscalYearFloor)
+        );
+      })
+      .sort();
+    const availableCodes = decodeTimeMask(series.timeMaskHex, maskTimeCodes);
     const selectedTimes = timeValues.filter(
       (item) =>
         availableCodes.has(item.code) &&
