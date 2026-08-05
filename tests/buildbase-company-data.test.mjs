@@ -10,72 +10,89 @@ import {
   loadBuildBaseCompanyData,
 } from "../scripts/lib/buildbase-company-data.mjs";
 
-function write(root, path, text) {
-  const target = resolve(root, path);
-  mkdirSync(dirname(target), { recursive: true });
-  writeFileSync(target, text);
-}
-
 function fixture(completionStatus = "publication_pending") {
   const root = mkdtempSync(resolve(tmpdir(), "buildbase-company-data-"));
-  write(
-    root,
-    "config/company_master.csv",
-    "operating_company_id,operating_company_name\nA,甲建設\n",
-  );
-  write(
-    root,
-    "config/field_definition.csv",
-    [
-      "field_id,field_name_ja,category,target_unit",
-      "sales,売上高,performance,百万円",
-      "engineers,技術者数,human_capital,人",
-      "",
-    ].join("\n"),
-  );
-  write(
-    root,
-    "config/company_year_master.csv",
-    [
-      "company_year_id,fiscal_year,operating_company_id,period_type",
-      "A_2025,2025,A,annual",
-      "A_2025H1,2025,A,semiannual_h1",
-      "",
-    ].join("\n"),
-  );
-  write(
-    root,
-    "data/final/final_master_wide.csv",
-    [
-      "company_year_id,fiscal_year,operating_company_id,period_type,sales,engineers",
-      "A_2025,2025,A,annual,1234,",
-      "A_2025H1,2025,A,semiannual_h1,600,",
-      "",
-    ].join("\n"),
-  );
-  write(
-    root,
-    "data/final/final_master_long.csv",
-    [
-      "company_year_id,field_id,value,extraction_method,source_dataset_id,source_file",
-      "A_2025,sales,1234,XBRL_CSV,,edinet.db:xbrl_facts",
-      "",
-    ].join("\n"),
-  );
-  write(
-    root,
-    "data/reports/company_completion_report.csv",
-    [
-      "company_id,field_id,field_name_ja,fiscal_year,status",
-      "A,sales,売上高,2025,filled",
-      `A,engineers,技術者数,2025,${completionStatus}`,
-      "",
-    ].join("\n"),
-  );
+  const payload = {
+    schemaVersion: 1,
+    generatedAt: "2026-08-05T00:00:00Z",
+    sourceUpdatedAt: "2026-08-04T00:00:00Z",
+    sourceHash: "fixture-hash",
+    companies: [{ id: "A", name: "甲建設" }],
+    fields: [
+      {
+        id: "building_orders_use_office",
+        name: "建築受注高_用途別_事務所・庁舎",
+        category: "building_use_orders",
+        unit: "百万円",
+        sortOrder: 0,
+      },
+      {
+        id: "engineers",
+        name: "技術者数",
+        category: "human_capital",
+        unit: "人",
+        sortOrder: 1,
+      },
+    ],
+    fiscalYears: [2025],
+    cells: [
+      {
+        companyId: "A",
+        companyName: "甲建設",
+        companyYearId: "A_2025",
+        fiscalYear: 2025,
+        fieldId: "building_orders_use_office",
+        fieldName: "建築受注高_用途別_事務所・庁舎",
+        unit: "百万円",
+        rawValue: "1234",
+        numericValue: 1234,
+        status: "filled",
+        sourceType: "factbook",
+        sourceLabel: "公式ファクトブック・データブック",
+        annotation: "BuildBase確定値 / 公式ファクトブック・データブック",
+      },
+      {
+        companyId: "A",
+        companyName: "甲建設",
+        companyYearId: "A_2025",
+        fiscalYear: 2025,
+        fieldId: "engineers",
+        fieldName: "技術者数",
+        unit: "人",
+        rawValue: "",
+        numericValue: null,
+        status: completionStatus,
+        sourceType: "",
+        sourceLabel: "",
+        annotation: "情報源側の公表待ち。公表後にBuildBaseから再同期",
+      },
+    ],
+    summary: {
+      companyCount: 1,
+      companyYearCount: 1,
+      fieldCount: 2,
+      cellCount: 2,
+      statusCounts: {
+        filled: 1,
+        not_applicable: 0,
+        publication_pending: completionStatus === "publication_pending" ? 1 : 0,
+        todo: completionStatus === "todo" ? 1 : 0,
+      },
+      buildingUseFieldCount: 1,
+      buildingUseCompanyCount: 1,
+      buildingUseFilledCount: 1,
+      factbookBuildingUseFilledCount: 1,
+      buildingUseFiscalYearFrom: 2025,
+      buildingUseFiscalYearTo: 2025,
+    },
+  };
+  const target = resolve(root, "data/exports/mlit_company_data.json");
+  mkdirSync(dirname(target), { recursive: true });
+  writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`);
   return root;
 }
 
-test("BuildBase完成表を会社・項目・年度の系列へ変換する", () => {
+test("BuildBase公開データを会社・項目・年度の系列へ変換する", () => {
   const root = fixture();
   try {
     const data = loadBuildBaseCompanyData(root);
@@ -83,6 +100,8 @@ test("BuildBase完成表を会社・項目・年度の系列へ変換する", ()
     assert.equal(data.companyYearCount, 1);
     assert.equal(data.fields.length, 2);
     assert.equal(data.cells.length, 2);
+    assert.equal(data.factbookBuildingUseFilledCount, 1);
+    assert.equal(data.buildingUseCompanyCount, 1);
     assert.deepEqual(data.statusCounts, {
       filled: 1,
       not_applicable: 0,
@@ -102,13 +121,16 @@ test("BuildBase完成表を会社・項目・年度の系列へ変換する", ()
       ["confirmed_value", "publication_pending"],
     );
     assert.equal(observations.find((item) => item.numericValue !== null).numericValue, 1234);
-    assert.match(seriesLabel({ tab: "sales", cat01: "A" }), /売上高 \/ 甲建設/);
+    assert.match(
+      seriesLabel({ tab: "building_orders_use_office", cat01: "A" }),
+      /事務所・庁舎 \/ 甲建設/,
+    );
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
 });
 
-test("未処理セルがあるBuildBaseデータは公開対象にしない", () => {
+test("未処理セルがあるBuildBase公開データは公開対象にしない", () => {
   const root = fixture("todo");
   try {
     assert.throws(
@@ -119,4 +141,3 @@ test("未処理セルがあるBuildBaseデータは公開対象にしない", ()
     rmSync(root, { recursive: true, force: true });
   }
 });
-

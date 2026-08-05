@@ -35,6 +35,18 @@ test("統計項目と分類条件を選ぶシステム画面をサーバーレ�
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 
+test("BuildBase収録基準は建物用途別受注の反映状況を表示する", async () => {
+  const html = await readFile(
+    new URL("../out/buildbase-data/index.html", import.meta.url),
+    "utf8",
+  );
+  assert.match(html, /建物用途別受注実績/);
+  assert.match(html, /10社/);
+  assert.match(html, /604/);
+  assert.match(html, /公式ファクトブック/);
+  assert.match(html, /BuildBaseが公式資料から値と出典を確定/);
+});
+
 test("大手50社受注動態の2013年度以降の公式Excel全件を保持する", async () => {
   const raw = await readFile(
     new URL("../data/catalogs/orders-major50-annual.json", import.meta.url),

@@ -2,6 +2,7 @@ import {
   cpSync,
   existsSync,
   mkdirSync,
+  readFileSync,
   readdirSync,
   renameSync,
   rmSync,
@@ -67,10 +68,9 @@ if (ONLY_DATASET_IDS.length > 0) {
       "差分生成の基になる公開データがありません。先に全体生成が必要です。",
     );
   }
-  cpSync(OUTPUT_DIR, BUILD_DIR, { recursive: true });
-} else {
-  mkdirSync(BUILD_DIR, { recursive: true });
 }
+mkdirSync(BUILD_DIR, { recursive: true });
+mkdirSync(SHARD_BUILD_DIR, { recursive: true });
 if (EXTERNAL_SHARD_DIR) {
   if (existsSync(SHARD_BUILD_DIR)) {
     rmSync(SHARD_BUILD_DIR, { recursive: true });
@@ -127,6 +127,10 @@ function publicPath(path) {
 }
 
 const db = new DatabaseSync(DATABASE_PATH, { readOnly: true });
+const existingCatalog =
+  ONLY_DATASET_IDS.length > 0
+    ? JSON.parse(readFileSync(resolve(OUTPUT_DIR, "catalog.json"), "utf8"))
+    : null;
 if (ONLY_DATASET_IDS.length > 0) {
   for (const datasetId of ONLY_DATASET_IDS) {
     const knownDataset = db
@@ -136,28 +140,29 @@ if (ONLY_DATASET_IDS.length > 0) {
       throw new Error(`未登録のデータセットです: ${datasetId}`);
     }
   }
-  for (const fileName of readdirSync(SHARD_BUILD_DIR)) {
-    if (
-      ONLY_DATASET_IDS.some((datasetId) =>
-        fileName.startsWith(`${datasetId}-`),
-      ) &&
-      fileName.endsWith(".json.gz")
-    ) {
-      unlinkSync(resolve(SHARD_BUILD_DIR, fileName));
-    }
-  }
 }
-const datasets = db
+const datasetRows = db
   .prepare(
     `SELECT id, title,
             government_statistics_code AS governmentStatisticsCode,
             provided_statistics_id AS providedStatisticsId,
             source_url AS sourceUrl, fiscal_year_from AS fiscalYearFrom
        FROM datasets
+      ${ONLY_DATASET_IDS.length > 0
+        ? `WHERE id IN (${ONLY_DATASET_IDS.map(() => "?").join(", ")})`
+        : ""}
       ORDER BY title`,
   )
-  .all();
-const tables = db
+  .all(...ONLY_DATASET_IDS);
+const datasets = existingCatalog
+  ? [
+      ...existingCatalog.datasets.filter(
+        (dataset) => !ONLY_DATASET_IDS.includes(dataset.id),
+      ),
+      ...datasetRows,
+    ].toSorted((left, right) => left.title.localeCompare(right.title, "ja"))
+  : datasetRows;
+const tableRows = db
   .prepare(
     `SELECT t.id, t.dataset_id AS datasetId, t.title,
             t.statistics_name AS statisticsName, t.cycle,
@@ -168,21 +173,40 @@ const tables = db
             COALESCE(SUM(s.observation_count), 0) AS observationCount
        FROM statistical_tables t
        LEFT JOIN series s ON s.table_id = t.id
+      ${ONLY_DATASET_IDS.length > 0
+        ? `WHERE t.dataset_id IN (${ONLY_DATASET_IDS.map(() => "?").join(", ")})`
+        : ""}
       GROUP BY t.id
       ORDER BY t.dataset_id, t.title, t.id`,
   )
-  .all();
-const sources = Object.fromEntries(
-  db
-    .prepare(
-      `SELECT table_id AS tableId, id AS sourceId,
-              source_url AS sourceUrl, published_at AS publishedAt,
-              retrieved_at AS retrievedAt
-         FROM observation_sources
-        ORDER BY table_id`,
+  .all(...ONLY_DATASET_IDS);
+const tables = existingCatalog
+  ? [
+      ...existingCatalog.tables.filter(
+        (table) => !ONLY_DATASET_IDS.includes(table.datasetId),
+      ),
+      ...tableRows,
+    ].toSorted(
+      (left, right) =>
+        left.datasetId.localeCompare(right.datasetId) ||
+        left.title.localeCompare(right.title, "ja") ||
+        left.id.localeCompare(right.id),
     )
-    .all()
-    .map((source) => [
+  : tableRows;
+const sourceRows = db
+  .prepare(
+    `SELECT os.table_id AS tableId, os.id AS sourceId,
+            os.source_url AS sourceUrl, os.published_at AS publishedAt,
+            os.retrieved_at AS retrievedAt
+       FROM observation_sources os
+       LEFT JOIN statistical_tables t ON t.id = os.table_id
+      ${ONLY_DATASET_IDS.length > 0
+        ? `WHERE t.dataset_id IN (${ONLY_DATASET_IDS.map(() => "?").join(", ")})`
+        : ""}
+      ORDER BY os.table_id`,
+  )
+  .all(...ONLY_DATASET_IDS);
+const sourceEntries = sourceRows.map((source) => [
       source.tableId,
       {
         sourceId: source.sourceId,
@@ -190,8 +214,20 @@ const sources = Object.fromEntries(
         publishedAt: source.publishedAt,
         retrievedAt: source.retrievedAt,
       },
-    ]),
+    ]);
+const staleSourceTableIds = new Set(
+  (existingCatalog?.tables ?? [])
+    .filter((table) => ONLY_DATASET_IDS.includes(table.datasetId))
+    .map((table) => table.id),
 );
+const sources = {
+  ...Object.fromEntries(
+    Object.entries(existingCatalog?.sources ?? {}).filter(
+      ([tableId]) => !staleSourceTableIds.has(tableId),
+    ),
+  ),
+  ...Object.fromEntries(sourceEntries),
+};
 
 const dimensionStatement = db.prepare(
   `SELECT id, api_key AS apiKey, name, description, sort_order AS sortOrder
@@ -261,7 +297,7 @@ for (const table of tables) {
   if (
     ONLY_DATASET_IDS.length > 0 &&
     !ONLY_DATASET_IDS.includes(table.datasetId) &&
-    existsSync(resolve(BUILD_DIR, metaPath))
+    existsSync(resolve(OUTPUT_DIR, metaPath))
   ) {
     tableIndex.push({
       ...table,
@@ -412,10 +448,26 @@ writeJson("catalog.json", {
   sources,
 });
 db.close();
-exportAiCatalog(BUILD_DIR);
-
-if (existsSync(OUTPUT_DIR)) rmSync(OUTPUT_DIR, { recursive: true });
-renameSync(BUILD_DIR, OUTPUT_DIR);
+if (ONLY_DATASET_IDS.length > 0) {
+  const outputShardDir = resolve(OUTPUT_DIR, "shards");
+  for (const fileName of readdirSync(outputShardDir)) {
+    if (
+      ONLY_DATASET_IDS.some((datasetId) =>
+        fileName.startsWith(`${datasetId}-`),
+      ) &&
+      fileName.endsWith(".json.gz")
+    ) {
+      unlinkSync(resolve(outputShardDir, fileName));
+    }
+  }
+  cpSync(BUILD_DIR, OUTPUT_DIR, { recursive: true, force: true });
+  rmSync(BUILD_DIR, { recursive: true });
+  exportAiCatalog(OUTPUT_DIR);
+} else {
+  exportAiCatalog(BUILD_DIR);
+  if (existsSync(OUTPUT_DIR)) rmSync(OUTPUT_DIR, { recursive: true });
+  renameSync(BUILD_DIR, OUTPUT_DIR);
+}
 if (EXTERNAL_SHARD_DIR) {
   if (existsSync(SHARD_OUTPUT_DIR)) {
     rmSync(SHARD_OUTPUT_DIR, { recursive: true });

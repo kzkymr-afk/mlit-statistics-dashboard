@@ -22,6 +22,9 @@ import {
   preferredTableId,
   tableMatchesCycle,
 } from "@/lib/statistics-navigation.mjs";
+import BuildBaseBuildingUseShortcut, {
+  DEFAULT_BUILDING_USE_FIELD_ID,
+} from "@/components/BuildBaseBuildingUseShortcut";
 
 type DatasetSummary = {
   id: string;
@@ -1060,6 +1063,15 @@ export default function StatisticsSystemWorkbench() {
                     defaultDimensionValue(dimension),
                 ]),
             );
+        if (
+          !pendingFavorite &&
+          value.table.id === "buildbase-company-annual" &&
+          value.dimensions
+            .find((dimension) => dimension.apiKey === "tab")
+            ?.values.some((item) => item.code === DEFAULT_BUILDING_USE_FIELD_ID)
+        ) {
+          nextSelections.tab = DEFAULT_BUILDING_USE_FIELD_ID;
+        }
         const time = value.dimensions.find(
           (dimension) => dimension.apiKey === "time",
         );
@@ -1658,6 +1670,17 @@ export default function StatisticsSystemWorkbench() {
                     統計表ID {meta.table.id} · {displayCycle(meta.table.cycle)}
                   </small>
                 </div>
+                {meta.table.datasetId === "buildbase-company-comparison" ? (
+                  <BuildBaseBuildingUseShortcut
+                    selectedFieldId={selections.tab ?? ""}
+                    onSelect={(fieldId) =>
+                      setSelections((current) => ({
+                        ...current,
+                        tab: fieldId,
+                      }))
+                    }
+                  />
+                ) : null}
                 {meta.table.datasetId === "nikkenren-group-orders" ? (
                   <p className="system-dataset-note">
                     第1～第5グループを収録。年度により集計対象の会員社数が

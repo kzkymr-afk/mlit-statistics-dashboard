@@ -33,10 +33,23 @@ export default function BuildBaseDataGuide() {
       </section>
 
       <section>
-        <h2>更新方法</h2>
+        <h2>建物用途別受注実績</h2>
         <p>
-          BuildBaseの完成表を更新した後に同期し、未処理セルが0件であることを確認できたデータだけを公開します。表示値は分析用に単位を統一しています。
+          {`各社の公式ファクトブックにある工種別・用途別の建築受注実績を、共通の9用途へそろえています。現在は${buildBaseCatalog.buildingUseCompanyCount}社、${buildBaseCatalog.factbookBuildingUseFilledCount.toLocaleString("ja-JP")}件を収録しています。`}
         </p>
+        <p>
+          事務所・庁舎、宿泊、店舗・商業、工場・発電所、倉庫・流通、住宅、教育・研究・文化、医療・福祉、娯楽・その他を比較できます。
+        </p>
+      </section>
+
+      <section>
+        <h2>データが届くまで</h2>
+        <ol>
+          <li>BuildBaseが公式資料から値と出典を確定します。</li>
+          <li>未処理セルが0件の完成データだけを1つの公開データにまとめます。</li>
+          <li>国交省統計システムが会社比較・グラフ・CSVへ反映します。</li>
+        </ol>
+        <p>表示値は分析用に単位を統一しています。</p>
       </section>
 
       <p>
@@ -45,3 +58,4 @@ export default function BuildBaseDataGuide() {
     </main>
   );
 }
+import buildBaseCatalog from "@/data/catalogs/buildbase-company-data.json";

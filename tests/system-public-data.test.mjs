@@ -233,6 +233,7 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   assert.equal(meta.dimensions.find((item) => item.apiKey === "cat01").values.length, 21);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "time").values.length, 11);
 
+  const bundleCache = new Map();
   async function seriesFor(selections) {
     const identity = Object.entries(selections)
       .sort(([left], [right]) => left.localeCompare(right))
@@ -242,9 +243,16 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
       .update(`${table.id}\u001f${identity}`)
       .digest("hex")
       .slice(0, 32);
-    const bundle = await readGzipJson(
-      `system/shards/buildbase-company-comparison-${seriesId.slice(0, 2)}.json.gz`,
-    );
+    const prefix = seriesId.slice(0, 2);
+    if (!bundleCache.has(prefix)) {
+      bundleCache.set(
+        prefix,
+        await readGzipJson(
+          `system/shards/buildbase-company-comparison-${prefix}.json.gz`,
+        ),
+      );
+    }
+    const bundle = bundleCache.get(prefix);
     return bundle.series[seriesId];
   }
 
@@ -281,6 +289,26 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
       (point) => point[1] === null && point[4] === "not_disclosed",
     ),
   );
+
+  const buildingUseFields = meta.dimensions
+    .find((item) => item.apiKey === "tab")
+    .values.filter((item) => item.code.startsWith("building_orders_use_"));
+  const companies = meta.dimensions.find(
+    (item) => item.apiKey === "cat01",
+  ).values;
+  let filledBuildingUseCount = 0;
+  for (const field of buildingUseFields) {
+    for (const company of companies) {
+      const series = await seriesFor({ tab: field.code, cat01: company.code });
+      filledBuildingUseCount += series[2].filter(
+        (point) =>
+          point[1] !== null &&
+          String(point[3] ?? "").includes("公式ファクトブック・データブック"),
+      ).length;
+    }
+  }
+  assert.equal(buildingUseFields.length, 9);
+  assert.equal(filledBuildingUseCount, 604);
 });
 
 test("リニューアルの長い月別時間軸を可変長マスクで復元できる", async () => {

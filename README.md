@@ -207,6 +207,18 @@ public/system/（項目レジストリ＋系列ID先頭2桁の圧縮観測値）
 GitHub Pages（会社PCから閲覧）
 ```
 
+BuildBaseの会社別データは、内部CSVをこのアプリで再結合しません。
+
+```text
+有報・公式ファクトブック・決算説明資料
+        ↓ BuildBaseで値・空欄状態・出典を確定
+mlit_company_data.json（単一の受け渡しファイル）
+        ↓
+buildbase-company-comparison（正規化DB）
+        ↓
+会社比較・建物用途別受注・グラフ・CSV
+```
+
 - 正本: ローカルの正規化SQLite
 - 主系: e-Stat APIの統計表・メタ情報・数値
 - 補完: API未収録・確認中のExcel

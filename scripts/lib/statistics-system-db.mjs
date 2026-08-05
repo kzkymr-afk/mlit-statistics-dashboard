@@ -238,7 +238,25 @@ export function upsertStatisticalTable(
   );
 }
 
-export function replaceDimensions(db, tableId, dimensions) {
+function runTransaction(db, enabled, callback) {
+  if (!enabled) return callback();
+  db.exec("BEGIN");
+  try {
+    const result = callback();
+    db.exec("COMMIT");
+    return result;
+  } catch (error) {
+    db.exec("ROLLBACK");
+    throw error;
+  }
+}
+
+export function replaceDimensions(
+  db,
+  tableId,
+  dimensions,
+  { manageTransaction = true } = {},
+) {
   const insertDimension = db.prepare(
     `INSERT INTO dimensions (
        id, table_id, api_key, name, description, sort_order
@@ -259,8 +277,7 @@ export function replaceDimensions(db, tableId, dimensions) {
        unit = excluded.unit,
        sort_order = excluded.sort_order`,
   );
-  db.exec("BEGIN");
-  try {
+  runTransaction(db, manageTransaction, () => {
     for (const dimension of dimensions) {
       insertDimension.run(
         dimension.id,
@@ -282,11 +299,7 @@ export function replaceDimensions(db, tableId, dimensions) {
         );
       }
     }
-    db.exec("COMMIT");
-  } catch (error) {
-    db.exec("ROLLBACK");
-    throw error;
-  }
+  });
 }
 
 export function upsertObservationSource(
@@ -337,6 +350,7 @@ export function makeObservationWriter(
     timeCodes = [],
     storeObservationValues = true,
     writeSeriesMetadata = true,
+    manageTransactions = true,
   },
 ) {
   // e-Statは同じ系列の各時点を連続して返す。直前と同じ系列なら
@@ -464,8 +478,7 @@ export function makeObservationWriter(
     const observationStatement = replaceExisting
       ? upsertObservation
       : insertObservation;
-    db.exec("BEGIN");
-    try {
+    runTransaction(db, manageTransactions, () => {
       for (const observation of observations) {
         if (observation.seriesId !== lastSeriesId) {
           flushSeriesState();
@@ -525,21 +538,12 @@ export function makeObservationWriter(
           fetchedAt,
         );
       }
-      db.exec("COMMIT");
-    } catch (error) {
-      db.exec("ROLLBACK");
-      throw error;
-    }
+    });
   };
   write.finish = () => {
-    db.exec("BEGIN");
-    try {
+    runTransaction(db, manageTransactions, () => {
       flushSeriesState();
-      db.exec("COMMIT");
-    } catch (error) {
-      db.exec("ROLLBACK");
-      throw error;
-    }
+    });
   };
   return write;
 }

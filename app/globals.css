@@ -1726,6 +1726,89 @@ select:focus-visible {
   padding: 9px 11px;
 }
 
+.buildbase-use-shortcut {
+  border-bottom: 1px solid var(--system-border);
+  border-top: 1px solid var(--system-border);
+  margin: -4px 0 17px;
+  padding: 14px 0 16px;
+}
+
+.buildbase-use-shortcut > header,
+.buildbase-use-status {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buildbase-use-shortcut > header span {
+  color: var(--system-blue);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.buildbase-use-shortcut > header h3 {
+  font-size: 13px;
+  margin: 3px 0 0;
+}
+
+.buildbase-use-shortcut > header a {
+  color: var(--system-blue);
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.buildbase-use-status {
+  background: #f4f8fe;
+  border-left: 3px solid var(--system-blue);
+  margin-top: 11px;
+  min-height: 38px;
+  padding: 8px 10px;
+}
+
+.buildbase-use-status strong {
+  color: #174f9f;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.buildbase-use-status span {
+  color: var(--system-muted);
+  font-size: 9px;
+  text-align: right;
+}
+
+.buildbase-use-options {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 10px;
+}
+
+.buildbase-use-options button {
+  background: white;
+  border: 1px solid var(--system-border);
+  border-radius: 6px;
+  color: #34465d;
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  min-height: 34px;
+  padding: 6px 8px;
+}
+
+.buildbase-use-options button:hover {
+  border-color: #8bb4ef;
+}
+
+.buildbase-use-options button.active {
+  background: var(--system-blue-soft);
+  border-color: var(--system-blue);
+  color: var(--system-blue);
+  box-shadow: inset 0 -2px var(--system-blue);
+}
+
 .system-filters {
   display: grid;
   gap: 12px;
@@ -2321,6 +2404,20 @@ select:focus-visible {
 
   .system-filters {
     grid-template-columns: 1fr;
+  }
+
+  .buildbase-use-status {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .buildbase-use-status span {
+    text-align: left;
+  }
+
+  .buildbase-use-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .system-time-range {
