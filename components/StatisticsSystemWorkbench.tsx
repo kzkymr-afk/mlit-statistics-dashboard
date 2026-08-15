@@ -175,7 +175,19 @@ type SelectedSeries = {
   timeLabels: Record<string, string>;
 };
 
-const COLORS = ["#2367d1", "#0f8c72", "#d17a17", "#7459c6", "#c14953"];
+const MAX_SELECTED_SERIES = 10;
+const COLORS = [
+  "#2367d1",
+  "#0f8c72",
+  "#d17a17",
+  "#7459c6",
+  "#c14953",
+  "#0086a8",
+  "#7a8f1b",
+  "#d2559a",
+  "#72503a",
+  "#4f657a",
+];
 const DEFAULT_TABLE_IDS: Record<string, string> = {
   "building-starts": "0003119773",
   "building-starts-monthly": "0003119745",
@@ -1134,6 +1146,10 @@ export default function StatisticsSystemWorkbench() {
 
   const addSeries = useCallback(async () => {
     if (!meta) return;
+    if (selectedSeries.length >= MAX_SELECTED_SERIES) {
+      setMessage(`比較グラフには最大${MAX_SELECTED_SERIES}系列まで追加できます。`);
+      return;
+    }
     setAddingSeries(true);
     setMessage("");
     try {
@@ -1760,9 +1776,21 @@ export default function StatisticsSystemWorkbench() {
                       type="button"
                       className="system-primary"
                       onClick={addSeries}
-                      disabled={addingSeries || selectedSeries.length >= 5}
+                      disabled={
+                        addingSeries ||
+                        selectedSeries.length >= MAX_SELECTED_SERIES
+                      }
+                      title={
+                        selectedSeries.length >= MAX_SELECTED_SERIES
+                          ? `比較グラフには最大${MAX_SELECTED_SERIES}系列まで追加できます。`
+                          : undefined
+                      }
                     >
-                      {addingSeries ? "取得中…" : "この系列を追加"}
+                      {addingSeries
+                        ? "取得中…"
+                        : selectedSeries.length >= MAX_SELECTED_SERIES
+                          ? `${MAX_SELECTED_SERIES}系列まで追加済み`
+                          : "この系列を追加"}
                     </button>
                   </div>
                 </div>
@@ -1943,7 +1971,7 @@ export default function StatisticsSystemWorkbench() {
               <span>QUERY → SERIES</span>
               <strong>分類条件を選び、「この系列を追加」</strong>
               <p>
-                最大5系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
+                最大10系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
               </p>
             </div>
           )}
