@@ -27,11 +27,13 @@ test("統計項目と分類条件を選ぶシステム画面をサーバーレ�
   assert.match(html, /すべて/);
   assert.match(html, /該当する統計/);
   assert.match(html, /周期・統計/);
+  assert.match(html, /最大10系列まで/);
   assert.match(html, /左右2軸、軸の最小・最大・目盛間隔/);
   assert.match(html, /CSV出力/);
   assert.match(html, /AI用JSON/);
   assert.match(html, /国交省統計 · 日建連 · BuildBase企業データ/);
   assert.doesNotMatch(html, /シート|数値セルをクリック/);
+  assert.doesNotMatch(html, /最大5系列まで/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 
