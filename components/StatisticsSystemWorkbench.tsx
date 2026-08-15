@@ -175,7 +175,7 @@ type SelectedSeries = {
   timeLabels: Record<string, string>;
 };
 
-const MAX_SELECTED_SERIES = 10;
+const MAX_SELECTED_SERIES = 15;
 const COLORS = [
   "#2367d1",
   "#0f8c72",
@@ -187,6 +187,11 @@ const COLORS = [
   "#d2559a",
   "#72503a",
   "#4f657a",
+  "#4d8f2e",
+  "#b8860b",
+  "#9b45c1",
+  "#006c67",
+  "#304c89",
 ];
 const DEFAULT_TABLE_IDS: Record<string, string> = {
   "building-starts": "0003119773",
@@ -1971,7 +1976,7 @@ export default function StatisticsSystemWorkbench() {
               <span>QUERY → SERIES</span>
               <strong>分類条件を選び、「この系列を追加」</strong>
               <p>
-                最大10系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
+                最大15系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
               </p>
             </div>
           )}
