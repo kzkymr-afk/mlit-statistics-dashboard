@@ -30,7 +30,7 @@ import {
 const ROOT = resolve(import.meta.dirname, "..");
 const BUILDBASE_ROOT = resolve(
   process.env.BUILDBASE_ROOT ??
-    resolve(ROOT, "../../Materials/2026-06_有報自動抽出/yuho_auto_extract"),
+    resolve(ROOT, "../../Platforms/BuildBase/yuho_auto_extract"),
 );
 const BUILDBASE_EXPORT_PATH = resolve(
   process.env.BUILDBASE_EXPORT_PATH ??

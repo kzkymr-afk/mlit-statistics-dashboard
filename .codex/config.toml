@@ -1,7 +1,7 @@
 [mcp_servers.mlit_statistics]
 command = "node"
 args = ["scripts/mcp-statistics-server.mjs"]
-cwd = "/Volumes/SSD_External/Business/Apps/2026-07_mlit-statistics-dashboard"
+cwd = "/Volumes/SSD_External/Business/Platforms/mlit-statistics-dashboard"
 startup_timeout_sec = 20
 tool_timeout_sec = 120
 enabled = true

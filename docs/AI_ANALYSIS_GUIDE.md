@@ -32,7 +32,7 @@ Codexは `AGENTS.md` の手順に従い、検索 → 分類確認 → 取得 →
 MCP設定なので、初回だけ利用許可を求められます。
 
 ```bash
-cd /Volumes/SSD_External/Business/Apps/2026-07_mlit-statistics-dashboard
+cd /Volumes/SSD_External/Business/Platforms/mlit-statistics-dashboard
 claude
 ```
 
