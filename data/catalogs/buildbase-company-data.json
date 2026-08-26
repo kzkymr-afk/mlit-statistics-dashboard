@@ -4,8 +4,8 @@
   "tableId": "buildbase-company-annual",
   "title": "ゼネコン21社 会社別主要指標（売上高・利益・受注・人員等）",
   "source": "BuildBase MLIT export",
-  "sourceUpdatedAt": "2026-08-02T02:09:45.946195+00:00",
-  "sourceHash": "ff648cfa0cac30d3a73bf743218993bf33b74a51657813dd1a80a7780d5d2a5a",
+  "sourceUpdatedAt": "2026-08-23T08:32:29.492032+00:00",
+  "sourceHash": "d644b76d4b3136c83602dfbe2404750e4f6096cbdc827d68e1604a24535fc153",
   "fiscalYearFrom": 2015,
   "fiscalYearTo": 2025,
   "companyCount": 21,
@@ -13,15 +13,15 @@
   "fieldCount": 54,
   "cellCount": 12150,
   "statusCounts": {
-    "filled": 9653,
-    "not_applicable": 2459,
+    "filled": 10318,
+    "not_applicable": 1794,
     "publication_pending": 38,
     "todo": 0
   },
   "buildingUseFieldCount": 9,
-  "buildingUseCompanyCount": 10,
-  "buildingUseFilledCount": 604,
-  "factbookBuildingUseFilledCount": 604,
+  "buildingUseCompanyCount": 15,
+  "buildingUseFilledCount": 1261,
+  "factbookBuildingUseFilledCount": 1261,
   "buildingUseFiscalYearFrom": 2015,
   "buildingUseFiscalYearTo": 2025
 }

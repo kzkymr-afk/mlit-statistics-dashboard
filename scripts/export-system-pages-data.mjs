@@ -16,6 +16,11 @@ import { gzipSync } from "node:zlib";
 import { DatabaseSync } from "node:sqlite";
 
 import { exportAiCatalog } from "./lib/export-ai-catalog.mjs";
+import {
+  cartesianCombinations,
+  classifyComboStatus,
+  comboIdentity,
+} from "../lib/statistics-series-compare.mjs";
 
 const ROOT = resolve(import.meta.dirname, "..");
 const DATABASE_PATH = resolve(
@@ -31,6 +36,11 @@ const BUILD_DIR = `${OUTPUT_DIR}.building`;
 const MAX_GITHUB_FILE_BYTES = 25 * 1024 * 1024;
 const MAX_RELEASE_ASSET_BYTES = 2 * 1024 * 1024 * 1024;
 const BUNDLE_PREFIX_LENGTH = 2;
+// 分類の直積がこの件数を超える表では availability index を生成しない
+// （非時間分類が多い/値が多い表はクロス積が爆発するため、選択肢グレーアウトは
+// 諦めて全ての値を選択可能なまま扱う）。BuildBase表（54項目×21社=1134）
+// のような比較用途の表は十分小さく収まる。
+const AVAILABILITY_INDEX_MAX_COMBOS = 20_000;
 const EXTERNAL_SHARD_DIR = process.env.MLIT_SYSTEM_SHARD_DIR
   ? resolve(ROOT, process.env.MLIT_SYSTEM_SHARD_DIR)
   : "";
@@ -258,6 +268,84 @@ const seriesCoordinatesStatement = db.prepare(
      JOIN dimensions d ON d.id = sd.dimension_id
     WHERE sd.series_id = ?`,
 );
+const seriesStatusStatement = db.prepare(
+  `SELECT s.id AS seriesId,
+          MAX(CASE
+                WHEN o.status = 'confirmed_value'
+                 AND (o.numeric_value IS NOT NULL OR o.value IS NOT NULL)
+                THEN 1 ELSE 0
+              END) AS hasReal,
+          MAX(CASE WHEN o.status = 'not_disclosed' THEN 1 ELSE 0 END)
+            AS hasNotDisclosed,
+          MAX(CASE WHEN o.status = 'publication_pending' THEN 1 ELSE 0 END)
+            AS hasPublicationPending,
+          COUNT(o.time_code) AS observationCount
+     FROM series s
+     LEFT JOIN observations o ON o.series_id = s.id
+    WHERE s.table_id = ?
+    GROUP BY s.id`,
+);
+
+// 選択肢を出す時点で「この会社(cat01)にはこの項目(tab)のデータが無い」を
+// 軽量に判定できるよう、系列一覧を全観測値スキャンせずに済む索引を
+// 生成する。非時間分類の直積が集計可能なサイズの表だけが対象（BuildBase等）。
+// 実データが1件でもある組み合わせは記録しない（インデックス不在=利用可能、
+// が既定値のため）。
+function writeAvailabilityIndex(table, dimensions) {
+  const nonTimeDimensions = dimensions.filter(
+    (dimension) => dimension.apiKey !== "time",
+  );
+  if (nonTimeDimensions.length === 0) return undefined;
+  const comboCount = nonTimeDimensions.reduce(
+    (total, dimension) => total * dimension.values.length,
+    1,
+  );
+  if (comboCount === 0 || comboCount > AVAILABILITY_INDEX_MAX_COMBOS) {
+    return undefined;
+  }
+
+  const combos = {};
+  const seenIdentities = new Set();
+  for (const row of seriesStatusStatement.all(table.id)) {
+    const coordinates = seriesCoordinatesStatement.all(row.seriesId);
+    if (coordinates.length !== nonTimeDimensions.length) continue;
+    const identity = comboIdentity(
+      Object.fromEntries(
+        coordinates.map((coordinate) => [
+          coordinate.apiKey,
+          coordinate.valueCode,
+        ]),
+      ),
+    );
+    seenIdentities.add(identity);
+    const status = classifyComboStatus({
+      hasReal: Boolean(row.hasReal),
+      hasNotDisclosed: Boolean(row.hasNotDisclosed),
+      hasPublicationPending: Boolean(row.hasPublicationPending),
+      observationCount: row.observationCount,
+    });
+    if (status !== "available") combos[identity] = status;
+  }
+  for (const coordinates of cartesianCombinations(
+    nonTimeDimensions.map((dimension) => ({
+      apiKey: dimension.apiKey,
+      codes: dimension.values.map((value) => value.code),
+    })),
+  )) {
+    const identity = comboIdentity(coordinates);
+    if (!seenIdentities.has(identity)) combos[identity] = "unavailable";
+  }
+  if (Object.keys(combos).length === 0) return undefined;
+
+  const availabilityPath = `tables/${table.id}/availability.json.gz`;
+  writeGzipJson(availabilityPath, {
+    schemaVersion: 1,
+    tableId: table.id,
+    combos,
+  });
+  return publicPath(availabilityPath);
+}
+
 const seriesProjection = `
   SELECT substr(s.id, 1, ?) AS prefix, s.id AS seriesId,
          t.dataset_id AS datasetId, s.unit,
@@ -339,6 +427,7 @@ for (const table of tables) {
         )
       : defaultSelection;
   }
+  const availabilityUrl = writeAvailabilityIndex(table, dimensions);
   writeGzipJson(metaPath, {
     schemaVersion: 2,
     table,
@@ -348,6 +437,7 @@ for (const table of tables) {
     seriesBundlePrefixLength: BUNDLE_PREFIX_LENGTH,
     seriesBundleUrlTemplate:
       `${SERIES_ASSET_BASE_URL}/${table.datasetId}-{prefix}.json.gz`,
+    ...(availabilityUrl ? { availabilityUrl } : {}),
   });
 
   tableIndex.push({

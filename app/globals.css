@@ -1264,6 +1264,93 @@ select:focus-visible {
   color: #f3a0a6;
 }
 
+.system-presets {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  gap: 5px;
+  padding-bottom: 14px;
+}
+
+.system-presets-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 3px 13px;
+}
+
+.system-presets-heading small {
+  color: #9eb2d0;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.system-presets-heading span {
+  align-items: center;
+  background: rgba(114, 168, 255, 0.14);
+  border-radius: 999px;
+  color: #8ab5f7;
+  display: flex;
+  font-size: 8px;
+  height: 18px;
+  justify-content: center;
+  min-width: 18px;
+  padding: 0 5px;
+}
+
+.system-sidebar nav .system-preset-select {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.system-sidebar nav .system-preset-select > span:first-child {
+  color: #6fbf8f;
+  flex: 0 0 auto;
+  font-size: 10px;
+}
+
+.system-sidebar nav .system-preset-select:disabled {
+  opacity: 0.5;
+}
+
+.system-preset-copy {
+  color: inherit;
+  display: grid;
+  flex: 1;
+  font-family: inherit;
+  font-size: inherit;
+  gap: 2px;
+  min-width: 0;
+  text-align: left;
+}
+
+.system-preset-copy strong,
+.system-preset-copy small {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.system-preset-copy strong {
+  -webkit-line-clamp: 2;
+  color: #d7e0ed;
+  font-size: 9px;
+  line-height: 1.35;
+}
+
+.system-preset-copy small {
+  -webkit-line-clamp: 2;
+  color: #71829b;
+  font-size: 7px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
 .system-cycle-filter {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: grid;
@@ -1819,13 +1906,125 @@ select:focus-visible {
   min-width: 0;
 }
 
-.system-filter > span,
 .system-time-range label > span {
   color: var(--system-muted);
   display: block;
   font-size: 9px;
   font-weight: 750;
   margin-bottom: 5px;
+}
+
+.system-filter-label {
+  align-items: center;
+  color: var(--system-muted);
+  display: flex;
+  font-size: 9px;
+  font-weight: 750;
+  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.system-compare-toggle {
+  background: none;
+  border: 0;
+  color: var(--system-blue);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 750;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.system-compare-toggle.active {
+  color: #b3441c;
+}
+
+.system-compare-panel {
+  background: #f6f8fb;
+  border: 1px solid var(--system-border);
+  border-radius: 8px;
+  margin-top: -2px;
+  padding: 11px 12px 12px;
+}
+
+.system-compare-heading {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.system-compare-heading > span:first-child {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.system-compare-count {
+  color: var(--system-muted);
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+.system-compare-list {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin-top: 8px;
+  max-height: 220px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.system-compare-item {
+  align-items: center;
+  background: white;
+  border: 1px solid var(--system-border);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  font-size: 10px;
+  gap: 6px;
+  padding: 6px 8px;
+}
+
+.system-compare-item:has(input:checked) {
+  background: var(--system-blue-soft);
+  border-color: var(--system-blue);
+}
+
+.system-compare-item.unavailable {
+  background: #f4f4f4;
+  color: #9aa4b2;
+  cursor: not-allowed;
+}
+
+.system-compare-item input[type="checkbox"] {
+  flex: none;
+}
+
+.system-compare-item > span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.system-compare-status {
+  color: #a05a1f;
+  flex: none;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.system-compare-list > p {
+  color: var(--system-muted);
+  font-size: 10px;
+  grid-column: 1 / -1;
+  margin: 8px 2px;
 }
 
 .system-combobox {
@@ -2284,7 +2483,8 @@ select:focus-visible {
     display: none;
   }
 
-  .system-favorites {
+  .system-favorites,
+  .system-presets {
     display: none;
   }
 
@@ -2403,6 +2603,10 @@ select:focus-visible {
   }
 
   .system-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .system-compare-list {
     grid-template-columns: 1fr;
   }
 
@@ -3083,4 +3287,119 @@ input:focus-visible,
   .source-grid > a {
     grid-column: auto;
   }
+}
+
+/* ===== Atlas ログインゲート ===== */
+.atlas-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, #101d36 0%, #1f3864 100%);
+  padding: 24px;
+}
+
+.atlas-gate-card {
+  width: min(360px, 100%);
+  display: grid;
+  gap: 14px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 18px 50px rgba(8, 15, 35, 0.45);
+}
+
+.atlas-gate-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.atlas-gate-brand span {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #1f3864;
+  color: #fff;
+  font-weight: 800;
+}
+
+.atlas-gate-brand strong {
+  display: block;
+  font-size: 18px;
+}
+
+.atlas-gate-brand small {
+  color: #6b7280;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.atlas-gate-card p {
+  margin: 0;
+  color: #374151;
+  font-size: 13px;
+}
+
+.atlas-gate-card label {
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.atlas-gate-card input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.atlas-gate-card input:focus {
+  outline: 2px solid #1f3864;
+  outline-offset: 1px;
+}
+
+.atlas-gate-card button[type="submit"] {
+  border: none;
+  border-radius: 8px;
+  background: #1f3864;
+  color: #fff;
+  font-weight: 700;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.atlas-gate-card button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.atlas-gate-error {
+  color: #b91c1c;
+  font-size: 12px;
+  margin: 0;
+}
+
+.atlas-gate-logout {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 60;
+  border: 1px solid rgba(107, 114, 128, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #6b7280;
+  font-size: 11px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.atlas-gate-logout:hover {
+  color: #1f2937;
+  border-color: #6b7280;
 }

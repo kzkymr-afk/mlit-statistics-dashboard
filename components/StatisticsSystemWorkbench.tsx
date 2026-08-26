@@ -22,6 +22,14 @@ import {
   preferredTableId,
   tableMatchesCycle,
 } from "@/lib/statistics-navigation.mjs";
+import {
+  AVAILABILITY_STATUS_LABELS,
+  MAX_BULK_ADD_SERIES,
+  availabilityStatusFor,
+  comboIdentity,
+  selectableCompareLimit,
+} from "@/lib/statistics-series-compare.mjs";
+import { STATISTICS_PRESETS } from "@/lib/statistics-presets.mjs";
 import BuildBaseBuildingUseShortcut, {
   DEFAULT_BUILDING_USE_FIELD_ID,
 } from "@/components/BuildBaseBuildingUseShortcut";
@@ -95,6 +103,13 @@ type TableMeta = {
   implicitNumericZero: boolean;
   seriesBundlePrefixLength: number;
   seriesBundleUrlTemplate: string;
+  availabilityUrl?: string;
+};
+
+type AvailabilityIndex = {
+  schemaVersion: 1;
+  tableId: string;
+  combos: Record<string, string>;
 };
 
 type ObservationPoint = {
@@ -148,6 +163,22 @@ type FavoriteItem = {
   timeFromLabel: string;
   timeToLabel: string;
   savedAt: string;
+};
+
+type StatisticsPreset = {
+  id: string;
+  title: string;
+  description: string;
+  notes: string;
+  datasetId: string;
+  tableId: string;
+  cycle: CycleFilter;
+  displayFormat: "table" | "bar" | "line";
+  chartKind: ChartKind;
+  axis: ChartAxis;
+  baseSelections: Record<string, string>;
+  expandDimensionApiKey: string;
+  expandCodes: string[];
 };
 
 type SelectedSeries = {
@@ -418,6 +449,30 @@ function selectionsFromFavorite(meta: TableMeta, favorite: FavoriteItem) {
   return nextSelections;
 }
 
+function selectionsFromPreset(meta: TableMeta, preset: StatisticsPreset) {
+  const nextSelections: Record<string, string> = {};
+  for (const dimension of meta.dimensions) {
+    if (dimension.apiKey === "time") continue;
+    if (dimension.apiKey === preset.expandDimensionApiKey) {
+      nextSelections[dimension.apiKey] =
+        preset.expandCodes.find((code) =>
+          dimension.values.some((value) => value.code === code),
+        ) ??
+        meta.defaultSelection[dimension.apiKey] ??
+        defaultDimensionValue(dimension);
+      continue;
+    }
+    const presetCode = preset.baseSelections[dimension.apiKey];
+    nextSelections[dimension.apiKey] =
+      presetCode !== undefined &&
+      dimension.values.some((value) => value.code === presetCode)
+        ? presetCode
+        : meta.defaultSelection[dimension.apiKey] ??
+          defaultDimensionValue(dimension);
+  }
+  return nextSelections;
+}
+
 async function fetchJson<T>(path: string): Promise<T> {
   const requestPath =
     REMOTE_SYSTEM_DATA_URL && path.startsWith("system/")
@@ -463,10 +518,7 @@ async function seriesIdFor(
   tableId: string,
   coordinates: Record<string, string>,
 ) {
-  const identity = Object.entries(coordinates)
-    .sort(([left], [right]) => left.localeCompare(right))
-    .map(([key, value]) => `${key}=${value}`)
-    .join("\u001f");
+  const identity = comboIdentity(coordinates);
   const digest = await crypto.subtle.digest(
     "SHA-256",
     new TextEncoder().encode(`${tableId}\u001f${identity}`),
@@ -475,6 +527,127 @@ async function seriesIdFor(
     .map((byte) => byte.toString(16).padStart(2, "0"))
     .join("")
     .slice(0, 32);
+}
+
+async function fetchCompactSeries(
+  meta: TableMeta,
+  coordinates: Record<string, string>,
+) {
+  const id = await seriesIdFor(meta.table.id, coordinates);
+  const bundleUrl = meta.seriesBundleUrlTemplate.replace(
+    "{prefix}",
+    id.slice(0, meta.seriesBundlePrefixLength),
+  );
+  const bundle = await fetchJson<SeriesBundle>(bundleUrl);
+  const compactSeries = bundle.series[id];
+  if (!compactSeries) {
+    return { id, compactSeries: null as CompactBundleSeries | null };
+  }
+  return { id, compactSeries };
+}
+
+function buildSelectedSeriesEntry({
+  meta,
+  coordinates,
+  id,
+  compactSeries,
+  source,
+  timeValues,
+  timeFrom,
+  timeTo,
+  timeLabels,
+  color,
+}: {
+  meta: TableMeta;
+  coordinates: Record<string, string>;
+  id: string;
+  compactSeries: CompactBundleSeries;
+  source?: {
+    sourceId: string;
+    sourceUrl: string;
+    publishedAt: string | null;
+    retrievedAt: string;
+  };
+  timeValues: DimensionValue[];
+  timeFrom: string;
+  timeTo: string;
+  timeLabels: Map<string, string>;
+  color: string;
+}): SelectedSeries {
+  const [seriesUnit, seriesTimeMask, compactPoints] = compactSeries;
+  const seriesTableId = meta.table.id;
+  const seriesLabel = selectionLabelFor(meta, coordinates);
+  const storedPoints = new Map(
+    compactPoints.map(
+      ([
+        pointTimeCode,
+        numericValue,
+        nonNumericValue,
+        annotation,
+        exceptionalStatus,
+      ]) => [
+        pointTimeCode,
+        {
+          timeCode: pointTimeCode,
+          value:
+            nonNumericValue ??
+            (numericValue === null ? null : String(numericValue)),
+          numericValue,
+          unit: seriesUnit,
+          annotation,
+          status: exceptionalStatus ?? "confirmed_value",
+          sourceId: source?.sourceId ?? "",
+          implicitNumericZero: false,
+        },
+      ],
+    ),
+  );
+  const points = timeValues
+    .map((item, index) => ({ item, index }))
+    .filter(
+      ({ item, index }) =>
+        timeMaskIncludes(seriesTimeMask, index) &&
+        (!timeFrom || item.code >= timeFrom) &&
+        (!timeTo || item.code <= timeTo),
+    )
+    .map(
+      ({ item }) =>
+        storedPoints.get(item.code) ?? {
+          timeCode: item.code,
+          value: "0",
+          numericValue: 0,
+          unit: seriesUnit,
+          annotation: null,
+          status: "confirmed_value",
+          sourceId: source?.sourceId ?? "",
+          implicitNumericZero: true,
+        },
+    );
+  return {
+    id,
+    datasetId: meta.table.datasetId,
+    tableId: seriesTableId,
+    tableTitle: meta.table.title,
+    coordinates: { ...coordinates },
+    label: seriesLabel,
+    unit: seriesUnit,
+    timeMask: seriesTimeMask,
+    points,
+    chartKind: "line",
+    axis: "left",
+    color,
+    sourceLabel: sourceLabelFor(meta.table.sourceKind),
+    sources: source
+      ? {
+          [source.sourceId]: {
+            sourceUrl: source.sourceUrl,
+            publishedAt: source.publishedAt,
+            retrievedAt: source.retrievedAt,
+          },
+        }
+      : {},
+    timeLabels: Object.fromEntries(timeLabels),
+  };
 }
 
 function defaultDimensionValue(dimension: Dimension) {
@@ -506,10 +679,14 @@ function DimensionPicker({
   dimension,
   value,
   onChange,
+  compareActive,
+  onToggleCompare,
 }: {
   dimension: Dimension;
   value: string;
   onChange: (value: string) => void;
+  compareActive: boolean;
+  onToggleCompare: () => void;
 }) {
   const selected = dimension.values.find((item) => item.code === value);
   const [query, setQuery] = useState(selected?.name ?? "");
@@ -527,7 +704,26 @@ function DimensionPicker({
 
   return (
     <label className="system-filter">
-      <span>{dimension.name}</span>
+      <span className="system-filter-label">
+        <span>{dimension.name}</span>
+        {dimension.values.length > 1 ? (
+          <button
+            type="button"
+            className={
+              compareActive
+                ? "system-compare-toggle active"
+                : "system-compare-toggle"
+            }
+            onMouseDown={(event) => event.preventDefault()}
+            onClick={(event) => {
+              event.preventDefault();
+              onToggleCompare();
+            }}
+          >
+            {compareActive ? "比較を解除" : "複数選択で比較"}
+          </button>
+        ) : null}
+      </span>
       <div className="system-combobox">
         <input
           value={query}
@@ -571,6 +767,103 @@ function DimensionPicker({
         ) : null}
       </div>
     </label>
+  );
+}
+
+function CompareValueList({
+  dimension,
+  baseSelections,
+  checkedCodes,
+  onChange,
+  availability,
+  maxSelectable,
+}: {
+  dimension: Dimension;
+  baseSelections: Record<string, string>;
+  checkedCodes: string[];
+  onChange: (codes: string[]) => void;
+  availability: Record<string, string> | null;
+  maxSelectable: number;
+}) {
+  const [query, setQuery] = useState("");
+
+  const matches = useMemo(() => {
+    const normalized = normalizeSearch(query);
+    const values = normalized
+      ? dimension.values.filter((item) =>
+          normalizeSearch(`${item.name} ${item.code}`).includes(normalized),
+        )
+      : dimension.values;
+    return values.slice(0, 120);
+  }, [dimension.values, query]);
+
+  return (
+    <div className="system-compare-panel">
+      <div className="system-compare-heading">
+        <span>
+          {dimension.name}を複数選択して一括追加（最大{maxSelectable}件）
+        </span>
+        <span className="system-compare-count">
+          {checkedCodes.length}件選択中
+        </span>
+      </div>
+      <input
+        className="system-search"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+        placeholder={`${dimension.name}を検索`}
+        aria-label={`${dimension.name}を検索`}
+      />
+      <div
+        className="system-compare-list"
+        role="group"
+        aria-label={`${dimension.name}の複数選択`}
+      >
+        {matches.map((item) => {
+          const status = availabilityStatusFor(availability, {
+            ...baseSelections,
+            [dimension.apiKey]: item.code,
+          });
+          const unavailable = status !== "available";
+          const checked = checkedCodes.includes(item.code);
+          const disabled =
+            unavailable || (!checked && checkedCodes.length >= maxSelectable);
+          return (
+            <label
+              key={item.code}
+              className={
+                unavailable
+                  ? "system-compare-item unavailable"
+                  : "system-compare-item"
+              }
+            >
+              <input
+                type="checkbox"
+                checked={checked}
+                disabled={disabled}
+                onChange={(event) => {
+                  if (event.target.checked) {
+                    if (checkedCodes.length >= maxSelectable) return;
+                    onChange([...checkedCodes, item.code]);
+                  } else {
+                    onChange(checkedCodes.filter((code) => code !== item.code));
+                  }
+                }}
+              />
+              <span>{item.name}</span>
+              {unavailable ? (
+                <small className="system-compare-status">
+                  {(AVAILABILITY_STATUS_LABELS as Record<string, string>)[
+                    status
+                  ] ?? "データなし"}
+                </small>
+              ) : null}
+            </label>
+          );
+        })}
+        {matches.length === 0 ? <p>該当する分類がありません。</p> : null}
+      </div>
+    </div>
   );
 }
 
@@ -951,9 +1244,19 @@ export default function StatisticsSystemWorkbench() {
   const [favorites, setFavorites] = useState<FavoriteItem[]>([]);
   const [favoritesLoaded, setFavoritesLoaded] = useState(false);
   const pendingFavoriteRef = useRef<FavoriteItem | null>(null);
+  const pendingPresetRef = useRef<StatisticsPreset | null>(null);
+  const [loadingPreset, setLoadingPreset] = useState(false);
   const [loadingMeta, setLoadingMeta] = useState(false);
   const [addingSeries, setAddingSeries] = useState(false);
   const [message, setMessage] = useState("");
+  const [compareDimensionKey, setCompareDimensionKey] = useState<
+    string | null
+  >(null);
+  const [compareCodes, setCompareCodes] = useState<string[]>([]);
+  const [availabilityIndex, setAvailabilityIndex] = useState<Record<
+    string,
+    string
+  > | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -1056,6 +1359,16 @@ export default function StatisticsSystemWorkbench() {
     DEFAULT_TABLE_IDS,
   );
 
+  // 表を切り替えたら複数選択の状態を持ち越さない。effect ではなく描画中に
+  // 直接調整する（React公式が推奨する「propの変化に応じたstate調整」の形）。
+  const [compareTableId, setCompareTableId] = useState(effectiveTableId);
+  if (compareTableId !== effectiveTableId) {
+    setCompareTableId(effectiveTableId);
+    if (compareDimensionKey !== null) setCompareDimensionKey(null);
+    if (compareCodes.length > 0) setCompareCodes([]);
+    if (availabilityIndex !== null) setAvailabilityIndex(null);
+  }
+
   useEffect(() => {
     const table = catalog?.tables.find(
       (item) => item.id === effectiveTableId,
@@ -1133,6 +1446,23 @@ export default function StatisticsSystemWorkbench() {
     };
   }, [catalog, effectiveTableId]);
 
+  useEffect(() => {
+    const availabilityUrl = meta?.availabilityUrl;
+    if (!availabilityUrl) return;
+    let cancelled = false;
+    fetchJson<AvailabilityIndex>(availabilityUrl)
+      .then((value) => {
+        if (cancelled) return;
+        setAvailabilityIndex(value.combos ?? {});
+      })
+      .catch(() => {
+        if (!cancelled) setAvailabilityIndex(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [meta?.availabilityUrl]);
+
   const timeDimension = meta?.dimensions.find(
     (dimension) => dimension.apiKey === "time",
   );
@@ -1149,6 +1479,14 @@ export default function StatisticsSystemWorkbench() {
     [timeValues],
   );
 
+  const compareDimension = meta?.dimensions.find(
+    (dimension) => dimension.apiKey === compareDimensionKey,
+  );
+  const compareMaxSelectable = selectableCompareLimit(
+    MAX_SELECTED_SERIES - selectedSeries.length,
+    MAX_BULK_ADD_SERIES,
+  );
+
   const addSeries = useCallback(async () => {
     if (!meta) return;
     if (selectedSeries.length >= MAX_SELECTED_SERIES) {
@@ -1162,95 +1500,25 @@ export default function StatisticsSystemWorkbench() {
       if (selectedSeries.some((item) => item.id === id)) {
         throw new Error("同じ分類条件の系列はすでに追加されています。");
       }
-      const bundleUrl = meta.seriesBundleUrlTemplate.replace(
-        "{prefix}",
-        id.slice(0, meta.seriesBundlePrefixLength),
-      );
-      const bundle = await fetchJson<SeriesBundle>(bundleUrl);
-      const compactSeries = bundle.series[id];
+      const { compactSeries } = await fetchCompactSeries(meta, selections);
       if (!compactSeries) {
         throw new Error(
           "この分類条件に該当する公表値はありません。別の分類を選んでください。",
         );
       }
-      const [seriesUnit, seriesTimeMask, compactPoints] = compactSeries;
-      const seriesTableId = meta.table.id;
-      const seriesLabel = selectionLabelFor(meta, selections);
-      const source = catalog?.sources[seriesTableId];
-      const storedPoints = new Map(
-        compactPoints.map(
-          ([
-            pointTimeCode,
-            numericValue,
-            nonNumericValue,
-            annotation,
-            exceptionalStatus,
-          ]) => [
-            pointTimeCode,
-            {
-              timeCode: pointTimeCode,
-              value:
-                nonNumericValue ??
-                (numericValue === null ? null : String(numericValue)),
-              numericValue,
-              unit: seriesUnit,
-              annotation,
-              status: exceptionalStatus ?? "confirmed_value",
-              sourceId: source?.sourceId ?? "",
-              implicitNumericZero: false,
-            },
-          ],
-        ),
-      );
-      const points = timeValues
-        .map((item, index) => ({ item, index }))
-        .filter(
-          ({ item, index }) =>
-            timeMaskIncludes(seriesTimeMask, index) &&
-            (!timeFrom || item.code >= timeFrom) &&
-            (!timeTo || item.code <= timeTo),
-        )
-        .map(
-          ({ item }) =>
-            storedPoints.get(item.code) ?? {
-              timeCode: item.code,
-              value: "0",
-              numericValue: 0,
-              unit: seriesUnit,
-              annotation: null,
-              status: "confirmed_value",
-              sourceId: source?.sourceId ?? "",
-              implicitNumericZero: true,
-            },
-        );
-      setSelectedSeries((current) => [
-        ...current,
-        {
-          id,
-          datasetId: meta.table.datasetId,
-          tableId: seriesTableId,
-          tableTitle: meta.table.title,
-          coordinates: { ...selections },
-          label: seriesLabel,
-          unit: seriesUnit,
-          timeMask: seriesTimeMask,
-          points,
-          chartKind: "line",
-          axis: current.length === 0 ? "left" : "left",
-          color: COLORS[current.length % COLORS.length],
-          sourceLabel: sourceLabelFor(meta.table.sourceKind),
-          sources: source
-            ? {
-                [source.sourceId]: {
-                  sourceUrl: source.sourceUrl,
-                  publishedAt: source.publishedAt,
-                  retrievedAt: source.retrievedAt,
-                },
-              }
-            : {},
-          timeLabels: Object.fromEntries(timeLabels),
-        },
-      ]);
+      const entry = buildSelectedSeriesEntry({
+        meta,
+        coordinates: selections,
+        id,
+        compactSeries,
+        source: catalog?.sources[meta.table.id],
+        timeValues,
+        timeFrom,
+        timeTo,
+        timeLabels,
+        color: COLORS[selectedSeries.length % COLORS.length],
+      });
+      setSelectedSeries((current) => [...current, entry]);
     } catch (error) {
       setMessage(String((error as Error).message ?? error));
     } finally {
@@ -1266,6 +1534,196 @@ export default function StatisticsSystemWorkbench() {
     timeTo,
     timeValues,
   ]);
+
+  // 分類事項ごとに要素を選び直して「追加」を繰り返す代わりに、1つの分類事項
+  // だけ複数値をチェックし、その数だけ系列を一括追加する（例: BuildBase表で
+  // 項目を固定したまま会社を5社チェック→1回の追加操作で5系列展開）。
+  const addManySeries = useCallback(
+    async (dimensionApiKey: string, codes: string[]) => {
+      if (!meta) return;
+      const remainingCapacity = MAX_SELECTED_SERIES - selectedSeries.length;
+      if (remainingCapacity <= 0) {
+        setMessage(`比較グラフには最大${MAX_SELECTED_SERIES}系列まで追加できます。`);
+        return;
+      }
+      const limit = selectableCompareLimit(remainingCapacity, MAX_BULK_ADD_SERIES);
+      const targets = codes.slice(0, limit);
+      setAddingSeries(true);
+      setMessage("");
+      const added: SelectedSeries[] = [];
+      let skippedCount = Math.max(0, codes.length - targets.length);
+      try {
+        for (const code of targets) {
+          const coordinates = { ...selections, [dimensionApiKey]: code };
+          try {
+            const id = await seriesIdFor(meta.table.id, coordinates);
+            if (
+              selectedSeries.some((item) => item.id === id) ||
+              added.some((item) => item.id === id)
+            ) {
+              skippedCount += 1;
+              continue;
+            }
+            const { compactSeries } = await fetchCompactSeries(
+              meta,
+              coordinates,
+            );
+            if (!compactSeries) {
+              skippedCount += 1;
+              continue;
+            }
+            added.push(
+              buildSelectedSeriesEntry({
+                meta,
+                coordinates,
+                id,
+                compactSeries,
+                source: catalog?.sources[meta.table.id],
+                timeValues,
+                timeFrom,
+                timeTo,
+                timeLabels,
+                color:
+                  COLORS[(selectedSeries.length + added.length) % COLORS.length],
+              }),
+            );
+          } catch {
+            skippedCount += 1;
+          }
+        }
+        if (added.length) {
+          setSelectedSeries((current) => [...current, ...added]);
+        }
+        setMessage(
+          skippedCount > 0
+            ? `${added.length}系列を追加しました（${skippedCount}件は重複または非公表のためスキップ）。`
+            : `${added.length}系列を追加しました。`,
+        );
+        setCompareCodes([]);
+      } finally {
+        setAddingSeries(false);
+      }
+    },
+    [
+      catalog,
+      meta,
+      selectedSeries,
+      selections,
+      timeFrom,
+      timeLabels,
+      timeTo,
+      timeValues,
+    ],
+  );
+
+  // プリセットは「よく使う項目」と違い、条件を選ぶだけでなく該当する表の系列一式を
+  // その場で一括ロードする。addManySeries()はReact stateの`selections`に依存する
+  // ため、表を切り替えた直後（`meta`がまだ古い/未ロード）でも安全に呼べるよう、
+  // 明示的なbaseSelectionsを受け取る専用の読み込み処理を用意する。
+  const applyPresetSeries = useCallback(
+    async (
+      preset: StatisticsPreset,
+      presetMeta: TableMeta,
+      baseSelections: Record<string, string>,
+    ) => {
+      setLoadingPreset(true);
+      setMessage("");
+      const time = presetMeta.dimensions.find(
+        (dimension) => dimension.apiKey === "time",
+      );
+      const presetTimeValues = (time?.values ?? [])
+        .filter((item) => {
+          const year = Number(item.code.slice(0, 4));
+          return !Number.isFinite(year) || year >= 2013;
+        })
+        .toSorted((left, right) => left.code.localeCompare(right.code));
+      const presetTimeLabels = new Map(
+        presetTimeValues.map((item) => [item.code, timeLabel(item)]),
+      );
+      const presetTimeFrom = presetTimeValues[0]?.code ?? "";
+      const presetTimeTo = presetTimeValues.at(-1)?.code ?? "";
+      const targets = preset.expandCodes.slice(0, MAX_SELECTED_SERIES);
+      const added: SelectedSeries[] = [];
+      let skippedCount = 0;
+      for (const code of targets) {
+        const coordinates = {
+          ...baseSelections,
+          [preset.expandDimensionApiKey]: code,
+        };
+        try {
+          const id = await seriesIdFor(presetMeta.table.id, coordinates);
+          if (added.some((item) => item.id === id)) {
+            skippedCount += 1;
+            continue;
+          }
+          const { compactSeries } = await fetchCompactSeries(
+            presetMeta,
+            coordinates,
+          );
+          if (!compactSeries) {
+            skippedCount += 1;
+            continue;
+          }
+          const entry = buildSelectedSeriesEntry({
+            meta: presetMeta,
+            coordinates,
+            id,
+            compactSeries,
+            source: catalog?.sources[presetMeta.table.id],
+            timeValues: presetTimeValues,
+            timeFrom: presetTimeFrom,
+            timeTo: presetTimeTo,
+            timeLabels: presetTimeLabels,
+            color: COLORS[added.length % COLORS.length],
+          });
+          added.push({ ...entry, chartKind: preset.chartKind, axis: preset.axis });
+        } catch {
+          skippedCount += 1;
+        }
+      }
+      setSelections(baseSelections);
+      setTimeFrom(presetTimeFrom);
+      setTimeTo(presetTimeTo);
+      setAxisSettings(emptyAxisSettings());
+      setSelectedSeries(added);
+      setMessage(
+        skippedCount > 0
+          ? `プリセット「${preset.title}」から${added.length}系列を読み込みました（${skippedCount}件は非公表のためスキップ）。`
+          : `プリセット「${preset.title}」から${added.length}系列を読み込みました。`,
+      );
+      setLoadingPreset(false);
+    },
+    [catalog],
+  );
+
+  useEffect(() => {
+    const preset = pendingPresetRef.current;
+    if (!preset || !meta || meta.table.id !== preset.tableId) return;
+    pendingPresetRef.current = null;
+    applyPresetSeries(preset, meta, selectionsFromPreset(meta, preset));
+  }, [meta, applyPresetSeries]);
+
+  const applyPreset = (preset: StatisticsPreset) => {
+    const presetTable = catalog?.tables.find(
+      (table) => table.id === preset.tableId && table.datasetId === preset.datasetId,
+    );
+    if (!presetTable) {
+      setMessage(
+        "このプリセットの統計表が現在の公開データにありません。",
+      );
+      return;
+    }
+    setTableSearch("");
+    setCycleFilter(preset.cycle);
+    setStatisticsId(statisticsIdForDataset(preset.datasetId));
+    if (meta?.table.id === preset.tableId) {
+      applyPresetSeries(preset, meta, selectionsFromPreset(meta, preset));
+      return;
+    }
+    pendingPresetRef.current = preset;
+    setTableId(preset.tableId);
+    setLoadingMeta(true);
+  };
 
   const currentFavoriteId = meta
     ? favoriteIdFor(meta.table.id, selections)
@@ -1452,10 +1910,10 @@ export default function StatisticsSystemWorkbench() {
     <div className="system-shell">
       <aside className="system-sidebar">
         <div className="system-brand">
-          <span>ML</span>
+          <span>At</span>
           <div>
-            <strong>国交省統計</strong>
-            <small>STATISTICS SYSTEM</small>
+            <strong>Atlas</strong>
+            <small>CONSTRUCTION DATA</small>
           </div>
         </div>
         <nav aria-label="統計の選択">
@@ -1502,6 +1960,28 @@ export default function StatisticsSystemWorkbench() {
                   ×
                 </button>
               </div>
+            ))}
+          </div>
+          <div className="system-presets">
+            <div className="system-presets-heading">
+              <small>プリセット</small>
+              <span>{STATISTICS_PRESETS.length}</span>
+            </div>
+            {(STATISTICS_PRESETS as StatisticsPreset[]).map((preset) => (
+              <button
+                type="button"
+                key={preset.id}
+                className="system-preset-select"
+                onClick={() => applyPreset(preset)}
+                disabled={loadingPreset}
+                title={preset.notes || preset.description}
+              >
+                <span aria-hidden="true">▣</span>
+                <span className="system-preset-copy">
+                  <strong>{preset.title}</strong>
+                  <small>{preset.description}</small>
+                </span>
+              </button>
             ))}
           </div>
           <div className="system-cycle-filter">
@@ -1723,9 +2203,26 @@ export default function StatisticsSystemWorkbench() {
                             [dimension.apiKey]: value,
                           }))
                         }
+                        compareActive={compareDimensionKey === dimension.apiKey}
+                        onToggleCompare={() => {
+                          setCompareDimensionKey((current) =>
+                            current === dimension.apiKey ? null : dimension.apiKey,
+                          );
+                          setCompareCodes([]);
+                        }}
                       />
                     ))}
                 </div>
+                {compareDimension ? (
+                  <CompareValueList
+                    dimension={compareDimension}
+                    baseSelections={selections}
+                    checkedCodes={compareCodes}
+                    onChange={setCompareCodes}
+                    availability={availabilityIndex}
+                    maxSelectable={compareMaxSelectable}
+                  />
+                ) : null}
                 <div className="system-time-range">
                   <label>
                     <span>開始</span>
@@ -1780,22 +2277,33 @@ export default function StatisticsSystemWorkbench() {
                     <button
                       type="button"
                       className="system-primary"
-                      onClick={addSeries}
+                      onClick={() => {
+                        if (compareDimensionKey && compareCodes.length > 0) {
+                          addManySeries(compareDimensionKey, compareCodes);
+                        } else {
+                          addSeries();
+                        }
+                      }}
                       disabled={
                         addingSeries ||
-                        selectedSeries.length >= MAX_SELECTED_SERIES
+                        selectedSeries.length >= MAX_SELECTED_SERIES ||
+                        (compareDimensionKey !== null && compareCodes.length === 0)
                       }
                       title={
                         selectedSeries.length >= MAX_SELECTED_SERIES
                           ? `比較グラフには最大${MAX_SELECTED_SERIES}系列まで追加できます。`
-                          : undefined
+                          : compareDimensionKey && compareCodes.length === 0
+                            ? "複数選択で比較する分類値をチェックしてください。"
+                            : undefined
                       }
                     >
                       {addingSeries
                         ? "取得中…"
                         : selectedSeries.length >= MAX_SELECTED_SERIES
                           ? `${MAX_SELECTED_SERIES}系列まで追加済み`
-                          : "この系列を追加"}
+                          : compareDimensionKey && compareCodes.length > 0
+                            ? `選択した${compareCodes.length}件を追加`
+                            : "この系列を追加"}
                     </button>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import AtlasLoginGate from "@/components/AtlasLoginGate";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "国交省統計システム | 必要な項目を表・グラフ・CSVへ";
+const title = "Atlas | 建設データを表・グラフ・CSVへ";
 const description =
   "国交省・日建連の建設統計と、BuildBaseで確定したゼネコン21社の会社別データを、表・折れ線・棒・左右2軸・CSVで比較。";
 
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <AtlasLoginGate>{children}</AtlasLoginGate>
       </body>
     </html>
   );
