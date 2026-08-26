@@ -280,9 +280,11 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
     ),
   );
 
+  // 淺沼組は2026-08の是正で用途別が全年開示値になったため、恒久的に用途別非開示の
+  // 戸田建設（ファクトブックが事業別のみで用途別を持たない）で非開示状態の公開を検証する。
   const notDisclosed = await seriesFor({
     tab: "building_orders_use_office",
-    cat01: "ASANUMA",
+    cat01: "TODA",
   });
   assert.ok(
     notDisclosed[2].some(
@@ -308,7 +310,17 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
     }
   }
   assert.equal(buildingUseFields.length, 9);
-  assert.equal(filledBuildingUseCount, 604);
+  // 充足数はBuildBase側の是正・年次更新で増えるため、固定値でなくカタログ値と突合する
+  const buildBaseCatalog = JSON.parse(
+    await readFile(
+      new URL("../data/catalogs/buildbase-company-data.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  assert.equal(
+    filledBuildingUseCount,
+    buildBaseCatalog.factbookBuildingUseFilledCount,
+  );
 });
 
 test("リニューアルの長い月別時間軸を可変長マスクで復元できる", async () => {

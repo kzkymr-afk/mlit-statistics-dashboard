@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "BuildBase会社別データ | 国交省統計システム",
+  title: "BuildBase会社別データ | Atlas",
   description:
     "ゼネコン各社の有価証券報告書、公式ファクトブック、決算説明資料等から確定した会社別データの収録方針です。",
 };
@@ -47,7 +47,7 @@ export default function BuildBaseDataGuide() {
         <ol>
           <li>BuildBaseが公式資料から値と出典を確定します。</li>
           <li>未処理セルが0件の完成データだけを1つの公開データにまとめます。</li>
-          <li>国交省統計システムが会社比較・グラフ・CSVへ反映します。</li>
+          <li>Atlas（建設データアトラス）が会社比較・グラフ・CSVへ反映します。</li>
         </ol>
         <p>表示値は分析用に単位を統一しています。</p>
       </section>

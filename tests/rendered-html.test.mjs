@@ -43,9 +43,25 @@ test("BuildBase収録基準は建物用途別受注の反映状況を表示す�
     new URL("../out/buildbase-data/index.html", import.meta.url),
     "utf8",
   );
+  const buildBaseCatalog = JSON.parse(
+    await readFile(
+      new URL("../data/catalogs/buildbase-company-data.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  const { buildingUseCompanyCount, factbookBuildingUseFilledCount } =
+    buildBaseCatalog;
+  assert.ok(buildingUseCompanyCount > 0);
+  assert.ok(factbookBuildingUseFilledCount > 0);
   assert.match(html, /建物用途別受注実績/);
-  assert.match(html, /10社/);
-  assert.match(html, /604/);
+  assert.match(
+    html,
+    new RegExp(`${buildingUseCompanyCount}社`),
+  );
+  assert.match(
+    html,
+    new RegExp(factbookBuildingUseFilledCount.toLocaleString("ja-JP")),
+  );
   assert.match(html, /公式ファクトブック/);
   assert.match(html, /BuildBaseが公式資料から値と出典を確定/);
 });
