@@ -531,6 +531,11 @@ try {
           observationCount += resumedCount;
           registry.tables.push(tableRegistry);
           tableCount += 1;
+          // upsertStatisticalTableがON CONFLICT時にregistry_statusをdiscoveredへ
+          // 上書きするため、処理完了した表はここでreadyへ戻す（昇格漏れバグの修正）。
+          db.prepare(
+            `UPDATE statistical_tables SET registry_status = 'ready' WHERE id = ?`,
+          ).run(table.id);
           process.stdout.write(
             `[${target.id}] ${table.id} resumed: ` +
               `${resumedCount.toLocaleString("ja-JP")} observations\n`,
@@ -754,6 +759,10 @@ try {
 
       registry.tables.push(tableRegistry);
       tableCount += 1;
+      // 処理が完了した表をreadyへ昇格（resumed経路の注記と同じ理由）。
+      db.prepare(
+        `UPDATE statistical_tables SET registry_status = 'ready' WHERE id = ?`,
+      ).run(table.id);
       process.stdout.write(
         `[${target.id}] ${table.id} ${table.title}: ` +
           `${tableRegistry.observationCount.toLocaleString("ja-JP")} observations\n`,
