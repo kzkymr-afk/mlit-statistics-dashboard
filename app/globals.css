@@ -2195,6 +2195,22 @@ select:focus-visible {
   font-size: 9px;
 }
 
+.system-series-notes {
+  color: var(--system-muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.system-series-notes summary {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.system-series-notes ul {
+  margin: 3px 0 0;
+  padding-left: 14px;
+}
+
 .system-series-row select,
 .system-series-row button {
   background: white;

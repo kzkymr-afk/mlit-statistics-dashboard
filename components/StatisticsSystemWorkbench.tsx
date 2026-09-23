@@ -58,6 +58,8 @@ type TableSummary = {
   seriesCount: number;
   observationCount: number;
   metaUrl: string;
+  // 母集団・比較上の注意（data/catalogs/table-notes.json）
+  notes?: string[];
 };
 
 type SystemCatalog = {
@@ -84,6 +86,7 @@ type DimensionValue = {
   parentCode: string | null;
   unit: string | null;
   sortOrder: number;
+  note?: string;
 };
 
 type Dimension = {
@@ -204,6 +207,7 @@ type SelectedSeries = {
     }
   >;
   timeLabels: Record<string, string>;
+  notes: string[];
 };
 
 const MAX_SELECTED_SERIES = 15;
@@ -647,7 +651,18 @@ function buildSelectedSeriesEntry({
         }
       : {},
     timeLabels: Object.fromEntries(timeLabels),
+    notes: seriesNotesFor(meta, coordinates),
   };
+}
+
+// 表の注意と、選んだ分類値の注意を系列の注記としてまとめる。
+function seriesNotesFor(meta: TableMeta, coordinates: Record<string, string>) {
+  const valueNotes = meta.dimensions.flatMap((dimension) => {
+    const code = coordinates[dimension.apiKey];
+    const note = dimension.values.find((value) => value.code === code)?.note;
+    return note ? [note] : [];
+  });
+  return [...(meta.table.notes ?? []), ...valueNotes];
 }
 
 function defaultDimensionValue(dimension: Dimension) {
@@ -1175,6 +1190,9 @@ function downloadCsv(
         (item) => Object.values(item.sources)[0]?.sourceUrl ?? "",
       ),
     ],
+    ...(series.some((item) => item.notes.length > 0)
+      ? [["注記", "", ...series.map((item) => item.notes.join(" / "))]]
+      : []),
   ];
   const csv = rows.map((row) => row.map(escape).join(",")).join("\r\n");
   const blob = new Blob([`\uFEFF${csv}`], {
@@ -1220,6 +1238,7 @@ function downloadAiJson(
         timeLabel: item.timeLabels[point.timeCode] ?? point.timeCode,
       })),
       sources: item.sources,
+      notes: item.notes,
     })),
   };
   const blob = new Blob([`${JSON.stringify(payload, null, 2)}\n`], {
@@ -2374,6 +2393,16 @@ export default function StatisticsSystemWorkbench() {
                       <small>
                         {item.tableTitle} · {item.unit || "単位なし"}
                       </small>
+                      {item.notes.length ? (
+                        <details className="system-series-notes">
+                          <summary>注記 {item.notes.length}件</summary>
+                          <ul>
+                            {item.notes.map((note) => (
+                              <li key={note}>{note}</li>
+                            ))}
+                          </ul>
+                        </details>
+                      ) : null}
                     </div>
                     <select
                       value={item.chartKind}

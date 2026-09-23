@@ -136,6 +136,11 @@ function publicPath(path) {
   return `system/${relative(BUILD_DIR, resolve(BUILD_DIR, path)).replaceAll("\\", "/")}`;
 }
 
+// 母集団・比較上の注意（統計表と分類値ごと）。公開メタ情報に同梱し、画面・AIカタログで読む。
+const TABLE_NOTES = JSON.parse(
+  readFileSync(resolve(ROOT, "data/catalogs/table-notes.json"), "utf8"),
+).tables;
+
 const db = new DatabaseSync(DATABASE_PATH, { readOnly: true });
 const existingCatalog =
   ONLY_DATASET_IDS.length > 0
@@ -377,9 +382,13 @@ const seriesRowsStatement = db.prepare(
 
 const tableIndex = [];
 for (const table of tables) {
+  const tableNotes = TABLE_NOTES[table.id];
   const dimensions = dimensionStatement.all(table.id).map((dimension) => ({
     ...dimension,
-    values: dimensionValueStatement.all(dimension.id),
+    values: dimensionValueStatement.all(dimension.id).map((value) => {
+      const note = tableNotes?.valueNotes?.[dimension.apiKey]?.[value.code];
+      return note ? { ...value, note } : value;
+    }),
   }));
   const metaPath = `tables/${table.id}/meta.json.gz`;
   if (
@@ -430,7 +439,9 @@ for (const table of tables) {
   const availabilityUrl = writeAvailabilityIndex(table, dimensions);
   writeGzipJson(metaPath, {
     schemaVersion: 2,
-    table,
+    table: tableNotes?.notes?.length
+      ? { ...table, notes: tableNotes.notes }
+      : table,
     dimensions,
     defaultSelection,
     implicitNumericZero: true,

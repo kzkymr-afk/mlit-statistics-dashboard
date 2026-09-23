@@ -1,4 +1,4 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { DatabaseSync } from "node:sqlite";
 
@@ -14,6 +14,16 @@ export const DEFAULT_DATABASE_PATH = resolve(
   process.env.MLIT_SYSTEM_DATABASE_PATH ??
     "data/database/mlit-statistics-system.sqlite",
 );
+
+// 母集団・比較上の注意（data/catalogs/table-notes.json）。表と分類値ごとに持つ。
+const TABLE_NOTES_PATH = resolve(ROOT, "data/catalogs/table-notes.json");
+const TABLE_NOTES = existsSync(TABLE_NOTES_PATH)
+  ? JSON.parse(readFileSync(TABLE_NOTES_PATH, "utf8")).tables ?? {}
+  : {};
+
+function valueNote(tableId, apiKey, code) {
+  return TABLE_NOTES[tableId]?.valueNotes?.[apiKey]?.[code] ?? null;
+}
 
 const DEFAULT_VALUE_LIMIT = 100;
 const MAX_VALUE_LIMIT = 2_000;
@@ -201,7 +211,8 @@ export class StatisticsQueryEngine {
       )
       .get(compactText(tableId));
     if (!row) throw new Error(`統計表ID「${tableId}」は登録されていません。`);
-    return rowToTable(row);
+    const notes = TABLE_NOTES[row.id]?.notes;
+    return notes?.length ? { ...rowToTable(row), notes } : rowToTable(row);
   }
 
   #dimensions(tableId) {
@@ -297,13 +308,20 @@ export class StatisticsQueryEngine {
       );
     }
     const valueLimit = boundedInteger(limit, DEFAULT_VALUE_LIMIT, MAX_VALUE_LIMIT);
-    const dimensions = selectedDimensions.map((item) => ({
-      ...item,
-      ...this.#dimensionValues(item.id, {
+    const dimensions = selectedDimensions.map((item) => {
+      const result = this.#dimensionValues(item.id, {
         search: valueSearch,
         limit: valueLimit,
-      }),
-    }));
+      });
+      return {
+        ...item,
+        ...result,
+        values: result.values.map((value) => {
+          const note = valueNote(table.id, item.apiKey, value.code);
+          return note ? { ...value, note } : value;
+        }),
+      };
+    });
     const suggestedSelection = this.#suggestedSelection(table.id, allDimensions);
     return {
       schemaVersion: "1.0",
@@ -517,6 +535,14 @@ export class StatisticsQueryEngine {
         firstTimeCode: series.firstTimeCode,
         lastTimeCode: series.lastTimeCode,
         observationCount: observations.length,
+        notes: [
+          ...(table.notes ?? []),
+          ...resolvedDimensions
+            .map((item) =>
+              valueNote(table.id, item.dimension.apiKey, item.value.code),
+            )
+            .filter(Boolean),
+        ],
         dimensions: resolvedDimensions.map((item) => ({
           ...item.dimension,
           code: item.value.code,
