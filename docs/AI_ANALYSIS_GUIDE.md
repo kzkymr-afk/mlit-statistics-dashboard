@@ -168,6 +168,14 @@ npm run ai:stats -- query \
   復元したもの。欠測ではない。
 - `status` が `missing`、`suppressed`、`non_numeric` の値を0に置換しない。
 - `annotation` を落とさない。日建連は年度により会員社数が異なる。
+- 表と分類値の `notes` / `note`（`data/catalogs/table-notes.json`）は母集団・比較上の
+  注意。`get_table_schema` の `table.notes`・`values[].note`、`query_statistics` の
+  `series.notes` に入る。成果物に数値を引用するときは一緒に残す。
+- 建設技能労働者関連: 労働力調査の建設業就業者は職業を問わない（技能者数ではない）。
+  建設技能者は `file-lfs-construction-skilled-3cat`（生産工程＋輸送・機械運転＋
+  建設・採掘の3職業大分類合計、丸め済み万人値の和の派生系列）。年齢構成は建設業全体。
+  毎月勤労統計は事業所5人以上の常用労働者、賃金構造基本統計の職種別は産業計、
+  公共工事設計労務単価は積算用単価で実際の賃金ではない。
 - レポートには `tableId`、`selections`、期間、単位、`sourceUrl` を残す。
 - 異なる統計を比較するときは、年度/暦年、名目/実質、単体/連結、単位を揃える。
 

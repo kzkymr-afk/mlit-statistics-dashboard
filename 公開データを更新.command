@@ -23,8 +23,9 @@ npm run sync:building-annual
 npm run sync:orders-major50-annual
 npm run sync:estat-excel
 
-echo "3/6 BuildBaseの会社別確定値を同期"
+echo "3/6 BuildBaseの会社別確定値と建設技能労働者関連の取り込み系列を同期"
 npm run sync:buildbase
+npm run sync:construction-workforce
 
 echo "4/6 項目レジストリと分割データを生成・検証"
 npm run data:publish-system

@@ -43,6 +43,10 @@ test("公開データは統計表・公式分類・観測値のv2形式である
     "building-stock",
     "nikkenren-group-orders",
     "buildbase-company-comparison",
+    "labour-force-survey",
+    "monthly-labour-survey",
+    "wage-structure-survey",
+    "public-works-labour-rate",
   ]) {
     assert.ok(
       catalog.tables.some((table) => table.datasetId === datasetId),
@@ -68,6 +72,10 @@ test("公開データは統計表・公式分類・観測値のv2形式である
         ? /^https:\/\/www\.nikkenren\.com\//.test(sourceUrl)
         : table.datasetId === "buildbase-company-comparison"
           ? /\/buildbase-data\/$/.test(sourceUrl)
+        : table.datasetId === "monthly-labour-survey"
+          ? /^https:\/\/www\.mhlw\.go\.jp\//.test(sourceUrl)
+        : table.datasetId === "public-works-labour-rate"
+          ? /^https:\/\/www\.mlit\.go\.jp\//.test(sourceUrl)
         : /^https:\/\/www\.e-stat\.go\.jp\//.test(sourceUrl);
     }),
   );
@@ -406,4 +414,132 @@ test("建設投資見通しは令和8年度版を主表とし2008年度から公
     }
   }
   assert.equal(earliestYear, 2008);
+});
+
+test("建設技能労働者の系列は公的統計だけで、母集団の注意書きを持つ", async () => {
+  const catalog = await readJson("system/catalog.json");
+  const workforceDatasetIds = [
+    "labour-force-survey",
+    "monthly-labour-survey",
+    "wage-structure-survey",
+    "public-works-labour-rate",
+  ];
+  const tables = catalog.tables.filter((table) =>
+    workforceDatasetIds.includes(table.datasetId),
+  );
+  assert.deepEqual(tables.map((table) => table.id).toSorted(), [
+    "0003007108",
+    "0003024266",
+    "file-00450071-construction-annual",
+    "file-00450091-occupation-2025",
+    "file-lfs-construction-age-share-2025",
+    "file-lfs-construction-skilled-3cat",
+    "file-mlit-design-labour-rate",
+  ]);
+  // 公開データに社内資料・ローカルパスが入っていないこと（公的機関のURLだけ）
+  for (const table of tables) {
+    assert.match(
+      catalog.sources[table.id].sourceUrl,
+      /^https:\/\/www\.(e-stat|mhlw|mlit)\.go\.jp\//,
+    );
+  }
+  const metaText = (
+    await Promise.all(tables.map((table) => readGzipJson(table.metaUrl)))
+  )
+    .map((meta) => JSON.stringify(meta))
+    .join("\n");
+  assert.doesNotMatch(metaText, /\/Volumes\/|Materials|推進部|安藤|ハザマ|社内/);
+
+  const bundleCache = new Map();
+  async function seriesFor(tableId, selections) {
+    const table = catalog.tables.find((item) => item.id === tableId);
+    const identity = Object.entries(selections)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, value]) => `${key}=${value}`)
+      .join("\u001f");
+    const seriesId = createHash("sha256")
+      .update(`${tableId}\u001f${identity}`)
+      .digest("hex")
+      .slice(0, 32);
+    const shard = `system/shards/${table.datasetId}-${seriesId.slice(0, 2)}.json.gz`;
+    if (!bundleCache.has(shard)) bundleCache.set(shard, await readGzipJson(shard));
+    return bundleCache.get(shard).series[seriesId];
+  }
+  function point(series, timeCode) {
+    return series[2].find((item) => item[0] === timeCode);
+  }
+
+  // 派生系列: 3職業大分類の和。2024年300万人・2025年296万人
+  const skilledMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "file-lfs-construction-skilled-3cat").metaUrl,
+  );
+  assert.ok(skilledMeta.table.notes.some((note) => /派生系列/.test(note)));
+  const skilled = await seriesFor("file-lfs-construction-skilled-3cat", {
+    tab: "skilled-3cat",
+    cat01: "0",
+  });
+  assert.equal(point(skilled, "2024000000")[1], 300);
+  assert.equal(point(skilled, "2025000000")[1], 296);
+  assert.match(point(skilled, "2021000000")[3], /年報I-B-8.*309万人/);
+
+  // e-Stat DB同期: 建設業就業者2025年478万人、専門的・技術的職業従事者に注意
+  const lfsMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "0003024266").metaUrl,
+  );
+  assert.ok(lfsMeta.table.notes.some((note) => /2019～2021年/.test(note)));
+  const occupation = lfsMeta.dimensions.find((item) => item.apiKey === "cat02");
+  assert.match(
+    occupation.values.find((item) => item.code === "002").note,
+    /施工管理・設計/,
+  );
+  const constructionTotal = await seriesFor("0003024266", {
+    tab: "01",
+    area: "00000",
+    cat01: "0",
+    cat02: "000",
+    cat03: "02",
+    cat04: "09",
+    cat05: "00",
+  });
+  assert.equal(point(constructionTotal, "2025000000")[1], 478);
+
+  const ageMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "0003007108").metaUrl,
+  );
+  assert.ok(ageMeta.table.notes.some((note) => /技能者の年齢構成ではない/.test(note)));
+  // 原表「-」は欠測として保持し、0にしない
+  const blankShare = await seriesFor("file-lfs-construction-age-share-2025", {
+    tab: "share",
+    cat01: "2",
+    cat02: "02",
+  });
+  assert.equal(point(blankShare, "2025000000")[1], null);
+  assert.equal(point(blankShare, "2025000000")[4], "missing");
+
+  const monthlyMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "file-00450071-construction-annual").metaUrl,
+  );
+  assert.ok(monthlyMeta.table.notes.some((note) => /5人以上/.test(note)));
+  const wage = await seriesFor("file-00450071-construction-annual", { tab: "01" });
+  assert.equal(point(wage, "2025000000")[1], 462801);
+
+  const occupationMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "file-00450091-occupation-2025").metaUrl,
+  );
+  assert.ok(occupationMeta.table.notes.some((note) => /建設業に限った集計ではない/.test(note)));
+  const bonus = await seriesFor("file-00450091-occupation-2025", {
+    tab: "12",
+    cat01: "1661",
+  });
+  // 注記はNFKC正規化されるため全角の「～」は「~」になる
+  assert.match(point(bonus, "2025000000")[3], /2024年1[~～]12月/);
+
+  const rateMeta = await readGzipJson(
+    catalog.tables.find((item) => item.id === "file-mlit-design-labour-rate").metaUrl,
+  );
+  assert.ok(rateMeta.table.notes.some((note) => /実際に支払われた賃金ではない/.test(note)));
+  const rate = await seriesFor("file-mlit-design-labour-rate", {
+    tab: "all-occupations",
+  });
+  assert.equal(point(rate, "2026000000")[1], 25834);
 });

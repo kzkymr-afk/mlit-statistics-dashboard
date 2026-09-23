@@ -242,6 +242,10 @@ const DEFAULT_TABLE_IDS: Record<string, string> = {
   "construction-materials": "excel-00600060-prefecture-index",
   "building-stock": "excel-00600940-private-national",
   "nikkenren-group-orders": "nikkenren-group-orders-annual",
+  "labour-force-survey": "file-lfs-construction-skilled-3cat",
+  "monthly-labour-survey": "file-00450071-construction-annual",
+  "wage-structure-survey": "file-00450091-occupation-2025",
+  "public-works-labour-rate": "file-mlit-design-labour-rate",
 };
 const CYCLE_OPTIONS: Array<{
   id: CycleFilter;
@@ -322,6 +326,30 @@ const STATISTICS_FAMILIES = [
     cycles: ["月次"],
   },
   {
+    id: "labour-force-survey",
+    title: "労働力調査（就業者・職業・年齢）",
+    datasetIds: ["labour-force-survey"],
+    cycles: ["年次"],
+  },
+  {
+    id: "monthly-labour-survey",
+    title: "毎月勤労統計調査（建設業）",
+    datasetIds: ["monthly-labour-survey"],
+    cycles: ["年次"],
+  },
+  {
+    id: "wage-structure-survey",
+    title: "賃金構造基本統計調査（建設関連職種）",
+    datasetIds: ["wage-structure-survey"],
+    cycles: ["年次"],
+  },
+  {
+    id: "public-works-labour-rate",
+    title: "公共工事設計労務単価",
+    datasetIds: ["public-works-labour-rate"],
+    cycles: ["年次"],
+  },
+  {
     id: "building-stock",
     title: "建築物ストック統計",
     datasetIds: ["building-stock"],
@@ -357,6 +385,16 @@ const DATASET_GROUPS = [
       "construction-deflator",
       "construction-labor",
       "construction-materials",
+    ],
+  },
+  {
+    id: "workforce",
+    title: "労働・人材",
+    statisticsIds: [
+      "labour-force-survey",
+      "monthly-labour-survey",
+      "wage-structure-survey",
+      "public-works-labour-rate",
     ],
   },
   {
@@ -399,6 +437,9 @@ function pointDisplayValue(point: ObservationPoint | undefined) {
 
 function sourceLabelFor(sourceKind: string) {
   if (sourceKind === "nikkenren-excel") return "日建連";
+  if (sourceKind === "mhlw-excel") return "厚生労働省";
+  if (sourceKind === "mlit-publication") return "国土交通省";
+  if (sourceKind === "derived-estat-api") return "e-Stat（派生系列）";
   if (sourceKind === "buildbase-public-disclosures") {
     return "BuildBase（公開資料集約）";
   }
@@ -2108,7 +2149,13 @@ export default function StatisticsSystemWorkbench() {
           </div>
           <div className="system-badges">
             <span>{displayCycle(cycleFilter)}</span>
-            <span>{activeTimeFloor}年度以降</span>
+            <span>
+              {activeTimeFloor}
+              {(activeStatistics.cycles as readonly string[]).includes("年度次")
+                ? "年度"
+                : "年"}
+              以降
+            </span>
             <span>出典付き</span>
           </div>
         </header>

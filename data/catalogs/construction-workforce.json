@@ -1,0 +1,2447 @@
+{
+  "schemaVersion": 1,
+  "title": "建設技能労働者・労働条件（公的統計のファイル取り込み）",
+  "sourcePackage": {
+    "title": "日本の建設技能労働者に関する公的データセット",
+    "referenceDate": "2026-09-23",
+    "files": {
+      "01_workforce_time_series.csv": "5cfc198a954d0e0343184f0fadadc2d50122ace206e5dddc6c24e334bdb375ee",
+      "02_age_distribution_2025.csv": "051bf00ffe83504032966f89e68f19e1ab13688d0b5b54bf5c377aea9a5437bb",
+      "03_wages_hours_annual_2020_2025.csv": "4f10368308c9fe2409c2a0d7ca9b070214deca520c85802aebe946f5bd480a33",
+      "04_occupation_wages_2025.csv": "0eeed79d6ceb9a55c3481bba8810edf05f4c5118301f820ca1251efe611fd5ef",
+      "06_public_works_design_labour_rate.csv": "9d6964141749dfaae6c8c781de0ecd32d2c9f67b2e5d236c8056a28738c1867c"
+    }
+  },
+  "labourForceAnnualReport": {
+    "statisticsName": "労働力調査年報 I-B-8 職業，産業別就業者数",
+    "purpose": "照合用。公開系列はe-Stat DB表0003024266から同期し、この年報値は派生系列の注記と検証にだけ使う。",
+    "rows": [
+      {
+        "year": 2019,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 499,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 36,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 41,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 268,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 415,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 33,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 262,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 84,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 3,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2019,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 6,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000031952640",
+        "publicationDate": "2020-05-29"
+      },
+      {
+        "year": 2020,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 492,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 266,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 410,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 34,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 33,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 14,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 260,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 82,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 3,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2020,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 6,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032089784",
+        "publicationDate": "2021-05-28"
+      },
+      {
+        "year": 2021,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 482,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 35,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 257,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 400,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 32,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 34,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 251,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 82,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 3,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2021,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 6,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000032205594",
+        "publicationDate": "2022-05-31"
+      },
+      {
+        "year": 2022,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 479,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 14,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 251,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 394,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 34,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 33,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 14,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 245,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 85,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 3,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2022,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 6,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040058513",
+        "publicationDate": "2023-05-30"
+      },
+      {
+        "year": 2023,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 483,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 38,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 38,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 15,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 251,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 395,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 35,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 33,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 14,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 244,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 88,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 3,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 5,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2023,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 7,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040169057",
+        "publicationDate": "2024-03-29"
+      },
+      {
+        "year": 2024,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 477,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 39,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 38,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 13,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 249,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 389,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 35,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 34,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 13,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 242,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 87,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2024,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 7,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040267855",
+        "publicationDate": "2025-04-01"
+      },
+      {
+        "year": 2025,
+        "sex": "男女計",
+        "occupation": "総数",
+        "value": 478,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男女計",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 41,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男女計",
+        "occupation": "生産工程従事者",
+        "value": 37,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男女計",
+        "occupation": "輸送・機械運転従事者",
+        "value": 12,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男女計",
+        "occupation": "建設・採掘従事者",
+        "value": 247,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男",
+        "occupation": "総数",
+        "value": 389,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 36,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男",
+        "occupation": "生産工程従事者",
+        "value": 33,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男",
+        "occupation": "輸送・機械運転従事者",
+        "value": 12,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "男",
+        "occupation": "建設・採掘従事者",
+        "value": 240,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "女",
+        "occupation": "総数",
+        "value": 88,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "女",
+        "occupation": "専門的・技術的職業従事者",
+        "value": 5,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "女",
+        "occupation": "生産工程従事者",
+        "value": 4,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "女",
+        "occupation": "輸送・機械運転従事者",
+        "value": 0,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      },
+      {
+        "year": 2025,
+        "sex": "女",
+        "occupation": "建設・採掘従事者",
+        "value": 7,
+        "unit": "万人",
+        "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440952",
+        "publicationDate": "2026-03-31"
+      }
+    ]
+  },
+  "ageShare": {
+    "statisticsName": "労働力調査年報 I-B-5 年齢階級，産業別就業者数（実数及び構成比）",
+    "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=0&statInfId=000040440949",
+    "publicationDate": "2026-03-31",
+    "year": 2025,
+    "rows": [
+      {
+        "sex": "男女計",
+        "ageClass": "15～19歳",
+        "value": 0.6,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "20～24歳",
+        "value": 4.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "25～29歳",
+        "value": 7.1,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "30～34歳",
+        "value": 7.5,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "35～39歳",
+        "value": 7.5,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "40～44歳",
+        "value": 9.4,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "45～49歳",
+        "value": 11.9,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "50～54歳",
+        "value": 14.6,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "55～59歳",
+        "value": 11.3,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "60～64歳",
+        "value": 8.6,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男女計",
+        "ageClass": "65歳以上",
+        "value": 16.7,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "15～19歳",
+        "value": 0.8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "20～24歳",
+        "value": 4.4,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "25～29歳",
+        "value": 7.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "30～34歳",
+        "value": 7.5,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "35～39歳",
+        "value": 7.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "40～44歳",
+        "value": 9,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "45～49歳",
+        "value": 11.8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "50～54歳",
+        "value": 14.7,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "55～59歳",
+        "value": 11.6,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "60～64歳",
+        "value": 9,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "男",
+        "ageClass": "65歳以上",
+        "value": 17.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "15～19歳",
+        "value": null,
+        "sourceSymbol": "-"
+      },
+      {
+        "sex": "女",
+        "ageClass": "20～24歳",
+        "value": 4.5,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "25～29歳",
+        "value": 8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "30～34歳",
+        "value": 8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "35～39歳",
+        "value": 9.1,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "40～44歳",
+        "value": 10.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "45～49歳",
+        "value": 12.5,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "50～54歳",
+        "value": 14.8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "55～59歳",
+        "value": 10.2,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "60～64歳",
+        "value": 6.8,
+        "sourceSymbol": null
+      },
+      {
+        "sex": "女",
+        "ageClass": "65歳以上",
+        "value": 15.9,
+        "sourceSymbol": null
+      }
+    ]
+  },
+  "monthlyLabour": {
+    "statisticsName": "毎月勤労統計調査 全国調査 年分結果確報",
+    "rows": [
+      {
+        "year": 2020,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 417398,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 341554,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 316712,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 24842,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 75844,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 165.4,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 151.9,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 13.5,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 20.3,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2801,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 5.3,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.23,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2020,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.22,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r02/20cr/xls/20cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 416278,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 344665,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 319609,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 25056,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 71613,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 165.3,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 151.5,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 13.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 20.3,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2856,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 5.67,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.23,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2021,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.17,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r03/21cr/xls/21cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 431562,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 351927,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 326245,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 25682,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 79635,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 163.5,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 149.7,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 13.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 20,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2734,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 6.05,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.27,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2022,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.24,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r04/22cr/xls/22cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 430708,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 351903,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 327338,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 24565,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 78805,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 164.3,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 150.6,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 13.7,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 20.1,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2770,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 5.75,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.27,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2023,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.22,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r05/23cr/xls/23cr.xlsx",
+        "publicationDate": null
+      },
+      {
+        "year": 2024,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 453559,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 362599,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 338747,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 23852,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 90960,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 161.5,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 148.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 12.7,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 19.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2521,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 5.58,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.36,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2024,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.26,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cr/xls/24cr.xlsx",
+        "publicationDate": "2025-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "現金給与総額",
+        "unit": "円/月",
+        "value": 462801,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "きまって支給する給与",
+        "unit": "円/月",
+        "value": 365900,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "所定内給与",
+        "unit": "円/月",
+        "value": 339278,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "所定外給与",
+        "unit": "円/月",
+        "value": 26622,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "特別に支払われた給与",
+        "unit": "円/月",
+        "value": 96901,
+        "sourceTable": "給与額シート（第1表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "総実労働時間",
+        "unit": "時間/月",
+        "value": 159.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "所定内労働時間",
+        "unit": "時間/月",
+        "value": 147,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "所定外労働時間",
+        "unit": "時間/月",
+        "value": 12.8,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "出勤日数",
+        "unit": "日/月",
+        "value": 19.6,
+        "sourceTable": "時間シート（第2表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "常用労働者数（毎月勤労統計）",
+        "unit": "千人",
+        "value": 2586,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "パートタイム労働者比率",
+        "unit": "%",
+        "value": 5.53,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "入職率",
+        "unit": "%",
+        "value": 1.35,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      },
+      {
+        "year": 2025,
+        "indicator": "離職率",
+        "unit": "%",
+        "value": 1.12,
+        "sourceTable": "雇用シート（第3表）",
+        "sourceUrl": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r07/25cr/xls/25cr.xlsx",
+        "publicationDate": "2026-02-25"
+      }
+    ]
+  },
+  "occupationWages": {
+    "statisticsName": "令和7年賃金構造基本統計調査",
+    "sourceTable": "（職種）第1表 職種（小分類）、性別…（産業計）",
+    "sourceUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=4&statInfId=000040421116",
+    "publicationDate": "2026-03-24",
+    "rows": [
+      {
+        "occupation": "建築技術者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 43.4
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 12.9
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 166
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 17
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 456.2
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 407.5
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 1316.1
+      },
+      {
+        "occupation": "建築技術者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 37332
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 46
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 13.4
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 162
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 12
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 417.9
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 384.1
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 1234.7
+      },
+      {
+        "occupation": "土木技術者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 30805
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 46.1
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 12.6
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 163
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 8
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 362.4
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 344.1
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 1081.7
+      },
+      {
+        "occupation": "測量技術者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 3025
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 41.9
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 9.6
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 166
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 8
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 320.2
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 302.7
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 302.7
+      },
+      {
+        "occupation": "建設躯体工事従事者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 9479
+      },
+      {
+        "occupation": "大工",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 50.2
+      },
+      {
+        "occupation": "大工",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 11
+      },
+      {
+        "occupation": "大工",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 174
+      },
+      {
+        "occupation": "大工",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 12
+      },
+      {
+        "occupation": "大工",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 360.3
+      },
+      {
+        "occupation": "大工",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 326.7
+      },
+      {
+        "occupation": "大工",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 531.3
+      },
+      {
+        "occupation": "大工",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 1931
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 42.9
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 12.7
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 165
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 11
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 368.6
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 335.7
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 807.5
+      },
+      {
+        "occupation": "配管従事者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 9301
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 41.6
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 9.2
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 168
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 12
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 355.4
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 326.4
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 403.9
+      },
+      {
+        "occupation": "その他の建設従事者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 13786
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 41.6
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 14.3
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 163
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 17
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 411.5
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 361.5
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 1343.1
+      },
+      {
+        "occupation": "電気工事従事者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 21961
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "平均年齢",
+        "unit": "歳",
+        "referencePeriod": "2025-06",
+        "value": 46.7
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "平均勤続年数",
+        "unit": "年",
+        "referencePeriod": "2025-06",
+        "value": 10.4
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "所定内実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 164
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "超過実労働時間数",
+        "unit": "時間/月",
+        "referencePeriod": "2025-06",
+        "value": 8
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "きまって支給する現金給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 320.6
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "所定内給与額",
+        "unit": "千円/月",
+        "referencePeriod": "2025-06",
+        "value": 299.9
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "年間賞与その他特別給与額",
+        "unit": "千円/年",
+        "referencePeriod": "2024",
+        "value": 504.9
+      },
+      {
+        "occupation": "土木従事者，鉄道線路工事従事者",
+        "indicator": "賃構表中労働者数",
+        "unit": "十人",
+        "referencePeriod": "2025-06",
+        "value": 18491
+      }
+    ]
+  },
+  "designLabourRate": {
+    "statisticsName": "公共工事設計労務単価",
+    "sourceTable": "令和8年3月から適用する公共工事設計労務単価について p.2 推移グラフ",
+    "sourceUrl": "https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/content/001994097.pdf",
+    "priceBasis": "所定労働時間内8時間当たり。時間外割増・事業主負担の法定福利費・一般管理費等を含まない。",
+    "rows": [
+      {
+        "effectiveFrom": "2019-03",
+        "value": 19392,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2020-03",
+        "value": 20214,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2021-03",
+        "value": 20409,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2022-03",
+        "value": 21084,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2023-03",
+        "value": 22227,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2024-03",
+        "value": 23600,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2025-03",
+        "value": 24852,
+        "unit": "円/8時間",
+        "publicationDate": null
+      },
+      {
+        "effectiveFrom": "2026-03",
+        "value": 25834,
+        "unit": "円/8時間",
+        "publicationDate": "2026-02-17"
+      }
+    ]
+  }
+}
