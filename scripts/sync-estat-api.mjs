@@ -171,6 +171,18 @@ const targets = [
       return entry.cycle === "年度次";
     },
   },
+  {
+    // 建設業の就業者数・職業大分類・年齢構成。表はestat-api-table-registry.jsonで明示管理する。
+    id: "labour-force-survey",
+    title: "労働力調査（産業・職業・年齢別就業者）",
+    governmentStatisticsCode: "00200531",
+    sourceUrl:
+      "https://www.e-stat.go.jp/stat-search/database?toukei=00200531",
+    fiscalYearFrom: 2013,
+    matches(entry) {
+      return entry.cycle === "年次";
+    },
+  },
 ];
 
 if (!APP_ID) {
