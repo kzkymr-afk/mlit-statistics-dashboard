@@ -232,7 +232,7 @@ const DEFAULT_TABLE_IDS: Record<string, string> = {
   renovation: "0003360953",
   "construction-output": "0003458439",
   "construction-deflator": "0004055083",
-  "construction-investment": "0004030738",
+  "construction-investment": "0004065387",
   "construction-work": "0004016760",
   "construction-labor": "excel-00600050-national-shortage",
   "construction-materials": "excel-00600060-prefecture-index",
@@ -663,6 +663,16 @@ function defaultDimensionValue(dimension: Dimension) {
 
 function timeLabel(value: DimensionValue) {
   return value.name || value.code;
+}
+
+// 年度マスクのbit位置は取込時のdatasets.fiscal_year_from以降の時間コード昇順で
+// 決まる。データセットごとに起点が異なる（建設投資見通しは2008年度）ため、
+// 画面の時間軸も同じ起点で切り出さないとbit位置がずれる。
+function timeFloorFor(catalog: SystemCatalog | null, datasetId: string) {
+  return (
+    catalog?.datasets.find((dataset) => dataset.id === datasetId)
+      ?.fiscalYearFrom ?? 2013
+  );
 }
 
 function timeMaskIncludes(timeMask: number | string, index: number) {
@@ -1334,6 +1344,11 @@ export default function StatisticsSystemWorkbench() {
     activeStatistics.datasetIds,
     cycleFilter,
   ) as TableSummary[];
+  const activeTimeFloor = Math.min(
+    ...activeStatistics.datasetIds.map((datasetId) =>
+      timeFloorFor(catalog, datasetId),
+    ),
+  );
   const datasetTables = (() => {
     const normalized = normalizeSearch(tableSearch);
     return eligibleTables
@@ -1405,9 +1420,10 @@ export default function StatisticsSystemWorkbench() {
         const time = value.dimensions.find(
           (dimension) => dimension.apiKey === "time",
         );
+        const timeFloor = timeFloorFor(catalog, value.table.datasetId);
         const availableTimes = (time?.values ?? []).filter((item) => {
           const year = Number(item.code.slice(0, 4));
-          return !Number.isFinite(year) || year >= 2013;
+          return !Number.isFinite(year) || year >= timeFloor;
         }).toSorted((left, right) => left.code.localeCompare(right.code));
         setSelections(nextSelections);
         setTimeFrom(
@@ -1466,14 +1482,14 @@ export default function StatisticsSystemWorkbench() {
   const timeDimension = meta?.dimensions.find(
     (dimension) => dimension.apiKey === "time",
   );
-  const timeValues = useMemo(
-    () =>
-      (timeDimension?.values ?? []).filter((item) => {
-        const year = Number(item.code.slice(0, 4));
-        return !Number.isFinite(year) || year >= 2013;
-      }).toSorted((left, right) => left.code.localeCompare(right.code)),
-    [timeDimension],
-  );
+  const metaDatasetId = meta?.table.datasetId ?? "";
+  const timeValues = useMemo(() => {
+    const timeFloor = timeFloorFor(catalog, metaDatasetId);
+    return (timeDimension?.values ?? []).filter((item) => {
+      const year = Number(item.code.slice(0, 4));
+      return !Number.isFinite(year) || year >= timeFloor;
+    }).toSorted((left, right) => left.code.localeCompare(right.code));
+  }, [catalog, metaDatasetId, timeDimension]);
   const timeLabels = useMemo(
     () => new Map(timeValues.map((item) => [item.code, timeLabel(item)])),
     [timeValues],
@@ -1631,10 +1647,14 @@ export default function StatisticsSystemWorkbench() {
       const time = presetMeta.dimensions.find(
         (dimension) => dimension.apiKey === "time",
       );
+      const presetTimeFloor = timeFloorFor(
+        catalog,
+        presetMeta.table.datasetId,
+      );
       const presetTimeValues = (time?.values ?? [])
         .filter((item) => {
           const year = Number(item.code.slice(0, 4));
-          return !Number.isFinite(year) || year >= 2013;
+          return !Number.isFinite(year) || year >= presetTimeFloor;
         })
         .toSorted((left, right) => left.code.localeCompare(right.code));
       const presetTimeLabels = new Map(
@@ -2069,7 +2089,7 @@ export default function StatisticsSystemWorkbench() {
           </div>
           <div className="system-badges">
             <span>{displayCycle(cycleFilter)}</span>
-            <span>2013年度以降</span>
+            <span>{activeTimeFloor}年度以降</span>
             <span>出典付き</span>
           </div>
         </header>

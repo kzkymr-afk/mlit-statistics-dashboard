@@ -152,7 +152,9 @@ const targets = [
     governmentStatisticsCode: "00600870",
     sourceUrl:
       "https://www.e-stat.go.jp/stat-search/database?toukei=00600870",
-    fiscalYearFrom: 2013,
+    // 2008年度=100の指数など、リーマンショック前からの長期比較に使うため2008年度以降を収録する。
+    // 年度マスクのbit位置はdatasets.fiscal_year_fromを起点にするため、画面も同じ起点で復元する。
+    fiscalYearFrom: 2008,
     matches(entry) {
       return entry.cycle === "年度次";
     },
