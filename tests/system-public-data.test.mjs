@@ -225,13 +225,35 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   assert.ok(table);
   assert.equal(table.datasetId, "buildbase-company-comparison");
   assert.equal(table.sourceKind, "buildbase-public-disclosures");
-  assert.equal(table.seriesCount, 1_302);
-  assert.equal(table.observationCount, 13_950);
+  // 項目数・セル数はBuildBase側の項目追加で増えるため、固定値でなく同期時のカタログ値と突合する
+  const buildBaseCatalog = JSON.parse(
+    await readFile(
+      new URL("../data/catalogs/buildbase-company-data.json", import.meta.url),
+      "utf8",
+    ),
+  );
+  assert.equal(buildBaseCatalog.companyCount, 21);
+  assert.ok(buildBaseCatalog.fieldCount >= 65);
+  assert.equal(
+    table.seriesCount,
+    buildBaseCatalog.fieldCount * buildBaseCatalog.companyCount,
+  );
+  assert.equal(table.observationCount, buildBaseCatalog.cellCount);
 
   const meta = await readGzipJson(table.metaUrl);
-  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 62);
+  const fieldValues = meta.dimensions.find((item) => item.apiKey === "tab").values;
+  assert.equal(fieldValues.length, buildBaseCatalog.fieldCount);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "cat01").values.length, 21);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "time").values.length, 11);
+  // 値の範囲を説明する文字の注記項目（*_basis）は系列にせず、数値セルの注記に載せる
+  assert.ok(!fieldValues.some((item) => item.code.endsWith("_basis")));
+  for (const code of [
+    "construction_gross_profit_margin_building_standalone",
+    "construction_gross_profit_margin_domestic_building_standalone",
+    "building_gross_margin_reported",
+  ]) {
+    assert.ok(fieldValues.some((item) => item.code === code), code);
+  }
 
   const bundleCache = new Map();
   async function seriesFor(selections) {
@@ -264,6 +286,19 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   assert.ok(
     researchExpense[2].some(
       (point) => point[0] === "2024100000" && point[1] === 22_207,
+    ),
+  );
+
+  const reportedMargin = await seriesFor({
+    tab: "building_gross_margin_reported",
+    cat01: "INFR",
+  });
+  assert.ok(
+    reportedMargin[2].some(
+      (point) =>
+        point[0] === "2021100000" &&
+        point[1] === 10.8 &&
+        String(point[3] ?? "").includes("開示ベース: 連結グループセグメント"),
     ),
   );
 
@@ -311,12 +346,6 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   }
   assert.equal(buildingUseFields.length, 9);
   // 充足数はBuildBase側の是正・年次更新で増えるため、固定値でなくカタログ値と突合する
-  const buildBaseCatalog = JSON.parse(
-    await readFile(
-      new URL("../data/catalogs/buildbase-company-data.json", import.meta.url),
-      "utf8",
-    ),
-  );
   assert.equal(
     filledBuildingUseCount,
     buildBaseCatalog.factbookBuildingUseFilledCount,
