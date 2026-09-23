@@ -225,11 +225,11 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   assert.ok(table);
   assert.equal(table.datasetId, "buildbase-company-comparison");
   assert.equal(table.sourceKind, "buildbase-public-disclosures");
-  assert.equal(table.seriesCount, 1_134);
-  assert.equal(table.observationCount, 12_150);
+  assert.equal(table.seriesCount, 1_302);
+  assert.equal(table.observationCount, 13_950);
 
   const meta = await readGzipJson(table.metaUrl);
-  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 54);
+  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 62);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "cat01").values.length, 21);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "time").values.length, 11);
 
@@ -346,4 +346,35 @@ test("リニューアルの長い月別時間軸を可変長マスクで復元�
   const series = bundle.series[seriesId];
   assert.ok(series);
   assert.match(series[1], /^x[a-f0-9]+$/);
+});
+
+test("建設投資見通しは令和8年度版を主表とし2008年度から公開する", async () => {
+  const catalog = await readJson("system/catalog.json");
+  const dataset = catalog.datasets.find(
+    (item) => item.id === "construction-investment",
+  );
+  assert.equal(dataset.fiscalYearFrom, 2008);
+  const tableIds = catalog.tables
+    .filter((item) => item.datasetId === "construction-investment")
+    .map((item) => item.id)
+    .toSorted();
+  assert.deepEqual(tableIds, [
+    "0004030738",
+    "0004030739",
+    "0004065387",
+    "0004065388",
+  ]);
+  const shardNames = (await readdir(new URL("system/shards/", publicRoot)))
+    .filter((name) => name.startsWith("construction-investment-"));
+  assert.ok(shardNames.length > 0);
+  let earliestYear = Infinity;
+  for (const name of shardNames) {
+    const bundle = await readGzipJson(`system/shards/${name}`);
+    for (const [, , points] of Object.values(bundle.series)) {
+      for (const [timeCode] of points) {
+        earliestYear = Math.min(earliestYear, Number(timeCode.slice(0, 4)));
+      }
+    }
+  }
+  assert.equal(earliestYear, 2008);
 });

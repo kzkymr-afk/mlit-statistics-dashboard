@@ -8,6 +8,11 @@ import {
   StatisticsQueryEngine,
 } from "./lib/statistics-query.mjs";
 import { writeReportBundle } from "./lib/statistics-report-bundle.mjs";
+import {
+  COMPANY_OUTPUT_ROOT,
+  requireCompanyExtension,
+  safeCompanyOutputPath,
+} from "./lib/company-extension.mjs";
 
 const ROOT = resolve(import.meta.dirname, "..");
 
@@ -65,6 +70,30 @@ function safeOutputPath(rawPath) {
   return outputPath;
 }
 
+// 社内図表はローカル拡張（.env.localのATLAS_COMPANY_EXTENSION）がある端末だけで使う。
+async function runCompanyCharts(arguments_, openEngine) {
+  const action = arguments_._[1];
+  const actions = ["list", "search", "describe", "data", "generate", "validate"];
+  if (!actions.includes(action)) {
+    throw new Error(`company-chartsは ${actions.join(" / ")} を指定してください。`);
+  }
+  if (["describe", "data", "generate"].includes(action) && !arguments_.id) {
+    throw new Error(`company-charts ${action}には --id が必要です。`);
+  }
+  const outputDirectory =
+    action === "generate"
+      ? safeCompanyOutputPath(arguments_.out || `${COMPANY_OUTPUT_ROOT}/${arguments_.id}`)
+      : null;
+  const extension = await requireCompanyExtension();
+  if (action === "list") printJson(extension.list());
+  else if (action === "search") printJson(extension.search(arguments_.query));
+  else if (action === "describe") printJson(extension.describe(arguments_.id));
+  else if (action === "data") printJson(extension.data(arguments_.id));
+  else if (action === "generate") {
+    printJson(extension.generate(openEngine(), arguments_.id, outputDirectory, arguments_.artifact || "auto"));
+  } else printJson(extension.validate(openEngine()));
+}
+
 function printJson(value) {
   process.stdout.write(`${JSON.stringify(value, null, 2)}\n`);
 }
@@ -108,6 +137,10 @@ Usage:
   npm run ai:stats -- query --table nikkenren-group-orders-annual \\
     --select tab=building-total --select cat01=1 --from 2013 --to 2025
   npm run ai:stats -- bundle --spec examples/ai-report-spec.json --out outputs/ai/nikkenren
+  npm run ai:stats -- company-charts list      # 社内図表のローカル拡張がある端末のみ
+  npm run ai:stats -- company-charts search --query "<語>"
+  npm run ai:stats -- company-charts data --id <図表ID>
+  npm run ai:stats -- company-charts generate --id <図表ID>
 
 Options:
   --database <path>      SQLite DB（既定: data/database/mlit-statistics-system.sqlite）
@@ -126,8 +159,13 @@ try {
     process.exit(0);
   }
   const databasePath = resolve(ROOT, arguments_.database || DEFAULT_DATABASE_PATH);
-  engine = new StatisticsQueryEngine(databasePath);
-  if (command === "datasets") {
+  if (command !== "company-charts") engine = new StatisticsQueryEngine(databasePath);
+  if (command === "company-charts") {
+    await runCompanyCharts(
+      arguments_,
+      () => (engine = new StatisticsQueryEngine(databasePath)),
+    );
+  } else if (command === "datasets") {
     printJson({ schemaVersion: "1.0", datasets: engine.listDatasets() });
   } else if (command === "search") {
     printJson({

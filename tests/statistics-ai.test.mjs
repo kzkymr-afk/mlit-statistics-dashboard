@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { resolve } from "node:path";
@@ -12,6 +13,7 @@ import {
   normalizeObservation,
   seriesLabel,
 } from "../scripts/lib/estat-normalize.mjs";
+import { companyExtensionPath } from "../scripts/lib/company-extension.mjs";
 import { StatisticsQueryEngine } from "../scripts/lib/statistics-query.mjs";
 import { writeReportBundle } from "../scripts/lib/statistics-report-bundle.mjs";
 import {
@@ -204,6 +206,8 @@ test("AIクエリは分類名を解決し、公表0と欠測を区別して出�
   }
 });
 
+const ROOT = resolve(import.meta.dirname, "..");
+
 test("MCPは検索・分類・取得・資料作成の5ツールを公開する", async () => {
   const directory = mkdtempSync(resolve(tmpdir(), "mlit-ai-mcp-"));
   let client;
@@ -216,6 +220,7 @@ test("MCPは検索・分類・取得・資料作成の5ツールを公開する"
       env: {
         ...process.env,
         MLIT_SYSTEM_DATABASE_PATH: databasePath,
+        ATLAS_COMPANY_EXTENSION: "",
       },
       stderr: "pipe",
     });
@@ -246,5 +251,73 @@ test("MCPは検索・分類・取得・資料作成の5ツールを公開する"
   } finally {
     await client?.close();
     rmSync(directory, { recursive: true });
+  }
+});
+
+// 社内図表はローカル拡張がある端末だけの機能。公開リポジトリのテストは値を持たず、
+// 拡張の有無による公開・非公開の切り替えと出力先の制限だけを確かめる。
+test(
+  "社内図表の拡張がある端末ではMCPに社内図表ツールを追加する",
+  { skip: companyExtensionPath() ? false : "社内図表の拡張が未設定" },
+  async () => {
+    const directory = mkdtempSync(resolve(tmpdir(), "mlit-ai-mcp-company-"));
+    let client;
+    try {
+      const { databasePath } = createFixture(directory);
+      const transport = new StdioClientTransport({
+        command: "node",
+        args: ["scripts/mcp-statistics-server.mjs"],
+        cwd: ROOT,
+        env: { ...process.env, MLIT_SYSTEM_DATABASE_PATH: databasePath },
+        stderr: "pipe",
+      });
+      client = new Client({ name: "statistics-ai-test", version: "1.0.0" });
+      await client.connect(transport);
+      const tools = await client.listTools();
+      assert.equal(tools.tools.at(-1).name, "company_annual_report_figures");
+      const listed = await client.callTool({
+        name: "company_annual_report_figures",
+        arguments: { action: "list" },
+      });
+      assert.ok(Array.isArray(listed.structuredContent.items));
+      assert.ok(listed.structuredContent.items.length > 0);
+    } finally {
+      await client?.close();
+      rmSync(directory, { recursive: true });
+    }
+  },
+);
+
+test("社内図表CLIは拡張が無い環境では明示的に停止する", () => {
+  const result = spawnSync(
+    "node",
+    ["scripts/statistics-ai.mjs", "company-charts", "list"],
+    {
+      cwd: ROOT,
+      encoding: "utf8",
+      env: { ...process.env, ATLAS_COMPANY_EXTENSION: "" },
+    },
+  );
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /ATLAS_COMPANY_EXTENSION/);
+});
+
+test("社内図表CLIはpublicなど許可外の出力先を拒否する", () => {
+  for (const out of ["public/company-chart", "outputs/ai/company-annual-report"]) {
+    const result = spawnSync(
+      "node",
+      [
+        "scripts/statistics-ai.mjs",
+        "company-charts",
+        "generate",
+        "--id",
+        "any",
+        "--out",
+        out,
+      ],
+      { cwd: ROOT, encoding: "utf8" },
+    );
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /outputs\/ai\/company-annual-report/);
   }
 });

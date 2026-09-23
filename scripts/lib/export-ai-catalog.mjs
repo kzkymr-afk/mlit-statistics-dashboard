@@ -49,7 +49,7 @@ export function exportAiCatalog(systemDirectory) {
           "[unit, timeMask, points]; point=[timeCode,numericValue,nonNumericValue,annotation,exceptionalStatus]",
         implicitNumericZero: meta.implicitNumericZero,
         timeMask:
-          "時間コード昇順のbit位置。bit=1でpoint行が無い場合は公表値0。bit=0は欠測または未公表。",
+          "dataset.fiscalYearFrom以降の時間コード昇順のbit位置。bit=1でpoint行が無い場合は公表値0。bit=0は欠測または未公表。",
       },
     });
     tableIndex.push({

@@ -29,6 +29,8 @@ export default function AtlasLoginGate({ children }: { children: React.ReactNode
   React.useEffect(() => {
     try {
       const raw = window.localStorage.getItem(AUTH_STORAGE_KEY);
+      // localStorageはブラウザでしか読めないため、SSG出力と一致させたうえでマウント後に1回だけ反映する。
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setState(isSessionValid(raw) ? "open" : "locked");
     } catch {
       setState("locked");
