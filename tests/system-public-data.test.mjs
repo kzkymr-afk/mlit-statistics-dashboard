@@ -225,11 +225,11 @@ test("BuildBase会社別データは確定値・非開示・公表待ちを区�
   assert.ok(table);
   assert.equal(table.datasetId, "buildbase-company-comparison");
   assert.equal(table.sourceKind, "buildbase-public-disclosures");
-  assert.equal(table.seriesCount, 1_134);
-  assert.equal(table.observationCount, 12_150);
+  assert.equal(table.seriesCount, 1_302);
+  assert.equal(table.observationCount, 13_950);
 
   const meta = await readGzipJson(table.metaUrl);
-  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 54);
+  assert.equal(meta.dimensions.find((item) => item.apiKey === "tab").values.length, 62);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "cat01").values.length, 21);
   assert.equal(meta.dimensions.find((item) => item.apiKey === "time").values.length, 11);
 
