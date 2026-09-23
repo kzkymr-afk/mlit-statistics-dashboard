@@ -11,6 +11,11 @@ import {
   StatisticsQueryEngine,
 } from "./lib/statistics-query.mjs";
 import { writeReportBundle } from "./lib/statistics-report-bundle.mjs";
+import {
+  COMPANY_OUTPUT_ROOT,
+  loadCompanyExtension,
+  safeCompanyOutputPath,
+} from "./lib/company-extension.mjs";
 
 const ROOT = resolve(import.meta.dirname, "..");
 const databasePath = resolve(
@@ -175,6 +180,49 @@ server.registerTool(
     );
   },
 );
+
+// 社内図表はローカル拡張（.env.localのATLAS_COMPANY_EXTENSION）がある端末だけで公開する。
+// ツールの題名・説明も拡張側が持ち、公開リポジトリには社内固有の名称や件数を置かない。
+const companyExtension = await loadCompanyExtension();
+if (companyExtension) {
+  server.registerTool(
+    "company_annual_report_figures",
+    {
+      title: companyExtension.mcpTool.title,
+      description: companyExtension.mcpTool.description,
+      inputSchema: {
+        action: z.enum(["list", "search", "describe", "data", "generate"]),
+        query: z.string().optional(),
+        id: z.string().optional(),
+        artifact: z.enum(["auto", "chart", "table", "html"]).optional(),
+        outputDirectory: z
+          .string()
+          .optional()
+          .describe(`プロジェクト内の相対パス。既定は${COMPANY_OUTPUT_ROOT}/<id>`),
+      },
+      annotations: { readOnlyHint: false, destructiveHint: false, openWorldHint: false },
+    },
+    async ({ action, query, id, artifact, outputDirectory }) => {
+      if (action !== "list" && action !== "search" && !id) {
+        throw new Error(`${action}にはidが必要です。`);
+      }
+      let value;
+      if (action === "list") value = companyExtension.list();
+      else if (action === "search") value = companyExtension.search(query);
+      else if (action === "describe") value = companyExtension.describe(id);
+      else if (action === "data") value = companyExtension.data(id);
+      else {
+        value = companyExtension.generate(
+          engine,
+          id,
+          safeCompanyOutputPath(outputDirectory || `${COMPANY_OUTPUT_ROOT}/${id}`),
+          artifact || "auto",
+        );
+      }
+      return result(value, `${companyExtension.mcpTool.title}: ${action}`);
+    },
+  );
+}
 
 async function shutdown() {
   engine.close();

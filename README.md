@@ -291,3 +291,26 @@ npm run test:system           # 項目・分類・系列・値・出典の経路
 新しい統計は、公式掲載先・DB統計表ID・表章事項・分類コード・単位・更新周期を
 レジストリへ登録します。Excelしかない項目は、対応表をレビューしてから同じ系列へ
 統合します。各出力には統計名、統計表ID、分類条件、調査年月、公式掲載先を残します。
+
+## 社内図表のローカル拡張（任意）
+
+社内資料の図表をAIから引く機能は、このリポジトリには含めず、利用者の端末にだけ置く
+拡張モジュールとして読み込みます。`.env.local`（Git・Pages・Release対象外）に
+`ATLAS_COMPANY_EXTENSION=<拡張モジュールのパス>` がある場合だけ、CLIの
+`company-charts` とMCPの `company_annual_report_figures` が有効になります。
+公開DB、Pages、Releaseには社内データを混ぜません。
+
+```bash
+npm run ai:stats -- company-charts list
+npm run ai:stats -- company-charts search --query "<語>"
+npm run ai:stats -- company-charts describe --id <図表ID>
+npm run ai:stats -- company-charts data --id <図表ID>
+npm run ai:stats -- company-charts generate --id <図表ID>
+npm run ai:company-charts:validate
+```
+
+拡張は `createCompanyChartsExtension({ writeReportBundle })` を公開し、
+`list` / `search` / `describe` / `data` / `generate` / `validate` とMCPの題名・説明を返します。
+図表の再出力先は `outputs/ai/company-annual-report/<id>/` 以下に限定します。
+数値と定義の検証は拡張側のテストで行い、このリポジトリのテストは拡張の有無による
+切り替えと出力先の制限だけを確かめます。

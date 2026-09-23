@@ -40,7 +40,8 @@
     "sync:orders-major50-annual": "node scripts/sync-orders-major50-annual-files.mjs && node scripts/build-orders-major50-annual-catalog.mjs",
     "catalog:orders-major50-annual": "node scripts/build-orders-major50-annual-catalog.mjs",
     "ai:stats": "node scripts/statistics-ai.mjs",
-    "ai:mcp": "node scripts/mcp-statistics-server.mjs"
+    "ai:mcp": "node scripts/mcp-statistics-server.mjs",
+    "ai:company-charts:validate": "node scripts/statistics-ai.mjs company-charts validate"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
