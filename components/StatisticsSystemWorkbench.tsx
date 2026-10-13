@@ -7,8 +7,10 @@ import {
   useRef,
   useState,
 } from "react";
+import Link from "next/link";
 
 import { buildAxisScale } from "@/lib/chart-scale.mjs";
+import { canonicalSha256 } from "@/lib/buildbase-contract-hash.mjs";
 import {
   FAVORITES_STORAGE_KEY,
   MAX_FAVORITES,
@@ -17,22 +19,33 @@ import {
   upsertFavorite,
 } from "@/lib/statistics-favorites.mjs";
 import {
+  indicatorCategory,
   ALL_CYCLES,
   filterTablesByNavigation,
   preferredTableId,
+  searchCatalogTables,
+  tableCoverageLabel,
   tableMatchesCycle,
 } from "@/lib/statistics-navigation.mjs";
 import {
   AVAILABILITY_STATUS_LABELS,
   MAX_BULK_ADD_SERIES,
-  availabilityStatusFor,
+  discoveryStatusFor,
   comboIdentity,
+  calculatePearsonComparison,
+  comparisonCompatibility,
+  observationAnalysisState,
+  axisAssignmentError,
   selectableCompareLimit,
 } from "@/lib/statistics-series-compare.mjs";
 import { STATISTICS_PRESETS } from "@/lib/statistics-presets.mjs";
-import BuildBaseBuildingUseShortcut, {
-  DEFAULT_BUILDING_USE_FIELD_ID,
-} from "@/components/BuildBaseBuildingUseShortcut";
+import {
+  VERIFIED_TABLE_ID, VERIFIED_DATASET_ID, VERIFIED_DATA_URL,
+  verifiedWorkbenchCatalog, verifiedSourceForSelection, verifiedWindowTimeValues, verifiedSeriesSelection, verifiedOfficialBytesCheckedUrl, workbenchComparisonMetadata, placeSeriesInWorkbench,
+  workbenchChartGroups, workbenchVisualChartGroups, workbenchChartTickLabel, indexSeriesAtCommonPeriod, correlationReviewCompatibility, publishedWorkbenchSelection, referenceSelectionAllowed, workbenchDisplaySeries, workbenchRawTableColumns, workbenchRawTableCell,
+} from "@/lib/statistics-workbench.mjs";
+
+type VerifiedCatalog = Awaited<ReturnType<typeof verifiedWorkbenchCatalog>>;
 
 type DatasetSummary = {
   id: string;
@@ -58,6 +71,7 @@ type TableSummary = {
   seriesCount: number;
   observationCount: number;
   metaUrl: string;
+  snapshotHash?: string;
   // 母集団・比較上の注意（data/catalogs/table-notes.json）
   notes?: string[];
 };
@@ -107,6 +121,37 @@ type TableMeta = {
   seriesBundlePrefixLength: number;
   seriesBundleUrlTemplate: string;
   availabilityUrl?: string;
+  contractVersion?: number;
+  snapshotHash?: string;
+  evidenceUrl?: string;
+  metadataHash?: string;
+  searchIndexUrl?: string;
+  automaticComparisonAllowed?: boolean;
+  automaticAggregationAllowed?: boolean;
+};
+
+type BuildBaseEvidence = {
+  contractVersion: number;
+  snapshotHash: string;
+  metadataHash: string;
+  canonicalFreshness?: string;
+  cellMetadata: Array<{
+    companyId: string;
+    fiscalYear: number;
+    fieldId: string;
+    valueState?: string;
+    verificationStatus?: string;
+    disclosureStatus?: string;
+    sourceBindingStatus?: string;
+    source?: Record<string, unknown> | null;
+    semantics?: Record<string, unknown> | null;
+    eligibility?: {
+      automaticComparisonAllowed?: boolean;
+      automaticAggregationAllowed?: boolean;
+    };
+    history?: unknown;
+  }>;
+  searchIndex: { records: Array<Record<string, unknown>>; coverageNote?: string };
 };
 
 type AvailabilityIndex = {
@@ -124,6 +169,15 @@ type ObservationPoint = {
   status: string;
   sourceId: string;
   implicitNumericZero: boolean;
+  periodStart?: string;
+  periodEnd?: string;
+  factId?: string;
+  provenance?: { sourceUrl: string; pdfPage: number; definitionReviewQuote: string; sourceQuote: string; sourceFileSha256: string;
+    currentOfficialVersionMatchStatus?: string; currentOfficialBytesCheckedAt?: string; currentOfficialBytesCheckedUrl?: string;
+    sourceCurrentnessCheckId?: string; sourceCurrentnessCheckPayloadSha256?: string; sourceCurrentnessCheck?: Record<string, unknown>;
+    sourceCurrentnessCheckHistory?: Array<{ checkId: string; checkedAtUTC: string; sourceUrl: string; httpStatus: number;
+      byteComparisonStatus: string; recordPayloadSha256: string; [key: string]: unknown }>;
+  };
 };
 
 type BundlePoint = [
@@ -189,6 +243,22 @@ type SelectedSeries = {
   datasetId: string;
   tableId: string;
   tableTitle: string;
+  cycle: string;
+  comparisonScope: string;
+  metricDefinition?: string;
+  measureKind?: string;
+  periodBasis?: string;
+  definitionReview?: string;
+  automaticAggregationAllowed?: boolean;
+  comparisonFamily?: string;
+  companyId?: string;
+  metricId?: string;
+  reviewWindow?: string;
+  comparisonIndicatorId?: string;
+  comparisonEquivalence?: Record<string, unknown>;
+  priceBasis: string;
+  automaticComparisonAllowed: boolean;
+  snapshotHash?: string;
   coordinates: Record<string, string>;
   label: string;
   unit: string | null;
@@ -210,6 +280,14 @@ type SelectedSeries = {
   notes: string[];
 };
 
+type ChartDisplaySeries = SelectedSeries & {
+  displayOnlyJoined?: boolean;
+  displayBoundaryNote?: string;
+  displayOriginalSeriesIds?: string[];
+  displayOrigins?: Array<{ timeCode: string; seriesId: string; reviewWindow: string; point: ObservationPoint }>;
+  displayReviewBoundaries?: Array<{ fromTimeCode: string; toTimeCode: string; fromSeriesId: string; toSeriesId: string; fromReviewWindow: string; toReviewWindow: string }>;
+};
+
 const MAX_SELECTED_SERIES = 15;
 const COLORS = [
   "#2367d1",
@@ -229,6 +307,7 @@ const COLORS = [
   "#304c89",
 ];
 const DEFAULT_TABLE_IDS: Record<string, string> = {
+  [VERIFIED_DATASET_ID]: VERIFIED_TABLE_ID,
   "building-starts": "0003119773",
   "building-starts-monthly": "0003119745",
   "orders-major50": "0003126300",
@@ -262,7 +341,7 @@ const STATISTICS_FAMILIES = [
   {
     id: "buildbase-company-comparison",
     title: "ゼネコン会社別データ",
-    datasetIds: ["buildbase-company-comparison"],
+    datasetIds: ["buildbase-company-comparison", VERIFIED_DATASET_ID],
     cycles: ["年度次"],
   },
   {
@@ -423,7 +502,10 @@ function formatNumber(value: number) {
 }
 
 const POINT_STATUS_LABELS: Record<string, string> = {
+  not_applicable: "対象外",
   not_disclosed: "非開示",
+  on_hold: "保留",
+  unverified: "未確認",
   publication_pending: "公表待ち",
   missing: "欠測",
   suppressed: "秘匿",
@@ -435,7 +517,21 @@ function pointDisplayValue(point: ObservationPoint | undefined) {
   return POINT_STATUS_LABELS[point.status] || point.value || "—";
 }
 
+function safeEvidenceUrl(value: unknown) {
+  if (typeof value !== "string") return "";
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" ? url.href : "";
+  } catch {
+    return "";
+  }
+}
+
 function sourceLabelFor(sourceKind: string) {
+  if (sourceKind === "estat-api") return "e-Stat（API）";
+  if (sourceKind === "estat-excel") return "e-Stat（Excel）";
+  if (sourceKind === "estat-file") return "e-Stat（公開ファイル）";
+  if (sourceKind === "buildbase-source-verified") return "会社公開決算資料（出典確認済み）";
   if (sourceKind === "nikkenren-excel") return "日建連";
   if (sourceKind === "mhlw-excel") return "厚生労働省";
   if (sourceKind === "mlit-publication") return "国土交通省";
@@ -600,7 +696,6 @@ function buildSelectedSeriesEntry({
   timeValues,
   timeFrom,
   timeTo,
-  timeLabels,
   color,
 }: {
   meta: TableMeta;
@@ -619,91 +714,7 @@ function buildSelectedSeriesEntry({
   timeLabels: Map<string, string>;
   color: string;
 }): SelectedSeries {
-  const [seriesUnit, seriesTimeMask, compactPoints] = compactSeries;
-  const seriesTableId = meta.table.id;
-  const seriesLabel = selectionLabelFor(meta, coordinates);
-  const storedPoints = new Map(
-    compactPoints.map(
-      ([
-        pointTimeCode,
-        numericValue,
-        nonNumericValue,
-        annotation,
-        exceptionalStatus,
-      ]) => [
-        pointTimeCode,
-        {
-          timeCode: pointTimeCode,
-          value:
-            nonNumericValue ??
-            (numericValue === null ? null : String(numericValue)),
-          numericValue,
-          unit: seriesUnit,
-          annotation,
-          status: exceptionalStatus ?? "confirmed_value",
-          sourceId: source?.sourceId ?? "",
-          implicitNumericZero: false,
-        },
-      ],
-    ),
-  );
-  const points = timeValues
-    .map((item, index) => ({ item, index }))
-    .filter(
-      ({ item, index }) =>
-        timeMaskIncludes(seriesTimeMask, index) &&
-        (!timeFrom || item.code >= timeFrom) &&
-        (!timeTo || item.code <= timeTo),
-    )
-    .map(
-      ({ item }) =>
-        storedPoints.get(item.code) ?? {
-          timeCode: item.code,
-          value: "0",
-          numericValue: 0,
-          unit: seriesUnit,
-          annotation: null,
-          status: "confirmed_value",
-          sourceId: source?.sourceId ?? "",
-          implicitNumericZero: true,
-        },
-    );
-  return {
-    id,
-    datasetId: meta.table.datasetId,
-    tableId: seriesTableId,
-    tableTitle: meta.table.title,
-    coordinates: { ...coordinates },
-    label: seriesLabel,
-    unit: seriesUnit,
-    timeMask: seriesTimeMask,
-    points,
-    chartKind: "line",
-    axis: "left",
-    color,
-    sourceLabel: sourceLabelFor(meta.table.sourceKind),
-    sources: source
-      ? {
-          [source.sourceId]: {
-            sourceUrl: source.sourceUrl,
-            publishedAt: source.publishedAt,
-            retrievedAt: source.retrievedAt,
-          },
-        }
-      : {},
-    timeLabels: Object.fromEntries(timeLabels),
-    notes: seriesNotesFor(meta, coordinates),
-  };
-}
-
-// 表の注意と、選んだ分類値の注意を系列の注記としてまとめる。
-function seriesNotesFor(meta: TableMeta, coordinates: Record<string, string>) {
-  const valueNotes = meta.dimensions.flatMap((dimension) => {
-    const code = coordinates[dimension.apiKey];
-    const note = dimension.values.find((value) => value.code === code)?.note;
-    return note ? [note] : [];
-  });
-  return [...(meta.table.notes ?? []), ...valueNotes];
+  return publishedWorkbenchSelection({ meta, coordinates, id, compactSeries, source: source ?? null, timeValues, timeFrom, timeTo, color }) as SelectedSeries;
 }
 
 function defaultDimensionValue(dimension: Dimension) {
@@ -731,16 +742,6 @@ function timeFloorFor(catalog: SystemCatalog | null, datasetId: string) {
   );
 }
 
-function timeMaskIncludes(timeMask: number | string, index: number) {
-  const normalizedMask =
-    typeof timeMask === "string"
-      ? BigInt(`0x${timeMask.replace(/^x/, "")}`)
-      : BigInt(timeMask);
-  return (
-    (normalizedMask & (BigInt(1) << BigInt(index))) !== BigInt(0)
-  );
-}
-
 function DimensionPicker({
   dimension,
   value,
@@ -757,6 +758,9 @@ function DimensionPicker({
   const selected = dimension.values.find((item) => item.code === value);
   const [query, setQuery] = useState(selected?.name ?? "");
   const [open, setOpen] = useState(false);
+  const [category, setCategory] = useState("");
+  const categories = dimension.apiKey === "tab" && dimension.values.length > 10
+    ? [...new Set(dimension.values.map((item) => indicatorCategory(item.name)))] : [];
 
   const matches = useMemo(() => {
     const normalized = normalizeSearch(query);
@@ -765,8 +769,8 @@ function DimensionPicker({
           normalizeSearch(`${item.name} ${item.code}`).includes(normalized),
         )
       : dimension.values;
-    return values.slice(0, 80);
-  }, [dimension.values, query]);
+    return values.filter((item) => !category || indicatorCategory(item.name) === category).slice(0, 80);
+  }, [dimension.values, query, category]);
 
   return (
     <label className="system-filter">
@@ -790,6 +794,9 @@ function DimensionPicker({
           </button>
         ) : null}
       </span>
+      {categories.length > 1 ? <select value={category} aria-label="指標の種類で絞り込む" onChange={(event) => { setCategory(event.target.value); setQuery(""); setOpen(true); }}>
+        <option value="">すべての指標</option>{categories.map((item) => <option key={item} value={item}>{item}</option>)}
+      </select> : null}
       <div className="system-combobox">
         <input
           value={query}
@@ -806,6 +813,13 @@ function DimensionPicker({
               setOpen(false);
               setQuery(selected?.name ?? "");
             }, 120);
+          }}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              event.preventDefault();
+              setOpen(false);
+              setQuery(selected?.name ?? "");
+            }
           }}
           placeholder={`${dimension.name}を検索`}
           aria-label={`${dimension.name}を検索`}
@@ -825,13 +839,14 @@ function DimensionPicker({
                 }}
               >
                 <span>{item.name}</span>
-                <small>{item.code}</small>
+                <small>{item.unit ? `${item.unit} · ` : ""}{item.code}</small>
               </button>
             ))}
             {matches.length === 0 ? <p>該当する分類がありません。</p> : null}
           </div>
         ) : null}
       </div>
+      <small className="system-selected-classification">{selected?.name}{selected?.unit ? ` · ${selected.unit}` : ""}{selected?.note ? ` · ${selected.note}` : ""}</small>
     </label>
   );
 }
@@ -842,6 +857,9 @@ function CompareValueList({
   checkedCodes,
   onChange,
   availability,
+  verifiedCatalog,
+  timeFrom,
+  timeTo,
   maxSelectable,
 }: {
   dimension: Dimension;
@@ -849,6 +867,9 @@ function CompareValueList({
   checkedCodes: string[];
   onChange: (codes: string[]) => void;
   availability: Record<string, string> | null;
+  verifiedCatalog: VerifiedCatalog | null;
+  timeFrom: string;
+  timeTo: string;
   maxSelectable: number;
 }) {
   const [query, setQuery] = useState("");
@@ -880,17 +901,25 @@ function CompareValueList({
         placeholder={`${dimension.name}を検索`}
         aria-label={`${dimension.name}を検索`}
       />
+      <p className="system-dataset-note">他の分類条件を固定して、{dimension.name}の候補を追加できます。未確認値は参考表示、保留値は実数表で根拠を確認します。追加と直接計算の許可は別です。</p>
       <div
         className="system-compare-list"
         role="group"
         aria-label={`${dimension.name}の複数選択`}
       >
         {matches.map((item) => {
-          const status = availabilityStatusFor(availability, {
-            ...baseSelections,
-            [dimension.apiKey]: item.code,
-          });
-          const unavailable = status !== "available";
+          const coordinates = { ...baseSelections, [dimension.apiKey]: item.code };
+          const status = discoveryStatusFor(availability, coordinates);
+          const verifiedSource = verifiedSourceForSelection(verifiedCatalog, coordinates);
+          const confirmedCount = verifiedSource?.automaticComparisonAllowed === true
+            ? verifiedSource.points.filter((point: ObservationPoint & { eligibility?: { automaticComparisonAllowed?: boolean }; provenance?: { comparisonVerificationId?: string; definitionChangeStatus?: string } }) =>
+                (!timeFrom || point.timeCode >= timeFrom) && (!timeTo || point.timeCode <= timeTo) &&
+                observationAnalysisState(point) === "valid" &&
+                point.eligibility?.automaticComparisonAllowed === true &&
+                point.provenance?.comparisonVerificationId &&
+                point.provenance?.definitionChangeStatus === "reviewed_consistent_within_selected_window").length
+            : 0;
+          const unavailable = !referenceSelectionAllowed(status);
           const checked = checkedCodes.includes(item.code);
           const disabled =
             unavailable || (!checked && checkedCodes.length >= maxSelectable);
@@ -917,13 +946,9 @@ function CompareValueList({
                 }}
               />
               <span>{item.name}</span>
-              {unavailable ? (
-                <small className="system-compare-status">
-                  {(AVAILABILITY_STATUS_LABELS as Record<string, string>)[
-                    status
-                  ] ?? "データなし"}
+              <small className="system-compare-status">
+                  {confirmedCount > 0 ? `出典確認済み ${confirmedCount}点` : status === "unchecked" ? "収録状態は追加後に確認" : (AVAILABILITY_STATUS_LABELS as Record<string, string>)[status] ?? "収録状態は追加後に確認"}
                 </small>
-              ) : null}
             </label>
           );
         })}
@@ -971,7 +996,7 @@ function SystemChart({
   timeLabels,
   axisSettings,
 }: {
-  series: SelectedSeries[];
+  series: ChartDisplaySeries[];
   timeLabels: Map<string, string>;
   axisSettings: Record<ChartAxis, AxisSettings>;
 }) {
@@ -1090,7 +1115,7 @@ function SystemChart({
         context.fillStyle = "#6c7789";
         context.textAlign = "center";
         context.fillText(
-          timeLabels.get(timeCode) ?? timeCode,
+          workbenchChartTickLabel(timeCode, timeLabels.get(timeCode) ?? timeCode),
           x(timeCode),
           plot.bottom + 26,
         );
@@ -1133,20 +1158,23 @@ function SystemChart({
           context.strokeStyle = item.color;
           context.fillStyle = item.color;
           context.lineWidth = 2.3;
-          context.beginPath();
-          let started = false;
+          const reviewEdges = new Set((item.displayReviewBoundaries ?? []).map((boundary) => `${boundary.fromTimeCode}|${boundary.toTimeCode}`));
+          let previous: ObservationPoint | null = null;
           for (const point of item.points) {
             if (point.numericValue === null) {
-              started = false;
+              previous = null;
               continue;
             }
-            const pointX = x(point.timeCode);
-            const pointY = y(point.numericValue, item.axis);
-            if (started) context.lineTo(pointX, pointY);
-            else context.moveTo(pointX, pointY);
-            started = true;
+            if (previous?.numericValue !== null && previous?.numericValue !== undefined) {
+              context.setLineDash(reviewEdges.has(`${previous.timeCode}|${point.timeCode}`) ? [5, 4] : []);
+              context.beginPath();
+              context.moveTo(x(previous.timeCode), y(previous.numericValue, item.axis));
+              context.lineTo(x(point.timeCode), y(point.numericValue, item.axis));
+              context.stroke();
+            }
+            previous = point;
           }
-          context.stroke();
+          context.setLineDash([]);
           for (const point of item.points) {
             if (point.numericValue === null) continue;
             context.beginPath();
@@ -1160,6 +1188,20 @@ function SystemChart({
             context.fill();
           }
         });
+      for (const boundary of series.flatMap((item) => item.displayReviewBoundaries ?? [])) {
+        const markerX = (x(boundary.fromTimeCode) + x(boundary.toTimeCode)) / 2;
+        context.strokeStyle = "#a36d2c";
+        context.fillStyle = "#885517";
+        context.lineWidth = 1;
+        context.setLineDash([3, 3]);
+        context.beginPath();
+        context.moveTo(markerX, plot.top);
+        context.lineTo(markerX, plot.bottom);
+        context.stroke();
+        context.setLineDash([]);
+        context.textAlign = "center";
+        context.fillText("レビュー境界", markerX, plot.top + 12);
+      }
       context.restore();
     };
 
@@ -1174,6 +1216,7 @@ function SystemChart({
       ref={canvasRef}
       className="system-chart"
       aria-label="選択した統計系列のグラフ"
+      title={series.find((item) => item.displayBoundaryNote)?.displayBoundaryNote}
     />
   );
 }
@@ -1181,6 +1224,7 @@ function SystemChart({
 function downloadCsv(
   series: SelectedSeries[],
   timeLabels: Map<string, string>,
+  buildBaseEvidence: BuildBaseEvidence | null,
 ) {
   const times = Array.from(
     new Set(series.flatMap((item) => item.points.map((point) => point.timeCode))),
@@ -1231,6 +1275,15 @@ function downloadCsv(
         (item) => Object.values(item.sources)[0]?.sourceUrl ?? "",
       ),
     ],
+    ...(series.some((item) => item.datasetId === "buildbase-company-comparison")
+      ? [
+          ["公開版", "", ...series.map((item) => item.datasetId === "buildbase-company-comparison"
+            ? buildBaseEvidence?.snapshotHash ?? "未確認" : "")],
+          ["自動比較・集計", "", ...series.map((item) => item.datasetId === "buildbase-company-comparison"
+            ? "不可" : "")],
+          ["正本の最新更新", "", ...series.map((item) => item.datasetId === "buildbase-company-comparison"
+            ? "未照合" : "")],
+        ] : []),
     ...(series.some((item) => item.notes.length > 0)
       ? [["注記", "", ...series.map((item) => item.notes.join(" / "))]]
       : []),
@@ -1253,30 +1306,57 @@ function downloadAiJson(
   series: SelectedSeries[],
   axisSettings: Record<ChartAxis, AxisSettings>,
   axisScales: Record<ChartAxis, ReturnType<typeof buildAxisScale>>,
+  buildBaseEvidence: BuildBaseEvidence | null,
+  display: { basis: string; basePeriod?: string; baseFacts?: unknown[]; chartGroups: string[][] },
 ) {
+  const evidenceMap = new Map((buildBaseEvidence?.cellMetadata ?? []).map((item) => [
+    `${item.companyId}\u001f${item.fiscalYear}\u001f${item.fieldId}`, item,
+  ]));
+  const includesBuildBase = series.some((item) => item.datasetId === "buildbase-company-comparison");
   const payload = {
     schemaVersion: "1.0",
     generatedAt: new Date().toISOString(),
-    purpose:
-      "AIによる建設業界分析・比較・レポート作成用。数値引用時はtableId、coordinates、sourcesを保持する。",
+    purpose: includesBuildBase
+      ? "BuildBaseの元値閲覧用。自動比較・自動集計は禁止。数値と根拠・公開版を一緒に保持する。"
+      : "AIによる建設業界分析・比較・レポート作成用。数値引用時はtableId、coordinates、sourcesを保持する。",
+    ...(includesBuildBase ? { buildBaseContract: {
+      snapshotHash: buildBaseEvidence?.snapshotHash ?? null,
+      canonicalFreshness: "not_checked",
+      automaticComparisonAllowed: false,
+      automaticAggregationAllowed: false,
+    } } : {}),
     chart: {
+      display,
       axes: axisSettings,
       resolvedScales: axisScales,
     },
     series: series.map((item) => ({
+      ...workbenchComparisonMetadata(item),
       id: item.id,
       datasetId: item.datasetId,
       tableId: item.tableId,
       tableTitle: item.tableTitle,
+      snapshotHash: item.snapshotHash,
       label: item.label,
       unit: item.unit,
       coordinates: item.coordinates,
+      cycle: item.cycle,
+      periodBasis: item.periodBasis ?? "unconfirmed",
+      comparisonScope: item.comparisonScope,
+      priceBasis: item.priceBasis,
+      metricDefinition: item.metricDefinition ?? item.label,
+      definitionReview: item.definitionReview ?? null,
+      eligibility: { automaticComparisonAllowed: item.automaticComparisonAllowed, automaticAggregationAllowed: item.automaticAggregationAllowed ?? false },
       chartKind: item.chartKind,
       axis: item.axis,
       color: item.color,
       observations: item.points.map((point) => ({
         ...point,
         timeLabel: item.timeLabels[point.timeCode] ?? point.timeCode,
+        ...(item.datasetId === "buildbase-company-comparison" ? {
+          evidence: evidenceMap.get(`${item.coordinates.cat01}\u001f${Number(point.timeCode.slice(0, 4))}\u001f${item.coordinates.tab}`) ?? null,
+          eligibility: { automaticComparisonAllowed: false, automaticAggregationAllowed: false },
+        } : {}),
       })),
       sources: item.sources,
       notes: item.notes,
@@ -1295,9 +1375,85 @@ function downloadAiJson(
   window.setTimeout(() => URL.revokeObjectURL(url), 0);
 }
 
+const ANALYSIS_STATE_LABELS: Record<string, string> = {
+  ...POINT_STATUS_LABELS, valid: "有効数値", implicit_zero: "省略による0（分析対象外）",
+  non_numeric: "文字値", unchecked: "収録状態未確認",
+};
+
+function loadedSeriesStatus(series: SelectedSeries) {
+  const counts = new Map<string, number>();
+  for (const point of series.points) {
+    const state = observationAnalysisState(point);
+    counts.set(state, (counts.get(state) ?? 0) + 1);
+  }
+  return [...counts].map(([state, count]) => `${ANALYSIS_STATE_LABELS[state] ?? state} ${count}点`).join(" · ") || "対象期間の観測値なし";
+}
+
+function SeriesAnalysis({ series }: { series: SelectedSeries[] }) {
+  const [meaning, setMeaning] = useState("");
+  const [definitionsReviewed, setDefinitionsReviewed] = useState(false);
+  const [reviewedPairKey, setReviewedPairKey] = useState("");
+  const [leftId, setLeftId] = useState("");
+  const [rightId, setRightId] = useState("");
+  const left = series.find((item) => item.id === leftId) ?? series[0];
+  const right = series.find((item) => item.id === rightId) ?? series.find((item) => item.id !== left?.id);
+  const pairKey = `${left?.id ?? ""}|${right?.id ?? ""}`;
+  const reviewConfirmed = definitionsReviewed && reviewedPairKey === pairKey;
+  const [calculation, setCalculation] = useState<{
+    left: SelectedSeries; right: SelectedSeries; result: ReturnType<typeof calculatePearsonComparison>;
+  } | null>(null);
+  const compatibilityError = correlationReviewCompatibility(left, right, { meaning, definitionsReviewed: reviewConfirmed }) || comparisonCompatibility(left, right);
+  const result = calculation?.left === left && calculation?.right === right && reviewConfirmed && meaning.trim() ? calculation?.result : null;
+  const validPeriod = result?.commonPeriods.length
+    ? `${left?.timeLabels[result.commonPeriods[0]]} ～ ${left?.timeLabels[result.commonPeriods.at(-1)!]}`
+    : "なし";
+  return (
+    <details className="system-analysis">
+      <summary>2指標の関係を確認（相関・定義レビュー）</summary>
+      <p>同じ単位・周期・価格基準・対象範囲の2系列について、共通期間の確定数値だけで Pearson 相関係数を計算します。期間の補間・集約・単位変換は行いません。</p>
+      <div className="system-analysis-controls">
+        {(["left", "right"] as const).map((side) => {
+          const selected = side === "left" ? left : right;
+          return (
+            <label key={side}>
+              <span>{side === "left" ? "系列1" : "系列2"}</span>
+              <select value={selected?.id ?? ""}
+                onChange={(event) => { if (side === "left") setLeftId(event.target.value); else setRightId(event.target.value); setDefinitionsReviewed(false); setReviewedPairKey(""); setCalculation(null); }}>
+                {!selected ? <option value="">系列を選択</option> : null}
+                {series.map((item) => <option key={item.id} value={item.id}>{item.label} · {item.tableTitle}</option>)}
+              </select>
+              {selected ? <small className="system-selected-classification">{selected.label} · {selected.tableTitle}</small> : null}
+            </label>
+          );
+        })}
+        <label><span>確認したい2指標の関係</span><input value={meaning} onChange={(event) => { setMeaning(event.target.value); setCalculation(null); }} placeholder="例：受注と売上総利益の年度推移の関連" /></label>
+        <label><input type="checkbox" checked={reviewConfirmed} onChange={(event) => { setDefinitionsReviewed(event.target.checked); setReviewedPairKey(event.target.checked ? pairKey : ""); }} />定義・対象範囲・価格基準・実期間と変更注記を確認した</label>
+        <button type="button" disabled={Boolean(compatibilityError)}
+          onClick={() => left && right && setCalculation({ left, right, result: calculatePearsonComparison(left, right) })}>相関を計算</button>
+      </div>
+      {compatibilityError ? <p role="status">{compatibilityError}</p> : null}
+      {result ? (
+        <div className="system-analysis-result" role="status">
+          <strong>{result.ok ? `Pearson r = ${"r" in result && typeof result.r === "number" ? result.r.toFixed(3) : "—"}` : result.reason}</strong>
+          <p>{result.n < 10 ? <strong>少数の観測です（n={result.n}）。傾向や関連性を確かな根拠として判断できません。 </strong> : null}共通有効ペア n = {result.n} · 共通有効期間: {validPeriod} · 除外した期間ペア: {result.omittedPairs}</p>
+          <p>有効期間: {result.commonPeriods.length ? result.commonPeriods.map((time: string) => left?.timeLabels[time]).join("、") : "なし"}</p>
+          {result.excludedStates.length ? <p>除外状態: {result.excludedStates.map((state: string) => ANALYSIS_STATE_LABELS[state] ?? state).join("、")}</p> : null}
+        </div>
+      ) : null}
+      <p>欠測・非開示・文字値・未確認値・省略による0は計算対象外です。相関は因果関係を示しません。長期トレンド、標本数、各系列の母集団・出典・注記を確認してください。</p>
+      {[left, right].filter((item): item is SelectedSeries => Boolean(item)).map((item, index) => item.notes.length ? <p key={index}>系列{index + 1}の注記: {item.notes.join(" / ")}</p> : null)}
+    </details>
+  );
+}
+
 export default function StatisticsSystemWorkbench() {
   const [catalog, setCatalog] = useState<SystemCatalog | null>(null);
   const [catalogError, setCatalogError] = useState("");
+  const [verifiedCatalog, setVerifiedCatalog] = useState<VerifiedCatalog | null>(null);
+  const [verifiedError, setVerifiedError] = useState("");
+  const [sourceFilter, setSourceFilter] = useState("");
+  const [displayBasis, setDisplayBasis] = useState<"actual" | "indexed">("actual");
+  const [indexBase, setIndexBase] = useState("");
   const [cycleFilter, setCycleFilter] = useState<CycleFilter>("年度次");
   const [statisticsId, setStatisticsId] = useState(
     "buildbase-company-comparison",
@@ -1305,6 +1461,8 @@ export default function StatisticsSystemWorkbench() {
   const [tableSearch, setTableSearch] = useState("");
   const [tableId, setTableId] = useState("");
   const [meta, setMeta] = useState<TableMeta | null>(null);
+  const [buildBaseEvidence, setBuildBaseEvidence] = useState<BuildBaseEvidence | null>(null);
+  const [buildBaseEvidenceError, setBuildBaseEvidenceError] = useState("");
   const [selections, setSelections] = useState<Record<string, string>>({});
   const [timeFrom, setTimeFrom] = useState("");
   const [timeTo, setTimeTo] = useState("");
@@ -1327,6 +1485,36 @@ export default function StatisticsSystemWorkbench() {
     string,
     string
   > | null>(null);
+
+  useEffect(() => {
+    if (meta?.table.datasetId !== "buildbase-company-comparison") {
+      return;
+    }
+    if (!meta.evidenceUrl || !meta.snapshotHash ||
+        meta.snapshotHash !== catalog?.tables.find((item) => item.id === meta.table.id)?.snapshotHash) {
+      queueMicrotask(() => { setBuildBaseEvidence(null); setBuildBaseEvidenceError("BuildBase の公開版を確認できません。"); });
+      return;
+    }
+    let cancelled = false;
+    fetchJson<BuildBaseEvidence>(meta.evidenceUrl).then(async (evidence) => {
+      if (cancelled) return;
+      if (evidence.contractVersion !== meta.contractVersion || evidence.snapshotHash !== meta.snapshotHash ||
+          evidence.metadataHash !== meta.metadataHash ||
+          await canonicalSha256(evidence.cellMetadata) !== evidence.metadataHash) {
+        setBuildBaseEvidence(null);
+        setBuildBaseEvidenceError("BuildBase の数値と根拠データの版が一致しません。");
+      } else {
+        setBuildBaseEvidence(evidence);
+        setBuildBaseEvidenceError("");
+      }
+    }).catch(() => {
+      if (!cancelled) {
+        setBuildBaseEvidence(null);
+        setBuildBaseEvidenceError("BuildBase の根拠データを読み込めません。");
+      }
+    });
+    return () => { cancelled = true; };
+  }, [meta, catalog]);
 
   useEffect(() => {
     let cancelled = false;
@@ -1366,19 +1554,42 @@ export default function StatisticsSystemWorkbench() {
 
   useEffect(() => {
     fetchJson<SystemCatalog>("system/catalog.json")
-      .then((value) => {
+      .then(async (value) => {
         if (value.schemaVersion !== 2) {
           throw new Error("公開データの形式が古いため再生成が必要です。");
         }
-        setCatalog(value);
+        try {
+          const response = await fetchJson<{ series: unknown[] }>(VERIFIED_DATA_URL);
+          const verified = await verifiedWorkbenchCatalog(response.series);
+          setVerifiedCatalog(verified);
+          setSelectedSeries(verified.series.map((item, index) => verifiedSeriesSelection(verified, { cat01: item.companyId, tab: item.metricId, ...(item.reviewWindow ? { reviewWindow: item.reviewWindow } : {}) }, "", "", COLORS[index % COLORS.length]) as unknown as SelectedSeries));
+          setCatalog({
+            ...value,
+            datasets: [...value.datasets.filter((dataset) => dataset.id !== verified.dataset.id), verified.dataset],
+            tables: [...value.tables.filter((table) => table.id !== verified.table.id), verified.table],
+          } as SystemCatalog);
+        } catch (error) {
+          setVerifiedError(`確認済みデータの読込に失敗しました: ${String((error as Error).message ?? error)}`);
+          setCatalog(value);
+        }
         setLoadingMeta(true);
       })
       .catch((error) => setCatalogError(String(error.message ?? error)));
   }, []);
 
+  const statisticsFamilies = useMemo(() => [
+    ...STATISTICS_FAMILIES,
+    ...(catalog?.datasets ?? [])
+      .filter((dataset) => !STATISTICS_FAMILIES.some((family) => family.datasetIds.some((id) => id === dataset.id)))
+      .map((dataset) => ({ id: dataset.id, title: dataset.title, datasetIds: [dataset.id],
+        cycles: [...new Set((catalog?.tables ?? []).filter((table) => table.datasetId === dataset.id).map((table) => table.cycle))] })),
+  ], [catalog]);
+  const catalogSearchResults = useMemo(() => searchCatalogTables(
+    catalog?.tables ?? [], catalog?.datasets ?? [], tableSearch,
+  ).filter((table: TableSummary) => !sourceFilter || table.sourceKind === sourceFilter) as TableSummary[], [catalog, tableSearch, sourceFilter]);
   const statisticsForCycle = useCallback(
     (cycle: CycleFilter) =>
-      STATISTICS_FAMILIES.filter((statistics) => {
+      statisticsFamilies.filter((statistics) => {
         if (!catalog) {
           return (
             cycle === ALL_CYCLES ||
@@ -1392,33 +1603,25 @@ export default function StatisticsSystemWorkbench() {
             ) && tableMatchesCycle(table, cycle),
         );
       }),
-    [catalog],
+    [catalog, statisticsFamilies],
   );
   const availableStatistics = statisticsForCycle(cycleFilter);
   const activeStatistics =
-    STATISTICS_FAMILIES.find((statistics) => statistics.id === statisticsId) ??
+    statisticsFamilies.find((statistics) => statistics.id === statisticsId) ??
     availableStatistics[0] ??
-    STATISTICS_FAMILIES[0];
+    statisticsFamilies[0];
   const eligibleTables = filterTablesByNavigation(
     catalog?.tables ?? [],
     activeStatistics.datasetIds,
     cycleFilter,
-  ) as TableSummary[];
+  ).filter((table: TableSummary) => !sourceFilter || table.sourceKind === sourceFilter) as TableSummary[];
   const activeTimeFloor = Math.min(
     ...activeStatistics.datasetIds.map((datasetId) =>
       timeFloorFor(catalog, datasetId),
     ),
   );
   const datasetTables = (() => {
-    const normalized = normalizeSearch(tableSearch);
     return eligibleTables
-      .filter(
-        (table) =>
-        (!normalized ||
-          normalizeSearch(
-            `${table.title} ${table.statisticsName} ${table.id}`,
-          ).includes(normalized)),
-      )
       .toSorted((left, right) => {
         const leftPreferred = left.id === DEFAULT_TABLE_IDS[left.datasetId];
         const rightPreferred = right.id === DEFAULT_TABLE_IDS[right.datasetId];
@@ -1450,7 +1653,9 @@ export default function StatisticsSystemWorkbench() {
     );
     if (!table) return;
     let cancelled = false;
-    fetchJson<TableMeta>(table.metaUrl)
+    (table.id === VERIFIED_TABLE_ID && verifiedCatalog
+      ? Promise.resolve(verifiedCatalog.meta as unknown as TableMeta)
+      : fetchJson<TableMeta>(table.metaUrl))
       .then((value) => {
         if (cancelled) return;
         const pendingFavorite =
@@ -1468,20 +1673,13 @@ export default function StatisticsSystemWorkbench() {
                     defaultDimensionValue(dimension),
                 ]),
             );
-        if (
-          !pendingFavorite &&
-          value.table.id === "buildbase-company-annual" &&
-          value.dimensions
-            .find((dimension) => dimension.apiKey === "tab")
-            ?.values.some((item) => item.code === DEFAULT_BUILDING_USE_FIELD_ID)
-        ) {
-          nextSelections.tab = DEFAULT_BUILDING_USE_FIELD_ID;
-        }
         const time = value.dimensions.find(
           (dimension) => dimension.apiKey === "time",
         );
         const timeFloor = timeFloorFor(catalog, value.table.datasetId);
-        const availableTimes = (time?.values ?? []).filter((item) => {
+        const windowTimes = value.table.id === VERIFIED_TABLE_ID
+          ? verifiedWindowTimeValues(verifiedCatalog, nextSelections.reviewWindow) as DimensionValue[] : time?.values ?? [];
+        const availableTimes = windowTimes.filter((item) => {
           const year = Number(item.code.slice(0, 4));
           return !Number.isFinite(year) || year >= timeFloor;
         }).toSorted((left, right) => left.code.localeCompare(right.code));
@@ -1520,7 +1718,7 @@ export default function StatisticsSystemWorkbench() {
     return () => {
       cancelled = true;
     };
-  }, [catalog, effectiveTableId]);
+  }, [catalog, effectiveTableId, verifiedCatalog]);
 
   useEffect(() => {
     const availabilityUrl = meta?.availabilityUrl;
@@ -1545,11 +1743,13 @@ export default function StatisticsSystemWorkbench() {
   const metaDatasetId = meta?.table.datasetId ?? "";
   const timeValues = useMemo(() => {
     const timeFloor = timeFloorFor(catalog, metaDatasetId);
-    return (timeDimension?.values ?? []).filter((item) => {
+    const windowTimes = meta?.table.id === VERIFIED_TABLE_ID
+      ? verifiedWindowTimeValues(verifiedCatalog, selections.reviewWindow) as DimensionValue[] : timeDimension?.values ?? [];
+    return windowTimes.filter((item) => {
       const year = Number(item.code.slice(0, 4));
       return !Number.isFinite(year) || year >= timeFloor;
     }).toSorted((left, right) => left.code.localeCompare(right.code));
-  }, [catalog, metaDatasetId, timeDimension]);
+  }, [catalog, metaDatasetId, timeDimension, meta?.table.id, verifiedCatalog, selections.reviewWindow]);
   const timeLabels = useMemo(
     () => new Map(timeValues.map((item) => [item.code, timeLabel(item)])),
     [timeValues],
@@ -1576,6 +1776,13 @@ export default function StatisticsSystemWorkbench() {
       if (selectedSeries.some((item) => item.id === id)) {
         throw new Error("同じ分類条件の系列はすでに追加されています。");
       }
+      if (meta.table.id === VERIFIED_TABLE_ID) {
+        const entry = verifiedSeriesSelection(verifiedCatalog, selections, timeFrom, timeTo, COLORS[selectedSeries.length % COLORS.length]) as unknown as SelectedSeries;
+        const placement = placeSeriesInWorkbench(selectedSeries, entry);
+        if (!placement.entry) throw new Error(placement.reason);
+        setSelectedSeries((current) => [...current, placement.entry as SelectedSeries]);
+        return;
+      }
       const { compactSeries } = await fetchCompactSeries(meta, selections);
       if (!compactSeries) {
         throw new Error(
@@ -1594,7 +1801,9 @@ export default function StatisticsSystemWorkbench() {
         timeLabels,
         color: COLORS[selectedSeries.length % COLORS.length],
       });
-      setSelectedSeries((current) => [...current, entry]);
+      const placement = placeSeriesInWorkbench(selectedSeries, entry);
+      if (!placement.entry) throw new Error(placement.reason);
+      setSelectedSeries((current) => [...current, placement.entry as SelectedSeries]);
     } catch (error) {
       setMessage(String((error as Error).message ?? error));
     } finally {
@@ -1602,6 +1811,7 @@ export default function StatisticsSystemWorkbench() {
     }
   }, [
     catalog,
+    verifiedCatalog,
     meta,
     selectedSeries,
     selections,
@@ -1628,6 +1838,7 @@ export default function StatisticsSystemWorkbench() {
       setMessage("");
       const added: SelectedSeries[] = [];
       let skippedCount = Math.max(0, codes.length - targets.length);
+      let skippedReason = "";
       try {
         for (const code of targets) {
           const coordinates = { ...selections, [dimensionApiKey]: code };
@@ -1640,6 +1851,13 @@ export default function StatisticsSystemWorkbench() {
               skippedCount += 1;
               continue;
             }
+            if (meta.table.id === VERIFIED_TABLE_ID) {
+              const candidate = verifiedSeriesSelection(verifiedCatalog, coordinates, timeFrom, timeTo, COLORS[(selectedSeries.length + added.length) % COLORS.length]) as unknown as SelectedSeries;
+              const placement = placeSeriesInWorkbench([...selectedSeries, ...added], candidate);
+              if (placement.entry) added.push(placement.entry as SelectedSeries);
+              else { skippedCount += 1; skippedReason = placement.reason; }
+              continue;
+            }
             const { compactSeries } = await fetchCompactSeries(
               meta,
               coordinates,
@@ -1648,8 +1866,7 @@ export default function StatisticsSystemWorkbench() {
               skippedCount += 1;
               continue;
             }
-            added.push(
-              buildSelectedSeriesEntry({
+            const candidate = buildSelectedSeriesEntry({
                 meta,
                 coordinates,
                 id,
@@ -1661,8 +1878,10 @@ export default function StatisticsSystemWorkbench() {
                 timeLabels,
                 color:
                   COLORS[(selectedSeries.length + added.length) % COLORS.length],
-              }),
-            );
+              });
+            const placement = placeSeriesInWorkbench([...selectedSeries, ...added], candidate);
+            if (!placement.entry) { skippedCount += 1; skippedReason = placement.reason; continue; }
+            added.push(placement.entry as SelectedSeries);
           } catch {
             skippedCount += 1;
           }
@@ -1672,7 +1891,7 @@ export default function StatisticsSystemWorkbench() {
         }
         setMessage(
           skippedCount > 0
-            ? `${added.length}系列を追加しました（${skippedCount}件は重複または非公表のためスキップ）。`
+            ? `${added.length}系列を追加しました（${skippedCount}件は重複・未収録・比較条件不一致などで追加できませんでした）。${skippedReason}`
             : `${added.length}系列を追加しました。`,
         );
         setCompareCodes([]);
@@ -1682,6 +1901,7 @@ export default function StatisticsSystemWorkbench() {
     },
     [
       catalog,
+      verifiedCatalog,
       meta,
       selectedSeries,
       selections,
@@ -1722,9 +1942,10 @@ export default function StatisticsSystemWorkbench() {
       );
       const presetTimeFrom = presetTimeValues[0]?.code ?? "";
       const presetTimeTo = presetTimeValues.at(-1)?.code ?? "";
-      const targets = preset.expandCodes.slice(0, MAX_SELECTED_SERIES);
+      const targets = preset.expandCodes.slice(0, Math.max(0, MAX_SELECTED_SERIES - selectedSeries.length));
       const added: SelectedSeries[] = [];
-      let skippedCount = 0;
+      let skippedCount = preset.expandCodes.length - targets.length;
+      let skippedReason = "";
       for (const code of targets) {
         const coordinates = {
           ...baseSelections,
@@ -1732,7 +1953,7 @@ export default function StatisticsSystemWorkbench() {
         };
         try {
           const id = await seriesIdFor(presetMeta.table.id, coordinates);
-          if (added.some((item) => item.id === id)) {
+          if ([...selectedSeries, ...added].some((item) => item.id === id)) {
             skippedCount += 1;
             continue;
           }
@@ -1754,9 +1975,11 @@ export default function StatisticsSystemWorkbench() {
             timeFrom: presetTimeFrom,
             timeTo: presetTimeTo,
             timeLabels: presetTimeLabels,
-            color: COLORS[added.length % COLORS.length],
+            color: COLORS[(selectedSeries.length + added.length) % COLORS.length],
           });
-          added.push({ ...entry, chartKind: preset.chartKind, axis: preset.axis });
+          const placement = placeSeriesInWorkbench([...selectedSeries, ...added], { ...entry, chartKind: preset.chartKind, axis: preset.axis });
+          if (!placement.entry) { skippedCount += 1; skippedReason = placement.reason; continue; }
+          added.push(placement.entry as SelectedSeries);
         } catch {
           skippedCount += 1;
         }
@@ -1764,16 +1987,15 @@ export default function StatisticsSystemWorkbench() {
       setSelections(baseSelections);
       setTimeFrom(presetTimeFrom);
       setTimeTo(presetTimeTo);
-      setAxisSettings(emptyAxisSettings());
-      setSelectedSeries(added);
+      setSelectedSeries((current) => [...current, ...added]);
       setMessage(
         skippedCount > 0
-          ? `プリセット「${preset.title}」から${added.length}系列を読み込みました（${skippedCount}件は非公表のためスキップ）。`
+          ? `プリセット「${preset.title}」から${added.length}系列を読み込みました（${skippedCount}件は重複・未収録・上限・比較条件不一致などで追加できませんでした）。${skippedReason}`
           : `プリセット「${preset.title}」から${added.length}系列を読み込みました。`,
       );
       setLoadingPreset(false);
     },
-    [catalog],
+    [catalog, selectedSeries],
   );
 
   useEffect(() => {
@@ -1886,11 +2108,19 @@ export default function StatisticsSystemWorkbench() {
     id: string,
     patch: Partial<Pick<SelectedSeries, "chartKind" | "axis">>,
   ) => {
+    const candidate = selectedSeries.find((item) => item.id === id);
+    if (candidate && patch.axis) {
+      const error = axisAssignmentError(selectedSeries, candidate, patch.axis);
+      if (error) { setMessage(error); return; }
+    }
     setSelectedSeries((current) =>
       current.map((item) => (item.id === id ? { ...item, ...patch } : item)),
     );
   };
 
+  const indexedDisplay = useMemo(() => indexSeriesAtCommonPeriod(selectedSeries, indexBase), [selectedSeries, indexBase]);
+  const chartGroups = useMemo(() => workbenchChartGroups(selectedSeries) as SelectedSeries[][], [selectedSeries]);
+  const visualChartGroups = useMemo(() => workbenchVisualChartGroups(selectedSeries) as ChartDisplaySeries[][], [selectedSeries]);
   const tableTimes = useMemo(
     () =>
       Array.from(
@@ -1902,6 +2132,7 @@ export default function StatisticsSystemWorkbench() {
       ).sort(),
     [selectedSeries],
   );
+  const rawTableColumns = useMemo(() => workbenchRawTableColumns(selectedSeries), [selectedSeries]);
   const outputTimeLabels = useMemo(
     () =>
       new Map(
@@ -1910,6 +2141,16 @@ export default function StatisticsSystemWorkbench() {
         ),
       ),
     [selectedSeries],
+  );
+  const buildBaseCellMap = useMemo(() => new Map(
+    (buildBaseEvidence?.cellMetadata ?? []).map((item) => [
+      `${item.companyId}\u001f${item.fiscalYear}\u001f${item.fieldId}`,
+      item,
+    ]),
+  ), [buildBaseEvidence]);
+  const buildBaseExportReady = selectedSeries.every((item) =>
+    item.datasetId !== "buildbase-company-comparison" ||
+    (Boolean(buildBaseEvidence?.snapshotHash) && item.snapshotHash === buildBaseEvidence?.snapshotHash),
   );
   const axisScales = useMemo(() => {
     const scaleFor = (axis: ChartAxis) =>
@@ -1968,7 +2209,7 @@ export default function StatisticsSystemWorkbench() {
     )
       ? statisticsId
       : nextStatistics[0]?.id;
-    const nextStatisticsFamily = STATISTICS_FAMILIES.find(
+    const nextStatisticsFamily = statisticsFamilies.find(
       (statistics) => statistics.id === nextStatisticsId,
     );
     const nextTables = nextStatisticsFamily
@@ -1986,6 +2227,14 @@ export default function StatisticsSystemWorkbench() {
     setLoadingMeta(Boolean(nextTableId && nextTableId !== effectiveTableId));
   };
 
+  const selectCatalogTable = (table: TableSummary) => {
+    if (table.id === effectiveTableId) return;
+    setCycleFilter(table.cycle as CycleFilter);
+    setStatisticsId(statisticsIdForDataset(table.datasetId));
+    setTableId(table.id);
+    setLoadingMeta(true);
+  };
+
   return (
     <div className="system-shell">
       <aside className="system-sidebar">
@@ -1997,7 +2246,33 @@ export default function StatisticsSystemWorkbench() {
           </div>
         </div>
         <nav aria-label="統計の選択">
-          <div className="system-favorites">
+          <div className="system-catalog-search">
+            <label htmlFor="atlas-catalog-search">全収録統計を検索</label>
+            <input id="atlas-catalog-search" className="system-search" type="search"
+              value={tableSearch} onChange={(event) => setTableSearch(event.target.value)}
+              placeholder="統計名・表名・ID" />
+            <small>{catalog ? `${catalog.datasets.length}分野 · ${catalog.tables.length}表` : "カタログを読込中"} · 周期・分野を横断</small>
+            <a className="system-selected-count" href="#atlas-comparison-chart">グラフ {selectedSeries.length} / {MAX_SELECTED_SERIES}系列</a>
+            <Link className="system-evidence-link" href="/buildbase-data/">公開資料レコード（子会社・工事・本文）を探索 · 数値系列とは別</Link>
+            {tableSearch.trim() || sourceFilter ? (
+              <div className="system-catalog-results">
+                <p role="status">{catalogSearchResults.length}表が該当</p>
+                {catalogSearchResults.map((table) => (
+                  <button type="button" key={table.id} className={table.id === effectiveTableId ? "active" : ""}
+                    onClick={() => selectCatalogTable(table)}>
+                    <strong>{table.title}</strong>
+                    <small>{table.statisticsName} · {displayCycle(table.cycle)} · {tableCoverageLabel(table)}</small>
+                  </button>
+                ))}
+                {catalog && !catalogSearchResults.length ? <p>該当する表がありません。収録済みの表名・統計名・IDが検索対象です。</p> : null}
+              </div>
+            ) : null}
+          </div>
+          <label className="system-source-filter"><span>出典・収録区分</span><select value={sourceFilter} onChange={(event) => { setSourceFilter(event.target.value); const matching = catalog?.tables.find((item) => !event.target.value || item.sourceKind === event.target.value); if (matching) selectCatalogTable(matching); }}>
+            <option value="">すべての出典</option>
+            {[...new Set((catalog?.tables ?? []).map((table) => table.sourceKind))].map((kind) => <option key={kind} value={kind}>{sourceLabelFor(kind)}</option>)}
+          </select></label>
+          <details className="system-saved-options"><summary>保存条件・プリセット</summary><div className="system-favorites">
             <div className="system-favorites-heading">
               <small>よく使う項目</small>
               {favorites.length ? <span>{favorites.length}</span> : null}
@@ -2053,7 +2328,7 @@ export default function StatisticsSystemWorkbench() {
                 key={preset.id}
                 className="system-preset-select"
                 onClick={() => applyPreset(preset)}
-                disabled={loadingPreset}
+                disabled={loadingPreset || addingSeries || loadingMeta}
                 title={preset.notes || preset.description}
               >
                 <span aria-hidden="true">▣</span>
@@ -2064,36 +2339,21 @@ export default function StatisticsSystemWorkbench() {
               </button>
             ))}
           </div>
-          <div className="system-cycle-filter">
+          </details><div className="system-cycle-filter">
             <div className="system-cycle-heading">
               <small>集計周期</small>
               <span>{displayCycle(cycleFilter)}</span>
             </div>
-            <div
-              className="system-cycle-options"
-              role="group"
-              aria-label="集計周期を選択"
-            >
-              {CYCLE_OPTIONS.map((option) => (
-                <button
-                  type="button"
-                  key={option.id}
-                  className={cycleFilter === option.id ? "active" : ""}
-                  aria-pressed={cycleFilter === option.id}
-                  onClick={() => selectCycle(option.id)}
-                  title={`${option.label}（${option.detail}）`}
-                >
-                  <strong>{option.label}</strong>
-                  <small>{option.detail}</small>
-                </button>
-              ))}
-            </div>
+            <select className="system-cycle-select" value={cycleFilter}
+              onChange={(event) => selectCycle(event.target.value as CycleFilter)} aria-label="集計周期を選択">
+              {CYCLE_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}（{option.detail}）</option>)}
+            </select>
           </div>
           <div className="system-statistics-heading">
             <small>該当する統計</small>
             <span>{availableStatistics.length}</span>
           </div>
-          {DATASET_GROUPS.map((group) => {
+          {[...DATASET_GROUPS, { id: "other", title: "その他の収録統計", statisticsIds: statisticsFamilies.filter((family) => !DATASET_GROUPS.some((group) => group.statisticsIds.includes(family.id))).map((family) => family.id) }].map((group) => {
             const statisticsItems = availableStatistics.filter((statistics) =>
               group.statisticsIds.some((id) => id === statistics.id),
             );
@@ -2116,12 +2376,13 @@ export default function StatisticsSystemWorkbench() {
                   >
                     <span>
                       {String(
-                        STATISTICS_FAMILIES.findIndex(
+                        statisticsFamilies.findIndex(
                           (item) => item.id === statistics.id,
                         ) + 1,
                       ).padStart(2, "0")}
                     </span>
                     {statistics.title}
+                    <small className="system-family-count">{catalog?.tables.filter((table) => statistics.datasetIds.some((id) => id === table.datasetId) && tableMatchesCycle(table, cycleFilter)).length ?? 0}表</small>
                   </button>
                 ))}
               </div>
@@ -2131,7 +2392,7 @@ export default function StatisticsSystemWorkbench() {
         <div className="system-status">
           <i className={catalog ? "ready" : ""} />
           <div>
-            <strong>{catalog ? "正規化DB接続済み" : "データ接続待ち"}</strong>
+            <strong>{catalog ? "公開データ読込済み" : "データ接続待ち"}</strong>
             <small>国交省統計 · 日建連 · BuildBase企業データ</small>
           </div>
         </div>
@@ -2142,9 +2403,7 @@ export default function StatisticsSystemWorkbench() {
           <div>
             <p>国土交通省 / e-Stat / 日建連 / BuildBase</p>
             <h1>
-              {activeStatistics.id === "buildbase-company-comparison"
-                ? "ゼネコン各社の確定値を比較する"
-                : "必要な統計項目だけを取り出す"}
+              データを探し、選んだ系列を見る
             </h1>
           </div>
           <div className="system-badges">
@@ -2172,23 +2431,8 @@ export default function StatisticsSystemWorkbench() {
           </section>
         ) : null}
 
-        <section className="system-workflow" aria-label="統計条件の指定">
-          <div className="system-step">
-            <span>STEP 1</span>
-            <strong>周期・統計</strong>
-            <small>{activeStatistics.title}</small>
-          </div>
-          <div className="system-step active">
-            <span>STEP 2</span>
-            <strong>分類条件</strong>
-            <small>公式コード</small>
-          </div>
-          <div className="system-step">
-            <span>STEP 3</span>
-            <strong>出力</strong>
-            <small>表・グラフ・CSV</small>
-          </div>
-        </section>
+        <p className="system-flow-guidance">会社・指標・期間を選び、系列を追加。企業同士、1社の複数指標、市場統計と企業実績を同じ画面に並べられます。実数表は原資料の単位で表示します。</p>
+        {verifiedError ? <p className="system-message" role="status">{verifiedError}</p> : null}
 
         <div className="system-layout">
           <section className="system-panel system-table-registry">
@@ -2198,13 +2442,7 @@ export default function StatisticsSystemWorkbench() {
                 <h2>統計表レジストリ</h2>
               </div>
             </div>
-            <input
-              className="system-search"
-              value={tableSearch}
-              onChange={(event) => setTableSearch(event.target.value)}
-              placeholder="統計表名・項目を検索"
-              aria-label="統計表名・項目を検索"
-            />
+            <p className="system-registry-count">{datasetTables.length}表 · {activeStatistics.title}</p>
             <div className="system-table-list">
               {datasetTables.map((table) => (
                 <button
@@ -2223,7 +2461,7 @@ export default function StatisticsSystemWorkbench() {
                       ? "基本表 · "
                       : ""}
                     {displayCycle(table.cycle)} ·{" "}
-                    {table.seriesCount.toLocaleString("ja-JP")}系列
+                    {tableCoverageLabel(table)}
                   </span>
                   <small>{table.id}</small>
                 </button>
@@ -2238,7 +2476,7 @@ export default function StatisticsSystemWorkbench() {
             <div className="system-panel-heading">
               <div>
                 <span>QUERY BUILDER</span>
-                <h2>分類条件を指定</h2>
+                <h2>会社・指標・期間を選ぶ</h2>
               </div>
               {meta ? (
                 <a href={meta.table.sourceUrl} target="_blank" rel="noreferrer">
@@ -2257,86 +2495,7 @@ export default function StatisticsSystemWorkbench() {
                     統計表ID {meta.table.id} · {displayCycle(meta.table.cycle)}
                   </small>
                 </div>
-                {meta.table.datasetId === "buildbase-company-comparison" ? (
-                  <BuildBaseBuildingUseShortcut
-                    selectedFieldId={selections.tab ?? ""}
-                    onSelect={(fieldId) =>
-                      setSelections((current) => ({
-                        ...current,
-                        tab: fieldId,
-                      }))
-                    }
-                  />
-                ) : null}
-                {meta.table.datasetId === "nikkenren-group-orders" ? (
-                  <p className="system-dataset-note">
-                    第1～第5グループを収録。年度により集計対象の会員社数が
-                    96～98社で変わるため、同一企業群の厳密な比較ではありません。
-                    年度選択と数値表には各年度の対象社数も表示します。
-                  </p>
-                ) : null}
-                <div className="system-filters">
-                  {meta.dimensions
-                    .filter((dimension) => dimension.apiKey !== "time")
-                    .map((dimension) => (
-                      <DimensionPicker
-                        key={dimension.id}
-                        dimension={dimension}
-                        value={selections[dimension.apiKey] ?? ""}
-                        onChange={(value) =>
-                          setSelections((current) => ({
-                            ...current,
-                            [dimension.apiKey]: value,
-                          }))
-                        }
-                        compareActive={compareDimensionKey === dimension.apiKey}
-                        onToggleCompare={() => {
-                          setCompareDimensionKey((current) =>
-                            current === dimension.apiKey ? null : dimension.apiKey,
-                          );
-                          setCompareCodes([]);
-                        }}
-                      />
-                    ))}
-                </div>
-                {compareDimension ? (
-                  <CompareValueList
-                    dimension={compareDimension}
-                    baseSelections={selections}
-                    checkedCodes={compareCodes}
-                    onChange={setCompareCodes}
-                    availability={availabilityIndex}
-                    maxSelectable={compareMaxSelectable}
-                  />
-                ) : null}
-                <div className="system-time-range">
-                  <label>
-                    <span>開始</span>
-                    <select
-                      value={timeFrom}
-                      onChange={(event) => setTimeFrom(event.target.value)}
-                    >
-                      {timeValues.map((item) => (
-                        <option key={item.code} value={item.code}>
-                          {timeLabel(item)}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                  <label>
-                    <span>終了</span>
-                    <select
-                      value={timeTo}
-                      onChange={(event) => setTimeTo(event.target.value)}
-                    >
-                      {timeValues.map((item) => (
-                        <option key={item.code} value={item.code}>
-                          {timeLabel(item)}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                  <div className="system-query-actions">
+                  <div className="system-query-actions system-selection-actions">
                     <button
                       type="button"
                       className="system-secondary"
@@ -2371,7 +2530,7 @@ export default function StatisticsSystemWorkbench() {
                         }
                       }}
                       disabled={
-                        addingSeries ||
+                        addingSeries || loadingMeta || loadingPreset ||
                         selectedSeries.length >= MAX_SELECTED_SERIES ||
                         (compareDimensionKey !== null && compareCodes.length === 0)
                       }
@@ -2388,10 +2547,99 @@ export default function StatisticsSystemWorkbench() {
                         : selectedSeries.length >= MAX_SELECTED_SERIES
                           ? `${MAX_SELECTED_SERIES}系列まで追加済み`
                           : compareDimensionKey && compareCodes.length > 0
-                            ? `選択した${compareCodes.length}件を追加`
-                            : "この系列を追加"}
+                            ? `グラフに追加（${compareCodes.length}系列）`
+                            : meta.table.datasetId === "buildbase-company-comparison" ? "グラフに追加（参考表示）" : "グラフに追加"}
                     </button>
                   </div>
+                {meta.table.datasetId === "buildbase-company-comparison" ? (
+                  <>
+                    <p className="system-dataset-note" role="status">
+                      {buildBaseEvidence
+                        ? `公開版 ${buildBaseEvidence.snapshotHash.slice(0, 12)} · 数値と根拠の版一致。正本の最新更新との照合は未確認です。元値の参考表示です。自動比較・自動集計は許可されていません。`
+                        : buildBaseEvidenceError || "BuildBase の根拠を確認中です。自動比較・自動集計は許可されていません。"}
+                      {" "}<Link href="/buildbase-data/">出典・訂正・定性レコードを探す</Link>
+                    </p>
+
+                  </>
+                ) : null}
+                {meta.table.id === VERIFIED_TABLE_ID ? (
+                  <p className="system-dataset-note">{verifiedCatalog?.coverageSummary ?? "確認済みの収録範囲を確認中です"}。確認対象は収録済みの会社・指標・実期間だけです。他の組み合わせは確認済みデータが不足する場合があります。元値の参照と直接計算の許可は別です。</p>
+                ) : null}
+                {meta.table.datasetId === "nikkenren-group-orders" ? (
+                  <p className="system-dataset-note">
+                    第1～第5グループを収録。年度により集計対象の会員社数が
+                    96～98社で変わるため、同一企業群の厳密な比較ではありません。
+                    年度選択と数値表には各年度の対象社数も表示します。
+                  </p>
+                ) : null}
+                <div className="system-filters">
+                  {meta.dimensions
+                    .filter((dimension) => dimension.apiKey !== "time")
+                    .map((dimension) => (
+                      <DimensionPicker
+                        key={dimension.id}
+                        dimension={dimension}
+                        value={selections[dimension.apiKey] ?? ""}
+                        onChange={(value) => {
+                          setSelections((current) => ({ ...current, [dimension.apiKey]: value }));
+                          if (meta.table.id === VERIFIED_TABLE_ID && dimension.apiKey === "reviewWindow") {
+                            const times = verifiedWindowTimeValues(verifiedCatalog, value) as DimensionValue[];
+                            setTimeFrom(times[0]?.code ?? "");
+                            setTimeTo(times.at(-1)?.code ?? "");
+                          }
+                        }}
+                        compareActive={compareDimensionKey === dimension.apiKey}
+                        onToggleCompare={() => {
+                          setCompareDimensionKey((current) =>
+                            current === dimension.apiKey ? null : dimension.apiKey,
+                          );
+                          setCompareCodes([]);
+                        }}
+                      />
+                    ))}
+                </div>
+                {compareDimension ? (
+                  <CompareValueList
+                    dimension={compareDimension}
+                    baseSelections={selections}
+                    checkedCodes={compareCodes}
+                    onChange={setCompareCodes}
+                    availability={availabilityIndex}
+                    verifiedCatalog={meta.table.id === VERIFIED_TABLE_ID ? verifiedCatalog : null}
+                    timeFrom={timeFrom}
+                    timeTo={timeTo}
+                    maxSelectable={compareMaxSelectable}
+                  />
+                ) : null}
+                <p className="system-selection-summary">{selectionLabelFor(meta, selections)}<br />期間: {timeLabels.get(timeFrom) ?? timeFrom} ～ {timeLabels.get(timeTo) ?? timeTo}</p>
+                <div className="system-time-range">
+                  <label>
+                    <span>開始</span>
+                    <select
+                      value={timeFrom}
+                      onChange={(event) => setTimeFrom(event.target.value)}
+                    >
+                      {timeValues.map((item) => (
+                        <option key={item.code} value={item.code}>
+                          {timeLabel(item)}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    <span>終了</span>
+                    <select
+                      value={timeTo}
+                      onChange={(event) => setTimeTo(event.target.value)}
+                    >
+                      {timeValues.map((item) => (
+                        <option key={item.code} value={item.code}>
+                          {timeLabel(item)}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+
                 </div>
               </>
             ) : !loadingMeta && !catalogError ? (
@@ -2401,36 +2649,38 @@ export default function StatisticsSystemWorkbench() {
           </section>
         </div>
 
-        <section className="system-panel system-output">
+        <section id="atlas-comparison-chart" className="system-panel system-output">
           <div className="system-panel-heading">
             <div>
               <span>OUTPUT</span>
-              <h2>比較グラフ</h2>
+              <h2>選択した系列</h2>
             </div>
             <div className="system-output-actions">
               <button
                 type="button"
                 onClick={() =>
-                  downloadAiJson(selectedSeries, axisSettings, axisScales)
+                  downloadAiJson(selectedSeries, axisSettings, axisScales, buildBaseEvidence, { basis: displayBasis, ...(displayBasis === "indexed" && indexedDisplay.ok ? { basePeriod: indexedDisplay.basePeriod, baseFacts: indexedDisplay.baseFacts } : {}), chartGroups: chartGroups.map((group) => group.map((item) => item.id)) })
                 }
-                disabled={selectedSeries.length === 0}
+                disabled={selectedSeries.length === 0 || !buildBaseExportReady}
               >
                 AI用JSON
               </button>
               <button
                 type="button"
                 onClick={() =>
-                  downloadCsv(selectedSeries, outputTimeLabels)
+                  downloadCsv(selectedSeries, outputTimeLabels, buildBaseEvidence)
                 }
-                disabled={selectedSeries.length === 0}
+                disabled={selectedSeries.length === 0 || !buildBaseExportReady}
               >
                 CSV出力
               </button>
             </div>
           </div>
 
+          {message ? <p className="system-message" role="status">{message}</p> : null}
           {selectedSeries.length ? (
             <>
+              {selectedSeries.some((item) => item.datasetId === VERIFIED_DATASET_ID && item.points.length <= 3) ? <p className="system-dataset-note">確認済み系列にも観測が3点以下のものがあります。各系列の期間・点数を確認してください。推移を参照できますが、少数の観測から関連性や因果関係を判断できません。異なる指標の値を利益率や市場シェアとして扱いません。</p> : null}
               <div className="system-series-controls">
                 {selectedSeries.map((item) => (
                   <div key={item.id} className="system-series-row">
@@ -2438,8 +2688,23 @@ export default function StatisticsSystemWorkbench() {
                     <div className="system-series-description">
                       <strong>{item.label}</strong>
                       <small>
-                        {item.tableTitle} · {item.unit || "単位なし"}
+                        {item.tableTitle} · {displayCycle(item.cycle)} · {item.unit || "単位なし"}
+                        {item.datasetId === "buildbase-company-comparison" ? " · 参考表示／自動比較未許可" : ""}
                       </small>
+                      <small>{loadedSeriesStatus(item)}</small>
+                      <details className="system-series-notes"><summary>定義・期間・範囲・出典</summary>
+                        <p>指標: {item.metricDefinition || item.label} · 単位: {item.unit || "未確認"}</p>
+                        <p>期間基準: {item.periodBasis || `${displayCycle(item.cycle)}（開始日・終了日の整合は未確認）`} · 価格基準: {item.priceBasis} · 対象範囲: {item.comparisonScope}</p>
+                        <p>{item.automaticComparisonAllowed ? "収録元の比較許可あり。直接計算には実期間・定義の確認も必要です。" : "参考表示。観測値の出典・定義・期間・比較許可が未確認のため、直接計算の対象外です。"}</p>
+                        {item.definitionReview ? <p>{item.definitionReview}</p> : null}
+                        {item.points.map((point) => {
+                          if (!point.provenance) return null;
+                          const checkedUrl = item.datasetId === VERIFIED_DATASET_ID && item.reviewWindow ? verifiedOfficialBytesCheckedUrl(point) : null;
+                          return <p key={point.timeCode}><a href={point.provenance.sourceUrl} target="_blank" rel="noreferrer">{item.timeLabels[point.timeCode]} · PDF {point.provenance.pdfPage}頁</a>
+                            {checkedUrl ? <><br /><a href={checkedUrl} target="_blank" rel="noreferrer">照合時点に保存資料と同じバイトを確認した公式PDF</a></> : null}
+                            <br />{point.provenance.sourceQuote}<br />保存資料SHA: {point.provenance.sourceFileSha256}</p>;
+                        })}
+                      </details>
                       {item.notes.length ? (
                         <details className="system-series-notes">
                           <summary>注記 {item.notes.length}件</summary>
@@ -2463,18 +2728,6 @@ export default function StatisticsSystemWorkbench() {
                       <option value="line">折れ線</option>
                       <option value="bar">棒</option>
                     </select>
-                    <select
-                      value={item.axis}
-                      onChange={(event) =>
-                        updateSeries(item.id, {
-                          axis: event.target.value as ChartAxis,
-                        })
-                      }
-                      aria-label={`${item.label}の軸`}
-                    >
-                      <option value="left">左軸</option>
-                      <option value="right">右軸</option>
-                    </select>
                     <button
                       type="button"
                       onClick={() =>
@@ -2488,7 +2741,7 @@ export default function StatisticsSystemWorkbench() {
                   </div>
                 ))}
               </div>
-              <div className="system-axis-settings">
+              {chartGroups.length === 1 && displayBasis === "actual" ? <div className="system-axis-settings">
                 <div className="system-axis-heading">
                   <div>
                     <strong>Y軸設定</strong>
@@ -2505,7 +2758,7 @@ export default function StatisticsSystemWorkbench() {
                   </button>
                 </div>
                 <div className="system-axis-grid">
-                  {(["left", "right"] as const).map((axis) => {
+                  {(["left"] as const).map((axis) => {
                     const axisLabel = axis === "left" ? "左軸" : "右軸";
                     const error = axisSettingsError(axisSettings[axis]);
                     const scale = axisScales[axis];
@@ -2569,18 +2822,51 @@ export default function StatisticsSystemWorkbench() {
                   })}
                 </div>
               </div>
-              <SystemChart
-                series={selectedSeries}
-                timeLabels={outputTimeLabels}
-                axisSettings={axisSettings}
-              />
+              : null}
+              {selectedSeries.some((item) => item.datasetId === "buildbase-company-comparison") ? (
+                <p className="system-dataset-note">会社別収録値は未確認の参考表示です。保留値はグラフに描かず実数表に原数値を残します。出典・定義・比較許可が不足し、直接計算できません。</p>
+              ) : null}
+              <div className="system-display-basis">
+                <label>グラフの表示基準 <select value={displayBasis} onChange={(event) => setDisplayBasis(event.target.value as "actual" | "indexed")}>
+                  <option value="actual">元値（異なる単位・範囲は上下に表示）</option><option value="indexed">共通の実期間を100とした指数</option>
+                </select></label>
+                {displayBasis === "indexed" && indexedDisplay.ok ? <label>基準期間 <select value={indexBase || indexedDisplay.basePeriod} onChange={(event) => setIndexBase(event.target.value)}>{indexedDisplay.commonPeriods.map((period) => <option key={period} value={period}>{period.replace("/", " ～ ")}</option>)}</select></label> : null}
+              </div>
+              {displayBasis === "indexed" ? indexedDisplay.ok ? <>
+                <p className="system-dataset-note">共通基準 {indexedDisplay.basePeriod.replace("/", " ～ ")} = 100。元値の規模・市場シェア・利益率の比較ではありません。各系列の対象範囲と定義が異なる場合があります。実数表とCSVは原資料の値です。</p>
+                <div className="system-chart-scroll" tabIndex={0} aria-label="グラフを横にスクロール">
+                  <SystemChart series={indexedDisplay.series as unknown as SelectedSeries[]} timeLabels={new Map(Object.entries(indexedDisplay.series[0].timeLabels))} axisSettings={emptyAxisSettings()} />
+                </div>
+              </> : <p className="system-message" role="status">指数化できません: {indexedDisplay.reason} 元値は下に表示します。</p> : null}
+              {displayBasis === "actual" || !indexedDisplay.ok ? visualChartGroups.map((group, index) => <div className="system-chart-group" key={group[0].id}>
+                <p><strong>{group.map((item) => item.label).join(" / ")}</strong> · {group[0].unit || "単位未確認"}</p>
+                {group.length === 1 && selectedSeries.length > 1 && !group[0].displayOnlyJoined ? <p className="system-dataset-note">対象範囲・単位・実期間・比較許可を揃えた重ね描きの条件が未確認、または異なるため個別表示。市場全体と企業実績の規模・構成の違いを保ちます。</p> : null}
+                {group.filter((item) => item.displayOnlyJoined).map((item) => <div key={item.id} className="system-dataset-note">
+                  <p>{item.displayBoundaryNote} 境界の接続線は破線です。このグラフだけの表示で、元の{item.displayOriginalSeriesIds?.length}系列と比較・計算・出力の許可は変わりません。</p>
+                  <details><summary>各点の原系列・確認期間・出典</summary>
+                    {item.displayOrigins?.map((origin) => {
+                      const url = safeEvidenceUrl(origin.point.provenance?.sourceUrl);
+                      return <p key={`${origin.seriesId}:${origin.timeCode}`}>
+                        {origin.timeCode} · {origin.reviewWindow} · {origin.seriesId} · {pointDisplayValue(origin.point)}
+                        {url ? <> · <a href={url} target="_blank" rel="noreferrer">原典</a></> : null}
+                        {origin.point.provenance?.sourceFileSha256 ? <> · 保存資料SHA: {origin.point.provenance.sourceFileSha256}</> : null}
+                      </p>;
+                    })}
+                  </details>
+                </div>)}
+                <div className="system-chart-scroll" tabIndex={0} aria-label="グラフを横にスクロール">
+                  <SystemChart series={workbenchDisplaySeries(group) as ChartDisplaySeries[]} timeLabels={new Map(group.flatMap((item) => Object.entries(item.timeLabels)))} axisSettings={chartGroups.length === 1 ? axisSettings : emptyAxisSettings()} />
+                </div>
+                {index < visualChartGroups.length - 1 ? <hr /> : null}
+              </div>) : null}
+              <SeriesAnalysis series={selectedSeries} />
             </>
           ) : (
             <div className="system-chart-empty">
               <span>QUERY → SERIES</span>
-              <strong>分類条件を選び、「この系列を追加」</strong>
+              <strong>分類条件を選び、「グラフに追加」</strong>
               <p>
-                最大15系列まで。折れ線／棒、左右2軸、軸の最小・最大・目盛間隔を指定できます。
+                会社を変えて同じ指標を追加したり、同じ会社の別の指標を追加できます。異なる単位・対象範囲の系列は上下のグラフで表示します。最大15系列まで。
               </p>
             </div>
           )}
@@ -2591,22 +2877,26 @@ export default function StatisticsSystemWorkbench() {
             <div className="system-panel-heading">
               <div>
                 <span>TABLE</span>
-                <h2>数値表</h2>
+                <h2>実数表（原資料の値・単位）</h2>
               </div>
             </div>
+            {rawTableColumns.some((column) => column.members.length > 1) ? (
+              <p className="system-dataset-note">この実数表だけ、同じ会社・原指標の確認済み旧／新レビューを表示上1列に整理しています。2024年度の境界を越える比較許可ではありません。グラフ・相関・計算・CSVは元の{selectedSeries.length}系列とレビュー期間を保持します。</p>
+            ) : null}
             <div className="system-table-scroll">
               <table>
                 <thead>
                   <tr>
                     <th>期間</th>
-                    {selectedSeries.map((item) => (
-                      <th key={item.id}>
-                        {item.label}
-                        <small>
-                          {item.tableTitle} · {item.unit}
-                        </small>
-                      </th>
-                    ))}
+                    {rawTableColumns.map((column) => {
+                      const item = column.members[0] as SelectedSeries;
+                      return <th key={column.key}>
+                        {column.label}
+                        <small>{item.tableTitle} · {item.unit}</small>
+                        {column.boundaryNote ? <small className="system-selected-classification">{column.boundaryNote}</small> : null}
+                        {column.warning ? <small className="system-selected-classification">別列の理由: {column.warning}</small> : null}
+                      </th>;
+                    })}
                   </tr>
                 </thead>
                 <tbody>
@@ -2614,22 +2904,63 @@ export default function StatisticsSystemWorkbench() {
                     <tr key={timeCode}>
                       <th>
                         {outputTimeLabels.get(timeCode) ?? timeCode}
+                        <small className="system-selected-classification">{timeCode}</small>
                       </th>
-                      {selectedSeries.map((item) => {
-                        const point = item.points.find(
-                          (entry) => entry.timeCode === timeCode,
-                        );
+                      {rawTableColumns.map((column) => {
+                        const item = column.members[0] as SelectedSeries;
+                        const cell = workbenchRawTableCell(column, timeCode) as { point: ObservationPoint | null; origins: Array<{ series: SelectedSeries; point: ObservationPoint }> };
+                        const point = cell.point ?? undefined;
+                        const evidence = item.datasetId === "buildbase-company-comparison"
+                          ? buildBaseCellMap.get(`${item.coordinates.cat01}\u001f${Number(timeCode.slice(0, 4))}\u001f${item.coordinates.tab}`)
+                          : null;
+                        const evidenceUrl = safeEvidenceUrl(evidence?.source?.url);
                         return (
                           <td
-                            key={item.id}
+                            key={column.key}
                             className={
                               point?.status && point.status !== "confirmed_value"
                                 ? `system-cell-status status-${point.status}`
                                 : undefined
                             }
-                            title={point?.annotation || undefined}
+                            title={[point?.annotation, evidence?.valueState, evidence?.disclosureStatus,
+                              evidence?.sourceBindingStatus].filter(Boolean).join(" / ") || undefined}
                           >
-                            {pointDisplayValue(point)}
+                            {!point && item.datasetId === VERIFIED_DATASET_ID ? "未収録（確認済み系列）" : pointDisplayValue(point)}
+                            {column.members.length > 1 && cell.origins.length ? (
+                              <small style={{ display: "block", overflowWrap: "anywhere" }}>
+                                {cell.origins.map((origin) => origin.series.reviewWindow
+                                  ? `確認期間 ${origin.series.reviewWindow.replace(/^FY(\d{4})_FY(\d{4})$/, "$1～$2年度")}`
+                                  : "従来レビュー（2023年度以前）").join("・")}
+                                <details><summary>原系列・出典</summary>
+                                  {cell.origins.map((origin) => {
+                                    const url = safeEvidenceUrl(origin.point.provenance?.sourceUrl);
+                                    return <span key={`${origin.series.id}:${origin.point.sourceId}`} style={{ display: "block", overflowWrap: "anywhere" }}>
+                                      {origin.series.id} · {origin.point.sourceId}
+                                      {url ? <> · <a href={url} target="_blank" rel="noreferrer">原典</a></> : null}
+                                    </span>;
+                                  })}
+                                </details>
+                              </small>
+                            ) : null}
+                            {item.datasetId === "buildbase-company-comparison" ? (
+                              <small style={{ display: "block" }}>
+                                {point?.status && point.status !== "confirmed_value"
+                                  ? (POINT_STATUS_LABELS[point.status] ?? "未確認") : "出典状態を参照"}
+                                {" · "}{point?.numericValue !== null && point?.numericValue !== undefined
+                                  ? "旧収録値（参考）" : "数値なし"} · 自動比較・集計不可
+                                {evidence?.history && typeof evidence.history === "object" &&
+                                  (evidence.history as Record<string, unknown>).activeHold ? " · 保留中" : ""}
+                                {evidenceUrl ? <> · <a href={evidenceUrl} target="_blank" rel="noreferrer">原典</a></> : null}
+                                {evidence ? (
+                                  <details><summary>根拠・訂正の詳細</summary><pre>{JSON.stringify({
+                                    source: evidence.source,
+                                    semantics: evidence.semantics,
+                                    eligibility: evidence.eligibility,
+                                    history: evidence.history,
+                                  }, null, 2)}</pre></details>
+                                ) : null}
+                              </small>
+                            ) : null}
                           </td>
                         );
                       })}

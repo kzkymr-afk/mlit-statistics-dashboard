@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import AtlasLoginGate from "@/components/AtlasLoginGate";
+import AtlasBuildStamp from "@/components/AtlasBuildStamp";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -46,6 +47,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <AtlasBuildStamp />
         <AtlasLoginGate>{children}</AtlasLoginGate>
       </body>
     </html>

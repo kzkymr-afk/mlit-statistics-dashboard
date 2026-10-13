@@ -1,0 +1,3197 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "buildbase-source-verified-comparison",
+  "tableId": "buildbase-source-verified-annual",
+  "canonicalFreshness": "not_checked",
+  "automaticAggregationAllowed": false,
+  "series": [
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "KAJIMA:construction_orders_total_reported@FY2021_FY2023",
+        "companyId": "KAJIMA",
+        "metricId": "construction_orders_total_reported",
+        "label": "KAJIMA / construction_orders_total_reported",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "KAJIMA_construction_orders_total_reported_FY2021_FY2023",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2021-04-01/2022-03-31",
+            "timeLabel": "2021-04-01 ～ 2022-03-31",
+            "periodStart": "2021-04-01",
+            "periodEnd": "2022-03-31",
+            "numericValue": 1929897,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "41c89b9006df1d42bf823e987695c4bde40a82d589df4ac6b54fcf5875e09815",
+            "evidenceId": "7ce592e821dd996d3c36250b52c1a2949762432713ac7c6d09baf7209d191372",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+              "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentId": "pdf:d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "pdfPage": 23,
+              "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940",
+              "comparisonVerificationId": "a3713f9a43855f6302a2156242a78b034538830ddbdf5d4cadb7d0ac3b42f4c7",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一保存Factbookの連結建設事業受注高総額、FY2021〜FY2023の3列のみ。会計年度開始・終了日は鹿島の対応する保存有報の当連結会計年度見出しで別途確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "8f010686fc7de3fcb1def536c041eb19eff4565ced247e01f2d9a9735d716198",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100OBLA",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度\n(自 2021年４月１日\n至 2022年３月31日)"
+                },
+                {
+                  "basisKind": "saved_factbook_consolidated_orders_row",
+                  "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "sourceLocator": {
+                    "pdf_page": 23,
+                    "printed_page": 22,
+                    "value_bbox": [
+                      510.93250000000035,
+                      226.73790000000008,
+                      551.2525000000005,
+                      235.73790000000008
+                    ],
+                    "year_column": "2022.3"
+                  },
+                  "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "not_rechecked_in_this_intake",
+              "comparisonLimitations": [
+                "同一会社・同一3年度内のみ。FY2024/FY2025 windowと自動接続しない。",
+                "大林組や単体建築受注との同等性は未確認。",
+                "保存PDFのバイト確認のみ。現在掲載版との新しい照合は実施していない。"
+              ]
+            }
+          },
+          {
+            "timeCode": "2022-04-01/2023-03-31",
+            "timeLabel": "2022-04-01 ～ 2023-03-31",
+            "periodStart": "2022-04-01",
+            "periodEnd": "2023-03-31",
+            "numericValue": 2196901,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "7efe6f45f6205a3f885710b9727d467a7e31e43d6863507a3b8c91ed1803d561",
+            "evidenceId": "7ce592e821dd996d3c36250b52c1a2949762432713ac7c6d09baf7209d191372",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+              "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentId": "pdf:d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "pdfPage": 23,
+              "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940",
+              "comparisonVerificationId": "967bcfca306d78d1c4b69243012dcc3ab72e363bb71bc5187b77e982080d25b9",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一保存Factbookの連結建設事業受注高総額、FY2021〜FY2023の3列のみ。会計年度開始・終了日は鹿島の対応する保存有報の当連結会計年度見出しで別途確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "3110c3a156258e90233119165455225e4eeb40619908ade39e345ecd1aec334d",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100R2GR",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度\n(自 2022年４月１日\n至 2023年３月31日)"
+                },
+                {
+                  "basisKind": "saved_factbook_consolidated_orders_row",
+                  "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "sourceLocator": {
+                    "pdf_page": 23,
+                    "printed_page": 22,
+                    "value_bbox": [
+                      566.152,
+                      226.73790000000008,
+                      606.472,
+                      235.73790000000008
+                    ],
+                    "year_column": "2023.3"
+                  },
+                  "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "not_rechecked_in_this_intake",
+              "comparisonLimitations": [
+                "同一会社・同一3年度内のみ。FY2024/FY2025 windowと自動接続しない。",
+                "大林組や単体建築受注との同等性は未確認。",
+                "保存PDFのバイト確認のみ。現在掲載版との新しい照合は実施していない。"
+              ]
+            }
+          },
+          {
+            "timeCode": "2023-04-01/2024-03-31",
+            "timeLabel": "2023-04-01 ～ 2024-03-31",
+            "periodStart": "2023-04-01",
+            "periodEnd": "2024-03-31",
+            "numericValue": 2927225,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "820096ab4c363087649f944d51a85bb4742ea2489e4f5f945461e15c41859462",
+            "evidenceId": "7ce592e821dd996d3c36250b52c1a2949762432713ac7c6d09baf7209d191372",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+              "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentId": "pdf:d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "pdfPage": 23,
+              "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940",
+              "comparisonVerificationId": "408b9e2e8e95fbb6db4c90d72f226a3b665e634ff80bf3b7d4f279dab11f576c",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一保存Factbookの連結建設事業受注高総額、FY2021〜FY2023の3列のみ。会計年度開始・終了日は鹿島の対応する保存有報の当連結会計年度見出しで別途確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "8a145d3b7ed2167819825ecc0eb82939b48a049874cfeb5f7d0aa0c0fd289589",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100TP3I",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度\n(自 2023年４月１日\n至 2024年３月31日)"
+                },
+                {
+                  "basisKind": "saved_factbook_consolidated_orders_row",
+                  "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "sourceLocator": {
+                    "pdf_page": 23,
+                    "printed_page": 22,
+                    "value_bbox": [
+                      621.3481,
+                      226.73790000000008,
+                      661.6681000000001,
+                      235.73790000000008
+                    ],
+                    "year_column": "2024.3"
+                  },
+                  "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "not_rechecked_in_this_intake",
+              "comparisonLimitations": [
+                "同一会社・同一3年度内のみ。FY2024/FY2025 windowと自動接続しない。",
+                "大林組や単体建築受注との同等性は未確認。",
+                "保存PDFのバイト確認のみ。現在掲載版との新しい照合は実施していない。"
+              ]
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "b6edaa15130b65b7cf761564cc4987103970b23e6f2f23f8d61e5df216cd9228",
+            "fiscalYear": "2025",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "65175f204059ca40644f92088c6319cccb63a59232d87183b2fe460fe6fa5f5c",
+            "fiscalYear": "2024",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ],
+        "reviewWindow": "FY2021_FY2023"
+      },
+      "snapshotHash": "67de3488ca301b18a2a8dac13762ceb35bdb4e79497897300e9e507f084b006f"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "KAJIMA:construction_orders_total_reported@FY2024_FY2025",
+        "companyId": "KAJIMA",
+        "metricId": "construction_orders_total_reported",
+        "label": "KAJIMA / construction_orders_total_reported",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "KAJIMA_construction_orders_total_reported_FY2024_FY2025",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2024-04-01/2025-03-31",
+            "timeLabel": "2024-04-01 ～ 2025-03-31",
+            "periodStart": "2024-04-01",
+            "periodEnd": "2025-03-31",
+            "numericValue": 2624553,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "65175f204059ca40644f92088c6319cccb63a59232d87183b2fe460fe6fa5f5c",
+            "evidenceId": "504afef6d77270aa52706e89ca8da8d321db0ad9d77cff35ae6ac547f1555191",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+              "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentId": "pdf:d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "pdfPage": 23,
+              "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940",
+              "comparisonVerificationId": "881a1b24992525693504c53d4de227ac7da612c4d21da428816f6f6d5a158d42",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+                  "sourceLocator": {
+                    "column_role": "prior",
+                    "document_id": "S100YGGI",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "前連結会計年度 (自 2024年４月１日 至 2025年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "comparisonLimitations": [
+                "保存Factbookの同一連結建設事業総額2年度に限定。今回公式GET失敗により現在掲載版とのバイト一致は未確認。",
+                "大林組受注高との会社間同等性は未確認。"
+              ],
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:51:42.731474+00:00",
+              "currentOfficialBytesCheckedUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+              "sourceCurrentnessCheckId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+              "sourceCurrentnessCheckPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+              "sourceCurrentnessCheck": {
+                "checkId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+                "checkedAtUTC": "2026-10-11T02:51:42.731474+00:00",
+                "sourceUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                "httpStatus": 200,
+                "byteComparisonStatus": "equal",
+                "recordPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+                "pdfSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                "currentnessAssertionScope": "Saved PDF bytes equal the HTTP200 PDF from the current official page-linked feed alternate URL at checked_at_utc. No unconditional latest or global correction absence assertion.",
+                "automaticComparisonAllowed": false,
+                "automaticAggregationAllowed": false,
+                "financeEligible": false,
+                "basisSources": [
+                  {
+                    "sourceUrl": "https://www.kajima.co.jp/ir/fact/",
+                    "sourceFileSha256": "005ad8c741cc89d7faa480bf647dfd14dc0ee9e546bc3986bd16ec5f0d5c6529",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-fact-list-followup.html"
+                    }
+                  },
+                  {
+                    "sourceUrl": "https://www.xj-storage.jp/resources/AS01150/xj_fact.js",
+                    "sourceFileSha256": "4ce10d445da17ca51f1c8142c8b2be321174aa1a5a6d8f15c041f3e311c302e8",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-xj-fact-followup.js"
+                    }
+                  },
+                  {
+                    "sourceUrl": "https://www.xj-storage.jp/public-list/GetList2.aspx?company=AS01150&doctype=10010%2C10020%2C10030%2C10040%2C10050%2C10060&output=json&len=0&callback=XJStorageClass.jsonpReq.ordersDefinitionFollowup",
+                    "sourceFileSha256": "f9993a4aa07b7f568a72b425469f7701e2ec70f49a03e929255460eb05e5211b",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-fact-feed-followup.jsonp"
+                    }
+                  }
+                ],
+                "irListingCheck": {
+                  "status": "listed_in_checked_official_linked_factbook_feed",
+                  "sourceQuote": "2017年3月期～2026年3月期",
+                  "publishedAtAsDisclosed": "2026/08/05 00:00:00",
+                  "listedPdfUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                  "correctionListStatus": "not_assessed",
+                  "correctionCheckedScope": "No correction-absence assertion; one bounded 5-item Factbook feed capture identifies the displayed PDF link and title.",
+                  "listedPdfBytesComparisonStatus": "equal_to_saved_original_at_named_alternate_url"
+                },
+                "limitations": [
+                  "Original failed URL and its HTTP500 history are preserved without retry.",
+                  "Alternate listed PDF title/version and URL were checked in one 5-item feed response.",
+                  "This timestamp is the new alternate check, not original acquisition time.",
+                  "No existing facts, period proofs, fingerprints or original PDFs change."
+                ]
+              },
+              "sourceCurrentnessCheckHistory": [
+                {
+                  "checkId": "4b37f9cf390175bae5dfa906417281bf9f335dabf79afb6feffa98f8f701ce62",
+                  "checkedAtUTC": "2026-10-11T02:18:46.435452+00:00",
+                  "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+                  "httpStatus": 500,
+                  "byteComparisonStatus": "not_compared",
+                  "recordPayloadSha256": "1cc0afded8d849bd6d8ff5c90ef6224daebd3509802de5f4c36318fdd3b1a201",
+                  "originalFailedUrlNotRetried": true
+                },
+                {
+                  "checkId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+                  "checkedAtUTC": "2026-10-11T02:51:42.731474+00:00",
+                  "sourceUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                  "httpStatus": 200,
+                  "byteComparisonStatus": "equal",
+                  "recordPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+                  "pdfSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "currentnessAssertionScope": "Saved PDF bytes equal the HTTP200 PDF from the current official page-linked feed alternate URL at checked_at_utc. No unconditional latest or global correction absence assertion.",
+                  "automaticComparisonAllowed": false,
+                  "automaticAggregationAllowed": false,
+                  "financeEligible": false,
+                  "basisSources": [
+                    {
+                      "sourceUrl": "https://www.kajima.co.jp/ir/fact/",
+                      "sourceFileSha256": "005ad8c741cc89d7faa480bf647dfd14dc0ee9e546bc3986bd16ec5f0d5c6529",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-fact-list-followup.html"
+                      }
+                    },
+                    {
+                      "sourceUrl": "https://www.xj-storage.jp/resources/AS01150/xj_fact.js",
+                      "sourceFileSha256": "4ce10d445da17ca51f1c8142c8b2be321174aa1a5a6d8f15c041f3e311c302e8",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-xj-fact-followup.js"
+                      }
+                    },
+                    {
+                      "sourceUrl": "https://www.xj-storage.jp/public-list/GetList2.aspx?company=AS01150&doctype=10010%2C10020%2C10030%2C10040%2C10050%2C10060&output=json&len=0&callback=XJStorageClass.jsonpReq.ordersDefinitionFollowup",
+                      "sourceFileSha256": "f9993a4aa07b7f568a72b425469f7701e2ec70f49a03e929255460eb05e5211b",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-fact-feed-followup.jsonp"
+                      }
+                    }
+                  ],
+                  "irListingCheck": {
+                    "status": "listed_in_checked_official_linked_factbook_feed",
+                    "sourceQuote": "2017年3月期～2026年3月期",
+                    "publishedAtAsDisclosed": "2026/08/05 00:00:00",
+                    "listedPdfUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                    "correctionListStatus": "not_assessed",
+                    "correctionCheckedScope": "No correction-absence assertion; one bounded 5-item Factbook feed capture identifies the displayed PDF link and title.",
+                    "listedPdfBytesComparisonStatus": "equal_to_saved_original_at_named_alternate_url"
+                  },
+                  "limitations": [
+                    "Original failed URL and its HTTP500 history are preserved without retry.",
+                    "Alternate listed PDF title/version and URL were checked in one 5-item feed response.",
+                    "This timestamp is the new alternate check, not original acquisition time.",
+                    "No existing facts, period proofs, fingerprints or original PDFs change."
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "timeCode": "2025-04-01/2026-03-31",
+            "timeLabel": "2025-04-01 ～ 2026-03-31",
+            "periodStart": "2025-04-01",
+            "periodEnd": "2026-03-31",
+            "numericValue": 3263940,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "b6edaa15130b65b7cf761564cc4987103970b23e6f2f23f8d61e5df216cd9228",
+            "evidenceId": "504afef6d77270aa52706e89ca8da8d321db0ad9d77cff35ae6ac547f1555191",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+              "sourceFileSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentId": "pdf:d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+              "pdfPage": 23,
+              "sourceQuote": "連結建設事業受注高 1,728,300 1,685,971 2,010,147 1,752,800 1,720,143 1,929,897 2,196,901 2,927,225 2,624,553 3,263,940",
+              "comparisonVerificationId": "3b5375a55090b8f4a1ac8099509009bffb7c7871de53b529f0c8022be37e0a09",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100YGGI",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度 (自 2025年４月１日 至 2026年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "comparisonLimitations": [
+                "保存Factbookの同一連結建設事業総額2年度に限定。今回公式GET失敗により現在掲載版とのバイト一致は未確認。",
+                "大林組受注高との会社間同等性は未確認。"
+              ],
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:51:42.731474+00:00",
+              "currentOfficialBytesCheckedUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+              "sourceCurrentnessCheckId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+              "sourceCurrentnessCheckPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+              "sourceCurrentnessCheck": {
+                "checkId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+                "checkedAtUTC": "2026-10-11T02:51:42.731474+00:00",
+                "sourceUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                "httpStatus": 200,
+                "byteComparisonStatus": "equal",
+                "recordPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+                "pdfSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                "currentnessAssertionScope": "Saved PDF bytes equal the HTTP200 PDF from the current official page-linked feed alternate URL at checked_at_utc. No unconditional latest or global correction absence assertion.",
+                "automaticComparisonAllowed": false,
+                "automaticAggregationAllowed": false,
+                "financeEligible": false,
+                "basisSources": [
+                  {
+                    "sourceUrl": "https://www.kajima.co.jp/ir/fact/",
+                    "sourceFileSha256": "005ad8c741cc89d7faa480bf647dfd14dc0ee9e546bc3986bd16ec5f0d5c6529",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-fact-list-followup.html"
+                    }
+                  },
+                  {
+                    "sourceUrl": "https://www.xj-storage.jp/resources/AS01150/xj_fact.js",
+                    "sourceFileSha256": "4ce10d445da17ca51f1c8142c8b2be321174aa1a5a6d8f15c041f3e311c302e8",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-xj-fact-followup.js"
+                    }
+                  },
+                  {
+                    "sourceUrl": "https://www.xj-storage.jp/public-list/GetList2.aspx?company=AS01150&doctype=10010%2C10020%2C10030%2C10040%2C10050%2C10060&output=json&len=0&callback=XJStorageClass.jsonpReq.ordersDefinitionFollowup",
+                    "sourceFileSha256": "f9993a4aa07b7f568a72b425469f7701e2ec70f49a03e929255460eb05e5211b",
+                    "sourceLocator": {
+                      "capture_kind": "kajima-fact-feed-followup.jsonp"
+                    }
+                  }
+                ],
+                "irListingCheck": {
+                  "status": "listed_in_checked_official_linked_factbook_feed",
+                  "sourceQuote": "2017年3月期～2026年3月期",
+                  "publishedAtAsDisclosed": "2026/08/05 00:00:00",
+                  "listedPdfUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                  "correctionListStatus": "not_assessed",
+                  "correctionCheckedScope": "No correction-absence assertion; one bounded 5-item Factbook feed capture identifies the displayed PDF link and title.",
+                  "listedPdfBytesComparisonStatus": "equal_to_saved_original_at_named_alternate_url"
+                },
+                "limitations": [
+                  "Original failed URL and its HTTP500 history are preserved without retry.",
+                  "Alternate listed PDF title/version and URL were checked in one 5-item feed response.",
+                  "This timestamp is the new alternate check, not original acquisition time.",
+                  "No existing facts, period proofs, fingerprints or original PDFs change."
+                ]
+              },
+              "sourceCurrentnessCheckHistory": [
+                {
+                  "checkId": "4b37f9cf390175bae5dfa906417281bf9f335dabf79afb6feffa98f8f701ce62",
+                  "checkedAtUTC": "2026-10-11T02:18:46.435452+00:00",
+                  "sourceUrl": "https://www.kajima.co.jp/ir/fact/pdf/factbook20260514-j.pdf",
+                  "httpStatus": 500,
+                  "byteComparisonStatus": "not_compared",
+                  "recordPayloadSha256": "1cc0afded8d849bd6d8ff5c90ef6224daebd3509802de5f4c36318fdd3b1a201",
+                  "originalFailedUrlNotRetried": true
+                },
+                {
+                  "checkId": "3930df88188b1f56837aa5927d61d7a59840b83e3a17891b10c1ac4de377ccb8",
+                  "checkedAtUTC": "2026-10-11T02:51:42.731474+00:00",
+                  "sourceUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                  "httpStatus": 200,
+                  "byteComparisonStatus": "equal",
+                  "recordPayloadSha256": "7fcd7faaceb054533b437cec3b7072b827a899271e8e238eb883008f4188b994",
+                  "pdfSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "documentVersionSha256": "d953ea5ea330699796a6684a59ac2bdb462a0b2cbd4bbd0c67be12c327842494",
+                  "currentnessAssertionScope": "Saved PDF bytes equal the HTTP200 PDF from the current official page-linked feed alternate URL at checked_at_utc. No unconditional latest or global correction absence assertion.",
+                  "automaticComparisonAllowed": false,
+                  "automaticAggregationAllowed": false,
+                  "financeEligible": false,
+                  "basisSources": [
+                    {
+                      "sourceUrl": "https://www.kajima.co.jp/ir/fact/",
+                      "sourceFileSha256": "005ad8c741cc89d7faa480bf647dfd14dc0ee9e546bc3986bd16ec5f0d5c6529",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-fact-list-followup.html"
+                      }
+                    },
+                    {
+                      "sourceUrl": "https://www.xj-storage.jp/resources/AS01150/xj_fact.js",
+                      "sourceFileSha256": "4ce10d445da17ca51f1c8142c8b2be321174aa1a5a6d8f15c041f3e311c302e8",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-xj-fact-followup.js"
+                      }
+                    },
+                    {
+                      "sourceUrl": "https://www.xj-storage.jp/public-list/GetList2.aspx?company=AS01150&doctype=10010%2C10020%2C10030%2C10040%2C10050%2C10060&output=json&len=0&callback=XJStorageClass.jsonpReq.ordersDefinitionFollowup",
+                      "sourceFileSha256": "f9993a4aa07b7f568a72b425469f7701e2ec70f49a03e929255460eb05e5211b",
+                      "sourceLocator": {
+                        "capture_kind": "kajima-fact-feed-followup.jsonp"
+                      }
+                    }
+                  ],
+                  "irListingCheck": {
+                    "status": "listed_in_checked_official_linked_factbook_feed",
+                    "sourceQuote": "2017年3月期～2026年3月期",
+                    "publishedAtAsDisclosed": "2026/08/05 00:00:00",
+                    "listedPdfUrl": "https://contents.xj-storage.jp/xcontents/AS01150/fbf641db/1af9/480c/900f/cd5356cce39a/20260806084924352s.pdf",
+                    "correctionListStatus": "not_assessed",
+                    "correctionCheckedScope": "No correction-absence assertion; one bounded 5-item Factbook feed capture identifies the displayed PDF link and title.",
+                    "listedPdfBytesComparisonStatus": "equal_to_saved_original_at_named_alternate_url"
+                  },
+                  "limitations": [
+                    "Original failed URL and its HTTP500 history are preserved without retry.",
+                    "Alternate listed PDF title/version and URL were checked in one 5-item feed response.",
+                    "This timestamp is the new alternate check, not original acquisition time.",
+                    "No existing facts, period proofs, fingerprints or original PDFs change."
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "excludedObservations": [],
+        "reviewWindow": "FY2024_FY2025"
+      },
+      "snapshotHash": "8a383d261e2115f3a42ca1f7143ef2fe95cf6ed0753954e59408a7bcf8cfea8e"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "KAJIMA:kajima_annual_consolidated_gross_profit_reported",
+        "companyId": "KAJIMA",
+        "metricId": "kajima_annual_consolidated_gross_profit_reported",
+        "label": "KAJIMA / 売上総利益合計",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "KAJIMA_consolidated_JPY_annual_2021_2023",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2021-04-01/2022-03-31",
+            "timeLabel": "2021-04-01 ～ 2022-03-31",
+            "periodStart": "2021-04-01",
+            "periodEnd": "2022-03-31",
+            "numericValue": 255715,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f",
+            "evidenceId": "ad67a1a941496412e2f4310c42628f8c7486d5a3f0a7ed84851de550339b1f7b",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+              "documentId": "S100OBLA",
+              "documentVersionSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+              "pdfPage": 64,
+              "sourceQuote": "売上総利益合計 | 当連結会計年度\n(自 2021年４月１日\n至 2022年３月31日) | 255,715 | (単位：百万円)",
+              "comparisonVerificationId": "6708e4d2d486d0ccdf4059af1f5512e854d5cc63fc247d190c7ff2e54e6fc7f0",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "保存有報の連結損益計算書における「売上総利益合計」（完成工事総利益と開発事業等総利益を含む報告総額）を2021～2023年度だけ確認。2021年度期首の収益認識基準適用と、2022年３月期以降の適用後指標注記を原本で確認。後続有報の前期再掲255,715・267,100が当初当期列と一致。2020年度前期列は比較対象外。会社間同指標認定は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      224.35000000000002,
+                      159.798741,
+                      437.25,
+                      170.19874099999998
+                    ],
+                    "pdf_page": 1
+                  },
+                  "sourceQuote": "第125期(自 2021年４月１日 至 2022年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.05000918,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を当連結会計年度の期首から適\n用しており、当連結会計年度に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy_initial_application",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      63.05,
+                      69.04874099999999,
+                      521.3499929199997,
+                      94.448741
+                    ],
+                    "pdf_page": 76
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日。以下「収益認識会計基準」とい\nう。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "売上総利益合計 241,417 255,715"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2020年４月１日 (自 2021年４月１日\n至 2021年３月31日) 至 2022年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.0500070399999,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "売上総利益合計 255,715 267,100"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2021年４月１日 (自 2022年４月１日\n至 2022年３月31日) 至 2023年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      588.621731,
+                      515.0500070399999,
+                      625.475461
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "２ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "売上総利益合計 267,100 291,501"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2022年４月１日 (自 2023年４月１日\n至 2023年３月31日) 至 2024年３月31日)"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2022-04-01/2023-03-31",
+            "timeLabel": "2022-04-01 ～ 2023-03-31",
+            "periodStart": "2022-04-01",
+            "periodEnd": "2023-03-31",
+            "numericValue": 267100,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9",
+            "evidenceId": "0b5259305c1c929b82461ce3e816fda5a9a9b0d352f1a7e1bf7b1bc1fdb657e2",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R2GR.pdf",
+              "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+              "documentId": "S100R2GR",
+              "documentVersionSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+              "pdfPage": 78,
+              "sourceQuote": "売上総利益合計 | 当連結会計年度\n(自 2022年４月１日\n至 2023年３月31日) | 267,100 | (単位：百万円)",
+              "comparisonVerificationId": "ae26efc483942f5cd9ff97c9ce38ff98b1b9847501c97fc4555d710836f8fe55",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "保存有報の連結損益計算書における「売上総利益合計」（完成工事総利益と開発事業等総利益を含む報告総額）を2021～2023年度だけ確認。2021年度期首の収益認識基準適用と、2022年３月期以降の適用後指標注記を原本で確認。後続有報の前期再掲255,715・267,100が当初当期列と一致。2020年度前期列は比較対象外。会社間同指標認定は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      224.35000000000002,
+                      159.798741,
+                      437.25,
+                      170.19874099999998
+                    ],
+                    "pdf_page": 1
+                  },
+                  "sourceQuote": "第126期(自 2022年４月１日 至 2023年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.05000918,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を当連結会計年度の期首から適\n用しており、当連結会計年度に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy_initial_application",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      63.05,
+                      69.04874099999999,
+                      521.3499929199997,
+                      94.448741
+                    ],
+                    "pdf_page": 76
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日。以下「収益認識会計基準」とい\nう。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "売上総利益合計 241,417 255,715"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2020年４月１日 (自 2021年４月１日\n至 2021年３月31日) 至 2022年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.0500070399999,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "売上総利益合計 255,715 267,100"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2021年４月１日 (自 2022年４月１日\n至 2022年３月31日) 至 2023年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      588.621731,
+                      515.0500070399999,
+                      625.475461
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "２ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "売上総利益合計 267,100 291,501"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2022年４月１日 (自 2023年４月１日\n至 2023年３月31日) 至 2024年３月31日)"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2023-04-01/2024-03-31",
+            "timeLabel": "2023-04-01 ～ 2024-03-31",
+            "periodStart": "2023-04-01",
+            "periodEnd": "2024-03-31",
+            "numericValue": 291501,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877",
+            "evidenceId": "4d9bc64c0088f739b3747aaad31caa3bad33ae4b8894da5b8736442edc5e2aca",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TP3I.pdf",
+              "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+              "documentId": "S100TP3I",
+              "documentVersionSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+              "pdfPage": 77,
+              "sourceQuote": "売上総利益合計 | 当連結会計年度\n(自 2023年４月１日\n至 2024年３月31日) | 291,501 | (単位：百万円)",
+              "comparisonVerificationId": "0139e3bd05e87810b0cd635fca41fc4b42fc8f8e04ab8021859cee0a21cdc147",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "保存有報の連結損益計算書における「売上総利益合計」（完成工事総利益と開発事業等総利益を含む報告総額）を2021～2023年度だけ確認。2021年度期首の収益認識基準適用と、2022年３月期以降の適用後指標注記を原本で確認。後続有報の前期再掲255,715・267,100が当初当期列と一致。2020年度前期列は比較対象外。会社間同指標認定は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      224.35000000000002,
+                      159.798741,
+                      437.25,
+                      170.19874099999998
+                    ],
+                    "pdf_page": 1
+                  },
+                  "sourceQuote": "第127期(自 2023年４月１日 至 2024年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.05000918,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を当連結会計年度の期首から適\n用しており、当連結会計年度に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy_initial_application",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      63.05,
+                      69.04874099999999,
+                      521.3499929199997,
+                      94.448741
+                    ],
+                    "pdf_page": 76
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日。以下「収益認識会計基準」とい\nう。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "売上総利益合計 241,417 255,715"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 64
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2020年４月１日 (自 2021年４月１日\n至 2021年３月31日) 至 2022年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      614.1679909999999,
+                      515.0500070399999,
+                      651.021731
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "３ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "売上総利益合計 255,715 267,100"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 78
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2021年４月１日 (自 2022年４月１日\n至 2022年３月31日) 至 2023年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_policy",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      67.64999999999999,
+                      588.621731,
+                      515.0500070399999,
+                      625.475461
+                    ],
+                    "pdf_page": 2
+                  },
+                  "sourceQuote": "２ 「収益認識に関する会計基準」（企業会計基準第29号 2020年３月31日）等を2022年３月期の期首から適用\nしており、2022年３月期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等と\nなっている。"
+                },
+                {
+                  "basisKind": "comparative_value_crosscheck",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      56.55,
+                      262.69875099999996,
+                      504.65001,
+                      273.09875099999994
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "売上総利益合計 267,100 291,501"
+                },
+                {
+                  "basisKind": "comparative_period_header",
+                  "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      279.45001,
+                      81.53625100000004,
+                      491.55001,
+                      111.93625100000004
+                    ],
+                    "pdf_page": 77
+                  },
+                  "sourceQuote": "前連結会計年度 当連結会計年度\n(自 2022年４月１日 (自 2023年４月１日\n至 2023年３月31日) 至 2024年３月31日)"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          }
+        ],
+        "excludedObservations": [],
+        "comparisonIndicatorId": "consolidated_gross_profit_reported",
+        "comparisonEquivalence": {
+          "id": "obayashi_kajima_consolidated_gross_profit_FY2021_FY2023_v1",
+          "indicatorId": "consolidated_gross_profit_reported",
+          "definition": "日本基準・連結損益計算書の開示合計「売上総利益合計」。百万円・JPY・名目実績・年度フロー。工事のみの利益・利益率・受注高ではない。",
+          "status": "source_reviewed_equivalent_indicator",
+          "automaticAggregationAllowed": false,
+          "periods": [
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31"
+          ],
+          "members": [
+            {
+              "companyId": "OBAYASHI",
+              "metricId": "obayashi_databook_gross_profit_reported",
+              "factIds": [
+                "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e",
+                "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b",
+                "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4"
+              ]
+            },
+            {
+              "companyId": "KAJIMA",
+              "metricId": "kajima_annual_consolidated_gross_profit_reported",
+              "factIds": [
+                "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877",
+                "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f",
+                "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9"
+              ]
+            }
+          ],
+          "basisSources": [
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100OE64",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 225,784 154,339",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e"
+            },
+            {
+              "sourceFileSha256": "8f010686fc7de3fcb1def536c041eb19eff4565ced247e01f2d9a9735d716198",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100OBLA",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 241,417 255,715",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f"
+            },
+            {
+              "sourceFileSha256": "90bebbee5feca9298f7677a17abac297683115538726a7086e92d79318f1cb14",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100R95O",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 154,339 216,569",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R95O.pdf",
+              "factId": "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b"
+            },
+            {
+              "sourceFileSha256": "3110c3a156258e90233119165455225e4eeb40619908ade39e345ecd1aec334d",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100R2GR",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 255,715 267,100",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R2GR.pdf",
+              "factId": "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9"
+            },
+            {
+              "sourceFileSha256": "c6103444b9198a13b5f19aac6299ab4c7834a4248ad6eb72e164e01e5744fd00",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100TXH2",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 216,569 219,602",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TXH2.pdf",
+              "factId": "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4"
+            },
+            {
+              "sourceFileSha256": "8a145d3b7ed2167819825ecc0eb82939b48a049874cfeb5f7d0aa0c0fd289589",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100TP3I",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 267,100 291,501",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TP3I.pdf",
+              "factId": "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877"
+            },
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "document_id": "S100OE64",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+              "sourceLocator": {
+                "document_id": "S100OBLA",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": null
+            }
+          ],
+          "limitations": [
+            "確認範囲は保存原本の2021～2023年度のみ。現在の公式版・FY2023以後の訂正の網羅確認は未実施。",
+            "会社ごとの事業構成・会計見積り・移行影響は異なる。同一事業構成・同じ工事のみの利益とはみなさない。",
+            "開示合計を使用する。百万円単位の内訳に丸め差があるため合計を再計算しない。",
+            "各3年度の記述的比較であり、因果関係・一般的な関連性・将来予測の根拠にはしない。自動合算は禁止。",
+            "大林組の保存Databookの元取得日時は未記録。鹿島保存有報の元取得日時も未記録。"
+          ]
+        }
+      },
+      "snapshotHash": "ceac77b12b7178d27abbe7b15d73238ee395374f1eee9f204ade96a4bd87f997"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "KAJIMA:kajima_annual_consolidated_gross_profit_reported@FY2024_FY2025",
+        "companyId": "KAJIMA",
+        "metricId": "kajima_annual_consolidated_gross_profit_reported",
+        "label": "KAJIMA / 売上総利益合計",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "KAJIMA_kajima_annual_consolidated_gross_profit_reported_FY2024_FY2025",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2024-04-01/2025-03-31",
+            "timeLabel": "2024-04-01 ～ 2025-03-31",
+            "periodStart": "2024-04-01",
+            "periodEnd": "2025-03-31",
+            "numericValue": 323197,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "9155d23fc79bd4bd28bc071d5a6a9905f7c5d87294c5185a2361a4f82504ec0d",
+            "evidenceId": "bfb91d7456871bcc0d0f7a0e06755a47a1a8e55c3fe8211ac57b0ef7e73a0948",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "sourceFileSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+              "documentId": "S100YGGI",
+              "documentVersionSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+              "pdfPage": 97,
+              "sourceQuote": "売上総利益合計 | 前連結会計年度 (自 2024年４月１日 至 2025年３月31日) | 323,197 | (単位：百万円)",
+              "comparisonVerificationId": "f904f3aef78c26063497cc426c8cbe199bdbc9e78172bb4238f5ca279ae47eea",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+                  "sourceLocator": {
+                    "column_role": "prior",
+                    "document_id": "S100YGGI",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "前連結会計年度 (自 2024年４月１日 至 2025年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:18:46.346688+00:00"
+            }
+          },
+          {
+            "timeCode": "2025-04-01/2026-03-31",
+            "timeLabel": "2025-04-01 ～ 2026-03-31",
+            "periodStart": "2025-04-01",
+            "periodEnd": "2026-03-31",
+            "numericValue": 425868,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "de0b0b3cde7e6e22d401bf8690ed5f1219438cf5693b4a527eef55bdf2849bd8",
+            "evidenceId": "bfb91d7456871bcc0d0f7a0e06755a47a1a8e55c3fe8211ac57b0ef7e73a0948",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "sourceFileSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+              "documentId": "S100YGGI",
+              "documentVersionSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+              "pdfPage": 97,
+              "sourceQuote": "売上総利益合計 | 当連結会計年度 (自 2025年４月１日 至 2026年３月31日) | 425,868 | (単位：百万円)",
+              "comparisonVerificationId": "55202a5c4a88f917e8897d4267ce760db785b70e9d7e93744e74f9e63f110fc4",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100YGGI",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度 (自 2025年４月１日 至 2026年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:18:46.346688+00:00"
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f",
+            "fiscalYear": "2021",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9",
+            "fiscalYear": "2022",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877",
+            "fiscalYear": "2023",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ],
+        "reviewWindow": "FY2024_FY2025",
+        "comparisonIndicatorId": "consolidated_gross_profit_reported",
+        "comparisonEquivalence": {
+          "reviewWindow": "FY2024_FY2025",
+          "id": "obayashi_kajima_consolidated_gross_profit_FY2024_FY2025_v1",
+          "indicatorId": "consolidated_gross_profit_reported",
+          "definition": "日本基準・連結損益計算書の売上総利益合計。百万円・JPY・年度実績。開示合計を保持。",
+          "status": "source_reviewed_equivalent_indicator",
+          "automaticAggregationAllowed": false,
+          "periods": [
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "members": [
+            {
+              "companyId": "OBAYASHI",
+              "metricId": "obayashi_databook_gross_profit_reported",
+              "factIds": [
+                "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361",
+                "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65"
+              ]
+            },
+            {
+              "companyId": "KAJIMA",
+              "metricId": "kajima_annual_consolidated_gross_profit_reported",
+              "factIds": [
+                "9155d23fc79bd4bd28bc071d5a6a9905f7c5d87294c5185a2361a4f82504ec0d",
+                "de0b0b3cde7e6e22d401bf8690ed5f1219438cf5693b4a527eef55bdf2849bd8"
+              ]
+            }
+          ],
+          "basisSources": [
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "context_ref": "Prior1YearDuration",
+                "document_id": "S100YITC",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "前連結会計年度 (自　2024年４月１日 至　2025年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2025-03-31",
+                "verified_period_start": "2024-04-01"
+              },
+              "sourceQuote": "売上総利益合計 295,386 364,691",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361"
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100YITC",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "当連結会計年度 (自　2025年４月１日 至　2026年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2026-03-31",
+                "verified_period_start": "2025-04-01"
+              },
+              "sourceQuote": "売上総利益合計 295,386 364,691",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65"
+            },
+            {
+              "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+              "sourceLocator": {
+                "context_ref": "Prior1YearDuration",
+                "document_id": "S100YGGI",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "前連結会計年度 (自 2024年４月１日 至 2025年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2025-03-31",
+                "verified_period_start": "2024-04-01"
+              },
+              "sourceQuote": "売上総利益合計 323,197 425,868",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": "9155d23fc79bd4bd28bc071d5a6a9905f7c5d87294c5185a2361a4f82504ec0d"
+            },
+            {
+              "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100YGGI",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "当連結会計年度 (自 2025年４月１日 至 2026年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2026-03-31",
+                "verified_period_start": "2025-04-01"
+              },
+              "sourceQuote": "売上総利益合計 323,197 425,868",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": "de0b0b3cde7e6e22d401bf8690ed5f1219438cf5693b4a527eef55bdf2849bd8"
+            },
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "document_id": "S100OE64",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+              "sourceLocator": {
+                "document_id": "S100OBLA",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "document_id": "S100YITC",
+                "section": "（会計方針の変更）"
+              },
+              "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+              "sourceLocator": {
+                "document_id": "S100YGGI",
+                "section": "(5) 重要な収益及び費用の計上基準"
+              },
+              "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+              "sourceLocator": {
+                "document_id": "S100YGGI",
+                "section": "(1)"
+              },
+              "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "document_id": "S100YITC",
+                "section": "(1）"
+              },
+              "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "sourceLocator": {
+                "bbox_pdfplumber_top_left_points": [
+                  57.61999925,
+                  657.6628824999999,
+                  377.5134992500002,
+                  666.7432575
+                ],
+                "pdf_page": 3
+              },
+              "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。",
+              "sourceUrl": null,
+              "factId": null
+            }
+          ],
+          "limitations": [
+            "FY2024/FY2025の2年度のみ。大林組FY2024はFY2025有報遡及適用後の比較列と一致。旧有報値を変更しない。",
+            "事業構成・見積り・換算影響は会社ごとに異なる。会社の合計・内訳を自動集計しない。",
+            "受注高の会社間同等性は未確認。旧FY2021/FY2023 windowと混合しない。"
+          ]
+        }
+      },
+      "snapshotHash": "53909a56f67783c649b09cd3211cfdab52f65ae6cc574980d8ca5c85a4719d9b"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "OBAYASHI:obayashi_databook_construction_orders_reported",
+        "companyId": "OBAYASHI",
+        "metricId": "obayashi_databook_construction_orders_reported",
+        "label": "OBAYASHI / 建設事業受注高",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "OBAYASHI_p3_consolidated_nominal_JPY_annual_2021_2023",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2021-04-01/2022-03-31",
+            "timeLabel": "2021-04-01 ～ 2022-03-31",
+            "periodStart": "2021-04-01",
+            "periodEnd": "2022-03-31",
+            "numericValue": 2042487,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "b4485aa7e2f7039054cec2f11dcf2e6673ebc2bcffaa879d532b0c6504d8f427",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "建設事業受注高 | 会計年度 2021 | 2,042,487",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:b4485aa7e2f7039054cec2f11dcf2e6673ebc2bcffaa879d532b0c6504d8f427",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "478b8cac862e26ed5d2b69973762d6dfbdc81f890358448b8833e7f684068d02",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第118期（自　2021年４月１日　至　2022年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2022-04-01/2023-03-31",
+            "timeLabel": "2022-04-01 ～ 2023-03-31",
+            "periodStart": "2022-04-01",
+            "periodEnd": "2023-03-31",
+            "numericValue": 2107374,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "5d39251fd5987ccd5f141ffc16fd4721781fe513eceda48e76d599a20f96f5d7",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "建設事業受注高 | 会計年度 2022 | 2,107,374",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:5d39251fd5987ccd5f141ffc16fd4721781fe513eceda48e76d599a20f96f5d7",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "672a94b179ab8474a8dfc5b5b4708d6bbbd5af44f3cd5d2030e19aadccc6d90c",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第119期（自　2022年４月１日　至　2023年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2023-04-01/2024-03-31",
+            "timeLabel": "2023-04-01 ～ 2024-03-31",
+            "periodStart": "2023-04-01",
+            "periodEnd": "2024-03-31",
+            "numericValue": 2355067,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "e02e334f28367106f8af32d40f6059761c2ca2d6f53afe202951052bde1bfdf8",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "建設事業受注高 | 会計年度 2023 | 2,355,067",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:e02e334f28367106f8af32d40f6059761c2ca2d6f53afe202951052bde1bfdf8",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "d1021aef0443fc168f0989f498fc92674fc868046610670f029604468698df69",
+                  "sourceLocator": {
+                    "document_id": "S100TXH2",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第120期（自　2023年４月１日　至　2024年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "3117d2b63736ab92cdf2a52d3ae0206b7234ede492d2e9bad37dda75c6823b28",
+            "fiscalYear": "2024",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "bafc11c34e06b293724db67974fcf882b1ca5ececf3f20e71bc34b121d16a5f9",
+            "fiscalYear": "2025",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ]
+      },
+      "snapshotHash": "c89c7d5b8e25e733fe8d6b97462eac3a01a1e3f67011c46eb40d4559dcb1405e"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "OBAYASHI:obayashi_databook_construction_orders_reported@FY2024_FY2025",
+        "companyId": "OBAYASHI",
+        "metricId": "obayashi_databook_construction_orders_reported",
+        "label": "OBAYASHI / 建設事業受注高",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "OBAYASHI_obayashi_databook_construction_orders_reported_FY2024_FY2025",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2024-04-01/2025-03-31",
+            "timeLabel": "2024-04-01 ～ 2025-03-31",
+            "periodStart": "2024-04-01",
+            "periodEnd": "2025-03-31",
+            "numericValue": 3161895,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "3117d2b63736ab92cdf2a52d3ae0206b7234ede492d2e9bad37dda75c6823b28",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "建設事業受注高 | 会計年度 2024 | 3,161,895",
+              "comparisonVerificationId": "cf57aa0ede1e7e8cb7907fc2f2bccdc7aa4646615dc4ba9aea9431702d861a9f",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "column_role": "prior",
+                    "document_id": "S100YITC",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "前連結会計年度 (自　2024年４月１日 至　2025年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "restatementStatus": "databook_FY2024_restatement_note",
+              "restatementExplanation": "現行Data BookのFY2024遡及適用注記を保持。旧版との差の原因は未特定。粗利益の換算方法変更を受注高へ推論しない。",
+              "restatementSourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。",
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:15:23.263738+00:00"
+            }
+          },
+          {
+            "timeCode": "2025-04-01/2026-03-31",
+            "timeLabel": "2025-04-01 ～ 2026-03-31",
+            "periodStart": "2025-04-01",
+            "periodEnd": "2026-03-31",
+            "numericValue": 2849812,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "bafc11c34e06b293724db67974fcf882b1ca5ececf3f20e71bc34b121d16a5f9",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "建設事業受注高 | 会計年度 2025 | 2,849,812",
+              "comparisonVerificationId": "f64af05fd51997b4b71b6e2ad0b74f8c7a41924b186d7518baeae9333a15dd4e",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100YITC",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度 (自　2025年４月１日 至　2026年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "restatementStatus": "current_year_as_reported",
+              "restatementExplanation": "現行Data BookのFY2024遡及適用注記を保持。旧版との差の原因は未特定。粗利益の換算方法変更を受注高へ推論しない。",
+              "restatementSourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。",
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:15:23.263738+00:00"
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "5d39251fd5987ccd5f141ffc16fd4721781fe513eceda48e76d599a20f96f5d7",
+            "fiscalYear": "2022",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "b4485aa7e2f7039054cec2f11dcf2e6673ebc2bcffaa879d532b0c6504d8f427",
+            "fiscalYear": "2021",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "e02e334f28367106f8af32d40f6059761c2ca2d6f53afe202951052bde1bfdf8",
+            "fiscalYear": "2023",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ],
+        "reviewWindow": "FY2024_FY2025"
+      },
+      "snapshotHash": "9447c5f6d3fae0e66520b01d795c476b05b1bc3ce3fdca632958504b5b7f314b"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "OBAYASHI:obayashi_databook_gross_profit_reported",
+        "companyId": "OBAYASHI",
+        "metricId": "obayashi_databook_gross_profit_reported",
+        "label": "OBAYASHI / 売上総利益",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "OBAYASHI_p3_consolidated_nominal_JPY_annual_2021_2023",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2021-04-01/2022-03-31",
+            "timeLabel": "2021-04-01 ～ 2022-03-31",
+            "periodStart": "2021-04-01",
+            "periodEnd": "2022-03-31",
+            "numericValue": 154339,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "売上総利益 | 会計年度 2021 | 154,339",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "478b8cac862e26ed5d2b69973762d6dfbdc81f890358448b8833e7f684068d02",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第118期（自　2021年４月１日　至　2022年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2022-04-01/2023-03-31",
+            "timeLabel": "2022-04-01 ～ 2023-03-31",
+            "periodStart": "2022-04-01",
+            "periodEnd": "2023-03-31",
+            "numericValue": 216569,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "売上総利益 | 会計年度 2022 | 216,569",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "672a94b179ab8474a8dfc5b5b4708d6bbbd5af44f3cd5d2030e19aadccc6d90c",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第119期（自　2022年４月１日　至　2023年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          },
+          {
+            "timeCode": "2023-04-01/2024-03-31",
+            "timeLabel": "2023-04-01 ～ 2024-03-31",
+            "periodStart": "2023-04-01",
+            "periodEnd": "2024-03-31",
+            "numericValue": 219602,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "売上総利益 | 会計年度 2023 | 219,602",
+              "comparisonVerificationId": "obayashi_p3_2021_2023:e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "同一資料p.3の連結KPI表・会計年度2021～2023列を限定確認。第118期以降の収益認識基準適用を保存有報で確認。2024年度の遡及適用注記を保持し、2024・2025列は許可しない。資料外の未記載変更や現在の公式版は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "d1021aef0443fc168f0989f498fc92674fc868046610670f029604468698df69",
+                  "sourceLocator": {
+                    "document_id": "S100TXH2",
+                    "html_table_row_index_zero_based": 4
+                  },
+                  "sourceQuote": "【事業年度】 第120期（自　2023年４月１日　至　2024年３月31日）"
+                },
+                {
+                  "basisKind": "definition_window",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "pdf_page": 3,
+                    "printed_page": 1
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                },
+                {
+                  "basisKind": "definition_policy",
+                  "sourceFileSha256": "9aae1e95c82ff9b7b043525004134e6dbaf774ea697b97b45416190c2386f5dc",
+                  "sourceLocator": {
+                    "document_id": "S100R95O",
+                    "paragraph_contains": "第118期以降"
+                  },
+                  "sourceQuote": "２　「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日）等を第118期の期首から適用しており、第118期以降に係る主要な経営指標等については、当該会計基準等を適用した後の指標等となっている。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "unconfirmed"
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361",
+            "fiscalYear": "2024",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65",
+            "fiscalYear": "2025",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ],
+        "comparisonIndicatorId": "consolidated_gross_profit_reported",
+        "comparisonEquivalence": {
+          "id": "obayashi_kajima_consolidated_gross_profit_FY2021_FY2023_v1",
+          "indicatorId": "consolidated_gross_profit_reported",
+          "definition": "日本基準・連結損益計算書の開示合計「売上総利益合計」。百万円・JPY・名目実績・年度フロー。工事のみの利益・利益率・受注高ではない。",
+          "status": "source_reviewed_equivalent_indicator",
+          "automaticAggregationAllowed": false,
+          "periods": [
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31"
+          ],
+          "members": [
+            {
+              "companyId": "OBAYASHI",
+              "metricId": "obayashi_databook_gross_profit_reported",
+              "factIds": [
+                "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e",
+                "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b",
+                "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4"
+              ]
+            },
+            {
+              "companyId": "KAJIMA",
+              "metricId": "kajima_annual_consolidated_gross_profit_reported",
+              "factIds": [
+                "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877",
+                "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f",
+                "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9"
+              ]
+            }
+          ],
+          "basisSources": [
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100OE64",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 225,784 154,339",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e"
+            },
+            {
+              "sourceFileSha256": "8f010686fc7de3fcb1def536c041eb19eff4565ced247e01f2d9a9735d716198",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100OBLA",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 241,417 255,715",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": "7b109476913310f83b5ec16f86d0d99899e84d1058bc3c575b3d2d387c42608f"
+            },
+            {
+              "sourceFileSha256": "90bebbee5feca9298f7677a17abac297683115538726a7086e92d79318f1cb14",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100R95O",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 154,339 216,569",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R95O.pdf",
+              "factId": "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b"
+            },
+            {
+              "sourceFileSha256": "3110c3a156258e90233119165455225e4eeb40619908ade39e345ecd1aec334d",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100R2GR",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 255,715 267,100",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R2GR.pdf",
+              "factId": "a8f1dd2f26617000548cf93e5fb6447363171f7c9635da70302477b1171b72f9"
+            },
+            {
+              "sourceFileSha256": "c6103444b9198a13b5f19aac6299ab4c7834a4248ad6eb72e164e01e5744fd00",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100TXH2",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 216,569 219,602",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TXH2.pdf",
+              "factId": "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4"
+            },
+            {
+              "sourceFileSha256": "8a145d3b7ed2167819825ecc0eb82939b48a049874cfeb5f7d0aa0c0fd289589",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100TP3I",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY"
+              },
+              "sourceQuote": "売上総利益合計 267,100 291,501",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TP3I.pdf",
+              "factId": "3387f2831de208e4dd0380da873d237f974d9f83b676b2c44a537bef4ac5a877"
+            },
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "document_id": "S100OE64",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+              "sourceLocator": {
+                "document_id": "S100OBLA",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": null
+            }
+          ],
+          "limitations": [
+            "確認範囲は保存原本の2021～2023年度のみ。現在の公式版・FY2023以後の訂正の網羅確認は未実施。",
+            "会社ごとの事業構成・会計見積り・移行影響は異なる。同一事業構成・同じ工事のみの利益とはみなさない。",
+            "開示合計を使用する。百万円単位の内訳に丸め差があるため合計を再計算しない。",
+            "各3年度の記述的比較であり、因果関係・一般的な関連性・将来予測の根拠にはしない。自動合算は禁止。",
+            "大林組の保存Databookの元取得日時は未記録。鹿島保存有報の元取得日時も未記録。"
+          ]
+        }
+      },
+      "snapshotHash": "3fec53f51f64d961f8ee5736ec370af816d6222fa9518580603914f94c6a606e"
+    },
+    {
+      "payload": {
+        "schemaVersion": 1,
+        "datasetId": "buildbase-source-verified-comparison",
+        "id": "OBAYASHI:obayashi_databook_gross_profit_reported@FY2024_FY2025",
+        "companyId": "OBAYASHI",
+        "metricId": "obayashi_databook_gross_profit_reported",
+        "label": "OBAYASHI / 売上総利益",
+        "cycle": "年度次",
+        "unit": "百万円",
+        "currency": "JPY",
+        "priceBasis": "nominal",
+        "comparisonScope": "consolidated",
+        "comparisonFamily": "OBAYASHI_obayashi_databook_gross_profit_reported_FY2024_FY2025",
+        "automaticComparisonAllowed": true,
+        "automaticAggregationAllowed": false,
+        "canonicalFreshness": "not_checked",
+        "points": [
+          {
+            "timeCode": "2024-04-01/2025-03-31",
+            "timeLabel": "2024-04-01 ～ 2025-03-31",
+            "periodStart": "2024-04-01",
+            "periodEnd": "2025-03-31",
+            "numericValue": 295386,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "売上総利益 | 会計年度 2024 | 295,386",
+              "comparisonVerificationId": "dce7991b54330fdc059036e77a48d59175b946badc59cceeb01b961293876c7d",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "column_role": "prior",
+                    "document_id": "S100YITC",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "前連結会計年度 (自　2024年４月１日 至　2025年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "restatementStatus": "restated_as_presented_in_FY2025_report",
+              "restatementExplanation": "在外子会社等の収益及び費用換算を直物相場から期中平均相場へ変更。FY2024を遡及適用し、FY2023以前へ拡張しない。誤謬訂正ではない。",
+              "restatementSourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。",
+              "sourceRestatementRelation": {
+                "basis_sources": [
+                  {
+                    "basis_kind": "prior_annual_original_gross_profit",
+                    "source_file_sha256": "90b2ed59424590c9cf27888c7da63b6b9818716a6a519f3463e688c989b6e009",
+                    "source_locator": {
+                      "context_ref": "CurrentYearDuration",
+                      "document_id": "S100W0FJ",
+                      "html_element_name": "jppfs_cor:GrossProfit"
+                    },
+                    "source_quote": "売上総利益合計 219,602 297,833",
+                    "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W0FJ.pdf"
+                  },
+                  {
+                    "basis_kind": "current_annual_restated_comparative_gross_profit",
+                    "source_file_sha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                    "source_locator": {
+                      "context_ref": "Prior1YearDuration",
+                      "document_id": "S100YITC",
+                      "html_element_name": "jppfs_cor:GrossProfit"
+                    },
+                    "source_quote": "売上総利益合計 295,386 364,691",
+                    "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf"
+                  },
+                  {
+                    "basis_kind": "accounting_policy_restatement_selected_window",
+                    "source_file_sha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                    "source_locator": {
+                      "document_id": "S100YITC",
+                      "section": "（会計方針の変更）"
+                    },
+                    "source_quote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。",
+                    "source_url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf"
+                  }
+                ],
+                "company_id": "OBAYASHI",
+                "currency": "JPY",
+                "data_scope": "consolidated",
+                "difference": -2447,
+                "fiscal_year": "2024",
+                "is_error_correction": false,
+                "limitations": [
+                  "粗利益のみ。FY2024受注高差の原因をこの換算方法変更から推論しない。"
+                ],
+                "metric_id": "obayashi_databook_gross_profit_reported",
+                "new_source_document_id": "S100YITC",
+                "old_source_document_id": "S100W0FJ",
+                "old_value": 297833,
+                "older_periods_retrospectively_applied": false,
+                "original_facts_unchanged": true,
+                "period_end": "2025-03-31",
+                "period_start": "2024-04-01",
+                "reason_classification": "accounting_policy_change_retrospective_application",
+                "record_kind": "reviewed_source_restatement_relation",
+                "restated_as_presented_value": 295386,
+                "review_window": "FY2024_FY2025",
+                "source_restatement_relation_id": "obayashi_FY2024_gross_profit_original_to_FY2025_comparative_v1",
+                "unit": "百万円"
+              },
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:15:23.263738+00:00"
+            }
+          },
+          {
+            "timeCode": "2025-04-01/2026-03-31",
+            "timeLabel": "2025-04-01 ～ 2026-03-31",
+            "periodStart": "2025-04-01",
+            "periodEnd": "2026-03-31",
+            "numericValue": 364691,
+            "status": "confirmed_value",
+            "implicitNumericZero": false,
+            "factId": "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65",
+            "evidenceId": "3c8d3d91782b9f2cd58f8399f6fbd3cc8b645c15a16a9ffec084b2dab59d62af",
+            "eligibility": {
+              "automaticComparisonAllowed": true,
+              "automaticAggregationAllowed": false
+            },
+            "provenance": {
+              "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/databook/main/00/teaserItems3/0/linkList/0/link/FY2021-2025databook.pdf",
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentId": "pdf:f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "documentVersionSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "pdfPage": 3,
+              "sourceQuote": "売上総利益 | 会計年度 2025 | 364,691",
+              "comparisonVerificationId": "8d4e90d986541e060d5d32d3ae18c7f60d3c7228858b44b570d76fa5dd93f9b1",
+              "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+              "definitionReviewQuote": "FY2024/FY2025に限定。連結損益計算書の売上総利益合計を比較し、工事と開発・不動産等の内訳を合算しない。大林組FY2024はFY2025有報比較列とData Bookの会計方針変更遡及適用後の値を用い、FY2023以前へ遡及しない。鹿島受注高は同一Factbook建設事業連結総額の自社期間のみ。受注高の会社間同等性は未確認。",
+              "basisSources": [
+                {
+                  "basisKind": "fiscal_period_cover",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "column_role": "current",
+                    "document_id": "S100YITC",
+                    "table_caption": "【連結損益計算書】"
+                  },
+                  "sourceQuote": "当連結会計年度 (自　2025年４月１日 至　2026年３月31日)"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+                  "sourceLocator": {
+                    "document_id": "S100OE64",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "revenue_recognition_common_window",
+                  "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+                  "sourceLocator": {
+                    "document_id": "S100OBLA",
+                    "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+                  },
+                  "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。"
+                },
+                {
+                  "basisKind": "accounting_policy_restatement_selected_window",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "（会計方針の変更）"
+                  },
+                  "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。"
+                },
+                {
+                  "basisKind": "revenue_recognition_selected_window",
+                  "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(5) 重要な収益及び費用の計上基準"
+                  },
+                  "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+                  "sourceLocator": {
+                    "document_id": "S100YGGI",
+                    "section": "(1)"
+                  },
+                  "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "consolidated_accounting_standard",
+                  "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+                  "sourceLocator": {
+                    "document_id": "S100YITC",
+                    "section": "(1）"
+                  },
+                  "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。"
+                },
+                {
+                  "basisKind": "databook_FY2024_restatement_only",
+                  "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+                  "sourceLocator": {
+                    "bbox_pdfplumber_top_left_points": [
+                      57.61999925,
+                      657.6628824999999,
+                      377.5134992500002,
+                      666.7432575
+                    ],
+                    "pdf_page": 3
+                  },
+                  "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。"
+                }
+              ],
+              "retrievedAt": null,
+              "currentOfficialVersionMatchStatus": "matched_current_official_bytes_at_review_time",
+              "restatementStatus": "current_year_under_same_policy",
+              "restatementExplanation": "在外子会社等の収益及び費用換算を直物相場から期中平均相場へ変更。FY2024を遡及適用し、FY2023以前へ拡張しない。誤謬訂正ではない。",
+              "restatementSourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。",
+              "currentOfficialBytesCheckedAt": "2026-10-11T02:15:23.263738+00:00"
+            }
+          }
+        ],
+        "excludedObservations": [
+          {
+            "factId": "a038a6786634943fbab743788248ff671703671372b34355d1061ab6e288a00e",
+            "fiscalYear": "2021",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "dee7aca24de7bca754b2d744b4b423c737130c17abc392c9090d785068783f4b",
+            "fiscalYear": "2022",
+            "reason": "comparison_not_source_reviewed"
+          },
+          {
+            "factId": "e02465d5f54044675f06faac049d3edf1c0d55056ce2f7ddf332641defc8b8e4",
+            "fiscalYear": "2023",
+            "reason": "comparison_not_source_reviewed"
+          }
+        ],
+        "reviewWindow": "FY2024_FY2025",
+        "comparisonIndicatorId": "consolidated_gross_profit_reported",
+        "comparisonEquivalence": {
+          "reviewWindow": "FY2024_FY2025",
+          "id": "obayashi_kajima_consolidated_gross_profit_FY2024_FY2025_v1",
+          "indicatorId": "consolidated_gross_profit_reported",
+          "definition": "日本基準・連結損益計算書の売上総利益合計。百万円・JPY・年度実績。開示合計を保持。",
+          "status": "source_reviewed_equivalent_indicator",
+          "automaticAggregationAllowed": false,
+          "periods": [
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "members": [
+            {
+              "companyId": "OBAYASHI",
+              "metricId": "obayashi_databook_gross_profit_reported",
+              "factIds": [
+                "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361",
+                "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65"
+              ]
+            },
+            {
+              "companyId": "KAJIMA",
+              "metricId": "kajima_annual_consolidated_gross_profit_reported",
+              "factIds": [
+                "9155d23fc79bd4bd28bc071d5a6a9905f7c5d87294c5185a2361a4f82504ec0d",
+                "de0b0b3cde7e6e22d401bf8690ed5f1219438cf5693b4a527eef55bdf2849bd8"
+              ]
+            }
+          ],
+          "basisSources": [
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "context_ref": "Prior1YearDuration",
+                "document_id": "S100YITC",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "前連結会計年度 (自　2024年４月１日 至　2025年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2025-03-31",
+                "verified_period_start": "2024-04-01"
+              },
+              "sourceQuote": "売上総利益合計 295,386 364,691",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": "75e07c60a4c20f87b3cac0ce65c9490655c67ec2c7ae5b09bbcc730d0b42c361"
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100YITC",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "当連結会計年度 (自　2025年４月１日 至　2026年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2026-03-31",
+                "verified_period_start": "2025-04-01"
+              },
+              "sourceQuote": "売上総利益合計 295,386 364,691",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": "c6019953c4af84456c7ba1950b8dbdfb5661ee7532d7f6eb8274ca3c30d43c65"
+            },
+            {
+              "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+              "sourceLocator": {
+                "context_ref": "Prior1YearDuration",
+                "document_id": "S100YGGI",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "前連結会計年度 (自 2024年４月１日 至 2025年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2025-03-31",
+                "verified_period_start": "2024-04-01"
+              },
+              "sourceQuote": "売上総利益合計 323,197 425,868",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": "9155d23fc79bd4bd28bc071d5a6a9905f7c5d87294c5185a2361a4f82504ec0d"
+            },
+            {
+              "sourceFileSha256": "4c29ad305aa28d303263f942021280fd9d3d1e21731ace6128486281bf019b47",
+              "sourceLocator": {
+                "context_ref": "CurrentYearDuration",
+                "document_id": "S100YGGI",
+                "html_element_name": "jppfs_cor:GrossProfit",
+                "period_header_quote": "当連結会計年度 (自 2025年４月１日 至 2026年３月31日)",
+                "scale": 6,
+                "table_caption": "【連結損益計算書】",
+                "unit_ref": "JPY",
+                "verified_period_end": "2026-03-31",
+                "verified_period_start": "2025-04-01"
+              },
+              "sourceQuote": "売上総利益合計 323,197 425,868",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": "de0b0b3cde7e6e22d401bf8690ed5f1219438cf5693b4a527eef55bdf2849bd8"
+            },
+            {
+              "sourceFileSha256": "2c4d7e56eee6f95262510a27e4be1ba4126537d5a6586710d25420a96d24280e",
+              "sourceLocator": {
+                "document_id": "S100OE64",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OE64.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "1738a6b968204d480b20ce73a8036ba197c631d25d46be861e48238f117c0d40",
+              "sourceLocator": {
+                "document_id": "S100OBLA",
+                "section": "会計方針の変更／収益認識に関する会計基準等の適用"
+              },
+              "sourceQuote": "「収益認識に関する会計基準」（企業会計基準第29号　2020年３月31日。以下「収益認識会計基準」という。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財又はサービスと交換に受け取ると見込まれる金額で収益を認識することとした。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "document_id": "S100YITC",
+                "section": "（会計方針の変更）"
+              },
+              "sourceQuote": "（会計方針の変更） （在外子会社等の収益及び費用の換算方法の変更） 在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結会計年度の期首より期中平均相場により円貨に換算する方法に変更している。 この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増していること、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行ったものである。 当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。 この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増加している。 なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更の遡及適用は行っていない。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "6a3ecbd9d63219088fb0609589fd516be32ffb33eb3ee07cd428f84dac53f4b4",
+              "sourceLocator": {
+                "document_id": "S100YGGI",
+                "section": "(5) 重要な収益及び費用の計上基準"
+              },
+              "sourceQuote": "(5) 重要な収益及び費用の計上基準 当社及び連結子会社の主要な事業における主な履行義務の内容及び当該履行義務を充足する通常の時点(収益を認識する通常の時点)は以下のとおりである。 ①　建設事業 土木建築及び機器装置その他建設工事全般について、工事請負契約等を締結の上、施工等を行っており、完成した建設物等を顧客に引き渡す履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、履行義務の充足に係る進捗度の測定は、主として各期末までに発生した工事原価が、予想される工事原価の合計に占める割合に基づいて行っている。 ②　開発事業等 不動産開発全般及び意匠・構造設計、その他設計、エンジニアリング全般について、不動産売買契約・業務委託契約等を締結の上、業務等を行っており、役務の提供又は物件・成果品の顧客への引渡し等の履行義務を負っている。 当該契約について、約束した財又はサービスに対する支配が顧客に一定の期間にわたり移転する場合には、当該財又はサービスを顧客に移転する履行義務を充足するにつれて一定の期間にわたり収益を認識する方法を採用しており、それ以外の場合には、一時点で充足される履行義務であると判断し、物件・成果品の引渡し時点において収益を認識している。一定の期間にわたり収益を認識する方法を採用している場合の履行義務の充足に係る進捗度の測定は、主として各期末までに発生した原価が、予想される原価の合計に占める割合に基づいて行っている。 なお、建設事業及び開発事業等において、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく短い契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足した時点で収益を認識している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "dfd334d589a241df9a2c0b95f1968a3edf12a33aad990b3335c06e5f9c9cfd8d",
+              "sourceLocator": {
+                "document_id": "S100YGGI",
+                "section": "(1)"
+              },
+              "sourceQuote": "(1) 当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "a691fe5ce0624643d4dc9ed00059fd183efa81f47dc881405609d64766666121",
+              "sourceLocator": {
+                "document_id": "S100YITC",
+                "section": "(1）"
+              },
+              "sourceQuote": "(1）当社の連結財務諸表は、「連結財務諸表の用語、様式及び作成方法に関する規則」（昭和51年大蔵省令第28号）に準拠して作成し、「建設業法施行規則」（昭和24年建設省令第14号）に準じて記載している。",
+              "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YITC.pdf",
+              "factId": null
+            },
+            {
+              "sourceFileSha256": "f5b24be90df007ae232f693001f6d039de529abf9fce69a555fa037432d623d8",
+              "sourceLocator": {
+                "bbox_pdfplumber_top_left_points": [
+                  57.61999925,
+                  657.6628824999999,
+                  377.5134992500002,
+                  666.7432575
+                ],
+                "pdf_page": 3
+              },
+              "sourceQuote": "（注）2024年度は会計方針の変更による遡及適用後の数値を記載しております。",
+              "sourceUrl": null,
+              "factId": null
+            }
+          ],
+          "limitations": [
+            "FY2024/FY2025の2年度のみ。大林組FY2024はFY2025有報遡及適用後の比較列と一致。旧有報値を変更しない。",
+            "事業構成・見積り・換算影響は会社ごとに異なる。会社の合計・内訳を自動集計しない。",
+            "受注高の会社間同等性は未確認。旧FY2021/FY2023 windowと混合しない。"
+          ]
+        }
+      },
+      "snapshotHash": "de38efc2d2b16c4e839893505a7effd65fc81a5184df4f0c94de56a17a7b0f99"
+    }
+  ]
+}
