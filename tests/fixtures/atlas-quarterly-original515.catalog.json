@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "buildbase-quarterly-financial-public",
+  "projectionHash": "11641679bfdf36104f8fd4a18ee975ba2390f7b82f4184d9ccb193eab3e85335",
+  "sourceSubsetHash": "bbb737fc866b66a27d495ecced4d38ac0245411d72ca5699d89fd41a7949f3b5",
+  "compressedSha256": "b5b35dd5b003aaf170ce0123452221e255a775011162160258edbb87c3298db9",
+  "dataUrl": "explorer/quarterly-financials.json.gz",
+  "schemaUrl": "explorer/quarterly-financials.schema.json",
+  "coverageCsvUrl": "explorer/quarterly-coverage.csv",
+  "recordCount": 515,
+  "q1RecordCount": 142,
+  "q2RecordCount": 134,
+  "q3RecordCount": 239,
+  "recordedCompanyCount": 9,
+  "directQuarterRecordCount": 30,
+  "cumulative3MonthRecordCount": 132,
+  "cumulative6MonthRecordCount": 124,
+  "cumulative9MonthRecordCount": 221,
+  "stockRecordCount": 8,
+  "companyCount": 21,
+  "coverageCompanyCount": 21,
+  "unreviewedCompanyCount": 12,
+  "sourceDocumentCount": 29,
+  "sourceCohortExport": {
+    "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
+    "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
+    "recordCount": 72
+  },
+  "sourceCohortExports": [
+    {
+      "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
+      "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
+      "recordCount": 72
+    },
+    {
+      "datasetId": "buildbase-okumura-asanuma-quarterly-fy2025",
+      "snapshotHash": "eb5b76b29d89ef08e5289e1e62660795c1f147e8b6441f3fc91aebbcb490868f",
+      "recordCount": 84
+    },
+    {
+      "datasetId": "buildbase-zenitaka-kumagai-quarterly-fy2025",
+      "snapshotHash": "d2b6e417bfd5878667205603c1618bdde79e32d546f899ac555cef82e7aacc53",
+      "recordCount": 90
+    }
+  ],
+  "periodCompanionDocumentCount": 4,
+  "periodCompanionDocuments": [
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20250807_1.pdf",
+      "sha256": "24110fa54d0731960804cbd433184c7f6baaae024989156c2b772f8a24ad1d85",
+      "quarter": 1,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_1.pdf",
+      "sha256": "5825bb6b0b38646d7a51d00e67a673da72054cb14626ff9e92809b2ea0c4b7f1",
+      "quarter": 2,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf",
+      "sha256": "7f48c2b33c237daebbef78574690d5e96b55e0bf85f3a795b951f20bcff5460a",
+      "quarter": 3,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://pdf.irpocket.com/C1861/lAG8/iZSB/OvY0.pdf",
+      "sha256": "44a0a5bc8a740666e538c61363d2d6f7d4eff2745362e3b9f80aedf3d1324507",
+      "quarter": 2,
+      "purpose": "exact_period_proof_only"
+    }
+  ],
+  "currentnessSupplement": [
+    {
+      "sourceCurrentnessCheckId": "0a2af576c807014e67eab152950fc90b8df7e6b0584a34c422feca0bb67c907c",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://data.swcms.net/file/obayashi-ir/dam/jcr:bd453723-8141-4508-8f01-a7e35fc66917/140120250807535695.pdf",
+      "documentSha256": "62bd8389953df70fc2e9900b1461d0a2d7af613fdb22e5ed92e611f744d9a593",
+      "checkedAtUtc": "2026-10-14T12:37:29.533038+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 1286639,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "1854634176e9aeae6e0f8bd037732cf384d4e70c1699a007c3916c6a462989ce",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/presentation/pdf/reference-20260212-j.pdf",
+      "documentSha256": "2bb447cd2db3d555a840f1a27e48ffd5e7d904019ba6fa769a3dc5be5fba8595",
+      "checkedAtUtc": "2026-10-14T12:37:30.427432+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "279459441c7b5377e15d6f0ec816e364f930637b5175c10a9e9b78d374413c9a",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20252q-j.pdf",
+      "documentSha256": "8942fa6fbd6723853fcbdcc651710c07c0a2c4d04e2628244d3aa4e9b63a5816",
+      "checkedAtUtc": "2026-10-14T12:37:30.478840+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "39302a138d8cbdb1f09e66d532117d3d86b7e38b8e3d1eacb16fa96203df4c49",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/results/main/00/teaserItems1/01111/linkList/0/link/20250808kessan3.pdf",
+      "documentSha256": "ab07806fd641a9d1a172f94d958f974b15ddfe779e3b8b844c7335e00dfbf07d",
+      "checkedAtUtc": "2026-10-14T12:37:29.206240+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 240050,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "3f899a4e3c5691bedecf4973ed455edbb0470dd8730760aef6c2e734d6e42687",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20251q-j.pdf",
+      "documentSha256": "ca14277aebee5e33e31bc09d1ed0216499305c817807fdded21d4aa79b6be12d",
+      "checkedAtUtc": "2026-10-14T12:37:30.477471+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "48f16b56ad8a530fd45c24d5938737e9f7783fb73e864824f9c46b15f9263859",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://data.swcms.net/file/obayashi-ir/dam/jcr:b368a092-c85f-4ea0-86f6-1c3548e5cf11/140120251104587256.pdf",
+      "documentSha256": "f017e4ab2f89d8dbd6d73b750e1ada7bfdc86c011e97bbe6fb866c2265c03620",
+      "checkedAtUtc": "2026-10-14T12:37:29.786000+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 1373153,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "7374818262f11971297bf8cc456335b02dcc19bd94dfa2859b4dc9c5b45acf8d",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/presentation/pdf/reference-20251111-j.pdf",
+      "documentSha256": "5c93c79814c127242f02e377b858a7d99f96637779a8b9be272f60683fd5965e",
+      "checkedAtUtc": "2026-10-14T12:37:30.427695+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "7b56412bd4896cc5951033651d11fd5383e8e3b4937e02fce2bc2a9432115c81",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/results/main/00/teaserItems1/01112/linkList/0/link/20260209kessan3.pdf",
+      "documentSha256": "1f674f28a12be8995977b1c90b35ca48479cb30fcce52718731063160dced729",
+      "checkedAtUtc": "2026-10-14T12:37:30.298414+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 239911,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "82b0b960b30b4aedaa18a5bd443dd989c089804576fb3d0c206fc14ecc7fef6d",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://data.swcms.net/file/obayashi-ir/dam/jcr:0f4b24d2-5b4e-450d-8198-58cbf1e3f683/140120260206550663.pdf",
+      "documentSha256": "90ca13160e88863a45f742347291623049bc09f474b0c74b01f2073414fa8373",
+      "checkedAtUtc": "2026-10-14T12:37:30.238359+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 999567,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "a51697138d1e4c3d2ab8a063a40b4c3d6cac24205549886423bf76e42362f28e",
+      "companyId": "OBAYASHI",
+      "sourceUrl": "https://ir.obayashi.co.jp/ja/ir/data/results/main/00/teaserItems1/0111/linkList/0/link/20251105kessann3.pdf",
+      "documentSha256": "8a55e85131e85989054ea072adee674492af8b2dd2e7063db7d13a2332edb1a4",
+      "checkedAtUtc": "2026-10-14T12:37:30.083316+00:00",
+      "httpStatus": 200,
+      "byteComparisonStatus": "equal",
+      "receivedBytes": 911124,
+      "listingStatus": "listed_in_checked_official_ir_page",
+      "correctionListStatus": "no_visible_correction_label_in_checked_page",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "bdde3ad78a79b5fdadb2ede807b9b509d850e50c64c27499a5ccc21c93c4c3e4",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf",
+      "documentSha256": "66662a40835578142443941a3d8b6540214dd375e04ec59294d92ca1d1326639",
+      "checkedAtUtc": "2026-10-14T12:37:30.527654+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    },
+    {
+      "sourceCurrentnessCheckId": "d350d23aec76cf1fa04fc2ad36a0bbce0ad137d68e420cd5ffff9537b34b0650",
+      "companyId": "KAJIMA",
+      "sourceUrl": "https://www.kajima.co.jp/ir/presentation/pdf/reference-20250806-j.pdf",
+      "documentSha256": "5902fb1145f9f8546d377444ac1afe293cf1607b158e793d96a7058af56e0e7e",
+      "checkedAtUtc": "2026-10-14T12:37:30.298165+00:00",
+      "httpStatus": 500,
+      "byteComparisonStatus": "not_compared",
+      "receivedBytes": 0,
+      "listingStatus": "unknown_dynamic_feed_not_captured",
+      "correctionListStatus": "unconfirmed",
+      "originalAcquisitionTimestampStatus": "not_recorded",
+      "automaticComparisonAllowed": false,
+      "automaticAggregationAllowed": false,
+      "checkedScope": "Named URL response at checked UTC and specified captured listing only"
+    }
+  ],
+  "currentnessSupplementHash": "afc344d0c802af78ce68329c66c85a51dc91eabb3b16ec8e2034fb923d2232ac",
+  "companies": [
+    {
+      "companyId": "MAEDA",
+      "companyName": "前田建設工業",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "SMCC",
+      "companyName": "三井住友建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "INFR",
+      "companyName": "インフロニア・ホールディングス",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KAJIMA",
+      "companyName": "鹿島建設",
+      "q1RecordCount": 34,
+      "q2RecordCount": 34,
+      "q3RecordCount": 34,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 30,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TAISEI",
+      "companyName": "大成建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "OBAYASHI",
+      "companyName": "大林組",
+      "q1RecordCount": 18,
+      "q2RecordCount": 18,
+      "q3RecordCount": 18,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "SHIMIZU",
+      "companyName": "清水建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TAKENAKA",
+      "companyName": "竹中工務店",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TODA",
+      "companyName": "戸田建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "NISHIMATSU",
+      "companyName": "西松建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ANDO_HAZAMA",
+      "companyName": "安藤・間",
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "PENTA",
+      "companyName": "五洋建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KUMAGAI",
+      "companyName": "熊谷組",
+      "q1RecordCount": 16,
+      "q2RecordCount": 16,
+      "q3RecordCount": 16,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "HASEKO",
+      "companyName": "長谷工コーポレーション",
+      "q1RecordCount": 10,
+      "q2RecordCount": 10,
+      "q3RecordCount": 10,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TOKYU",
+      "companyName": "東急建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "OKUMURA",
+      "companyName": "奥村組",
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TOA",
+      "companyName": "東亜建設工業",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ZENITAKA",
+      "companyName": "錢高組",
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ASANUMA",
+      "companyName": "淺沼組",
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "MATSUI",
+      "companyName": "松井建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KITANO",
+      "companyName": "北野建設",
+      "q1RecordCount": 8,
+      "q2RecordCount": 0,
+      "q3RecordCount": 105,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    }
+  ],
+  "metrics": [
+    {
+      "metricId": "completed_construction_revenue_consolidated_reported",
+      "name": "完成工事高"
+    },
+    {
+      "metricId": "construction_order_value_as_reported",
+      "name": "建設事業の受注高（原表カテゴリ別）"
+    },
+    {
+      "metricId": "depreciation_expense_reported",
+      "name": "減価償却費"
+    },
+    {
+      "metricId": "development_order_value_as_reported",
+      "name": "開発事業等の受注高"
+    },
+    {
+      "metricId": "eps_consolidated_reported",
+      "name": "1株当たり四半期純利益"
+    },
+    {
+      "metricId": "equity_consolidated_reported",
+      "name": "自己資本"
+    },
+    {
+      "metricId": "equity_ratio_consolidated_reported",
+      "name": "自己資本比率"
+    },
+    {
+      "metricId": "net_assets_consolidated_reported",
+      "name": "純資産"
+    },
+    {
+      "metricId": "net_assets_per_share_consolidated_reported",
+      "name": "1株当たり純資産"
+    },
+    {
+      "metricId": "net_profit_parent_consolidated_reported",
+      "name": "親会社株主に帰属する四半期純利益"
+    },
+    {
+      "metricId": "operating_profit_consolidated_reported",
+      "name": "営業利益"
+    },
+    {
+      "metricId": "ordinary_profit_consolidated_reported",
+      "name": "経常利益"
+    },
+    {
+      "metricId": "real_estate_order_value_as_reported",
+      "name": "不動産事業等の受注高"
+    },
+    {
+      "metricId": "sales_consolidated_reported",
+      "name": "売上高"
+    },
+    {
+      "metricId": "segment_external_customer_revenue_reported",
+      "name": "外部顧客への売上高"
+    },
+    {
+      "metricId": "segment_fixed_asset_impairment_loss_construction_segment_reported",
+      "name": "建設事業の固定資産減損損失"
+    },
+    {
+      "metricId": "segment_intersegment_internal_revenue_reported",
+      "name": "セグメント間内部売上高・振替高"
+    },
+    {
+      "metricId": "segment_other_revenue_reported",
+      "name": "その他の収益"
+    },
+    {
+      "metricId": "segment_reported_total_revenue_reported",
+      "name": "セグメントの報告売上合計"
+    },
+    {
+      "metricId": "segment_revenue_from_customer_contracts_reported",
+      "name": "顧客との契約から生じる収益"
+    },
+    {
+      "metricId": "segment_revenue_over_time_reported",
+      "name": "一定期間にわたり認識する収益"
+    },
+    {
+      "metricId": "segment_revenue_point_in_time_reported",
+      "name": "一時点で認識する収益"
+    },
+    {
+      "metricId": "segment_segment_profit_reported",
+      "name": "セグメント利益"
+    },
+    {
+      "metricId": "total_assets_consolidated_reported",
+      "name": "総資産"
+    },
+    {
+      "metricId": "total_orders_as_reported",
+      "name": "受注の全体合計（不動産・開発等を含む）"
+    }
+  ]
+}

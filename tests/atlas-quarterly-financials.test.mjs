@@ -23,13 +23,13 @@ function assertSourceValues(actual,source,message){if(Array.isArray(actual)){ass
 function withWindow(fn){const before=globalThis.window;globalThis.window={__ATLAS_EXPLORER__:{base:'/mlit-statistics-dashboard/'}};try{return fn();}finally{globalThis.window=before;}}
 
 
-test('quarterly projection retains old425 plus Zenitaka42 and Kumagai48 financial records, separately from annual and Q4 candidates',async()=>{
+test('quarterly projection retains old515 plus INFR24 and Nishimatsu99 financial and issuer-order records, separately from annual and Q4 candidates',async()=>{
  const p=await validateQuarterlyAsset(asset,catalog);assert.equal(p.records.length,QUARTER_RECORD_COUNT);assert.equal(p.companies.length,21);
  assert.equal(createHash('sha256').update(bytes).digest('hex'),catalog.compressedSha256);
- assert.deepEqual(quarterlyRecordCounts(p.records),{recordCount:515,q1RecordCount:142,q2RecordCount:134,q3RecordCount:239,recordedCompanyCount:9,directQuarterRecordCount:30,cumulative3MonthRecordCount:132,cumulative6MonthRecordCount:124,cumulative9MonthRecordCount:221,stockRecordCount:8});
- assert.equal(catalog.sourceDocumentCount,29);assert.equal(catalog.periodCompanionDocumentCount,4);assert.equal(catalog.unreviewedCompanyCount,12);
+ assert.deepEqual(quarterlyRecordCounts(p.records),{recordCount:638,q1RecordCount:183,q2RecordCount:175,q3RecordCount:280,recordedCompanyCount:11,directQuarterRecordCount:30,cumulative3MonthRecordCount:173,cumulative6MonthRecordCount:165,cumulative9MonthRecordCount:262,stockRecordCount:8});
+ assert.equal(catalog.sourceDocumentCount,35);assert.equal(catalog.periodCompanionDocumentCount,4);assert.equal(catalog.unreviewedCompanyCount,10);
  assert.deepEqual(Object.fromEntries(Object.keys(QUARTER_DOCUMENTS).map(x=>[x,p.records.filter(r=>r.extractor_version===x).length])),{reviewed_kitano_q3_summary_segments_v1:105,reviewed_kitano_q1_summary_v1:8});
- assert.deepEqual(Object.fromEntries(['quarter_cumulative_9months','quarter_cumulative_6months','quarter_cumulative_3months','quarter_only_3months','point_in_time_stock'].map(x=>[x,p.records.filter(r=>r.period_type===x).length])),{quarter_cumulative_9months:221,quarter_cumulative_6months:124,quarter_cumulative_3months:132,quarter_only_3months:30,point_in_time_stock:8});
+ assert.deepEqual(Object.fromEntries(['quarter_cumulative_9months','quarter_cumulative_6months','quarter_cumulative_3months','quarter_only_3months','point_in_time_stock'].map(x=>[x,p.records.filter(r=>r.period_type===x).length])),{quarter_cumulative_9months:262,quarter_cumulative_6months:165,quarter_cumulative_3months:173,quarter_only_3months:30,point_in_time_stock:8});
  for(const r of p.records)for(const key of QUARTER_PERMISSION_KEYS)assert.equal(r.permissions[key],false);
  assert.doesNotMatch(JSON.stringify(p),/reviewed_kitano_annual|displayed_amount_difference|derived_q4_candidates/);
  const changed=structuredClone(asset);changed.payload.records[0].value++;await assert.rejects(validateQuarterlyAsset(changed,catalog),/データ版/);
@@ -58,7 +58,7 @@ test('month-only stocks, ratio and per-share precision remain distinct; split an
 
 test('21-company coverage is bounded to recorded financial counts and distinguishes unreviewed from nondisclosure',async()=>{
  const companies=asset.payload.companies,kitano=companies.find(c=>c.companyId==='KITANO');assert.equal(kitano.q1RecordCount,8);assert.equal(kitano.q3RecordCount,105);
- for(const c of companies.filter(c=>!['KITANO','OBAYASHI','KAJIMA','HASEKO','ANDO_HAZAMA','OKUMURA','ASANUMA','ZENITAKA','KUMAGAI'].includes(c.companyId))){assert.equal(c.status,'not_reviewed');assert.equal(c.nonDisclosureAssertion,false);assert.equal(c.q1RecordCount+c.q2RecordCount+c.q3RecordCount,0);assert.equal(filterQuarterlyRecords(asset.payload,{companyId:c.companyId}).length,0);}
+ for(const c of companies.filter(c=>!['KITANO','OBAYASHI','KAJIMA','HASEKO','ANDO_HAZAMA','OKUMURA','ASANUMA','ZENITAKA','KUMAGAI','INFR','NISHIMATSU'].includes(c.companyId))){assert.equal(c.status,'not_reviewed');assert.equal(c.nonDisclosureAssertion,false);assert.equal(c.q1RecordCount+c.q2RecordCount+c.q3RecordCount,0);assert.equal(filterQuarterlyRecords(asset.payload,{companyId:c.companyId}).length,0);}
  assert.equal(await readFile(path.join(root,'public/explorer/quarterly-coverage.csv'),'utf8'),quarterlyCoverageCsv(companies));
  const mutated=structuredClone(asset);mutated.payload.companies[0].status='not_disclosed';await assert.rejects(validateQuarterlyAsset(await rehash(mutated)),/確認範囲/);
 });
@@ -68,14 +68,14 @@ test('every source fact is findable and all records remain reachable through pag
  try{
   const seen=new Set();for(let page=0;page<Math.ceil(QUARTER_RECORD_COUNT/25);page++){const html=renderQuarterlyView(asset,{},page);for(const m of html.matchAll(/data-quarter-fact-id="([a-f0-9]+)"/g))seen.add(m[1]);assert.match(html,/mlit-statistics-dashboard\/explorer\/quarterly-coverage\.csv/);}
   assert.equal(seen.size,QUARTER_RECORD_COUNT);for(const r of asset.payload.records)assert.deepEqual(filterQuarterlyRecords(asset.payload,{query:r.fact_id}).map(x=>x.fact_id),[r.fact_id]);
-  assert.equal(filterQuarterlyRecords(asset.payload,{query:'北野建設'}).length,113);assert.equal(filterQuarterlyRecords(asset.payload,{periodType:'quarter_cumulative_3months'}).length,132);assert.equal(filterQuarterlyRecords(asset.payload,{scope:'segment'}).length,75);
+  assert.equal(filterQuarterlyRecords(asset.payload,{query:'北野建設'}).length,113);assert.equal(filterQuarterlyRecords(asset.payload,{periodType:'quarter_cumulative_3months'}).length,173);assert.equal(filterQuarterlyRecords(asset.payload,{scope:'segment'}).length,75);
   const empty=renderQuarterlyView(asset,{quarterCompany:'MATSUI'});assert.match(empty,/一致0件/);assert.match(empty,/未確認の会社.*非開示.*0.*判定しません/);assert.match(empty,/会社別の収録範囲/);
   const html=Array.from({length:Math.ceil(QUARTER_RECORD_COUNT/25)},(_,page)=>renderQuarterlyView(asset,{},page)).join('');assert.match(html,/株式分割/);assert.match(html,/Q3/);assert.doesNotMatch(html,/レビュー境界|確認範囲境界|別レビュー|レビュー単位/);
  }finally{globalThis.window=savedWindow;}
 });
 
 test('selected CSV and JSON contain every matched row, complete source precision/provenance and false permissions',()=>{
- const all=quarterlyExport(asset),q1=quarterlyExport(asset,{periodType:'quarter_cumulative_3months'});assert.equal(all.records.length,QUARTER_RECORD_COUNT);assert.equal(q1.records.length,132);assert.equal(q1.origin.sourceSubsetHash,asset.payload.origin.sourceSubsetHash);assert.equal(q1.projectionHash,asset.projectionHash);
+ const all=quarterlyExport(asset),q1=quarterlyExport(asset,{periodType:'quarter_cumulative_3months'});assert.equal(all.records.length,QUARTER_RECORD_COUNT);assert.equal(q1.records.length,173);assert.equal(q1.origin.sourceSubsetHash,asset.payload.origin.sourceSubsetHash);assert.equal(q1.projectionHash,asset.projectionHash);
  const csv=quarterlyCsv(asset);for(const r of all.records){assert.ok(csv.includes(r.fact_id));assert.ok(csv.includes(r.source_file_sha256));assert.ok(csv.includes(r.source_url));}
  assert.match(csv,/value_raw/);assert.match(csv,/share_split_comparative_basis/);assert.match(csv,/source_locator/);assert.match(csv,/as_of_status/);assert.match(csv,/complete_public_source_record/);assert.match(csv,/unknown_not_recorded/);assert.match(csv,/metadata_conflict_not_separate_source_version/);
  const stockCsv=quarterlyCsv(asset,{periodType:'point_in_time_stock'});for(const r of asset.payload.records.filter(x=>x.period_type==='point_in_time_stock'))assert.ok(stockCsv.includes(r.fact_id));
@@ -207,7 +207,7 @@ test('published old425 fields, both old cohort exports, companion3 and supplemen
  assert.deepEqual(catalog.sourceCohortExports.slice(0,2),oldCatalog.sourceCohortExports);assert.deepEqual(catalog.sourceCohortExport,oldCatalog.sourceCohortExport);assert.deepEqual(catalog.currentnessSupplement,oldCatalog.currentnessSupplement);assert.equal(catalog.currentnessSupplementHash,oldCatalog.currentnessSupplementHash);assert.deepEqual(catalog.periodCompanionDocuments.slice(0,3),oldCatalog.periodCompanionDocuments);
  for(const [company,count]of [['ZENITAKA',42],['KUMAGAI',48]]){const rows=asset.payload.records.filter(r=>r.company_id===company);assert.equal(rows.length,count);for(const row of rows){assert.equal(row.period_type,'quarter_cumulative_'+row.source_quarter_number*3+'months');for(const key of QUARTER_PERMISSION_KEYS)assert.equal(row.permissions[key],false);}}
  assert.equal(filterQuarterlyRecords(asset.payload,{query:'錢高組'}).length,42);assert.equal(filterQuarterlyRecords(asset.payload,{query:'銭高組'}).length,42);assert.equal(filterQuarterlyRecords(asset.payload,{query:'熊谷組'}).length,48);
- assert.equal(catalog.metrics.length,25);assert.equal(catalog.metrics.find(m=>m.metricId==='completed_construction_revenue_consolidated_reported').name,'完成工事高');
+ assert.equal(catalog.metrics.length,26);assert.equal(catalog.metrics.find(m=>m.metricId==='completed_construction_revenue_consolidated_reported').name,'完成工事高');
 });
 
 test('Kumagai completed construction revenue is independent from sales and all overseas/domestic raw amounts keep units and acquisition scope',async()=>{
@@ -235,4 +235,65 @@ test('Zenitaka standalone order values retain their own locator and corrected co
  for(const row of orders){const basis=row.source_locator.period_binding_basis,locator=basis.source_locator;assert.equal(locator.pdf_page,7);assert.equal(locator.printed_page,5);assert.equal(locator.same_pdf_statement_printed_page,5);assert.equal(row.metadata_correction_status,'reviewed_period_locator_printed_page');assert.ok(row.correction_ids.length);assert.notEqual(row.source_locator.pdf_page,locator.pdf_page);assert.notEqual(row.source_locator.printed_page,locator.printed_page);}
  const html=withWindow(()=>renderQuarterlyView(asset,{quarterCompany:'ZENITAKA',quarterScope:'standalone'},0,catalog));assert.match(html,/PDF物理ページ 7 \/ 資料の表示ページ 5/);assert.match(html,/連結損益計算書は期間だけの根拠に使います/);assert.match(html,/単体受注の対象範囲と同じとは扱いません/);
  const wrong=structuredClone(asset);wrong.payload.records.find(r=>r.company_id==='ZENITAKA'&&r.data_scope==='standalone').source_locator.period_binding_basis.source_locator.printed_page=8;await assert.rejects(validateQuarterlyAsset(await rehash(wrong)),/期間出典と単体受注/);
+});
+
+test('published old515 rows, corrected metadata, three source cohorts, four companions and twelve checks remain exact',async()=>{
+ const priorBytes=await readFile(path.join(root,'tests/fixtures/atlas-quarterly-original515.json.gz')),prior=JSON.parse(gunzipSync(priorBytes));
+ const priorCatalogBytes=await readFile(path.join(root,'tests/fixtures/atlas-quarterly-original515.catalog.json')),priorCatalog=JSON.parse(priorCatalogBytes);
+ assert.equal(createHash('sha256').update(priorBytes).digest('hex'),'b5b35dd5b003aaf170ce0123452221e255a775011162160258edbb87c3298db9');
+ assert.equal(createHash('sha256').update(priorCatalogBytes).digest('hex'),'e071f944861f92ae2f4466e409f400007ed074654a7e3fb1e1b436022f01092a');
+ assert.equal(prior.payload.records.length,515);for(const row of prior.payload.records)assert.deepEqual(asset.payload.records.find(r=>r.fact_id===row.fact_id),row,row.fact_id);
+ assert.equal(prior.payload.records.filter(r=>r.correction_ids?.length).length,42);
+ assert.deepEqual(catalog.sourceCohortExports.slice(0,3),priorCatalog.sourceCohortExports);assert.deepEqual(catalog.sourceCohortExport,priorCatalog.sourceCohortExport);
+ assert.deepEqual(catalog.currentnessSupplement,priorCatalog.currentnessSupplement);assert.equal(catalog.currentnessSupplementHash,priorCatalog.currentnessSupplementHash);assert.deepEqual(catalog.periodCompanionDocuments,priorCatalog.periodCompanionDocuments);
+ assert.deepEqual(asset.payload.origin.sourceDocuments.slice(0,29),prior.payload.origin.sourceDocuments);
+});
+
+test('INFR IFRS PBT is independent from ordinary profit and native acquisition, periods and fields stay source-specific',async()=>{
+ const rows=asset.payload.records.filter(r=>r.company_id==='INFR');assert.equal(rows.length,24);
+ assert.equal(rows.filter(r=>r.metric_id==='profit_before_tax_consolidated_reported').length,6);assert.equal(rows.filter(r=>r.metric_id==='ordinary_profit_consolidated_reported').length,0);
+ assert.equal(catalog.metrics.find(m=>m.metricId==='profit_before_tax_consolidated_reported').name,'税引前利益（IFRS）');
+ for(const row of rows){assert.equal(row.accounting_standard_id,'IFRS');assert.equal(row.accounting_standard_as_disclosed,'ＩＦＲＳ');assert.equal(row.data_scope,'consolidated');assert.equal(row.reporting_entity_id,'INFR');assert.equal(row.source_locator.pdf_page,9);assert.equal(row.source_locator.period_binding_basis.physical_page,9);assert.equal(row.source_selected_field_availability.ordinary_profit_consolidated_reported.status,'not_applicable_in_selected_ifrs_table');assert.equal(row.source_selected_field_availability.ordinary_profit_consolidated_reported.company_wide_non_disclosure_claim,false);}
+ const parentQ2=rows.find(r=>r.metric_id==='net_profit_parent_consolidated_reported'&&r.source_quarter_number===2&&r.fiscal_year==='2025');assert.equal(parentQ2.value,24558);assert.equal(parentQ2.value_raw,'24,558');
+ for(const row of asset.payload.records.filter(r=>['INFR','NISHIMATSU'].includes(r.company_id))){assert.equal(row.unit,'百万円');assert.equal(row.retrieved_at,row.as_of_check_utc);assert.match(row.retrieved_at,/^2026-10-14T16:/);assert.equal(row.source_acquisition_timestamp_status,'known_actual_official_get_completion_utc');assert.equal(row.source_url_byte_verification_status,'http_200_saved_byte_equal');assert.equal(row.current_official_version_match_status,'unconfirmed_after_check');assert.equal(row.period_type,'quarter_cumulative_'+row.source_quarter_number*3+'months');for(const key of ['source_family','period_kind','period_end_month','as_of_date','candidate_disposition','source_period_semantics','as_of_check_utc_status','retrieved_at_basis','subject_entity_id','source_subject_name_as_disclosed'])assert.equal(Object.hasOwn(row,key),false,key);}
+ assert.equal(filterQuarterlyRecords(asset.payload,{query:'インフロニア'}).length,24);assert.equal(filterQuarterlyRecords(asset.payload,{query:'INFRONEER'}).length,24);
+ assert.equal(filterQuarterlyRecords(asset.payload,{companyId:'INFR',metricId:'ordinary_profit_consolidated_reported'}).length,0);
+ const html=withWindow(()=>renderQuarterlyView(asset,{quarterCompany:'INFR',quarterMetric:'profit_before_tax_consolidated_reported'},0,catalog));assert.match(html,/税引前利益（IFRS）/);assert.match(html,/日本基準の経常利益との対応づけ・自動比較は行いません/);assert.match(html,/会社全体の非開示を意味しません/);assert.match(html,/PDF物理ページ 9 \/ 資料の表示ページ 6/);assert.match(html,/原資料の取得UTC 2026-10-14T16:/);
+ const wrong=structuredClone(asset);wrong.payload.records.find(r=>r.company_id==='INFR'&&r.metric_id==='profit_before_tax_consolidated_reported').metric_id='ordinary_profit_consolidated_reported';await assert.rejects(validateQuarterlyAsset(await rehash(wrong)),/会計区分/);
+ const invented=structuredClone(asset);invented.payload.records.find(r=>r.company_id==='INFR').as_of_date=null;await assert.rejects(validateQuarterlyAsset(await rehash(invented)),/原記録にない/);
+});
+
+test('Nishimatsu native construction order grid preserves consolidated versus individual, redundant totals and literal dash omission',async()=>{
+ const rows=asset.payload.records.filter(r=>r.company_id==='NISHIMATSU'),orders=rows.filter(r=>r.metric_id==='construction_order_value_as_reported');assert.equal(rows.length,99);assert.equal(orders.length,75);
+ assert.equal(orders.filter(r=>r.data_scope==='consolidated').length,6);assert.equal(orders.filter(r=>r.data_scope==='standalone').length,69);
+ assert.equal(orders.reduce((n,r)=>n+r.source_locator.corroborating_alias_locators.length,0),6);
+ for(const row of orders){assert.equal(row.reporting_entity_id,'NISHIMATSU');assert.equal(row.accounting_standard_id,'JGAAP');assert.equal(row.source_locator.period_binding_basis.status,'direct_exact_from_native_order_table');assert.equal(row.value_raw.includes('－'),false);assert.equal(row.source_locator.row_label,row.source_row_label_as_disclosed);assert.equal(row.source_locator.period_binding_basis.physical_page,row.source_locator.pdf_page);}
+ const buildingOverseas=orders.filter(r=>r.source_parent_category_as_disclosed==='建築'&&r.source_row_label_as_disclosed.replaceAll(' ','')==='海外');assert.equal(buildingOverseas.length,3);assert.ok(buildingOverseas.every(r=>r.fiscal_year==='2024'));
+ for(const q of [1,2,3])assert.equal(orders.filter(r=>r.source_quarter_number===q).length,25);
+ assert.equal(filterQuarterlyRecords(asset.payload,{query:'西松'}).length,99);assert.equal(quarterlyExport(asset,{companyId:'NISHIMATSU',scope:'standalone'}).records.length,69);
+ const csv=quarterlyCsv(asset,{companyId:'NISHIMATSU'});for(const field of ['accounting_standard_id','source_row_label_as_disclosed','source_parent_category_as_disclosed','source_selected_field_availability','corroborating_alias_locators','complete_public_source_record'])assert.ok(csv.includes(field));
+ const html=withWindow(()=>Array.from({length:4},(_,page)=>renderQuarterlyView(asset,{quarterCompany:'NISHIMATSU'},page,catalog)).join(''));assert.match(html,/個別受注合計の重複欄は照合位置として保持/);assert.match(html,/受注表の開始・終了日をその表の対象範囲に保持/);assert.match(html,/連結損益計算書の開始・終了日を連結財務の期間だけに使います/);assert.match(html,/原資料の行：建築/);
+ const lostAlias=structuredClone(asset);lostAlias.payload.records.find(r=>r.source_locator.corroborating_alias_locators?.length).source_locator.corroborating_alias_locators=[];await assert.rejects(validateQuarterlyAsset(await rehash(lostAlias)),/照合位置件数/);
+});
+
+test('new exact official provider URLs and profile-specific schema reject private aliases, misbound periods and old-profile relaxation',async()=>{
+ const schema=JSON.parse(await readFile(path.join(root,'public/explorer/quarterly-financials.schema.json'),'utf8'));delete schema.$schema;const validate=new Ajv({allErrors:true}).compile(schema);
+ for(const url of ['https://ssl4.eir-parts.net/doc/9999/tdnet/2669706/00.pdf','https://ssl4.eir-parts.net/doc/1820/tdnet/unregistered/00.pdf','https://ssl4.eir-parts.net/doc/1820/tdnet/2669706/00.pdf?token=secret','http://ssl4.eir-parts.net/doc/1820/tdnet/2669706/00.pdf','https://www.infroneer.com/pdf/ir/factbook/FY2025_2Q_fact.pdf','https://www.infroneer.com/pdf/ir/presentations/FY2025_1Q_FP.pdf'])assert.equal(quarterlySourceUrl(url),null);
+ const aliasPrivate=structuredClone(asset);aliasPrivate.payload.records.find(r=>r.source_locator.corroborating_alias_locators?.length).source_locator.corroborating_alias_locators[0].source_path='data/raw/private.pdf';assert.equal(validate(aliasPrivate),false);await assert.rejects(validateQuarterlyAsset(await rehash(aliasPrivate)),/公開対象外/);
+ const misbound=structuredClone(asset);misbound.payload.records.find(r=>r.company_id==='NISHIMATSU').source_locator.period_binding_basis.source_sha256='0'.repeat(64);await assert.rejects(validateQuarterlyAsset(await rehash(misbound)),/累計期間根拠/);
+ const nonDisclosure=structuredClone(asset);nonDisclosure.payload.records.find(r=>r.company_id==='INFR').source_selected_field_availability.ordinary_profit_consolidated_reported.company_wide_non_disclosure_claim=true;assert.equal(validate(nonDisclosure),false);await assert.rejects(validateQuarterlyAsset(await rehash(nonDisclosure)),/非開示/);
+ const oldAbsent=structuredClone(asset);delete oldAbsent.payload.records.find(r=>r.company_id==='KITANO').as_of_date;assert.equal(validate(oldAbsent),false);
+ const oldNewField=structuredClone(asset);oldNewField.payload.records.find(r=>r.company_id==='KITANO').accounting_standard_id='IFRS';assert.equal(validate(oldNewField),false);await assert.rejects(validateQuarterlyAsset(await rehash(oldNewField)),/公開対象外/);
+ const oldNewLocator=structuredClone(asset);oldNewLocator.payload.records.find(r=>r.company_id==='KITANO').source_locator.corroborating_alias_locators=[];assert.equal(validate(oldNewLocator),false);await assert.rejects(validateQuarterlyAsset(await rehash(oldNewLocator)),/公開対象外/);
+ assert.doesNotMatch(JSON.stringify(asset)+JSON.stringify(catalog),/heldSourceObservations|sourcePlaceholders|sourceConflicts|formal_statement_reconciliation|source_subject_name_as_disclosed|nishimatsu_eir|data\/raw\/|\/Volumes\//);
+});
+
+test('new adopted Source export binds its own snapshot and all123 full rows while held observations remain Source-only',{skip:!sourceRoot},async()=>{
+ const own=JSON.parse(await readFile(path.join(sourceRoot,'data/ai_infr_nishimatsu_quarterly/export.json'),'utf8'));
+ const ledger=(await readFile(path.join(sourceRoot,'data/marts/public_disclosures/facts_effective.jsonl'),'utf8')).trim().split('\n').map(JSON.parse),selected=selectQuarterlySourceRows(ledger);
+ assert.deepEqual(await assertQuarterlyCohortExport(own,selected),catalog.sourceCohortExports[3]);assert.equal(catalog.sourceCohortExports.length,4);assert.equal(own.snapshotHash,'d668264cd72c0bd5e7b68b39ed3aefb8f77e4018fdd8155dedb721589eb33192');assert.equal(own.payload.records.length,123);assert.equal(own.payload.heldSourceObservations.length,50);assert.equal(own.payload.sourcePlaceholders.length,3);assert.equal(own.payload.sourceConflicts.length,1);
+ for(const row of own.payload.records)assert.deepEqual(selected.find(r=>r.fact_id===row.fact_id),row);
+ const changed=structuredClone(own);changed.payload.records[0].source_locator.pdf_page++;await assert.rejects(assertQuarterlyCohortExport(changed,selected),/原記録/);
+ const mislabeled=structuredClone(own);mislabeled.snapshotHash=catalog.sourceCohortExports[2].snapshotHash;await assert.rejects(assertQuarterlyCohortExport(mislabeled,selected),/出力版/);
+ for(const held of own.payload.heldSourceObservations)assert.equal(asset.payload.records.some(r=>r.source_cell_id===held.source_observation_id),false);
 });

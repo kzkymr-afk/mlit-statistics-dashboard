@@ -81,3 +81,16 @@ test('company and period selectors filter the displayed records without changing
  assert.match(filtered,/収録9件 · 一致4件/);assert.equal([...filtered.matchAll(/data-quarter-fact-id=/g)].length,4);
  assert.match(filtered,/data-quarter-filter="quarterCompany"/);assert.match(filtered,/data-quarter-filter="quarterPeriod"/);assert.match(filtered,/data-quarter-filter="quarterScope"/);
 });
+
+test('adopted native quarterly cards reach every new fact and keep accounting, categories, alias and period proof readable',()=>{
+ for(const [company,count,pages]of [['INFR',24,1],['NISHIMATSU',99,4]]){
+  const rows=publicAsset.payload.records.filter(r=>r.company_id===company),seen=new Set(),html=[];assert.equal(rows.length,count);
+  for(let page=0;page<pages;page++){const rendered=renderer.renderQuarterlyView(publicAsset,{quarterCompany:company},page);html.push(rendered);for(const m of rendered.matchAll(/data-quarter-fact-id="([a-f0-9]+)"/g))seen.add(m[1]);}
+  const rendered=html.join('');assert.equal(seen.size,count);for(const row of rows)assert.ok(seen.has(row.fact_id));
+  assert.match(rendered,/同じPDF内の期間根拠/);assert.match(rendered,/Q2は6か月累計/);assert.match(rendered,/原資料の取得UTC 2026-10-14T16:/);assert.match(rendered,/期間種別の追加表記は未収録/);assert.doesNotMatch(rendered,/undefined|NaN|data\/raw\/|heldSourceObservations|sourcePlaceholders|sourceConflicts/);
+  if(company==='INFR'){assert.match(rendered,/税引前利益（IFRS）/);assert.match(rendered,/会社全体の非開示を意味しません/);}else{assert.match(rendered,/原資料の会計基準：日本基準/);assert.match(rendered,/原資料の行：建築/);assert.match(rendered,/個別受注合計の重複欄は照合位置として保持/);}
+ }
+ const noOrdinary=renderer.renderQuarterlyView(publicAsset,{quarterCompany:'INFR',quarterMetric:'ordinary_profit_consolidated_reported'},0);assert.match(noOrdinary,/一致0件/);assert.match(noOrdinary,/未確認の会社・期間を非開示や0とは判定しません/);
+ const unsafe=structuredClone(publicAsset),row=unsafe.payload.records.find(r=>r.company_id==='NISHIMATSU'&&r.source_parent_category_as_disclosed);row.source_parent_category_as_disclosed='<img src=x onerror=alert(1)>';row.source_row_label_as_disclosed='<script>native row</script>';
+ const escaped=renderer.renderQuarterlyView(unsafe,{quarterCompany:'NISHIMATSU',quarterQuery:row.fact_id},0);assert.match(escaped,/&lt;img src=x onerror=alert\(1\)&gt;/);assert.match(escaped,/&lt;script&gt;native row&lt;\/script&gt;/);assert.doesNotMatch(escaped,/<img src=x|<script>native row/);
+});
