@@ -94,3 +94,14 @@ test('adopted native quarterly cards reach every new fact and keep accounting, c
  const unsafe=structuredClone(publicAsset),row=unsafe.payload.records.find(r=>r.company_id==='NISHIMATSU'&&r.source_parent_category_as_disclosed);row.source_parent_category_as_disclosed='<img src=x onerror=alert(1)>';row.source_row_label_as_disclosed='<script>native row</script>';
  const escaped=renderer.renderQuarterlyView(unsafe,{quarterCompany:'NISHIMATSU',quarterQuery:row.fact_id},0);assert.match(escaped,/&lt;img src=x onerror=alert\(1\)&gt;/);assert.match(escaped,/&lt;script&gt;native row&lt;\/script&gt;/);assert.doesNotMatch(escaped,/<img src=x|<script>native row/);
 });
+
+test('Shimizu Toda cards expose all144 adopted values and separate literal scope from interpretation',()=>{
+ for(const [company,count]of [['SHIMIZU',32],['TODA',112]]){
+  const rows=publicAsset.payload.records.filter(r=>r.company_id===company),seen=new Set(),html=[];assert.equal(rows.length,count);
+  for(let page=0;page<Math.ceil(count/25);page++){const rendered=renderer.renderQuarterlyView(publicAsset,{quarterCompany:company},page);html.push(rendered);for(const m of rendered.matchAll(/data-quarter-fact-id="([a-f0-9]+)"/g))seen.add(m[1]);}
+  const rendered=html.join('');assert.equal(seen.size,count);for(const row of rows)assert.ok(seen.has(row.fact_id));assert.match(rendered,/対象範囲の原文：/);assert.match(rendered,/対象範囲の解釈（原文引用とは別）/);assert.match(rendered,/同じPDF内の期間根拠/);assert.match(rendered,/Q2は6か月累計/);assert.match(rendered,/原資料の取得UTC 2026-10-14T18:/);assert.match(rendered,/資料全体の訂正履歴・確認後の版は未確認/);assert.doesNotMatch(rendered,/undefined|NaN|data\/raw\/|heldSourceObservations|sourcePlaceholders|sourceConflicts/);
+  if(company==='SHIMIZU'){assert.match(rendered,/海外受注高（連結・参考値）/);assert.match(rendered,/会社全体の連結受注合計ではありません/);assert.match(rendered,/比較値の再表示根拠（清水Q3・前年財務のみ）/);}else{assert.match(rendered,/建設事業の小計とは区別します/);assert.match(rendered,/建設事業の受注へ付け替えません/);assert.match(rendered,/建設事業 › 建築/);}
+ }
+ const unsafe=structuredClone(publicAsset),row=unsafe.payload.records.find(r=>r.company_id==='TODA');row.source_subject_scope_interpretation='<img src=x onerror=alert(1)>';
+ const escaped=renderer.renderQuarterlyView(unsafe,{quarterCompany:'TODA',quarterQuery:row.fact_id},0);assert.match(escaped,/&lt;img src=x onerror=alert\(1\)&gt;/);assert.doesNotMatch(escaped,/<img src=x/);
+});

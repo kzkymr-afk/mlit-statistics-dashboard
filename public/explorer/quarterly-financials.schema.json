@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Public quarterly financial source projection, eleven recorded companies, source-linked reference records",
+  "title": "Public quarterly financial source projection, thirteen recorded companies, source-linked reference records",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -66,7 +66,8 @@
                   "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
                   "reviewed_okumura_asanuma_quarterly_fy2025_v1",
                   "reviewed_zenitaka_kumagai_quarterly_fy2025_v1",
-                  "reviewed_infr_nishimatsu_quarterly_fy2025_v1"
+                  "reviewed_infr_nishimatsu_quarterly_fy2025_v1",
+                  "reviewed_shimizu_toda_quarterly_fy2025_v1"
                 ]
               }
             },
@@ -116,7 +117,13 @@
                       "https://www.infroneer.com/pdf/ir/results/FY2025_3Q.pdf",
                       "https://ssl4.eir-parts.net/doc/1820/tdnet/2669706/00.pdf",
                       "https://ssl4.eir-parts.net/doc/1820/tdnet/2709165/00.pdf",
-                      "https://ssl4.eir-parts.net/doc/1820/tdnet/2755963/00.pdf"
+                      "https://ssl4.eir-parts.net/doc/1820/tdnet/2755963/00.pdf",
+                      "https://pdf.irpocket.com/C1803/i6fv/Gae6/pesL.pdf",
+                      "https://pdf.irpocket.com/C1803/lAG8/tYJw/btyt.pdf",
+                      "https://pdf.irpocket.com/C1803/ikpa/mIVS/u3WO.pdf",
+                      "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_2.pdf",
+                      "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_3.pdf",
+                      "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_04.pdf"
                     ]
                   },
                   "sha256": {
@@ -272,8 +279,8 @@
         },
         "records": {
           "type": "array",
-          "minItems": 638,
-          "maxItems": 638,
+          "minItems": 782,
+          "maxItems": 782,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -300,7 +307,7 @@
                 "if": {
                   "properties": {
                     "extractor_version": {
-                      "const": "reviewed_infr_nishimatsu_quarterly_fy2025_v1"
+                      "const": "reviewed_shimizu_toda_quarterly_fy2025_v1"
                     }
                   },
                   "required": [
@@ -309,78 +316,85 @@
                 },
                 "then": {
                   "required": [
-                    "accounting_standard_id",
                     "accounting_standard_as_disclosed",
+                    "accounting_standard_id",
+                    "actual_or_forecast",
+                    "as_of_check_utc",
+                    "automatic_aggregation_allowed",
+                    "automatic_comparison_allowed",
+                    "company_id",
+                    "correction_status",
+                    "currency",
+                    "current_official_version_match_status",
+                    "data_scope",
+                    "document_id",
+                    "document_version_sha256",
+                    "evidence_id",
+                    "extractor_version",
+                    "fact_id",
+                    "finance_eligible",
+                    "fiscal_year",
+                    "metric_id",
+                    "period_end",
+                    "period_interval_status",
+                    "period_label_as_disclosed",
+                    "period_start",
+                    "period_type",
+                    "permissions",
+                    "record_kind",
+                    "reporting_entity_id",
+                    "retrieved_at",
+                    "source_acquisition_date",
+                    "source_acquisition_timestamp_status",
+                    "source_category_as_disclosed",
+                    "source_cell_id",
+                    "source_dataset_id",
+                    "source_document_type",
+                    "source_edition_date_as_disclosed",
+                    "source_file_sha256",
+                    "source_locator",
+                    "source_metric_label",
+                    "source_page_evidence_id",
+                    "source_parent_category_as_disclosed",
+                    "source_period_label_as_disclosed",
+                    "source_precision_status",
+                    "source_quarter_number",
+                    "source_quote",
+                    "source_quote_kind",
+                    "source_restatement_basis",
+                    "source_row_label_as_disclosed",
+                    "source_row_path_as_disclosed",
                     "source_selected_field_availability",
+                    "source_subject_scope_as_disclosed",
+                    "source_subject_scope_interpretation",
+                    "source_text",
+                    "source_title_as_disclosed",
+                    "source_url",
+                    "source_url_basis",
                     "source_url_byte_verification_status",
-                    "source_quarter_number"
-                  ],
-                  "not": {
-                    "anyOf": [
-                      {
-                        "required": [
-                          "source_family"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "period_kind"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "period_end_month"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "as_of_date"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "candidate_disposition"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "source_period_semantics"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "as_of_check_utc_status"
-                        ]
-                      },
-                      {
-                        "required": [
-                          "retrieved_at_basis"
-                        ]
-                      }
-                    ]
-                  }
-                },
-                "else": {
-                  "required": [
-                    "period_kind",
-                    "period_end_month",
-                    "as_of_date"
+                    "source_version_status",
+                    "status",
+                    "subject_entity_binding_status",
+                    "subject_entity_id",
+                    "target_company_period_id",
+                    "topic",
+                    "unit",
+                    "unit_conversion_rule",
+                    "value",
+                    "value_raw"
                   ],
                   "propertyNames": {
                     "enum": [
+                      "accounting_standard_as_disclosed",
+                      "accounting_standard_id",
                       "actual_or_forecast",
-                      "adjustment_source_note",
                       "as_of_check_utc",
-                      "as_of_check_utc_status",
-                      "as_of_date",
-                      "as_of_status",
                       "automatic_aggregation_allowed",
                       "automatic_comparison_allowed",
-                      "candidate_disposition",
                       "company_id",
-                      "corroborating_evidence_ids",
-                      "corroborating_source_quote",
+                      "correction_status",
                       "currency",
+                      "current_official_version_match_status",
                       "data_scope",
                       "document_id",
                       "document_version_sha256",
@@ -389,109 +403,610 @@
                       "fact_id",
                       "finance_eligible",
                       "fiscal_year",
-                      "is_additive_leaf",
-                      "is_reconciliation_adjustment",
-                      "is_reported_subtotal",
-                      "is_reported_total",
                       "metric_id",
-                      "official_fiscal_year_label",
                       "period_end",
-                      "period_end_month",
                       "period_interval_status",
-                      "period_kind",
-                      "period_label",
                       "period_label_as_disclosed",
                       "period_start",
                       "period_type",
+                      "permissions",
                       "record_kind",
                       "reporting_entity_id",
                       "retrieved_at",
-                      "retrieved_at_basis",
-                      "share_split_basis_source_locator",
-                      "share_split_comparative_basis",
-                      "share_split_source_note",
                       "source_acquisition_date",
                       "source_acquisition_timestamp_status",
+                      "source_category_as_disclosed",
                       "source_cell_id",
-                      "source_column_label_as_disclosed",
-                      "source_column_role",
                       "source_dataset_id",
                       "source_document_type",
                       "source_edition_date_as_disclosed",
-                      "source_family",
                       "source_file_sha256",
-                      "source_fiscal_year_as_indexed",
-                      "source_index_year_status",
                       "source_locator",
                       "source_metric_label",
                       "source_page_evidence_id",
-                      "source_period_heading",
-                      "source_period_quote",
+                      "source_parent_category_as_disclosed",
+                      "source_period_label_as_disclosed",
+                      "source_precision_status",
+                      "source_quarter_number",
                       "source_quote",
                       "source_quote_kind",
-                      "source_quote_occurrence_count",
-                      "source_reporting_scope",
-                      "source_revenue_recognition_timing",
-                      "source_row_role",
-                      "source_segment_label",
+                      "source_restatement_basis",
+                      "source_row_label_as_disclosed",
+                      "source_row_path_as_disclosed",
+                      "source_selected_field_availability",
+                      "source_subject_scope_as_disclosed",
+                      "source_subject_scope_interpretation",
                       "source_text",
+                      "source_title_as_disclosed",
                       "source_url",
+                      "source_url_basis",
+                      "source_url_byte_verification_status",
+                      "source_version_status",
                       "status",
+                      "subject_entity_binding_status",
+                      "subject_entity_id",
                       "target_company_period_id",
                       "topic",
                       "unit",
                       "unit_conversion_rule",
                       "value",
-                      "value_raw",
-                      "whole_document_review_status",
-                      "permissions",
-                      "same_byte_index_conflict",
-                      "current_official_version_match_status",
-                      "display_precision_as_disclosed",
-                      "reported_category_as_disclosed",
-                      "semantic_overlap_group",
-                      "semantic_overlap_status",
-                      "source_category_as_disclosed",
-                      "source_document_type_as_indexed",
-                      "source_notes",
-                      "source_order_dimensions",
-                      "source_period_semantics",
-                      "source_quarter_number",
-                      "source_restatement_basis",
-                      "source_row_hierarchy",
-                      "source_title_as_disclosed",
-                      "source_url_basis",
-                      "source_version_status",
-                      "consolidation_perimeter_annotation",
-                      "correction_status",
-                      "prior_edition_difference_status",
-                      "period_companion",
-                      "native_period_label",
-                      "source_period_binding_status",
-                      "source_period_start",
-                      "source_period_end",
-                      "source_period_end_as_disclosed",
-                      "source_period_label_as_disclosed",
-                      "semantic_category_label",
-                      "correction_ids",
-                      "metadata_correction_status"
+                      "value_raw"
                     ]
                   },
                   "properties": {
                     "source_locator": {
-                      "$ref": "#/$defs/oldLocation"
-                    },
-                    "share_split_basis_source_locator": {
-                      "$ref": "#/$defs/oldLocation"
-                    },
-                    "source_order_dimensions": {
-                      "$ref": "#/$defs/oldLocation"
+                      "$ref": "#/$defs/stLocation"
                     },
                     "source_restatement_basis": {
-                      "$ref": "#/$defs/oldLocation"
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "applies_to",
+                            "does_not_authorize",
+                            "interpretation",
+                            "native_quote_lines",
+                            "physical_page",
+                            "printed_page",
+                            "revision_id",
+                            "source_sha256"
+                          ],
+                          "properties": {
+                            "applies_to": {
+                              "anyOf": [
+                                {
+                                  "type": "null"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                }
+                              ]
+                            },
+                            "does_not_authorize": {
+                              "anyOf": [
+                                {
+                                  "type": "null"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                }
+                              ]
+                            },
+                            "interpretation": {
+                              "anyOf": [
+                                {
+                                  "type": "null"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                }
+                              ]
+                            },
+                            "native_quote_lines": {
+                              "type": "array",
+                              "minItems": 2,
+                              "maxItems": 2,
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "bbox_pt",
+                                  "quote"
+                                ],
+                                "properties": {
+                                  "bbox_pt": {
+                                    "type": "array",
+                                    "minItems": 4,
+                                    "maxItems": 4,
+                                    "items": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "quote": {
+                                    "anyOf": [
+                                      {
+                                        "type": "null"
+                                      },
+                                      {
+                                        "type": "string",
+                                        "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                      },
+                                      {
+                                        "type": "number"
+                                      },
+                                      {
+                                        "type": "boolean"
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            },
+                            "physical_page": {
+                              "const": 1
+                            },
+                            "printed_page": {
+                              "type": "null"
+                            },
+                            "revision_id": {
+                              "anyOf": [
+                                {
+                                  "type": "null"
+                                },
+                                {
+                                  "type": "string",
+                                  "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                },
+                                {
+                                  "type": "number"
+                                },
+                                {
+                                  "type": "boolean"
+                                }
+                              ]
+                            },
+                            "source_sha256": {
+                              "type": "string",
+                              "pattern": "^[a-f0-9]{64}$"
+                            }
+                          }
+                        }
+                      ]
                     },
-                    "consolidation_perimeter_annotation": {
-                      "$ref": "#/$defs/oldLocation"
+                    "source_selected_field_availability": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "ordinary_profit_consolidated_reported"
+                      ],
+                      "properties": {
+                        "ordinary_profit_consolidated_reported": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "company_wide_non_disclosure_claim",
+                            "scope",
+                            "source_file_sha256",
+                            "status"
+                          ],
+                          "properties": {
+                            "company_wide_non_disclosure_claim": {
+                              "const": false
+                            },
+                            "scope": {
+                              "const": "selected_consolidated_financial_table_only"
+                            },
+                            "source_file_sha256": {
+                              "type": "string",
+                              "pattern": "^[a-f0-9]{64}$"
+                            },
+                            "status": {
+                              "const": "reported_in_selected_jgaap_table"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "else": {
+                  "if": {
+                    "properties": {
+                      "extractor_version": {
+                        "const": "reviewed_infr_nishimatsu_quarterly_fy2025_v1"
+                      }
+                    },
+                    "required": [
+                      "extractor_version"
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "accounting_standard_id",
+                      "accounting_standard_as_disclosed",
+                      "source_selected_field_availability",
+                      "source_url_byte_verification_status",
+                      "source_quarter_number"
+                    ],
+                    "propertyNames": {
+                      "enum": [
+                        "actual_or_forecast",
+                        "adjustment_source_note",
+                        "as_of_check_utc",
+                        "as_of_check_utc_status",
+                        "as_of_date",
+                        "as_of_status",
+                        "automatic_aggregation_allowed",
+                        "automatic_comparison_allowed",
+                        "candidate_disposition",
+                        "company_id",
+                        "corroborating_evidence_ids",
+                        "corroborating_source_quote",
+                        "currency",
+                        "data_scope",
+                        "document_id",
+                        "document_version_sha256",
+                        "evidence_id",
+                        "extractor_version",
+                        "fact_id",
+                        "finance_eligible",
+                        "fiscal_year",
+                        "is_additive_leaf",
+                        "is_reconciliation_adjustment",
+                        "is_reported_subtotal",
+                        "is_reported_total",
+                        "metric_id",
+                        "official_fiscal_year_label",
+                        "period_end",
+                        "period_end_month",
+                        "period_interval_status",
+                        "period_kind",
+                        "period_label",
+                        "period_label_as_disclosed",
+                        "period_start",
+                        "period_type",
+                        "record_kind",
+                        "reporting_entity_id",
+                        "retrieved_at",
+                        "retrieved_at_basis",
+                        "share_split_basis_source_locator",
+                        "share_split_comparative_basis",
+                        "share_split_source_note",
+                        "source_acquisition_date",
+                        "source_acquisition_timestamp_status",
+                        "source_cell_id",
+                        "source_column_label_as_disclosed",
+                        "source_column_role",
+                        "source_dataset_id",
+                        "source_document_type",
+                        "source_edition_date_as_disclosed",
+                        "source_family",
+                        "source_file_sha256",
+                        "source_fiscal_year_as_indexed",
+                        "source_index_year_status",
+                        "source_locator",
+                        "source_metric_label",
+                        "source_page_evidence_id",
+                        "source_period_heading",
+                        "source_period_quote",
+                        "source_quote",
+                        "source_quote_kind",
+                        "source_quote_occurrence_count",
+                        "source_reporting_scope",
+                        "source_revenue_recognition_timing",
+                        "source_row_role",
+                        "source_segment_label",
+                        "source_text",
+                        "source_url",
+                        "status",
+                        "target_company_period_id",
+                        "topic",
+                        "unit",
+                        "unit_conversion_rule",
+                        "value",
+                        "value_raw",
+                        "whole_document_review_status",
+                        "permissions",
+                        "same_byte_index_conflict",
+                        "current_official_version_match_status",
+                        "display_precision_as_disclosed",
+                        "reported_category_as_disclosed",
+                        "semantic_overlap_group",
+                        "semantic_overlap_status",
+                        "source_category_as_disclosed",
+                        "source_document_type_as_indexed",
+                        "source_notes",
+                        "source_order_dimensions",
+                        "source_period_semantics",
+                        "source_quarter_number",
+                        "source_restatement_basis",
+                        "source_row_hierarchy",
+                        "source_title_as_disclosed",
+                        "source_url_basis",
+                        "source_version_status",
+                        "consolidation_perimeter_annotation",
+                        "correction_status",
+                        "prior_edition_difference_status",
+                        "period_companion",
+                        "native_period_label",
+                        "source_period_binding_status",
+                        "source_period_start",
+                        "source_period_end",
+                        "source_period_end_as_disclosed",
+                        "source_period_label_as_disclosed",
+                        "semantic_category_label",
+                        "correction_ids",
+                        "metadata_correction_status",
+                        "accounting_standard_as_disclosed",
+                        "accounting_standard_id",
+                        "source_row_label_as_disclosed",
+                        "source_parent_category_as_disclosed",
+                        "source_url_byte_verification_status",
+                        "source_selected_field_availability"
+                      ]
+                    },
+                    "properties": {
+                      "source_locator": {
+                        "$ref": "#/$defs/location"
+                      },
+                      "source_restatement_basis": {
+                        "$ref": "#/$defs/location"
+                      },
+                      "source_selected_field_availability": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "ordinary_profit_consolidated_reported"
+                        ],
+                        "properties": {
+                          "ordinary_profit_consolidated_reported": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "company_wide_non_disclosure_claim",
+                              "physical_page",
+                              "scope",
+                              "source_file_sha256",
+                              "statement_accounting_label_as_disclosed",
+                              "status"
+                            ],
+                            "properties": {
+                              "company_wide_non_disclosure_claim": {
+                                "const": false
+                              },
+                              "physical_page": {
+                                "enum": [
+                                  1,
+                                  9
+                                ]
+                              },
+                              "scope": {
+                                "const": "selected_consolidated_financial_table_only"
+                              },
+                              "source_file_sha256": {
+                                "type": "string",
+                                "pattern": "^[a-f0-9]{64}$"
+                              },
+                              "statement_accounting_label_as_disclosed": {
+                                "enum": [
+                                  "ＩＦＲＳ",
+                                  "日本基準"
+                                ]
+                              },
+                              "status": {
+                                "enum": [
+                                  "not_applicable_in_selected_ifrs_table",
+                                  "reported_in_selected_jgaap_table"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "not": {
+                      "anyOf": [
+                        {
+                          "required": [
+                            "source_family"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "period_kind"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "period_end_month"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "as_of_date"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "candidate_disposition"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "source_period_semantics"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "as_of_check_utc_status"
+                          ]
+                        },
+                        {
+                          "required": [
+                            "retrieved_at_basis"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "period_kind",
+                      "period_end_month",
+                      "as_of_date"
+                    ],
+                    "propertyNames": {
+                      "enum": [
+                        "actual_or_forecast",
+                        "adjustment_source_note",
+                        "as_of_check_utc",
+                        "as_of_check_utc_status",
+                        "as_of_date",
+                        "as_of_status",
+                        "automatic_aggregation_allowed",
+                        "automatic_comparison_allowed",
+                        "candidate_disposition",
+                        "company_id",
+                        "corroborating_evidence_ids",
+                        "corroborating_source_quote",
+                        "currency",
+                        "data_scope",
+                        "document_id",
+                        "document_version_sha256",
+                        "evidence_id",
+                        "extractor_version",
+                        "fact_id",
+                        "finance_eligible",
+                        "fiscal_year",
+                        "is_additive_leaf",
+                        "is_reconciliation_adjustment",
+                        "is_reported_subtotal",
+                        "is_reported_total",
+                        "metric_id",
+                        "official_fiscal_year_label",
+                        "period_end",
+                        "period_end_month",
+                        "period_interval_status",
+                        "period_kind",
+                        "period_label",
+                        "period_label_as_disclosed",
+                        "period_start",
+                        "period_type",
+                        "record_kind",
+                        "reporting_entity_id",
+                        "retrieved_at",
+                        "retrieved_at_basis",
+                        "share_split_basis_source_locator",
+                        "share_split_comparative_basis",
+                        "share_split_source_note",
+                        "source_acquisition_date",
+                        "source_acquisition_timestamp_status",
+                        "source_cell_id",
+                        "source_column_label_as_disclosed",
+                        "source_column_role",
+                        "source_dataset_id",
+                        "source_document_type",
+                        "source_edition_date_as_disclosed",
+                        "source_family",
+                        "source_file_sha256",
+                        "source_fiscal_year_as_indexed",
+                        "source_index_year_status",
+                        "source_locator",
+                        "source_metric_label",
+                        "source_page_evidence_id",
+                        "source_period_heading",
+                        "source_period_quote",
+                        "source_quote",
+                        "source_quote_kind",
+                        "source_quote_occurrence_count",
+                        "source_reporting_scope",
+                        "source_revenue_recognition_timing",
+                        "source_row_role",
+                        "source_segment_label",
+                        "source_text",
+                        "source_url",
+                        "status",
+                        "target_company_period_id",
+                        "topic",
+                        "unit",
+                        "unit_conversion_rule",
+                        "value",
+                        "value_raw",
+                        "whole_document_review_status",
+                        "permissions",
+                        "same_byte_index_conflict",
+                        "current_official_version_match_status",
+                        "display_precision_as_disclosed",
+                        "reported_category_as_disclosed",
+                        "semantic_overlap_group",
+                        "semantic_overlap_status",
+                        "source_category_as_disclosed",
+                        "source_document_type_as_indexed",
+                        "source_notes",
+                        "source_order_dimensions",
+                        "source_period_semantics",
+                        "source_quarter_number",
+                        "source_restatement_basis",
+                        "source_row_hierarchy",
+                        "source_title_as_disclosed",
+                        "source_url_basis",
+                        "source_version_status",
+                        "consolidation_perimeter_annotation",
+                        "correction_status",
+                        "prior_edition_difference_status",
+                        "period_companion",
+                        "native_period_label",
+                        "source_period_binding_status",
+                        "source_period_start",
+                        "source_period_end",
+                        "source_period_end_as_disclosed",
+                        "source_period_label_as_disclosed",
+                        "semantic_category_label",
+                        "correction_ids",
+                        "metadata_correction_status"
+                      ]
+                    },
+                    "properties": {
+                      "source_locator": {
+                        "$ref": "#/$defs/oldLocation"
+                      },
+                      "share_split_basis_source_locator": {
+                        "$ref": "#/$defs/oldLocation"
+                      },
+                      "source_order_dimensions": {
+                        "$ref": "#/$defs/oldLocation"
+                      },
+                      "source_restatement_basis": {
+                        "$ref": "#/$defs/oldLocation"
+                      },
+                      "consolidation_perimeter_annotation": {
+                        "$ref": "#/$defs/oldLocation"
+                      }
                     }
                   }
                 }
@@ -621,7 +1136,9 @@
                   "ZENITAKA",
                   "KUMAGAI",
                   "INFR",
-                  "NISHIMATSU"
+                  "NISHIMATSU",
+                  "SHIMIZU",
+                  "TODA"
                 ]
               },
               "corroborating_evidence_ids": {
@@ -730,7 +1247,8 @@
                   "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
                   "reviewed_okumura_asanuma_quarterly_fy2025_v1",
                   "reviewed_zenitaka_kumagai_quarterly_fy2025_v1",
-                  "reviewed_infr_nishimatsu_quarterly_fy2025_v1"
+                  "reviewed_infr_nishimatsu_quarterly_fy2025_v1",
+                  "reviewed_shimizu_toda_quarterly_fy2025_v1"
                 ]
               },
               "fact_id": {
@@ -1016,7 +1534,9 @@
                   "ZENITAKA",
                   "KUMAGAI",
                   "INFR",
-                  "NISHIMATSU"
+                  "NISHIMATSU",
+                  "SHIMIZU",
+                  "TODA"
                 ]
               },
               "retrieved_at": {
@@ -1279,7 +1799,13 @@
                   "87b7116bc9b0e0f75a57bf340d1b38eedbef28a5a38a5b5b6e060b093420f75d",
                   "5c038bfde16bfcca646e59e6ba772104f9678789b5995c255d07b80a73062b42",
                   "755d8b5a1d71f0e51e22b977493c663b5edd2de0f96b1f20b71f0a1f0d3cd1e6",
-                  "04787737987dd758edccb37b27236a11e0eba2b0c77b0b899ce73e302e7740c6"
+                  "04787737987dd758edccb37b27236a11e0eba2b0c77b0b899ce73e302e7740c6",
+                  "e4de26f34272a1e5a559a17318178cf53476705888672299a110e0ae7832940c",
+                  "66429501d4ff11f8b7ac08ef0bde3f8db1c97f29287e1c4d302867a1c7533e20",
+                  "4f02a728e98390de98e77e28a4e84409533f9fa112703b73022108147c66b21c",
+                  "e9bb27e91863abfdeb3b85cfa339e30d4e1ca2a5b776558c9a0f11051ee478f3",
+                  "0b1d92fe99818cd69c24b0dfa4fbadf41e92edf53825bee72ce6ad643ed865ae",
+                  "d16f31577f4c964241cbe58a415a6fd274358a8f913c665ac1b2b2421cc7cbf3"
                 ]
               },
               "source_fiscal_year_as_indexed": {
@@ -1317,7 +1843,14 @@
                 ]
               },
               "source_locator": {
-                "$ref": "#/$defs/location"
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/location"
+                  },
+                  {
+                    "$ref": "#/$defs/stLocation"
+                  }
+                ]
               },
               "source_metric_label": {
                 "anyOf": [
@@ -1559,7 +2092,13 @@
                   "https://www.infroneer.com/pdf/ir/results/FY2025_3Q.pdf",
                   "https://ssl4.eir-parts.net/doc/1820/tdnet/2669706/00.pdf",
                   "https://ssl4.eir-parts.net/doc/1820/tdnet/2709165/00.pdf",
-                  "https://ssl4.eir-parts.net/doc/1820/tdnet/2755963/00.pdf"
+                  "https://ssl4.eir-parts.net/doc/1820/tdnet/2755963/00.pdf",
+                  "https://pdf.irpocket.com/C1803/i6fv/Gae6/pesL.pdf",
+                  "https://pdf.irpocket.com/C1803/lAG8/tYJw/btyt.pdf",
+                  "https://pdf.irpocket.com/C1803/ikpa/mIVS/u3WO.pdf",
+                  "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_2.pdf",
+                  "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_3.pdf",
+                  "https://www.toda.co.jp/ir/results/assets/pdf/toda_103_04.pdf"
                 ]
               },
               "status": {
@@ -1878,7 +2417,152 @@
                 ]
               },
               "source_restatement_basis": {
-                "$ref": "#/$defs/location"
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/location"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "type": "null"
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "applies_to",
+                          "does_not_authorize",
+                          "interpretation",
+                          "native_quote_lines",
+                          "physical_page",
+                          "printed_page",
+                          "revision_id",
+                          "source_sha256"
+                        ],
+                        "properties": {
+                          "applies_to": {
+                            "anyOf": [
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "string",
+                                "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                              },
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "boolean"
+                              }
+                            ]
+                          },
+                          "does_not_authorize": {
+                            "anyOf": [
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "string",
+                                "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                              },
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "boolean"
+                              }
+                            ]
+                          },
+                          "interpretation": {
+                            "anyOf": [
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "string",
+                                "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                              },
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "boolean"
+                              }
+                            ]
+                          },
+                          "native_quote_lines": {
+                            "type": "array",
+                            "minItems": 2,
+                            "maxItems": 2,
+                            "items": {
+                              "type": "object",
+                              "additionalProperties": false,
+                              "required": [
+                                "bbox_pt",
+                                "quote"
+                              ],
+                              "properties": {
+                                "bbox_pt": {
+                                  "type": "array",
+                                  "minItems": 4,
+                                  "maxItems": 4,
+                                  "items": {
+                                    "type": "number"
+                                  }
+                                },
+                                "quote": {
+                                  "anyOf": [
+                                    {
+                                      "type": "null"
+                                    },
+                                    {
+                                      "type": "string",
+                                      "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                                    },
+                                    {
+                                      "type": "number"
+                                    },
+                                    {
+                                      "type": "boolean"
+                                    }
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "physical_page": {
+                            "const": 1
+                          },
+                          "printed_page": {
+                            "type": "null"
+                          },
+                          "revision_id": {
+                            "anyOf": [
+                              {
+                                "type": "null"
+                              },
+                              {
+                                "type": "string",
+                                "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                              },
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "boolean"
+                              }
+                            ]
+                          },
+                          "source_sha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
               },
               "source_row_hierarchy": {
                 "anyOf": [
@@ -2195,55 +2879,205 @@
                 ]
               },
               "source_selected_field_availability": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "ordinary_profit_consolidated_reported"
-                ],
-                "properties": {
-                  "ordinary_profit_consolidated_reported": {
+                "anyOf": [
+                  {
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                      "company_wide_non_disclosure_claim",
-                      "physical_page",
-                      "scope",
-                      "source_file_sha256",
-                      "statement_accounting_label_as_disclosed",
-                      "status"
+                      "ordinary_profit_consolidated_reported"
                     ],
                     "properties": {
-                      "company_wide_non_disclosure_claim": {
-                        "const": false
-                      },
-                      "physical_page": {
-                        "enum": [
-                          1,
-                          9
-                        ]
-                      },
-                      "scope": {
-                        "const": "selected_consolidated_financial_table_only"
-                      },
-                      "source_file_sha256": {
-                        "type": "string",
-                        "pattern": "^[a-f0-9]{64}$"
-                      },
-                      "statement_accounting_label_as_disclosed": {
-                        "enum": [
-                          "ＩＦＲＳ",
-                          "日本基準"
-                        ]
-                      },
-                      "status": {
-                        "enum": [
-                          "not_applicable_in_selected_ifrs_table",
-                          "reported_in_selected_jgaap_table"
-                        ]
+                      "ordinary_profit_consolidated_reported": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "company_wide_non_disclosure_claim",
+                          "physical_page",
+                          "scope",
+                          "source_file_sha256",
+                          "statement_accounting_label_as_disclosed",
+                          "status"
+                        ],
+                        "properties": {
+                          "company_wide_non_disclosure_claim": {
+                            "const": false
+                          },
+                          "physical_page": {
+                            "enum": [
+                              1,
+                              9
+                            ]
+                          },
+                          "scope": {
+                            "const": "selected_consolidated_financial_table_only"
+                          },
+                          "source_file_sha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "statement_accounting_label_as_disclosed": {
+                            "enum": [
+                              "ＩＦＲＳ",
+                              "日本基準"
+                            ]
+                          },
+                          "status": {
+                            "enum": [
+                              "not_applicable_in_selected_ifrs_table",
+                              "reported_in_selected_jgaap_table"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "ordinary_profit_consolidated_reported"
+                    ],
+                    "properties": {
+                      "ordinary_profit_consolidated_reported": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "company_wide_non_disclosure_claim",
+                          "scope",
+                          "source_file_sha256",
+                          "status"
+                        ],
+                        "properties": {
+                          "company_wide_non_disclosure_claim": {
+                            "const": false
+                          },
+                          "scope": {
+                            "const": "selected_consolidated_financial_table_only"
+                          },
+                          "source_file_sha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "status": {
+                            "const": "reported_in_selected_jgaap_table"
+                          }
+                        }
                       }
                     }
                   }
-                }
+                ]
+              },
+              "source_precision_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_row_path_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "string",
+                          "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                        },
+                        {
+                          "type": "number"
+                        },
+                        {
+                          "type": "boolean"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "source_subject_scope_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_subject_scope_interpretation": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "subject_entity_binding_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "subject_entity_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
               }
             }
           }
@@ -2898,6 +3732,102 @@
             },
             "selected_orders_page": {
               "$ref": "#/$defs/oldLocation"
+            }
+          }
+        }
+      ]
+    },
+    "stLocation": {
+      "anyOf": [
+        {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/stLocation"
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "bbox": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "column_label": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "corroborating_alias_locators": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "native_basis": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "native_header_guards": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "pdf_page": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "period_binding_basis": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "period_end_bbox": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "period_end_quote": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "period_start_bbox": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "period_start_quote": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "physical_page": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "printed_page": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "quote": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "row_label": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "semantic_label": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "source_cell_id": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "source_sha256": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "status": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "table": {
+              "$ref": "#/$defs/stLocation"
+            },
+            "value_bbox_page_points_top_left": {
+              "$ref": "#/$defs/stLocation"
             }
           }
         }
