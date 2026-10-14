@@ -1200,7 +1200,7 @@ function SystemChart({
         context.stroke();
         context.setLineDash([]);
         context.textAlign = "center";
-        context.fillText("レビュー境界", markerX, plot.top + 12);
+        context.fillText("資料の比較条件が異なる年度", markerX, plot.top + 12);
       }
       context.restore();
     };
@@ -1409,7 +1409,7 @@ function SeriesAnalysis({ series }: { series: SelectedSeries[] }) {
     : "なし";
   return (
     <details className="system-analysis">
-      <summary>2指標の関係を確認（相関・定義レビュー）</summary>
+      <summary>2指標の関係を確認（相関・定義の確認）</summary>
       <p>同じ単位・周期・価格基準・対象範囲の2系列について、共通期間の確定数値だけで Pearson 相関係数を計算します。期間の補間・集約・単位変換は行いません。</p>
       <div className="system-analysis-controls">
         {(["left", "right"] as const).map((side) => {
@@ -2881,7 +2881,7 @@ export default function StatisticsSystemWorkbench() {
               </div>
             </div>
             {rawTableColumns.some((column) => column.members.length > 1) ? (
-              <p className="system-dataset-note">この実数表だけ、同じ会社・原指標の確認済み旧／新レビューを表示上1列に整理しています。2024年度の境界を越える比較許可ではありません。グラフ・相関・計算・CSVは元の{selectedSeries.length}系列とレビュー期間を保持します。</p>
+              <p className="system-dataset-note">この実数表だけ、同じ会社・原指標で、資料の確認年度が異なる系列を表示上1列に整理しています。2024年度をまたぐ比較条件は一致しません。グラフ・相関・計算・CSVは元の{selectedSeries.length}系列と、それぞれの確認年度を保持します。</p>
             ) : null}
             <div className="system-table-scroll">
               <table>
@@ -2930,7 +2930,7 @@ export default function StatisticsSystemWorkbench() {
                               <small style={{ display: "block", overflowWrap: "anywhere" }}>
                                 {cell.origins.map((origin) => origin.series.reviewWindow
                                   ? `確認期間 ${origin.series.reviewWindow.replace(/^FY(\d{4})_FY(\d{4})$/, "$1～$2年度")}`
-                                  : "従来レビュー（2023年度以前）").join("・")}
+                                  : "資料を確認した年度（2023年度以前）").join("・")}
                                 <details><summary>原系列・出典</summary>
                                   {cell.origins.map((origin) => {
                                     const url = safeEvidenceUrl(origin.point.provenance?.sourceUrl);

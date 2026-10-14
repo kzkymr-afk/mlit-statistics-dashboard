@@ -6,35 +6,17 @@ async function render() {
   return readFile(new URL("../out/index.html", import.meta.url), "utf8");
 }
 
-test("統計項目と分類条件を選ぶシステム画面をサーバーレンダリングする", async () => {
+test("検索・比較の初期画面と従来の詳細設定への入口を共通ログイン内に表示する", async () => {
   const html = await render();
   assert.match(html, /<html lang="ja">/);
-  assert.match(html, /建築着工統計/);
-  assert.match(html, /受注動態（大手50社）/);
-  assert.match(html, /日建連・企業規模別受注高/);
-  assert.match(html, /ゼネコン会社別データ/);
-  assert.match(html, /ゼネコン各社の確定値を比較する/);
-  assert.match(html, /統計表レジストリ/);
-  assert.match(html, /分類条件を指定/);
+  assert.match(html, /Atlas/);
+  assert.match(html, /詳細な統計設定/);
+  assert.match(html, /従来の分類指定・お気に入り・グラフ設定・分析用書き出し/);
+  assert.match(html, /検索画面を準備しています/);
   assert.match(html, /表・グラフ・CSV/);
-  assert.match(html, /よく使う項目/);
-  assert.match(html, /お気に入りとして保存/);
-  assert.match(html, /集計周期/);
-  assert.match(html, /年度/);
-  assert.match(html, /年次/);
-  assert.match(html, /月次/);
-  assert.match(html, /四半期/);
-  assert.match(html, /すべて/);
-  assert.match(html, /該当する統計/);
-  assert.match(html, /周期・統計/);
-  assert.match(html, /最大15系列まで/);
-  assert.match(html, /左右2軸、軸の最小・最大・目盛間隔/);
-  assert.match(html, /CSV出力/);
-  assert.match(html, /AI用JSON/);
-  assert.match(html, /国交省統計 · 日建連 · BuildBase企業データ/);
-  assert.doesNotMatch(html, /シート|数値セルをクリック/);
-  assert.doesNotMatch(html, /最大5系列まで/);
-  assert.doesNotMatch(html, /最大10系列まで/);
+  assert.match(html, /atlas-gate/);
+  assert.match(html, /data-atlas-build-id/);
+  assert.doesNotMatch(html, /レビュー境界|確認範囲境界|別レビュー|レビュー単位/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 });
 

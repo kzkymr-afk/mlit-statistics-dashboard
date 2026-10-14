@@ -1,4 +1,4 @@
-import StatisticsSystemWorkbench from "@/components/StatisticsSystemWorkbench";
+import AtlasExplorer from "@/components/AtlasExplorer";
 
 export const metadata = {
   title: "Atlas | 建設データを表・グラフ・CSVへ",
@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function Home() {
-  return <StatisticsSystemWorkbench />;
+  return <AtlasExplorer />;
 }

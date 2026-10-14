@@ -3509,3 +3509,7 @@ input:focus-visible,
 .system-chart-group > p { font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
 .system-series-notes p { margin: 8px 0; line-height: 1.65; overflow-wrap: anywhere; }
 .system-shell .system-series-row { grid-template-columns: 8px minmax(0, 1fr) 84px 48px; }
+/* The explorer shares the layout's build stamp and login gate. */
+.atlas-explorer-navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 10px 24px; background: #f6f8f5; border-bottom: 1px solid #dde5df; color: #52635b; font-size: 12px; }
+.atlas-explorer-navigation button { border: 1px solid #b8c9bf; border-radius: 6px; background: white; padding: 8px 14px; color: #234e42; cursor: pointer; }
+.atlas-explorer-frame { display: block; width: 100%; height: calc(100dvh - 105px); min-height: 560px; border: 0; background: #f7f9f6; }
