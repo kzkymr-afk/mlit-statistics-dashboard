@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Public quarterly financial source projection, five recorded companies, source-linked reference records",
+  "title": "Public quarterly financial source projection, seven recorded companies, source-linked reference records",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -42,6 +42,7 @@
             "sourceSubsetHash",
             "sourceExtractorVersions",
             "sourceDocuments",
+            "periodCompanionDocuments",
             "currentOfficialVersionMatchStatus",
             "projectionOmissions",
             "precisionNote",
@@ -62,7 +63,8 @@
                   "reviewed_kitano_q3_summary_segments_v1",
                   "reviewed_kitano_q1_summary_v1",
                   "reviewed_obayashi_kajima_quarterly_fy2025_v1",
-                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1"
+                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
+                  "reviewed_okumura_asanuma_quarterly_fy2025_v1"
                 ]
               }
             },
@@ -94,12 +96,56 @@
                       "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20260212_2.pdf",
                       "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_1.pdf",
                       "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_2.pdf",
-                      "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf"
+                      "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf",
+                      "https://www.okumuragumi.co.jp/ir/irinfo/data/20250806_kessan_fact.pdf",
+                      "https://www.okumuragumi.co.jp/ir/irinfo/data/20251113_kessan_fact.pdf",
+                      "https://www.okumuragumi.co.jp/ir/irinfo/data/20260213_kessan_fact.pdf",
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20250819_2.pdf",
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_2.pdf",
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf"
                     ]
                   },
                   "sha256": {
                     "type": "string",
                     "pattern": "^[a-f0-9]{64}$"
+                  }
+                }
+              }
+            },
+            "periodCompanionDocuments": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "sourceUrl",
+                  "sha256",
+                  "quarter",
+                  "purpose"
+                ],
+                "properties": {
+                  "sourceUrl": {
+                    "enum": [
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20250807_1.pdf",
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_1.pdf",
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf"
+                    ]
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "quarter": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "purpose": {
+                    "const": "exact_period_proof_only"
                   }
                 }
               }
@@ -211,8 +257,8 @@
         },
         "records": {
           "type": "array",
-          "minItems": 341,
-          "maxItems": 341,
+          "minItems": 425,
+          "maxItems": 425,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -355,7 +401,9 @@
                   "OBAYASHI",
                   "KAJIMA",
                   "HASEKO",
-                  "ANDO_HAZAMA"
+                  "ANDO_HAZAMA",
+                  "OKUMURA",
+                  "ASANUMA"
                 ]
               },
               "corroborating_evidence_ids": {
@@ -461,7 +509,8 @@
                   "reviewed_kitano_q3_summary_segments_v1",
                   "reviewed_kitano_q1_summary_v1",
                   "reviewed_obayashi_kajima_quarterly_fy2025_v1",
-                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1"
+                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
+                  "reviewed_okumura_asanuma_quarterly_fy2025_v1"
                 ]
               },
               "fact_id": {
@@ -741,7 +790,9 @@
                   "OBAYASHI",
                   "KAJIMA",
                   "HASEKO",
-                  "ANDO_HAZAMA"
+                  "ANDO_HAZAMA",
+                  "OKUMURA",
+                  "ASANUMA"
                 ]
               },
               "retrieved_at": {
@@ -986,7 +1037,13 @@
                   "6422ffc3abf6d7d4ff8b39b3e0cca2dbdf1fa6ce6b71c4dbafd11295b86bebc0",
                   "0347cd5915889e8ee2413106d7a05422c38fa5aae9127fc7b8e095fe77a4b18e",
                   "f54cbc98236316e3bbf1a3a5c82317e145929307ecb705ed1345d4d0bf41d607",
-                  "2c1df20398a68a62bfcacd9e4bee1d7ee990f81a836c8dff5d63263b50b3a17d"
+                  "2c1df20398a68a62bfcacd9e4bee1d7ee990f81a836c8dff5d63263b50b3a17d",
+                  "b70c43a5b144b1f9370961627480f8ccba701ed208c5098e65691169716934d8",
+                  "7db0dfea0edc2d52e427bf89d68338002e013cb7f8fdc44d316ef8ac743a8723",
+                  "c4647f8ccdfa68ec2b628e83c7dbf983550a0adabc4f1f84e5650aab23beb8c5",
+                  "b1e1b0eae88057b612a98d1b6e41469c341e852c3ce140a7796ee0acea482e78",
+                  "9b7e2338950d63f6c8cd228b51cc2f4345b7c9a254af46fa847de3bcd1677f49",
+                  "2b53666e309b85ce0318fc5488114a059f6ba27fa81780ca926a32b1f8f86081"
                 ]
               },
               "source_fiscal_year_as_indexed": {
@@ -1248,7 +1305,13 @@
                   "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20260212_2.pdf",
                   "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_1.pdf",
                   "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_2.pdf",
-                  "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf"
+                  "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf",
+                  "https://www.okumuragumi.co.jp/ir/irinfo/data/20250806_kessan_fact.pdf",
+                  "https://www.okumuragumi.co.jp/ir/irinfo/data/20251113_kessan_fact.pdf",
+                  "https://www.okumuragumi.co.jp/ir/irinfo/data/20260213_kessan_fact.pdf",
+                  "https://www.asanuma.co.jp/ir/pdf/kessan/20250819_2.pdf",
+                  "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_2.pdf",
+                  "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf"
                 ]
               },
               "status": {
@@ -1639,6 +1702,145 @@
               },
               "consolidation_perimeter_annotation": {
                 "$ref": "#/$defs/location"
+              },
+              "correction_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "prior_edition_difference_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_companion": {
+                "$ref": "#/$defs/periodCompanion"
+              },
+              "native_period_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_binding_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_start": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_end": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_end_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_label_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
               }
             }
           }
@@ -1858,6 +2060,141 @@
             },
             "automatic_comparison_allowed": {
               "$ref": "#/$defs/location"
+            },
+            "official_url": {
+              "$ref": "#/$defs/location"
+            },
+            "sha256": {
+              "$ref": "#/$defs/location"
+            },
+            "physical_page": {
+              "$ref": "#/$defs/location"
+            },
+            "page_rotation": {
+              "$ref": "#/$defs/location"
+            },
+            "period_start": {
+              "$ref": "#/$defs/location"
+            },
+            "period_end": {
+              "$ref": "#/$defs/location"
+            },
+            "cover_page": {
+              "$ref": "#/$defs/location"
+            },
+            "financial_page": {
+              "$ref": "#/$defs/location"
+            },
+            "order_page": {
+              "$ref": "#/$defs/location"
+            },
+            "exact_current_dates_printed_on_cover": {
+              "$ref": "#/$defs/location"
+            },
+            "exact_prior_current_dates_printed_on_order_table": {
+              "$ref": "#/$defs/location"
+            },
+            "same_pdf_comparative_date_fragments": {
+              "$ref": "#/$defs/location"
+            },
+            "semantic_label": {
+              "$ref": "#/$defs/location"
+            },
+            "source_quote_kind": {
+              "$ref": "#/$defs/location"
+            },
+            "source_quote_type": {
+              "$ref": "#/$defs/location"
+            },
+            "cross_scope_date_binding_status": {
+              "$ref": "#/$defs/location"
+            },
+            "date_evidence": {
+              "$ref": "#/$defs/location"
+            },
+            "scope_caveat": {
+              "$ref": "#/$defs/location"
+            }
+          }
+        }
+      ]
+    },
+    "periodCompanion": {
+      "anyOf": [
+        {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/periodCompanion"
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "binding_scope": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "bytes": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "date_proofs": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "official_url": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "page_count": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "purpose": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "sha256": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "listing_link_text": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "bbox": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "page_rotation": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "period_column": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "period_start": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "period_end": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "physical_page": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "quote": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "scope": {
+              "$ref": "#/$defs/periodCompanion"
             }
           }
         }

@@ -8,7 +8,7 @@ import {fileURLToPath} from 'node:url';
 import Ajv from 'ajv';
 import {canonicalSha256} from '../lib/buildbase-contract-hash.mjs';
 import {projectQuarterlyFinancials,selectQuarterlySourceRows,assertQuarterlyCohortExport,projectQuarterlyCurrentnessSupplement} from '../lib/atlas-quarterly-projection.mjs';
-import {QUARTER_RECORD_COUNT,QUARTER_DOCUMENTS,QUARTER_DOCUMENT_REGISTRY,quarterlyRecordCounts,assertQuarterCurrentnessSupplement,QUARTER_PERMISSION_KEYS,assertQuarterRecord,assertQuarterPublicStrings,validateQuarterlyAsset,quarterlySourceUrl,filterQuarterlyRecords,quarterMeasureKind,quarterPeriodLabel,quarterlyExport,quarterlyCsv,quarterlyCoverageCsv} from '../public/explorer/quarterly-data.mjs';
+import {QUARTER_RECORD_COUNT,QUARTER_PERIOD_COMPANION_REGISTRY,QUARTER_DOCUMENTS,QUARTER_DOCUMENT_REGISTRY,quarterlyRecordCounts,assertQuarterCurrentnessSupplement,QUARTER_PERMISSION_KEYS,assertQuarterRecord,assertQuarterPublicStrings,validateQuarterlyAsset,quarterlySourceUrl,filterQuarterlyRecords,quarterMeasureKind,quarterPeriodLabel,quarterlyExport,quarterlyCsv,quarterlyCoverageCsv} from '../public/explorer/quarterly-data.mjs';
 import {renderQuarterlyView} from '../public/explorer/quarterly-view.mjs';
 import {parseState,stateHash} from '../public/explorer/data-view.mjs';
 import {publicDataUrl} from '../public/explorer/public-data.mjs';
@@ -23,13 +23,13 @@ function assertSourceValues(actual,source,message){if(Array.isArray(actual)){ass
 function withWindow(fn){const before=globalThis.window;globalThis.window={__ATLAS_EXPLORER__:{base:'/mlit-statistics-dashboard/'}};try{return fn();}finally{globalThis.window=before;}}
 
 
-test('quarterly projection retains old269 plus Haseko30 and Ando Hazama42 financial records, separately from annual and Q4 candidates',async()=>{
+test('quarterly projection retains old341 plus Okumura42 and Asanuma42 financial records, separately from annual and Q4 candidates',async()=>{
  const p=await validateQuarterlyAsset(asset,catalog);assert.equal(p.records.length,QUARTER_RECORD_COUNT);assert.equal(p.companies.length,21);
  assert.equal(createHash('sha256').update(bytes).digest('hex'),catalog.compressedSha256);
- assert.deepEqual(quarterlyRecordCounts(p.records),{recordCount:341,q1RecordCount:84,q2RecordCount:76,q3RecordCount:181,recordedCompanyCount:5,directQuarterRecordCount:30,cumulative3MonthRecordCount:74,cumulative6MonthRecordCount:66,cumulative9MonthRecordCount:163,stockRecordCount:8});
- assert.equal(catalog.sourceDocumentCount,17);assert.equal(catalog.unreviewedCompanyCount,16);
+ assert.deepEqual(quarterlyRecordCounts(p.records),{recordCount:425,q1RecordCount:112,q2RecordCount:104,q3RecordCount:209,recordedCompanyCount:7,directQuarterRecordCount:30,cumulative3MonthRecordCount:102,cumulative6MonthRecordCount:94,cumulative9MonthRecordCount:191,stockRecordCount:8});
+ assert.equal(catalog.sourceDocumentCount,23);assert.equal(catalog.periodCompanionDocumentCount,3);assert.equal(catalog.unreviewedCompanyCount,14);
  assert.deepEqual(Object.fromEntries(Object.keys(QUARTER_DOCUMENTS).map(x=>[x,p.records.filter(r=>r.extractor_version===x).length])),{reviewed_kitano_q3_summary_segments_v1:105,reviewed_kitano_q1_summary_v1:8});
- assert.deepEqual(Object.fromEntries(['quarter_cumulative_9months','quarter_cumulative_6months','quarter_cumulative_3months','quarter_only_3months','point_in_time_stock'].map(x=>[x,p.records.filter(r=>r.period_type===x).length])),{quarter_cumulative_9months:163,quarter_cumulative_6months:66,quarter_cumulative_3months:74,quarter_only_3months:30,point_in_time_stock:8});
+ assert.deepEqual(Object.fromEntries(['quarter_cumulative_9months','quarter_cumulative_6months','quarter_cumulative_3months','quarter_only_3months','point_in_time_stock'].map(x=>[x,p.records.filter(r=>r.period_type===x).length])),{quarter_cumulative_9months:191,quarter_cumulative_6months:94,quarter_cumulative_3months:102,quarter_only_3months:30,point_in_time_stock:8});
  for(const r of p.records)for(const key of QUARTER_PERMISSION_KEYS)assert.equal(r.permissions[key],false);
  assert.doesNotMatch(JSON.stringify(p),/reviewed_kitano_annual|displayed_amount_difference|derived_q4_candidates/);
  const changed=structuredClone(asset);changed.payload.records[0].value++;await assert.rejects(validateQuarterlyAsset(changed,catalog),/データ版/);
@@ -58,7 +58,7 @@ test('month-only stocks, ratio and per-share precision remain distinct; split an
 
 test('21-company coverage is bounded to recorded financial counts and distinguishes unreviewed from nondisclosure',async()=>{
  const companies=asset.payload.companies,kitano=companies.find(c=>c.companyId==='KITANO');assert.equal(kitano.q1RecordCount,8);assert.equal(kitano.q3RecordCount,105);
- for(const c of companies.filter(c=>!['KITANO','OBAYASHI','KAJIMA','HASEKO','ANDO_HAZAMA'].includes(c.companyId))){assert.equal(c.status,'not_reviewed');assert.equal(c.nonDisclosureAssertion,false);assert.equal(c.q1RecordCount+c.q2RecordCount+c.q3RecordCount,0);assert.equal(filterQuarterlyRecords(asset.payload,{companyId:c.companyId}).length,0);}
+ for(const c of companies.filter(c=>!['KITANO','OBAYASHI','KAJIMA','HASEKO','ANDO_HAZAMA','OKUMURA','ASANUMA'].includes(c.companyId))){assert.equal(c.status,'not_reviewed');assert.equal(c.nonDisclosureAssertion,false);assert.equal(c.q1RecordCount+c.q2RecordCount+c.q3RecordCount,0);assert.equal(filterQuarterlyRecords(asset.payload,{companyId:c.companyId}).length,0);}
  assert.equal(await readFile(path.join(root,'public/explorer/quarterly-coverage.csv'),'utf8'),quarterlyCoverageCsv(companies));
  const mutated=structuredClone(asset);mutated.payload.companies[0].status='not_disclosed';await assert.rejects(validateQuarterlyAsset(await rehash(mutated)),/確認範囲/);
 });
@@ -68,14 +68,14 @@ test('every source fact is findable and all records remain reachable through pag
  try{
   const seen=new Set();for(let page=0;page<Math.ceil(QUARTER_RECORD_COUNT/25);page++){const html=renderQuarterlyView(asset,{},page);for(const m of html.matchAll(/data-quarter-fact-id="([a-f0-9]+)"/g))seen.add(m[1]);assert.match(html,/mlit-statistics-dashboard\/explorer\/quarterly-coverage\.csv/);}
   assert.equal(seen.size,QUARTER_RECORD_COUNT);for(const r of asset.payload.records)assert.deepEqual(filterQuarterlyRecords(asset.payload,{query:r.fact_id}).map(x=>x.fact_id),[r.fact_id]);
-  assert.equal(filterQuarterlyRecords(asset.payload,{query:'北野建設'}).length,113);assert.equal(filterQuarterlyRecords(asset.payload,{periodType:'quarter_cumulative_3months'}).length,74);assert.equal(filterQuarterlyRecords(asset.payload,{scope:'segment'}).length,75);
+  assert.equal(filterQuarterlyRecords(asset.payload,{query:'北野建設'}).length,113);assert.equal(filterQuarterlyRecords(asset.payload,{periodType:'quarter_cumulative_3months'}).length,102);assert.equal(filterQuarterlyRecords(asset.payload,{scope:'segment'}).length,75);
   const empty=renderQuarterlyView(asset,{quarterCompany:'MATSUI'});assert.match(empty,/一致0件/);assert.match(empty,/未確認の会社.*非開示.*0.*判定しません/);assert.match(empty,/会社別の収録範囲/);
   const html=Array.from({length:Math.ceil(QUARTER_RECORD_COUNT/25)},(_,page)=>renderQuarterlyView(asset,{},page)).join('');assert.match(html,/株式分割/);assert.match(html,/Q3/);assert.doesNotMatch(html,/レビュー境界|確認範囲境界|別レビュー|レビュー単位/);
  }finally{globalThis.window=savedWindow;}
 });
 
 test('selected CSV and JSON contain every matched row, complete source precision/provenance and false permissions',()=>{
- const all=quarterlyExport(asset),q1=quarterlyExport(asset,{periodType:'quarter_cumulative_3months'});assert.equal(all.records.length,QUARTER_RECORD_COUNT);assert.equal(q1.records.length,74);assert.equal(q1.origin.sourceSubsetHash,asset.payload.origin.sourceSubsetHash);assert.equal(q1.projectionHash,asset.projectionHash);
+ const all=quarterlyExport(asset),q1=quarterlyExport(asset,{periodType:'quarter_cumulative_3months'});assert.equal(all.records.length,QUARTER_RECORD_COUNT);assert.equal(q1.records.length,102);assert.equal(q1.origin.sourceSubsetHash,asset.payload.origin.sourceSubsetHash);assert.equal(q1.projectionHash,asset.projectionHash);
  const csv=quarterlyCsv(asset);for(const r of all.records){assert.ok(csv.includes(r.fact_id));assert.ok(csv.includes(r.source_file_sha256));assert.ok(csv.includes(r.source_url));}
  assert.match(csv,/value_raw/);assert.match(csv,/share_split_comparative_basis/);assert.match(csv,/source_locator/);assert.match(csv,/as_of_status/);assert.match(csv,/complete_public_source_record/);assert.match(csv,/unknown_not_recorded/);assert.match(csv,/metadata_conflict_not_separate_source_version/);
  const stockCsv=quarterlyCsv(asset,{periodType:'point_in_time_stock'});for(const r of asset.payload.records.filter(x=>x.period_type==='point_in_time_stock'))assert.ok(stockCsv.includes(r.fact_id));
@@ -166,4 +166,36 @@ test('new bounded Source export snapshot matches all selected new records withou
  const changed=structuredClone(source);changed.payload.records[0].value++;await assert.rejects(assertQuarterlyCohortExport(changed,selectQuarterlySourceRows(ledger)),/出力版|原記録/);
  const replaced=structuredClone(source);replaced.payload.records[0].value++;replaced.snapshotHash=await canonicalSha256(replaced.payload);await assert.rejects(assertQuarterlyCohortExport(replaced,selectQuarterlySourceRows(ledger)),/出力版|原記録/);
  assert.doesNotMatch(JSON.stringify(catalog.sourceCohortExport),/raw|source_file|eligibility|coverage/);
+});
+
+test('published old341 records and supplemental12 checks remain field-exact after the next two-company extension',async()=>{
+ const prior=JSON.parse(gunzipSync(await readFile(path.join(root,'tests/fixtures/atlas-quarterly-original341.json.gz'))));
+ const priorCatalog=JSON.parse(await readFile(path.join(root,'tests/fixtures/atlas-quarterly-original341.catalog.json'),'utf8'));
+ assert.equal(prior.payload.records.length,341);
+ assert.equal(createHash('sha256').update(await readFile(path.join(root,'tests/fixtures/atlas-quarterly-original341.json.gz'))).digest('hex'),'4478cd6eb4c6a5a854d535faa4bf9d217941a63b26f5c0a13471dc68d21b80d3');
+ for(const row of prior.payload.records)assert.deepEqual(asset.payload.records.find(r=>r.fact_id===row.fact_id),row,row.fact_id);
+ assert.deepEqual(catalog.currentnessSupplement,priorCatalog.currentnessSupplement);assert.equal(catalog.currentnessSupplementHash,priorCatalog.currentnessSupplementHash);assert.deepEqual(catalog.sourceCohortExport,priorCatalog.sourceCohortExport);
+ for(const co of ['OKUMURA','ASANUMA']){const rows=asset.payload.records.filter(r=>r.company_id===co);assert.equal(rows.length,42);assert.equal(filterQuarterlyRecords(asset.payload,{companyId:co,periodType:'quarter_cumulative_6months'}).length,14);for(const row of rows){assert.equal(row.unit,'百万円');assert.equal(row.retrieved_at,null);assert.equal(row.source_acquisition_date,null);assert.equal(row.source_acquisition_timestamp_status,'unknown_not_recorded');assert.equal(row.as_of_check_utc_status,'later_official_url_bytes_equal_saved_pdf');assert.match(row.as_of_check_utc,/^2026-10-14T14:21:/);assert.equal(row.source_period_semantics,'cumulative');assert.equal(row.period_type,'quarter_cumulative_'+row.source_quarter_number*3+'months');assert.equal(row.prior_edition_difference_status,'not_reviewed');}}
+ assert.equal(filterQuarterlyRecords(asset.payload,{query:'奥村組'}).length,42);assert.equal(filterQuarterlyRecords(asset.payload,{query:'淺沼組'}).length,42);assert.equal(filterQuarterlyRecords(asset.payload,{query:'浅沼組'}).length,42);
+});
+
+test('ASANUMA corrected Q1 and separate official period companions retain source scope and original precision',async()=>{
+ const rows=asset.payload.records.filter(r=>r.company_id==='ASANUMA'),q1=rows.filter(r=>r.source_quarter_number===1);assert.equal(q1.length,14);
+ for(const row of q1){assert.equal(row.correction_status,'official_listing_marks_2025_08_19_corrected_edition');assert.equal(row.prior_edition_difference_status,'not_reviewed');assert.ok(row.source_url.endsWith('/20250819_2.pdf'));}
+ for(const row of rows){const companion=QUARTER_PERIOD_COMPANION_REGISTRY.find(d=>d.quarter===row.source_quarter_number),basis=row.source_locator.period_binding_basis;assert.equal(row.period_companion.official_url,companion.sourceUrl);assert.equal(row.period_companion.sha256,companion.sha256);assert.equal(row.period_companion.purpose,'exact_period_proof_only');assert.equal(basis.source_locator.official_url,companion.sourceUrl);assert.equal(basis.source_locator.sha256,companion.sha256);assert.equal(basis.source_locator.pdf_page,8);assert.equal(basis.exact_dates_printed_on_selected_table,false);assert.equal(basis.status,'official_companion_exact_calendar_interval');assert.ok(row.period_companion.date_proofs.some(p=>p.period_start===row.period_start&&p.period_end===row.period_end&&p.physical_page===8));assert.match(basis.source_quote,/自.*年.*至/s);}
+ assert.equal(asset.payload.origin.periodCompanionDocuments.length,3);for(const doc of QUARTER_PERIOD_COMPANION_REGISTRY)assert.equal(quarterlySourceUrl(doc.sourceUrl),doc.sourceUrl);
+ const html=withWindow(()=>renderQuarterlyView(asset,{quarterCompany:'ASANUMA'},0,catalog));assert.match(html,/訂正版/);assert.match(html,/訂正前の資料との数値差・訂正範囲は未確認/);assert.match(html,/期間の根拠資料（値の主出典とは別）/);assert.match(html,/公式の四半期短信/);assert.match(html,/PDF物理ページ 8/);assert.match(html,/対象範囲が同じとは扱いません/);assert.match(html,/原資料の取得日時は未収録/);assert.match(html,/後日の公式URL照合/);
+ const csv=quarterlyCsv(asset,{companyId:'ASANUMA'}),json=quarterlyExport(asset,{companyId:'ASANUMA'});assert.equal(json.records.length,42);for(const key of ['correction_status','prior_edition_difference_status','period_companion','official_listing_marks_2025_08_19_corrected_edition','not_reviewed'])assert.ok(csv.includes(key));for(const doc of QUARTER_PERIOD_COMPANION_REGISTRY){assert.ok(csv.includes(doc.sourceUrl));assert.ok(csv.includes(doc.sha256));}
+ const mismatch=structuredClone(asset);mismatch.payload.records.find(r=>r.company_id==='ASANUMA').source_locator.period_binding_basis.source_locator.official_url=QUARTER_PERIOD_COMPANION_REGISTRY[2].sourceUrl;await assert.rejects(validateQuarterlyAsset(await rehash(mismatch)),/期間根拠/);
+ const privateProof=structuredClone(asset);privateProof.payload.records.find(r=>r.company_id==='ASANUMA').period_companion.receipt_file='data/raw/hidden.json';await assert.rejects(validateQuarterlyAsset(await rehash(privateProof)),/公開対象外/);
+ const wrongDateFlag=structuredClone(asset);wrongDateFlag.payload.records.find(r=>r.company_id==='ASANUMA').source_locator.period_binding_basis.exact_dates_printed_on_selected_table=true;await assert.rejects(validateQuarterlyAsset(await rehash(wrongDateFlag)),/期間根拠/);
+ assert.doesNotMatch(JSON.stringify(asset),/official_receipt_file|official_listing_file|manifest_file|receipt_file|companion_pdf_guards|\/Volumes\/|data\/raw\//);
+});
+
+test('both independent adopted cohort exports bind their own snapshot and full records',{skip:!sourceRoot},async()=>{
+ const ledger=(await readFile(path.join(sourceRoot,'data/marts/public_disclosures/facts_effective.jsonl'),'utf8')).trim().split('\n').map(JSON.parse);const selected=selectQuarterlySourceRows(ledger);
+ const old=JSON.parse(await readFile(path.join(sourceRoot,'data/ai_haseko_ah_quarterly/export.json'),'utf8')),next=JSON.parse(await readFile(path.join(sourceRoot,'data/ai_okumura_asanuma_quarterly/export.json'),'utf8'));
+ assert.deepEqual(catalog.sourceCohortExports,[await assertQuarterlyCohortExport(old,selected),await assertQuarterlyCohortExport(next,selected)]);assert.equal(catalog.sourceCohortExports[1].recordCount,84);assert.equal(catalog.sourceCohortExports[1].snapshotHash,'eb5b76b29d89ef08e5289e1e62660795c1f147e8b6441f3fc91aebbcb490868f');
+ const tampered=structuredClone(next);tampered.payload.records[0].value++;await assert.rejects(assertQuarterlyCohortExport(tampered,selected),/原記録/);const mislabeled=structuredClone(next);mislabeled.snapshotHash=old.snapshotHash;await assert.rejects(assertQuarterlyCohortExport(mislabeled,selected),/出力版/);
+ for(const doc of QUARTER_PERIOD_COMPANION_REGISTRY){const source=next.payload.records.find(r=>r.period_companion?.sha256===doc.sha256);assert.equal(createHash('sha256').update(await readFile(path.join(sourceRoot,source.period_companion.file))).digest('hex'),doc.sha256);}
 });

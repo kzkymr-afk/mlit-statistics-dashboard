@@ -1,31 +1,64 @@
 {
   "schemaVersion": 1,
   "datasetId": "buildbase-quarterly-financial-public",
-  "projectionHash": "ce5848ef7bea0e0e0d2ed96f14b5b30af1a18e519b843910e44e9b62218e0311",
-  "sourceSubsetHash": "003de6c49bd0a1468981abcc8ff5ed5695065ff446819567d58625d234f98c47",
-  "compressedSha256": "4478cd6eb4c6a5a854d535faa4bf9d217941a63b26f5c0a13471dc68d21b80d3",
+  "projectionHash": "d4aa0d406da9e8c4fd0981655b7cc873f4eba4fc8a27052701ccf4c88fc5e5af",
+  "sourceSubsetHash": "2d680c18cd874c77f5a60896adebc17fde4db9a44b9c8815d7df638fe03472d9",
+  "compressedSha256": "91477fc9d07f9d30b04dab047636bbb8c9e11018f16bcc1b0532ccf27d89dc9d",
   "dataUrl": "explorer/quarterly-financials.json.gz",
   "schemaUrl": "explorer/quarterly-financials.schema.json",
   "coverageCsvUrl": "explorer/quarterly-coverage.csv",
-  "recordCount": 341,
-  "q1RecordCount": 84,
-  "q2RecordCount": 76,
-  "q3RecordCount": 181,
-  "recordedCompanyCount": 5,
+  "recordCount": 425,
+  "q1RecordCount": 112,
+  "q2RecordCount": 104,
+  "q3RecordCount": 209,
+  "recordedCompanyCount": 7,
   "directQuarterRecordCount": 30,
-  "cumulative3MonthRecordCount": 74,
-  "cumulative6MonthRecordCount": 66,
-  "cumulative9MonthRecordCount": 163,
+  "cumulative3MonthRecordCount": 102,
+  "cumulative6MonthRecordCount": 94,
+  "cumulative9MonthRecordCount": 191,
   "stockRecordCount": 8,
   "companyCount": 21,
   "coverageCompanyCount": 21,
-  "unreviewedCompanyCount": 16,
-  "sourceDocumentCount": 17,
+  "unreviewedCompanyCount": 14,
+  "sourceDocumentCount": 23,
   "sourceCohortExport": {
     "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
     "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
     "recordCount": 72
   },
+  "sourceCohortExports": [
+    {
+      "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
+      "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
+      "recordCount": 72
+    },
+    {
+      "datasetId": "buildbase-okumura-asanuma-quarterly-fy2025",
+      "snapshotHash": "eb5b76b29d89ef08e5289e1e62660795c1f147e8b6441f3fc91aebbcb490868f",
+      "recordCount": 84
+    }
+  ],
+  "periodCompanionDocumentCount": 3,
+  "periodCompanionDocuments": [
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20250807_1.pdf",
+      "sha256": "24110fa54d0731960804cbd433184c7f6baaae024989156c2b772f8a24ad1d85",
+      "quarter": 1,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_1.pdf",
+      "sha256": "5825bb6b0b38646d7a51d00e67a673da72054cb14626ff9e92809b2ea0c4b7f1",
+      "quarter": 2,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf",
+      "sha256": "7f48c2b33c237daebbef78574690d5e96b55e0bf85f3a795b951f20bcff5460a",
+      "quarter": 3,
+      "purpose": "exact_period_proof_only"
+    }
+  ],
   "currentnessSupplement": [
     {
       "sourceCurrentnessCheckId": "0a2af576c807014e67eab152950fc90b8df7e6b0584a34c422feca0bb67c907c",
@@ -405,12 +438,12 @@
     {
       "companyId": "OKUMURA",
       "companyName": "奥村組",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -441,12 +474,12 @@
     {
       "companyId": "ASANUMA",
       "companyName": "淺沼組",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
