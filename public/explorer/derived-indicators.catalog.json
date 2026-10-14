@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "buildbase-derived-indicators-public",
+  "sourceSnapshotHash": "5414e48ae0c900934a07303dc41c63f5b8b9a7f5434db9c0baa1a9c92dbd4ab1",
+  "projectionHash": "e219078a15862d4930696ed0f376e075d778e3ca56c9663e56188c186b65c2a4",
+  "compressedSha256": "a3b87c130c5dab528b031087d6b5ec8bacb231e05b9718c1f715f23182d0b4dc",
+  "dataUrl": "explorer/derived-indicators.json.gz",
+  "schemaUrl": "explorer/derived-indicators.schema.json",
+  "definitionCount": 5,
+  "resultCount": 141,
+  "companyCount": 23,
+  "definitions": [
+    {
+      "metricId": "consolidated_gross_profit_yoy_difference",
+      "name": "連結売上総利益前年差",
+      "outputUnit": "百万円",
+      "resultCount": 23
+    },
+    {
+      "metricId": "consolidated_gross_profit_yoy_growth_rate",
+      "name": "連結売上総利益前年比",
+      "outputUnit": "%",
+      "resultCount": 23
+    },
+    {
+      "metricId": "consolidated_gross_profit_margin",
+      "name": "連結売上総利益率",
+      "outputUnit": "%",
+      "resultCount": 46
+    },
+    {
+      "metricId": "group_perimeter_revenue_gap",
+      "name": "連結と自社単体の売上差額",
+      "outputUnit": "百万円",
+      "resultCount": 3
+    },
+    {
+      "metricId": "consolidated_operating_profit_margin",
+      "name": "連結営業利益率",
+      "outputUnit": "%",
+      "resultCount": 46
+    }
+  ],
+  "companies": [
+    {
+      "companyId": "ANDO_HAZAMA",
+      "companyName": "安藤・間"
+    },
+    {
+      "companyId": "ASANUMA",
+      "companyName": "淺沼組"
+    },
+    {
+      "companyId": "HASEKO",
+      "companyName": "長谷工コーポレーション"
+    },
+    {
+      "companyId": "INFR",
+      "companyName": "インフロニア・ホールディングス"
+    },
+    {
+      "companyId": "KAJIMA",
+      "companyName": "鹿島建設"
+    },
+    {
+      "companyId": "KITANO",
+      "companyName": "北野建設"
+    },
+    {
+      "companyId": "KUMAGAI",
+      "companyName": "熊谷組"
+    },
+    {
+      "companyId": "MAEDA",
+      "companyName": "前田建設工業"
+    },
+    {
+      "companyId": "MATSUI",
+      "companyName": "松井建設"
+    },
+    {
+      "companyId": "NISHIMATSU",
+      "companyName": "西松建設"
+    },
+    {
+      "companyId": "OBAYASHI",
+      "companyName": "大林組"
+    },
+    {
+      "companyId": "OFFICIAL_PDF_1827",
+      "companyName": "株式会社ナカノフドー建設"
+    },
+    {
+      "companyId": "OFFICIAL_PDF_1879",
+      "companyName": "新日本建設株式会社"
+    },
+    {
+      "companyId": "OKUMURA",
+      "companyName": "奥村組"
+    },
+    {
+      "companyId": "PENTA",
+      "companyName": "五洋建設"
+    },
+    {
+      "companyId": "SHIMIZU",
+      "companyName": "清水建設"
+    },
+    {
+      "companyId": "SMCC",
+      "companyName": "三井住友建設"
+    },
+    {
+      "companyId": "TAISEI",
+      "companyName": "大成建設"
+    },
+    {
+      "companyId": "TAKENAKA",
+      "companyName": "竹中工務店"
+    },
+    {
+      "companyId": "TOA",
+      "companyName": "東亜建設工業"
+    },
+    {
+      "companyId": "TODA",
+      "companyName": "戸田建設"
+    },
+    {
+      "companyId": "TOKYU",
+      "companyName": "東急建設"
+    },
+    {
+      "companyId": "ZENITAKA",
+      "companyName": "錢高組"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {gzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import {projectDerivedIndicators,derivedPublicSchema} from '../lib/atlas-derived-projection.mjs';
+const input=process.argv[2];
+if(!input)throw Error('Pass the existing Source reusable_indicators.json export; no DB is read or changed.');
+const response=JSON.parse(await readFile(input,'utf8')),asset=await projectDerivedIndicators(response);
+const compressed=gzipSync(JSON.stringify(asset),{mtime:0});
+const output=path.join(path.dirname(path.dirname(fileURLToPath(import.meta.url))),'public/explorer');
+const catalog={schemaVersion:1,datasetId:asset.payload.datasetId,sourceSnapshotHash:asset.payload.origin.sourceSnapshotHash,projectionHash:asset.projectionHash,compressedSha256:createHash('sha256').update(compressed).digest('hex'),dataUrl:'explorer/derived-indicators.json.gz',schemaUrl:'explorer/derived-indicators.schema.json',definitionCount:5,resultCount:141,companyCount:23,definitions:asset.payload.definitions.map(d=>({metricId:d.metricId,name:d.name||'連結と自社単体の売上差額',outputUnit:d.outputUnit,resultCount:asset.payload.results.filter(r=>r.metricId===d.metricId).length})),companies:asset.payload.companies.map(c=>({companyId:c.companyId,companyName:c.companyName}))};
+await writeFile(path.join(output,'derived-indicators.json.gz'),compressed);
+await writeFile(path.join(output,'derived-indicators.catalog.json'),JSON.stringify(catalog,null,2)+'\n');
+await writeFile(path.join(output,'derived-indicators.schema.json'),JSON.stringify(derivedPublicSchema(),null,2)+'\n');
+console.log(JSON.stringify({results:141,definitions:5,companies:23,compressedBytes:compressed.length,sourceSnapshotHash:catalog.sourceSnapshotHash,projectionHash:catalog.projectionHash,compressedSha256:catalog.compressedSha256}));

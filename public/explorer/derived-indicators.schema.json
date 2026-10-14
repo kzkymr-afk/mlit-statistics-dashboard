@@ -1,0 +1,2110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Atlas public derived financial result snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "projectionHash",
+    "payload"
+  ],
+  "$defs": {
+    "financialValue": {
+      "anyOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/financialValue"
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "actualStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "asReportedAtStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "automaticAggregationAllowed": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "automaticComparisonAllowed": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "availableResultCount": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "calculationState": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "canonicalFactId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "canonicalFactPromotionAllowed": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "canonicalFreshness": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "captionPage": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "column": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "companyId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "companyMasterListed": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "companyName": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "comparisonEquivalenceId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "comparisonProofPayloadSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "comparisonVerificationId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "concept": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "consolidated": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "contextRef": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "currency": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "currentOfficialVersionMatchStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "currentStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "decisionSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "definitionVersion": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "denominator": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "dependencyHash": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "difference": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "displayDecimalPlaces": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "displayRounding": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "displayRoundingLimit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "documentId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "documentVersionSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "edinetCode": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "end": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "equivalenceId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "equivalenceScope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "eventId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "exact": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "exactPairPdfProof": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "factFingerprint": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "factId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "financeEligibleAsDirectReportedFact": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "financialSearchReferenceScope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "formula": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "formulaId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "grossProfitCaptionQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "grossProfitConcept": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "grossProfitGuard": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "grossProfitGuardOnly": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "htmlMember": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "identityScope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inputConcept": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inputDependencies": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inputFactIds": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inputId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inputRecordIds": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "inverseCheck": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "issuerCode": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "issuerFrontQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "limits": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "meaning": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "metadataFileSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "method": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "metricId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "name": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "notRegisteredAsNewMetric": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "numerator": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "numericalPage": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "officialDomain": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "originalAcquiredAtUtc": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "originalSourceUrl": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                }
+              ]
+            },
+            "originalSourceUrlStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "outputUnit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "ownStandalone": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "pdfPage": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodContinuity": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodEnd": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodFrom": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodHeaderQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodStart": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "periodTo": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "permissions": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "financeEligibleAsDirectReportedFact",
+                "automaticComparisonAllowed",
+                "automaticAggregationAllowed",
+                "canonicalFactPromotionAllowed"
+              ],
+              "properties": {
+                "financeEligibleAsDirectReportedFact": {
+                  "const": false
+                },
+                "automaticComparisonAllowed": {
+                  "const": false
+                },
+                "automaticAggregationAllowed": {
+                  "const": false
+                },
+                "canonicalFactPromotionAllowed": {
+                  "const": false
+                }
+              }
+            },
+            "printedPage": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "quote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "reasonCodes": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "recomputedExact": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "recordKind": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "registeredAtUtc": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "reportingBasis": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "requiredCurrency": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "requiredInputUnit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "requiredScope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "requiredTargetPeriods": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "requiresPositivePrior": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "restatementStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "resultId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "retrievedAtBasis": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "retrievedAtUtc": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "revenueCaptionQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "revenueConcept": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "revenueRowQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "reviewWindow": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "reviewedAtUtc": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "rowIndex": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "rowLabel": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sameIssuerExactPeriodCurrencyUnit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sameIssuerScopePeriodUnit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sameIssuerScopePeriodUnitBasis": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "scope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "semanticEquivalenceId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "semanticEquivalencePayloadSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "semanticEquivalenceScope": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "semanticLabelProof": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "semanticProof": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceConceptInterpretation": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceCurrentness": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceDocumentId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceDocumentType": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceFileSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceFixtureSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceInputKind": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceLocator": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceQuote": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceReceiptSha256": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceSeriesId": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceSeriesSnapshotHash": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceTitle": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "sourceUrl": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "string",
+                  "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                }
+              ]
+            },
+            "start": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "state": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "statementTitle": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "status": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "storedResultCount": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "tableIndex": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "targetWindowReasonCodes": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "targetWindowStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "unit": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "unroundedDecimal": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "validation": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "value": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "valueAsReviewed": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "verificationStatus": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "versionPerspective": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "yearColumnRule": {
+              "$ref": "#/$defs/financialValue"
+            },
+            "zeroOrNegativeDenominator": {
+              "$ref": "#/$defs/financialValue"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectionHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "datasetId",
+        "origin",
+        "definitions",
+        "companies",
+        "results",
+        "permissions",
+        "operatingMarginCohorts"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "datasetId": {
+          "const": "buildbase-derived-indicators-public"
+        },
+        "origin": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "datasetId",
+            "sourceContractVersion",
+            "sourceSnapshotHash",
+            "generatedFrom",
+            "canonicalFreshness",
+            "currentOfficialVersionMatchStatus",
+            "directFactPromotionAllowed",
+            "projectionOmissions"
+          ],
+          "properties": {
+            "datasetId": {
+              "const": "buildbase-reusable-verified-indicators"
+            },
+            "sourceContractVersion": {
+              "const": 1
+            },
+            "sourceSnapshotHash": {
+              "const": "5414e48ae0c900934a07303dc41c63f5b8b9a7f5434db9c0baa1a9c92dbd4ab1"
+            },
+            "generatedFrom": {
+              "const": "Source saved verified-indicator export; public financial projection"
+            },
+            "canonicalFreshness": {
+              "const": "not_checked"
+            },
+            "currentOfficialVersionMatchStatus": {
+              "const": "unconfirmed"
+            },
+            "directFactPromotionAllowed": {
+              "const": false
+            },
+            "projectionOmissions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "definitions": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "actualStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "asReportedAtStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticAggregationAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticComparisonAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "availableResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "calculationState": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactPromotionAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFreshness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "captionPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "column": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyMasterListed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyName": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonProofPayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonVerificationId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "concept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "consolidated": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "contextRef": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentOfficialVersionMatchStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "decisionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "definitionVersion": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "denominator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "dependencyHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "difference": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayDecimalPlaces": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRounding": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRoundingLimit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentVersionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "edinetCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "end": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "eventId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exactPairPdfProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factFingerprint": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financeEligibleAsDirectReportedFact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financialSearchReferenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formula": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formulaId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuard": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuardOnly": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "htmlMember": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "identityScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputDependencies": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputFactIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputRecordIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inverseCheck": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerFrontQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "limits": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "meaning": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metadataFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "method": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metricId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "name": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "notRegisteredAsNewMetric": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numerator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numericalPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "officialDomain": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalAcquiredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalSourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "originalSourceUrlStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "outputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "ownStandalone": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "pdfPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodContinuity": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodEnd": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodFrom": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodHeaderQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodStart": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodTo": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "permissions": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "financeEligibleAsDirectReportedFact",
+                  "automaticComparisonAllowed",
+                  "automaticAggregationAllowed",
+                  "canonicalFactPromotionAllowed"
+                ],
+                "properties": {
+                  "financeEligibleAsDirectReportedFact": {
+                    "const": false
+                  },
+                  "automaticComparisonAllowed": {
+                    "const": false
+                  },
+                  "automaticAggregationAllowed": {
+                    "const": false
+                  },
+                  "canonicalFactPromotionAllowed": {
+                    "const": false
+                  }
+                }
+              },
+              "printedPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "quote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recomputedExact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recordKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "registeredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reportingBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredCurrency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredInputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredTargetPeriods": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiresPositivePrior": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "restatementStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "resultId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueRowQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewWindow": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowLabel": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerExactPeriodCurrencyUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnitBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "scope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalencePayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticLabelProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceConceptInterpretation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceCurrentness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentType": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFixtureSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceInputKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceLocator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceReceiptSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesSnapshotHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "start": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "state": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "statementTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "status": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "storedResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "tableIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowReasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unroundedDecimal": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "validation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "value": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "valueAsReviewed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "verificationStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "versionPerspective": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "yearColumnRule": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "zeroOrNegativeDenominator": {
+                "$ref": "#/$defs/financialValue"
+              }
+            }
+          }
+        },
+        "companies": {
+          "type": "array",
+          "minItems": 23,
+          "maxItems": 23,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "actualStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "asReportedAtStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticAggregationAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticComparisonAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "availableResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "calculationState": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactPromotionAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFreshness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "captionPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "column": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyMasterListed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyName": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonProofPayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonVerificationId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "concept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "consolidated": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "contextRef": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentOfficialVersionMatchStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "decisionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "definitionVersion": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "denominator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "dependencyHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "difference": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayDecimalPlaces": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRounding": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRoundingLimit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentVersionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "edinetCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "end": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "eventId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exactPairPdfProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factFingerprint": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financeEligibleAsDirectReportedFact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financialSearchReferenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formula": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formulaId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuard": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuardOnly": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "htmlMember": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "identityScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputDependencies": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputFactIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputRecordIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inverseCheck": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerFrontQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "limits": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "meaning": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metadataFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "method": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metricId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "name": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "notRegisteredAsNewMetric": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numerator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numericalPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "officialDomain": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalAcquiredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalSourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "originalSourceUrlStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "outputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "ownStandalone": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "pdfPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodContinuity": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodEnd": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodFrom": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodHeaderQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodStart": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodTo": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "permissions": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "financeEligibleAsDirectReportedFact",
+                  "automaticComparisonAllowed",
+                  "automaticAggregationAllowed",
+                  "canonicalFactPromotionAllowed"
+                ],
+                "properties": {
+                  "financeEligibleAsDirectReportedFact": {
+                    "const": false
+                  },
+                  "automaticComparisonAllowed": {
+                    "const": false
+                  },
+                  "automaticAggregationAllowed": {
+                    "const": false
+                  },
+                  "canonicalFactPromotionAllowed": {
+                    "const": false
+                  }
+                }
+              },
+              "printedPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "quote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recomputedExact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recordKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "registeredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reportingBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredCurrency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredInputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredTargetPeriods": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiresPositivePrior": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "restatementStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "resultId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueRowQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewWindow": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowLabel": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerExactPeriodCurrencyUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnitBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "scope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalencePayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticLabelProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceConceptInterpretation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceCurrentness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentType": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFixtureSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceInputKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceLocator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceReceiptSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesSnapshotHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "start": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "state": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "statementTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "status": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "storedResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "tableIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowReasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unroundedDecimal": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "validation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "value": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "valueAsReviewed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "verificationStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "versionPerspective": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "yearColumnRule": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "zeroOrNegativeDenominator": {
+                "$ref": "#/$defs/financialValue"
+              }
+            }
+          }
+        },
+        "results": {
+          "type": "array",
+          "minItems": 141,
+          "maxItems": 141,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "actualStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "asReportedAtStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticAggregationAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "automaticComparisonAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "availableResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "calculationState": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFactPromotionAllowed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "canonicalFreshness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "captionPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "column": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyMasterListed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "companyName": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonProofPayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "comparisonVerificationId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "concept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "consolidated": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "contextRef": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentOfficialVersionMatchStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "currentStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "decisionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "definitionVersion": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "denominator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "dependencyHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "difference": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayDecimalPlaces": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRounding": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "displayRoundingLimit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "documentVersionSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "edinetCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "end": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "equivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "eventId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "exactPairPdfProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factFingerprint": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "factId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financeEligibleAsDirectReportedFact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "financialSearchReferenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formula": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "formulaId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuard": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "grossProfitGuardOnly": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "htmlMember": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "identityScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputDependencies": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputFactIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inputRecordIds": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "inverseCheck": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerCode": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "issuerFrontQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "limits": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "meaning": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metadataFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "method": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "metricId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "name": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "notRegisteredAsNewMetric": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numerator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "numericalPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "officialDomain": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalAcquiredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "originalSourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "originalSourceUrlStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "outputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "ownStandalone": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "pdfPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodContinuity": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodEnd": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodFrom": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodHeaderQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodStart": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "periodTo": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "permissions": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "financeEligibleAsDirectReportedFact",
+                  "automaticComparisonAllowed",
+                  "automaticAggregationAllowed",
+                  "canonicalFactPromotionAllowed"
+                ],
+                "properties": {
+                  "financeEligibleAsDirectReportedFact": {
+                    "const": false
+                  },
+                  "automaticComparisonAllowed": {
+                    "const": false
+                  },
+                  "automaticAggregationAllowed": {
+                    "const": false
+                  },
+                  "canonicalFactPromotionAllowed": {
+                    "const": false
+                  }
+                }
+              },
+              "printedPage": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "quote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recomputedExact": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "recordKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "registeredAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reportingBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredCurrency": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredInputUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiredTargetPeriods": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "requiresPositivePrior": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "restatementStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "resultId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "retrievedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueCaptionQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueConcept": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "revenueRowQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewWindow": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "reviewedAtUtc": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "rowLabel": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerExactPeriodCurrencyUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sameIssuerScopePeriodUnitBasis": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "scope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalencePayloadSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticEquivalenceScope": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticLabelProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "semanticProof": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceConceptInterpretation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceCurrentness": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceDocumentType": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFileSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceFixtureSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceInputKind": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceLocator": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceQuote": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceReceiptSha256": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesId": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceSeriesSnapshotHash": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "sourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^https://(?:ir\\.obayashi\\.co\\.jp|disclosure2dl\\.edinet-fsa\\.go\\.jp|www2\\.jpx\\.co\\.jp|www\\.shinnihon-c\\.co\\.jp|www\\.wave-nakano\\.co\\.jp)/"
+                  }
+                ]
+              },
+              "start": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "state": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "statementTitle": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "status": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "storedResultCount": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "tableIndex": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowReasonCodes": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "targetWindowStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unit": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "unroundedDecimal": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "validation": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "value": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "valueAsReviewed": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "verificationStatus": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "versionPerspective": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "yearColumnRule": {
+                "$ref": "#/$defs/financialValue"
+              },
+              "zeroOrNegativeDenominator": {
+                "$ref": "#/$defs/financialValue"
+              }
+            },
+            "required": [
+              "resultId",
+              "companyId",
+              "metricId",
+              "formulaId",
+              "value",
+              "unit",
+              "periodFrom",
+              "periodTo",
+              "permissions",
+              "inputDependencies"
+            ]
+          }
+        },
+        "permissions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "financeEligibleAsDirectReportedFact",
+            "automaticComparisonAllowed",
+            "automaticAggregationAllowed",
+            "canonicalFactPromotionAllowed"
+          ],
+          "properties": {
+            "financeEligibleAsDirectReportedFact": {
+              "const": false
+            },
+            "automaticComparisonAllowed": {
+              "const": false
+            },
+            "automaticAggregationAllowed": {
+              "const": false
+            },
+            "canonicalFactPromotionAllowed": {
+              "const": false
+            }
+          }
+        },
+        "operatingMarginCohorts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sameMarchJgaapCompanyIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ifrsBasisDifferenceCompanyIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "actualPeriodDifferenceCompanyIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "missingInputCompanyIds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

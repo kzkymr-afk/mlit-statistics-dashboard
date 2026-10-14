@@ -1,32 +1,36 @@
+import {validateDerivedAsset} from './derived-data.mjs';
+import {renderDerivedView,downloadDerived} from './derived-view.mjs';
 import {loadPublicIndex,fetchPublicJson,loadOriginalSeries,classificationCoordinates,originalPeriodYear,csvRowsForPoints} from './public-data.mjs';
 import {metadataLabel,companyPeriodLabel,periodNote,renderObservationCell,confirmedCount,reviewBoundaries,axisModel,renderLineChart,scopeLabel,verifiedResultMetadataLabel,legacyAxisPeriodLabel,sourceLink} from './presentation.mjs';
 import {GP,reviewedIndicators,validatedPacket,pointsFor,cellDisplay,recordedLegacyStatus,analysisFor,parseState,stateHash,matchesIndicator,serializeCsv,pointInYearRange} from './data-view.mjs';
 const hostOrigin=window.__ATLAS_EXPLORER__.origin;
 const $=s=>document.querySelector(s), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const COLORS=['#247b6b','#b47b43','#647ea7','#ad5e74','#607753'];
-const [index,packet]=await Promise.all([loadPublicIndex(),fetchPublicJson('system/buildbase/source-verified-comparison.json')]).catch(error=>{document.querySelector('#content').innerHTML='<p class="error">'+esc(error.message)+'</p>';throw error;});
+const [index,packet,derivedCatalog]=await Promise.all([loadPublicIndex(),fetchPublicJson('system/buildbase/source-verified-comparison.json'),fetchPublicJson('explorer/derived-indicators.catalog.json')]).catch(error=>{document.querySelector('#content').innerHTML='<p class="error">'+esc(error.message)+'</p>';throw error;});
 let series=[];try{series=await validatedPacket(packet)}catch(e){$('#content').innerHTML='<p class="error">'+esc(e.message)+'</p>';throw e;}
+let derivedAsset=null,derivedLoading=null,derivedError='',derivedPage=0;
+const derivedPanel=document.createElement('section');derivedPanel.id='derived-view';derivedPanel.hidden=true;$('#main').prepend(derivedPanel);
 let originalReference=null,referenceError='',loadErrors=new Map(),pendingLoads=new Map();
 const indicators=[...reviewedIndicators,...index.indicators.map(i=>({id:i.code,name:i.name,unit:i.unit,scope:i.code.includes('consolidated')?'連結（名称表記）':i.code.includes('standalone')?'単体（名称表記）':'原資料の対象範囲は未読込',definition:'公開参照の旧指標。会社別・年度別の出典、実期間、比較許可は原表参照として表示します。出典・実期間・比較許可は未確認です。',kind:'legacy',category:i.parentCode}))];
 let state=parseState(window.__ATLAS_EXPLORER__?.initialHash||'',indicators.map(i=>i.id),index.companies.map(c=>c.code),index.tables.map(t=>t.id));let filter='all',query='',origin=null,originScroll=0;
 const companyName=c=>index.companies.find(x=>x.code===c)?.name||c;
 const legacyTimeLabel=legacyAxisPeriodLabel(index.legacyTime);
 function save(){parent.postMessage({type:'atlas-explorer-state',hash:'#'+stateHash(state)},hostOrigin);}
-function update(){save();renderMain();renderCompanies();renderResults();renderReference();renderAdditional();loadSelectedOriginals();}
-function chooseIndicator(id){state.indicator=id;state.compare=(state.compare||[]).filter(x=>x!==id);update();if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.remove('open');$('#explorer-toggle').setAttribute('aria-expanded','false');$('#indicator-title').tabIndex=-1;$('#indicator-title').focus();}}
-function toggleCompany(c){state.companies=state.companies.includes(c)?state.companies.filter(x=>x!==c):[...state.companies,c];update();}
+function update(){save();renderMain();renderCompanies();renderResults();renderReference();renderAdditional();loadSelectedOriginals();renderDerived();}
+function chooseIndicator(id){state.view='companies';state.indicator=id;state.compare=(state.compare||[]).filter(x=>x!==id);update();if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.remove('open');$('#explorer-toggle').setAttribute('aria-expanded','false');$('#indicator-title').tabIndex=-1;$('#indicator-title').focus();}}
+function toggleCompany(c){state.view='companies';state.companies=state.companies.includes(c)?state.companies.filter(x=>x!==c):[...state.companies,c];update();}
 function renderCompanies(){
  $('#company-chips').innerHTML=state.companies.map(c=>`<button class="company-chip" data-remove="${esc(c)}" aria-label="${esc(companyName(c))}を比較から外す">${esc(companyName(c))}<span aria-hidden="true">×</span></button>`).join('');
  $('#company-options').innerHTML=index.companies.map(c=>`<label><input type="checkbox" data-company="${esc(c.code)}" ${state.companies.includes(c.code)?'checked':''}>${esc(c.name)}</label>`).join('');
  $('#year-from').value=state.from;$('#year-to').value=state.to;
  $('#period-note').textContent=periodNote(pointsFor(series,state.indicator,state.companies.length?state.companies:index.companies.map(c=>c.code),state.from,state.to),state.from);
 }
-function renderFilters(){$('#filters').innerHTML=[['all','すべて'],['indicator','指標'],['company','会社'],['public','公的統計']].map(([id,name])=>`<button class="filter ${filter===id?'active':''}" data-filter="${id}" aria-pressed="${filter===id}">${name}</button>`).join('');}
+function renderFilters(){$('#filters').innerHTML=[['all','すべて'],['indicator','指標'],['company','会社'],['public','公的統計'],['derived','派生指標']].map(([id,name])=>`<button class="filter ${filter===id?'active':''}" data-filter="${id}" aria-pressed="${filter===id}">${name}</button>`).join('');}
 function searchable(text){return text.toLowerCase().includes(query.toLowerCase().trim());}
 const range=t=>t.coverage.first?`${t.coverage.first}–${t.coverage.last} · ${t.cycle}（表の時間軸）`:'時間軸の範囲は未確認';
 function renderResults(){
  const foundIndicators=indicators.filter(i=>searchable(i.name+' '+i.id+' '+i.definition)),companies=index.companies.filter(c=>searchable(c.name+' '+c.code)),tables=index.tables.filter(t=>searchable(t.datasetName+' '+t.name+' '+t.id+' '+t.searchText));
- $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件`;
+ $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件 · 派生5定義/141件`;
  let html='';
  if(filter==='all'||filter==='indicator'){
   const reviewed=foundIndicators.filter(i=>i.kind==='verified'),legacy=foundIndicators.filter(i=>i.kind==='legacy');
@@ -35,6 +39,11 @@ function renderResults(){
   if(legacy.length)html+='<section class="result-group"><h3>指標 · 財務・受注・人員などの公開参照</h3>'+legacy.map(row).join('')+'</section>';
  }
  if((filter==='all'||filter==='company')&&companies.length)html+='<section class="result-group"><h3>会社</h3>'+companies.map(c=>`<button class="result ${state.companies.includes(c.code)?'selected':''}" data-toggle-company="${esc(c.code)}"><span class="name">${esc(c.name)}</span><span class="source">BuildBase / 公開会社別主要指標<br>${esc(legacyTimeLabel)} · 選択した原値を読込</span><span class="action">${state.companies.includes(c.code)?'比較から外す':'比較に追加'} →</span></button>`).join('')+'</section>';
+ if(filter==='all'||filter==='derived'||filter==='indicator'){
+ const definitions=derivedCatalog.definitions.filter(d=>searchable(d.name+' '+d.metricId));
+ html+='<section class="result-group"><h3>派生指標 · 保存資料から計算 / 141件</h3>'+definitions.map(d=>`<button class="result" data-derived-metric="${esc(d.metricId)}"><span class="name">${esc(d.name)}</span><span class="source">派生値 / ${esc(d.outputUnit)} · 保存結果${d.resultCount}件<br>式・入力・実期間と出典を確認できます。</span><span class="action">派生結果を開く →</span></button>`).join('')+'<button class="secondary-add" data-open-derived>全5定義・141件を開く →</button></section>';
+ }
+ if(filter==='all'||filter==='derived'||filter==='company')html+='<section class="result-group"><h3>派生指標の開示主体 · 23会社ID</h3>'+derivedCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId)).map(c=>`<button class="result" data-derived-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 派生結果</span><span class="source">保存した公式財務資料から計算した結果。</span><span class="action">この会社の派生結果 →</span></button>`).join('')+'</section>';
  if(filter==='all'||filter==='public')html+='<section class="result-group"><h3>公的統計・公開カタログ · '+tables.length+' / 236表</h3>'+tables.map(t=>`<button class="result ${state.reference===t.id?'selected':''}" data-table="${esc(t.id)}"><span class="name">${esc(t.datasetName)}<br>${esc(t.name)}</span><span class="source">${esc(t.location)}<br>${esc(range(t))}</span><span class="action">分類を選んで追加 →</span></button>`).join('')+'</section>';
  $('#results').innerHTML=html||'<p class="small">一致する項目がありません。名称の一部でも検索できます。</p>';
 }
@@ -101,12 +110,12 @@ $('#search').addEventListener('input',e=>{query=e.target.value;renderResults()})
 $('#company-options').addEventListener('change',e=>{if(e.target.dataset.company)toggleCompany(e.target.dataset.company)});
 $('#drawer-close').addEventListener('click',closeDrawer);$('#drawer').addEventListener('cancel',e=>{e.preventDefault();closeDrawer()});$('#explorer-toggle').addEventListener('click',()=>{const open=$('#explorer').classList.toggle('open');$('#explorer-toggle').setAttribute('aria-expanded',String(open));$('#explorer-toggle').textContent=open?'検索を閉じる':'検索を開く';if(open)$('#search').focus()});
 function act(e){const el=e.target.closest('[data-indicator],[data-add-metric],[data-remove-metric],[data-graph-mode],[data-overlay-fact],[data-toggle-company],[data-filter],[data-remove],[data-fact],[data-sample],[data-analysis],[data-export],[data-table],[data-add-reference],[data-remove-reference],[data-reference-detail],[data-market-point],[data-unloaded-detail],[data-reference-export]');if(!el)return;const d=el.dataset;
- if(d.addMetric){state.compare=[...new Set([...(state.compare||[]),d.addMetric])].filter(id=>id!==state.indicator);update();}else if(d.removeMetric){state.compare=state.compare.filter(id=>id!==d.removeMetric);update();}else if(d.graphMode){state.graph=d.graphMode;update();}else if(d.overlayFact)sourceOverlayFact(d.overlayFact);else if(d.indicator)chooseIndicator(d.indicator);else if(d.toggleCompany)toggleCompany(d.toggleCompany);else if(d.remove)toggleCompany(d.remove);else if(d.filter){filter=d.filter;renderFilters();renderResults();}else if(d.fact)sourceFact(d.fact);else if('sample'in d){state.indicator=GP;state.companies=['OBAYASHI','KAJIMA'];state.from=2021;state.to=2025;update();}else if('analysis'in d)analysis();else if(d.export)exportData(d.export);else if('referenceExport'in d)exportReference();else if(d.table){tableDetail(d.table);}else if('addReference'in d){filter='public';query='';$('#search').value='';renderFilters();renderResults();if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.add('open');$('#explorer-toggle').setAttribute('aria-expanded','true');}$('#search').focus();$('#results').scrollTop=0;}else if('removeReference'in d){state.reference='';state.coordinates={};originalReference=null;update();}else if('referenceDetail'in d)tableDetail(state.reference);else if(d.marketPoint)sourceFact(d.marketPoint);else if('unloadedDetail'in d)unloadedDetail();
+ if(d.addMetric){state.view='companies';state.compare=[...new Set([...(state.compare||[]),d.addMetric])].filter(id=>id!==state.indicator);update();}else if(d.removeMetric){state.compare=state.compare.filter(id=>id!==d.removeMetric);update();}else if(d.graphMode){state.graph=d.graphMode;update();}else if(d.overlayFact)sourceOverlayFact(d.overlayFact);else if(d.indicator)chooseIndicator(d.indicator);else if(d.toggleCompany)toggleCompany(d.toggleCompany);else if(d.remove)toggleCompany(d.remove);else if(d.filter){filter=d.filter;renderFilters();renderResults();}else if(d.fact)sourceFact(d.fact);else if('sample'in d){state.view='companies';state.indicator=GP;state.companies=['OBAYASHI','KAJIMA'];state.from=2021;state.to=2025;update();}else if('analysis'in d)analysis();else if(d.export)exportData(d.export);else if('referenceExport'in d)exportReference();else if(d.table){tableDetail(d.table);}else if('addReference'in d){filter='public';query='';$('#search').value='';renderFilters();renderResults();if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.add('open');$('#explorer-toggle').setAttribute('aria-expanded','true');}$('#search').focus();$('#results').scrollTop=0;}else if('removeReference'in d){state.reference='';state.coordinates={};originalReference=null;update();}else if('referenceDetail'in d)tableDetail(state.reference);else if(d.marketPoint)sourceFact(d.marketPoint);else if('unloadedDetail'in d)unloadedDetail();
 }
 document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();state=parseState('',indicators.map(i=>i.id),index.companies.map(c=>c.code),index.tables.map(t=>t.id));originalReference=null;referenceError='';renderYearOptions();update();window.scrollTo({top:0});});
 document.addEventListener('click',act);document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('circle[data-fact],circle[data-overlay-fact],circle[data-market-point]')){e.preventDefault();if(e.target.dataset.marketPoint)tableDetail('0003126265',e.target.dataset.marketPoint);else sourceFact(e.target.dataset.fact||e.target.dataset.overlayFact)}});
 window.addEventListener('message',e=>{if(e.source!==parent||e.origin!==hostOrigin||e.data?.type!=='atlas-explorer-restore'||typeof e.data.hash!=='string')return;referenceError='';originalReference=null;state=parseState(e.data.hash,indicators.map(i=>i.id),index.companies.map(c=>c.code),index.tables.map(t=>t.id));renderYearOptions();update();});
-document.addEventListener('submit',e=>{if(e.target.id!=='reference-conditions')return;e.preventDefault();state.reference=e.target.dataset.referenceTable;state.coordinates=Object.fromEntries(new FormData(e.target));originalReference=null;referenceError='';closeDrawer();update();});
+document.addEventListener('submit',e=>{if(e.target.id!=='reference-conditions')return;e.preventDefault();state.view='companies';state.reference=e.target.dataset.referenceTable;state.coordinates=Object.fromEntries(new FormData(e.target));originalReference=null;referenceError='';closeDrawer();update();});
 renderFilters();update();
 
 async function loadSelectedOriginals(){
@@ -121,3 +130,23 @@ async function loadSelectedOriginals(){
 function sourceOriginalFact(p){const s=p.series,d=cellDisplay(p);showDrawer(s.meta.table.title,`<p class="notice">${esc(d.detail)}</p><dl><dt>原値 / 単位</dt><dd>${esc(d.text)} ${esc(s.unit)}</dd><dt>原表の期間コード / 名称</dt><dd>${p.year===null?'年未判定 · ' : ''}${esc(p.timeCode)} / ${esc(p.timeLabel)}</dd><dt>実際の開始日・終了日</dt><dd>未収録。原表ラベルから確定日付を補完しません。</dd><dt>統計表ID / 系列ID</dt><dd>${esc(s.meta.table.id)} / ${esc(s.id)}</dd><dt>分類コード</dt><dd>${esc(Object.entries(s.coordinates).map(([k,v])=>k+'='+v).join(' / '))}</dd><dt>原状態 / 注記 / 省略による0</dt><dd>${esc(p.status)} / ${esc(p.annotation||'なし')} / ${esc(p.implicitNumericZero)}</dd><dt>組合せ単位の状態記録</dt><dd>${esc(s.recordedStatus||'例外記録なし')}（年度・資料・範囲未確認）</dd><dt>公開元 / 取得日</dt><dd>${esc(s.source?.sourceId||s.sourceId||'未収録')} / ${esc(s.source?.retrievedAt||'未収録')}</dd></dl>${sourceLink(p.provenance.sourceUrl,'公開元を開く ↗')}<details><summary>原観測・出典メタデータ</summary><pre>${esc(JSON.stringify({tableId:s.meta.table.id,coordinates:s.coordinates,seriesId:s.id,shard:s.shard,source:s.source,rawSeries:s.rawSeries,point:Object.fromEntries(Object.entries(p).filter(([k])=>k!=='series'))},null,2))}</pre></details>`,'原表参照');}
 function exportReference(){if(!originalReference)return;downloadCsv(originalReference.points.filter(p=>pointInYearRange(p,state.from,state.to)).map(p=>({...p,series:originalReference})),'atlas-public-reference.csv');}
 function downloadCsv(points,filename){const {headers,rows}=csvRowsForPoints(points);const url=URL.createObjectURL(new Blob(['\uFEFF'+serializeCsv([headers,...rows])],{type:'text/csv'}));const a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),500);}
+
+function renderDerived(){
+ const open=state.view==='derived';
+ for(const element of document.querySelectorAll('#main > .intro,#main > .conditions,#comparison-controls,#content,#additional-panel,#reference-panel,#main > .main-foot'))element.hidden=open;
+ derivedPanel.hidden=!open;if(!open)return;
+ if(derivedAsset){derivedPanel.innerHTML=renderDerivedView(derivedAsset,state,derivedPage);return;}
+ derivedPanel.innerHTML='<section class="panel"><h1>派生指標141件</h1><p role="status">'+esc(derivedError||'公開用の派生結果と出典を読み込んでいます…')+'</p><button data-close-derived>会社指標と公的統計へ戻る</button></section>';
+ if(!derivedLoading&&!derivedError)derivedLoading=fetchPublicJson(derivedCatalog.dataUrl).then(async asset=>{await validateDerivedAsset(asset,derivedCatalog);derivedAsset=asset;}).catch(error=>{derivedError=error.message;}).finally(()=>{derivedLoading=null;renderDerived();});
+}
+function openDerived(metric='',company=''){
+ state.view='derived';state.derivedMetric=metric;state.derivedCompany=company;state.derivedWindow='';state.derivedState='';state.derivedQuery='';derivedPage=0;update();
+ if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.remove('open');$('#explorer-toggle').setAttribute('aria-expanded','false');}
+ $('#main').scrollIntoView({block:'start'});
+}
+document.addEventListener('click',event=>{
+ const button=event.target.closest('[data-derived-metric],[data-derived-company],[data-open-derived],[data-close-derived],[data-derived-page],[data-clear-derived],[data-derived-export]');if(!button)return;const d=button.dataset;
+ if(d.derivedMetric)openDerived(d.derivedMetric);else if(d.derivedCompany)openDerived('',d.derivedCompany);else if('openDerived'in d)openDerived();else if('closeDerived'in d){state.view='companies';update();}else if(d.derivedPage!==undefined){derivedPage=Math.max(0,Number(d.derivedPage)||0);renderDerived();}else if('clearDerived'in d)openDerived();else if(d.derivedExport&&derivedAsset)downloadDerived(derivedAsset,state,d.derivedExport);
+});
+document.addEventListener('change',event=>{const key=event.target.dataset.derivedFilter;if(!['derivedMetric','derivedCompany','derivedWindow','derivedState'].includes(key))return;state[key]=event.target.value;derivedPage=0;save();renderDerived();});
+document.addEventListener('input',event=>{if(event.target.id!=='derived-search')return;const start=event.target.selectionStart;state.derivedQuery=event.target.value;derivedPage=0;save();renderDerived();const field=$('#derived-search');field.focus();field.setSelectionRange(start,start);});

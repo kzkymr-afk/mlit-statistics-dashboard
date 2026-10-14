@@ -26,3 +26,24 @@ node node_modules/typescript/bin/tsc --noEmit --incremental false
 ```
 
 公開baselineを指定すると236表・65指標・21社、旧年度の2社、状態記録、年度次・月次の公的統計、取得shard数、CSVの出典を検証する。公開データがない環境ではbaselineの検証だけskipする。パケットのSHA-256と20観測・8系列、確認済み分析の年度制約は常に検証する。
+
+## 派生指標141件
+
+v0.2.1は、新UIの検索から5定義・23開示主体の保存派生結果141件へ進める。Sourceの既存export snapshot `5414e48ae0c900934a07303dc41c63f5b8b9a7f5434db9c0baa1a9c92dbd4ab1` を公開金融metadataへ投影した独立snapshotであり、Atlas DBの既存95結果を同期・更新したという意味ではない。旧95 result IDs・値・期間・単位・権限を保持し、追加46件は保存済み営業利益率の結果である。
+
+`public/explorer/derived-indicators.catalog.json` が5定義・23会社IDと公開投影hash・gzip bytes hashを持つ。`derived-indicators.schema.json` は公開金融fieldを明示し、任意fieldや非公開ファイル位置・Sheet/Drive・秘密・個人/連絡先情報を許可しない。`derived-indicators.json.gz` は141結果、式、入力・原引用・原文位置・hash、実期間、計算状態と利用条件を保持する。Source完全wrapper、加工Sheetや施工案件のcoverage、ローカル保存資料は配信しない。除外内容はorigin.projectionOmissionsに残す。全金融metadata文字列のURLは公式5ドメインのHTTPSだけを許可し、秘密のquery parameterを拒否する。原URL未収録の入力250件はnullのままで、公式URLを推定しない。
+
+「派生指標」検索結果、または「全5定義・141件を開く」から独立した結果一覧へ進む。指標、23会社ID、資料の確認期間、状態、結果IDや資料名で検索する。25件ずつ全6ページを表示し、条件をクリアすると141件に戻る。旧会社指標と公的統計の選択、派生指標の選択は別のURLキーで保存する。CSV/JSONは選択した派生結果だけを書き出し、Source snapshot、公開投影hash、結果ID、式・入力・実期間・単位・状態・出典・権限を残す。
+
+派生値を直接開示Factや確認済み20観測として扱わない。自動会社間比較・集計・canonical昇格はfalseのまま。営業利益率の同じ3月期・J-GAAP19主体、IFRS1主体、実期間の異なる3主体を区別し、前田建設工業の過年度・三井住友建設の前年度・竹中工務店の暦年を現在の4月–3月へ変換しない。前年差・前年比は前期と当期の別の実期間を表示する。連結と自社単体の売上差額3件は連結消去などを含み、子会社売上や海外・改修売上として解釈しない。
+
+再生成は既存Sourceの機械exportを読み取り、repository内の公開投影3ファイルだけを書き出す。原DBや原資料を開かず、財務計算を再実行しない。
+
+```sh
+node scripts/export-atlas-derived-public.mjs /path/to/reusable_indicators.json
+ATLAS_DERIVED_SOURCE_EXPORT=/path/to/reusable_indicators.json \
+ATLAS_DERIVED_OLD_CATALOG=/path/to/previous-buildbase-analysis.json \
+node --test tests/atlas-derived-indicators.test.mjs
+```
+
+source exportを指定すると141件の原値・入力・期間・単位・式ID・状態・権限の一致を検証する。旧catalogを指定すると先頭95件の保持も検証する。公開snapshotのhash/schema・private marker拒否・141件の検索と全ページ到達・期間差・未収録URL・CSV/JSONのprovenanceはSourceファイルのない環境でも検証する。

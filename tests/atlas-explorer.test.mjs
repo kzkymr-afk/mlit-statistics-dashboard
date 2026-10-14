@@ -100,7 +100,7 @@ test('host sandbox permits the local classification form and its submit stays in
  assert.ok(sandbox.includes('allow-forms'));
  const app=await readFile(path.join(root,'public/explorer/app.mjs'),'utf8');
  assert.match(app,/<form id="reference-conditions" data-reference-table=/);
- assert.match(app,/document\.addEventListener\('submit',e=>\{if\(e\.target\.id!=='reference-conditions'\)return;e\.preventDefault\(\);state\.reference=/);
+ assert.match(app,/document\.addEventListener\('submit',e=>\{if\(e\.target\.id!=='reference-conditions'\)return;e\.preventDefault\(\);(?:state\.view='companies';)?state\.reference=/);
  assert.doesNotMatch(app,/<form[^>]*\baction=/);
 });
 

@@ -6,3 +6,18 @@
 .reference-coordinate select { display:block; width:100%; padding:10px; border:1px solid #cddbd3; border-radius:5px; margin-top:6px; background:white; }
 .reference-mark { color:#67756e; }
 #reference-conditions > button { background:#247b6b; color:white; border-radius:5px; padding:10px 16px; }
+[hidden] { display:none !important; }
+.derived-filters { display:flex; flex-wrap:wrap; align-items:end; gap:14px; }
+.derived-filters label { display:flex; flex-direction:column; gap:6px; flex:1 1 200px; font-size:13px; }
+.derived-filters input,.derived-filters select { width:100%; padding:10px; border:1px solid #cddbd3; border-radius:5px; background:white; }
+.derived-value { font-size:28px; color:#245d4e; font-variant-numeric:tabular-nums; font-weight:650; margin:14px 0; }
+.derived-value span { font-size:16px; }
+.derived-result { overflow-wrap:anywhere; }
+.derived-result > details { margin:18px 0; padding-top:12px; border-top:1px solid #e1e8e2; }
+.derived-result summary { cursor:pointer; color:#245d4e; }
+.derived-result pre { max-height:480px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; background:#f2f6f1; padding:14px; font-size:12px; }
+.derived-result dl { display:grid; grid-template-columns:minmax(110px,150px) minmax(0,1fr); gap:10px 18px; font-size:13px; }
+.derived-result dd { margin:0; }
+.derived-input { margin:20px 0; padding:18px; border:1px solid #d9e4dc; border-radius:7px; }
+.derived-pagination { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:14px; }
+@media(max-width:680px) { .derived-result dl { grid-template-columns:1fr; gap:5px; } .derived-result dd { margin-bottom:12px; } .derived-header h1 { font-size:22px; } .derived-input { padding:12px; } }
