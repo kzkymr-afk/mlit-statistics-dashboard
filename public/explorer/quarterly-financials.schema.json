@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Public quarterly financial source projection, Kitano113 + Obayashi54 + Kajima102, source-linked reference records",
+  "title": "Public quarterly financial source projection, five recorded companies, source-linked reference records",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -61,7 +61,8 @@
                 "enum": [
                   "reviewed_kitano_q3_summary_segments_v1",
                   "reviewed_kitano_q1_summary_v1",
-                  "reviewed_obayashi_kajima_quarterly_fy2025_v1"
+                  "reviewed_obayashi_kajima_quarterly_fy2025_v1",
+                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1"
                 ]
               }
             },
@@ -87,7 +88,13 @@
                       "https://www.kajima.co.jp/ir/presentation/pdf/reference-20260212-j.pdf",
                       "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20251q-j.pdf",
                       "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20252q-j.pdf",
-                      "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf"
+                      "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf",
+                      "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20250807_2.pdf",
+                      "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20251112_2.pdf",
+                      "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20260212_2.pdf",
+                      "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_1.pdf",
+                      "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_2.pdf",
+                      "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf"
                     ]
                   },
                   "sha256": {
@@ -110,7 +117,10 @@
               "type": "string"
             },
             "sourceAcquisitionTimestampStatus": {
-              "const": "unknown_not_recorded"
+              "enum": [
+                "unknown_not_recorded",
+                "mixed_recorded_and_unknown"
+              ]
             }
           }
         },
@@ -201,8 +211,8 @@
         },
         "records": {
           "type": "array",
-          "minItems": 269,
-          "maxItems": 269,
+          "minItems": 341,
+          "maxItems": 341,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -343,7 +353,9 @@
                 "enum": [
                   "KITANO",
                   "OBAYASHI",
-                  "KAJIMA"
+                  "KAJIMA",
+                  "HASEKO",
+                  "ANDO_HAZAMA"
                 ]
               },
               "corroborating_evidence_ids": {
@@ -448,7 +460,8 @@
                 "enum": [
                   "reviewed_kitano_q3_summary_segments_v1",
                   "reviewed_kitano_q1_summary_v1",
-                  "reviewed_obayashi_kajima_quarterly_fy2025_v1"
+                  "reviewed_obayashi_kajima_quarterly_fy2025_v1",
+                  "reviewed_haseko_ando_hazama_quarterly_fy2025_v1"
                 ]
               },
               "fact_id": {
@@ -726,7 +739,9 @@
                 "enum": [
                   "KITANO",
                   "OBAYASHI",
-                  "KAJIMA"
+                  "KAJIMA",
+                  "HASEKO",
+                  "ANDO_HAZAMA"
                 ]
               },
               "retrieved_at": {
@@ -965,7 +980,13 @@
                   "2bb447cd2db3d555a840f1a27e48ffd5e7d904019ba6fa769a3dc5be5fba8595",
                   "ca14277aebee5e33e31bc09d1ed0216499305c817807fdded21d4aa79b6be12d",
                   "8942fa6fbd6723853fcbdcc651710c07c0a2c4d04e2628244d3aa4e9b63a5816",
-                  "66662a40835578142443941a3d8b6540214dd375e04ec59294d92ca1d1326639"
+                  "66662a40835578142443941a3d8b6540214dd375e04ec59294d92ca1d1326639",
+                  "6eb0419349afa93b6490ba0db0afddbfa9ef7758755f568f180f4afbc950c326",
+                  "8af17f56612e61bf0edb9f0a99032ef26764d1c42f390c148669b8957b600728",
+                  "6422ffc3abf6d7d4ff8b39b3e0cca2dbdf1fa6ce6b71c4dbafd11295b86bebc0",
+                  "0347cd5915889e8ee2413106d7a05422c38fa5aae9127fc7b8e095fe77a4b18e",
+                  "f54cbc98236316e3bbf1a3a5c82317e145929307ecb705ed1345d4d0bf41d607",
+                  "2c1df20398a68a62bfcacd9e4bee1d7ee990f81a836c8dff5d63263b50b3a17d"
                 ]
               },
               "source_fiscal_year_as_indexed": {
@@ -1221,7 +1242,13 @@
                   "https://www.kajima.co.jp/ir/presentation/pdf/reference-20260212-j.pdf",
                   "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20251q-j.pdf",
                   "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20252q-j.pdf",
-                  "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf"
+                  "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf",
+                  "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20250807_2.pdf",
+                  "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20251112_2.pdf",
+                  "https://www.haseko.co.jp/hc/ir/library/pdf/presentation/20260212_2.pdf",
+                  "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_1.pdf",
+                  "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_2.pdf",
+                  "https://www.ad-hzm.co.jp/assets/pdf/ir/statement/2026_3.pdf"
                 ]
               },
               "status": {
@@ -1609,6 +1636,9 @@
                     "type": "boolean"
                   }
                 ]
+              },
+              "consolidation_perimeter_annotation": {
+                "$ref": "#/$defs/location"
               }
             }
           }
@@ -1791,6 +1821,42 @@
               "$ref": "#/$defs/location"
             },
             "geography": {
+              "$ref": "#/$defs/location"
+            },
+            "annual_source_acquisition_id": {
+              "$ref": "#/$defs/location"
+            },
+            "annual_source_period_start": {
+              "$ref": "#/$defs/location"
+            },
+            "annual_source_period_end": {
+              "$ref": "#/$defs/location"
+            },
+            "native_period_column_quote": {
+              "$ref": "#/$defs/location"
+            },
+            "native_period_locator": {
+              "$ref": "#/$defs/location"
+            },
+            "header_bboxes": {
+              "$ref": "#/$defs/location"
+            },
+            "consolidation_scope": {
+              "$ref": "#/$defs/location"
+            },
+            "geographic_scope": {
+              "$ref": "#/$defs/location"
+            },
+            "perimeter_change_assessment": {
+              "$ref": "#/$defs/location"
+            },
+            "selected_native_pdf_page": {
+              "$ref": "#/$defs/location"
+            },
+            "selected_native_scope_quote": {
+              "$ref": "#/$defs/location"
+            },
+            "automatic_comparison_allowed": {
               "$ref": "#/$defs/location"
             }
           }
