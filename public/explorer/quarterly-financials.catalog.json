@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
   "datasetId": "buildbase-quarterly-financial-public",
-  "projectionHash": "d4aa0d406da9e8c4fd0981655b7cc873f4eba4fc8a27052701ccf4c88fc5e5af",
-  "sourceSubsetHash": "2d680c18cd874c77f5a60896adebc17fde4db9a44b9c8815d7df638fe03472d9",
-  "compressedSha256": "91477fc9d07f9d30b04dab047636bbb8c9e11018f16bcc1b0532ccf27d89dc9d",
+  "projectionHash": "11641679bfdf36104f8fd4a18ee975ba2390f7b82f4184d9ccb193eab3e85335",
+  "sourceSubsetHash": "bbb737fc866b66a27d495ecced4d38ac0245411d72ca5699d89fd41a7949f3b5",
+  "compressedSha256": "b5b35dd5b003aaf170ce0123452221e255a775011162160258edbb87c3298db9",
   "dataUrl": "explorer/quarterly-financials.json.gz",
   "schemaUrl": "explorer/quarterly-financials.schema.json",
   "coverageCsvUrl": "explorer/quarterly-coverage.csv",
-  "recordCount": 425,
-  "q1RecordCount": 112,
-  "q2RecordCount": 104,
-  "q3RecordCount": 209,
-  "recordedCompanyCount": 7,
+  "recordCount": 515,
+  "q1RecordCount": 142,
+  "q2RecordCount": 134,
+  "q3RecordCount": 239,
+  "recordedCompanyCount": 9,
   "directQuarterRecordCount": 30,
-  "cumulative3MonthRecordCount": 102,
-  "cumulative6MonthRecordCount": 94,
-  "cumulative9MonthRecordCount": 191,
+  "cumulative3MonthRecordCount": 132,
+  "cumulative6MonthRecordCount": 124,
+  "cumulative9MonthRecordCount": 221,
   "stockRecordCount": 8,
   "companyCount": 21,
   "coverageCompanyCount": 21,
-  "unreviewedCompanyCount": 14,
-  "sourceDocumentCount": 23,
+  "unreviewedCompanyCount": 12,
+  "sourceDocumentCount": 29,
   "sourceCohortExport": {
     "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
     "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
@@ -36,9 +36,14 @@
       "datasetId": "buildbase-okumura-asanuma-quarterly-fy2025",
       "snapshotHash": "eb5b76b29d89ef08e5289e1e62660795c1f147e8b6441f3fc91aebbcb490868f",
       "recordCount": 84
+    },
+    {
+      "datasetId": "buildbase-zenitaka-kumagai-quarterly-fy2025",
+      "snapshotHash": "d2b6e417bfd5878667205603c1618bdde79e32d546f899ac555cef82e7aacc53",
+      "recordCount": 90
     }
   ],
-  "periodCompanionDocumentCount": 3,
+  "periodCompanionDocumentCount": 4,
   "periodCompanionDocuments": [
     {
       "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20250807_1.pdf",
@@ -56,6 +61,12 @@
       "sourceUrl": "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf",
       "sha256": "7f48c2b33c237daebbef78574690d5e96b55e0bf85f3a795b951f20bcff5460a",
       "quarter": 3,
+      "purpose": "exact_period_proof_only"
+    },
+    {
+      "sourceUrl": "https://pdf.irpocket.com/C1861/lAG8/iZSB/OvY0.pdf",
+      "sha256": "44a0a5bc8a740666e538c61363d2d6f7d4eff2745362e3b9f80aedf3d1324507",
+      "quarter": 2,
       "purpose": "exact_period_proof_only"
     }
   ],
@@ -402,12 +413,12 @@
     {
       "companyId": "KUMAGAI",
       "companyName": "熊谷組",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 16,
+      "q2RecordCount": 16,
+      "q3RecordCount": 16,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -462,12 +473,12 @@
     {
       "companyId": "ZENITAKA",
       "companyName": "錢高組",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 14,
+      "q2RecordCount": 14,
+      "q3RecordCount": 14,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -509,6 +520,10 @@
     }
   ],
   "metrics": [
+    {
+      "metricId": "completed_construction_revenue_consolidated_reported",
+      "name": "完成工事高"
+    },
     {
       "metricId": "construction_order_value_as_reported",
       "name": "建設事業の受注高（原表カテゴリ別）"

@@ -118,7 +118,7 @@ function sourceRowDetails(record){
  const hierarchy=firstValue(record,['source_row_hierarchy','source_row_path','source_row_role']);
  const category=firstValue(record,['source_category_as_disclosed','source_row_category','source_category_label','source_category','category_label','category']);
  if(hierarchy===undefined&&category===undefined)return '';
- return `<p class="small">${hierarchy===undefined?'':`原資料の行：${esc(textValue(hierarchy))}`}${hierarchy!==undefined&&category!==undefined?'<br>':''}${category===undefined?'':`区分：${esc(textValue(category))}`}</p>`;
+ return `${record.semantic_category_label?'<p class="small">説明上の区分（原文引用とは別）：'+esc(record.semantic_category_label)+'</p>':''}<p class="small">${hierarchy===undefined?'':`原資料の行：${esc(textValue(hierarchy))}`}${hierarchy!==undefined&&category!==undefined?'<br>':''}${category===undefined?'':`区分：${esc(textValue(category))}`}</p>`;
 }
 function sourceQuoteLabel(record){
  return /joined|multiple|excerpt|cell/i.test(record.source_quote_kind||'')?'原資料から結合した引用（複数箇所の抜粋）':'原資料の引用';
@@ -143,7 +143,8 @@ function recordCurrentnessCheck(check){return check?`<p class="notice">原記録
 function correctionNote(record){return record.correction_status==='official_listing_marks_2025_08_19_corrected_edition'?'<p class="notice">公式掲載ページで訂正版と表示された資料です。訂正前の資料との数値差・訂正範囲は未確認です。</p>':'';}
 function periodEvidence(record){
  const basis=record.source_locator?.period_binding_basis;if(!basis)return '';
- if(record.period_companion){const ref=basis.source_locator||{};return `<section class="notice"><strong>期間の根拠資料（値の主出典とは別）</strong><p>${sourceLink(quarterlySourceUrl(ref.official_url),'公式の四半期短信を開く ↗')} · PDF物理ページ ${esc(ref.pdf_page)}<br>原本SHA-256 ${esc(ref.sha256)}</p><blockquote>${esc(basis.source_quote)}</blockquote><p>同じ法人・四半期の短信に記載された期間を対応づけています。選択した補足表には正確な開始・終了日の記載がありません。${record.data_scope==='standalone'?'短信の期間根拠は連結、受注表は単体です。対象範囲が同じとは扱いません。':''}単独四半期への差分計算や自動比較は行いません。</p></section>`;}
+ if(record.period_companion){const ref=basis.source_locator||{};const scopeNote=record.company_id==='KUMAGAI'?(record.data_scope==='standalone'?'期間根拠は同じ法人・四半期の短信の単体受注表です。':'期間根拠は同じ法人・四半期の短信の連結損益計算書です。'):(record.data_scope==='standalone'?'短信の期間根拠は連結、受注表は単体です。対象範囲が同じとは扱いません。':'');return `<section class="notice"><strong>期間の根拠資料（値の主出典とは別）</strong><p>${sourceLink(quarterlySourceUrl(ref.official_url),'公式の四半期短信を開く ↗')} · PDF物理ページ ${esc(ref.pdf_page)}<br>原本SHA-256 ${esc(ref.sha256)}</p><blockquote>${esc(basis.source_quote)}</blockquote><p>同じ法人・四半期の短信に記載された期間を対応づけています。値の主出典と期間の根拠資料を分けて保持します。${scopeNote}単独四半期への差分計算や自動比較は行いません。</p></section>`;}
+ if(record.extractor_version==='reviewed_zenitaka_kumagai_quarterly_fy2025_v1')return `<section class="notice"><strong>同じPDF内の期間根拠</strong><blockquote>${esc(basis.source_quote)}</blockquote><p>原文の開始・終了日と累計の表記を保持します。期間根拠のPDF物理ページ ${esc(basis.source_locator?.pdf_page||'metadata参照')}${basis.source_locator?.printed_page?' / 資料の表示ページ '+esc(basis.source_locator.printed_page):''}。${record.company_id==='ZENITAKA'&&record.data_scope==='standalone'?'連結損益計算書は期間だけの根拠に使います。単体受注の対象範囲と同じとは扱いません。':''}単独四半期への差分計算や自動比較は行いません。</p></section>`;
  return record.extractor_version==='reviewed_okumura_asanuma_quarterly_fy2025_v1'?`<section class="notice"><strong>同じPDF内の期間根拠</strong><blockquote>${esc(basis.source_quote)}</blockquote><p>表紙の当期期間と同じPDF内の比較期間の記載に対応づけています。連結の財務表と単体の受注表は、期間の対応だけを確認し、対象範囲が同じとは扱いません。</p></section>`:'';
 }
 function acquisitionLabel(record){return record.retrieved_at?'原資料の取得UTC '+record.retrieved_at:'原資料の取得日時は未収録';}

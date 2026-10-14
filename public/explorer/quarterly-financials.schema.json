@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Public quarterly financial source projection, seven recorded companies, source-linked reference records",
+  "title": "Public quarterly financial source projection, nine recorded companies, source-linked reference records",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -64,7 +64,8 @@
                   "reviewed_kitano_q1_summary_v1",
                   "reviewed_obayashi_kajima_quarterly_fy2025_v1",
                   "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
-                  "reviewed_okumura_asanuma_quarterly_fy2025_v1"
+                  "reviewed_okumura_asanuma_quarterly_fy2025_v1",
+                  "reviewed_zenitaka_kumagai_quarterly_fy2025_v1"
                 ]
               }
             },
@@ -102,7 +103,13 @@
                       "https://www.okumuragumi.co.jp/ir/irinfo/data/20260213_kessan_fact.pdf",
                       "https://www.asanuma.co.jp/ir/pdf/kessan/20250819_2.pdf",
                       "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_2.pdf",
-                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf"
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf",
+                      "https://www.zenitaka.co.jp/ir/28c680e7ca4b4250967c9a2586c48b73a0f27d69.pdf",
+                      "https://www.zenitaka.co.jp/ir/2a431659c19eeb381b75a772a23002962980c31a.pdf",
+                      "https://www.zenitaka.co.jp/ir/shi2603-3.pdf",
+                      "https://pdf.irpocket.com/C1861/bffO/mTgf/L2Nh.pdf",
+                      "https://www.kumagaigumi.co.jp/ir/uploads/ir_20251120_2.pdf",
+                      "https://pdf.irpocket.com/C1861/YpwX/TObp/i9nC.pdf"
                     ]
                   },
                   "sha256": {
@@ -114,8 +121,8 @@
             },
             "periodCompanionDocuments": {
               "type": "array",
-              "minItems": 3,
-              "maxItems": 3,
+              "minItems": 4,
+              "maxItems": 4,
               "items": {
                 "type": "object",
                 "additionalProperties": false,
@@ -130,7 +137,8 @@
                     "enum": [
                       "https://www.asanuma.co.jp/ir/pdf/kessan/20250807_1.pdf",
                       "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_1.pdf",
-                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf"
+                      "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_1.pdf",
+                      "https://pdf.irpocket.com/C1861/lAG8/iZSB/OvY0.pdf"
                     ]
                   },
                   "sha256": {
@@ -257,8 +265,8 @@
         },
         "records": {
           "type": "array",
-          "minItems": 425,
-          "maxItems": 425,
+          "minItems": 515,
+          "maxItems": 515,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -403,7 +411,9 @@
                   "HASEKO",
                   "ANDO_HAZAMA",
                   "OKUMURA",
-                  "ASANUMA"
+                  "ASANUMA",
+                  "ZENITAKA",
+                  "KUMAGAI"
                 ]
               },
               "corroborating_evidence_ids": {
@@ -510,7 +520,8 @@
                   "reviewed_kitano_q1_summary_v1",
                   "reviewed_obayashi_kajima_quarterly_fy2025_v1",
                   "reviewed_haseko_ando_hazama_quarterly_fy2025_v1",
-                  "reviewed_okumura_asanuma_quarterly_fy2025_v1"
+                  "reviewed_okumura_asanuma_quarterly_fy2025_v1",
+                  "reviewed_zenitaka_kumagai_quarterly_fy2025_v1"
                 ]
               },
               "fact_id": {
@@ -792,7 +803,9 @@
                   "HASEKO",
                   "ANDO_HAZAMA",
                   "OKUMURA",
-                  "ASANUMA"
+                  "ASANUMA",
+                  "ZENITAKA",
+                  "KUMAGAI"
                 ]
               },
               "retrieved_at": {
@@ -1043,7 +1056,13 @@
                   "c4647f8ccdfa68ec2b628e83c7dbf983550a0adabc4f1f84e5650aab23beb8c5",
                   "b1e1b0eae88057b612a98d1b6e41469c341e852c3ce140a7796ee0acea482e78",
                   "9b7e2338950d63f6c8cd228b51cc2f4345b7c9a254af46fa847de3bcd1677f49",
-                  "2b53666e309b85ce0318fc5488114a059f6ba27fa81780ca926a32b1f8f86081"
+                  "2b53666e309b85ce0318fc5488114a059f6ba27fa81780ca926a32b1f8f86081",
+                  "072040c2c4b78866feff3a1469968e296815ac39f50008f4a4e5849994c59eae",
+                  "e1efd7d6946edd6d3ac8439bec59be937e446a164d0a822440e923a994cc7d82",
+                  "07eb2ad47446e6ee7158fb1642b478f5265a3fbaa3220953b21f505ab065acac",
+                  "9de7f2d85d431dc0c13f990f06d82762909ab0e30fb9f7ae79911f9c370bac3c",
+                  "1845a5849fef970014ec5058ca3695638bd25bda0e81c02abf13c572de0df734",
+                  "8af8911f98a930fbf62440728123ad0bd2105e698fefb0a5506498b10f4ff04a"
                 ]
               },
               "source_fiscal_year_as_indexed": {
@@ -1311,7 +1330,13 @@
                   "https://www.okumuragumi.co.jp/ir/irinfo/data/20260213_kessan_fact.pdf",
                   "https://www.asanuma.co.jp/ir/pdf/kessan/20250819_2.pdf",
                   "https://www.asanuma.co.jp/ir/pdf/kessan/20251111_2.pdf",
-                  "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf"
+                  "https://www.asanuma.co.jp/ir/pdf/kessan/20260210_2.pdf",
+                  "https://www.zenitaka.co.jp/ir/28c680e7ca4b4250967c9a2586c48b73a0f27d69.pdf",
+                  "https://www.zenitaka.co.jp/ir/2a431659c19eeb381b75a772a23002962980c31a.pdf",
+                  "https://www.zenitaka.co.jp/ir/shi2603-3.pdf",
+                  "https://pdf.irpocket.com/C1861/bffO/mTgf/L2Nh.pdf",
+                  "https://www.kumagaigumi.co.jp/ir/uploads/ir_20251120_2.pdf",
+                  "https://pdf.irpocket.com/C1861/YpwX/TObp/i9nC.pdf"
                 ]
               },
               "status": {
@@ -1841,6 +1866,47 @@
                     "type": "boolean"
                   }
                 ]
+              },
+              "semantic_category_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "correction_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "metadata_correction_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
               }
             }
           }
@@ -2114,6 +2180,36 @@
             },
             "scope_caveat": {
               "$ref": "#/$defs/location"
+            },
+            "fragments": {
+              "$ref": "#/$defs/location"
+            },
+            "exact_dates_printed_on_same_pdf_financial_statement": {
+              "$ref": "#/$defs/location"
+            },
+            "exact_prior_and_current_dates_printed_on_selected_statement": {
+              "$ref": "#/$defs/location"
+            },
+            "native_period_header_fragments": {
+              "$ref": "#/$defs/location"
+            },
+            "native_status_as_received": {
+              "$ref": "#/$defs/location"
+            },
+            "order_table_prints_cumulative_note": {
+              "$ref": "#/$defs/location"
+            },
+            "same_pdf_statement_date_fragments": {
+              "$ref": "#/$defs/location"
+            },
+            "same_pdf_statement_physical_page": {
+              "$ref": "#/$defs/location"
+            },
+            "same_pdf_statement_printed_page": {
+              "$ref": "#/$defs/location"
+            },
+            "selected_orders_page": {
+              "$ref": "#/$defs/location"
             }
           }
         }
@@ -2194,6 +2290,9 @@
               "$ref": "#/$defs/periodCompanion"
             },
             "scope": {
+              "$ref": "#/$defs/periodCompanion"
+            },
+            "metric_family": {
               "$ref": "#/$defs/periodCompanion"
             }
           }
