@@ -34,7 +34,7 @@ function searchable(text){return text.toLowerCase().includes(query.toLowerCase()
 const range=t=>t.coverage.first?`${t.coverage.first}–${t.coverage.last} · ${t.cycle}（表の時間軸）`:'時間軸の範囲は未確認';
 function renderResults(){
  const foundIndicators=indicators.filter(i=>searchable(i.name+' '+i.id+' '+i.definition)),companies=index.companies.filter(c=>searchable(c.name+' '+c.code)),tables=index.tables.filter(t=>searchable(t.datasetName+' '+t.name+' '+t.id+' '+t.searchText));
- $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件 · 派生5定義/141件 · 四半期21社/113件`;
+ $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件 · 派生5定義/141件 · 四半期${quarterlyCatalog.recordedCompanyCount}社収録・${quarterlyCatalog.unreviewedCompanyCount}社未確認 / 全${quarterlyCatalog.coverageCompanyCount}社・${quarterlyCatalog.recordCount}値`;
  let html='';
  if(filter==='all'||filter==='indicator'){
   const reviewed=foundIndicators.filter(i=>i.kind==='verified'),legacy=foundIndicators.filter(i=>i.kind==='legacy');
@@ -50,10 +50,10 @@ function renderResults(){
  if(filter==='all'||filter==='derived'||filter==='company')html+='<section class="result-group"><h3>派生指標の開示主体 · 23会社ID</h3>'+derivedCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId)).map(c=>`<button class="result" data-derived-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 派生結果</span><span class="source">保存した公式財務資料から計算した結果。</span><span class="action">この会社の派生結果 →</span></button>`).join('')+'</section>';
  if(filter==='all'||filter==='public')html+='<section class="result-group"><h3>公的統計・公開カタログ · '+tables.length+' / 236表</h3>'+tables.map(t=>`<button class="result ${state.reference===t.id?'selected':''}" data-table="${esc(t.id)}"><span class="name">${esc(t.datasetName)}<br>${esc(t.name)}</span><span class="source">${esc(t.location)}<br>${esc(range(t))}</span><span class="action">分類を選んで追加 →</span></button>`).join('')+'</section>';
  if(['all','quarterly','company'].includes(filter)){
-  const found=quarterlyCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId+' 四半期 Q1 Q3 累計 残高'));
-  html+='<section class="result-group"><h3>四半期資料 · 21社の確認状況 / 北野113件</h3>'+found.map(c=>`<button class="result" data-quarter-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 四半期資料</span><span class="source">${c.q1RecordCount+c.q3RecordCount?`Q3資料の値${c.q3RecordCount}件・Q1資料の値${c.q1RecordCount}件 / 累計・残高等`:'収録0件 · 未確認（非開示を意味しません）'}</span><span class="action">確認状況と原値を開く →</span></button>`).join('')+'<button class="secondary-add" data-open-quarter>全21社一覧・113件を開く →</button></section>';
+  const found=quarterlyCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId+' 四半期 Q1 Q2 Q3 受注 単体 単独 累計 残高'));
+  html+='<section class="result-group"><h3>四半期資料 · '+quarterlyCatalog.coverageCompanyCount+'社の確認状況 / '+quarterlyCatalog.recordedCompanyCount+'社・'+quarterlyCatalog.recordCount+'値</h3>'+found.map(c=>`<button class="result" data-quarter-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 四半期資料</span><span class="source">${c.q1RecordCount+c.q2RecordCount+c.q3RecordCount?`Q1 ${c.q1RecordCount}値・Q2 ${c.q2RecordCount}値・Q3 ${c.q3RecordCount}値 / 累計・単独四半期・残高等`:'収録0件 · 未確認（非開示を意味しません）'}</span><span class="action">確認状況と原値を開く →</span></button>`).join('')+'<button class="secondary-add" data-open-quarter>全'+quarterlyCatalog.coverageCompanyCount+'社一覧・'+quarterlyCatalog.recordCount+'値を開く →</button></section>';
  }
- if(['all','quarterly','indicator'].includes(filter))html+='<section class="result-group"><h3>北野建設の四半期資料の指標</h3>'+quarterlyCatalog.metrics.filter(m=>searchable(m.name+' '+m.metricId+' 北野 KITANO 四半期')).map(m=>`<button class="result" data-quarter-metric="${esc(m.metricId)}"><span class="name">${esc(m.name)} · 四半期資料</span><span class="source">累計・残高・比率・1株当たりの区別と出典を保持</span><span class="action">原値を開く →</span></button>`).join('')+'</section>';
+ if(['all','quarterly','indicator'].includes(filter))html+='<section class="result-group"><h3>収録会社の四半期資料の指標</h3>'+quarterlyCatalog.metrics.filter(m=>searchable(m.name+' '+m.metricId+' '+quarterlyCatalog.companies.filter(c=>c.q1RecordCount+c.q2RecordCount+c.q3RecordCount).map(c=>c.companyName+' '+c.companyId).join(' ')+' 四半期 Q1 Q2 Q3')).map(m=>`<button class="result" data-quarter-metric="${esc(m.metricId)}"><span class="name">${esc(m.name)} · 四半期資料</span><span class="source">累計・残高・比率・1株当たりの区別と出典を保持</span><span class="action">原値を開く →</span></button>`).join('')+'</section>';
  $('#results').innerHTML=html||'<p class="small">一致する項目がありません。名称の一部でも検索できます。</p>';
 }
 function chart(points){const i=indicators.find(i=>i.id===state.indicator);return renderLineChart(state.companies.map((c,ci)=>({color:COLORS[ci%COLORS.length],label:companyName(c),metric:i.id,unit:points.find(p=>p.companyId===c)?.series.unit||i.unit,reference:points.some(p=>p.companyId===c&&p.reference),points:points.filter(p=>p.companyId===c)})),{from:state.from,to:state.to,primary:i,colors:COLORS});}
@@ -165,7 +165,7 @@ function renderQuarterly(){
  for(const element of document.querySelectorAll('#main > .intro,#main > .conditions,#comparison-controls,#content,#additional-panel,#reference-panel,#main > .main-foot'))element.hidden=state.view!=='companies';
  quarterlyPanel.hidden=!open;if(!open)return;
  if(quarterlyAsset){quarterlyPanel.innerHTML=renderQuarterlyView(quarterlyAsset,state,quarterlyPage);return;}
- quarterlyPanel.innerHTML='<section class="panel"><h1>四半期資料 · 21社の一覧と113件</h1><p role="status">'+esc(quarterlyError||'原値と出典を読み込んでいます…')+'</p><button data-close-quarter>会社指標と公的統計へ戻る</button></section>';
+ quarterlyPanel.innerHTML='<section class="panel"><h1>四半期資料 · '+quarterlyCatalog.coverageCompanyCount+'社の一覧と'+quarterlyCatalog.recordCount+'値</h1><p role="status">'+esc(quarterlyError||'原値と出典を読み込んでいます…')+'</p><button data-close-quarter>会社指標と公的統計へ戻る</button></section>';
  if(!quarterlyLoading&&!quarterlyError)quarterlyLoading=fetchPublicJson(quarterlyCatalog.dataUrl).then(async asset=>{await validateQuarterlyAsset(asset,quarterlyCatalog);quarterlyAsset=asset;}).catch(error=>{quarterlyError=error.message;}).finally(()=>{quarterlyLoading=null;renderQuarterly();});
 }
 function openQuarterly(company='',metric=''){
@@ -175,7 +175,7 @@ function openQuarterly(company='',metric=''){
 }
 document.addEventListener('click',event=>{
  const button=event.target.closest('[data-quarter-company],[data-quarter-metric],[data-open-quarter],[data-close-quarter],[data-quarter-page],[data-clear-quarter],[data-quarter-export]');if(!button)return;const d=button.dataset;
- if(d.quarterCompany)openQuarterly(d.quarterCompany);else if(d.quarterMetric)openQuarterly('KITANO',d.quarterMetric);else if('openQuarter'in d||'clearQuarter'in d)openQuarterly();else if('closeQuarter'in d){state.view='companies';update();}else if(d.quarterPage!==undefined){quarterlyPage=Math.max(0,Number(d.quarterPage)||0);renderQuarterly();}else if(d.quarterExport&&quarterlyAsset)downloadQuarterly(quarterlyAsset,state,d.quarterExport);
+ if(d.quarterCompany)openQuarterly(d.quarterCompany);else if(d.quarterMetric)openQuarterly('',d.quarterMetric);else if('openQuarter'in d||'clearQuarter'in d)openQuarterly();else if('closeQuarter'in d){state.view='companies';update();}else if(d.quarterPage!==undefined){quarterlyPage=Math.max(0,Number(d.quarterPage)||0);renderQuarterly();}else if(d.quarterExport&&quarterlyAsset)downloadQuarterly(quarterlyAsset,state,d.quarterExport);
 });
 document.addEventListener('change',event=>{const key=event.target.dataset.quarterFilter;if(!['quarterCompany','quarterMetric','quarterPeriod','quarterScope'].includes(key))return;state[key]=event.target.value;quarterlyPage=0;save();renderQuarterly();});
 document.addEventListener('input',event=>{if(event.target.id!=='quarter-search')return;const start=event.target.selectionStart;state.quarterQuery=event.target.value;quarterlyPage=0;save();renderQuarterly();const field=$('#quarter-search');field.focus();field.setSelectionRange(start,start);});

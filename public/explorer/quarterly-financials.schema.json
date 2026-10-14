@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Public quarterly financial source projection, bounded Kitano Q3 + Q1",
+  "title": "Public quarterly financial source projection, Kitano113 + Obayashi54 + Kajima102, source-linked reference records",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -60,7 +60,8 @@
               "items": {
                 "enum": [
                   "reviewed_kitano_q3_summary_segments_v1",
-                  "reviewed_kitano_q1_summary_v1"
+                  "reviewed_kitano_q1_summary_v1",
+                  "reviewed_obayashi_kajima_quarterly_fy2025_v1"
                 ]
               }
             },
@@ -77,7 +78,16 @@
                   "sourceUrl": {
                     "enum": [
                       "https://www.kitano.co.jp/wp-content/uploads/2026/02/IR20260210-1.pdf",
-                      "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf"
+                      "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf",
+                      "https://data.swcms.net/file/obayashi-ir/dam/jcr:bd453723-8141-4508-8f01-a7e35fc66917/140120250807535695.pdf",
+                      "https://data.swcms.net/file/obayashi-ir/dam/jcr:b368a092-c85f-4ea0-86f6-1c3548e5cf11/140120251104587256.pdf",
+                      "https://data.swcms.net/file/obayashi-ir/dam/jcr:0f4b24d2-5b4e-450d-8198-58cbf1e3f683/140120260206550663.pdf",
+                      "https://www.kajima.co.jp/ir/presentation/pdf/reference-20250806-j.pdf",
+                      "https://www.kajima.co.jp/ir/presentation/pdf/reference-20251111-j.pdf",
+                      "https://www.kajima.co.jp/ir/presentation/pdf/reference-20260212-j.pdf",
+                      "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20251q-j.pdf",
+                      "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20252q-j.pdf",
+                      "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf"
                     ]
                   },
                   "sha256": {
@@ -191,8 +201,8 @@
         },
         "records": {
           "type": "array",
-          "minItems": 113,
-          "maxItems": 113,
+          "minItems": 269,
+          "maxItems": 269,
           "items": {
             "type": "object",
             "additionalProperties": false,
@@ -227,7 +237,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -243,7 +254,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -259,7 +271,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -275,7 +288,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -291,7 +305,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -313,7 +328,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -324,7 +340,11 @@
                 ]
               },
               "company_id": {
-                "const": "KITANO"
+                "enum": [
+                  "KITANO",
+                  "OBAYASHI",
+                  "KAJIMA"
+                ]
               },
               "corroborating_evidence_ids": {
                 "type": "array",
@@ -339,7 +359,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -361,7 +382,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -377,7 +399,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -393,7 +416,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -409,7 +433,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -422,7 +447,8 @@
               "extractor_version": {
                 "enum": [
                   "reviewed_kitano_q3_summary_segments_v1",
-                  "reviewed_kitano_q1_summary_v1"
+                  "reviewed_kitano_q1_summary_v1",
+                  "reviewed_obayashi_kajima_quarterly_fy2025_v1"
                 ]
               },
               "fact_id": {
@@ -438,7 +464,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -454,7 +481,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -470,7 +498,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -486,7 +515,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -502,7 +532,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -518,7 +549,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -534,7 +566,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -550,7 +583,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -566,7 +600,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -582,7 +617,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -598,7 +634,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -614,7 +651,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -630,7 +668,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -646,7 +685,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -659,7 +699,9 @@
               "period_type": {
                 "enum": [
                   "quarter_cumulative_9months",
+                  "quarter_cumulative_6months",
                   "quarter_cumulative_3months",
+                  "quarter_only_3months",
                   "point_in_time_stock"
                 ]
               },
@@ -669,7 +711,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -680,7 +723,11 @@
                 ]
               },
               "reporting_entity_id": {
-                "const": "KITANO"
+                "enum": [
+                  "KITANO",
+                  "OBAYASHI",
+                  "KAJIMA"
+                ]
               },
               "retrieved_at": {
                 "anyOf": [
@@ -688,7 +735,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -704,7 +752,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -723,7 +772,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -739,7 +789,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -755,7 +806,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -771,7 +823,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -787,7 +840,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -803,7 +857,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -819,7 +874,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -835,7 +891,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -851,7 +908,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -867,7 +925,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -883,7 +942,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -896,7 +956,16 @@
               "source_file_sha256": {
                 "enum": [
                   "7dd4a48007f552890fccf0661ae12056ff8941432d4a6a0430b789d0f79693d2",
-                  "2f05a4d02a8d572a62a3a2fb605f6c77a12cf675722cde4a868498710d876bd4"
+                  "2f05a4d02a8d572a62a3a2fb605f6c77a12cf675722cde4a868498710d876bd4",
+                  "62bd8389953df70fc2e9900b1461d0a2d7af613fdb22e5ed92e611f744d9a593",
+                  "f017e4ab2f89d8dbd6d73b750e1ada7bfdc86c011e97bbe6fb866c2265c03620",
+                  "90ca13160e88863a45f742347291623049bc09f474b0c74b01f2073414fa8373",
+                  "5902fb1145f9f8546d377444ac1afe293cf1607b158e793d96a7058af56e0e7e",
+                  "5c93c79814c127242f02e377b858a7d99f96637779a8b9be272f60683fd5965e",
+                  "2bb447cd2db3d555a840f1a27e48ffd5e7d904019ba6fa769a3dc5be5fba8595",
+                  "ca14277aebee5e33e31bc09d1ed0216499305c817807fdded21d4aa79b6be12d",
+                  "8942fa6fbd6723853fcbdcc651710c07c0a2c4d04e2628244d3aa4e9b63a5816",
+                  "66662a40835578142443941a3d8b6540214dd375e04ec59294d92ca1d1326639"
                 ]
               },
               "source_fiscal_year_as_indexed": {
@@ -905,7 +974,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -921,7 +991,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -940,7 +1011,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -956,7 +1028,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -972,7 +1045,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -988,7 +1062,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1004,7 +1079,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1020,7 +1096,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1036,7 +1113,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1052,7 +1130,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1068,7 +1147,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1084,7 +1164,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1100,7 +1181,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1116,7 +1198,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1129,7 +1212,16 @@
               "source_url": {
                 "enum": [
                   "https://www.kitano.co.jp/wp-content/uploads/2026/02/IR20260210-1.pdf",
-                  "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf"
+                  "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf",
+                  "https://data.swcms.net/file/obayashi-ir/dam/jcr:bd453723-8141-4508-8f01-a7e35fc66917/140120250807535695.pdf",
+                  "https://data.swcms.net/file/obayashi-ir/dam/jcr:b368a092-c85f-4ea0-86f6-1c3548e5cf11/140120251104587256.pdf",
+                  "https://data.swcms.net/file/obayashi-ir/dam/jcr:0f4b24d2-5b4e-450d-8198-58cbf1e3f683/140120260206550663.pdf",
+                  "https://www.kajima.co.jp/ir/presentation/pdf/reference-20250806-j.pdf",
+                  "https://www.kajima.co.jp/ir/presentation/pdf/reference-20251111-j.pdf",
+                  "https://www.kajima.co.jp/ir/presentation/pdf/reference-20260212-j.pdf",
+                  "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20251q-j.pdf",
+                  "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20252q-j.pdf",
+                  "https://www.kajima.co.jp/ir/q_order/pdf/quarterly-20253q-j.pdf"
                 ]
               },
               "status": {
@@ -1138,7 +1230,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1154,7 +1247,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1170,7 +1264,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1183,6 +1278,7 @@
               "unit": {
                 "enum": [
                   "百万円",
+                  "億円",
                   "円銭",
                   "％"
                 ]
@@ -1193,7 +1289,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1212,7 +1309,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1228,7 +1326,8 @@
                     "type": "null"
                   },
                   {
-                    "type": "string"
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
                   },
                   {
                     "type": "number"
@@ -1277,6 +1376,239 @@
                     "type": "string"
                   }
                 }
+              },
+              "current_official_version_match_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "display_precision_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "reported_category_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "semantic_overlap_group": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "semantic_overlap_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_category_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_document_type_as_indexed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source_order_dimensions": {
+                "$ref": "#/$defs/location"
+              },
+              "source_period_semantics": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_quarter_number": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_restatement_basis": {
+                "$ref": "#/$defs/location"
+              },
+              "source_row_hierarchy": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_title_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_url_basis": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_version_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
               }
             }
           }
@@ -1293,7 +1625,8 @@
               "type": "null"
             },
             {
-              "type": "string"
+              "type": "string",
+              "pattern": "^(?![\\s\\S]*(?:/Volumes/|/Users/|file://|data/raw/|https?://(?:[^/]+\\.)?(?:google\\.com|googleapis\\.com|github\\.com)))[\\s\\S]*$"
             },
             {
               "type": "number"
@@ -1386,6 +1719,78 @@
               "$ref": "#/$defs/location"
             },
             "value_bbox_page_points_top_left": {
+              "$ref": "#/$defs/location"
+            },
+            "bbox": {
+              "$ref": "#/$defs/location"
+            },
+            "coordinate_system": {
+              "$ref": "#/$defs/location"
+            },
+            "pdfplumber_page_bbox_origin": {
+              "$ref": "#/$defs/location"
+            },
+            "pdf_page_rotation": {
+              "$ref": "#/$defs/location"
+            },
+            "native_header_guards": {
+              "$ref": "#/$defs/location"
+            },
+            "period_binding_basis": {
+              "$ref": "#/$defs/location"
+            },
+            "quote": {
+              "$ref": "#/$defs/location"
+            },
+            "status": {
+              "$ref": "#/$defs/location"
+            },
+            "source_quote": {
+              "$ref": "#/$defs/location"
+            },
+            "source_locator": {
+              "$ref": "#/$defs/location"
+            },
+            "limitation": {
+              "$ref": "#/$defs/location"
+            },
+            "method": {
+              "$ref": "#/$defs/location"
+            },
+            "exact_dates_printed_on_selected_table": {
+              "$ref": "#/$defs/location"
+            },
+            "fiscal_metadata_document_id": {
+              "$ref": "#/$defs/location"
+            },
+            "fiscal_metadata_sha256": {
+              "$ref": "#/$defs/location"
+            },
+            "prior_annual_basis_fact_id": {
+              "$ref": "#/$defs/location"
+            },
+            "prior_annual_basis_source_file_sha256": {
+              "$ref": "#/$defs/location"
+            },
+            "source_fiscal_group_as_disclosed": {
+              "$ref": "#/$defs/location"
+            },
+            "source_period_label_as_disclosed": {
+              "$ref": "#/$defs/location"
+            },
+            "relation_to_original_prior_edition": {
+              "$ref": "#/$defs/location"
+            },
+            "current_official_version_match_status": {
+              "$ref": "#/$defs/location"
+            },
+            "business_scope": {
+              "$ref": "#/$defs/location"
+            },
+            "construction_type": {
+              "$ref": "#/$defs/location"
+            },
+            "geography": {
               "$ref": "#/$defs/location"
             }
           }

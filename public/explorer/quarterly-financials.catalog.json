@@ -1,19 +1,26 @@
 {
   "schemaVersion": 1,
   "datasetId": "buildbase-quarterly-financial-public",
-  "projectionHash": "8913306b52292f486a7278281287b5105ceb6c881beba4319293a0737095c62f",
-  "sourceSubsetHash": "8fd52c75a56b029da62a7decf1578e1a92f0e503fadf95fa1133ce235d5f6b8f",
-  "compressedSha256": "a3fd39a63b6883def247fe8dc4732781d97814368029cb249fecc60e6661c15a",
+  "projectionHash": "a048803041140d1db8ef2b2e33282d7d4467eab4e09f603f67fa3b5357acf9c5",
+  "sourceSubsetHash": "20ff0e0b2b565ed46d627b90c0f55ab4a816f827a44e218d105512177b557268",
+  "compressedSha256": "477f9372a322fea69d0215e2de5550a7629c31347daacb6265b99460a00e41f7",
   "dataUrl": "explorer/quarterly-financials.json.gz",
   "schemaUrl": "explorer/quarterly-financials.schema.json",
   "coverageCsvUrl": "explorer/quarterly-coverage.csv",
-  "recordCount": 113,
-  "q3RecordCount": 105,
-  "q1RecordCount": 8,
+  "recordCount": 269,
+  "q3RecordCount": 157,
+  "q2RecordCount": 52,
+  "q1RecordCount": 60,
   "companyCount": 21,
   "coverageCompanyCount": 21,
-  "recordedCompanyCount": 1,
-  "sourceDocumentCount": 2,
+  "recordedCompanyCount": 3,
+  "unreviewedCompanyCount": 18,
+  "sourceDocumentCount": 11,
+  "directQuarterRecordCount": 30,
+  "cumulative3MonthRecordCount": 50,
+  "cumulative6MonthRecordCount": 42,
+  "cumulative9MonthRecordCount": 139,
+  "stockRecordCount": 8,
   "companies": [
     {
       "companyId": "MAEDA",
@@ -54,12 +61,12 @@
     {
       "companyId": "KAJIMA",
       "companyName": "鹿島建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 34,
+      "q2RecordCount": 34,
+      "q3RecordCount": 34,
       "q4DirectRecordCount": 0,
-      "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "standaloneQuarterRecordCount": 30,
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -78,12 +85,12 @@
     {
       "companyId": "OBAYASHI",
       "companyName": "大林組",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 18,
+      "q2RecordCount": 18,
+      "q3RecordCount": 18,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -270,8 +277,16 @@
   ],
   "metrics": [
     {
+      "metricId": "construction_order_value_as_reported",
+      "name": "建設事業の受注高（原表カテゴリ別）"
+    },
+    {
       "metricId": "depreciation_expense_reported",
       "name": "減価償却費"
+    },
+    {
+      "metricId": "development_order_value_as_reported",
+      "name": "開発事業等の受注高"
     },
     {
       "metricId": "eps_consolidated_reported",
@@ -304,6 +319,10 @@
     {
       "metricId": "ordinary_profit_consolidated_reported",
       "name": "経常利益"
+    },
+    {
+      "metricId": "real_estate_order_value_as_reported",
+      "name": "不動産事業等の受注高"
     },
     {
       "metricId": "sales_consolidated_reported",
@@ -348,6 +367,10 @@
     {
       "metricId": "total_assets_consolidated_reported",
       "name": "総資産"
+    },
+    {
+      "metricId": "total_orders_as_reported",
+      "name": "受注の全体合計（不動産・開発等を含む）"
     }
   ]
 }
