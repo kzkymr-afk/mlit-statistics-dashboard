@@ -1,3 +1,5 @@
+import {validateQuarterlyAsset} from './quarterly-data.mjs';
+import {renderQuarterlyView,downloadQuarterly} from './quarterly-view.mjs';
 import {validateDerivedAsset} from './derived-data.mjs';
 import {renderDerivedView,downloadDerived} from './derived-view.mjs';
 import {loadPublicIndex,fetchPublicJson,loadOriginalSeries,classificationCoordinates,originalPeriodYear,csvRowsForPoints} from './public-data.mjs';
@@ -6,9 +8,11 @@ import {GP,reviewedIndicators,validatedPacket,pointsFor,cellDisplay,recordedLega
 const hostOrigin=window.__ATLAS_EXPLORER__.origin;
 const $=s=>document.querySelector(s), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const COLORS=['#247b6b','#b47b43','#647ea7','#ad5e74','#607753'];
-const [index,packet,derivedCatalog]=await Promise.all([loadPublicIndex(),fetchPublicJson('system/buildbase/source-verified-comparison.json'),fetchPublicJson('explorer/derived-indicators.catalog.json')]).catch(error=>{document.querySelector('#content').innerHTML='<p class="error">'+esc(error.message)+'</p>';throw error;});
+const [index,packet,derivedCatalog,quarterlyCatalog]=await Promise.all([loadPublicIndex(),fetchPublicJson('system/buildbase/source-verified-comparison.json'),fetchPublicJson('explorer/derived-indicators.catalog.json'),fetchPublicJson('explorer/quarterly-financials.catalog.json')]).catch(error=>{document.querySelector('#content').innerHTML='<p class="error">'+esc(error.message)+'</p>';throw error;});
 let series=[];try{series=await validatedPacket(packet)}catch(e){$('#content').innerHTML='<p class="error">'+esc(e.message)+'</p>';throw e;}
 let derivedAsset=null,derivedLoading=null,derivedError='',derivedPage=0;
+let quarterlyAsset=null,quarterlyLoading=null,quarterlyError='',quarterlyPage=0;
+const quarterlyPanel=document.createElement('section');quarterlyPanel.id='quarterly-view';quarterlyPanel.hidden=true;$('#main').prepend(quarterlyPanel);
 const derivedPanel=document.createElement('section');derivedPanel.id='derived-view';derivedPanel.hidden=true;$('#main').prepend(derivedPanel);
 let originalReference=null,referenceError='',loadErrors=new Map(),pendingLoads=new Map();
 const indicators=[...reviewedIndicators,...index.indicators.map(i=>({id:i.code,name:i.name,unit:i.unit,scope:i.code.includes('consolidated')?'連結（名称表記）':i.code.includes('standalone')?'単体（名称表記）':'原資料の対象範囲は未読込',definition:'公開参照の旧指標。会社別・年度別の出典、実期間、比較許可は原表参照として表示します。出典・実期間・比較許可は未確認です。',kind:'legacy',category:i.parentCode}))];
@@ -16,7 +20,7 @@ let state=parseState(window.__ATLAS_EXPLORER__?.initialHash||'',indicators.map(i
 const companyName=c=>index.companies.find(x=>x.code===c)?.name||c;
 const legacyTimeLabel=legacyAxisPeriodLabel(index.legacyTime);
 function save(){parent.postMessage({type:'atlas-explorer-state',hash:'#'+stateHash(state)},hostOrigin);}
-function update(){save();renderMain();renderCompanies();renderResults();renderReference();renderAdditional();loadSelectedOriginals();renderDerived();}
+function update(){save();renderMain();renderCompanies();renderResults();renderReference();renderAdditional();loadSelectedOriginals();renderDerived();renderQuarterly();}
 function chooseIndicator(id){state.view='companies';state.indicator=id;state.compare=(state.compare||[]).filter(x=>x!==id);update();if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.remove('open');$('#explorer-toggle').setAttribute('aria-expanded','false');$('#indicator-title').tabIndex=-1;$('#indicator-title').focus();}}
 function toggleCompany(c){state.view='companies';state.companies=state.companies.includes(c)?state.companies.filter(x=>x!==c):[...state.companies,c];update();}
 function renderCompanies(){
@@ -25,12 +29,12 @@ function renderCompanies(){
  $('#year-from').value=state.from;$('#year-to').value=state.to;
  $('#period-note').textContent=periodNote(pointsFor(series,state.indicator,state.companies.length?state.companies:index.companies.map(c=>c.code),state.from,state.to),state.from);
 }
-function renderFilters(){$('#filters').innerHTML=[['all','すべて'],['indicator','指標'],['company','会社'],['public','公的統計'],['derived','派生指標']].map(([id,name])=>`<button class="filter ${filter===id?'active':''}" data-filter="${id}" aria-pressed="${filter===id}">${name}</button>`).join('');}
+function renderFilters(){$('#filters').innerHTML=[['all','すべて'],['indicator','指標'],['company','会社'],['public','公的統計'],['derived','派生指標'],['quarterly','四半期']].map(([id,name])=>`<button class="filter ${filter===id?'active':''}" data-filter="${id}" aria-pressed="${filter===id}">${name}</button>`).join('');}
 function searchable(text){return text.toLowerCase().includes(query.toLowerCase().trim());}
 const range=t=>t.coverage.first?`${t.coverage.first}–${t.coverage.last} · ${t.cycle}（表の時間軸）`:'時間軸の範囲は未確認';
 function renderResults(){
  const foundIndicators=indicators.filter(i=>searchable(i.name+' '+i.id+' '+i.definition)),companies=index.companies.filter(c=>searchable(c.name+' '+c.code)),tables=index.tables.filter(t=>searchable(t.datasetName+' '+t.name+' '+t.id+' '+t.searchText));
- $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件 · 派生5定義/141件`;
+ $('#search-count').textContent=`公開カタログ ${tables.length} / 236表 · 指標 ${foundIndicators.length}件 · 会社 ${companies.length}件 · 派生5定義/141件 · 四半期21社/113件`;
  let html='';
  if(filter==='all'||filter==='indicator'){
   const reviewed=foundIndicators.filter(i=>i.kind==='verified'),legacy=foundIndicators.filter(i=>i.kind==='legacy');
@@ -45,6 +49,11 @@ function renderResults(){
  }
  if(filter==='all'||filter==='derived'||filter==='company')html+='<section class="result-group"><h3>派生指標の開示主体 · 23会社ID</h3>'+derivedCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId)).map(c=>`<button class="result" data-derived-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 派生結果</span><span class="source">保存した公式財務資料から計算した結果。</span><span class="action">この会社の派生結果 →</span></button>`).join('')+'</section>';
  if(filter==='all'||filter==='public')html+='<section class="result-group"><h3>公的統計・公開カタログ · '+tables.length+' / 236表</h3>'+tables.map(t=>`<button class="result ${state.reference===t.id?'selected':''}" data-table="${esc(t.id)}"><span class="name">${esc(t.datasetName)}<br>${esc(t.name)}</span><span class="source">${esc(t.location)}<br>${esc(range(t))}</span><span class="action">分類を選んで追加 →</span></button>`).join('')+'</section>';
+ if(['all','quarterly','company'].includes(filter)){
+  const found=quarterlyCatalog.companies.filter(c=>searchable(c.companyName+' '+c.companyId+' 四半期 Q1 Q3 累計 残高'));
+  html+='<section class="result-group"><h3>四半期資料 · 21社の確認状況 / 北野113件</h3>'+found.map(c=>`<button class="result" data-quarter-company="${esc(c.companyId)}"><span class="name">${esc(c.companyName)} · 四半期資料</span><span class="source">${c.q1RecordCount+c.q3RecordCount?`Q3資料の値${c.q3RecordCount}件・Q1資料の値${c.q1RecordCount}件 / 累計・残高等`:'収録0件 · 未確認（非開示を意味しません）'}</span><span class="action">確認状況と原値を開く →</span></button>`).join('')+'<button class="secondary-add" data-open-quarter>全21社一覧・113件を開く →</button></section>';
+ }
+ if(['all','quarterly','indicator'].includes(filter))html+='<section class="result-group"><h3>北野建設の四半期資料の指標</h3>'+quarterlyCatalog.metrics.filter(m=>searchable(m.name+' '+m.metricId+' 北野 KITANO 四半期')).map(m=>`<button class="result" data-quarter-metric="${esc(m.metricId)}"><span class="name">${esc(m.name)} · 四半期資料</span><span class="source">累計・残高・比率・1株当たりの区別と出典を保持</span><span class="action">原値を開く →</span></button>`).join('')+'</section>';
  $('#results').innerHTML=html||'<p class="small">一致する項目がありません。名称の一部でも検索できます。</p>';
 }
 function chart(points){const i=indicators.find(i=>i.id===state.indicator);return renderLineChart(state.companies.map((c,ci)=>({color:COLORS[ci%COLORS.length],label:companyName(c),metric:i.id,unit:points.find(p=>p.companyId===c)?.series.unit||i.unit,reference:points.some(p=>p.companyId===c&&p.reference),points:points.filter(p=>p.companyId===c)})),{from:state.from,to:state.to,primary:i,colors:COLORS});}
@@ -133,7 +142,7 @@ function downloadCsv(points,filename){const {headers,rows}=csvRowsForPoints(poin
 
 function renderDerived(){
  const open=state.view==='derived';
- for(const element of document.querySelectorAll('#main > .intro,#main > .conditions,#comparison-controls,#content,#additional-panel,#reference-panel,#main > .main-foot'))element.hidden=open;
+ for(const element of document.querySelectorAll('#main > .intro,#main > .conditions,#comparison-controls,#content,#additional-panel,#reference-panel,#main > .main-foot'))element.hidden=state.view!=='companies';
  derivedPanel.hidden=!open;if(!open)return;
  if(derivedAsset){derivedPanel.innerHTML=renderDerivedView(derivedAsset,state,derivedPage);return;}
  derivedPanel.innerHTML='<section class="panel"><h1>派生指標141件</h1><p role="status">'+esc(derivedError||'公開用の派生結果と出典を読み込んでいます…')+'</p><button data-close-derived>会社指標と公的統計へ戻る</button></section>';
@@ -150,3 +159,23 @@ document.addEventListener('click',event=>{
 });
 document.addEventListener('change',event=>{const key=event.target.dataset.derivedFilter;if(!['derivedMetric','derivedCompany','derivedWindow','derivedState'].includes(key))return;state[key]=event.target.value;derivedPage=0;save();renderDerived();});
 document.addEventListener('input',event=>{if(event.target.id!=='derived-search')return;const start=event.target.selectionStart;state.derivedQuery=event.target.value;derivedPage=0;save();renderDerived();const field=$('#derived-search');field.focus();field.setSelectionRange(start,start);});
+
+function renderQuarterly(){
+ const open=state.view==='quarterly';
+ for(const element of document.querySelectorAll('#main > .intro,#main > .conditions,#comparison-controls,#content,#additional-panel,#reference-panel,#main > .main-foot'))element.hidden=state.view!=='companies';
+ quarterlyPanel.hidden=!open;if(!open)return;
+ if(quarterlyAsset){quarterlyPanel.innerHTML=renderQuarterlyView(quarterlyAsset,state,quarterlyPage);return;}
+ quarterlyPanel.innerHTML='<section class="panel"><h1>四半期資料 · 21社の一覧と113件</h1><p role="status">'+esc(quarterlyError||'原値と出典を読み込んでいます…')+'</p><button data-close-quarter>会社指標と公的統計へ戻る</button></section>';
+ if(!quarterlyLoading&&!quarterlyError)quarterlyLoading=fetchPublicJson(quarterlyCatalog.dataUrl).then(async asset=>{await validateQuarterlyAsset(asset,quarterlyCatalog);quarterlyAsset=asset;}).catch(error=>{quarterlyError=error.message;}).finally(()=>{quarterlyLoading=null;renderQuarterly();});
+}
+function openQuarterly(company='',metric=''){
+ state.view='quarterly';state.quarterCompany=company;state.quarterMetric=metric;state.quarterPeriod='';state.quarterScope='';state.quarterQuery='';quarterlyPage=0;update();
+ if(matchMedia('(max-width:680px)').matches){$('#explorer').classList.remove('open');$('#explorer-toggle').setAttribute('aria-expanded','false');}
+ $('#main').scrollIntoView({block:'start'});
+}
+document.addEventListener('click',event=>{
+ const button=event.target.closest('[data-quarter-company],[data-quarter-metric],[data-open-quarter],[data-close-quarter],[data-quarter-page],[data-clear-quarter],[data-quarter-export]');if(!button)return;const d=button.dataset;
+ if(d.quarterCompany)openQuarterly(d.quarterCompany);else if(d.quarterMetric)openQuarterly('KITANO',d.quarterMetric);else if('openQuarter'in d||'clearQuarter'in d)openQuarterly();else if('closeQuarter'in d){state.view='companies';update();}else if(d.quarterPage!==undefined){quarterlyPage=Math.max(0,Number(d.quarterPage)||0);renderQuarterly();}else if(d.quarterExport&&quarterlyAsset)downloadQuarterly(quarterlyAsset,state,d.quarterExport);
+});
+document.addEventListener('change',event=>{const key=event.target.dataset.quarterFilter;if(!['quarterCompany','quarterMetric','quarterPeriod','quarterScope'].includes(key))return;state[key]=event.target.value;quarterlyPage=0;save();renderQuarterly();});
+document.addEventListener('input',event=>{if(event.target.id!=='quarter-search')return;const start=event.target.selectionStart;state.quarterQuery=event.target.value;quarterlyPage=0;save();renderQuarterly();const field=$('#quarter-search');field.focus();field.setSelectionRange(start,start);});

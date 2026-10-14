@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "buildbase-quarterly-financial-public",
+  "projectionHash": "8913306b52292f486a7278281287b5105ceb6c881beba4319293a0737095c62f",
+  "sourceSubsetHash": "8fd52c75a56b029da62a7decf1578e1a92f0e503fadf95fa1133ce235d5f6b8f",
+  "compressedSha256": "a3fd39a63b6883def247fe8dc4732781d97814368029cb249fecc60e6661c15a",
+  "dataUrl": "explorer/quarterly-financials.json.gz",
+  "schemaUrl": "explorer/quarterly-financials.schema.json",
+  "coverageCsvUrl": "explorer/quarterly-coverage.csv",
+  "recordCount": 113,
+  "q3RecordCount": 105,
+  "q1RecordCount": 8,
+  "companyCount": 21,
+  "coverageCompanyCount": 21,
+  "recordedCompanyCount": 1,
+  "sourceDocumentCount": 2,
+  "companies": [
+    {
+      "companyId": "MAEDA",
+      "companyName": "前田建設工業",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "SMCC",
+      "companyName": "三井住友建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "INFR",
+      "companyName": "インフロニア・ホールディングス",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KAJIMA",
+      "companyName": "鹿島建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TAISEI",
+      "companyName": "大成建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "OBAYASHI",
+      "companyName": "大林組",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "SHIMIZU",
+      "companyName": "清水建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TAKENAKA",
+      "companyName": "竹中工務店",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TODA",
+      "companyName": "戸田建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "NISHIMATSU",
+      "companyName": "西松建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ANDO_HAZAMA",
+      "companyName": "安藤・間",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "PENTA",
+      "companyName": "五洋建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KUMAGAI",
+      "companyName": "熊谷組",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "HASEKO",
+      "companyName": "長谷工コーポレーション",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TOKYU",
+      "companyName": "東急建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "OKUMURA",
+      "companyName": "奥村組",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "TOA",
+      "companyName": "東亜建設工業",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ZENITAKA",
+      "companyName": "錢高組",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "ASANUMA",
+      "companyName": "淺沼組",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "MATSUI",
+      "companyName": "松井建設",
+      "q1RecordCount": 0,
+      "q2RecordCount": 0,
+      "q3RecordCount": 0,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "not_reviewed",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    },
+    {
+      "companyId": "KITANO",
+      "companyName": "北野建設",
+      "q1RecordCount": 8,
+      "q2RecordCount": 0,
+      "q3RecordCount": 105,
+      "q4DirectRecordCount": 0,
+      "standaloneQuarterRecordCount": 0,
+      "status": "partial_records_available",
+      "nonDisclosureAssertion": false,
+      "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+    }
+  ],
+  "metrics": [
+    {
+      "metricId": "depreciation_expense_reported",
+      "name": "減価償却費"
+    },
+    {
+      "metricId": "eps_consolidated_reported",
+      "name": "1株当たり四半期純利益"
+    },
+    {
+      "metricId": "equity_consolidated_reported",
+      "name": "自己資本"
+    },
+    {
+      "metricId": "equity_ratio_consolidated_reported",
+      "name": "自己資本比率"
+    },
+    {
+      "metricId": "net_assets_consolidated_reported",
+      "name": "純資産"
+    },
+    {
+      "metricId": "net_assets_per_share_consolidated_reported",
+      "name": "1株当たり純資産"
+    },
+    {
+      "metricId": "net_profit_parent_consolidated_reported",
+      "name": "親会社株主に帰属する四半期純利益"
+    },
+    {
+      "metricId": "operating_profit_consolidated_reported",
+      "name": "営業利益"
+    },
+    {
+      "metricId": "ordinary_profit_consolidated_reported",
+      "name": "経常利益"
+    },
+    {
+      "metricId": "sales_consolidated_reported",
+      "name": "売上高"
+    },
+    {
+      "metricId": "segment_external_customer_revenue_reported",
+      "name": "外部顧客への売上高"
+    },
+    {
+      "metricId": "segment_fixed_asset_impairment_loss_construction_segment_reported",
+      "name": "建設事業の固定資産減損損失"
+    },
+    {
+      "metricId": "segment_intersegment_internal_revenue_reported",
+      "name": "セグメント間内部売上高・振替高"
+    },
+    {
+      "metricId": "segment_other_revenue_reported",
+      "name": "その他の収益"
+    },
+    {
+      "metricId": "segment_reported_total_revenue_reported",
+      "name": "セグメントの報告売上合計"
+    },
+    {
+      "metricId": "segment_revenue_from_customer_contracts_reported",
+      "name": "顧客との契約から生じる収益"
+    },
+    {
+      "metricId": "segment_revenue_over_time_reported",
+      "name": "一定期間にわたり認識する収益"
+    },
+    {
+      "metricId": "segment_revenue_point_in_time_reported",
+      "name": "一時点で認識する収益"
+    },
+    {
+      "metricId": "segment_segment_profit_reported",
+      "name": "セグメント利益"
+    },
+    {
+      "metricId": "total_assets_consolidated_reported",
+      "name": "総資産"
+    }
+  ]
+}

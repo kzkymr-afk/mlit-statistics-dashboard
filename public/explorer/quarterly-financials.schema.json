@@ -1,0 +1,1396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public quarterly financial source projection, bounded Kitano Q3 + Q1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "projectionHash",
+    "payload"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "projectionHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "datasetId",
+        "origin",
+        "permissions",
+        "companies",
+        "records"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "datasetId": {
+          "const": "buildbase-quarterly-financial-public"
+        },
+        "origin": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "generatedFrom",
+            "sourceSubsetHash",
+            "sourceExtractorVersions",
+            "sourceDocuments",
+            "currentOfficialVersionMatchStatus",
+            "projectionOmissions",
+            "precisionNote",
+            "sourceAcquisitionTimestampStatus"
+          ],
+          "properties": {
+            "generatedFrom": {
+              "const": "Source normalized quarterly financial facts; explicit public projection"
+            },
+            "sourceSubsetHash": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "sourceExtractorVersions": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "reviewed_kitano_q3_summary_segments_v1",
+                  "reviewed_kitano_q1_summary_v1"
+                ]
+              }
+            },
+            "sourceDocuments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "sourceUrl",
+                  "sha256"
+                ],
+                "properties": {
+                  "sourceUrl": {
+                    "enum": [
+                      "https://www.kitano.co.jp/wp-content/uploads/2026/02/IR20260210-1.pdf",
+                      "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf"
+                    ]
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  }
+                }
+              }
+            },
+            "currentOfficialVersionMatchStatus": {
+              "const": "unknown_not_checked"
+            },
+            "projectionOmissions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "precisionNote": {
+              "type": "string"
+            },
+            "sourceAcquisitionTimestampStatus": {
+              "const": "unknown_not_recorded"
+            }
+          }
+        },
+        "permissions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "financeEligibleAsDirectReportedFact",
+            "automaticComparisonAllowed",
+            "automaticAggregationAllowed",
+            "canonicalFactPromotionAllowed"
+          ],
+          "properties": {
+            "financeEligibleAsDirectReportedFact": {
+              "const": false
+            },
+            "automaticComparisonAllowed": {
+              "const": false
+            },
+            "automaticAggregationAllowed": {
+              "const": false
+            },
+            "canonicalFactPromotionAllowed": {
+              "const": false
+            }
+          }
+        },
+        "companies": {
+          "type": "array",
+          "minItems": 21,
+          "maxItems": 21,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "companyId",
+              "companyName",
+              "q1RecordCount",
+              "q2RecordCount",
+              "q3RecordCount",
+              "q4DirectRecordCount",
+              "standaloneQuarterRecordCount",
+              "status",
+              "nonDisclosureAssertion",
+              "checkedScope"
+            ],
+            "properties": {
+              "companyId": {
+                "type": "string"
+              },
+              "companyName": {
+                "type": "string"
+              },
+              "q1RecordCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "q2RecordCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "q3RecordCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "q4DirectRecordCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "standaloneQuarterRecordCount": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "status": {
+                "enum": [
+                  "partial_records_available",
+                  "not_reviewed"
+                ]
+              },
+              "nonDisclosureAssertion": {
+                "const": false
+              },
+              "checkedScope": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "records": {
+          "type": "array",
+          "minItems": 113,
+          "maxItems": 113,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fact_id",
+              "company_id",
+              "metric_id",
+              "value",
+              "value_raw",
+              "unit",
+              "currency",
+              "period_type",
+              "period_kind",
+              "period_start",
+              "period_end",
+              "period_end_month",
+              "as_of_date",
+              "source_file_sha256",
+              "source_url",
+              "source_locator",
+              "source_quote",
+              "finance_eligible",
+              "permissions"
+            ],
+            "properties": {
+              "actual_or_forecast": {
+                "const": "actual"
+              },
+              "adjustment_source_note": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "as_of_check_utc": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "as_of_check_utc_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "as_of_date": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "as_of_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "automatic_aggregation_allowed": {
+                "const": false
+              },
+              "automatic_comparison_allowed": {
+                "const": false
+              },
+              "candidate_disposition": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "company_id": {
+                "const": "KITANO"
+              },
+              "corroborating_evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "corroborating_source_quote": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "currency": {
+                "enum": [
+                  "JPY",
+                  null
+                ]
+              },
+              "data_scope": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "document_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "document_version_sha256": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "evidence_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "extractor_version": {
+                "enum": [
+                  "reviewed_kitano_q3_summary_segments_v1",
+                  "reviewed_kitano_q1_summary_v1"
+                ]
+              },
+              "fact_id": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "finance_eligible": {
+                "const": false
+              },
+              "fiscal_year": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "is_additive_leaf": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "is_reconciliation_adjustment": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "is_reported_subtotal": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "is_reported_total": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "metric_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "official_fiscal_year_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_end": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_end_month": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_interval_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_kind": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_label_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_start": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "period_type": {
+                "enum": [
+                  "quarter_cumulative_9months",
+                  "quarter_cumulative_3months",
+                  "point_in_time_stock"
+                ]
+              },
+              "record_kind": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "reporting_entity_id": {
+                "const": "KITANO"
+              },
+              "retrieved_at": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "retrieved_at_basis": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "share_split_basis_source_locator": {
+                "$ref": "#/$defs/location"
+              },
+              "share_split_comparative_basis": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "share_split_source_note": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_acquisition_date": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_acquisition_timestamp_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_cell_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_column_label_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_column_role": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_dataset_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_document_type": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_edition_date_as_disclosed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_family": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_file_sha256": {
+                "enum": [
+                  "7dd4a48007f552890fccf0661ae12056ff8941432d4a6a0430b789d0f79693d2",
+                  "2f05a4d02a8d572a62a3a2fb605f6c77a12cf675722cde4a868498710d876bd4"
+                ]
+              },
+              "source_fiscal_year_as_indexed": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_index_year_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_locator": {
+                "$ref": "#/$defs/location"
+              },
+              "source_metric_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_page_evidence_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_heading": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_period_quote": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_quote": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_quote_kind": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_quote_occurrence_count": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_reporting_scope": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_revenue_recognition_timing": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_row_role": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_segment_label": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_text": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "source_url": {
+                "enum": [
+                  "https://www.kitano.co.jp/wp-content/uploads/2026/02/IR20260210-1.pdf",
+                  "https://www.kitano.co.jp/wp-content/uploads/2025/08/IR20250807001-1.pdf"
+                ]
+              },
+              "status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "target_company_period_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "topic": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "unit": {
+                "enum": [
+                  "百万円",
+                  "円銭",
+                  "％"
+                ]
+              },
+              "unit_conversion_rule": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "value": {
+                "type": "number"
+              },
+              "value_raw": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "whole_document_review_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "boolean"
+                  }
+                ]
+              },
+              "permissions": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "financeEligibleAsDirectReportedFact",
+                  "automaticComparisonAllowed",
+                  "automaticAggregationAllowed",
+                  "canonicalFactPromotionAllowed"
+                ],
+                "properties": {
+                  "financeEligibleAsDirectReportedFact": {
+                    "const": false
+                  },
+                  "automaticComparisonAllowed": {
+                    "const": false
+                  },
+                  "automaticAggregationAllowed": {
+                    "const": false
+                  },
+                  "canonicalFactPromotionAllowed": {
+                    "const": false
+                  }
+                }
+              },
+              "same_byte_index_conflict": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "indexed_title": {
+                    "type": "string"
+                  },
+                  "source_url": {
+                    "type": "string",
+                    "pattern": "^https://www\\.kitano\\.co\\.jp/wp-content/uploads/"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "location": {
+      "anyOf": [
+        {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "bbox_page_points_top_left": {
+              "$ref": "#/$defs/location"
+            },
+            "column": {
+              "$ref": "#/$defs/location"
+            },
+            "column_id": {
+              "$ref": "#/$defs/location"
+            },
+            "column_label": {
+              "$ref": "#/$defs/location"
+            },
+            "date_range_as_disclosed": {
+              "$ref": "#/$defs/location"
+            },
+            "note_kind": {
+              "$ref": "#/$defs/location"
+            },
+            "pdf_page": {
+              "$ref": "#/$defs/location"
+            },
+            "period_column": {
+              "$ref": "#/$defs/location"
+            },
+            "period_heading_as_disclosed": {
+              "$ref": "#/$defs/location"
+            },
+            "period_provenance": {
+              "$ref": "#/$defs/location"
+            },
+            "period_quote": {
+              "$ref": "#/$defs/location"
+            },
+            "period_quote_kind": {
+              "$ref": "#/$defs/location"
+            },
+            "primary_summary_cell": {
+              "$ref": "#/$defs/location"
+            },
+            "printed_page": {
+              "$ref": "#/$defs/location"
+            },
+            "row_id": {
+              "$ref": "#/$defs/location"
+            },
+            "row_label": {
+              "$ref": "#/$defs/location"
+            },
+            "row_label_bbox_page_points_top_left": {
+              "$ref": "#/$defs/location"
+            },
+            "section": {
+              "$ref": "#/$defs/location"
+            },
+            "source_blank_slot_bbox": {
+              "$ref": "#/$defs/location"
+            },
+            "source_cell_id": {
+              "$ref": "#/$defs/location"
+            },
+            "source_value_bbox": {
+              "$ref": "#/$defs/location"
+            },
+            "statement_cell": {
+              "$ref": "#/$defs/location"
+            },
+            "table": {
+              "$ref": "#/$defs/location"
+            },
+            "unit_header": {
+              "$ref": "#/$defs/location"
+            },
+            "value_bbox_page_points_top_left": {
+              "$ref": "#/$defs/location"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
