@@ -37,7 +37,8 @@ test('workspace bridge accepts only bounded same-origin analysis state',()=>{
 test('workspace document stays under Pages base path and escapes dynamic content',()=>{
  const html=workspaceDocument('/mlit-statistics-dashboard','#home','https://example.test','0.3.0','123456789');
  assert.match(html,/<base href="\/mlit-statistics-dashboard\/">/);
- assert.match(html,/src="\/mlit-statistics-dashboard\/workspace\/app.mjs"/);
+ assert.match(html,/src="\/mlit-statistics-dashboard\/workspace\/app.mjs\?v=123456789"/);
+ assert.match(html,/href="\/mlit-statistics-dashboard\/workspace\/styles.css\?v=123456789"/);
  assert.match(html,/UI v0\.3\.0 · 12345678/);
  assert.equal(workspaceDocument('', '</script><script>alert(1)</script>','https://example.test','0.3.0','x').includes('</script><script>alert'),false);
 });
