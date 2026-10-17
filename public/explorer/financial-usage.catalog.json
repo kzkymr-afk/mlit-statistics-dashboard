@@ -1,0 +1,19 @@
+{
+  "companyCount": 19,
+  "dataUrl": "explorer/financial-usage.json.gz",
+  "datasetId": "buildbase-financial-usage-public",
+  "partitionCounts": {
+    "annotated_comparison": 659,
+    "automatic": 20,
+    "individual_counterpart_waiting": 667,
+    "prohibited_total_NetAssets_alias": 1,
+    "reported_basis_pending": 42,
+    "source_reconciliation_pending": 1,
+    "target_context_pending": 10,
+    "unreviewed": 0
+  },
+  "projectionHash": "2427c4ac854b91af630ae20e206ad8344ad6bfb599934f6e7b9657b247c3552a",
+  "recordCount": 1400,
+  "schemaVersion": 1,
+  "sourceQualitySha256": "dc0a3b6ee85027894878f60a0b6e974f4731e6db61a8328f053f32fc83cf2b14"
+}

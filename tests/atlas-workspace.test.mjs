@@ -24,6 +24,7 @@ test('workspace bridge accepts only bounded same-origin analysis state',()=>{
  assert.equal(acceptedWorkspaceHash(hash),hash);
  assert.equal(acceptedWorkspaceHash('#home'),'#home');
  assert.equal(acceptedWorkspaceHash('#saved'),'#saved');
+ assert.equal(acceptedWorkspaceHash('#financial'),'#financial');
  const source={},event={origin:'https://example.test',source,data:{type:'atlas-workspace-state',hash}};
  assert.equal(acceptedWorkspaceMessage(event,event.origin,source),hash);
  assert.equal(acceptedWorkspaceMessage({...event,origin:'https://other.test'},event.origin,source),null);
