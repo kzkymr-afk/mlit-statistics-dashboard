@@ -1,7 +1,10 @@
 import {canonicalSha256} from '../explorer/lib/buildbase-contract-hash.mjs';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const BUCKETS={automatic:20,annotated_comparison:659,prohibited_total_NetAssets_alias:1,unreviewed:0,reported_basis_pending:42,target_context_pending:10,source_reconciliation_pending:1,individual_counterpart_waiting:667};
+const BUCKETS={automatic:20,annotated_comparison:970,prohibited_total_NetAssets_alias:1,unreviewed:0,reported_basis_pending:42,target_context_pending:10,source_reconciliation_pending:1,individual_counterpart_waiting:356};
+const LEDGERS={quality:'5e33a74b438e9fc664f147b755fe7940446eedc4fa765c5893d9d919b5265299',usage:'dabd49c60a2799545c6bfc1611cb50ef52eda6962f63c2b81db610188fb9cf24',constraints:'de1e0f208f041cc6ca2ba0968f04f115e98f3ec3eaacd6dab41b839393d1731e'};
+const QUALITY_VIEW='07f5d5c735a1b51daba5c20581c7826b9be2320180f845f9b3051f029cec5eec';
+const USAGE_VIEW='bc55c835f239701156beab0252432473706f401ae354f049c359d59295cfb7e2';
 const OFFICIAL_HOSTS=new Set('ssl4.eir-parts.net ir.obayashi.co.jp pdf.irpocket.com www.haseko.co.jp www.nishimatsu.co.jp www.ad-hzm.co.jp www.penta-ocean.co.jp www.takenaka.co.jp www.smcon.co.jp www2.jpx.co.jp www.kajima.co.jp www.okumuragumi.co.jp www.toda.co.jp www.taisei.co.jp www.zenitaka.co.jp www.asanuma.co.jp www.matsui-ken.co.jp www.kumagaigumi.co.jp www.infroneer.com disclosure2dl.edinet-fsa.go.jp'.split(' '));
 const PRIVATE=/\/Volumes\/|\/Users\/|file:\/\/|data\/raw\/|https?:\/\/github\.com\//i;
 const date=value=>value||'未記録';
@@ -9,25 +12,39 @@ const option=(value,label,selected)=>`<option value="${esc(value)}" ${value===se
 const safeUrl=value=>{try{const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password&&OFFICIAL_HOSTS.has(url.hostname)&&!/[?&](token|secret|password|key|signature|credential)=/i.test(url.search)?url.href:null;}catch{return null;}};
 
 export async function validateFinancialUsageAsset(asset,catalog){
- if(asset?.schemaVersion!==1||asset.datasetId!=='buildbase-financial-usage-public'||asset.recordCount!==1400||
-    catalog?.schemaVersion!==1||catalog.datasetId!==asset.datasetId||catalog.recordCount!==asset.recordCount||
-    catalog.sourceQualitySha256!==asset.sourceQualitySha256||catalog.projectionHash!==await canonicalSha256(asset)||
-    asset.permissions?.browseOnly!==true||asset.permissions?.newComparisonPermissionCreated!==false||asset.permissions?.automaticAggregationAllowed!==false||
+ if(asset?.schemaVersion!==2||asset.datasetId!=='buildbase-financial-usage-public'||asset.recordCount!==1400||
+    catalog?.schemaVersion!==2||catalog.datasetId!==asset.datasetId||catalog.recordCount!==asset.recordCount||
+    catalog.sourceQualitySha256!==asset.sourceQualitySha256||asset.sourceQualitySha256!==QUALITY_VIEW||
+    catalog.sourceUsageSha256!==asset.sourceUsageSha256||asset.sourceUsageSha256!==USAGE_VIEW||
+    Object.keys(LEDGERS).some(key=>catalog.sourceLedgerSha256?.[key]!==LEDGERS[key]||asset.sourceLedgerSha256?.[key]!==LEDGERS[key])||catalog.projectionHash!==await canonicalSha256(asset)||
+    asset.permissions?.browseOnly!==true||asset.permissions?.historicalSourceCellsPublished!==false||asset.permissions?.newComparisonPermissionCreated!==false||asset.permissions?.automaticAggregationAllowed!==false||
     JSON.stringify(asset.partitionCounts)!==JSON.stringify(catalog.partitionCounts)||
     !Array.isArray(asset.records)||asset.records.length!==1400||new Set(asset.records.map(r=>r.id)).size!==1400)throw Error('財務利用案内の版・件数・閲覧条件を確認できません。');
- const expected={...BUCKETS};
- // A separately reviewed, bounded one-pair amendment can move one observation from waiting to annotated.
- if(asset.partitionCounts.annotated_comparison===660&&asset.partitionCounts.individual_counterpart_waiting===666){expected.annotated_comparison=660;expected.individual_counterpart_waiting=666;}
+ const expected=BUCKETS;
  if(Object.keys(expected).some(key=>asset.partitionCounts[key]!==expected[key]))throw Error('財務利用区分の保存件数が一致しません。');
- const counts={};
+ const counts={};let restricted=0;
  for(const row of asset.records){
   counts[row.bucket]=(counts[row.bucket]||0)+1;
+  const series=row.currentYearSeriesRestrictions;
+  if(series){
+   restricted++;
+   if(series.appliesToCurrentFactId!==row.id||series.appliesToFiscalYear!==row.fiscalYear||
+      series.historicalBasisVerifiedByCurrentConditions!==false||series.currentYearBasisTransferAllowed!==false||
+      series.automaticComparisonAllowed!==false||series.automaticAggregationAllowed!==false||
+      series.preciseDeltaAllowed!==false||series.relativeGrowthAllowed!==false||
+      series.sourceSeriesPublicationAllowed!==false||series.sourceCellsAreNotFacts!==true||
+      !series.availableUse||!row.conditions.length||
+      ['quality','usage'].some(kind=>series.ledgerReferences?.[kind]?.sha256!==LEDGERS[kind]||
+        series.ledgerReferences?.[kind]?.jsonPointer!=='/replacements_by_id/'+row.id))
+     throw Error('財務系列の年度別利用条件を確認できません。');
+  }
   if(!/^[a-f0-9]{64}$/.test(row.id)||!row.companyId||!row.metricId||!row.fiscalYear||!row.unit||
      !row.scope||!row.bucketLabel||!row.source?.sha256||!safeUrl(row.source.url)||
      !Array.isArray(row.conditions)||!Array.isArray(row.prohibitedUses)||!Array.isArray(row.specificUnconfirmedReasons)||
      !Array.isArray(row.contractIds)||row.contractIds.some(id=>! /^[a-f0-9]{16}$/.test(id))||
      PRIVATE.test(JSON.stringify(row)))throw Error('財務観測の原値・出典・公開範囲を確認できません。');
  }
+ if(restricted!==263)throw Error('財務系列の制約件数が一致しません。');
  if(Object.keys(expected).some(key=>(counts[key]||0)!==expected[key]))throw Error('財務観測の区分別件数が一致しません。');
  return asset;
 }
@@ -50,6 +67,7 @@ function renderRecord(row){
  const url=safeUrl(row.source.url);
  const displayedValue=row.valueAsDisplayed??row.value;
  const displayedUnit=row.unit==='%'&&String(displayedValue).trim().endsWith('%')?'':row.unit;
- const hasekoNote=row.id==='066a2a4b5f097a005c1aca209ac29f50c8c55993b5ef9328f8eb94b1e7e89107'?'<p class="notice">前年特命73.8%は同じ原資料で実績・金額比として確認されています。ただし前年の既存Factは actual が未設定で、期間別の読取投影と比較契約は未実装です。この91.7%観測の比較相手待ちは資料不在の意味ではありません。</p>':'';
- return `<article class="panel financial-record" data-financial-id="${esc(row.id)}"><div class="financial-title"><div><span class="tag reference">${esc(row.bucketLabel)}</span><h3>${esc(row.companyName)} · ${esc(row.metricLabel)}</h3><p>${esc(row.fiscalYear)}年度 · ${esc(row.scopeLabel)} · ${esc(row.accountingStandard||'会計基準未確認')}</p></div><div class="financial-value">${esc(displayedValue)} <small>${esc(displayedUnit)}</small></div></div><p class="small">原指標 ${esc(row.metricId)} · 実期間 ${esc(period)} · ${esc(row.period.measureKind||'期間種別未確認')}</p>${native?`<p class="small">原表区分：${esc(native)}</p>`:''}${hasekoNote}<details><summary>出典・条件・残る確認事項</summary><dl><dt>Fact ID</dt><dd>${esc(row.id)}</dd><dt>原資料</dt><dd>${esc(row.source.documentName)} · PDF物理 ${esc(row.source.page??'未収録')}頁<br>SHA-256 ${esc(row.source.sha256)}<br>${url?`<a href="${esc(url)}" target="_blank" rel="noopener">公式資料を開く ↗</a>`:'公式URL未収録'}</dd><dt>元取得日時</dt><dd>${esc(date(row.source.retrievedAt))}</dd><dt>現在掲載版</dt><dd>${esc(row.source.currentOfficialVersionMatchStatus||'未確認')}</dd><dt>登録用途</dt><dd>${esc(row.allowedUse)}${row.contractIds.length?`<br>契約参照ID：${row.contractIds.map(esc).join(' / ')}（元の登録条件を確認して使用）`:''}</dd><dt>利用条件</dt><dd>${row.conditions.length?`<ul>${row.conditions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'原定義と既存契約を確認'}</dd><dt>禁止用途</dt><dd>${row.prohibitedUses.length?`<ul>${row.prohibitedUses.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'未収録'}</dd><dt>未確認</dt><dd>${row.specificUnconfirmedReasons.length?`<ul>${row.specificUnconfirmedReasons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'この審査区分に追加の未確認理由はありません'}</dd></dl></details></article>`;
+ const series=row.currentYearSeriesRestrictions;
+ const seriesNote=series?`<p class="notice">保存済み系列の利用条件はこの${esc(series.appliesToFiscalYear)}年度のFactに適用します。過年度の算定基準への転用、厳密前年比・差額、自動比較・合算は許可されていません。${series.remainingRequirement?esc(series.remainingRequirement):''}</p>`:'';
+ return `<article class="panel financial-record" data-financial-id="${esc(row.id)}"><div class="financial-title"><div><span class="tag reference">${esc(row.bucketLabel)}</span><h3>${esc(row.companyName)} · ${esc(row.metricLabel)}</h3><p>${esc(row.fiscalYear)}年度 · ${esc(row.scopeLabel)} · ${esc(row.accountingStandard||'会計基準未確認')}</p></div><div class="financial-value">${esc(displayedValue)} <small>${esc(displayedUnit)}</small></div></div><p class="small">原指標 ${esc(row.metricId)} · 実期間 ${esc(period)} · ${esc(row.period.measureKind||'期間種別未確認')}</p>${native?`<p class="small">原表区分：${esc(native)}</p>`:''}${seriesNote}<details><summary>出典・条件・残る確認事項</summary><dl><dt>Fact ID</dt><dd>${esc(row.id)}</dd><dt>原資料</dt><dd>${esc(row.source.documentName)} · PDF物理 ${esc(row.source.page??'未収録')}頁<br>SHA-256 ${esc(row.source.sha256)}<br>${url?`<a href="${esc(url)}" target="_blank" rel="noopener">公式資料を開く ↗</a>`:'公式URL未収録'}</dd><dt>元取得日時</dt><dd>${esc(date(row.source.retrievedAt))}</dd><dt>現在掲載版</dt><dd>${esc(row.source.currentOfficialVersionMatchStatus||'未確認')}</dd><dt>登録用途</dt><dd>${esc(row.allowedUse)}${row.contractIds.length?`<br>契約参照ID：${row.contractIds.map(esc).join(' / ')}（元の登録条件を確認して使用）`:''}</dd>${series?`<dt>保存系列の制約</dt><dd>${esc(series.availableUse)} · ${esc(series.comparisonPrecision||'原期間表示のみ')}<br>品質台帳 ${esc(series.ledgerReferences.quality.sha256)} / 利用台帳 ${esc(series.ledgerReferences.usage.sha256)}<br>適用Fact ${esc(series.appliesToCurrentFactId)} · ${esc(series.appliesToFiscalYear)}年度${series.specifiedTargetUse?.targetUse?`<br>指定用途：${esc(series.specifiedTargetUse.targetUse)}（${esc(series.specifiedTargetUse.status)}）`:''}</dd>`:''}<dt>利用条件</dt><dd>${row.conditions.length?`<ul>${row.conditions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'原定義と既存契約を確認'}</dd><dt>禁止用途</dt><dd>${row.prohibitedUses.length?`<ul>${row.prohibitedUses.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'未収録'}</dd><dt>未確認</dt><dd>${row.specificUnconfirmedReasons.length?`<ul>${row.specificUnconfirmedReasons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'この審査区分に追加の未確認理由はありません'}</dd></dl></details></article>`;
 }
