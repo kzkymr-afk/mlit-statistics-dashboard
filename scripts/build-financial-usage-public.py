@@ -23,7 +23,7 @@ OVERLAY = SOURCE / 'data/quality/financial_coverage/20261018_saved_cells_stock_d
 CONSTRAINTS = SOURCE / 'config/reviewed_saved_financial_usage_constraints_20261018.json'
 ALLOWED_HOSTS = set('ssl4.eir-parts.net ir.obayashi.co.jp pdf.irpocket.com www.haseko.co.jp www.nishimatsu.co.jp www.ad-hzm.co.jp www.penta-ocean.co.jp www.takenaka.co.jp www.smcon.co.jp www2.jpx.co.jp www.kajima.co.jp www.okumuragumi.co.jp www.toda.co.jp www.taisei.co.jp www.zenitaka.co.jp www.asanuma.co.jp www.matsui-ken.co.jp www.kumagaigumi.co.jp www.infroneer.com disclosure2dl.edinet-fsa.go.jp'.split())
 PRIVATE = re.compile(r'/Volumes/|/Users/|file://|data/raw/|https?://github\.com/|(?:^|[/?&])(token|secret|password|key|signature|credential)=', re.I)
-BUCKETS = {'automatic': 20, 'annotated_comparison': 970, 'prohibited_total_NetAssets_alias': 1, 'unreviewed': 0, 'reported_basis_pending': 42, 'target_context_pending': 10, 'source_reconciliation_pending': 1, 'individual_counterpart_waiting': 356}
+BUCKETS = {'automatic': 20, 'annotated_comparison': 994, 'prohibited_total_NetAssets_alias': 1, 'unreviewed': 0, 'reported_basis_pending': 42, 'target_context_pending': 10, 'source_reconciliation_pending': 1, 'individual_counterpart_waiting': 332}
 PINS = {'usage_delta': 'dabd49c60a2799545c6bfc1611cb50ef52eda6962f63c2b81db610188fb9cf24',
         'quality_delta': '5e33a74b438e9fc664f147b755fe7940446eedc4fa765c5893d9d919b5265299',
         'constraints': 'de1e0f208f041cc6ca2ba0968f04f115e98f3ec3eaacd6dab41b839393d1731e',
@@ -60,12 +60,35 @@ _, usage = module.view('usage-delta.json')
 _, quality = module.view('quality-delta.json')
 if sha_bytes(canonical(usage).encode()) != PINS['usage_view'] or sha_bytes(canonical(quality).encode()) != PINS['quality_view']:
     raise ValueError('Reviewed Source view changed')
+# Latest24 stock-date contexts are an explicit reviewed overlay; the other239 use the original ledger refs.
+STOCK = SOURCE / 'data/quality/financial_coverage/20261019_stock24_date_context'
+STOCK_PINS = {'quality_view': '3a014ff922e95eafece3cef08b87a59d37fb4bf04131fea9db8d2b151a06101d', 'stock_quality': '2b9daae5341d8005220cd16101242b3d855aba673648effbde11e84bf50714a4', 'usage_view': '6bc1b836e7ba5cdda1eb61d5ab8c8637f2114bd6d2a56256b4a66976b3ebdb35', 'stock_usage': 'a34055ae30207afc986b06e0cb4d9bfe8240f4ae8df4d114e261d34e0d1bec07', 'stock_date_context': '8458d3aa2d2469ed665116bf1264341687cb6ab18c7cfb965288a4c788fb1059'}
+old_usage,old_quality=usage.copy(),quality.copy()
+stock_deltas={}
+for kind in ('quality','usage'):
+    path=STOCK/(kind+'-delta.json')
+    if file_sha(path)!=STOCK_PINS['stock_'+kind]: raise ValueError('Stock-date overlay changed')
+    delta=json.loads(path.read_text())
+    if file_sha(SOURCE/delta['previous_delta_file'])!=delta['previous_delta_sha256']: raise ValueError('Stock-date previous overlay changed')
+    stock_deltas[kind]=delta['replacements_by_id']
+if set(stock_deltas['quality'])!=set(stock_deltas['usage']) or len(stock_deltas['quality'])!=24 or file_sha(STOCK/'stock-date-context.json')!=STOCK_PINS['stock_date_context']: raise ValueError('Stock-date contexts changed')
+STOCK_IDS=set(stock_deltas['quality'])
+quality.update(stock_deltas['quality']);usage.update(stock_deltas['usage'])
+for kind,view in [('quality',quality),('usage',usage)]:
+    if sha_bytes(canonical(view).encode())!=STOCK_PINS[kind+'_view']: raise ValueError('Stock-date view changed')
+    PINS[kind+'_view']=STOCK_PINS[kind+'_view']
+
 base = json.loads((GUIDE/'usage-matrix.json').read_text())
 if set(usage) != set(quality) or set(usage) != set(base['records_by_id']) or len(usage) != 1400:
     raise ValueError('Verified 1,400 IDs changed')
 if dict(Counter(row['bucket'] for row in usage.values())) != {key:value for key,value in BUCKETS.items() if value}:
     raise ValueError('Verified usage partition changed')
 constraints = json.loads(CONSTRAINTS.read_text())
+for fid in STOCK_IDS:
+    binding=constraints['constraints_by_current_fact_id'][fid]
+    if binding['usage_row']!=old_usage[fid] or binding['quality_row']!=old_quality[fid]: raise ValueError('Stock-date constraint base changed')
+    binding['usage_row']=usage[fid];binding['quality_row']=quality[fid]
+
 if constraints['schema'] != 'saved-series-usage-constraints-v1' or set(constraints['constraints_by_current_fact_id']) - set(usage):
     raise ValueError('Saved-series constraint coverage changed')
 for kind in ('usage', 'quality'):
@@ -82,7 +105,7 @@ with (SOURCE/'data/marts/public_disclosures/facts_effective.jsonl').open() as st
         if fact['fact_id'] in ids:
             if fact['fact_id'] in facts: raise ValueError('Duplicate source fact')
             facts[fact['fact_id']] = fact
-if source_fact_count != 19054 or set(facts) != ids: raise ValueError('Original fact set does not match verified 1,400 review IDs')
+if source_fact_count != 19066 or set(facts) != ids: raise ValueError('Original fact set does not match verified 1,400 review IDs')
 
 rows = []
 for fact_id, review in sorted(usage.items()):
@@ -119,7 +142,7 @@ for fact_id, review in sorted(usage.items()):
                   'preciseDeltaAllowed': False, 'relativeGrowthAllowed': False,
                   'sourceSeriesPublicationAllowed': False, 'sourceCellsAreNotFacts': True,
                   'specifiedTargetUse': {'targetUse': target.get('target_use'), 'status': target.get('status')},
-                  'ledgerReferences': {kind: {'sha256': PINS[kind+'_delta'], 'jsonPointer': '/replacements_by_id/'+fact_id}
+                  'ledgerReferences': {kind: {'sha256': (STOCK_PINS['stock_'+kind] if fact_id in STOCK_IDS else PINS[kind+'_delta']), 'jsonPointer': '/replacements_by_id/'+fact_id}
                                        for kind in ('quality','usage')}}
     period = review['period']
     row = {
@@ -147,7 +170,7 @@ if sum(row['currentYearSeriesRestrictions'] is not None for row in rows) != 263:
     raise ValueError('Current-year saved-series restrictions missing')
 asset = {'schemaVersion': 2, 'datasetId': 'buildbase-financial-usage-public',
          'sourceQualitySha256': PINS['quality_view'], 'sourceUsageSha256': PINS['usage_view'],
-         'sourceLedgerSha256': {'quality': PINS['quality_delta'], 'usage': PINS['usage_delta'], 'constraints': PINS['constraints']},
+         'sourceLedgerSha256': {'quality': PINS['quality_delta'], 'usage': PINS['usage_delta'], 'constraints': PINS['constraints'], 'stockQuality': STOCK_PINS['stock_quality'], 'stockUsage': STOCK_PINS['stock_usage'], 'stockDateContext': STOCK_PINS['stock_date_context']},
          'recordCount': len(rows), 'partitionCounts': BUCKETS, 'records': rows,
          'permissions': {'automaticAggregationAllowed': False, 'newComparisonPermissionCreated': False, 'browseOnly': True,
                          'historicalSourceCellsPublished': False}}

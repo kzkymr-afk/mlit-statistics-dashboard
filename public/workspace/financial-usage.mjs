@@ -1,10 +1,11 @@
+const STOCK_DATE_IDS=new Set(["0d81298871e05c37f47104cc36f37aec23826515f37f0be563e241efa4d7e9a0", "10f7d59376a97c32ddd93de95b1772df0e5fa677870e56f9959a83be853bbaea", "19c102c6d95ae0db883b296d330a9b632f677c23e39fe59e05e4bd61fa689ab5", "1baa28ef6e463451a13146868b1ea882e60ab8ef50c057defdf2d5e35802da44", "222c7e2279a93fcb77f40b74d6d9ad6bbc815e3669916dd9a05bb23355ef6b13", "2377131d9cb0f32eba175dad1885524ab3af59c54a1517a48bb9f5f4ea67727d", "288c28d88c062d53dfb657157b139cd1f0c849dc2e820fa3e22bd2f3efcecf27", "3347f960c7ba0bb76b30c56ad09ae272bce4b89be3727977403b40abc3c9ad4c", "5b6aebf77b202b6075203f06aea776ca46414ba90ec7a51003e1d67a97c963ca", "5e5fafc116b66ac6fcc6a560f2ce613156814a490ad14eb20e210ed1b67d3167", "690cb5e1442bd8c55bf682ea9e5d4e08a916d5af207965f9e08ab2e569936627", "79de6ce74813944539ad06e77f03e032a41e94130f5ea26c5352009ba7486f70", "7d317e16a410efcaac39b8ddc6f2d9207446803c9f0f9c1dec6c3c5b98272c35", "84f95729b107b3e8ad11f9cc981ddf21e42f87a309b7b97eb8523fe11adc7945", "8e2e89c642c8ff5f239f17a6ff73da5e723f1e0c84112fc548d0f3c3ce53d3ed", "926e5d0fa9de866bc4ec9241fd0c0b48d7bd14791d0050ad7a5b5d78b485bc8b", "aeff45ec76551d778383b2d703f4160bebfe1b8889faa382771a047abdc1d3f3", "b614a998c162fe44ec3f2d95b3565c4bce50bf3c14d44c369f7bdcca3c247230", "e124ec8d10b04651336221ebf5a6b3d9c496e1a60a31b262a11ed32e1da87e20", "e5ba9d0c2d4ac806e0d27fbe22d33e6efbbf63ecce09c618af80d5cffc288dce", "e625b3d30acc69e350db7aa1ecd565388311ce552fa25cc59ec736901ddb5fe0", "ee655550726af7981d360a49f2a0d2dddc62611fae645918d10a11064175ca43", "f5d6688c8c177d745b812d734cfe255552c856b0ec285d0afb782332a3708a9b", "fd69a13cffdfe7a26c0f4e81226103ca698954eaf09880051e615952bac510c3"]);
 import {canonicalSha256} from '../explorer/lib/buildbase-contract-hash.mjs';
 
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const BUCKETS={automatic:20,annotated_comparison:970,prohibited_total_NetAssets_alias:1,unreviewed:0,reported_basis_pending:42,target_context_pending:10,source_reconciliation_pending:1,individual_counterpart_waiting:356};
-const LEDGERS={quality:'5e33a74b438e9fc664f147b755fe7940446eedc4fa765c5893d9d919b5265299',usage:'dabd49c60a2799545c6bfc1611cb50ef52eda6962f63c2b81db610188fb9cf24',constraints:'de1e0f208f041cc6ca2ba0968f04f115e98f3ec3eaacd6dab41b839393d1731e'};
-const QUALITY_VIEW='07f5d5c735a1b51daba5c20581c7826b9be2320180f845f9b3051f029cec5eec';
-const USAGE_VIEW='bc55c835f239701156beab0252432473706f401ae354f049c359d59295cfb7e2';
+const BUCKETS={automatic:20,annotated_comparison:994,prohibited_total_NetAssets_alias:1,unreviewed:0,reported_basis_pending:42,target_context_pending:10,source_reconciliation_pending:1,individual_counterpart_waiting:332};
+const LEDGERS={quality:'5e33a74b438e9fc664f147b755fe7940446eedc4fa765c5893d9d919b5265299',usage:'dabd49c60a2799545c6bfc1611cb50ef52eda6962f63c2b81db610188fb9cf24',constraints:'de1e0f208f041cc6ca2ba0968f04f115e98f3ec3eaacd6dab41b839393d1731e',stockQuality:'2b9daae5341d8005220cd16101242b3d855aba673648effbde11e84bf50714a4',stockUsage:'a34055ae30207afc986b06e0cb4d9bfe8240f4ae8df4d114e261d34e0d1bec07',stockDateContext:'8458d3aa2d2469ed665116bf1264341687cb6ab18c7cfb965288a4c788fb1059'};
+const QUALITY_VIEW='3a014ff922e95eafece3cef08b87a59d37fb4bf04131fea9db8d2b151a06101d';
+const USAGE_VIEW='6bc1b836e7ba5cdda1eb61d5ab8c8637f2114bd6d2a56256b4a66976b3ebdb35';
 const OFFICIAL_HOSTS=new Set('ssl4.eir-parts.net ir.obayashi.co.jp pdf.irpocket.com www.haseko.co.jp www.nishimatsu.co.jp www.ad-hzm.co.jp www.penta-ocean.co.jp www.takenaka.co.jp www.smcon.co.jp www2.jpx.co.jp www.kajima.co.jp www.okumuragumi.co.jp www.toda.co.jp www.taisei.co.jp www.zenitaka.co.jp www.asanuma.co.jp www.matsui-ken.co.jp www.kumagaigumi.co.jp www.infroneer.com disclosure2dl.edinet-fsa.go.jp'.split(' '));
 const PRIVATE=/\/Volumes\/|\/Users\/|file:\/\/|data\/raw\/|https?:\/\/github\.com\//i;
 const date=value=>value||'未記録';
@@ -34,7 +35,7 @@ export async function validateFinancialUsageAsset(asset,catalog){
       series.preciseDeltaAllowed!==false||series.relativeGrowthAllowed!==false||
       series.sourceSeriesPublicationAllowed!==false||series.sourceCellsAreNotFacts!==true||
       !series.availableUse||!row.conditions.length||
-      ['quality','usage'].some(kind=>series.ledgerReferences?.[kind]?.sha256!==LEDGERS[kind]||
+      ['quality','usage'].some(kind=>series.ledgerReferences?.[kind]?.sha256!==(STOCK_DATE_IDS.has(row.id)?LEDGERS[kind==='quality'?'stockQuality':'stockUsage']:LEDGERS[kind])||
         series.ledgerReferences?.[kind]?.jsonPointer!=='/replacements_by_id/'+row.id))
      throw Error('財務系列の年度別利用条件を確認できません。');
   }

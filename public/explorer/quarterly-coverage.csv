@@ -1,6 +1,6 @@
 ﻿"company_id","company_name","q1_source_record_count_current_and_prior","q2_source_record_count_current_and_prior","q3_source_record_count_current_and_prior","q4_direct_record_count","standalone_quarter_record_count","review_status","non_disclosure_assertion","checked_scope"
-"MAEDA","前田建設工業","0","0","0","0","0","not_reviewed","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
-"SMCC","三井住友建設","34","34","0","0","0","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+"MAEDA","前田建設工業","8","0","0","0","0","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
+"SMCC","三井住友建設","34","34","4","0","0","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
 "INFR","インフロニア・ホールディングス","8","8","8","0","0","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
 "KAJIMA","鹿島建設","34","34","34","0","30","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
 "TAISEI","大成建設","52","52","52","0","0","partial_records_available","false","保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"

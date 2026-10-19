@@ -3,23 +3,26 @@
   "dataUrl": "explorer/financial-usage.json.gz",
   "datasetId": "buildbase-financial-usage-public",
   "partitionCounts": {
-    "annotated_comparison": 970,
+    "annotated_comparison": 994,
     "automatic": 20,
-    "individual_counterpart_waiting": 356,
+    "individual_counterpart_waiting": 332,
     "prohibited_total_NetAssets_alias": 1,
     "reported_basis_pending": 42,
     "source_reconciliation_pending": 1,
     "target_context_pending": 10,
     "unreviewed": 0
   },
-  "projectionHash": "b979f7cb2c4aa3c4bf4e949803d2dedb58e9f44fcbf04de2e4c75cd47e9ef8fc",
+  "projectionHash": "18d7878443eedfc9f8287eeb3754c21ba0122ecaf695acc647effa47518f00cf",
   "recordCount": 1400,
   "schemaVersion": 2,
   "sourceLedgerSha256": {
     "constraints": "de1e0f208f041cc6ca2ba0968f04f115e98f3ec3eaacd6dab41b839393d1731e",
     "quality": "5e33a74b438e9fc664f147b755fe7940446eedc4fa765c5893d9d919b5265299",
+    "stockDateContext": "8458d3aa2d2469ed665116bf1264341687cb6ab18c7cfb965288a4c788fb1059",
+    "stockQuality": "2b9daae5341d8005220cd16101242b3d855aba673648effbde11e84bf50714a4",
+    "stockUsage": "a34055ae30207afc986b06e0cb4d9bfe8240f4ae8df4d114e261d34e0d1bec07",
     "usage": "dabd49c60a2799545c6bfc1611cb50ef52eda6962f63c2b81db610188fb9cf24"
   },
-  "sourceQualitySha256": "07f5d5c735a1b51daba5c20581c7826b9be2320180f845f9b3051f029cec5eec",
-  "sourceUsageSha256": "bc55c835f239701156beab0252432473706f401ae354f049c359d59295cfb7e2"
+  "sourceQualitySha256": "3a014ff922e95eafece3cef08b87a59d37fb4bf04131fea9db8d2b151a06101d",
+  "sourceUsageSha256": "6bc1b836e7ba5cdda1eb61d5ab8c8637f2114bd6d2a56256b4a66976b3ebdb35"
 }

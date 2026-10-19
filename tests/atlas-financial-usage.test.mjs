@@ -11,8 +11,8 @@ test('financial view carries 1,400 original values with only bounded review stat
  await validateFinancialUsageAsset(asset,catalog);
  assert.equal(asset.records.length,1400);
  assert.equal(asset.partitionCounts.automatic,20);
- assert.equal(asset.partitionCounts.annotated_comparison,970);
- assert.equal(asset.partitionCounts.individual_counterpart_waiting,356);
+ assert.equal(asset.partitionCounts.annotated_comparison,994);
+ assert.equal(asset.partitionCounts.individual_counterpart_waiting,332);
  assert.equal(asset.partitionCounts.annotated_comparison+asset.partitionCounts.individual_counterpart_waiting,1326);
  assert.equal(asset.schemaVersion,2);
  assert.equal(asset.records.filter(r=>r.currentYearSeriesRestrictions).length,263);

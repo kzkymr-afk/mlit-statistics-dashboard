@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
   "datasetId": "buildbase-quarterly-financial-public",
-  "projectionHash": "8f49db9ac539f3e28b925184b0e0766232e28290401bce9123091ee04ebc393e",
-  "sourceSubsetHash": "d0e8450b4329ab8a18c271787e933bf45f97a3e3ea87f2e0a3656e5fb9a0ea8a",
-  "compressedSha256": "4b42d31153c9d38f32498e82a548f037be827ac05c76872622ea7e81716f192e",
+  "projectionHash": "a04b66ec0510ca2c8602c7266b62095bc650fb59c672a969275ee8e020b82f2a",
+  "sourceSubsetHash": "9a18c241a8783bb8c0306d2d7d3ad8c461d5053ae65e43ac8ce4c0edef904fad",
+  "compressedSha256": "bd7316dc7d79ee5ca9ece90886461787613c6ae53fc97e07fe22bd7319631aa8",
   "dataUrl": "explorer/quarterly-financials.json.gz",
   "schemaUrl": "explorer/quarterly-financials.schema.json",
   "coverageCsvUrl": "explorer/quarterly-coverage.csv",
-  "recordCount": 1492,
-  "q1RecordCount": 469,
+  "recordCount": 1504,
+  "q1RecordCount": 477,
   "q2RecordCount": 485,
-  "q3RecordCount": 538,
-  "recordedCompanyCount": 20,
+  "q3RecordCount": 542,
+  "recordedCompanyCount": 21,
   "directQuarterRecordCount": 30,
-  "cumulative3MonthRecordCount": 459,
+  "cumulative3MonthRecordCount": 467,
   "cumulative6MonthRecordCount": 457,
-  "cumulative9MonthRecordCount": 519,
+  "cumulative9MonthRecordCount": 523,
   "stockRecordCount": 8,
-  "numericRecordCount": 1491,
+  "numericRecordCount": 1503,
   "heldReferenceCount": 1,
   "companyCount": 21,
   "coverageCompanyCount": 21,
-  "unreviewedCompanyCount": 1,
-  "sourceDocumentCount": 59,
+  "unreviewedCompanyCount": 0,
+  "sourceDocumentCount": 61,
   "sourceCohortExport": {
     "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
     "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
@@ -73,6 +73,18 @@
       "datasetId": "buildbase-smcc-maeda-quarterly-fy2025",
       "snapshotHash": "6c050a25430175ccceefea2ad770761cf863a6e86e3b9473cb9e7e0486299217",
       "recordCount": 68
+    }
+  ],
+  "statementCohortExports": [
+    {
+      "datasetId": "buildbase-maeda-q1-own-appendix-smcc-maeda-review-20261019",
+      "snapshotHash": "68df3534d1856cb5b4f1c3b52a56aea3978d9a6a0715b9367709509f8e081756",
+      "recordCount": 8
+    },
+    {
+      "datasetId": "buildbase-smcc-fy2024-q3-own-statement-20261019",
+      "snapshotHash": "de9d3ecdf979ad2511c05cc637b5d530c4d18d8eeb2c00f399a52e8540a833bd",
+      "recordCount": 4
     }
   ],
   "periodCompanionDocumentCount": 4,
@@ -301,12 +313,12 @@
     {
       "companyId": "MAEDA",
       "companyName": "前田建設工業",
-      "q1RecordCount": 0,
+      "q1RecordCount": 8,
       "q2RecordCount": 0,
       "q3RecordCount": 0,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -315,7 +327,7 @@
       "companyName": "三井住友建設",
       "q1RecordCount": 34,
       "q2RecordCount": 34,
-      "q3RecordCount": 0,
+      "q3RecordCount": 4,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
       "status": "partial_records_available",
