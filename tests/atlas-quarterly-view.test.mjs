@@ -47,7 +47,7 @@ test('legacy 113 records remain reachable on 25-row pages with stable controls a
 
 test('coverage totals, recorded companies, period/scope facets and status come from supplied records',()=>{
  const html=renderer.renderQuarterlyView(newAsset,{});
- assert.match(html,/2社・9件の記録を収録/);assert.match(html,/単独四半期（直接報告）/);
+ assert.match(html,/2社・9件の記録IDを収録/);assert.match(html,/単独四半期（直接報告）/);
  assert.match(html,/quarter_cumulative_6months/);assert.match(html,/value="quarter_cumulative_6months"/);
  assert.match(html,/value="quarter_only_3months"/);assert.match(html,/value="standalone"\s*>単体/);assert.match(html,/value="consolidated"\s*>連結/);
  assert.match(html,/未確認会社[^<]*<\/button><\/td>(?:<td>0件<\/td>)+<td>0件<\/td><td>未確認<\/td>/);assert.doesNotMatch(html,/0件<\/td><td>非開示<\/td>/);

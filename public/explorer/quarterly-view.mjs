@@ -30,6 +30,8 @@ function companyEntries(payload){
 }
 function companyName(id,companies){return companies.find(company=>company.companyId===id)?.companyName||id||'会社名未収録';}
 function periodTypeLabel(type,record){
+ if(type==='interim_cumulative_6months')return '中間6か月累計（直接報告）';
+ if(type===null)return '保留中・期間未表示';
  const cumulative=String(type||'').match(/^quarter_cumulative_(\d+)months$/);
  if(cumulative)return `${cumulative[1]}か月累計`;
  const direct=String(type||'').match(/^quarter_(?:actual|only)_(\d+)months$/);
@@ -38,6 +40,7 @@ function periodTypeLabel(type,record){
  return textValue(firstValue(record,['source_period_heading','period_label_as_disclosed','period_label']))||'その他の期間';
 }
 function periodRank(type){
+ if(type==='interim_cumulative_6months')return 6.5;
  const cumulative=String(type||'').match(/^quarter_cumulative_(\d+)months$/);
  const direct=String(type||'').match(/^quarter_(?:actual|only)_(\d+)months$/);
  return cumulative?Number(cumulative[1]):direct?500+Number(direct[1]):type==='point_in_time_stock'?1000:2000;
@@ -56,6 +59,7 @@ function intervalWasNormalized(record){
 function normalizedIntervalNote(record){if(record.period_interval_status==='summary_fiscal_comparison_bound_to_same_pdf_exact_cumulative_interval')return '期間は同じPDFの受注表の日付に対応づけ';return intervalWasNormalized(record)?'期間は年度境界と期区分から正規化':'';}
 function periodLabel(record){
  const type=String(record.period_type||'');
+ if(type==='interim_cumulative_6months')return `${record.period_start} ～ ${record.period_end}（中間6か月累計・直接報告）`;
  const intervalNote=normalizedIntervalNote(record);
  const cumulative=type.match(/^quarter_cumulative_(\d+)months$/);
  if(cumulative&&record.period_start&&record.period_end)return `${record.period_start} ～ ${record.period_end}（${cumulative[1]}か月累計${intervalNote?`、${intervalNote}`:''}）`;
@@ -77,6 +81,7 @@ function recordCount(records,companyId,periodType){
 }
 function reviewLabel(companyId,records){return records.some(record=>record.company_id===companyId)?'記録あり':'未確認';}
 function accountingNotes(record){
+ if(record.accounting_standard_status==='not_disclosed_in_reviewed_source')return '<section class="notice"><strong>確認した資料には会計基準の記載がありません</strong><p>日本基準などへ推定せず、原資料の中間実績として表示します。</p></section>';
  if(record.accounting_standard_id){const ifrs=record.accounting_standard_id==='IFRS';return `<section class="notice"><strong>原資料の会計基準：${esc(record.accounting_standard_as_disclosed)}</strong><p>${ifrs?'税引前利益はIFRSの独立した指標です。日本基準の経常利益との対応づけ・自動比較は行いません。選択した連結損益表では経常利益は適用対象外で、会社全体の非開示を意味しません。':'日本基準の連結財務と、原資料が記載する連結・個別の受注を区別します。範囲をまたぐ自動合算は行いません。'}</p></section>`;}
  const value=firstValue(record,['accounting_policy_note','accounting_policy_notes','source_accounting_policy_note','source_accounting_policy_notes','accounting_policy_source_note','accounting_policy']);
  if(value===undefined)return '';
@@ -123,6 +128,7 @@ function sourceRowDetails(record){
  return `${record.semantic_category_label?'<p class="small">説明上の区分（原文引用とは別）：'+esc(record.semantic_category_label)+'</p>':''}<p class="small">${hierarchy===undefined?'':`原資料の行：${esc(textValue(hierarchy))}`}${hierarchy!==undefined&&category!==undefined?'<br>':''}${category===undefined?'':`区分：${esc(textValue(category))}`}</p>`;
 }
 function sourceScopeNotes(record){
+ if(['reviewed_toa_matsui_quarterly_fy2025_v1','reviewed_penta_taisei_quarterly_fy2025_v1','reviewed_takenaka_tokyu_quarterly_fy2025_v1','reviewed_smcc_maeda_quarterly_fy2025_v1'].includes(record.extractor_version))return `<section class="notice"><strong>原資料の対象・期間・注記</strong><p>対象：${esc(record.source_subject_scope_as_disclosed||'原表の選択行')}。${esc(record.source_subject_scope_interpretation||'')}</p>${record.source_period_interpretation?`<p>期間の解釈：${esc(record.source_period_interpretation)}</p>`:''}${record.source_value_annotation_as_disclosed?`<p>原表の値注記：${esc(record.source_value_annotation_as_disclosed)}</p>`:''}<p>原表カテゴリの親子を自動合算せず、累計から単独四半期を計算しません。現在掲載版との一致・資料全体の訂正履歴は未確認です。</p></section>`;
  if(record.extractor_version!=='reviewed_shimizu_toda_quarterly_fy2025_v1')return '';
  const overseas=record.company_id==='SHIMIZU'&&record.metric_id==='total_orders_as_reported'&&record.data_scope==='consolidated',order=record.metric_id.includes('order');
  const note=overseas?'連結の海外受注参考値です。会社全体の連結受注合計ではありません。個別受注の合計と加算・比較しません。':record.company_id==='TODA'&&record.metric_id==='total_orders_as_reported'?'個別の全体合計は建設事業・国内投資開発事業等・環境・エネルギー事業を含みます。建設事業の小計とは区別します。':record.metric_id==='order_value_as_reported'?'国内投資開発事業等・環境・エネルギー事業の原表カテゴリです。建設事業の受注へ付け替えません。':order?'原表の個別受注の合計・小計・明細を区別します。親子カテゴリを補正・合算しません。':'連結損益計算書の期間は連結財務にだけ適用し、個別受注へ対象範囲を転記しません。';
@@ -138,6 +144,8 @@ function summaryNote(types,records){
  if(cumulative.length)notes.push(`${cumulative.join('・')}を累計期間として表示します。累計を単独四半期に読み替えません。`);
  if(direct.length)notes.push(`${direct.join('・')}は原資料が単独四半期として直接報告した期間です。`);
  if(types.includes('point_in_time_stock'))notes.push('残高等は原資料の月表記・日付を保ちます。');
+ if(types.includes('interim_cumulative_6months'))notes.push('中間6か月実績は原資料の期間を保持し、他の四半期との同一視や差分計算をしません。');
+ if(records.some(r=>r.record_kind==='held_reference'))notes.push('保留中の1件はIDと出典のみを残し、数値・期間は表示・書き出ししません。');
  notes.push('原資料の単位・丸めを保持し、会社間の自動比較・合算・指数化・相関分析は行いません。');
  return notes.join(' ');
 }
@@ -151,6 +159,7 @@ function recordCurrentnessCheck(check){return check?`<p class="notice">原記録
 function correctionNote(record){return record.correction_status==='official_listing_marks_2025_08_19_corrected_edition'?'<p class="notice">公式掲載ページで訂正版と表示された資料です。訂正前の資料との数値差・訂正範囲は未確認です。</p>':'';}
 function periodEvidence(record){
  const basis=record.source_locator?.period_binding_basis;if(!basis)return '';
+ if(['reviewed_toa_matsui_quarterly_fy2025_v1','reviewed_penta_taisei_quarterly_fy2025_v1','reviewed_takenaka_tokyu_quarterly_fy2025_v1','reviewed_smcc_maeda_quarterly_fy2025_v1'].includes(record.extractor_version))return `<section class="notice"><strong>原資料の期間根拠</strong><p>${esc(basis.status)}。${record.company_id==='TAKENAKA'?'中間期間は別の公式資料による明示期間照合です。':''}連結財務と個別受注の対象範囲を同一視しません。</p><pre>${pretty(basis)}</pre></section>`;
  if(record.extractor_version==='reviewed_shimizu_toda_quarterly_fy2025_v1')return `<section class="notice"><strong>同じPDF内の期間根拠</strong><blockquote>${esc(basis.period_start_quote)} / ${esc(basis.period_end_quote)}</blockquote><p>期間根拠のPDF物理ページ ${esc(basis.physical_page)}${basis.printed_page?' / 資料の表示ページ '+esc(basis.printed_page):''}。${record.metric_id.includes('order')?'原資料の受注表の累計日付を、その表の対象範囲に保持します。':'連結損益計算書の累計日付を、連結財務だけに保持します。'}${basis.status==='same_page_repeated_order_header_dates'?'海外参考欄の期間は同じページに繰り返された受注期間の見出しに対応づけています。':''}Q2は6か月累計で、単独Q2への差分計算は行いません。</p></section>`;
  if(record.extractor_version==='reviewed_infr_nishimatsu_quarterly_fy2025_v1')return `<section class="notice"><strong>同じPDF内の期間根拠</strong><blockquote>${esc(basis.period_start_quote)} / ${esc(basis.period_end_quote)}</blockquote><p>期間根拠のPDF物理ページ ${esc(basis.physical_page)}${basis.printed_page?' / 資料の表示ページ '+esc(basis.printed_page):''}。${record.metric_id==='construction_order_value_as_reported'?'受注表の開始・終了日をその表の対象範囲に保持します。':'連結損益計算書の開始・終了日を連結財務の期間だけに使います。受注表へ対象範囲を転記しません。'}Q2は6か月累計で、単独Q2への差分計算は行いません。</p></section>`;
 
@@ -173,7 +182,7 @@ export function renderQuarterlyView(asset,state,page=0,catalog={}){
   return `<tr><td><button data-quarter-company="${esc(company.companyId)}">${esc(company.companyName||company.companyId)}</button></td>${types.map(type=>`<td>${recordCount(records,company.companyId,type)}件</td>`).join('')}<td>${total}件</td><td>${reviewLabel(company.companyId,records)}</td></tr>`;
  }).join('');
  const notice=summaryNote(types,records);
- return `<section class="derived-header"><div class="eyebrow">会社の四半期資料</div><div class="panel-heading"><h1>四半期の記録と確認状況</h1><button data-close-quarter>会社指標と公的統計へ戻る</button></div><p>${recordedCompanies}社・${records.length}件の記録を収録。表示件数は当期・比較期を含みます。記録がない会社や期間は、未確認のまま表示します。</p><div class="notice">${esc(notice)}</div></section>
+ return `<section class="derived-header"><div class="eyebrow">会社の四半期資料</div><div class="panel-heading"><h1>四半期の記録と確認状況</h1><button data-close-quarter>会社指標と公的統計へ戻る</button></div><p>${recordedCompanies}社・${records.length}件の記録IDを収録（数値 ${records.filter(r=>Number.isFinite(r.value)).length}件・保留参照 ${records.filter(r=>r.record_kind==='held_reference').length}件）。表示件数は当期・比較期を含みます。記録がない会社や期間は、未確認のまま表示します。</p><div class="notice">${esc(notice)}</div></section>
  <section class="panel"><div class="panel-heading"><h2>会社別の収録範囲</h2><a href="${esc(publicDataUrl('explorer/quarterly-coverage.csv'))}" download="atlas-quarterly-coverage.csv">会社別の一覧CSV ↗</a></div><p class="small">収録した四半期値と確認状況です。全社のIR資料を網羅した調査ではありません。0件は未確認であり、非開示を意味しません。${types.length?`期間の種類：${esc(types.map(type=>periodTypeLabel(type,records.find(record=>record.period_type===type))).join('・'))}。`:''}</p><div class="table-scroll"><table class="values"><thead><tr><th>会社</th>${types.map(type=>`<th>${esc(periodTypeLabel(type,records.find(record=>record.period_type===type)))}</th>`).join('')}<th>合計</th><th>確認状態</th></tr></thead><tbody>${body}</tbody></table></div><p class="small">件数は原資料の記録単位で数え、同じ期間の複数資料・観測を経済的な期間数として合算しません。資料や期間を確認していないことを、非開示・0とは扱いません。</p></section>
  <section class="panel derived-filters" aria-label="四半期資料の検索条件"><label>原値を検索<input type="search" id="quarter-search" value="${esc(state.quarterQuery||'')}" placeholder="指標名・会社ID・原文・資料ID"></label>${select('会社','quarterCompany',companies.map(company=>[company.companyId,company.companyName||company.companyId]),state)}${select('指標','quarterMetric',metrics,state)}${select('期間の種類','quarterPeriod',periodOptions,state)}${select('値の対象','quarterScope',scopeOptions,state)}<button data-clear-quarter>条件をクリア · 全${records.length}件</button></section>
  <section class="panel"><div class="panel-heading"><h2>収録${records.length}件 · 一致${matches.length}件</h2><div class="tool-row"><button data-quarter-export="csv">選択した原値CSV</button><button data-quarter-export="json">選択した原値・出典JSON</button></div></div><p class="small">表示 ${matches.length?start+1:0}–${Math.min(start+25,matches.length)} / ${matches.length}件。書き出しはページ内だけでなく、検索条件に一致した全件です。</p><div class="derived-pagination"><button data-quarter-page="${current-1}" ${current===0?'disabled':''}>前の25件</button><span>${current+1} / ${pages}</span><button data-quarter-page="${current+1}" ${current+1>=pages?'disabled':''}>次の25件</button></div></section>
@@ -182,6 +191,7 @@ export function renderQuarterlyView(asset,state,page=0,catalog={}){
  <footer class="main-foot">原資料の公式URL・hash・位置・原文を保持します。取得日時と現在掲載版の確認状態は記録ごとに異なります。補足チェックで原記録の状態を変更しません。表示用データ版 ${esc(asset.projectionHash.slice(0,12))}。</footer>`;
 }
 function renderQuarterRecord(record,companies,currentnessCheck){
+ if(record.record_kind==='held_reference')return `<article class="panel derived-result" data-quarter-fact-id="${esc(record.fact_id)}"><div class="eyebrow">保留中の原記録 · 数値・期間は非公開</div><h2>${esc(companyName(record.company_id,companies))} · ${esc(quarterMetricName(record))}</h2><p class="notice">${esc(record.hold_note)}</p><details><summary>保留理由・原資料</summary><p>記録ID ${esc(record.fact_id)} · 理由コード ${esc(record.hold_reason_code)}</p><p>${sourceLink(quarterlySourceUrl(record.source_url),'公式PDFを開く ↗')} · 原本SHA-256 ${esc(record.source_file_sha256)}</p><p>財務分析・比較・合算の許可はありません。</p></details></article>`;
  const locator=record.source_locator||{},page=locator.pdf_page||locator.primary_summary_cell?.pdf_page,periodPage=locator.period_provenance?.pdf_page;
  const role=record.is_reconciliation_adjustment?'調整欄':record.is_reported_total?'報告合計':record.is_reported_subtotal?'報告小計':record.is_additive_leaf?'明細（自動合算は未許可）':'原資料の欄';
  const conflict=record.same_byte_index_conflict;

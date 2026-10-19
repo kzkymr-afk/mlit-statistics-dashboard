@@ -1,26 +1,28 @@
 {
   "schemaVersion": 1,
   "datasetId": "buildbase-quarterly-financial-public",
-  "projectionHash": "86ad59e742361aac216e3d8688e45b05f11060d010d6b6ed4891185e2ec37160",
-  "sourceSubsetHash": "b355cf226c3c49eb7fe99bc5153a8347e97ac92a7ec3722c3e1f2ea20638ffa7",
-  "compressedSha256": "b648147073509f9aa61b0e2107459399b577c6e9f143485a347a80cf7a2751a1",
+  "projectionHash": "8f49db9ac539f3e28b925184b0e0766232e28290401bce9123091ee04ebc393e",
+  "sourceSubsetHash": "d0e8450b4329ab8a18c271787e933bf45f97a3e3ea87f2e0a3656e5fb9a0ea8a",
+  "compressedSha256": "4b42d31153c9d38f32498e82a548f037be827ac05c76872622ea7e81716f192e",
   "dataUrl": "explorer/quarterly-financials.json.gz",
   "schemaUrl": "explorer/quarterly-financials.schema.json",
   "coverageCsvUrl": "explorer/quarterly-coverage.csv",
-  "recordCount": 782,
-  "q1RecordCount": 227,
-  "q2RecordCount": 225,
-  "q3RecordCount": 330,
-  "recordedCompanyCount": 13,
+  "recordCount": 1492,
+  "q1RecordCount": 469,
+  "q2RecordCount": 485,
+  "q3RecordCount": 538,
+  "recordedCompanyCount": 20,
   "directQuarterRecordCount": 30,
-  "cumulative3MonthRecordCount": 217,
-  "cumulative6MonthRecordCount": 215,
-  "cumulative9MonthRecordCount": 312,
+  "cumulative3MonthRecordCount": 459,
+  "cumulative6MonthRecordCount": 457,
+  "cumulative9MonthRecordCount": 519,
   "stockRecordCount": 8,
+  "numericRecordCount": 1491,
+  "heldReferenceCount": 1,
   "companyCount": 21,
   "coverageCompanyCount": 21,
-  "unreviewedCompanyCount": 8,
-  "sourceDocumentCount": 41,
+  "unreviewedCompanyCount": 1,
+  "sourceDocumentCount": 59,
   "sourceCohortExport": {
     "datasetId": "buildbase-haseko-ando-hazama-quarterly-fy2025",
     "snapshotHash": "d9120abfa69b5f11894ddcb53b4fbedfc35744245a620a03a428a7d39bace9ed",
@@ -51,6 +53,26 @@
       "datasetId": "buildbase-shimizu-toda-quarterly-fy2025",
       "snapshotHash": "a60124646393a40acc7eca029ffdabdcf204c2ba2d4c90c0ae609bcfee8d31b5",
       "recordCount": 144
+    },
+    {
+      "datasetId": "buildbase-toa-matsui-quarterly-fy2025",
+      "snapshotHash": "966242e479a1fa38292a147f16675ac9b5b24dbcf941de8eca979646256724c4",
+      "recordCount": 204
+    },
+    {
+      "datasetId": "buildbase-penta-taisei-quarterly-fy2025",
+      "snapshotHash": "e0398ec3c5f610847ef9f7561e411f797281c9b10756b699b355c0205bdab0d4",
+      "recordCount": 282
+    },
+    {
+      "datasetId": "buildbase-takenaka-tokyu-quarterly-fy2025",
+      "snapshotHash": "30f7b2549b6bf3d633f201150df9a7415a6a1eb663568429ac6e367e107bfeee",
+      "recordCount": 156
+    },
+    {
+      "datasetId": "buildbase-smcc-maeda-quarterly-fy2025",
+      "snapshotHash": "6c050a25430175ccceefea2ad770761cf863a6e86e3b9473cb9e7e0486299217",
+      "recordCount": 68
     }
   ],
   "periodCompanionDocumentCount": 4,
@@ -291,12 +313,12 @@
     {
       "companyId": "SMCC",
       "companyName": "三井住友建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
+      "q1RecordCount": 34,
+      "q2RecordCount": 34,
       "q3RecordCount": 0,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -327,12 +349,12 @@
     {
       "companyId": "TAISEI",
       "companyName": "大成建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 52,
+      "q2RecordCount": 52,
+      "q3RecordCount": 52,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -364,11 +386,11 @@
       "companyId": "TAKENAKA",
       "companyName": "竹中工務店",
       "q1RecordCount": 0,
-      "q2RecordCount": 0,
+      "q2RecordCount": 18,
       "q3RecordCount": 0,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -411,12 +433,12 @@
     {
       "companyId": "PENTA",
       "companyName": "五洋建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 42,
+      "q2RecordCount": 42,
+      "q3RecordCount": 42,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -447,12 +469,12 @@
     {
       "companyId": "TOKYU",
       "companyName": "東急建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 46,
+      "q2RecordCount": 46,
+      "q3RecordCount": 46,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -471,12 +493,12 @@
     {
       "companyId": "TOA",
       "companyName": "東亜建設工業",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 38,
+      "q2RecordCount": 38,
+      "q3RecordCount": 38,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -507,12 +529,12 @@
     {
       "companyId": "MATSUI",
       "companyName": "松井建設",
-      "q1RecordCount": 0,
-      "q2RecordCount": 0,
-      "q3RecordCount": 0,
+      "q1RecordCount": 30,
+      "q2RecordCount": 30,
+      "q3RecordCount": 30,
       "q4DirectRecordCount": 0,
       "standaloneQuarterRecordCount": 0,
-      "status": "not_reviewed",
+      "status": "partial_records_available",
       "nonDisclosureAssertion": false,
       "checkedScope": "保存した四半期財務記録と資料索引のみ。全社のIR資料を網羅して確認した結果ではありません。"
     },
@@ -535,8 +557,24 @@
       "name": "完成工事高"
     },
     {
+      "metricId": "construction_gross_profit_consolidated_reported",
+      "name": "完成工事総利益（連結）"
+    },
+    {
+      "metricId": "construction_gross_profit_standalone_reported",
+      "name": "完成工事総利益（個別）"
+    },
+    {
       "metricId": "construction_order_value_as_reported",
       "name": "建設事業の受注高（原表カテゴリ別）"
+    },
+    {
+      "metricId": "construction_revenue_consolidated_reported",
+      "name": "完成工事高（連結）"
+    },
+    {
+      "metricId": "construction_revenue_standalone_reported",
+      "name": "完成工事高（個別）"
     },
     {
       "metricId": "depreciation_expense_reported",
@@ -559,6 +597,14 @@
       "name": "自己資本比率"
     },
     {
+      "metricId": "gross_profit_consolidated_reported",
+      "name": "売上総利益（連結）"
+    },
+    {
+      "metricId": "gross_profit_standalone_reported",
+      "name": "売上総利益（個別）"
+    },
+    {
       "metricId": "net_assets_consolidated_reported",
       "name": "純資産"
     },
@@ -571,8 +617,16 @@
       "name": "親会社株主に帰属する四半期純利益"
     },
     {
+      "metricId": "net_profit_standalone_reported",
+      "name": "当期純利益（個別）"
+    },
+    {
       "metricId": "operating_profit_consolidated_reported",
       "name": "営業利益"
+    },
+    {
+      "metricId": "operating_profit_standalone_reported",
+      "name": "営業利益（個別）"
     },
     {
       "metricId": "order_value_as_reported",
@@ -581,6 +635,10 @@
     {
       "metricId": "ordinary_profit_consolidated_reported",
       "name": "経常利益"
+    },
+    {
+      "metricId": "ordinary_profit_standalone_reported",
+      "name": "経常利益（個別）"
     },
     {
       "metricId": "profit_before_tax_consolidated_reported",
@@ -593,6 +651,10 @@
     {
       "metricId": "sales_consolidated_reported",
       "name": "売上高"
+    },
+    {
+      "metricId": "sales_standalone_reported",
+      "name": "売上高（個別）"
     },
     {
       "metricId": "segment_external_customer_revenue_reported",
