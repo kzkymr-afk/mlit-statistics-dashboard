@@ -3,7 +3,7 @@ import { publishedWorkbenchSelection } from './lib/statistics-workbench.mjs';
 import { comboIdentity } from './lib/statistics-series-compare.mjs';
 const cache = new Map();
 export function publicDataUrl(path, base = window.__ATLAS_EXPLORER__?.base || '/') {
-  if (! /^(?:system\/[A-Za-z0-9_./{}-]+|explorer\/(?:search-index\.json\.gz|derived-indicators(?:\.json\.gz|\.catalog\.json|\.schema\.json)|quarterly-financials(?:\.json\.gz|\.catalog\.json|\.schema\.json)|quarterly-coverage\.csv|financial-usage(?:\.json\.gz|\.catalog\.json)))$/.test(path) || path.split('/').includes('..')) throw Error('公開データの所在を確認できません。');
+  if (! /^(?:system\/[A-Za-z0-9_./{}-]+|explorer\/(?:search-index\.json\.gz|project-finance\.json\.gz|annual-comparisons\.json\.gz|derived-indicators(?:\.json\.gz|\.catalog\.json|\.schema\.json)|quarterly-financials(?:\.json\.gz|\.catalog\.json|\.schema\.json)|quarterly-coverage\.csv|financial-usage(?:\.json\.gz|\.catalog\.json)))$/.test(path) || path.split('/').includes('..')) throw Error('公開データの所在を確認できません。');
   return base.replace(/\/$/, '') + '/' + path;
 }
 export async function fetchPublicJson(path) {
