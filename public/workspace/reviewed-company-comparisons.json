@@ -14387,6 +14387,642 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "cde0e4074d6197e048e6ee97dd3826c1c27060de7d1f6a963932d7be45495eec"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "SMCC:operating_income_consolidated@SMCC_JGAAP_2015_2024_REPORTED",
+          "companyId": "SMCC",
+          "metricId": "operating_income_consolidated",
+          "label": "三井住友建設 / 営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "accountingStandard": "JGAAP",
+          "comparisonFamily": "SMCC_JGAAP_REPORTED",
+          "reviewWindow": "SMCC_JGAAP_2015_2024_REPORTED",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "739da172a55a8f8105c409bcd688ced5ecf10965d5ac36886eae408fdcfbe6fb",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "企業結合基準等適用の連結財務諸表への影響軽微。ゼロ影響へ置換しない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a401ea93bd274ce71cb5a8c22c8a4c187478fa43684390c72affd0644301438a",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "減価償却変更による連結損益影響軽微。営業外費用等の表示組替を営業利益の修正にしない。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a1890f015c734ec8a3c28b728aa61dc9bf9427dcaa9d029bcee62b012ba03126",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "15f3da524246a10a0a97b35ecb3648039af15d10b322822bc15174af8ab2f25e",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "b0d9447f9bc2e40037f39f71c1ffa36e065245f2e9848f9f49cb7edd54567422",
+              "sourceLocator": {
+                "pdf_page": 66
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a08de7d7e117c76639544337bfb9c5f7237c1a085e0924d99a854cdbdbf26fd3",
+              "sourceLocator": {
+                "pdf_page": 67
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d8db9bffb7af1f44570944ad4a55a828944a7354daa52306a6cc459ac8536c8d",
+              "sourceLocator": {
+                "pdf_page": 75
+              },
+              "sourceQuote": "収益認識適用により売上高2,488百万円減・原価2,896百万円減・営業損失408百万円減、期首利益剰余金414百万円減。報告営業損失△7,459百万円を保持し、影響を過年度へ加減しない。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9cd500589f2f9d6e2557f444f7c20be77ad31127aba86b744f0917a98ace93c1",
+              "sourceLocator": {
+                "pdf_page": 79
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "fc50b3208fa4673282cb26574125d52d969c122bbec2b687441dfa34fe23fe94",
+              "sourceLocator": {
+                "pdf_page": 85
+              },
+              "sourceQuote": "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "b85c003b67976f9f300c28930aba228602707f59dcfdfdf9156d2e00767bb2c5",
+              "sourceLocator": {
+                "pdf_page": 91
+              },
+              "sourceQuote": "法人税等基準を適用し当期・前年遡及適用とも連結財務諸表への影響なし。"
+            }
+          ],
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31"
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準等適用の連結財務諸表への影響軽微。ゼロ影響へ置換しない。",
+            "2016年度：減価償却変更による連結損益影響軽微。営業外費用等の表示組替を営業利益の修正にしない。",
+            "2021年度：収益認識適用により売上高2,488百万円減・原価2,896百万円減・営業損失408百万円減、期首利益剰余金414百万円減。報告営業損失△7,459百万円を保持し、影響を過年度へ加減しない。",
+            "2024年度：法人税等基準を適用し当期・前年遡及適用とも連結財務諸表への影響なし。",
+            "2015〜2024年度は当年有報の日本基準・連結・百万円。2025年度の親会社資料185億円は億円四捨五入・会計基準未明示の条件付き閲覧として別表示し、2024年度から線をつながない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 23364,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "88004a8ef920f5f32f514eb1969b163ab9f8184863a92cd27dc2e1a9bf8cff5e",
+              "evidenceId": "e154fcef1d94501a34609405c7625f7c35d73cd4d52f45ad617bab6f7832ccc0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007UTR",
+                "documentTitle": "三井住友建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "739da172a55a8f8105c409bcd688ced5ecf10965d5ac36886eae408fdcfbe6fb",
+                "documentVersionSha256": "739da172a55a8f8105c409bcd688ced5ecf10965d5ac36886eae408fdcfbe6fb",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                   三井住友建設株式会社(E00085)\n                                                                          有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 平成26年４月１日                  (自 平成27年４月１日\n                           至 平成27年３月31日)                 至 平成28年３月31日)\n売上高                                ※1 377,825                    ※1 414,958\n売上原価                            ※2,※4 349,874                 ※2,※4 375,163\n売上総利益                                       27,950                       39,794\n販売費及び一般管理費                         ※3,※4    15,685              ※3,※4    16,429\n営業利益                                        12,265                       23,364",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    484.9,
+                    175.36151,
+                    511.9,
+                    184.35251
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "                                                         EDINET提出書類\n                                                   三井住友建設株式会社(E00085)\n                                                          有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       17社\n      主要な連結子会社名\n      三井住建道路㈱、ＳＭＣリフォーム㈱、ＳＭＣコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣシビ\n      ルテクノス㈱、ＳＭＣプレコン㈱、ＳＭＣＣタイランド、ＳＭＣＣコンストラクションインド、ＳＭＣＣウタ\n      マインドネシア\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱、雁部建設㈱\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング、ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣマレーシア\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び\n       利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲\n       から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング、ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣマレーシア\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社(４社)及び関連会社(３社)は、それぞれ当期純損益及び利益剰余金等\n        に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲より除外していま\n        す。\n\n\n３   連結子会社の事業年度等に関する事項\n    連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名      決算日\n      在外連結子会社５社       12月末日\n\n\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                               48/101\n",
+                "comparisonLimitations": [
+                  "企業結合基準等適用の連結財務諸表への影響軽微。ゼロ影響へ置換しない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 27941,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "975fde0229330dff0be875da6fde6fbda206dd6c9d5c526279bdd1bb68f15730",
+              "evidenceId": "b3f5adeede5c1117bd06f5807f3f700788ccfbc90bd061b0a8199243745e01ef",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100ANKZ",
+                "documentTitle": "三井住友建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a401ea93bd274ce71cb5a8c22c8a4c187478fa43684390c72affd0644301438a",
+                "documentVersionSha256": "a401ea93bd274ce71cb5a8c22c8a4c187478fa43684390c72affd0644301438a",
+                "pdfPage": 43,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                   三井住友建設株式会社(E00085)\n                                                                          有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 平成27年４月１日                  (自 平成28年４月１日\n                           至 平成28年３月31日)                 至 平成29年３月31日)\n売上高                                ※1 414,958                    ※1 403,908\n売上原価                            ※2,※4 375,163                 ※2,※4 357,484\n売上総利益                                       39,794                       46,424\n販売費及び一般管理費                         ※3,※4    16,429              ※3,※4    18,483\n営業利益                                        23,364                       27,941",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    484.9,
+                    175.234611,
+                    511.9,
+                    184.225611
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "                                                         EDINET提出書類\n                                                   三井住友建設株式会社(E00085)\n                                                          有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       19社\n      主要な連結子会社名\n      三井住建道路㈱、ＳＭＣリフォーム㈱、ＳＭＣコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣシビ\n      ルテクノス㈱、ＳＭＣプレコン㈱、ＳＭＣＣタイランド、ＳＭＣＣコンストラクションインド、ＳＭＣＣウタ\n      マインドネシア、ＳＭＣＣフィリピンズ\n        ＳＭＣＣオーバーシーズシンガポール及びＳＭＣＣマレーシアは、重要性が増したことにより、当連結会\n       計年度期首から連結の範囲に含めています。\n        連結子会社であるＳＭＣコンクリート㈱とＳＭＣプレコン㈱は、平成29年４月１日付でＳＭＣコンクリー\n       ト㈱を存続会社として合併し、ＳＭＣプレコンクリート㈱と社名を変更しています。\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱、雁部建設㈱\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び\n       利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲\n       から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社(２社)及び関連会社(３社)は、それぞれ当期純損益及び利益剰余金等\n        に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲より除外していま\n        す。\n\n\n３   連結子会社の事業年度等に関する事項\n    連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名      決算日\n      在外連結子会社７社       12月末日\n\n\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                               49/104\n",
+                "comparisonLimitations": [
+                  "減価償却変更による連結損益影響軽微。営業外費用等の表示組替を営業利益の修正にしない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 30584,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fdbc0581707094daabaa6d3411416290dca01d0a9f54d337c10f43641ce2a54c",
+              "evidenceId": "cd804d2e3ee57b8cad1a53958fb2f071243752253635a97ec8face04c476a33e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DGNP",
+                "documentTitle": "三井住友建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a1890f015c734ec8a3c28b728aa61dc9bf9427dcaa9d029bcee62b012ba03126",
+                "documentVersionSha256": "a1890f015c734ec8a3c28b728aa61dc9bf9427dcaa9d029bcee62b012ba03126",
+                "pdfPage": 44,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                   三井住友建設株式会社(E00085)\n                                                                          有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 平成28年４月１日                  (自 平成29年４月１日\n                           至 平成29年３月31日)                 至 平成30年３月31日)\n売上高                                ※1 403,908                    ※1 417,310\n売上原価                            ※2,※4 357,484                 ※2,※4 366,252\n売上総利益                                       46,424                       51,057\n販売費及び一般管理費                         ※3,※4    18,483              ※3,※4    20,473\n営業利益                                        27,941                       30,584",
+                "sourceLocator": {
+                  "pdf_page": 44,
+                  "value_bbox": [
+                    484.9,
+                    175.134621,
+                    511.9,
+                    184.125621
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "                                                         EDINET提出書類\n                                                   三井住友建設株式会社(E00085)\n                                                          有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       18社\n      主要な連結子会社名\n      三井住建道路㈱、ＳＭＣリフォーム㈱、ＳＭＣプレコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣ\n      シビルテクノス㈱、ＳＭＣＣタイランド、ＳＭＣＣコンストラクションインド、ＳＭＣＣウタマインドネシ\n      ア、ＳＭＣＣフィリピンズ\n        前連結会計年度において連結子会社であったＳＭＣプレコン㈱は、平成29年４月１日付で連結子会社であ\n       るＳＭＣコンクリート㈱を存続会社とする吸収合併により消滅したため、当連結会計年度より連結の範囲か\n       ら除外しています。なお、ＳＭＣコンクリート㈱はＳＭＣプレコンクリート㈱と社名を変更しています。\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱、雁部建設㈱\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング、台灣三住建股份有限公司\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び\n       利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲\n       から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング、台灣三住建股份有限公司\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社(２社)及び関連会社(３社)は、それぞれ当期純損益及び利益剰余金等\n        に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲より除外していま\n        す。\n\n\n３   連結子会社の事業年度等に関する事項\n    連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名      決算日\n      在外連結子会社７社       12月末日\n\n\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                               50/107\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 29217,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "c70f017c4cb6342e61ef5229ab85106d95c379c97db1c1fb2c1fd5d9923da8a9",
+              "evidenceId": "3e02d6fc317e3b7dd5c44f7d45dc304bd96fe47d2ac971fb155c3b52090edc7a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G6XG",
+                "documentTitle": "三井住友建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "15f3da524246a10a0a97b35ecb3648039af15d10b322822bc15174af8ab2f25e",
+                "documentVersionSha256": "15f3da524246a10a0a97b35ecb3648039af15d10b322822bc15174af8ab2f25e",
+                "pdfPage": 53,
+                "sourceQuote": "                                                                                EDINET提出書類\n                                                                          三井住友建設株式会社(E00085)\n                                                                                 有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                         当連結会計年度\n                          (自 平成29年４月１日                    (自 平成30年４月１日\n                           至 平成30年３月31日)                   至 平成31年３月31日)\n売上高                                ※1 417,310                      ※1 448,758\n売上原価                            ※2,※4 366,252                   ※2,※4 397,709\n売上総利益                                         51,057                       51,049\n販売費及び一般管理費                           ※3,※4    20,473              ※3,※4    21,831\n営業利益                                          30,584                       29,217\n営業利益                                          30,584                       29,217",
+                "sourceLocator": {
+                  "pdf_page": 53,
+                  "value_bbox": [
+                    476.95001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 59,
+                "consolidationScopeQuote": "                                                        EDINET提出書類\n                                                  三井住友建設株式会社(E00085)\n                                                         有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       17社\n      主要な連結子会社名\n      三井住建道路㈱、ＳＭＣリフォーム㈱、ＳＭＣプレコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣ\n      シビルテクノス㈱、ＳＭＣＣタイランド、ＳＭＣＣコンストラクションインド、ＳＭＣＣウタマインドネシ\n      ア、ＳＭＣＣフィリピンズ\n        前連結会計年度において連結子会社であった施美高（上海）工程有限公司は、清算結了したため、当連結\n       会計年度末より連結の範囲から除外しています。\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱、雁部建設㈱\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング、台灣三住建股份有限公司、台西電業股份有限公司\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n       び利益剰余金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範\n       囲から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング、台灣三住建股份有限公司、台西電業股份有限公司\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社（㈱コスモプラニング他）及び関連会社（ファイベックス㈱他）は、\n        それぞれ当期純損益及び利益剰余金等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、\n        持分法適用の範囲から除外しています。\n\n\n３   連結子会社の事業年度等に関する事項\n    連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名      決算日\n      在外連結子会社６社       12月末日\n\n\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                                59/115\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 24765,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7eb7ca640f119f24baeea474603641d9639aed1e893c4d4efd5ff1ce27937355",
+              "evidenceId": "33d9dc85b6e584e368a85ac00f4c6ef7add5a977fdbe85bea3fbca6ba5d9d3f3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IZVR",
+                "documentTitle": "三井住友建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "b0d9447f9bc2e40037f39f71c1ffa36e065245f2e9848f9f49cb7edd54567422",
+                "documentVersionSha256": "b0d9447f9bc2e40037f39f71c1ffa36e065245f2e9848f9f49cb7edd54567422",
+                "pdfPage": 60,
+                "sourceQuote": "                                                                                EDINET提出書類\n                                                                          三井住友建設株式会社(E00085)\n                                                                                 有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                         当連結会計年度\n                          (自 平成30年４月１日                    (自 平成31年４月１日\n                           至 平成31年３月31日)                   至 令和２年３月31日)\n売上高                                ※1 448,758                      ※1 472,402\n売上原価                            ※2,※4 397,709                   ※2,※4 424,733\n売上総利益                                         51,049                       47,669\n販売費及び一般管理費                           ※3,※4    21,831              ※3,※4    22,903\n営業利益                                          29,217                       24,765\n営業利益                                          29,217                       24,765",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    476.95001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "                                                        EDINET提出書類\n                                                  三井住友建設株式会社(E00085)\n                                                         有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       18社\n      主要な連結子会社名\n      三井住建道路㈱、ＳＭＣリフォーム㈱、ＳＭＣプレコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣ\n      シビルテクノス㈱、ＳＭＣＣタイランド、ＳＭＣＣコンストラクションインド、ＳＭＣＣウタマインドネシ\n      ア、ＳＭＣＣフィリピンズ、台灣三住建股份有限公司\n        前連結会計年度において非連結子会社であった台灣三住建股份有限公司は重要性が増したことにより当連\n       結会計年度より連結の範囲に含めています。\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱、雁部建設㈱\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング、台西電業股份有限公司\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n       び利益剰余金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範\n       囲から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング、台西電業股份有限公司\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社（２社）及び関連会社（４社）は、それぞれ当期純損益及び利益剰余\n        金等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外してい\n        ます。\n\n\n３   連結子会社の事業年度等に関する事項\n    連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名      決算日\n      在外連結子会社７社       12月末日\n\n\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                               66/128\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 15584,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "503bf0bffccf8bb1f150a23281ac0bb735b0599ebbe502dd9fb92df87291c977",
+              "evidenceId": "0eb53303202c3711e1aaefd8463eed6e998f03f1b9ffc9c03a1192ac6bf2ebdd",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LTCP",
+                "documentTitle": "三井住友建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a08de7d7e117c76639544337bfb9c5f7237c1a085e0924d99a854cdbdbf26fd3",
+                "documentVersionSha256": "a08de7d7e117c76639544337bfb9c5f7237c1a085e0924d99a854cdbdbf26fd3",
+                "pdfPage": 61,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                        三井住友建設株式会社(E00085)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成31年４月１日                   (自 令和２年４月１日\n                           至 令和２年３月31日)                   至 令和３年３月31日)\n売上高                                ※1 472,402                    ※1 421,619\n売上原価                            ※2,※4 424,733                 ※2,※4 382,684\n売上総利益                                        47,669                      38,935\n販売費及び一般管理費                           ※3,※4   22,903             ※3,※4    23,351\n営業利益                                         24,765                      15,584\n営業利益                                         24,765                      15,584",
+                "sourceLocator": {
+                  "pdf_page": 61,
+                  "value_bbox": [
+                    476.95001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 67,
+                "consolidationScopeQuote": "                                                           EDINET提出書類\n                                                     三井住友建設株式会社(E00085)\n                                                            有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       18社\n      主要な連結子会社名\n      三井住建道路㈱、三井住友建設鉄構エンジニアリング㈱、ドーピー建設工業㈱、㈱ＳＭＣＲ、\n      ＳＭＣプレコンクリート㈱、ＳＭＣ商事㈱、ＳＭＣテック㈱、ＳＭＣシビルテクノス㈱、\n      ＳＭＣＣフィリピンズ、ＳＭＣＣウタマインドネシア、ＳＭＣＣタイランド、\n      ＳＭＣＣコンストラクションインド、ＳＭＣＣオーバーシーズシンガポール\n        令和２年10月１日の株式取得により、三井住友建設鉄構エンジニアリング㈱及びその子会社である\n       ドーピー建設工業㈱を連結の範囲に含めています。\n        令和３年２月１日の株式譲渡に伴い、㈱アメニティーライフを当社の連結の範囲から除外しています。\n        令和３年３月19日の株式譲渡に伴い、雁部建設㈱を当社の連結の範囲から除外しています。\n        三井住建道路㈱においては、連結財務諸表を作成しており、同社の連結財務諸表について連結していま\n       す。\n        同社の連結対象会社は下記のとおりです。\n        三道工業㈱\n        なお、ＳＭＣリフォーム㈱は令和３年１月１日付で㈱ＳＭＣＲと社名を変更しています。\n\n\n (2) 非連結子会社\n      主要な非連結子会社名\n      ㈱コスモプラニング、台西電業股份有限公司\n        なお、㈱コスモプラニングは令和３年４月１日付でＳＭＣコスモソリューションズ㈱と社名を変更してい\n       ます。\n        非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n       び利益剰余金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範\n       囲から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n\n\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ㈱コスモプラニング、台西電業股份有限公司\n        なお、㈱コスモプラニングは令和３年４月１日付でＳＭＣコスモソリューションズ㈱と社名を変更してい\n       ます。\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n          持分法を適用しない非連結子会社（２社）及び関連会社（４社）は、それぞれ当期純損益及び利益剰余\n        金等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外してい\n        ます。\n\n\n\n\n                               67/139\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": -7459,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "000242c1e62a6c16b7114fa3e0622108347239f25f422ccfde49fae0daa8a706",
+              "evidenceId": "10c816fc3ea0d0d77841115b6fdcf5deb97ba3c4e1296513e159e60d4342cb23",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OKU2",
+                "documentTitle": "三井住友建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d8db9bffb7af1f44570944ad4a55a828944a7354daa52306a6cc459ac8536c8d",
+                "documentVersionSha256": "d8db9bffb7af1f44570944ad4a55a828944a7354daa52306a6cc459ac8536c8d",
+                "pdfPage": 63,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                        三井住友建設株式会社(E00085)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2020年４月１日                   (自 2021年４月１日\n                           至 2021年３月31日)                  至 2022年３月31日)\n売上高                                    421,619                     ※1 403,275\n売上原価                             ※2,※4 382,684                  ※2,※4 385,096\n売上総利益                                        38,935                      18,178\n販売費及び一般管理費                          ※3,※4    23,351             ※3,※4    25,638\n営業利益又は営業損失（△）                                15,584                     △7,459\n営業利益又は営業損失（△）                                15,584                     △7,459",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "value_bbox": [
+                    472.45001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "                                                                                              EDINET提出書類\n                                                                                        三井住友建設株式会社(E00085)\n                                                                                               有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       22社\n      主要な連結子会社名\n      三井住建道路㈱、三井住友建設鉄構エンジニアリング㈱、ドーピー建設工業㈱、㈱ＳＭＣＲ、\n      ＳＭＣＣコンストラクションインド、ＳＭＣＣフィリピンズ、Antara Koh Private Limited、\n      ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣタイランド\n        2022 年 ２ 月 15 日 の 株 式 取 得 に よ り 、 Antara Koh Private Limited 及 び そ の 子 会 社 で あ る Antara Koh\n       (Myanmar) Ltd、AKM Sdn.Bhd、及びAntara Koh (Malaysia)Sdn.Bhdを連結の範囲に含めています。\n\n\n (2) 非連結子会社\n      主要な非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n      金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外し\n      ています。\n       なお、前連結会計年度まで非連結子会社であった台西電業股份有限公司は、当連結会計年度において清算を\n      結了したため、非連結子会社から除外しています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n\n\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n        持分法を適用しない非連結子会社（１社）及び関連会社（４社）は、それぞれ当期純損益及び利益剰余金\n       等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外していま\n       す。\n        なお、前連結会計年度まで持分法を適用しない非連結子会社であった台西電業股份有限公司は、当連結会\n       計年度において清算を結了したため、持分法を適用しない非連結子会社から除外しています。\n\n\n３   連結子会社の事業年度等に関する事項\n     連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名              決算日\n      在外連結子会社11社             12月末日\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                                                 69/154\n",
+                "comparisonLimitations": [
+                  "収益認識適用により売上高2,488百万円減・原価2,896百万円減・営業損失408百万円減、期首利益剰余金414百万円減。報告営業損失△7,459百万円を保持し、影響を過年度へ加減しない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": -18759,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e4d3c2cd7e6b044e1bab890ef5b5bc9865578b3ccbae595d8c99cd22231f63e4",
+              "evidenceId": "97f46500294fc3ff3f19e65f6e36937d8b339accf69b9753a99a73c3029b6e48",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R6TK",
+                "documentTitle": "三井住友建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9cd500589f2f9d6e2557f444f7c20be77ad31127aba86b744f0917a98ace93c1",
+                "documentVersionSha256": "9cd500589f2f9d6e2557f444f7c20be77ad31127aba86b744f0917a98ace93c1",
+                "pdfPage": 73,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                        三井住友建設株式会社(E00085)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2021年４月１日                   (自 2022年４月１日\n                           至 2022年３月31日)                  至 2023年３月31日)\n売上高                                 ※1 403,275                     ※1 458,622\n売上原価                             ※2,※4 385,096                  ※2,※4 449,552\n売上総利益                                        18,178                       9,069\n販売費及び一般管理費                          ※3,※4    25,638             ※3,※4    27,828\n営業損失（△）                                     △7,459                      △18,759\n営業損失（△）                                     △7,459                      △18,759",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    467.95001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 79,
+                "consolidationScopeQuote": "                                                                      EDINET提出書類\n                                                                三井住友建設株式会社(E00085)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       22社\n      主要な連結子会社名\n      三井住建道路㈱、三井住友建設鉄構エンジニアリング㈱、ドーピー建設工業㈱、㈱ＳＭＣＲ、\n      ＳＭＣＣコンストラクションインド、Antara Koh Private Limited、ＳＭＣＣフィリピンズ、\n      ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣウタマインドネシア\n\n\n (2) 非連結子会社\n      主要な非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n      金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外し\n      ています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません。\n      関連会社\n       1社\n       持分法適用の関連会社名\n       吉井企画㈱\n\n\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n        持分法を適用しない非連結子会社（１社）及び関連会社（６社）は、それぞれ当期純損益及び利益剰余金\n       等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外していま\n       す。\n\n\n３   連結子会社の事業年度等に関する事項\n     連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名        決算日\n      在外連結子会社11社       12月末日\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                                     79/163\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 8500,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "241f85d00dd52ccc23f6518ac36bb66df92c60c6b311bd7364bcf79dee92cd07",
+              "evidenceId": "929724856ebeeb7dae75686e2ffa8a8e3ba92c5b4a57c416ef7250cb0a121d0b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TV82",
+                "documentTitle": "三井住友建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "fc50b3208fa4673282cb26574125d52d969c122bbec2b687441dfa34fe23fe94",
+                "documentVersionSha256": "fc50b3208fa4673282cb26574125d52d969c122bbec2b687441dfa34fe23fe94",
+                "pdfPage": 79,
+                "sourceQuote": "                                                                             EDINET提出書類\n                                                                       三井住友建設株式会社(E00085)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2022年４月１日                  (自 2023年４月１日\n                           至 2023年３月31日)                 至 2024年３月31日)\n売上高                                 ※1 458,622                    ※1 479,488\n売上原価                             ※2,※4 449,552                 ※2,※4 444,392\n売上総利益                                         9,069                     35,095\n販売費及び一般管理費                          ※3,※4    27,828            ※3,※4    26,595\n営業利益又は営業損失（△）                               △18,759                         8,500\n営業利益又は営業損失（△）                               △18,759                         8,500",
+                "sourceLocator": {
+                  "pdf_page": 79,
+                  "value_bbox": [
+                    481.45001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 85,
+                "consolidationScopeQuote": "                                                                      EDINET提出書類\n                                                                三井住友建設株式会社(E00085)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       22社\n      主要な連結子会社名\n      三井住建道路㈱、三井住友建設鉄構エンジニアリング㈱、ドーピー建設工業㈱、㈱ＳＭＣＲ、\n      ＳＭＣＣコンストラクションインド、Antara Koh Private Limited、ＳＭＣＣフィリピンズ、\n      ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣタイランド\n\n\n (2) 非連結子会社\n      主要な非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n      金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外し\n      ています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません。\n      関連会社\n       該当ありません。\n       なお、吉井企画㈱は、2023年10月23日に破産手続開始が決定され、財務及び営業又は事業の方針の決定に対\n      して重要な影響を与えていないと認められるため、持分法適用会社から除外しています。\n\n\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n        持分法を適用しない非連結子会社（１社）及び関連会社（７社）は、それぞれ当期純損益及び利益剰余金\n       等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外していま\n       す。\n\n\n３   連結子会社の事業年度等に関する事項\n     連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名        決算日\n      在外連結子会社11社       12月末日\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                                     85/171\n",
+                "comparisonLimitations": [
+                  "当年の連結範囲・子会社決算日の差と必要な連結調整を保持。前年の構成と同じと無検証にみなさない。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 7587,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "bf055b1d62cd2417d198a033091e4c89d22e075672280e23c5e4a5506a76d828",
+              "evidenceId": "4303642176f4b2fe85f2ed22fa626662beca151aa5060667a8cf34c9ed4ff9ef",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4TI",
+                "documentTitle": "三井住友建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "b85c003b67976f9f300c28930aba228602707f59dcfdfdf9156d2e00767bb2c5",
+                "documentVersionSha256": "b85c003b67976f9f300c28930aba228602707f59dcfdfdf9156d2e00767bb2c5",
+                "pdfPage": 80,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                        三井住友建設株式会社(E00085)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2023年４月１日                   (自 2024年４月１日\n                           至 2024年３月31日)                  至 2025年３月31日)\n売上高                                 ※1 479,488                     ※1 462,982\n売上原価                             ※2,※4 444,392                  ※2,※4 429,770\n売上総利益                                        35,095                      33,211\n販売費及び一般管理費                          ※3,※4    26,595             ※3,※4    25,624\n営業利益                                             8,500                       7,587\n営業利益                                             8,500                       7,587",
+                "sourceLocator": {
+                  "pdf_page": 80,
+                  "value_bbox": [
+                    481.45001,
+                    169.361481,
+                    503.95001,
+                    178.352481
+                  ]
+                },
+                "comparisonVerificationId": "smcc-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益又は営業損失。通期・百万円の報告値であり、単体/親会社合計/セグメント利益と区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 86,
+                "consolidationScopeQuote": "                                                           EDINET提出書類\n                                                     三井住友建設株式会社(E00085)\n                                                            有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n       21社\n     主要な連結子会社名\n     三井住建道路㈱、三井住友建設鉄構エンジニアリング㈱、ドーピー建設工業㈱、㈱ＳＭＣＲ、\n     ＳＭＣＣコンストラクションインド、Antara Koh Private Limited、ＳＭＣＣフィリピンズ、\n     ＳＭＣＣオーバーシーズシンガポール、ＳＭＣＣウタマインドネシア\n      ㈱免制震ディバイスは、2025年１月31日付の株式譲渡に伴い、連結の範囲から除外しています。\n      なお、連結財務諸表の作成にあたり、株式譲渡日（みなし譲渡日2024年12月31日）までの同社の損益計算書\n     を連結しています。\n\n (2) 非連結子会社\n      主要な非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n      金（持分に見合う額）等はいずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外し\n      ています。\n\n\n２   持分法の適用に関する事項\n (1) 持分法適用会社\n      非連結子会社\n       該当ありません。\n      関連会社\n       該当ありません。\n (2) 持分法非適用会社\n      非連結子会社\n       主要な持分法非適用の非連結子会社名\n       ＳＭＣコスモソリューションズ㈱\n      関連会社\n       主要な持分法非適用の関連会社名\n       ファイベックス㈱\n        持分法を適用しない非連結子会社（１社）及び関連会社（８社）は、それぞれ当期純損益及び利益剰余金\n       等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法適用の範囲から除外していま\n       す。\n        なお、関連会社であるファイベックス㈱は2025年３月３日付で株式譲渡契約を締結、2025年４月１日付で\n       株式譲渡いたしました。\n\n\n３   連結子会社の事業年度等に関する事項\n     連結子会社の決算日が連結決算日と異なる会社は次のとおりです。\n             会社名     決算日\n      在外連結子会社11社     12月末日\n     連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しています。\n     ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っ\n    ています。\n\n\n\n\n                               86/178\n",
+                "comparisonLimitations": [
+                  "法人税等基準を適用し当期・前年遡及適用とも連結財務諸表への影響なし。",
+                  "年度別の会計区分をまたぐ指数・相関・合算は未確認。2025年度は別単位・会計基準未明示の親会社資料による条件付き閲覧で接続線を引かない。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "bac5c51b708db9298339fc46aeb3f57a012581f94715ef4e6187a4c973e46e20"
       }
     ],
     "fullHistoryMappings": [
@@ -14428,6 +15064,27 @@
           2023,
           2024,
           2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "SMCC",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "SMCC:operating_income_consolidated@SMCC_JGAAP_2015_2024_REPORTED",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
         ],
         "unit": "百万円",
         "scope": "consolidated",
@@ -14841,7 +15498,102 @@
         "periodKind": "annual_flow",
         "accountingStandard": "IFRS"
       }
+    ],
+    "qualifiedAnnualSeries": [
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "SMCC:operating_income_consolidated@SMCC_2025_PARENT_QUALIFIED",
+          "companyId": "SMCC",
+          "metricId": "operating_income_consolidated",
+          "label": "三井住友建設 / 営業利益（連結） / 親会社資料・基準未明示",
+          "cycle": "年度次",
+          "unit": "億円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "accountingStandard": "not_stated_in_selected_parent_table",
+          "comparisonFamily": "SMCC_QUALIFIED_2025",
+          "reviewWindow": "SMCC_2025_PARENT_QUALIFIED",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "63e9978f1fff70754caa5082eff805f5f2f2b7f7fa9da4da0a85298df6661005",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "三井住友建設【連結】FY25実績185億円。億円丸め・会計基準未明示の条件付き閲覧。"
+            }
+          ],
+          "sourceCoverage": [
+            "2025-04-01/2026-03-31"
+          ],
+          "policyNotes": [
+            "2025年度：三井住友建設自身の連結FY25実績185億円。資料は億円単位で四捨五入。会計基準・連結範囲の内訳は選択表に明示されていない。条件付き閲覧に限定し、指数・相関・合算・過年度接続線は許可しない。単体公告12,541百万円、親会社の取得後実績、FY26計画168億円やFY25計画143億円を混ぜない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "FY25実績（2026年3月期）",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 185,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9a66100a83ec109de1cfb1993cda9fb4d998bbdf3de7797e1bfa2c3544539ff6",
+              "evidenceId": "8bc21e132262c4f8a0d807d7e30d6369835395ee744b0abd67b5ff95957b7458",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": "https://www.infroneer.com/pdf/ir/presentations/FY2025_FP.pdf",
+                "sourceDocumentId": "SMCC_FY2025_PARENT_FP",
+                "documentTitle": "インフロニア 26年3月期アナリスト向け決算説明会 / 三井住友建設【連結】FY25実績",
+                "sourceFileSha256": "63e9978f1fff70754caa5082eff805f5f2f2b7f7fa9da4da0a85298df6661005",
+                "documentVersionSha256": "63e9978f1fff70754caa5082eff805f5f2f2b7f7fa9da4da0a85298df6661005",
+                "pdfPage": 56,
+                "sourceQuote": "5. 三井住友建設【連結】 FY25実績とFY26計画\n                                                                                                              （億円）\n                                                                                                                      55\n                         FY24                                FY25                                    FY26\n\n                                                                             前年      計画\n                           実績             計画             実績                                     計画            FY25比\n                                                                             同期比      比\n 営業利益                 76         1.6(%)        143    185           4.6(%)    109      42    168     3.8(%)     △17\n本資料の業績数値は億円単位で四捨五入（63頁注意事項）。",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    402.08452,
+                    500.537168,
+                    420.254048,
+                    516.475982
+                  ],
+                  "rounding_page": 63
+                },
+                "comparisonVerificationId": "smcc-2025-qualified-parent-table-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "三井住友建設自身の連結FY25実績・営業利益185億円。単体12,541百万円や親会社合計・取得後実績と区別。選択表に会計基準が明示されないため計算・過年度接続は許可しない。",
+                "accountingStandard": "not_stated_in_selected_parent_table",
+                "retrievedAt": "2026-10-22T12:36:33.891919+00:00",
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "selectedOfficialPdfBytesMatched": true,
+                "selectedOfficialPdfByteMatchCheckedAt": "2026-10-22T12:36:33.891919+00:00",
+                "reportedUnitPrecision": "億円単位四捨五入（資料末尾注意事項）",
+                "comparisonLimitations": [
+                  "2025年度は185億円の資料表示を保持。18,500百万円という精密値へ置換しない。",
+                  "選択表に会計基準と連結範囲の内訳が明示されていないため、条件付き閲覧に限定し指数・相関・合算・過年度接続線を禁止。",
+                  "FY25期間は26年3月期表題とFY24実績対応から確定。通期実績列を使用しFY26計画168億円・計画FY25 143億円を使用しない。"
+                ]
+              }
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "6eec6f9becef37a8329ba6fa6d67ec92545b58ecbd16c74ae7a5e8cc1a48a8ee"
+      }
     ]
   },
-  "snapshotHash": "7168c926d3a98975c5a62f36fc1a31ce09cd669b7430a7c910bc9c6a9755caf5"
+  "snapshotHash": "f9d27c4c1eef77d4f49348ca80f14e579c6375b453cb1ecb6a9da581c2927a5e"
 }
