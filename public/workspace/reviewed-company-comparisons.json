@@ -12512,7 +12512,925 @@
       "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
       "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
       "2年度のみのため相関計算に必要な3組に届かない。"
+    ],
+    "fullHistorySeries": [
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "MATSUI:operating_income_consolidated@FY2015_FY2025_MATSUI_OPERATING",
+          "companyId": "MATSUI",
+          "metricId": "operating_income_consolidated",
+          "label": "松井建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "MATSUI_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_MATSUI_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "企業結合基準を適用、連結財務諸表・1株当たり情報への影響なし（45頁）。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "減価償却変更の営業利益等への影響軽微（47頁）。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+              "sourceLocator": {
+                "pdf_page": 49
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+              "sourceLocator": {
+                "pdf_page": 49
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+              "sourceLocator": {
+                "pdf_page": 49
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+              "sourceLocator": {
+                "pdf_page": 53
+              },
+              "sourceQuote": "収益認識基準で当期売上高173百万円増、営業利益等9百万円減、期首利益剰余金6百万円増（53頁）。過年度利益へ加減しない。時価算定基準は影響なし。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "時価算定適用指針の影響なし（59頁）。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "法人税等基準を当期から適用、影響なし（64頁）。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準を適用、連結財務諸表・1株当たり情報への影響なし（45頁）。",
+            "2016年度：減価償却変更の営業利益等への影響軽微（47頁）。",
+            "2021年度：収益認識基準で当期売上高173百万円増、営業利益等9百万円減、期首利益剰余金6百万円増（53頁）。過年度利益へ加減しない。時価算定基準は影響なし。",
+            "2022年度：時価算定適用指針の影響なし（59頁）。",
+            "2024年度：法人税等基準を当期から適用、影響なし（64頁）。",
+            "2015〜2020年度は千円原値を1000で割った百万円換算。2021年度以後は百万円、表示単位変更はS100OH52 PDF2頁。過去の精度を後年へ捏造しない。連結2社・親会社と同一決算日。年度別区分をまたぐ指数・相関・合算・案件配賦は未確認。2024/2025年度の従来の会社間確認は元の2年度系列に保持し、全11年度へ拡張しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 6120.907,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8e47baaa9449cda8e390f7d8b5b687a42a01d04491e3977e1ab44f87d7f29661",
+              "evidenceId": "a544de2bdec7ecc253d030973b924ff7acb3c44ea370a48780fe97d05d0550a3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007VJH",
+                "documentTitle": "松井建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+                "documentVersionSha256": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+                "pdfPage": 37,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：千円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成26年４月１日                   (自 平成27年４月１日\n                           至 平成27年３月31日)                  至 平成28年３月31日)\n売上高\n  完成工事高                                  83,239,803                86,618,039\n  不動産事業等売上高                               1,869,636                 1,340,831\n  売上高合計                                  85,109,440                87,958,870\n営業利益                                         3,632,971                 6,120,907",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 37,
+                  "value_bbox": [
+                    471.4,
+                    296.86151,
+                    511.9,
+                    305.85251
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準を適用、連結財務諸表・1株当たり情報への影響なし（45頁）。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 6120907,
+                "unitConversionFactor": 0.001,
+                "basisPage": 84,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 43,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 43,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 6085.713,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "c3ee385f79b8d350596529c1f8f459eb1d6ffe508f08b42dbc6ce50cfed97164",
+              "evidenceId": "9c45726bd59880da7671405c50030503baee6367c3c53130cdd8fc2680ee77bb",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AJWY",
+                "documentTitle": "松井建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+                "documentVersionSha256": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+                "pdfPage": 39,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：千円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成27年４月１日                   (自 平成28年４月１日\n                           至 平成28年３月31日)                  至 平成29年３月31日)\n売上高\n  完成工事高                                  86,618,039                84,658,922\n  不動産事業等売上高                               1,340,831                 4,682,422\n  売上高合計                                  87,958,870                89,341,344\n営業利益                                         6,120,907              6,085,713",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    471.4,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却変更の営業利益等への影響軽微（47頁）。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 6085713,
+                "unitConversionFactor": 0.001,
+                "basisPage": 86,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 5079.972,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1af503078db3b67d428ccf5e2efc8c63fc1a7473bebed365d53edbf6a7044f54",
+              "evidenceId": "ba1c52c53b4f440f88065932048f03b3e0dd6bd7d2ff10ae32fc26a3f87c1e14",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D9VW",
+                "documentTitle": "松井建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+                "documentVersionSha256": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+                "pdfPage": 39,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：千円)\n                            前連結会計年度                    当連結会計年度\n                          (自 平成28年４月１日               (自 平成29年４月１日\n                           至 平成29年３月31日)              至 平成30年３月31日)\n売上高\n  完成工事高                                 84,658,922             90,778,343\n  不動産事業等売上高                              4,682,422              1,565,971\n  売上高合計                                 89,341,344             92,344,315\n営業利益                                     6,085,713                 5,079,972",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    471.4,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 5079972,
+                "unitConversionFactor": 0.001,
+                "basisPage": 86,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 4790.977,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "75d7d3c01e347f306587ccca38c08a3c68a5c7f265115037cae0f5e4a93f105a",
+              "evidenceId": "97bcf3c4b4d0ee951355e287d332bd200e3d5a456e11197a2547c3e0aa7aa8d2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G2WM",
+                "documentTitle": "松井建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+                "documentVersionSha256": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                 (単位：千円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2017年４月１日                   (自 2018年４月１日\n                           至 2018年３月31日)                  至 2019年３月31日)\n売上高\n 完成工事高                                   90,778,343                89,901,523\n 不動産事業等売上高                                1,565,971                 2,569,814\n 売上高合計                                   92,344,315                92,471,337\n営業利益                                         5,079,972              4,790,977",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    463.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 4790977,
+                "unitConversionFactor": 0.001,
+                "basisPage": 90,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 3487.541,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "c24494046827cfa92fd9c40921edc347c16d435cdd913bab5521f8b847a1a3b6",
+              "evidenceId": "ad21008188eb858065198989f6b99f82558ca47b6536855161b774f2e863de14",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IUY0",
+                "documentTitle": "松井建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+                "documentVersionSha256": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：千円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2018年４月１日                 (自 2019年４月１日\n                           至 2019年３月31日)                至 2020年３月31日)\n売上高\n 完成工事高                                  89,901,523               92,726,789\n 不動産事業等売上高                               2,569,814                1,696,159\n 売上高合計                                  92,471,337               94,422,949\n営業利益                                     4,790,977                3,487,541",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    463.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 3487541,
+                "unitConversionFactor": 0.001,
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 2940.972,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9b660954ed56c6eca44ffb2568851931a881583a144819d479ddd082fe130c50",
+              "evidenceId": "8e6f785a7c43ed096c0a469e297add86eb74885cf20f199038e8f04d01e3ed11",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LT7Y",
+                "documentTitle": "松井建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+                "documentVersionSha256": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：千円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2019年４月１日               (自 2020年４月１日\n                           至 2020年３月31日)              至 2021年３月31日)\n売上高\n 完成工事高                                  92,726,789             83,898,062\n 不動産事業等売上高                               1,696,159              3,681,654\n 売上高合計                                  94,422,949             87,579,716\n営業利益                                     3,487,541                 2,940,972",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    463.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 2940972,
+                "unitConversionFactor": 0.001,
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "presentation_precision_change"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 2415,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "05d0fbfab704810a10d08de513fcfb3d214345c075cf366eb1fa1997e0062762",
+              "evidenceId": "fe67ddd6228139537468098820fd70723b5809de35631ba522d3a5f22bc0f563",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OH52",
+                "documentTitle": "松井建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+                "documentVersionSha256": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2020年４月１日                (自 2021年４月１日\n                           至 2021年３月31日)               至 2022年３月31日)\n売上高\n 完成工事高                                    83,898            ※１    79,999\n 不動産事業等売上高                                 3,681             ※１    2,469\n 売上高合計                                    87,579                  82,468\n営業利益                                          2,940                   2,415",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準で当期売上高173百万円増、営業利益等9百万円減、期首利益剰余金6百万円増（53頁）。過年度利益へ加減しない。時価算定基準は影響なし。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 2415,
+                "unitConversionFactor": 1,
+                "basisPage": 98,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 2268,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "de8447ca53958dc8a05701bb825197a56774f6e69a167a2bd95eb6f97be16306",
+              "evidenceId": "f9bd32dd1114183c8947b7b21011d336c97ccb0ede6c9306bace5ded885ec9c2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R79M",
+                "documentTitle": "松井建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+                "documentVersionSha256": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+                "pdfPage": 49,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2021年４月１日                (自 2022年４月１日\n                           至 2022年３月31日)               至 2023年３月31日)\n売上高\n 完成工事高                              ※１    79,999            ※１    85,086\n 不動産事業等売上高                          ※１     2,469             ※１    3,578\n 売上高合計                                    82,468                  88,664\n営業利益                                          2,415                2,268",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 49,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定適用指針の影響なし（59頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 2268,
+                "unitConversionFactor": 1,
+                "basisPage": 102,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 55,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 55,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 264,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "02cc75b0563023ec0f12c187192c07d2bfb0ab6562884d49e88257f03301b88d",
+              "evidenceId": "72fb12b65eb16e836cb609139ccbe5b15577685d073ce1d8ef676f488a2e8d74",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TV4B",
+                "documentTitle": "松井建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+                "documentVersionSha256": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+                "pdfPage": 50,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2022年４月１日            (自 2023年４月１日\n                           至 2023年３月31日)           至 2024年３月31日)\n売上高\n 完成工事高                              ※１   85,086         ※１    94,626\n 不動産事業等売上高                          ※１    3,578          ※１    2,342\n 売上高合計                                   88,664               96,969\n営業利益                                      2,268                  264",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    490.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 264,
+                "unitConversionFactor": 1,
+                "basisPage": 103,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 56,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 3382,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "365158641ef5fa883e4208f7dacbeaa740b0adbc68d46f601c9f8cb3362724cb",
+              "evidenceId": "91ef0b9f82a8fbc5a1e5e8a820f300fc2ebdbb34f4ac07cca8a49480167f3a72",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4NZ",
+                "documentTitle": "松井建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+                "documentVersionSha256": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+                "pdfPage": 54,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2023年４月１日            (自 2024年４月１日\n                           至 2024年３月31日)           至 2025年３月31日)\n売上高\n 完成工事高                              ※１   94,626         ※１    97,100\n 不動産事業等売上高                          ※１    2,342          ※１    2,152\n 売上高合計                                   96,969               99,253\n営業利益                                        264                   3,382",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準を当期から適用、影響なし（64頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3382,
+                "unitConversionFactor": 1,
+                "basisPage": 107,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 60,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 60,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "nextReportComparisonStatus": "exact_match",
+                "previouslyPublishedObservation": {
+                  "timeCode": "2024-04-01/2025-03-31",
+                  "timeLabel": "2024-04-01 ～ 2025-03-31",
+                  "periodStart": "2024-04-01",
+                  "periodEnd": "2025-03-31",
+                  "numericValue": 3382,
+                  "status": "confirmed_value",
+                  "implicitNumericZero": false,
+                  "factId": "63c814d4b7fd12a7bf51a6988c16b041475de4b40014a7f8acf70debaf74d66f",
+                  "evidenceId": "3e8f4869b6393b1e667ae5661b413baaf362b38f769d99f4a25a4a4c5012e141",
+                  "eligibility": {
+                    "automaticComparisonAllowed": true,
+                    "automaticAggregationAllowed": false
+                  },
+                  "provenance": {
+                    "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                    "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                    "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                    "pdfPage": 9,
+                    "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。3,382。",
+                    "comparisonVerificationId": "saved-primary-two-company-20261022",
+                    "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                    "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                    "retrievedAt": null,
+                    "currentOfficialVersionMatchStatus": "unconfirmed",
+                    "sourceLocator": {
+                      "pdf_page": 9,
+                      "value_bbox": [
+                        375.23,
+                        307.999,
+                        397.73,
+                        316.99
+                      ]
+                    },
+                    "accountingStandard": "JGAAP",
+                    "corroboratingAnnualReport": {
+                      "documentId": "S100YHYW",
+                      "pdfPage": 55,
+                      "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                    }
+                  },
+                  "recordKind": "reviewed_source_observation_not_canonical_fact"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 5659,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ae591ba8b217e5744206aa2fb881d3deab519d28e5d0977f1fb6dcbe02383f8c",
+              "evidenceId": "aafd4ee411450a65778e628aaabd88fbd86c03957e50ddf3f546a7d0947d945e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YHYW",
+                "documentTitle": "松井建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b",
+                "documentVersionSha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b",
+                "pdfPage": 55,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2024年４月１日                (自 2025年４月１日\n                           至 2025年３月31日)               至 2026年３月31日)\n売上高\n 完成工事高                              ※１    97,100            ※１    94,470\n 不動産事業等売上高                          ※１     2,152             ※１    1,567\n 売上高合計                                    99,253                  96,037\n営業利益                                          3,382                   5,659",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "matsui-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "松友商事・松井リフォームの2社を連結し、子会社決算日は親会社と同一。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5659,
+                "unitConversionFactor": 1,
+                "basisPage": 109,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  松井建設株式会社(E00064)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    すべての子会社（2社）を連結している。\n    連結子会社名\n     松友商事株式会社\n     松井リフォーム株式会社",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "previouslyPublishedObservation": {
+                  "timeCode": "2025-04-01/2026-03-31",
+                  "timeLabel": "2025-04-01 ～ 2026-03-31",
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2026-03-31",
+                  "numericValue": 5659,
+                  "status": "confirmed_value",
+                  "implicitNumericZero": false,
+                  "factId": "297e6ba50a830900c6b83bb2d9d00cbe396abdfde23cd9b636bda0632cd158a0",
+                  "evidenceId": "e6921fb950eb01b095c9fd69765a444e8618a9a59e54580d1f647b7216bc59b6",
+                  "eligibility": {
+                    "automaticComparisonAllowed": true,
+                    "automaticAggregationAllowed": false
+                  },
+                  "provenance": {
+                    "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                    "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                    "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                    "pdfPage": 9,
+                    "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。5,659。",
+                    "comparisonVerificationId": "saved-primary-two-company-20261022",
+                    "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                    "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                    "retrievedAt": null,
+                    "currentOfficialVersionMatchStatus": "unconfirmed",
+                    "sourceLocator": {
+                      "pdf_page": 9,
+                      "value_bbox": [
+                        500.43,
+                        307.999,
+                        522.93,
+                        316.99
+                      ]
+                    },
+                    "accountingStandard": "JGAAP",
+                    "corroboratingAnnualReport": {
+                      "documentId": "S100YHYW",
+                      "pdfPage": 55,
+                      "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                    }
+                  },
+                  "recordKind": "reviewed_source_observation_not_canonical_fact"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "348406ea4ca669de7ee7fc36602db8470993f0a7c6ebb9ce373f76ec0edcb78b"
+      }
+    ],
+    "fullHistoryMappings": [
+      {
+        "companyId": "MATSUI",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "MATSUI:operating_income_consolidated@FY2015_FY2025_MATSUI_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      }
     ]
   },
-  "snapshotHash": "f35691f71e2547f186f34c0e02edcec095402e3dc85b9f3d5d620b7ad807555e"
+  "snapshotHash": "df672dfa47b8ad9bdbdce5e6a43b721bebcdf50a08b0a6e51ed5de401be921db"
 }

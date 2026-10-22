@@ -10,13 +10,15 @@ function reviewedFiscalPeriodMatches(m,p){
 export async function reviewedCompanyCatalog(wrapper){
  const p=wrapper?.payload;
  if(!p||wrapper.snapshotHash!==await canonicalSha256(p)||p.schemaVersion!==1||p.datasetId!=='atlas-reviewed-company-connection'||p.automaticAggregationAllowed!==false||!Array.isArray(p.mappings)||!Array.isArray(p.series))throw Error('会社別比較の出典と確認範囲が一致しません。');
- const catalog=await verifiedWorkbenchCatalog(p.series),keys=new Set();
- for(const m of p.mappings){const k=m.companyId+':'+m.legacyMetricId,s=catalog.series.find(s=>s.id===m.reviewedSeriesId);
+ const histories=p.fullHistorySeries??[],historyMappings=p.fullHistoryMappings??[];
+ if(!Array.isArray(histories)||!Array.isArray(historyMappings)||histories.length!==historyMappings.length||histories.length>1||histories.some(r=>r?.payload?.companyId!=='MATSUI'||r.payload.metricId!=='operating_income_consolidated'||r.payload.points?.length!==11)||historyMappings.some((m,i)=>m.reviewedSeriesId!==histories[i]?.payload?.id||m.companyId!=='MATSUI'||m.legacyMetricId!=='operating_income_consolidated'||JSON.stringify(m.fiscalYears)!==JSON.stringify(Array.from({length:11},(_,i)=>2015+i))))throw Error('全年度履歴の会社・項目・対象年度を確認できません。');
+ const catalog=await verifiedWorkbenchCatalog([...p.series,...histories]),keys=new Set();
+ for(const m of [...p.mappings,...historyMappings]){const k=m.companyId+':'+m.legacyMetricId+(historyMappings.includes(m)?':full-history':''),s=catalog.series.find(s=>s.id===m.reviewedSeriesId);
   if(keys.has(k)||!s||s.companyId!==m.companyId||s.metricId!==m.legacyMetricId||s.comparisonScope!==m.scope||s.unit!==m.unit||m.scope!=='consolidated'||m.periodKind!=='annual_flow'||m.accountingStandard!=='JGAAP'||s.points.some(pt=>pt.provenance.accountingStandard!=='JGAAP'||!m.fiscalYears.includes(+pt.periodStart.slice(0,4))||!reviewedFiscalPeriodMatches(m,pt)))throw Error('会社・年度・通期・単位・連結範囲の対応が確認できません。');
   keys.add(k);
  }
  if(keys.size!==catalog.series.length)throw Error('比較する指標の対応が不足しています。');
- return {...catalog,mappings:p.mappings,responses:p.series,sourceSnapshot:wrapper.snapshotHash};
+ return {...catalog,mappings:p.mappings,fullHistoryMappings:historyMappings,responses:[...p.series,...histories],sourceSnapshot:wrapper.snapshotHash};
 }
 /** Exact source-pinned KITANO unit conversion representation differences only; no epsilon. */
 function reviewedUnitPrecisionMatches(legacy,series,point,match){
@@ -25,16 +27,23 @@ function reviewedUnitPrecisionMatches(legacy,series,point,match){
  return pins.some(x=>point.timeCode===`${x.year}100000`&&point.numericValue===x.legacyValue&&match.periodStart===`${x.year}-04-01`&&match.periodEnd===`${x.year+1}-03-31`&&match.numericValue===x.value&&p.sourceUnit==='千円'&&p.sourceNumericValue===x.raw&&p.unitConversionFactor===0.001&&p.sourceDocumentId===x.doc&&p.pdfPage===x.page&&p.sourceFileSha256===x.sha&&p.accountingStandard==='JGAAP');
 }
 
+/** Two exact Matsui source/unit representation pins; real monetary differences fail. */
+function reviewedMatsuiPrecisionMatches(legacy,series,point,match){
+ if(legacy?.coordinates?.cat01!=='MATSUI'||legacy.coordinates.tab!=='operating_income_consolidated'||legacy.unit!=='百万円'||series?.companyId!=='MATSUI'||series.metricId!=='operating_income_consolidated'||series.comparisonScope!=='consolidated'||series.unit!=='百万円')return false;
+ const pins=[{"year": 2019, "legacy": 3487.5409999999997, "value": 3487.541, "raw": 3487541, "doc": "S100IUY0", "page": 43, "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"}, {"year": 2020, "legacy": 2940.9719999999998, "value": 2940.972, "raw": 2940972, "doc": "S100LT7Y", "page": 43, "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"}],p=match?.provenance;
+ return pins.some(x=>point.timeCode===`${x.year}100000`&&point.numericValue===x.legacy&&match.periodStart===`${x.year}-04-01`&&match.periodEnd===`${x.year+1}-03-31`&&match.numericValue===x.value&&p.sourceNumericValue===x.raw&&p.sourceUnit==='千円'&&p.unitConversionFactor===0.001&&p.sourceDocumentId===x.doc&&p.pdfPage===x.page&&p.sourceFileSha256===x.sha&&p.accountingStandard==='JGAAP');
+}
+
 /** Never change legacy permissions. Use separate reviewed observations only on exact matches. */
 export function connectReviewedCompanySelection(legacy,catalog){
  if(legacy.datasetId!=='buildbase-company-comparison')return {entries:[legacy],reviewedPoints:0,reasons:[]};
- const co=legacy.coordinates.cat01,metric=legacy.coordinates.tab,m=catalog?.mappings.find(m=>m.companyId===co&&m.legacyMetricId===metric),source=catalog?.series.find(s=>s.id===m?.reviewedSeriesId);
+ const co=legacy.coordinates.cat01,metric=legacy.coordinates.tab,full=catalog?.fullHistoryMappings?.find(m=>m.companyId===co&&m.legacyMetricId===metric),m=(full&&legacy.points.some(p=>/^\d{4}100000$/.test(p.timeCode)&&+p.timeCode.slice(0,4)<2024)?full:null)??catalog?.mappings.find(m=>m.companyId===co&&m.legacyMetricId===metric),source=catalog?.series.find(s=>s.id===m?.reviewedSeriesId);
  const accepted=[],remaining=[],reasons=[];
  const wrongPeriod=legacy.tableId!=='buildbase-company-annual'||legacy.cycle!=='年度次';
  const wrongScope=[legacy.comparisonScope,legacy.scope].some(s=>['standalone','non_consolidated','segment'].includes(s));
  for(const point of legacy.points){
   const year=/^\d{4}100000$/.test(point.timeCode)?+point.timeCode.slice(0,4):null,match=source?.points.find(p=>+p.periodStart.slice(0,4)===year);
-  const reason=point.numericValue===null||point.numericValue===undefined?'選択した年度の数値がありません。':point.status!=='confirmed_value'?'数値の確認が完了していません。':wrongPeriod?'通期の年次表ではないため、累計四半期や単独四半期を年度値へ転用しません。':wrongScope?'単体・事業別と連結の対象範囲が異なるため、参考表示に残します。':!catalog?'比較用の確認データを読み込めないため、参考表示に残します。':!m?'この会社・指標は、比較の出典・定義をまだ確認できていません。':legacy.unit!==m.unit?'資料の単位が異なるため、自動換算せず参考表示に残します。':!match?'選択した年度の実期間と定義は比較用に未確認です。':match.numericValue!==point.numericValue&&!reviewedRestatementMatches(legacy,source,point,match)&&!reviewedUnitPrecisionMatches(legacy,source,point,match)?'参考表と確認済み資料の数値が一致しないため、確認が必要です。':'';
+  const reason=point.numericValue===null||point.numericValue===undefined?'選択した年度の数値がありません。':point.status!=='confirmed_value'?'数値の確認が完了していません。':wrongPeriod?'通期の年次表ではないため、累計四半期や単独四半期を年度値へ転用しません。':wrongScope?'単体・事業別と連結の対象範囲が異なるため、参考表示に残します。':!catalog?'比較用の確認データを読み込めないため、参考表示に残します。':!m?'この会社・指標は、比較の出典・定義をまだ確認できていません。':legacy.unit!==m.unit?'資料の単位が異なるため、自動換算せず参考表示に残します。':!match?'選択した年度の実期間と定義は比較用に未確認です。':match.numericValue!==point.numericValue&&!reviewedRestatementMatches(legacy,source,point,match)&&!reviewedUnitPrecisionMatches(legacy,source,point,match)&&!reviewedMatsuiPrecisionMatches(legacy,source,point,match)?'参考表と確認済み資料の数値が一致しないため、確認が必要です。':'';
   if(reason){remaining.push({...point,comparisonUnresolvedReason:reason});reasons.push(reason);}else accepted.push(match);
  }
  const entries=[];
