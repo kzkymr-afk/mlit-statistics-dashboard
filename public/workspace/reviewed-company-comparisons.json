@@ -11335,6 +11335,768 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "5e45b61f6d1e208b533049875c8fe3b2c52ed332b3db1460334e6e0b5d700477"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "TAKENAKA:operating_income_consolidated@FY2015_FY2025_TAKENAKA_OPERATING",
+          "companyId": "TAKENAKA",
+          "metricId": "operating_income_consolidated",
+          "label": "竹中工務店 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "TAKENAKA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_TAKENAKA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-01-01/2015-12-31",
+            "2016-01-01/2016-12-31",
+            "2017-01-01/2017-12-31",
+            "2018-01-01/2018-12-31",
+            "2019-01-01/2019-12-31",
+            "2020-01-01/2020-12-31",
+            "2021-01-01/2021-12-31",
+            "2022-01-01/2022-12-31",
+            "2023-01-01/2023-12-31",
+            "2024-01-01/2024-12-31",
+            "2025-01-01/2025-12-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-01-01",
+              "periodEnd": "2015-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+              "sourceLocator": {
+                "pdf_page": 36
+              },
+              "sourceQuote": "2016年12月期有報の前年欄に記載された2015年1月1日〜12月31日の連結営業利益。2015年当年有報そのものは保存未確認。2016年末43社や2016年の会計変更を2015年へ転用せず、年度をまたぐ計算を停止。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-01-01",
+              "periodEnd": "2016-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "企業結合基準等を当期から適用、期末資本剰余金への影響軽微。営業利益へのゼロ影響とは読み替えない。減価償却変更の営業利益等への影響は軽微（45頁）。連結43社。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-01-01",
+              "periodEnd": "2017-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "8fdbeab6d36fe680354603420947fc6c194ab9747c73bd7ae41ca89e9c18c8a0",
+              "sourceLocator": {
+                "pdf_page": 43
+              },
+              "sourceQuote": "連結子会社46社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-01-01",
+              "periodEnd": "2018-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9d5d4a821728d96784b8152cd7b162fd17e94928bb93bab0476f5d5dcc0408ee",
+              "sourceLocator": {
+                "pdf_page": 44
+              },
+              "sourceQuote": "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-01-01",
+              "periodEnd": "2019-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ab4989feec8254dfde42369f7885bd81990c6a684ba238dbff5ad0a7a1166264",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "連結子会社51社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-01-01",
+              "periodEnd": "2020-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0637c54c622da058771c11660adfe85fa9d8085554a1ce01cd253470f0371fda",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "連結子会社51社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-01-01",
+              "periodEnd": "2021-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0bae84061c0f91cf817a8b0292407b1f2b4662bb0986925ace9a584b4c9db19c",
+              "sourceLocator": {
+                "pdf_page": 48
+              },
+              "sourceQuote": "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-01-01",
+              "periodEnd": "2022-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cd3bb51eb3ea0b22da4beddd73df5fed3d9693636bb7a1d4507a2206c9eb7fc9",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "収益認識基準を当年1月期首から適用、連結財務諸表への影響軽微。時価算定基準は影響なし（52頁）。他社の4月期首適用年へ無検証に揃えない。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-01-01",
+              "periodEnd": "2023-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "871cabc2e1da0802de8a76e961d1026ca3789762054e286f87d18b735f341317",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "連結子会社50社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-01-01",
+              "periodEnd": "2024-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "b3d04caad015b11c915796d23703fc133b142e78e97e7f78674e908f73483638",
+              "sourceLocator": {
+                "pdf_page": 62
+              },
+              "sourceQuote": "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-01-01",
+              "periodEnd": "2025-12-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f0c21746ada960a9ce65f900c2a1ae12a83943dc0ff4aa43764fa1a1ed6f4bda",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "法人税等基準を当年1月期首から適用。子会社株式等の売却損益の税効果に関する改正適用による影響なし（64頁）。連結52社の当年構成を保持。"
+            }
+          ],
+          "policyNotes": [
+            "2015年：2016年12月期有報の前年欄に記載された2015年1月1日〜12月31日の連結営業利益。2015年当年有報そのものは保存未確認。2016年末43社や2016年の会計変更を2015年へ転用せず、年度をまたぐ計算を停止。",
+            "2016年：企業結合基準等を当期から適用、期末資本剰余金への影響軽微。営業利益へのゼロ影響とは読み替えない。減価償却変更の営業利益等への影響は軽微（45頁）。連結43社。",
+            "2022年：収益認識基準を当年1月期首から適用、連結財務諸表への影響軽微。時価算定基準は影響なし（52頁）。他社の4月期首適用年へ無検証に揃えない。",
+            "2025年：法人税等基準を当年1月期首から適用。子会社株式等の売却損益の税効果に関する改正適用による影響なし（64頁）。連結52社の当年構成を保持。",
+            "1月1日〜12月31日の実期間を保持。2015年は2016年有報前年欄の報告値であり、当年有報の保存確認とは区別。連結範囲・会計変更の年度別境界をまたぐ指数・相関計算を停止。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-01-01/2015-12-31",
+              "timeLabel": "2015-01-01 ～ 2015-12-31",
+              "periodStart": "2015-01-01",
+              "periodEnd": "2015-12-31",
+              "numericValue": 59883,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0d09daffc6ec61c8c94f79c2cb7bdbb3f15ff4ab2f1648b42b81be0030ff7d63",
+              "evidenceId": "8bf24ba5e4940b8357aeb1e850c1532b467e35a3b4e14b389409f28237332830",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1009WUR",
+                "documentTitle": "竹中工務店 有価証券報告書（2016年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+                "documentVersionSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+                "pdfPage": 36,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成27年１月１日                 (自 平成28年１月１日\n                           至 平成27年12月31日)               至 平成28年12月31日)\n売上高\n  完成工事高                             ※1    1,188,308          ※1     1,104,999\n  開発事業等売上高                                    96,053                  111,571\n  売上高合計                                   1,284,362                 1,216,570\n営業利益                                          59,883                   91,367",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 36,
+                  "value_bbox": [
+                    359.7,
+                    296.634621,
+                    386.7,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2016年12月期有報の前年欄に記載された2015年1月1日〜12月31日の連結営業利益。2015年当年有報そのものは保存未確認。2016年末43社や2016年の会計変更を2015年へ転用せず、年度をまたぐ計算を停止。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 36,
+                "consolidationScopeQuote": "2016年有報の前連結会計年度（2015年1月1日〜12月31日）の連結損益計算書。2015年当年有報の子会社数明示は未確認。2016年末43社を2015年に転用しない。",
+                "subsidiaryFiscalPeriodPage": 36,
+                "subsidiaryFiscalPeriodQuote": "2015年は2016年有報前年欄の親会社通期を照合。子会社別決算日の2015年当年注記は保存未確認。",
+                "sourcePeriodRole": "prior_comparative"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-01-01/2016-12-31",
+              "timeLabel": "2016-01-01 ～ 2016-12-31",
+              "periodStart": "2016-01-01",
+              "periodEnd": "2016-12-31",
+              "numericValue": 91367,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "90491c20438ebfb182feeb20219f83abd79b031848a5360ad282adc1655c4c7c",
+              "evidenceId": "c33e5c9ab65952f45a1626534dfd2ca38b7382421781588445b577bb5263fa7d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1009WUR",
+                "documentTitle": "竹中工務店 有価証券報告書（2016年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+                "documentVersionSha256": "67e36a2e8b92a7c3303d146bfc4054f813bc1da323711eab19632de7f9b46af1",
+                "pdfPage": 36,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成27年１月１日                 (自 平成28年１月１日\n                           至 平成27年12月31日)               至 平成28年12月31日)\n売上高\n  完成工事高                             ※1    1,188,308          ※1     1,104,999\n  開発事業等売上高                                    96,053                  111,571\n  売上高合計                                   1,284,362                 1,216,570\n営業利益                                          59,883                   91,367",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 36,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準等を当期から適用、期末資本剰余金への影響軽微。営業利益へのゼロ影響とは読み替えない。減価償却変更の営業利益等への影響は軽微（45頁）。連結43社。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 42,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                          株式会社竹中工務店(E00169)\n                                                                                                有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     43社   主要な連結子会社名は、「第１              企業の概況       ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度に清算した㈱グリーン興産、TAKENAKA DO BRASIL CONSTRUTORA LTDA.の２社を連結の範囲\n     か ら 除 外 す る と と も に 、 新 規 設 立 に よ り 子 会 社 と な っ た TAK REALTY NY,Inc. 、 TAK HOSPITALITY,LLC 、 TAK\n     CALIFORNIA,Inc.、TAK REALTY SF,LLC、400 CALIFORNIA,LLC、㈱ＴＡＫホスピタリティ京都の６社を連結の範囲\n     に含めている。\n (2) 非連結子会社\n     ４社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田、㈱ジョルノビル管理\n (3) 非連結子会社について、連結範囲から除いた理由\n     非連結子会社４社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 42,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社２社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-01-01/2017-12-31",
+              "timeLabel": "2017-01-01 ～ 2017-12-31",
+              "periodStart": "2017-01-01",
+              "periodEnd": "2017-12-31",
+              "numericValue": 107988,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "880add95447d11cac07cb45fba1c01df239167af01ed8f0644b6272ae9b688f6",
+              "evidenceId": "68db389126d0d09a9166a88a703029173c8dceeb74ec259013f15937e2f9da6d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100CLF1",
+                "documentTitle": "竹中工務店 有価証券報告書（2017年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "8fdbeab6d36fe680354603420947fc6c194ab9747c73bd7ae41ca89e9c18c8a0",
+                "documentVersionSha256": "8fdbeab6d36fe680354603420947fc6c194ab9747c73bd7ae41ca89e9c18c8a0",
+                "pdfPage": 37,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成28年１月１日                 (自 平成29年１月１日\n                           至 平成28年12月31日)               至 平成29年12月31日)\n売上高\n  完成工事高                             ※1     1,104,999         ※1    1,193,475\n  開発事業等売上高                                   111,571                  102,476\n  売上高合計                                    1,216,570               1,295,951\n営業利益                                          91,367                  107,988",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 37,
+                  "value_bbox": [
+                    480.4,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社46社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 43,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                      株式会社竹中工務店(E00169)\n                                                                            有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     46社   主要な連結子会社名は、「第１         企業の概況       ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度から新規設立により子会社となったTAKENAKA VIETNAM COMPANY LTD.、TAK SEATTLE,Inc.、\n     TILT49 REALTY LLCの３社を連結の範囲に含めている。\n (2) 非連結子会社\n     ３社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結範囲から除いた理由\n     非連結子会社３社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 43,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社２社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-01-01/2018-12-31",
+              "timeLabel": "2018-01-01 ～ 2018-12-31",
+              "periodStart": "2018-01-01",
+              "periodEnd": "2018-12-31",
+              "numericValue": 85063,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "91bf3d29162f4d02025bd198c68c7d5911944c048de2699dfd0c0465b70edcef",
+              "evidenceId": "245475ee416ec32ab252d32e95ac5a4c74e3fa08eebdf46f62c21c962d6980fe",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100FH4E",
+                "documentTitle": "竹中工務店 有価証券報告書（2018年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9d5d4a821728d96784b8152cd7b162fd17e94928bb93bab0476f5d5dcc0408ee",
+                "documentVersionSha256": "9d5d4a821728d96784b8152cd7b162fd17e94928bb93bab0476f5d5dcc0408ee",
+                "pdfPage": 38,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成29年１月１日                   (自 平成30年１月１日\n                           至 平成29年12月31日)                 至 平成30年12月31日)\n売上高\n 完成工事高                                ※1   1,193,475           ※1    1,241,868\n 開発事業等売上高                                      102,476                  111,759\n 売上高合計                                     1,295,951                 1,353,627\n営業利益                                           107,988                   85,063",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 98,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 44,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                       株式会社竹中工務店(E00169)\n                                                                             有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     49社   主要な連結子会社名は、「第１         企業の概況       ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度から新規設立により子会社となったTAK Capital U.S.A., Inc.、Takenaka Construction\n     Engineering U.S.A., Inc.、㈱和光アールサポートPFIの３社を連結の範囲に含めている。\n (2) 非連結子会社\n     ２社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結範囲から除いた理由\n     非連結子会社２社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 44,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社３社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-01-01/2019-12-31",
+              "timeLabel": "2019-01-01 ～ 2019-12-31",
+              "periodStart": "2019-01-01",
+              "periodEnd": "2019-12-31",
+              "numericValue": 80235,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fa2902becfad18505ba2e241f52cbbdd95a43ff7dfcfc61a99285316cfd08e5c",
+              "evidenceId": "9ef1f1816e970c1d55ba8c5046fe2e11fd990682bd0eb26cf49bfb87e6beb34f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IA96",
+                "documentTitle": "竹中工務店 有価証券報告書（2019年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ab4989feec8254dfde42369f7885bd81990c6a684ba238dbff5ad0a7a1166264",
+                "documentVersionSha256": "ab4989feec8254dfde42369f7885bd81990c6a684ba238dbff5ad0a7a1166264",
+                "pdfPage": 39,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                  (単位：百万円)\n                            前連結会計年度                          当連結会計年度\n                          (自 2018年１月１日                     (自 2019年１月１日\n                           至 2018年12月31日)                   至 2019年12月31日)\n売上高\n 完成工事高                               ※1   1,241,868              ※1   1,241,923\n 開発事業等売上高                                     111,759                      110,140\n 売上高合計                                    1,353,627                   1,352,064\n営業利益                                           85,063                       80,235",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社51社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 97,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                      株式会社竹中工務店(E00169)\n                                                                            有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     51社   主要な連結子会社名は、「第１          企業の概況       ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度から新規設立により子会社となったNEUES ATRIUM PROPERTY GmbH、㈱名古屋モノづくり\n     メッセの２社を連結の範囲に含めている。\n (2) 非連結子会社\n     ３社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社３社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社４社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-01-01/2020-12-31",
+              "timeLabel": "2020-01-01 ～ 2020-12-31",
+              "periodStart": "2020-01-01",
+              "periodEnd": "2020-12-31",
+              "numericValue": 39788,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e20db3303818dd241566d2251e6ef175ad8f6aefb2ef001a5edbce1525aaae2b",
+              "evidenceId": "5b450a7b42d18995958a06cdf0465b0ad22df908da153787cc96659a052f68d2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100L14N",
+                "documentTitle": "竹中工務店 有価証券報告書（2020年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0637c54c622da058771c11660adfe85fa9d8085554a1ce01cd253470f0371fda",
+                "documentVersionSha256": "0637c54c622da058771c11660adfe85fa9d8085554a1ce01cd253470f0371fda",
+                "pdfPage": 41,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2019年１月１日               (自 2020年１月１日\n                           至 2019年12月31日)             至 2020年12月31日)\n売上高\n 完成工事高                              ※1   1,241,923         ※1   1,146,184\n 開発事業等売上高                                  110,140                    91,574\n 売上高合計                                   1,352,064              1,237,758\n営業利益                                        80,235                    39,788",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 41,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社51社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 98,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社竹中工務店(E00169)\n                                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     51社   主要な連結子会社名は、「第１          企業の概況         ４   関係会社の状況」に記載のとおり。\n (2) 非連結子会社\n     ４社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社４社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 47,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社４社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-01-01/2021-12-31",
+              "timeLabel": "2021-01-01 ～ 2021-12-31",
+              "periodStart": "2021-01-01",
+              "periodEnd": "2021-12-31",
+              "numericValue": 46367,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "bb6c98751bdb4b8165d5cc92c4e101643f525af36f8f88561f81cef106d00832",
+              "evidenceId": "7ab643fa3f2f47c7b87820976e0d93d1bfb03b754baf59ac81683dbf45519754",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100NQ9V",
+                "documentTitle": "竹中工務店 有価証券報告書（2021年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0bae84061c0f91cf817a8b0292407b1f2b4662bb0986925ace9a584b4c9db19c",
+                "documentVersionSha256": "0bae84061c0f91cf817a8b0292407b1f2b4662bb0986925ace9a584b4c9db19c",
+                "pdfPage": 42,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年１月１日               (自 2021年１月１日\n                           至 2020年12月31日)             至 2021年12月31日)\n売上高\n 完成工事高                              ※1   1,146,184         ※1   1,152,439\n 開発事業等売上高                                   91,574                  107,991\n 売上高合計                                   1,237,758              1,260,430\n営業利益                                        39,788                   46,367",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 98,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                 株式会社竹中工務店(E00169)\n                                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     49社   主要な連結子会社名は、「第１            企業の概況         ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度に清算したTAKENAKA BELGIUM N.V.、TAKENAKA NETHERLANDS B.V.、PT. TAKENAKA DOBOKU\n     INDONESIAの３社を連結の範囲から除外するとともに、新規設立により子会社となった㈱瑞穂LOOP-PFIを連結の範\n     囲に含めている。\n (2) 非連結子会社\n     ４社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社４社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 48,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社５社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-01-01/2022-12-31",
+              "timeLabel": "2022-01-01 ～ 2022-12-31",
+              "periodStart": "2022-01-01",
+              "periodEnd": "2022-12-31",
+              "numericValue": 28333,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3981582ba86acdb8c6c75f6d279735752c874d3f4f532e33ccb7915baac0ca7a",
+              "evidenceId": "b81b60b1d81ab23dfcc28cbaea293296e4ca3823efe1b54f193e76ead9ce2316",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100QEZU",
+                "documentTitle": "竹中工務店 有価証券報告書（2022年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cd3bb51eb3ea0b22da4beddd73df5fed3d9693636bb7a1d4507a2206c9eb7fc9",
+                "documentVersionSha256": "cd3bb51eb3ea0b22da4beddd73df5fed3d9693636bb7a1d4507a2206c9eb7fc9",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2021年１月１日                (自 2022年１月１日\n                           至 2021年12月31日)              至 2022年12月31日)\n売上高\n 完成工事高                                   1,152,439               1,246,212\n 開発事業等売上高                                  107,991                 129,197\n 売上高合計                                   1,260,430               1,375,410\n営業利益                                        46,367                     28,333",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を当年1月期首から適用、連結財務諸表への影響軽微。時価算定基準は影響なし（52頁）。他社の4月期首適用年へ無検証に揃えない。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 102,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社竹中工務店(E00169)\n                                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     50社   主要な連結子会社名は、「第１          企業の概況         ４   関係会社の状況」に記載のとおり。\n           なお、新規設立により子会社となった㈱ＤＴプレコンを連結の範囲に含めている。\n (2) 非連結子会社\n     ４社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社４社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社５社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-01-01/2023-12-31",
+              "timeLabel": "2023-01-01 ～ 2023-12-31",
+              "periodStart": "2023-01-01",
+              "periodEnd": "2023-12-31",
+              "numericValue": 45676,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "666771c696031760ad57dd2e22653d9e2fc9e82101f78eff82cf3034d952bac6",
+              "evidenceId": "861f86066075675cf2d877cbefe00ac1833640220c4a82ed98ce53014539f1a8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100T4OE",
+                "documentTitle": "竹中工務店 有価証券報告書（2023年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "871cabc2e1da0802de8a76e961d1026ca3789762054e286f87d18b735f341317",
+                "documentVersionSha256": "871cabc2e1da0802de8a76e961d1026ca3789762054e286f87d18b735f341317",
+                "pdfPage": 55,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2022年１月１日                  (自 2023年１月１日\n                           至 2022年12月31日)                至 2023年12月31日)\n売上高\n 完成工事高                              ※1   1,246,212            ※1   1,471,738\n 開発事業等売上高                             ※1   129,197              ※1   140,685\n 売上高合計                                   1,375,410                 1,612,423\n営業利益                                           28,333                    45,676",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社50社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社竹中工務店(E00169)\n                                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     50社   主要な連結子会社名は、「第１          企業の概況         ４   関係会社の状況」に記載のとおり。\n (2) 非連結子会社\n     ５社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n           なお、新規設立により子会社となったTAKENAKA ASIA PTE.LTD.を非連結子会社の範囲に含めている。\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社５社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社５社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-01-01/2024-12-31",
+              "timeLabel": "2024-01-01 ～ 2024-12-31",
+              "periodStart": "2024-01-01",
+              "periodEnd": "2024-12-31",
+              "numericValue": 53118,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "24e4308dcf05080a789c007750115f223ecefbddea8df1263e82ca56f5286e3e",
+              "evidenceId": "5cd9ec2e71c3ea0b1b8f963ea8df219cca48d68f22ca192a2c4063528a0fe4a8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100VGEJ",
+                "documentTitle": "竹中工務店 有価証券報告書（2024年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "b3d04caad015b11c915796d23703fc133b142e78e97e7f78674e908f73483638",
+                "documentVersionSha256": "b3d04caad015b11c915796d23703fc133b142e78e97e7f78674e908f73483638",
+                "pdfPage": 56,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2023年１月１日               (自 2024年１月１日\n                           至 2023年12月31日)             至 2024年12月31日)\n売上高\n 完成工事高                              ※1   1,471,738         ※1   1,449,581\n 開発事業等売上高                             ※1   140,685           ※1   150,547\n 売上高合計                                   1,612,423              1,600,129\n営業利益                                        45,676                    53,118",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社49社。各年度の連結範囲を保持し、一定範囲の利益に調整しない。3月決算の一部子会社について9月末財務諸表を使用し、連結決算日までの重要取引を調整。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                     株式会社竹中工務店(E00169)\n                                                                           有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     49社   主要な連結子会社名は、「第１        企業の概況        ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度に清算したTAKENAKA CORPORATION(U.S.A.)を連結の範囲から除外している。\n (2) 非連結子会社\n     ６社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n           なお、当連結会計年度に清算した㈱梅田センタービルを非連結子会社の範囲から除外するとともに、新規\n           設立により子会社となった㈱ツミカサネ、㈱オフグリッドフィールドの２社を非連結子会社の範囲に含め\n           ている。\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社６社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 62,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社５社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-01-01/2025-12-31",
+              "timeLabel": "2025-01-01 ～ 2025-12-31",
+              "periodStart": "2025-01-01",
+              "periodEnd": "2025-12-31",
+              "numericValue": 92936,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0375b2079ddf0309864443d8e20f2dfa8b42880b5b2de94a33a89c0c2a9193b2",
+              "evidenceId": "7e1d4719ecbc8f6b6d54083e20c410e3b5c3103914e98acadcb30e944b4ba74a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100XU22",
+                "documentTitle": "竹中工務店 有価証券報告書（2025年12月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f0c21746ada960a9ce65f900c2a1ae12a83943dc0ff4aa43764fa1a1ed6f4bda",
+                "documentVersionSha256": "f0c21746ada960a9ce65f900c2a1ae12a83943dc0ff4aa43764fa1a1ed6f4bda",
+                "pdfPage": 55,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2024年１月１日               (自 2025年１月１日\n                           至 2024年12月31日)             至 2025年12月31日)\n売上高\n 完成工事高                              ※1   1,449,581         ※1   1,445,390\n 開発事業等売上高                             ※1   150,547           ※1   169,409\n 売上高合計                                   1,600,129              1,614,799\n営業利益                                        53,118                   92,936",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "takenaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益。1月1日〜12月31日の実期間を保持し、4月年度へ置換しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準を当年1月期首から適用。子会社株式等の売却損益の税効果に関する改正適用による影響なし（64頁）。連結52社の当年構成を保持。",
+                  "親会社は1月1日〜12月31日決算。他社の4月1日〜翌3月31日と同じ実期間とはみなさず、会社間の同等性・自動合算・案件配賦は未確認。"
+                ],
+                "basisPage": 122,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                      株式会社竹中工務店(E00169)\n                                                                            有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社\n     52社   主要な連結子会社名は、「第１         企業の概況        ４   関係会社の状況」に記載のとおり。\n     なお、当連結会計年度に清算した㈱サンウェル・ジャパンを連結の範囲から除外するとともに、新規設立により\n     子会社となったTAK CAPITAL ASIA PTE.LTD.、(同)TAKホスピタリティ広島、\n     TAK U.S.A.Holdings, Inc.、TAK-D2, LLCを連結の範囲に含めている。\n (2) 非連結子会社\n     ７社    主要な非連結子会社名は次のとおり。\n           ㈱タックサービス西梅田\n     なお、新規設立により子会社となったTAC BIM CORPORATIONを非連結子会社の範囲に含めている。\n (3) 非連結子会社について、連結の範囲から除いた理由\n     非連結子会社７社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n     剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち国内子会社５社及び在外子会社１社の決算日は３月31日であり、連結財務諸表の作成にあたって\n    は、９月30日現在の財務諸表を使用している。ただし、連結決算日との間に生じた重要な取引については、連結上\n    必要な調整を行っている。\n    上記以外の連結子会社の事業年度は、当社と同一である。",
+                "sourcePeriodRole": "current_annual"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "0abb97d7d9c50e3ed4cca7f23237eb27f0ef343b68c4a952a1449091ee4018d2"
       }
     ],
     "mappings": [
@@ -11719,6 +12481,29 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "TAKENAKA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "TAKENAKA:operating_income_consolidated@FY2015_FY2025_TAKENAKA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP",
+        "fiscalCalendar": "calendar_year"
       }
     ],
     "limitations": [
@@ -11729,5 +12514,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "ea58de08acb66dfb685e43b1953e5a22fa04ddb422edcf373fca2a1a0c431889"
+  "snapshotHash": "f35691f71e2547f186f34c0e02edcec095402e3dc85b9f3d5d620b7ad807555e"
 }
