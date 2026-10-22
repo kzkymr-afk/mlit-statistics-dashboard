@@ -10526,6 +10526,815 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "a21ea28084a67c204ff8b924d90c35001f8063a7e294eebc5dfe6ad1850c5b4e"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "KITANO:operating_income_consolidated@FY2015_FY2025_KITANO_OPERATING",
+          "companyId": "KITANO",
+          "metricId": "operating_income_consolidated",
+          "label": "北野建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "KITANO_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_KITANO_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "1b2a9120c2b0be52b743fc58d19583c2b1a1932fc4236805d274bc695c58e5e2",
+              "sourceLocator": {
+                "pdf_page": 48
+              },
+              "sourceQuote": "企業結合基準の適用で税金等調整前当期純利益429,620千円減・資本剰余金同額増（48頁）。営業利益への影響とは記載されておらず、この額を営業利益に加減しない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "658c4ce6a746a7d3304ada9fdc3a29fc066cae0a807f6393b547c95a09000d89",
+              "sourceLocator": {
+                "pdf_page": 48
+              },
+              "sourceQuote": "減価償却変更の営業利益等への影響は軽微。当期資料は営業利益4,856,529千円、翌2017年度資料の前年欄は4,856,528千円。1千円差の理由は未確認。当期資料の報告値を保持し、差を消したり遡及修正とみなしたりしない。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f24f0b49c969e5c00f70a9f4c2d1725521906aac4b349c2731543895fce1b2c6",
+              "sourceLocator": {
+                "pdf_page": 38
+              },
+              "sourceQuote": "前年欄の2016年度営業利益4,856,528千円は当期資料4,856,529千円と1千円差、理由未確認。両資料と原単位を保持。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "8c00bd45313e237e7ccdf8af2ceb2fb9e9e8cf91ec52370ef20955a3984b0204",
+              "sourceLocator": {
+                "pdf_page": 49
+              },
+              "sourceQuote": "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "081684b4bcdf6e90141f864712f18b2b592fa8ca41c8dc61a65f23fea1912a8a",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "66ec9feb2287d92fe4fa7e5f3d39b4853c69c8b9e66d03768313877c259fcc0a",
+              "sourceLocator": {
+                "pdf_page": 44
+              },
+              "sourceQuote": "営業利益2,770,524千円を2,770.524百万円へ正確に換算。翌年度資料の前年欄は2,770百万円で精度が異なるため一致する精度の範囲と原値を区別し、置換しない。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9795471912e9a8bb4c81a9aa1e619d99644062df25444d310b0a6a121149ef28",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "当年度から表示単位を千円から百万円へ変更し、前年欄も百万円へ変更（2頁）。収益認識基準で営業利益・経常利益・税前利益各2百万円増、期首利益剰余金2百万円増（57頁）。報告値を保持し、過年度の営業利益へ加減しない。時価算定基準は影響なし。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6acc4716618b171abf0ebcc7e32c26210c01107c50428947ec053262208b52db",
+              "sourceLocator": {
+                "pdf_page": 58
+              },
+              "sourceQuote": "会計方針の変更は該当事項なし（58頁）。連結子会社4社と海外2社12月末決算・重要取引調整を保持。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "aff783d534c4170229065ca7431e84cf6965cd2cc7ca2048b4478df22d78332a",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "会計方針の変更は該当事項なし（61頁）。税効果注記の表示組替えを営業利益の遡及修正へ転用しない。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4c13e866246e5d6e35d9d9595878d1d67646430d12bf6e51409e53fd9257976b",
+              "sourceLocator": {
+                "pdf_page": 68
+              },
+              "sourceQuote": "法人税等基準を適用。前年への遡及適用を含め連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f8e98ed91763e00ccf622d4a80ca5e3a7b964216a3145a7c867219e63d0767a2",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準の適用で税金等調整前当期純利益429,620千円減・資本剰余金同額増（48頁）。営業利益への影響とは記載されておらず、この額を営業利益に加減しない。",
+            "2016年度：減価償却変更の営業利益等への影響は軽微。当期資料は営業利益4,856,529千円、翌2017年度資料の前年欄は4,856,528千円。1千円差の理由は未確認。当期資料の報告値を保持し、差を消したり遡及修正とみなしたりしない。",
+            "2017年度：前年欄の2016年度営業利益4,856,528千円は当期資料4,856,529千円と1千円差、理由未確認。両資料と原単位を保持。",
+            "2020年度：営業利益2,770,524千円を2,770.524百万円へ正確に換算。翌年度資料の前年欄は2,770百万円で精度が異なるため一致する精度の範囲と原値を区別し、置換しない。",
+            "2021年度：当年度から表示単位を千円から百万円へ変更し、前年欄も百万円へ変更（2頁）。収益認識基準で営業利益・経常利益・税前利益各2百万円増、期首利益剰余金2百万円増（57頁）。報告値を保持し、過年度の営業利益へ加減しない。時価算定基準は影響なし。",
+            "2022年度：会計方針の変更は該当事項なし（58頁）。連結子会社4社と海外2社12月末決算・重要取引調整を保持。",
+            "2023年度：会計方針の変更は該当事項なし（61頁）。税効果注記の表示組替えを営業利益の遡及修正へ転用しない。",
+            "2024年度：法人税等基準を適用。前年への遡及適用を含め連結財務諸表への影響なし。",
+            "2015〜2020年度は千円÷1,000の百万円換算。千円原値の小数3桁相当を保持。2021年度以後の百万円表示に小数精度を推計補完しない。連結4社・海外2社12月末決算を年度別に保持。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 3689.678,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8e53c9dbb3d8184d80ab42809c88c7ea3a249de42928c3e88e878d3bd1cc6a7e",
+              "evidenceId": "3fb9ac79c66a3f6e15dd5617e545b75b0e6a568df2831dc615a6dbe447c20681",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007YDZ",
+                "documentTitle": "北野建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "1b2a9120c2b0be52b743fc58d19583c2b1a1932fc4236805d274bc695c58e5e2",
+                "documentVersionSha256": "1b2a9120c2b0be52b743fc58d19583c2b1a1932fc4236805d274bc695c58e5e2",
+                "pdfPage": 39,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成26年４月１日            (自    平成27年４月１日\n                           至    平成27年３月31日)           至    平成28年３月31日)\n売上高\n 完成工事高                                  55,373,452                67,639,927\n 兼業事業売上高                                15,678,688                 4,689,305\n 売上高合計                                  71,052,140                72,329,232\n営業利益                                     4,797,048                 3,689,678",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    470.48083,
+                    288.77164,
+                    510.98083,
+                    297.76264
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準の適用で税金等調整前当期純利益429,620千円減・資本剰余金同額増（48頁）。営業利益への影響とは記載されておらず、この額を営業利益に加減しない。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 3689678,
+                "unitConversionFactor": 0.001,
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                北野建設株式会社(E00175)\n                                                     有価証券報告書\n 【注記事項】\n   （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n  連結子会社の数 4社\n  連結子会社の名称\n   川中嶋土地開発株式会社\n   ソロモンキタノメンダナホテルリミテッド\n   サクラハノイプラザインベストメントカンパニーリミテッド\n   株式会社アサヒエージェンシー",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、平成27年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、平成28年１月１日か\n ら連結決算日平成28年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 4856.529,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3193ffa008d93787c211ddc92d810bb52c6054008d60e89d1ac63854d5050452",
+              "evidenceId": "596b86f5c4376b473a009d700cc3f315e05d7571a1d4a9f610d06d2ffe1a8c8c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AMKX",
+                "documentTitle": "北野建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "658c4ce6a746a7d3304ada9fdc3a29fc066cae0a807f6393b547c95a09000d89",
+                "documentVersionSha256": "658c4ce6a746a7d3304ada9fdc3a29fc066cae0a807f6393b547c95a09000d89",
+                "pdfPage": 39,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成27年４月１日            (自    平成28年４月１日\n                           至    平成28年３月31日)           至    平成29年３月31日)\n売上高\n 完成工事高                                  67,639,927                66,614,564\n 兼業事業売上高                                 4,689,305                 4,443,723\n 売上高合計                                  72,329,232                71,058,287\n営業利益                                     3,689,678                 4,856,529",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    470.48083,
+                    288.771611,
+                    510.98083,
+                    297.762611
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却変更の営業利益等への影響は軽微。当期資料は営業利益4,856,529千円、翌2017年度資料の前年欄は4,856,528千円。1千円差の理由は未確認。当期資料の報告値を保持し、差を消したり遡及修正とみなしたりしない。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 4856529,
+                "unitConversionFactor": 0.001,
+                "basisPage": 90,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                北野建設株式会社(E00175)\n                                                     有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n (2） 非連結子会社の名称等\n    非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n (1）持分法を適用していない非連結子会社（㈱キタノプロパティ）は、当期純損益（持分に見合う額）及び利益\n   剰余金（持分に見合う額）等からみて、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、\n   かつ、全体としても重要性がないため持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、平成28年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、平成29年１月１日か\n ら連結決算日平成29年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。\n\n\n\n\n                          45/92",
+                "nextReportComparisonStatus": "unresolved_1_thousand_yen_difference"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 4885.917,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "90d949006b491558c4f46357509fbeccd47b9101c71acdb1f627b0919704dfd0",
+              "evidenceId": "291064a12bcba8180b3cfbee30a7376212f4e1b66db478a153a11b053474c85c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DCKB",
+                "documentTitle": "北野建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f24f0b49c969e5c00f70a9f4c2d1725521906aac4b349c2731543895fce1b2c6",
+                "documentVersionSha256": "f24f0b49c969e5c00f70a9f4c2d1725521906aac4b349c2731543895fce1b2c6",
+                "pdfPage": 38,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成28年４月１日            (自    平成29年４月１日\n                           至    平成29年３月31日)           至    平成30年３月31日)\n売上高\n 完成工事高                                  66,614,564                79,117,319\n 兼業事業売上高                                 4,443,722                 4,685,117\n 売上高合計                                  71,058,286                83,802,436\n営業利益                                     4,856,528                 4,885,917",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    470.48083,
+                    288.771611,
+                    510.98083,
+                    297.762611
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "前年欄の2016年度営業利益4,856,528千円は当期資料4,856,529千円と1千円差、理由未確認。両資料と原単位を保持。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 4885917,
+                "unitConversionFactor": 0.001,
+                "basisPage": 93,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 44,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                北野建設株式会社(E00175)\n                                                     有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n （1）持分法を適用していない非連結子会社（㈱キタノプロパティ）は、当期純損益（持分に見合う額）及び利益\n  剰余金（持分に見合う額）等からみて、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、\n  かつ、全体としても重要性がないため持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 44,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、平成29年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、平成30年１月１日か\n ら連結決算日平成30年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。\n\n\n\n\n                          44/96",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 4618.256,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "731181ea2a644d8039be7e0054939070c410c08ce32f91f2189fd2983bd4e272",
+              "evidenceId": "30d746240502038de43e4fd2c3d02fb5654a70b014127f797b8450489947cc69",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G5RZ",
+                "documentTitle": "北野建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "8c00bd45313e237e7ccdf8af2ceb2fb9e9e8cf91ec52370ef20955a3984b0204",
+                "documentVersionSha256": "8c00bd45313e237e7ccdf8af2ceb2fb9e9e8cf91ec52370ef20955a3984b0204",
+                "pdfPage": 43,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成29年４月１日            (自    平成30年４月１日\n                           至    平成30年３月31日)           至    平成31年３月31日)\n売上高\n 完成工事高                                  79,117,319                73,333,714\n 兼業事業売上高                                 4,685,117                 4,612,066\n 売上高合計                                  83,802,436                77,945,780\n営業利益                                     4,885,917                 4,618,256",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    470.48083,
+                    287.843281,
+                    510.98083,
+                    296.834281
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 4618256,
+                "unitConversionFactor": 0.001,
+                "basisPage": 93,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 49,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                北野建設株式会社(E00175)\n                                                     有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n （1）持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールラン\n  チサービス）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみて、持分法の対\n  象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため持分法の適用\n  範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 49,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、平成30年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、平成31年１月１日か\n ら連結決算日平成31年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。\n\n\n\n\n                          49/95",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 3043.988,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "855d1c3c2f141ed10e5c47336cbb7864596e4fa3f086ae9416e384a67ade6773",
+              "evidenceId": "558a6826f6028123206a615414511bb11cee7d7b857836c197c91c24acd78f95",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J3YZ",
+                "documentTitle": "北野建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "081684b4bcdf6e90141f864712f18b2b592fa8ca41c8dc61a65f23fea1912a8a",
+                "documentVersionSha256": "081684b4bcdf6e90141f864712f18b2b592fa8ca41c8dc61a65f23fea1912a8a",
+                "pdfPage": 44,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成30年４月１日            (自    平成31年４月１日\n                           至    平成31年３月31日)           至    令和２年３月31日)\n売上高\n 完成工事高                                  73,333,714               57,411,763\n 兼業事業売上高                                 4,612,066                4,540,105\n 売上高合計                                  77,945,780               61,951,868\n営業利益                                     4,618,256                3,043,988",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 44,
+                  "value_bbox": [
+                    470.48083,
+                    287.843281,
+                    510.98083,
+                    296.834281
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 3043988,
+                "unitConversionFactor": 0.001,
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                北野建設株式会社(E00175)\n                                                     有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n （1）持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールラン\n  チサービス）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみて、持分法の対\n  象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため持分法の適用\n  範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 50,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、令和元年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和２年１月１日か\n ら連結決算日令和２年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。\n\n\n\n\n                          50/98",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 2770.524,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fa1d924faa1d062d54fbec9c681a7badb48153cea701e7524a4426a2c3329265",
+              "evidenceId": "afbf53c0a9776a4729d60fd1a883a0242533963b39bf707f9adfce1180167e72",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LQH8",
+                "documentTitle": "北野建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "66ec9feb2287d92fe4fa7e5f3d39b4853c69c8b9e66d03768313877c259fcc0a",
+                "documentVersionSha256": "66ec9feb2287d92fe4fa7e5f3d39b4853c69c8b9e66d03768313877c259fcc0a",
+                "pdfPage": 44,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：千円)\n                               前連結会計年度                    当連結会計年度\n                          (自    平成31年４月１日            (自    令和２年４月１日\n                           至    令和２年３月31日)            至    令和３年３月31日)\n売上高\n 完成工事高                                  57,411,763               72,661,298\n 兼業事業売上高                                 4,540,105                2,604,443\n 売上高合計                                  61,951,868               75,265,741\n営業利益                                     3,043,988                2,770,524",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 44,
+                  "value_bbox": [
+                    470.48083,
+                    287.843281,
+                    510.98083,
+                    296.834281
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "営業利益2,770,524千円を2,770.524百万円へ正確に換算。翌年度資料の前年欄は2,770百万円で精度が異なるため一致する精度の範囲と原値を区別し、置換しない。",
+                  "原資料は千円。比較表示は千円÷1,000の百万円換算で小数3桁を保持。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "千円",
+                "sourceNumericValue": 2770524,
+                "unitConversionFactor": 0.001,
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールラン\n  チサービス）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみて、持分法の対\n  象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため持分法の適用\n  範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 50,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n ニーリミテッドの決算日は、令和２年12月31日です。\n  連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和３年１月１日か\n ら連結決算日令和３年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n す。\n\n\n\n\n                          50/99",
+                "nextReportComparisonStatus": "presentation_precision_change"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 2394,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5f540ea46a6f27749f9badbd30bd3ceb582263094de474f1da1c21f55f54b791",
+              "evidenceId": "3f8e69e99f30c5a836fef5b2695f5329f2c42b8f23f303b09624daebff47fdca",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OKFG",
+                "documentTitle": "北野建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9795471912e9a8bb4c81a9aa1e619d99644062df25444d310b0a6a121149ef28",
+                "documentVersionSha256": "9795471912e9a8bb4c81a9aa1e619d99644062df25444d310b0a6a121149ef28",
+                "pdfPage": 46,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    令和２年４月１日          (自    令和３年４月１日\n                           至    令和３年３月31日)         至    令和４年３月31日)\n売上高\n 完成工事高                                   72,661                  57,696\n 兼業事業売上高                                  2,604                ※７ 2,407\n\n営業利益                                      2,770                   2,394",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 46,
+                  "value_bbox": [
+                    488.47836,
+                    290.136321,
+                    510.97836,
+                    299.127321
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "当年度から表示単位を千円から百万円へ変更し、前年欄も百万円へ変更（2頁）。収益認識基準で営業利益・経常利益・税前利益各2百万円増、期首利益剰余金2百万円増（57頁）。報告値を保持し、過年度の営業利益へ加減しない。時価算定基準は影響なし。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 2394,
+                "unitConversionFactor": 1,
+                "basisPage": 100,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 52,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールランチ\n  サービス）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみて、持分法の対象か\n  ら除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため持分法の適用範囲か\n  ら除外しています。",
+                "subsidiaryFiscalPeriodPage": 52,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n  ニーリミテッドの決算日は、令和３年12月31日です。\n   連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和４年１月１日か\n  ら連結決算日令和４年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n  す。\n\n\n\n\n                         52/106",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 3931,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "37a166d75ba306251d396d93f9d374b0fdf84436868935ec22bec739948a9fc0",
+              "evidenceId": "540d611b1a1027cc9066bd4e157c7ad43b74a72f42c6ddd8ea2d1200d645dc5c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R4TN",
+                "documentTitle": "北野建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6acc4716618b171abf0ebcc7e32c26210c01107c50428947ec053262208b52db",
+                "documentVersionSha256": "6acc4716618b171abf0ebcc7e32c26210c01107c50428947ec053262208b52db",
+                "pdfPage": 47,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    令和３年４月１日          (自    令和４年４月１日\n                           至    令和４年３月31日)         至    令和５年３月31日)\n売上高\n 完成工事高                                   57,696                  81,803\n 兼業事業売上高                               ※７ 2,407                ※７ 3,473\n\n営業利益                                      2,394                   3,931",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 47,
+                  "value_bbox": [
+                    488.47836,
+                    290.136321,
+                    510.97836,
+                    299.127321
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会計方針の変更は該当事項なし（58頁）。連結子会社4社と海外2社12月末決算・重要取引調整を保持。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3931,
+                "unitConversionFactor": 1,
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 53,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n  （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールランチ\n  サービス、㈱マウント長和）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみ\n  て、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため\n  持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 53,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n  ニーリミテッドの決算日は、令和４年12月31日です。\n   連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和５年１月１日か\n  ら連結決算日令和５年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n  す。\n\n\n\n\n                         53/107",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 4804,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cda67410d4bb7a7df33525ab83eaadaed579df98eb8ff394b35b376afdb9e5ea",
+              "evidenceId": "17234ec584c3bca325e7a48bf977618cc81c8b674ba4a6807e548682248f23d8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TX0X",
+                "documentTitle": "北野建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "aff783d534c4170229065ca7431e84cf6965cd2cc7ca2048b4478df22d78332a",
+                "documentVersionSha256": "aff783d534c4170229065ca7431e84cf6965cd2cc7ca2048b4478df22d78332a",
+                "pdfPage": 50,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    令和４年４月１日          (自    令和５年４月１日\n                           至    令和５年３月31日)         至    令和６年３月31日)\n売上高\n 完成工事高                                   81,803                  80,681\n 兼業事業売上高                               ※７ 3,473                ※７ 4,282\n\n営業利益                                      3,931                   4,804",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    488.47836,
+                    290.136321,
+                    510.97836,
+                    299.127321
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会計方針の変更は該当事項なし（61頁）。税効果注記の表示組替えを営業利益の遡及修正へ転用しない。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4804,
+                "unitConversionFactor": 1,
+                "basisPage": 104,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールランチ\n  サービス、㈱マウント長和）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみ\n  て、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため\n  持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 56,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n  ニーリミテッドの決算日は、令和５年12月31日です。\n   連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和６年１月１日か\n  ら連結決算日令和６年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n  す。\n\n\n\n\n                            56/111",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 3640,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4eab3522048f1037e0c77f29fb10202be0e9f0b89c9bd7b91faf43f5a65e8eab",
+              "evidenceId": "498042866b3f1a415246dab2a495aa03e33bdf2c4510d6d1f4d1e90db0b550f2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W59A",
+                "documentTitle": "北野建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4c13e866246e5d6e35d9d9595878d1d67646430d12bf6e51409e53fd9257976b",
+                "documentVersionSha256": "4c13e866246e5d6e35d9d9595878d1d67646430d12bf6e51409e53fd9257976b",
+                "pdfPage": 57,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    令和５年４月１日          (自    令和６年４月１日\n                           至    令和６年３月31日)         至    令和７年３月31日)\n売上高\n 完成工事高                                   80,681                  76,459\n 兼業事業売上高                               ※７ 4,282                ※７ 4,393\n\n営業利益                                      4,804                   3,640",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 57,
+                  "value_bbox": [
+                    488.47836,
+                    290.136321,
+                    510.97836,
+                    299.127321
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準を適用。前年への遡及適用を含め連結財務諸表への影響なし。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3640,
+                "unitConversionFactor": 1,
+                "basisPage": 114,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 63,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールランチ\n  サービス、㈱マウント長和）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみ\n  て、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため\n  持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 63,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n  ニーリミテッドの決算日は、令和６年12月31日です。\n   連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和７年１月１日か\n  ら連結決算日令和７年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n  す。\n\n\n\n\n                            63/121",
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 4640,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9af02d67a896fd7eb893ff80c956a71f8c326bbba8ef8c85d2f9e330f80d941d",
+              "evidenceId": "bee8863aeb9b2c587949cb3529a9dcb709f95b8d5b95d1d2fd16e019725ab1f6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YM22",
+                "documentTitle": "北野建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f8e98ed91763e00ccf622d4a80ca5e3a7b964216a3145a7c867219e63d0767a2",
+                "documentVersionSha256": "f8e98ed91763e00ccf622d4a80ca5e3a7b964216a3145a7c867219e63d0767a2",
+                "pdfPage": 55,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    令和６年４月１日          (自    令和７年４月１日\n                           至    令和７年３月31日)         至    令和８年３月31日)\n売上高\n 完成工事高                                   76,459                  74,190\n 兼業事業売上高                               ※７ 4,393                ※７ 4,601\n\n営業利益                                      3,640                   4,640",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    488.47836,
+                    290.136321,
+                    510.97836,
+                    299.127321
+                  ]
+                },
+                "comparisonVerificationId": "kitano-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社の同じ名称を確認、海外2社12月31日決算と連結上の重要取引調整を保持。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4640,
+                "unitConversionFactor": 1,
+                "basisPage": 110,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                               北野建設株式会社(E00175)\n                                                    有価証券報告書\n 【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n１．連結の範囲に関する事項\n （1） 連結子会社の数 4社\n     連結子会社の名称\n      川中嶋土地開発株式会社\n      ソロモンキタノメンダナホテルリミテッド\n      サクラハノイプラザインベストメントカンパニーリミテッド\n      株式会社アサヒエージェンシー\n （2） 非連結子会社の名称等\n    主要な非連結子会社の名称\n     株式会社キタノプロパティ\n   （連結の範囲から除いた理由）\n    非連結子会社は、小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n   （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないためです。\n\n\n２．持分法の適用に関する事項\n   持分法を適用していない非連結子会社（㈱キタノプロパティ）及び関連会社（㈱戸隠、㈱須坂スクールランチ\n  サービス、㈱マウント長和）は、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等からみ\n  て、持分法の対象から除いても連結財務諸表に及ぼす影響が軽微であり、かつ、全体としても重要性がないため\n  持分法の適用範囲から除外しています。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちソロモンキタノメンダナホテルリミテッド及びサクラハノイプラザインベストメントカンパ\n  ニーリミテッドの決算日は、令和７年12月31日です。\n   連結財務諸表の作成に当たっては、同決算日現在の財務諸表を使用しています。ただし、令和８年１月１日か\n  ら連結決算日令和８年３月31日までの期間に発生した重要な取引については、連結上必要な調整を行っていま\n  す。\n\n\n\n\n                            61/117"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "5e45b61f6d1e208b533049875c8fe3b2c52ed332b3db1460334e6e0b5d700477"
       }
     ],
     "mappings": [
@@ -10888,6 +11697,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "KITANO",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "KITANO:operating_income_consolidated@FY2015_FY2025_KITANO_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -10898,5 +11729,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "84c7ac743a325bb0b544c529e0c2fd4347a6443bc1bc2d13caf2eef3720a8308"
+  "snapshotHash": "ea58de08acb66dfb685e43b1953e5a22fa04ddb422edcf373fca2a1a0c431889"
 }
