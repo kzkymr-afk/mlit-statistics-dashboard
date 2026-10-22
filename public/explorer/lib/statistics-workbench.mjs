@@ -17,8 +17,9 @@ function reviewWindowLabel(series) {
     ? `${years[0]}～${years.at(-1)}` : years.join("・");
   return `${span}年度（資料を確認した年度）`;
 }
-const companyNames = { OBAYASHI: "大林組", KAJIMA: "鹿島建設" };
+const companyNames = { OBAYASHI: "大林組", KAJIMA: "鹿島建設", MATSUI:"松井建設", ZENITAKA:"錢高組" };
 const metricNames = {
+  net_sales_consolidated:"売上高（連結）",operating_income_consolidated:"営業利益（連結）",
   obayashi_databook_construction_orders_reported: "建設事業受注高",
   obayashi_databook_gross_profit_reported: "売上総利益",
   consolidated_gross_profit_reported: "売上総利益",

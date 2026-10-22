@@ -1,7 +1,7 @@
 import {analysisFor,cellDisplay} from '../explorer/data-view.mjs';
 import {actualOverlayCompatibility,verifiedSeriesSelection} from '../explorer/lib/statistics-workbench.mjs';
 export const GP='consolidated_gross_profit_reported';
-export const metricNames={sales_consolidated_reported:'売上高',net_profit_parent_consolidated_reported:'親会社株主に帰属する四半期純利益',revenue_consolidated_reported:'売上高',operating_profit_consolidated_reported:'営業利益',ordinary_profit_consolidated_reported:'経常利益',profit_attributable_to_owners_of_parent_reported:'親会社株主に帰属する四半期純利益',gross_profit_consolidated_reported:'売上総利益',construction_orders_reported:'建設事業の受注高',construction_orders_total_reported:'連結建設事業受注高',obayashi_databook_construction_orders_reported:'建設事業受注高（Data Book）',consolidated_gross_profit_reported:'売上総利益合計'};
+export const metricNames={net_sales_consolidated:"売上高（連結）",operating_income_consolidated:"営業利益（連結）",sales_consolidated_reported:'売上高',net_profit_parent_consolidated_reported:'親会社株主に帰属する四半期純利益',revenue_consolidated_reported:'売上高',operating_profit_consolidated_reported:'営業利益',ordinary_profit_consolidated_reported:'経常利益',profit_attributable_to_owners_of_parent_reported:'親会社株主に帰属する四半期純利益',gross_profit_consolidated_reported:'売上総利益',construction_orders_reported:'建設事業の受注高',construction_orders_total_reported:'連結建設事業受注高',obayashi_databook_construction_orders_reported:'建設事業受注高（Data Book）',consolidated_gross_profit_reported:'売上総利益合計'};
 export const scopeName=x=>({consolidated:'連結',standalone:'単体',non_consolidated:'単体',segment:'セグメント'}[x]||x||'対象範囲未確認');
 export const cycleName=x=>({quarter_cumulative_3months:'Q1・3か月累計',quarter_cumulative_6months:'Q2・6か月累計',quarter_cumulative_9months:'Q3・9か月累計',quarter:'単独四半期',quarter_direct:'単独四半期',quarter_only_3months:'単独3か月',point_in_time:'期末時点',point_in_time_stock:'時点残高',fiscal_annual:'年度'}[x]||x);
 export const isNumeric=p=>p&&typeof p.numericValue==='number'&&Number.isFinite(p.numericValue)&&!p.implicitNumericZero&&['confirmed_value','reference','extracted'].includes(p.status)&&!p.conflict;
@@ -43,7 +43,7 @@ export function compatible(series){
  if(series.every(s=>s.type==='verified'&&s.companyId===series[0].companyId&&s.unit===series[0].unit&&s.scope===series[0].scope&&s.cycle===series[0].cycle)){
   const common=series[0].points.some(p=>series.slice(1).every(s=>s.points.some(q=>pointKey(q)===pointKey(p))));if(common)return {ok:true,reference:true,reason:'同じ会社・実期間・単位の複数指標を表示しています。指標間の定義の同等性は未確認のため、相関は計算しません。'};
  }
- const reasons=[];if(new Set(series.map(s=>s.cycle)).size>1)reasons.push('粒度が異なります：'+[...new Set(series.map(s=>s.cycle))].join(' / '));if(new Set(series.map(s=>s.unit)).size>1)reasons.push('単位が異なります：'+[...new Set(series.map(s=>s.unit))].join(' / '));
+ const reasons=[...new Set(series.flatMap(s=>s.points.map(p=>p.comparisonUnresolvedReason).filter(Boolean)))];if(new Set(series.map(s=>s.cycle)).size>1)reasons.push('粒度が異なります：'+[...new Set(series.map(s=>s.cycle))].join(' / '));if(new Set(series.map(s=>s.unit)).size>1)reasons.push('単位が異なります：'+[...new Set(series.map(s=>s.unit))].join(' / '));
  if(series.some(s=>['statistic','legacy'].includes(s.type)))reasons.push('原表の実際の開始日・終了日は未確認です');
  if(new Set(series.map(s=>s.scope)).size>1)reasons.push('会社の連結範囲と市場の調査母集団を同一視できません');
  return {ok:false,reason:reasons.join('。')||'開示定義・比較許可が未確認です。'};
@@ -59,3 +59,6 @@ export function correlation(series,from,to){
  return {...result,pairs:(result.commonPeriods||[]).map(t=>t.replace('/', ' ～ ')),excluded:result.omittedPairs||0};
 }
 export function display(p){if(!p)return cellDisplay(p);if(p?.conflict)return {text:'値が競合・保留',state:'held'};if(p?.reference)return cellDisplay(p);if(isNumeric(p))return {text:p.numericValue.toLocaleString('ja-JP'),state:p.status==='extracted'?'raw':'confirmed',detail:p.status==='extracted'?'開示原値・比較未審査':'出典確認済み'};return cellDisplay(p);}
+
+/** Group only same-indicator reviewed series; leave every reference visible separately. */
+export function automaticChartGroups(series){const groups=[];for(const s of series){const group=s.type==='verified'?groups.find(g=>g.every(x=>x.type==='verified'&&x.metricId===s.metricId)&&compatible([...g,s]).ok):null;if(group)group.push(s);else groups.push([s]);}return groups;}

@@ -1,5 +1,7 @@
 "use client";
 
+import {REVIEWED_COMPANY_URL,reviewedCompanyCatalog,connectReviewedCompanySelection} from '../lib/reviewed-company-connection.mjs';
+
 import {
   useCallback,
   useEffect,
@@ -1450,6 +1452,7 @@ export default function StatisticsSystemWorkbench() {
   const [catalog, setCatalog] = useState<SystemCatalog | null>(null);
   const [catalogError, setCatalogError] = useState("");
   const [verifiedCatalog, setVerifiedCatalog] = useState<VerifiedCatalog | null>(null);
+  const [reviewedCompanyConnection,setReviewedCompanyConnection]=useState<Awaited<ReturnType<typeof reviewedCompanyCatalog>> | null>(null);
   const [verifiedError, setVerifiedError] = useState("");
   const [sourceFilter, setSourceFilter] = useState("");
   const [displayBasis, setDisplayBasis] = useState<"actual" | "indexed">("actual");
@@ -1560,9 +1563,11 @@ export default function StatisticsSystemWorkbench() {
         }
         try {
           const response = await fetchJson<{ series: unknown[] }>(VERIFIED_DATA_URL);
-          const verified = await verifiedWorkbenchCatalog(response.series);
+          const connection=await fetchJson<unknown>(REVIEWED_COMPANY_URL).then(reviewedCompanyCatalog).catch(()=>null);
+          setReviewedCompanyConnection(connection);
+          const verified = await verifiedWorkbenchCatalog([...response.series,...(connection?.responses??[])]);
           setVerifiedCatalog(verified);
-          setSelectedSeries(verified.series.map((item, index) => verifiedSeriesSelection(verified, { cat01: item.companyId, tab: item.metricId, ...(item.reviewWindow ? { reviewWindow: item.reviewWindow } : {}) }, "", "", COLORS[index % COLORS.length]) as unknown as SelectedSeries));
+          setSelectedSeries(verified.series.filter((item)=>response.series.some((row)=>(row as {payload:{id:string}}).payload.id===item.id)).map((item, index) => verifiedSeriesSelection(verified, { cat01: item.companyId, tab: item.metricId, ...(item.reviewWindow ? { reviewWindow: item.reviewWindow } : {}) }, "", "", COLORS[index % COLORS.length]) as unknown as SelectedSeries));
           setCatalog({
             ...value,
             datasets: [...value.datasets.filter((dataset) => dataset.id !== verified.dataset.id), verified.dataset],
@@ -1801,9 +1806,12 @@ export default function StatisticsSystemWorkbench() {
         timeLabels,
         color: COLORS[selectedSeries.length % COLORS.length],
       });
-      const placement = placeSeriesInWorkbench(selectedSeries, entry);
-      if (!placement.entry) throw new Error(placement.reason);
-      setSelectedSeries((current) => [...current, placement.entry as SelectedSeries]);
+      const resolution=connectReviewedCompanySelection(entry,reviewedCompanyConnection);
+      const additions:SelectedSeries[]=[];
+      for(const candidate of resolution.entries){const placement=placeSeriesInWorkbench([...selectedSeries,...additions],candidate);if(!placement.entry)throw new Error(placement.reason);additions.push(placement.entry as SelectedSeries);}
+      if(selectedSeries.length+additions.length>MAX_SELECTED_SERIES)throw new Error("確認済み年度と未確認年度を分けて追加するため、比較欄の空きを増やしてください。");
+      setSelectedSeries((current)=>[...current,...additions]);
+      setMessage(resolution.reviewedPoints?`${resolution.reviewedPoints}年度を出典確認済みの比較へ接続しました。${resolution.reasons.join(" ")}`:resolution.reasons.join(" "));
     } catch (error) {
       setMessage(String((error as Error).message ?? error));
     } finally {
@@ -1812,6 +1820,7 @@ export default function StatisticsSystemWorkbench() {
   }, [
     catalog,
     verifiedCatalog,
+    reviewedCompanyConnection,
     meta,
     selectedSeries,
     selections,
@@ -1879,9 +1888,11 @@ export default function StatisticsSystemWorkbench() {
                 color:
                   COLORS[(selectedSeries.length + added.length) % COLORS.length],
               });
-            const placement = placeSeriesInWorkbench([...selectedSeries, ...added], candidate);
-            if (!placement.entry) { skippedCount += 1; skippedReason = placement.reason; continue; }
-            added.push(placement.entry as SelectedSeries);
+            const resolution=connectReviewedCompanySelection(candidate,reviewedCompanyConnection);
+            const candidates:SelectedSeries[]=[];
+            for(const value of resolution.entries){const placement=placeSeriesInWorkbench([...selectedSeries,...added,...candidates],value);if(placement.entry)candidates.push(placement.entry as SelectedSeries);else skippedReason=placement.reason;}
+            if(selectedSeries.length+added.length+candidates.length>MAX_SELECTED_SERIES){skippedCount+=1;skippedReason="確認済み年度と未確認年度を分けるため、比較欄の空きが不足しています。";continue;}
+            added.push(...candidates);
           } catch {
             skippedCount += 1;
           }
@@ -1902,6 +1913,7 @@ export default function StatisticsSystemWorkbench() {
     [
       catalog,
       verifiedCatalog,
+      reviewedCompanyConnection,
       meta,
       selectedSeries,
       selections,
@@ -2947,7 +2959,7 @@ export default function StatisticsSystemWorkbench() {
                                 {point?.status && point.status !== "confirmed_value"
                                   ? (POINT_STATUS_LABELS[point.status] ?? "未確認") : "出典状態を参照"}
                                 {" · "}{point?.numericValue !== null && point?.numericValue !== undefined
-                                  ? "旧収録値（参考）" : "数値なし"} · 自動比較・集計不可
+                                  ? "旧収録値（参考）" : "数値なし"} · {String((point as ObservationPoint & {comparisonUnresolvedReason?:string})?.comparisonUnresolvedReason ?? (item as SelectedSeries & {comparisonUnresolvedReason?:string}).comparisonUnresolvedReason ?? "この会社・指標・年度の比較条件は未確認です。")}
                                 {evidence?.history && typeof evidence.history === "object" &&
                                   (evidence.history as Record<string, unknown>).activeHold ? " · 保留中" : ""}
                                 {evidenceUrl ? <> · <a href={evidenceUrl} target="_blank" rel="noreferrer">原典</a></> : null}

@@ -1,0 +1,744 @@
+{
+  "payload": {
+    "schemaVersion": 1,
+    "datasetId": "atlas-reviewed-company-connection",
+    "publicationAllowed": false,
+    "automaticAggregationAllowed": false,
+    "series": [
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "MATSUI:net_sales_consolidated@FY2024_FY2025_PRIMARY_20261022",
+          "companyId": "MATSUI",
+          "metricId": "net_sales_consolidated",
+          "label": "松井建設 / 売上高（連結）",
+          "metricLabelAsDisclosed": "売上高（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "MATSUI_net_sales_consolidated_FY2024_FY2025_PRIMARY_20261022",
+          "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+          "comparisonIndicatorId": "net_sales_consolidated",
+          "comparisonEquivalence": {
+            "id": "reviewed-two-company-net_sales_consolidated",
+            "indicatorId": "net_sales_consolidated",
+            "definition": "売上高（連結）：日本基準・各会社の連結損益計算書の通期実績。売上高合計は完成工事と不動産等を含み、建築のみ/単体売上ではない。営業利益はセグメント利益ではない。",
+            "status": "source_reviewed_equivalent_indicator",
+            "automaticAggregationAllowed": false,
+            "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+            "periods": [
+              "2024-04-01/2025-03-31",
+              "2025-04-01/2026-03-31"
+            ],
+            "members": [
+              {
+                "companyId": "MATSUI",
+                "metricId": "net_sales_consolidated",
+                "factIds": [
+                  "3d28cc43fb2f7f78cc7ae9be9d40c31ef723c6e2f734856bc65ea5dd8bea6090",
+                  "1e53787125e9f6b044b3ff152967214944e60106efaae6824aa7601a8c51d478"
+                ]
+              },
+              {
+                "companyId": "ZENITAKA",
+                "metricId": "net_sales_consolidated",
+                "factIds": [
+                  "9dba9e22bda76cd9ed066711cf831ff30aadc3a78fedbfc8518eb5f067ad8692",
+                  "cab5a3bb074353267f9f9085b5875b02eafaf2ca59682c1ecb2a4d56db31f9a4"
+                ]
+              }
+            ],
+            "basisSources": [
+              {
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              },
+              {
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              }
+            ],
+            "limitations": [
+              "会社別連結実績の規模比較。事業構成・子会社構成・収益性の条件が同じという意味ではない。",
+              "合算・市場シェア・案件への配賦は許可しない。",
+              "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
+              "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
+              "2年度のみのため相関計算に必要な3組に届かない。"
+            ]
+          },
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "canonicalFreshness": "not_checked",
+          "points": [
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 99253,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3d28cc43fb2f7f78cc7ae9be9d40c31ef723c6e2f734856bc65ea5dd8bea6090",
+              "evidenceId": "21adaaecb41d306aac93c53999b4051a0f9545383ee177c33179e536b73f60ea",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。99,253。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    370.73,
+                    172.999,
+                    397.73,
+                    181.99
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YHYW",
+                  "pdfPage": 55,
+                  "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 96037,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1e53787125e9f6b044b3ff152967214944e60106efaae6824aa7601a8c51d478",
+              "evidenceId": "1b2f669686a5ca81bf5910f9ffd640fad2ce6119899f1a9adbbb3311e432b391",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。96,037。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    495.93,
+                    172.999,
+                    522.93,
+                    181.99
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YHYW",
+                  "pdfPage": 55,
+                  "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ]
+        },
+        "snapshotHash": "f477a4bcbfaeead01b9379a10926c85ed3f44afb1ae6c02982757fa56ab91d4e"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ZENITAKA:net_sales_consolidated@FY2024_FY2025_PRIMARY_20261022",
+          "companyId": "ZENITAKA",
+          "metricId": "net_sales_consolidated",
+          "label": "錢高組 / 売上高（連結）",
+          "metricLabelAsDisclosed": "売上高（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ZENITAKA_net_sales_consolidated_FY2024_FY2025_PRIMARY_20261022",
+          "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+          "comparisonIndicatorId": "net_sales_consolidated",
+          "comparisonEquivalence": {
+            "id": "reviewed-two-company-net_sales_consolidated",
+            "indicatorId": "net_sales_consolidated",
+            "definition": "売上高（連結）：日本基準・各会社の連結損益計算書の通期実績。売上高合計は完成工事と不動産等を含み、建築のみ/単体売上ではない。営業利益はセグメント利益ではない。",
+            "status": "source_reviewed_equivalent_indicator",
+            "automaticAggregationAllowed": false,
+            "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+            "periods": [
+              "2024-04-01/2025-03-31",
+              "2025-04-01/2026-03-31"
+            ],
+            "members": [
+              {
+                "companyId": "MATSUI",
+                "metricId": "net_sales_consolidated",
+                "factIds": [
+                  "3d28cc43fb2f7f78cc7ae9be9d40c31ef723c6e2f734856bc65ea5dd8bea6090",
+                  "1e53787125e9f6b044b3ff152967214944e60106efaae6824aa7601a8c51d478"
+                ]
+              },
+              {
+                "companyId": "ZENITAKA",
+                "metricId": "net_sales_consolidated",
+                "factIds": [
+                  "9dba9e22bda76cd9ed066711cf831ff30aadc3a78fedbfc8518eb5f067ad8692",
+                  "cab5a3bb074353267f9f9085b5875b02eafaf2ca59682c1ecb2a4d56db31f9a4"
+                ]
+              }
+            ],
+            "basisSources": [
+              {
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              },
+              {
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              }
+            ],
+            "limitations": [
+              "会社別連結実績の規模比較。事業構成・子会社構成・収益性の条件が同じという意味ではない。",
+              "合算・市場シェア・案件への配賦は許可しない。",
+              "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
+              "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
+              "2年度のみのため相関計算に必要な3組に届かない。"
+            ]
+          },
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "canonicalFreshness": "not_checked",
+          "points": [
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 120660,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9dba9e22bda76cd9ed066711cf831ff30aadc3a78fedbfc8518eb5f067ad8692",
+              "evidenceId": "b07e3d231c6c4ca005ca9d7bea6987f7b3e8fd53e7d035681234d508b7a68086",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。120,660。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    364.576589,
+                    174.97439,
+                    395.933916,
+                    183.933374
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YJ24",
+                  "pdfPage": 50,
+                  "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 125497,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cab5a3bb074353267f9f9085b5875b02eafaf2ca59682c1ecb2a4d56db31f9a4",
+              "evidenceId": "4d646c684ea9aa5d46a4a4100dbfa0f871ef5603694acf46f46d4a1ddd03f868",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。125,497。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    489.010414,
+                    174.97439,
+                    520.367741,
+                    183.933374
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YJ24",
+                  "pdfPage": 50,
+                  "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ]
+        },
+        "snapshotHash": "57d2672104550986f948652e3741813cc44e320f97fcae601f28432263982704"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "MATSUI:operating_income_consolidated@FY2024_FY2025_PRIMARY_20261022",
+          "companyId": "MATSUI",
+          "metricId": "operating_income_consolidated",
+          "label": "松井建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "MATSUI_operating_income_consolidated_FY2024_FY2025_PRIMARY_20261022",
+          "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+          "comparisonIndicatorId": "operating_income_consolidated",
+          "comparisonEquivalence": {
+            "id": "reviewed-two-company-operating_income_consolidated",
+            "indicatorId": "operating_income_consolidated",
+            "definition": "営業利益（連結）：日本基準・各会社の連結損益計算書の通期実績。売上高合計は完成工事と不動産等を含み、建築のみ/単体売上ではない。営業利益はセグメント利益ではない。",
+            "status": "source_reviewed_equivalent_indicator",
+            "automaticAggregationAllowed": false,
+            "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+            "periods": [
+              "2024-04-01/2025-03-31",
+              "2025-04-01/2026-03-31"
+            ],
+            "members": [
+              {
+                "companyId": "MATSUI",
+                "metricId": "operating_income_consolidated",
+                "factIds": [
+                  "63c814d4b7fd12a7bf51a6988c16b041475de4b40014a7f8acf70debaf74d66f",
+                  "297e6ba50a830900c6b83bb2d9d00cbe396abdfde23cd9b636bda0632cd158a0"
+                ]
+              },
+              {
+                "companyId": "ZENITAKA",
+                "metricId": "operating_income_consolidated",
+                "factIds": [
+                  "8172dad881799efa0421d063c0eee8db337e5949bfdd9e3da7ac3c6a9f85fe83",
+                  "4ff7d7c4c5bcbc98869adc4bb4f719da0fe7bcc18c4dbe3ec5108e324ae27d02"
+                ]
+              }
+            ],
+            "basisSources": [
+              {
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              },
+              {
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              }
+            ],
+            "limitations": [
+              "会社別連結実績の規模比較。事業構成・子会社構成・収益性の条件が同じという意味ではない。",
+              "合算・市場シェア・案件への配賦は許可しない。",
+              "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
+              "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
+              "2年度のみのため相関計算に必要な3組に届かない。"
+            ]
+          },
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "canonicalFreshness": "not_checked",
+          "points": [
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 3382,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "63c814d4b7fd12a7bf51a6988c16b041475de4b40014a7f8acf70debaf74d66f",
+              "evidenceId": "3e8f4869b6393b1e667ae5661b413baaf362b38f769d99f4a25a4a4c5012e141",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。3,382。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    375.23,
+                    307.999,
+                    397.73,
+                    316.99
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YHYW",
+                  "pdfPage": 55,
+                  "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 5659,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "297e6ba50a830900c6b83bb2d9d00cbe396abdfde23cd9b636bda0632cd158a0",
+              "evidenceId": "e6921fb950eb01b095c9fd69765a444e8618a9a59e54580d1f647b7216bc59b6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2025/08/2026%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "documentVersionSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。5,659。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    500.43,
+                    307.999,
+                    522.93,
+                    316.99
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YHYW",
+                  "pdfPage": 55,
+                  "sha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ]
+        },
+        "snapshotHash": "baf3264d7b3adbc5002b30b5d2af76a41decfe97d5c73b818ed3a4dfaae04069"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ZENITAKA:operating_income_consolidated@FY2024_FY2025_PRIMARY_20261022",
+          "companyId": "ZENITAKA",
+          "metricId": "operating_income_consolidated",
+          "label": "錢高組 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ZENITAKA_operating_income_consolidated_FY2024_FY2025_PRIMARY_20261022",
+          "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+          "comparisonIndicatorId": "operating_income_consolidated",
+          "comparisonEquivalence": {
+            "id": "reviewed-two-company-operating_income_consolidated",
+            "indicatorId": "operating_income_consolidated",
+            "definition": "営業利益（連結）：日本基準・各会社の連結損益計算書の通期実績。売上高合計は完成工事と不動産等を含み、建築のみ/単体売上ではない。営業利益はセグメント利益ではない。",
+            "status": "source_reviewed_equivalent_indicator",
+            "automaticAggregationAllowed": false,
+            "reviewWindow": "FY2024_FY2025_PRIMARY_20261022",
+            "periods": [
+              "2024-04-01/2025-03-31",
+              "2025-04-01/2026-03-31"
+            ],
+            "members": [
+              {
+                "companyId": "MATSUI",
+                "metricId": "operating_income_consolidated",
+                "factIds": [
+                  "63c814d4b7fd12a7bf51a6988c16b041475de4b40014a7f8acf70debaf74d66f",
+                  "297e6ba50a830900c6b83bb2d9d00cbe396abdfde23cd9b636bda0632cd158a0"
+                ]
+              },
+              {
+                "companyId": "ZENITAKA",
+                "metricId": "operating_income_consolidated",
+                "factIds": [
+                  "8172dad881799efa0421d063c0eee8db337e5949bfdd9e3da7ac3c6a9f85fe83",
+                  "4ff7d7c4c5bcbc98869adc4bb4f719da0fe7bcc18c4dbe3ec5108e324ae27d02"
+                ]
+              }
+            ],
+            "basisSources": [
+              {
+                "sourceFileSha256": "465d762a97286a8670bc51300ff49a3f37eda891495cf383012453c7d045be5c",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              },
+              {
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "basis_page": 1,
+                  "change_notes_page": 2
+                },
+                "sourceQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。"
+              }
+            ],
+            "limitations": [
+              "会社別連結実績の規模比較。事業構成・子会社構成・収益性の条件が同じという意味ではない。",
+              "合算・市場シェア・案件への配賦は許可しない。",
+              "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
+              "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
+              "2年度のみのため相関計算に必要な3組に届かない。"
+            ]
+          },
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "canonicalFreshness": "not_checked",
+          "points": [
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 3712,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8172dad881799efa0421d063c0eee8db337e5949bfdd9e3da7ac3c6a9f85fe83",
+              "evidenceId": "541b7414d2caee7f99ef2ba3743fca1b2a58046d9414b1e7942358fe88f24344",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。3,712。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    373.535894,
+                    298.907033,
+                    395.933985,
+                    307.866016
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YJ24",
+                  "pdfPage": 50,
+                  "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 4708,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4ff7d7c4c5bcbc98869adc4bb4f719da0fe7bcc18c4dbe3ec5108e324ae27d02",
+              "evidenceId": "ff08098b59a0bffe01a89e64e145b90d6375263af5f79e2f985f8d71f28c1421",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "provenance": {
+                "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                "pdfPage": 9,
+                "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。4,708。",
+                "comparisonVerificationId": "saved-primary-two-company-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "sourceLocator": {
+                  "pdf_page": 9,
+                  "value_bbox": [
+                    497.969749,
+                    298.907033,
+                    520.36784,
+                    307.866016
+                  ]
+                },
+                "accountingStandard": "JGAAP",
+                "corroboratingAnnualReport": {
+                  "documentId": "S100YJ24",
+                  "pdfPage": 50,
+                  "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ]
+        },
+        "snapshotHash": "ce11145c9ebe73ca3ac9e62ddab9dcdb6b6a4620ca4205759526c8dd32997e2c"
+      }
+    ],
+    "mappings": [
+      {
+        "companyId": "MATSUI",
+        "legacyMetricId": "net_sales_consolidated",
+        "reviewedSeriesId": "MATSUI:net_sales_consolidated@FY2024_FY2025_PRIMARY_20261022",
+        "fiscalYears": [
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ZENITAKA",
+        "legacyMetricId": "net_sales_consolidated",
+        "reviewedSeriesId": "ZENITAKA:net_sales_consolidated@FY2024_FY2025_PRIMARY_20261022",
+        "fiscalYears": [
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "MATSUI",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "MATSUI:operating_income_consolidated@FY2024_FY2025_PRIMARY_20261022",
+        "fiscalYears": [
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ZENITAKA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "ZENITAKA:operating_income_consolidated@FY2024_FY2025_PRIMARY_20261022",
+        "fiscalYears": [
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      }
+    ],
+    "limitations": [
+      "会社別連結実績の規模比較。事業構成・子会社構成・収益性の条件が同じという意味ではない。",
+      "合算・市場シェア・案件への配賦は許可しない。",
+      "百万円の資料表示を保持し、別単位への自動換算や精度の細分化はしない。",
+      "確認した2024/2025年度だけ。現在の公式掲載版・将来の訂正との一致は未確認。",
+      "2年度のみのため相関計算に必要な3組に届かない。"
+    ]
+  },
+  "snapshotHash": "8c94a9c9b91d6062a122673c6b9748186a9d2fb01458f80e9ad4f04900c9784e"
+}
