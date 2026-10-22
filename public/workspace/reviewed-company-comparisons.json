@@ -4020,6 +4020,688 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "bb3017da6c20056176895b2d873921632d132ba5471ee59971dab741bddbdc44"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "NISHIMATSU:operating_income_consolidated@FY2015_FY2025_NISHIMATSU_OPERATING",
+          "companyId": "NISHIMATSU",
+          "metricId": "operating_income_consolidated",
+          "label": "西松建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "NISHIMATSU_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_NISHIMATSU_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし（47〜48頁）。"
+            },
+            {
+              "id": "g2016_2020",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響は軽微。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+              "sourceLocator": {
+                "pdf_page": 74
+              },
+              "sourceQuote": "収益認識基準を適用。完成工事高・完成工事原価はそれぞれ24百万円増加、期首利益剰余金への影響なし。前年の利益を新基準に遡及修正するものではない。時価算定基準等の適用による連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2022_2023",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+              "sourceLocator": {
+                "pdf_page": 92
+              },
+              "sourceQuote": "時価算定の適用指針を適用。連結財務諸表への影響は軽微。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+              "sourceLocator": {
+                "pdf_page": 109
+              },
+              "sourceQuote": "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+              "sourceLocator": {
+                "pdf_page": 106
+              },
+              "sourceQuote": "扇コンサルタンツを株式取得により連結範囲に追加。Hanoi PH Investmentは重要性がなくなったため除外。連結子会社数15社でも前年と同一の構成とはみなさない。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし（47〜48頁）。",
+            "2016年度：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響は軽微。",
+            "2021年度：収益認識基準を適用。完成工事高・完成工事原価はそれぞれ24百万円増加、期首利益剰余金への影響なし。前年の利益を新基準に遡及修正するものではない。時価算定基準等の適用による連結財務諸表への影響なし。",
+            "2022年度：時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+            "2024年度：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+            "2025年度：扇コンサルタンツを株式取得により連結範囲に追加。Hanoi PH Investmentは重要性がなくなったため除外。連結子会社数15社でも前年と同一の構成とはみなさない。",
+            "連結子会社数は7/9/9/9/11/10/11/15/15/15/15社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 16184,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "02facbd294c1665932b0b55ba4819a74796e045f5690a7f03d6a198462c651b1",
+              "evidenceId": "8a314b6279700aca282387462e6cbced2f8221774583c78d63f7176d25354c2e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007ZJD",
+                "documentTitle": "西松建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "documentVersionSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "pdfPage": 39,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n営業利益                                          8,710                16,184",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    484.9,
+                    296.86151,
+                    511.9,
+                    305.85251
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし（47〜48頁）。",
+                  "連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    7社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n     なお、新規設立に伴い、ラオ西松建設㈱を連結子会社に含めております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 25259,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "2d41e1452f44067eb72715f8264c8ef0fb8d83337ae07a77b0a62bec033245b7",
+              "evidenceId": "1a0887b8750a2fff09b2b5b1ee4aec4f3b526b522f600bec269c27b82b64fdc9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AISE",
+                "documentTitle": "西松建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "documentVersionSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "pdfPage": 42,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n営業利益                                       16,184                  25,259",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    484.9,
+                    287.884621,
+                    511.9,
+                    296.875621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響は軽微。",
+                  "連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 104,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      ㈲吉富商事は株式を取得したため、西松ベトナム㈲は新規設立のため、当連結会計年度から連結の範囲に含め\n     ております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 22752,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "728e3717985950d27618b527aef1231bc1b207f4fb52b6b2c6f92be6494e7a10",
+              "evidenceId": "3c732c7a05ba2d7466163caf8b8c09992c33d3c817cbe252846155a100a6f20f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D94R",
+                "documentTitle": "西松建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "documentVersionSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "pdfPage": 45,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n営業利益                                      25,259                22,752",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    485.4,
+                    283.134621,
+                    512.4,
+                    292.125621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 24928,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "73049cc13c202ff9de23aed0b680d2eea143c995162b22a6e8ecb660dd6e1166",
+              "evidenceId": "1ae9f9b04eb5ac20e98f8e2b9d33167a01a96d4ee34cef6d4b6f9f72155706a7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G0K4",
+                "documentTitle": "西松建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "documentVersionSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "pdfPage": 54,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n営業利益                                      22,752                  24,928",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    476.95001,
+                    277.361481,
+                    503.95001,
+                    286.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 60,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n       連結子会社名は、「第１    企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       なお、西松リアルエステート・デベロップメント(アジア)社については、新規設立により当連結会計年度よ\n      り連結子会社としております。\n       また、㈱コンケムは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 25313,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "a0344cb475ce87f0c8e8f5cf7d1a0cd2b11bec49376089d8789bbbb7dfa3914a",
+              "evidenceId": "0e5e0a94b34bdde066f4f4301030f925beaab9fc58ba5c962df33d6f3b49921d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IUSU",
+                "documentTitle": "西松建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "documentVersionSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "pdfPage": 56,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n営業利益                                       24,928                 25,313",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    476.95001,
+                    277.361481,
+                    503.95001,
+                    286.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、合同会社三軒茶屋壱号は、当社が匿名組合出資を行ったことにより子会社となったため、当連結会計年\n     度より連結の範囲に含めております。\n      また、ハノイPHインベストメント社は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 20950,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "2863706d612a1e0630ede18be301b51eb112d08104277eb58d871aaaefa41f92",
+              "evidenceId": "fda3efbc3efbb474c967fe20abae196b7cdacc8d1ef02219885107042fee8a08",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LR42",
+                "documentTitle": "西松建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "documentVersionSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "pdfPage": 64,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n営業利益                                       25,313                    20,950",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "value_bbox": [
+                    476.95001,
+                    277.361481,
+                    503.95001,
+                    286.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社10社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 129,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    10社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、西松投資有限公司は、重要性がなくなったため、当連結会計年度より連結の範囲から除外しておりま\n     す。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 23540,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "319e4fcb774f309a935937d4b5e7ac1497b0fed86dede9a15b9eb5527ea75ed3",
+              "evidenceId": "475c61a13af575c352fe8906087b59be67d04992ab56ca63ce59f1720c8a571d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OG1J",
+                "documentTitle": "西松建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "documentVersionSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "pdfPage": 63,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n営業利益                                        20,950                  23,540",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "value_bbox": [
+                    476.95001,
+                    274.661491,
+                    503.95001,
+                    283.652491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。完成工事高・完成工事原価はそれぞれ24百万円増加、期首利益剰余金への影響なし。前年の利益を新基準に遡及修正するものではない。時価算定基準等の適用による連結財務諸表への影響なし。",
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 132,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       バンコクサトーンホテルマネジメント社は、新規設立に伴い、当連結会計年度より連結子会社となりまし\n      た。また、西松アセットマネジメント㈱は、2021年10月１日の株式取得に伴い当連結会計年度より連結子会社\n      となりました。\n       なお、㈱西松ビルサービスは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 12615,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8e4ed1b44a256d5f2c344f1cfcd00096716ce0209dc35af0c4d9b0b79602051f",
+              "evidenceId": "29de7a2916ad56a328c4a073a1062e82f3d0c7f4fd0f42f3b290533286d13f1a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R536",
+                "documentTitle": "西松建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "documentVersionSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "pdfPage": 80,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2021年４月１日               (自 2022年４月１日\n                           至 2022年３月31日)              至 2023年３月31日)\n売上高\n 完成工事高                                     304,193                304,392\n 不動産事業等売上高                                  19,560                 35,365\n 売上高合計                              ※1     323,754          ※1    339,757\n営業利益                                        23,540                 12,615",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 80,
+                  "value_bbox": [
+                    476.95001,
+                    274.661491,
+                    503.95001,
+                    283.652491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+                  "連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 150,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 87,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       ㈱西松ホテルマネジメントは、重要性が高まったため、当連結会計年度より連結の範囲に含めております。\n      また、山陽小野田グリーンエナジー㈱、西松リアルエステート・デベロップメント（USA）社及び西松リアルエ\n      ステート・デベロップメント（タイランド）社は、新規設立に伴い、当連結会計年度より連結の範囲に含めて\n      おります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 18827,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7b6832b578e0539279688a1eb6c8b611d3b903490545fb5abd44a0dd5503787d",
+              "evidenceId": "048a80604831af1a9a8c098e955037ea972f40d323c9ca99eaa2387412e87048",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TRPW",
+                "documentTitle": "西松建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "documentVersionSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "pdfPage": 82,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    304,392                   369,980\n 不動産事業等売上高                                 35,365                    31,652\n 売上高合計                              ※1    339,757             ※1    401,633\n営業利益                                       12,615                    18,827",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 82,
+                  "value_bbox": [
+                    476.95001,
+                    274.661491,
+                    503.95001,
+                    283.652491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 151,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 89,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       西松台灣投資股份有限公司は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。また、\n      株式会社サイテックファームは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 21098,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "04684de3c9ec9d67d6e916dae575cca02eec9ac99a365a06b8a1cbc4d910488e",
+              "evidenceId": "263f60dd0028c2d2c5042a3accc30d6f5188e4e934304b206d49e84001c9d319",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4Y9",
+                "documentTitle": "西松建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "documentVersionSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "pdfPage": 97,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    369,980                    336,286\n 不動産事業等売上高                                 31,652                     30,524\n 売上高合計                              ※1    401,633             ※1     366,811\n営業利益                                       18,827                     21,098",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 97,
+                  "value_bbox": [
+                    476.95001,
+                    274.661491,
+                    503.95001,
+                    283.652491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 165,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 104,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況    ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 28029,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d6a2aa89fd4c6746fc7e47c6e62c6a4672e94970fb18009641fe2d0f66fc49f1",
+              "evidenceId": "623ecf177bf2582fa8f4b462d42798e1be7a317c6601e8fe43bff2f659ac69d8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YEDU",
+                "documentTitle": "西松建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "documentVersionSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "pdfPage": 99,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                     336,286                   367,774\n 不動産事業等売上高                                  30,524                    28,255\n 売上高合計                              ※1     366,811            ※1     396,030\n営業利益                                        21,098                    28,029",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 99,
+                  "value_bbox": [
+                    476.95001,
+                    274.661491,
+                    503.95001,
+                    283.652491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "扇コンサルタンツを株式取得により連結範囲に追加。Hanoi PH Investmentは重要性がなくなったため除外。連結子会社数15社でも前年と同一の構成とはみなさない。",
+                  "連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 163,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 106,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                西松建設株式会社(E00060)\n                                                                     有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況     ４ 関係会社の状況」に記載しているため省略しております。\n       扇コンサルタンツ株式会社は、株式取得に伴い、当連結会計年度より連結の範囲に含めております。また、\n      Hanoi PH Investment Pte. Ltd.は、重要性がなくなったため、当連結会計年度より連結の範囲から除外してお\n      ります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称      嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "d6014d7f24961cdd9bb4bb7888a764117eaa6b6addfaa675a93ecb91270e39cd"
       }
     ],
     "mappings": [
@@ -4184,6 +4866,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "NISHIMATSU",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "NISHIMATSU:operating_income_consolidated@FY2015_FY2025_NISHIMATSU_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -4194,5 +4898,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "a980770000a3ac9671d034f0f112b0f8b4425e44897dcc6197450548afe4d593"
+  "snapshotHash": "765e47b06bffad1d17b54135439eba9603afb6e7802d8306a4d7c58aa843ae3e"
 }
