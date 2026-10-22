@@ -676,6 +676,639 @@
           ]
         },
         "snapshotHash": "ce11145c9ebe73ca3ac9e62ddab9dcdb6b6a4620ca4205759526c8dd32997e2c"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "KAJIMA:operating_income_consolidated@FY2015_FY2025_KAJIMA_OPERATING",
+          "companyId": "KAJIMA",
+          "metricId": "operating_income_consolidated",
+          "label": "鹿島建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "KAJIMA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_KAJIMA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2259c1e830901fb4728e9ad6288bf5af762209330c34632c0a57461cf2f51353",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "対象年度の連結営業利益の定義・単位・期間を確認。"
+            },
+            {
+              "id": "g2016_2020",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6daf5121b50594805317f31736a5f9117e45304c4e179727bf80e698813f8d33",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "減価償却方法の変更（影響は軽微）。変更前後の厳密な増減計算は対象外。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+              "sourceLocator": {
+                "pdf_page": 76
+              },
+              "sourceQuote": "収益認識基準を適用。過年度への遡及適用はしていないため、変更前後を同じ算定条件として計算しない。"
+            },
+            {
+              "id": "g2022_2023",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+              "sourceLocator": {
+                "pdf_page": 89
+              },
+              "sourceQuote": "時価算定の適用指針を適用（影響は軽微）。条件の同一性を推測で確定しない。"
+            },
+            {
+              "id": "g2024_2025",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "142488830d39b5f86f56c0a52ec9da0f10b89b0880c34b2c955182719dd5eb57",
+              "sourceLocator": {
+                "pdf_page": 101
+              },
+              "sourceQuote": "グローバル・ミニマム課税の会計処理を適用（影響は軽微）。変更前後の厳密な比較条件は別に保持。"
+            }
+          ],
+          "policyNotes": [
+            "2016年度：減価償却方法の変更（影響は軽微）。変更前後の厳密な増減計算は対象外。",
+            "2021年度：収益認識基準を適用。過年度への遡及適用はしていないため、変更前後を同じ算定条件として計算しない。",
+            "2022年度：時価算定の適用指針を適用（影響は軽微）。条件の同一性を推測で確定しない。",
+            "2024年度：グローバル・ミニマム課税の会計処理を適用（影響は軽微）。変更前後の厳密な比較条件は別に保持。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 111079,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e6492f89f15551918f485b2302c6a2da130c903606bc6607064df1d8ab336d07",
+              "evidenceId": "c940e7d502c28beb90bbc4c48d89ad0fd6f4716e563b12c65649f180c828f77b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007Q3D",
+                "documentTitle": "鹿島建設 有価証券報告書 第119期（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2259c1e830901fb4728e9ad6288bf5af762209330c34632c0a57461cf2f51353",
+                "documentVersionSha256": "2259c1e830901fb4728e9ad6288bf5af762209330c34632c0a57461cf2f51353",
+                "pdfPage": 47,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                          当連結会計年度\n                         (自 平成26年４月１日                     (自 平成27年４月１日\n                          至 平成27年３月31日)                    至 平成28年３月31日)\n売上高\n  完成工事高                             ※1    1,480,106             ※1    1,581,042\n  開発事業等売上高                                   213,551                       161,657\n  売上高合計                                   1,693,658                   1,742,700\n営業利益                                          12,665                       111,079",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 47,
+                  "value_bbox": [
+                    487.9,
+                    296.40778,
+                    519.4,
+                    305.39878
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 20,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 155392,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3cd0a507a8cfb8d5153ecd1171417f1865fd35506b21127027f90ad9d64594f9",
+              "evidenceId": "b27eb9ad9f1abcc573e468be743e0015578668ddffc85a603b7917753f6f1cb0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AF55",
+                "documentTitle": "鹿島建設 有価証券報告書 第120期（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6daf5121b50594805317f31736a5f9117e45304c4e179727bf80e698813f8d33",
+                "documentVersionSha256": "6daf5121b50594805317f31736a5f9117e45304c4e179727bf80e698813f8d33",
+                "pdfPage": 49,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                          当連結会計年度\n                         (自 平成27年４月１日                     (自 平成28年４月１日\n                          至 平成28年３月31日)                    至 平成29年３月31日)\n売上高\n  完成工事高                             ※1    1,581,042             ※1    1,602,054\n  開発事業等売上高                                     161,657                   219,751\n  売上高合計                                   1,742,700                   1,821,805\n営業利益                                           111,079                   155,392",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 49,
+                  "value_bbox": [
+                    487.9,
+                    296.280871,
+                    519.4,
+                    305.271871
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却方法の変更（影響は軽微）。変更前後の厳密な増減計算は対象外。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 21,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 158373,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f9731998d8277b1c6f7498a8e7b85f957e5c77d23200217a81b65fea553da744",
+              "evidenceId": "524975d006e00a6d84ee241474258b13b393288e7235ebc8358332013cf30c7d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D6JZ",
+                "documentTitle": "鹿島建設 有価証券報告書 第121期（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5e7b26ac7c29bb13983b9819052f5b9d12184ccaced0b0fa32ad6dbb14363eb6",
+                "documentVersionSha256": "5e7b26ac7c29bb13983b9819052f5b9d12184ccaced0b0fa32ad6dbb14363eb6",
+                "pdfPage": 48,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                          当連結会計年度\n                         (自 平成28年４月１日                     (自 平成29年４月１日\n                          至 平成29年３月31日)                    至 平成30年３月31日)\n売上高\n  完成工事高                             ※1    1,602,054             ※1      1,645,461\n  開発事業等売上高                                   219,751                       185,163\n  売上高合計                                   1,821,805                     1,830,625\n営業利益                                         155,392                       158,373",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 48,
+                  "value_bbox": [
+                    480.4,
+                    296.180881,
+                    511.9,
+                    305.171881
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 17,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 142622,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7a689ab550e9b7a78b1e630823cab8a80d37d8f65dfa4532c0d860088495036d",
+              "evidenceId": "e8c1ebaad37d4358fb4e67638aed370b207ceadba31a2c6cc5f353bfaa0674a9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G4O0",
+                "documentTitle": "鹿島建設 有価証券報告書 第122期（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "707d91a9e4c0a6e8003347319de8b9782f40de72826e215bb30703067d3be630",
+                "documentVersionSha256": "707d91a9e4c0a6e8003347319de8b9782f40de72826e215bb30703067d3be630",
+                "pdfPage": 52,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                         当連結会計年度\n                         (自 2017年４月１日                    (自 2018年４月１日\n                          至 2018年３月31日)                   至 2019年３月31日)\n売上高\n 完成工事高                             ※1      1,645,461          ※1      1,776,346\n 開発事業等売上高                                    185,163                     197,923\n 売上高合計                                     1,830,625                  1,974,269\n営業利益                                         158,373                     142,622",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 52,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 17,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 131987,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "60bc4dfa4fc322b266b4a556e4907d010cb031d67b7bdcdeca3b3faa64270785",
+              "evidenceId": "f5ae9b9574605f4813d3fa11db4f01e97437161fc0051d7d51f73d7761553fd5",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J072",
+                "documentTitle": "鹿島建設 有価証券報告書 第123期（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2571c456990205ef37f5ac02e2a23b3ea8204db0180af94dd36521fa0d68ef88",
+                "documentVersionSha256": "2571c456990205ef37f5ac02e2a23b3ea8204db0180af94dd36521fa0d68ef88",
+                "pdfPage": 62,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                         当連結会計年度\n                         (自 2018年４月１日                    (自 2019年４月１日\n                          至 2019年３月31日)                   至 2020年３月31日)\n売上高\n 完成工事高                             ※1      1,776,346          ※1      1,791,118\n 開発事業等売上高                                    197,923                     219,633\n 売上高合計                                     1,974,269                  2,010,751\n営業利益                                         142,622                     131,987",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 62,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 27,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 127298,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cf086b25b94abecbfef1d8c7ba5c6815aa2b8624aad659ac051b078d9e19d6c4",
+              "evidenceId": "d88f3b924394b804917e88540b5e585e6ed78b2d55748d8318f5823637465289",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LN57",
+                "documentTitle": "鹿島建設 有価証券報告書 第124期（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9e26f3ca16cc17465d911bb363e0c108eabf897a1bb91b8db1e5914d31584ab5",
+                "documentVersionSha256": "9e26f3ca16cc17465d911bb363e0c108eabf897a1bb91b8db1e5914d31584ab5",
+                "pdfPage": 66,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                         当連結会計年度\n                         (自 2019年４月１日                    (自 2020年４月１日\n                          至 2020年３月31日)                   至 2021年３月31日)\n売上高\n 完成工事高                             ※1      1,791,118          ※1      1,673,594\n 開発事業等売上高                                    219,633                     233,582\n 売上高合計                                     2,010,751                  1,907,176\n営業利益                                         131,987                     127,298",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 66,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 29,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 123382,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5c9a45651a5416c5242be02d32715d549cdfed2712e31dd48fd78cbc45a77db7",
+              "evidenceId": "d6276c930a00560cecb31e5a73f4efccaf4d45af2def89a219591e7bc8fe4264",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OBLA.pdf",
+                "sourceDocumentId": "S100OBLA",
+                "documentTitle": "鹿島建設 有価証券報告書 第125期（2022年3月期）",
+                "sourceLinkStatus": "recorded_individual_document_url",
+                "sourceFileSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                "documentVersionSha256": "7f5145de901f8e806525acce0637e9b2fab522180b5136e85a7a0321bd6691aa",
+                "pdfPage": 64,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                         当連結会計年度\n                         (自 2020年４月１日                    (自 2021年４月１日\n                          至 2021年３月31日)                   至 2022年３月31日)\n売上高\n 完成工事高                                     1,673,594            ※1    1,797,794\n 開発事業等売上高                                    233,582               ※1   281,901\n 売上高合計                                     1,907,176                    2,079,695\n営業利益                                         127,298                        123,382",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。過年度への遡及適用はしていないため、変更前後を同じ算定条件として計算しない。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 28,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 123526,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3cdc51e48cac65bdb09f184b98c36924a7d56a8da8cc085c4b1f2bfde73f80d7",
+              "evidenceId": "1bc0fdf46e4aed3bd9b186e5cfde06c331605cd3fd42458a5350c1efad4441f1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R2GR.pdf",
+                "sourceDocumentId": "S100R2GR",
+                "documentTitle": "鹿島建設 有価証券報告書 第126期（2023年3月期）",
+                "sourceLinkStatus": "recorded_individual_document_url",
+                "sourceFileSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                "documentVersionSha256": "2fbb785343c0523c64d1dd410bb928186c88f883bda40709c91493365d959407",
+                "pdfPage": 78,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                 (単位：百万円)\n                           前連結会計年度                          当連結会計年度\n                         (自 2021年４月１日                     (自 2022年４月１日\n                          至 2022年３月31日)                    至 2023年３月31日)\n売上高\n 完成工事高                             ※1   1,797,794                ※1    2,106,970\n 開発事業等売上高                            ※1   281,901                   ※1   284,608\n 売上高合計                                     2,079,695                     2,391,579\n営業利益                                          123,382                       123,526",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 78,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用（影響は軽微）。条件の同一性を推測で確定しない。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 34,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 136226,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8f8451ccc48279784a12f38cae562e7de8247beb90cb5a7908a3b5eb2d6fb2d1",
+              "evidenceId": "34247bfd135d32996882a9899987ad4bcf5566fd6d7ac5be54590dec91bc5bca",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TP3I.pdf",
+                "sourceDocumentId": "S100TP3I",
+                "documentTitle": "鹿島建設 有価証券報告書 第127期（2024年3月期）",
+                "sourceLinkStatus": "recorded_individual_document_url",
+                "sourceFileSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                "documentVersionSha256": "a795d7113088a6d45e303926fd7474dc0aef0196748891f3ec1a4e860a9f9066",
+                "pdfPage": 77,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                           前連結会計年度                         当連結会計年度\n                         (自 2022年４月１日                    (自 2023年４月１日\n                          至 2023年３月31日)                   至 2024年３月31日)\n売上高\n 完成工事高                             ※1   2,106,970               ※1    2,322,282\n 開発事業等売上高                            ※1   284,608                  ※1   342,893\n 売上高合計                                     2,391,579                    2,665,175\n営業利益                                         123,526                        136,226",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 77,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 35,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 151882,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "32b7fdbf1c3f9021e229420dc5b1fde9f76599b49eb2802d601501e8433be4ed",
+              "evidenceId": "9b37ff8f7a093602e51cf747c99ace46c023498143b8b1875c6c6240a88c8a3d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+                "sourceDocumentId": "S100YGGI",
+                "documentTitle": "鹿島建設 有価証券報告書 第129期（2026年3月期）",
+                "sourceLinkStatus": "recorded_individual_document_url",
+                "sourceFileSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+                "documentVersionSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+                "pdfPage": 97,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                           前連結会計年度                       当連結会計年度\n                         (自 2024年４月１日                  (自 2025年４月１日\n                          至 2025年３月31日)                 至 2026年３月31日)\n売上高\n 完成工事高                             ※1   2,511,002             ※1    2,678,680\n 開発事業等売上高                            ※1   400,814                ※1   388,595\n 売上高合計                                     2,911,816                  3,067,275\n営業利益                                         151,882                     240,780",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 97,
+                  "value_bbox": [
+                    347.25001,
+                    290.407751,
+                    378.75001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "グローバル・ミニマム課税の会計処理を適用（影響は軽微）。変更前後の厳密な比較条件は別に保持。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 40,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 240780,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f4b61cfc6c4fe063eebd2e08addc80fc79ff606191b39e5e7a26eba7b6ab3284",
+              "evidenceId": "6ff7a82edfbf808905b88e3561556a035d33d3bb4a8d42ccdf30e426de05fe2a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YGGI.pdf",
+                "sourceDocumentId": "S100YGGI",
+                "documentTitle": "鹿島建設 有価証券報告書 第129期（2026年3月期）",
+                "sourceLinkStatus": "recorded_individual_document_url",
+                "sourceFileSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+                "documentVersionSha256": "e6d2d78e8f393f5a58227d31e3f9b18edd4d7423466f3c224288c482f4f701b1",
+                "pdfPage": 97,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                           前連結会計年度                       当連結会計年度\n                         (自 2024年４月１日                  (自 2025年４月１日\n                          至 2025年３月31日)                 至 2026年３月31日)\n売上高\n 完成工事高                             ※1   2,511,002             ※1    2,678,680\n 開発事業等売上高                            ※1   400,814                ※1   388,595\n 売上高合計                                     2,911,816                  3,067,275\n営業利益                                         151,882                     240,780",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 97,
+                  "value_bbox": [
+                    472.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "kajima-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 36,
+                "basisQuote": "我が国において一般に公正妥当と認められている会計基準に基づき作成"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "5f4a70b5b6d5e0900f33c7fd0bf521d411ce9407ef81132bbd25e2617e2e8fb7"
       }
     ],
     "mappings": [
@@ -730,6 +1363,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "KAJIMA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "KAJIMA:operating_income_consolidated@FY2015_FY2025_KAJIMA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -740,5 +1395,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "8c94a9c9b91d6062a122673c6b9748186a9d2fb01458f80e9ad4f04900c9784e"
+  "snapshotHash": "2fd1833af7c9d42b8d51c2bdf085f428b0043c0249210ba6b0b8db0934753167"
 }

@@ -24,6 +24,8 @@ export function pointKey(p,reference=false){return reference?String(p.year):p.pe
 export function pointLabel(p){return p.periodStart&&p.periodEnd?`${p.periodStart} ～ ${p.periodEnd}`:p.timeLabel||p.timeCode||`${p.year}年`;}
 export function periodRows(series){return [...new Set(series.flatMap(s=>s.points.map(p=>pointKey(p))))].sort();}
 export function reviewSpanNote(series){
+ const policyNotes=[...new Set(series.flatMap(s=>(s.originalSeries||[]).flatMap(o=>o.policyNotes||[])))];
+ if(policyNotes.length)return "資料に記載された営業利益の推移です。会計方針の変更前後を同じ条件とみなした指数・相関の計算はしません。 "+policyNotes.join(" ");
  const windows=new Map();
  for(const s of series.filter(s=>s.type==='verified'))for(const o of s.originalSeries||[]){const active=o.points.filter(p=>s.points.some(q=>pointKey(q)===pointKey(p)));if(!active.length)continue;const start=Math.min(...active.map(p=>+p.periodStart.slice(0,4))),end=Math.max(...active.map(p=>+p.periodStart.slice(0,4)));if(Number.isFinite(start)&&Number.isFinite(end))windows.set(`${start}-${end}`,`${start}–${end}年度`);}
  return windows.size>1?`${[...windows.values()].join('と')}は別々に指標定義を確認しています。両期間を通した定義の一致は未確認のため、線をつながず、全期間の相関を計算しません。`:'';
@@ -32,7 +34,7 @@ export function referenceAllowed(series,gate=compatible(series)){return !gate.ok
 export function compatible(series){
  if(series.length<2)return {ok:true};
  if(series.every(s=>s.type==='verified'&&s.metricId===series[0].metricId)){
-  const active=s=>s.originalSeries.filter(o=>o.points.some(p=>s.points.some(q=>pointKey(q)===pointKey(p))));
+  const active=s=>s.originalSeries.map(o=>({...o,points:o.points.filter(p=>s.points.some(q=>pointKey(q)===pointKey(p)))})).filter(o=>o.points.length);
   for(let i=0;i<series.length;i++)for(let j=i+1;j<series.length;j++){
    const left=active(series[i]),right=active(series[j]);if(!left.length||!right.length)return {ok:false,reason:'両系列に同じ期間の確認済み観測がありません。'};
    for(const a of left){let matched=false;for(const b of right){if(!a.points.some(p=>b.points.some(q=>pointKey(q)===pointKey(p))))continue;matched=true;const verified={series:[a,b],table:{notes:[],title:'確認済み開示値'}};const adapt=x=>verifiedSeriesSelection(verified,{cat01:x.companyId,tab:x.metricId,reviewWindow:x.reviewWindow||'default'},undefined,undefined,'#2464dd');const result=actualOverlayCompatibility(adapt(a),adapt(b));if(result)return {ok:false,reason:result};}if(!matched)return {ok:false,reason:'片方の資料で確認した実期間に対応する観測がありません。'};}
