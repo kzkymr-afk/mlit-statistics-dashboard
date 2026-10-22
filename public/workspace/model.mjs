@@ -1,7 +1,7 @@
 import {analysisFor,cellDisplay} from '../explorer/data-view.mjs';
 import {actualOverlayCompatibility,verifiedSeriesSelection} from '../explorer/lib/statistics-workbench.mjs';
 export const GP='consolidated_gross_profit_reported';
-export const metricNames={net_sales_consolidated:"売上高（連結）",operating_income_consolidated:"営業利益（連結）",sales_consolidated_reported:'売上高',net_profit_parent_consolidated_reported:'親会社株主に帰属する四半期純利益',revenue_consolidated_reported:'売上高',operating_profit_consolidated_reported:'営業利益',ordinary_profit_consolidated_reported:'経常利益',profit_attributable_to_owners_of_parent_reported:'親会社株主に帰属する四半期純利益',gross_profit_consolidated_reported:'売上総利益',construction_orders_reported:'建設事業の受注高',construction_orders_total_reported:'連結建設事業受注高',obayashi_databook_construction_orders_reported:'建設事業受注高（Data Book）',consolidated_gross_profit_reported:'売上総利益合計'};
+export const metricNames={net_sales_consolidated:"売上高（連結）",operating_income_consolidated:"営業利益（連結）",ordinary_income_consolidated:"経常利益（連結）",sales_consolidated_reported:'売上高',net_profit_parent_consolidated_reported:'親会社株主に帰属する四半期純利益',revenue_consolidated_reported:'売上高',operating_profit_consolidated_reported:'営業利益',ordinary_profit_consolidated_reported:'経常利益',profit_attributable_to_owners_of_parent_reported:'親会社株主に帰属する四半期純利益',gross_profit_consolidated_reported:'売上総利益',construction_orders_reported:'建設事業の受注高',construction_orders_total_reported:'連結建設事業受注高',obayashi_databook_construction_orders_reported:'建設事業受注高（Data Book）',consolidated_gross_profit_reported:'売上総利益合計'};
 export const scopeName=x=>({consolidated:'連結',standalone:'単体',non_consolidated:'単体',segment:'セグメント'}[x]||x||'対象範囲未確認');
 export const cycleName=x=>({quarter_cumulative_3months:'Q1・3か月累計',quarter_cumulative_6months:'Q2・6か月累計',quarter_cumulative_9months:'Q3・9か月累計',quarter:'単独四半期',quarter_direct:'単独四半期',quarter_only_3months:'単独3か月',point_in_time:'期末時点',point_in_time_stock:'時点残高',fiscal_annual:'年度'}[x]||x);
 export const isNumeric=p=>p&&typeof p.numericValue==='number'&&Number.isFinite(p.numericValue)&&!p.implicitNumericZero&&['confirmed_value','reference','extracted'].includes(p.status)&&!p.conflict;
@@ -25,7 +25,7 @@ export function pointLabel(p){return p.periodStart&&p.periodEnd?`${p.periodStart
 export function periodRows(series){return [...new Set(series.flatMap(s=>s.points.map(p=>pointKey(p))))].sort();}
 export function reviewSpanNote(series){
  const policyNotes=[...new Set(series.flatMap(s=>(s.originalSeries||[]).flatMap(o=>o.policyNotes||[])))];
- if(policyNotes.length)return "資料に記載された営業利益の推移です。会計方針の変更前後を同じ条件とみなした指数・相関の計算はしません。 "+policyNotes.join(" ");
+ if(policyNotes.length)return "資料に記載された数値の推移です。会計方針の変更前後を同じ条件とみなした指数・相関の計算はしません。 "+policyNotes.join(" ");
  const windows=new Map();
  for(const s of series.filter(s=>s.type==='verified'))for(const o of s.originalSeries||[]){const active=o.points.filter(p=>s.points.some(q=>pointKey(q)===pointKey(p)));if(!active.length)continue;const start=Math.min(...active.map(p=>+p.periodStart.slice(0,4))),end=Math.max(...active.map(p=>+p.periodStart.slice(0,4)));if(Number.isFinite(start)&&Number.isFinite(end))windows.set(`${start}-${end}`,`${start}–${end}年度`);}
  return windows.size>1?`${[...windows.values()].join('と')}は別々に指標定義を確認しています。両期間を通した定義の一致は未確認のため、線をつながず、全期間の相関を計算しません。`:'';
