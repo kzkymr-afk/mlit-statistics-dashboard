@@ -19188,6 +19188,1728 @@
           "accountingStandard": "JGAAP"
         },
         "snapshotHash": "c81464d9b88339a426f5ac4ee13e514f3a197af30aed599393c343aa275fe76b"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "NISHIMATSU:net_sales_consolidated@FY2015_FY2025_NISHIMATSU_PL_BATCH",
+          "companyId": "NISHIMATSU",
+          "metricId": "net_sales_consolidated",
+          "label": "西松建設 / 売上高（連結）",
+          "metricLabelAsDisclosed": "売上高合計（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "NISHIMATSU_NET_SALES_CONSOLIDATED_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_NISHIMATSU_PL_BATCH",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+              "sourceLocator": {
+                "pdf_page": 39
+              },
+              "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n  売上高合計                                  342,989                  308,826"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n  売上高合計                                   308,826                 315,228"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "                                                                   EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n  売上高合計                                  315,228               284,412"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+              "sourceLocator": {
+                "pdf_page": 54
+              },
+              "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n売上原価\n 売上高合計                                   284,412                 349,318"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n売上原価\n 売上高合計                                    349,318                391,621"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n売上原価\n 売上高合計                                    391,621                   336,241"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+              "sourceLocator": {
+                "pdf_page": 63
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n売上原価\n 売上高合計                                     336,241          ※1     323,754"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+              "sourceLocator": {
+                "pdf_page": 80
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2021年４月１日               (自 2022年４月１日\n                           至 2022年３月31日)              至 2023年３月31日)\n売上高\n 完成工事高                                     304,193                304,392\n 不動産事業等売上高                                  19,560                 35,365\n 売上高合計                              ※1     323,754          ※1    339,757\n売上原価\n 売上高合計                              ※1     323,754          ※1    339,757"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+              "sourceLocator": {
+                "pdf_page": 82
+              },
+              "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    304,392                   369,980\n 不動産事業等売上高                                 35,365                    31,652\n 売上高合計                              ※1    339,757             ※1    401,633\n売上原価\n 売上高合計                              ※1    339,757             ※1    401,633"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+              "sourceLocator": {
+                "pdf_page": 97
+              },
+              "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    369,980                    336,286\n 不動産事業等売上高                                 31,652                     30,524\n 売上高合計                              ※1    401,633             ※1     366,811\n売上原価\n 売上高合計                              ※1    401,633             ※1     366,811"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+              "sourceLocator": {
+                "pdf_page": 99
+              },
+              "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                     336,286                   367,774\n 不動産事業等売上高                                  30,524                    28,255\n 売上高合計                              ※1     366,811            ※1     396,030\n売上原価\n 売上高合計                              ※1     366,811            ※1     396,030"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表・1株当たり情報への影響額なし（47〜48頁）。",
+            "2016年度：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響軽微。売上高の影響額の確認へ転用しない。",
+            "2015〜2025年度の売上高は連結損益計算書の売上高合計を使用。完成工事高と不動産事業等売上高を含む合計であり、完成工事高だけと同一視しない。表示済み内訳を再合算して報告合計欄を置き換えない。",
+            "2021年度：収益認識基準適用で完成工事高・完成工事原価がそれぞれ24百万円増加、期首利益剰余金への影響なし（74頁）。報告額を保持し、24百万円を利益増加へ転用せず前年も補正しない。時価算定基準の連結財務諸表への影響なし。",
+            "2022年度：時価算定指針適用による連結財務諸表への影響軽微。影響ゼロと扱わない。",
+            "2024年度：法人税等基準の当年度と前年度遡及適用について連結財務諸表への影響なしという当該注記の範囲で保持。",
+            "2025年度：扇コンサルタンツを取得して連結追加、Hanoi PH Investmentを重要性がなくなったため除外。子会社15社のままでも前年と同じ構成ではない。",
+            "連結子会社数7/9/9/9/11/10/11/15/15/15/15社。各年度の範囲を保持し、固定した連結範囲への調整をしない。",
+            "新規2項目は年別区分。既存営業利益の複数年度計算許可を継承せず、会社間同等性・自動合算を許可しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 308826,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "61d9173777e96dd1c68ad4c979c9338ba7ea161949a3421a2edfb4a54c0e9790",
+              "evidenceId": "c235606d777b6e251b55e556f9b8688034578175e1d5ac44a6b04733f02c645e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007ZJD",
+                "documentTitle": "西松建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "documentVersionSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "pdfPage": 39,
+                "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n  売上高合計                                  342,989                  308,826",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    480.4,
+                    161.86151,
+                    511.9,
+                    170.85251
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし（47〜48頁）。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    7社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n     なお、新規設立に伴い、ラオ西松建設㈱を連結子会社に含めております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "308,826",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 315228,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "a5c30a4eb029165d83ad57c6d4b656737d5f6a7e22793385da26e875a54ff591",
+              "evidenceId": "8c5742d128c7417543dd92bd93ffedbe4e3c258002f21f9249489cf30fcc0782",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AISE",
+                "documentTitle": "西松建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "documentVersionSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n  売上高合計                                   308,826                 315,228",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    480.4,
+                    159.884621,
+                    511.9,
+                    168.875621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響は軽微。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 104,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      ㈲吉富商事は株式を取得したため、西松ベトナム㈲は新規設立のため、当連結会計年度から連結の範囲に含め\n     ております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "315,228",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 284412,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7ec2b3501e8ad7650e46f4047ae4644ca77caef1030975d091e3e49cd7285b4d",
+              "evidenceId": "713d2fc448d9db7fe43f5acc7a337438772dfdef79b982d55c482134142aebc7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D94R",
+                "documentTitle": "西松建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "documentVersionSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "pdfPage": 45,
+                "sourceQuote": "                                                                   EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n  売上高合計                                  315,228               284,412",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    480.9,
+                    158.134621,
+                    512.4,
+                    167.125621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "284,412",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 349318,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "15f83bec4e37253bbb64df301b2eea3291d26a6a0f0d568dd33fc09b5c1c03f1",
+              "evidenceId": "f76ee2a6ff6a0440cafe4fec319441baccb545f124eee7edd5a514a9d95cfe8b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G0K4",
+                "documentTitle": "西松建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "documentVersionSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "pdfPage": 54,
+                "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n売上原価\n 売上高合計                                   284,412                 349,318",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    472.45001,
+                    152.361481,
+                    503.95001,
+                    161.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 60,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n       連結子会社名は、「第１    企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       なお、西松リアルエステート・デベロップメント(アジア)社については、新規設立により当連結会計年度よ\n      り連結子会社としております。\n       また、㈱コンケムは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "349,318",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 391621,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "36d1414008abfaf70be28261f36c87c048f4a6c5a07b3b920f5b84f8a54b36c7",
+              "evidenceId": "f330c36b92bfa67a3a36a72a155736f6e9382803377163f69911bef914a3c21f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IUSU",
+                "documentTitle": "西松建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "documentVersionSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "pdfPage": 56,
+                "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n売上原価\n 売上高合計                                    349,318                391,621",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    472.45001,
+                    152.361481,
+                    503.95001,
+                    161.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、合同会社三軒茶屋壱号は、当社が匿名組合出資を行ったことにより子会社となったため、当連結会計年\n     度より連結の範囲に含めております。\n      また、ハノイPHインベストメント社は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "391,621",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 336241,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ca16c5e5d3923047a701d9b749214c0099f1c41156d0fd1f6f2105e38e20c5b5",
+              "evidenceId": "cca20fe32321d1969827630a7cd2632e4895dc43d54387fc719fd186256cfd91",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LR42",
+                "documentTitle": "西松建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "documentVersionSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "pdfPage": 64,
+                "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n売上原価\n 売上高合計                                    391,621                   336,241",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "value_bbox": [
+                    472.45001,
+                    152.361481,
+                    503.95001,
+                    161.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社10社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 129,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    10社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、西松投資有限公司は、重要性がなくなったため、当連結会計年度より連結の範囲から除外しておりま\n     す。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "336,241",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 323754,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "bc5118182797f36be60bbe9553cdfbfa6e113bc4a9c526ce993f24ac4a6aa09c",
+              "evidenceId": "9b7052b777cfa73897a540eec7462031285249d86095522c7dfe605697fc0299",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OG1J",
+                "documentTitle": "西松建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "documentVersionSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "pdfPage": 63,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n売上原価\n 売上高合計                                     336,241          ※1     323,754",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "value_bbox": [
+                    472.45001,
+                    150.970451,
+                    503.95001,
+                    159.961451
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：収益認識基準を適用。完成工事高・完成工事原価はそれぞれ24百万円増加、期首利益剰余金への影響なし。前年の利益を新基準に遡及修正するものではない。時価算定基準等の適用による連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 132,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       バンコクサトーンホテルマネジメント社は、新規設立に伴い、当連結会計年度より連結子会社となりまし\n      た。また、西松アセットマネジメント㈱は、2021年10月１日の株式取得に伴い当連結会計年度より連結子会社\n      となりました。\n       なお、㈱西松ビルサービスは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "323,754",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 339757,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "af2a634891bc6ff2ca97ec41a2d2c844ba3f8488dcf6c6c0933018f1e8ba26b7",
+              "evidenceId": "d422560afb43c3f0df9d33f273332146a642dc2cf9207ad2134bcecc5328955a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R536",
+                "documentTitle": "西松建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "documentVersionSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "pdfPage": 80,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2021年４月１日               (自 2022年４月１日\n                           至 2022年３月31日)              至 2023年３月31日)\n売上高\n 完成工事高                                     304,193                304,392\n 不動産事業等売上高                                  19,560                 35,365\n 売上高合計                              ※1     323,754          ※1    339,757\n売上原価\n 売上高合計                              ※1     323,754          ※1    339,757",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 80,
+                  "value_bbox": [
+                    472.45001,
+                    150.970451,
+                    503.95001,
+                    159.961451
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 150,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 87,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       ㈱西松ホテルマネジメントは、重要性が高まったため、当連結会計年度より連結の範囲に含めております。\n      また、山陽小野田グリーンエナジー㈱、西松リアルエステート・デベロップメント（USA）社及び西松リアルエ\n      ステート・デベロップメント（タイランド）社は、新規設立に伴い、当連結会計年度より連結の範囲に含めて\n      おります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "339,757",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 401633,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cfbc93799f2d88aa73ca24728af271543e8a7bfae96a09f8abb05a4fb3441268",
+              "evidenceId": "5d3dfdaf160413e277056b2b6758d49c9e0f28ff194a0fa96a4dafa1e57722a8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TRPW",
+                "documentTitle": "西松建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "documentVersionSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "pdfPage": 82,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    304,392                   369,980\n 不動産事業等売上高                                 35,365                    31,652\n 売上高合計                              ※1    339,757             ※1    401,633\n売上原価\n 売上高合計                              ※1    339,757             ※1    401,633",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 82,
+                  "value_bbox": [
+                    472.45001,
+                    150.970451,
+                    503.95001,
+                    159.961451
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 151,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 89,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       西松台灣投資股份有限公司は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。また、\n      株式会社サイテックファームは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "401,633",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 366811,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "00a2ce52dd2e46eef4f45c93ba6341dff32aa3ca0f670647761afd46cdf4014f",
+              "evidenceId": "d80909c4a34257f708d2c23e1e03714e5bf43ed09419c88d2f4b77f418f5bf6e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4Y9",
+                "documentTitle": "西松建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "documentVersionSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "pdfPage": 97,
+                "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    369,980                    336,286\n 不動産事業等売上高                                 31,652                     30,524\n 売上高合計                              ※1    401,633             ※1     366,811\n売上原価\n 売上高合計                              ※1    401,633             ※1     366,811",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 97,
+                  "value_bbox": [
+                    472.45001,
+                    150.970451,
+                    503.95001,
+                    159.961451
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 165,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 104,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況    ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "366,811",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 396030,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7d7a99b402e716bfb7f5ca221a108957df6cb8fc0bfa918cfea1d24d56949dfe",
+              "evidenceId": "b0f95214cd4bdaf37c7e3bbf2db8fb110dd91ce0b3ca8f14da3cd652c9715ad9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YEDU",
+                "documentTitle": "西松建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "documentVersionSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "pdfPage": 99,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                     336,286                   367,774\n 不動産事業等売上高                                  30,524                    28,255\n 売上高合計                              ※1     366,811            ※1     396,030\n売上原価\n 売上高合計                              ※1     366,811            ※1     396,030",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 99,
+                  "value_bbox": [
+                    472.45001,
+                    150.970451,
+                    503.95001,
+                    159.961451
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：扇コンサルタンツを株式取得により連結範囲に追加。Hanoi PH Investmentは重要性がなくなったため除外。連結子会社数15社でも前年と同一の構成とはみなさない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 163,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 106,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                西松建設株式会社(E00060)\n                                                                     有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況     ４ 関係会社の状況」に記載しているため省略しております。\n       扇コンサルタンツ株式会社は、株式取得に伴い、当連結会計年度より連結の範囲に含めております。また、\n      Hanoi PH Investment Pte. Ltd.は、重要性がなくなったため、当連結会計年度より連結の範囲から除外してお\n      ります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称      嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "396,030",
+                  "disclosedLabel": "売上高合計",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": false
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked",
+          "accountingStandard": "JGAAP"
+        },
+        "snapshotHash": "54672117cd83337703d309e77c46cfb059809584f55b50a5df887d0412845e8e"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "NISHIMATSU:ordinary_income_consolidated@FY2015_FY2025_NISHIMATSU_PL_BATCH",
+          "companyId": "NISHIMATSU",
+          "metricId": "ordinary_income_consolidated",
+          "label": "西松建設 / 経常利益（連結）",
+          "metricLabelAsDisclosed": "経常利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "NISHIMATSU_ORDINARY_INCOME_CONSOLIDATED_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_NISHIMATSU_PL_BATCH",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+              "sourceLocator": {
+                "pdf_page": 39
+              },
+              "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n経常利益                                          9,938                16,290"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n経常利益                                       16,290                  25,446"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "                                                                   EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n経常利益                                      25,446                23,548"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+              "sourceLocator": {
+                "pdf_page": 54
+              },
+              "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n売上原価\n経常利益                                      23,548                  25,985"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n売上原価\n経常利益                                       25,985                 25,838"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n売上原価\n経常利益                                       25,838                    21,561"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+              "sourceLocator": {
+                "pdf_page": 63
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n売上原価\n経常利益                                        21,561                  23,497"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+              "sourceLocator": {
+                "pdf_page": 80
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2021年４月１日               (自 2022年４月１日\n                           至 2022年３月31日)              至 2023年３月31日)\n売上高\n 完成工事高                                     304,193                304,392\n 不動産事業等売上高                                  19,560                 35,365\n 売上高合計                              ※1     323,754          ※1    339,757\n売上原価\n経常利益                                        23,497                 13,176"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+              "sourceLocator": {
+                "pdf_page": 82
+              },
+              "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    304,392                   369,980\n 不動産事業等売上高                                 35,365                    31,652\n 売上高合計                              ※1    339,757             ※1    401,633\n売上原価\n経常利益                                       13,176                    19,578"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+              "sourceLocator": {
+                "pdf_page": 97
+              },
+              "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    369,980                    336,286\n 不動産事業等売上高                                 31,652                     30,524\n 売上高合計                              ※1    401,633             ※1     366,811\n売上原価\n経常利益                                       19,578                     20,225"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+              "sourceLocator": {
+                "pdf_page": 99
+              },
+              "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                     336,286                   367,774\n 不動産事業等売上高                                  30,524                    28,255\n 売上高合計                              ※1     366,811            ※1     396,030\n売上原価\n経常利益                                        20,225                    27,384"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表・1株当たり情報への影響額なし（47〜48頁）。",
+            "2016年度：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響軽微。売上高の影響額の確認へ転用しない。",
+            "2015〜2025年度の売上高は連結損益計算書の売上高合計を使用。完成工事高と不動産事業等売上高を含む合計であり、完成工事高だけと同一視しない。表示済み内訳を再合算して報告合計欄を置き換えない。",
+            "2021年度：収益認識基準適用で完成工事高・完成工事原価がそれぞれ24百万円増加、期首利益剰余金への影響なし（74頁）。報告額を保持し、24百万円を利益増加へ転用せず前年も補正しない。時価算定基準の連結財務諸表への影響なし。",
+            "2022年度：時価算定指針適用による連結財務諸表への影響軽微。影響ゼロと扱わない。",
+            "2024年度：法人税等基準の当年度と前年度遡及適用について連結財務諸表への影響なしという当該注記の範囲で保持。",
+            "2025年度：扇コンサルタンツを取得して連結追加、Hanoi PH Investmentを重要性がなくなったため除外。子会社15社のままでも前年と同じ構成ではない。",
+            "連結子会社数7/9/9/9/11/10/11/15/15/15/15社。各年度の範囲を保持し、固定した連結範囲への調整をしない。",
+            "新規2項目は年別区分。既存営業利益の複数年度計算許可を継承せず、会社間同等性・自動合算を許可しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 16290,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "c17c9e6c534771be37ba3dac4cc3cd129dfcee63422bcc7f0217f9d175e7938e",
+              "evidenceId": "3ef0e7a9be33a9769dc69081ef8d4179a58b6c5f7fbd6bc00fde2873665b2765",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007ZJD",
+                "documentTitle": "西松建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "documentVersionSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+                "pdfPage": 39,
+                "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n経常利益                                          9,938                16,290",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    484.9,
+                    485.86151,
+                    511.9,
+                    494.85251
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし（47〜48頁）。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    7社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n     なお、新規設立に伴い、ラオ西松建設㈱を連結子会社に含めております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "16,290",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 25446,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "38a701e60e756fe3babe7ebdee41e788ee6507b2f709024998a28bb70b1d5c2e",
+              "evidenceId": "76d050cbd9006fe25b9e9b790e2696ab134a13f6f45160a1c141ec8a120682f3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AISE",
+                "documentTitle": "西松建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "documentVersionSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n経常利益                                       16,290                  25,446",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    484.9,
+                    454.984621,
+                    511.9,
+                    463.975621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。当年度損益への影響は軽微。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 104,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      ㈲吉富商事は株式を取得したため、西松ベトナム㈲は新規設立のため、当連結会計年度から連結の範囲に含め\n     ております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,446",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 23548,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3960d775a48e60dc4095552b1ec6f3cb32a29d226e29752ff6af6e1828a4fcd8",
+              "evidenceId": "0991010b1473dbf282f472ac2e3f69606d9b1f660ab1d8097006ec32bdd617a6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D94R",
+                "documentTitle": "西松建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "documentVersionSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+                "pdfPage": 45,
+                "sourceQuote": "                                                                   EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n経常利益                                      25,446                23,548",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    485.4,
+                    445.634621,
+                    512.4,
+                    454.625621
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n     連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、㈱ＳＰＣ地球研サービス、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "23,548",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 25985,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "eb765d7d08cd7565bb3df1862da9b0a03d04c5a6c7e2fafa0c92e7af1b2d393f",
+              "evidenceId": "8e7cd52b481db48eb77de8d2e5e39c5053e7228ba60f97ca9fab24d23347ad07",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G0K4",
+                "documentTitle": "西松建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "documentVersionSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+                "pdfPage": 54,
+                "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n売上原価\n経常利益                                      23,548                  25,985",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    476.95001,
+                    452.361481,
+                    503.95001,
+                    461.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 60,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    9社\n       連結子会社名は、「第１    企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       なお、西松リアルエステート・デベロップメント(アジア)社については、新規設立により当連結会計年度よ\n      り連結子会社としております。\n       また、㈱コンケムは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,985",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 25838,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "a914620ce409020b60502d5e4215684ef2d0b715ff0b70f816a7819edfcc0395",
+              "evidenceId": "54760cf0d6bd7311336572fdb9cd7e4c543311c8b78e4dae91c5282773f3735d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IUSU",
+                "documentTitle": "西松建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "documentVersionSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+                "pdfPage": 56,
+                "sourceQuote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n売上原価\n経常利益                                       25,985                 25,838",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    476.95001,
+                    452.361481,
+                    503.95001,
+                    461.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、合同会社三軒茶屋壱号は、当社が匿名組合出資を行ったことにより子会社となったため、当連結会計年\n     度より連結の範囲に含めております。\n      また、ハノイPHインベストメント社は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,838",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 21561,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ba82b6cfd7a3c446c22c76554c55318a0eaa2e13744c9edebefbea9e8800a600",
+              "evidenceId": "457feab31812e083b420273477a807fcb9cb567e29dcc85e5b5179acf36d806f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LR42",
+                "documentTitle": "西松建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "documentVersionSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+                "pdfPage": 64,
+                "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n売上原価\n経常利益                                       25,838                    21,561",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "value_bbox": [
+                    476.95001,
+                    452.361481,
+                    503.95001,
+                    461.352481
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社10社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 129,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    10社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n      なお、西松投資有限公司は、重要性がなくなったため、当連結会計年度より連結の範囲から除外しておりま\n     す。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "21,561",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 23497,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5878373a4702020892ff939569c3754e6837f714607fcdbc413d8ee9aa8f5fba",
+              "evidenceId": "227cdc74b7ab29a75dd3bbf5e09500abd83dd9ff0558108f81a0b15ee2029fe8",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OG1J",
+                "documentTitle": "西松建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "documentVersionSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+                "pdfPage": 63,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n売上原価\n経常利益                                        21,561                  23,497",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "value_bbox": [
+                    476.95001,
+                    483.761491,
+                    503.95001,
+                    492.752491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：収益認識基準を適用。完成工事高・完成工事原価はそれぞれ24百万円増加、期首利益剰余金への影響なし。前年の利益を新基準に遡及修正するものではない。時価算定基準等の適用による連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 132,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    11社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       バンコクサトーンホテルマネジメント社は、新規設立に伴い、当連結会計年度より連結子会社となりまし\n      た。また、西松アセットマネジメント㈱は、2021年10月１日の株式取得に伴い当連結会計年度より連結子会社\n      となりました。\n       なお、㈱西松ビルサービスは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "23,497",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 13176,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5c76624daad94d3d8f42a2b0646338bda9c09716686a68a8e4906e6511faf7c0",
+              "evidenceId": "baadb93ca683f7f99ff38697f353e925e7ca59104a098a122ddbaed26fb6d62c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R536",
+                "documentTitle": "西松建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "documentVersionSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+                "pdfPage": 80,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2021年４月１日               (自 2022年４月１日\n                           至 2022年３月31日)              至 2023年３月31日)\n売上高\n 完成工事高                                     304,193                304,392\n 不動産事業等売上高                                  19,560                 35,365\n 売上高合計                              ※1     323,754          ※1    339,757\n売上原価\n経常利益                                        23,497                 13,176",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 80,
+                  "value_bbox": [
+                    476.95001,
+                    471.461491,
+                    503.95001,
+                    480.452491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 150,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 87,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       ㈱西松ホテルマネジメントは、重要性が高まったため、当連結会計年度より連結の範囲に含めております。\n      また、山陽小野田グリーンエナジー㈱、西松リアルエステート・デベロップメント（USA）社及び西松リアルエ\n      ステート・デベロップメント（タイランド）社は、新規設立に伴い、当連結会計年度より連結の範囲に含めて\n      おります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "13,176",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 19578,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ab5544a0e150088078ce51b9c35e83be1fa02ada9ec4ff1118eb5e6d12ee79a2",
+              "evidenceId": "d0e3148dd88fac302d328dc109f170853efbea6b280b36f07d92ef3957f00582",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TRPW",
+                "documentTitle": "西松建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "documentVersionSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+                "pdfPage": 82,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    304,392                   369,980\n 不動産事業等売上高                                 35,365                    31,652\n 売上高合計                              ※1    339,757             ※1    401,633\n売上原価\n経常利益                                       13,176                    19,578",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 82,
+                  "value_bbox": [
+                    476.95001,
+                    459.161491,
+                    503.95001,
+                    468.152491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 151,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 89,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況   ４ 関係会社の状況」に記載しているため省略しております。\n       西松台灣投資股份有限公司は、新規設立に伴い、当連結会計年度より連結の範囲に含めております。また、\n      株式会社サイテックファームは、重要性がなくなったため、当連結会計年度より連結の範囲から除外しており\n      ます。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称    嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "19,578",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 20225,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "102a83e63d06646e09a3089adae19e78c9a51813d5ac6a58c9ea88baf7aca39b",
+              "evidenceId": "b14c4bd7ec5bdcbe6931c8dec9239024211175183b60d41a558bc78b4cda59c5",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4Y9",
+                "documentTitle": "西松建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "documentVersionSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+                "pdfPage": 97,
+                "sourceQuote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    369,980                    336,286\n 不動産事業等売上高                                 31,652                     30,524\n 売上高合計                              ※1    401,633             ※1     366,811\n売上原価\n経常利益                                       19,578                     20,225",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 97,
+                  "value_bbox": [
+                    476.95001,
+                    459.161491,
+                    503.95001,
+                    468.152491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 165,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 104,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況    ４ 関係会社の状況」に記載しているため省略しております。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称     嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "20,225",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 27384,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "205b8811fe7fdc50d8b48b32edd93924cd585c615654a75d54a73873a464b54f",
+              "evidenceId": "0d6a91dfc1be23af302ff1f224da7b55f68cfcd21aa88c0ebf4c8a3e5a4b87bc",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YEDU",
+                "documentTitle": "西松建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "documentVersionSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+                "pdfPage": 99,
+                "sourceQuote": "                                                                              EDINET提出書類\n                                                                          西松建設株式会社(E00060)\n                                                                               有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                     336,286                   367,774\n 不動産事業等売上高                                  30,524                    28,255\n 売上高合計                              ※1     366,811            ※1     396,030\n売上原価\n経常利益                                        20,225                    27,384",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 99,
+                  "value_bbox": [
+                    476.95001,
+                    446.861491,
+                    503.95001,
+                    455.852491
+                  ]
+                },
+                "comparisonVerificationId": "nishimatsu-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：扇コンサルタンツを株式取得により連結範囲に追加。Hanoi PH Investmentは重要性がなくなったため除外。連結子会社数15社でも前年と同一の構成とはみなさない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 163,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 106,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                西松建設株式会社(E00060)\n                                                                     有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数    15社\n      連結子会社名は、「第１     企業の概況     ４ 関係会社の状況」に記載しているため省略しております。\n       扇コンサルタンツ株式会社は、株式取得に伴い、当連結会計年度より連結の範囲に含めております。また、\n      Hanoi PH Investment Pte. Ltd.は、重要性がなくなったため、当連結会計年度より連結の範囲から除外してお\n      ります。\n\n\n (2) 主要な非連結子会社名等\n      主要な非連結子会社の名称      嶋静商事㈱、新浦安駅前ＰＦＩ㈱\n      連結の範囲から除いた理由\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しております。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "27,384",
+                  "disclosedLabel": "経常利益",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": false
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked",
+          "accountingStandard": "JGAAP"
+        },
+        "snapshotHash": "b3e6626d484d77684910956d1485382820831d374f8ff641ce023853e5950a39"
       }
     ],
     "mappings": [
@@ -19754,6 +21476,50 @@
         "companyId": "KUMAGAI",
         "legacyMetricId": "ordinary_income_consolidated",
         "reviewedSeriesId": "KUMAGAI:ordinary_income_consolidated@FY2015_FY2025_KUMAGAI_PL_BATCH",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "NISHIMATSU",
+        "legacyMetricId": "net_sales_consolidated",
+        "reviewedSeriesId": "NISHIMATSU:net_sales_consolidated@FY2015_FY2025_NISHIMATSU_PL_BATCH",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "NISHIMATSU",
+        "legacyMetricId": "ordinary_income_consolidated",
+        "reviewedSeriesId": "NISHIMATSU:ordinary_income_consolidated@FY2015_FY2025_NISHIMATSU_PL_BATCH",
         "fiscalYears": [
           2015,
           2016,
@@ -23275,5 +25041,5 @@
       }
     ]
   },
-  "snapshotHash": "368c866c49178a20005ba1885af50ad16f5eff9d2bce59f7705dffe4d9bcd6b7"
+  "snapshotHash": "637c5b3f1370b60c69c7f98be047bdc87de8e59d2721205aee097850f4c0439f"
 }
