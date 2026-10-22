@@ -8256,6 +8256,738 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "170768cef296a7c36c910283cbf178653766c5ac009f256bf92af5ec5c319257"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "TOKYU:operating_income_consolidated@FY2015_FY2025_TOKYU_OPERATING",
+          "companyId": "TOKYU",
+          "metricId": "operating_income_consolidated",
+          "label": "東急建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "TOKYU_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_TOKYU_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "efdeb86360f733d952742d0e9dd232cfe74ff654528c75460cc822b9ffb22b9e",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "企業結合基準等を将来に適用。連結財務諸表・1株当たり情報への影響額なし。"
+            },
+            {
+              "id": "g2016_2018",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "546c5071c8d9acb688b9108b3acbd74d3d48d0138a0535dc6a4a4016fe16e03b",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "2016年4月以後取得の建物附属設備・構築物を定率法から定額法へ変更。損益影響は軽微。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "dc4b5f1c4fc01bb866aea149afb6f76264e0e7acde7bde1a812fb3cce3be8140",
+              "sourceLocator": {
+                "pdf_page": 54
+              },
+              "sourceQuote": "GOLDEN TOKYU CONSTRUCTIONの決算日を3月31日から9月30日へ変更。連結決算日現在の仮決算を使用し、親会社通期を変更・年率換算しない。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cbce13cd7d39c251610b429142f4336f36df3c1df9be6cd1b3dc58688314993e",
+              "sourceLocator": {
+                "pdf_page": 58
+              },
+              "sourceQuote": "INDOCHINE ENGINEERINGと子会社2社、川村積算を追加し連結子会社10社へ。川村積算はみなし取得日が年度末で当年度は貸借対照表のみ連結（58頁）。同社の利益を当年度へ推計加算しない。各社の決算期・仮決算は59頁。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "62fdccdacfd48ade31cf7957c43e3a76844608780b511a528cf216f0750696c1",
+              "sourceLocator": {
+                "pdf_page": 66
+              },
+              "sourceQuote": "収益認識基準を適用。売上高・売上原価は各64百万円減少、営業損失及び期首利益剰余金への影響なし（66頁）。営業損失△6,078百万円を保持し、64百万円を利益に加減しない。時価算定基準の適用による影響なし（67頁）。TC PACIFIC及び投資事業組合を追加し12社、GOLDEN TOKYUとプランタールファームの決算日変更も保持（61〜62頁）。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "3aedec6bc338947a193f955220fbc1656e2d2dcd7636696518f24d33d346a119",
+              "sourceLocator": {
+                "pdf_page": 70
+              },
+              "sourceQuote": "時価算定適用指針を将来に適用。連結財務諸表への影響なし（70頁）。プランタールファームの全株式譲渡で連結子会社11社へ（66頁）。非連結2社の清算と混同しない。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d859f94e7079c81e84569d2d177b39e68f0995fec0854460061584f6243a9cb4",
+              "sourceLocator": {
+                "pdf_page": 68
+              },
+              "sourceQuote": "INDOCHINE ENGINEERINGと子会社2社の決算日を6月30日から12月31日へ変更。連結決算日との差の重要な取引を調整。子会社名JSCからLLCへの変更を保持し、一定の決算期間へ無検証に補正しない。"
+            },
+            {
+              "id": "g2024_2025",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "8429788b63a4c4b8de36926937d7766de200cf472235ed52f18945542160da8e",
+              "sourceLocator": {
+                "pdf_page": 75
+              },
+              "sourceQuote": "法人税等基準を適用、前年への遡及適用を含め連結財務諸表への影響なし。連結子会社11社、海外5社の12月31日決算と重要取引調整を保持。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準等を将来に適用。連結財務諸表・1株当たり情報への影響額なし。",
+            "2016年度：2016年4月以後取得の建物附属設備・構築物を定率法から定額法へ変更。損益影響は軽微。",
+            "2018年度：リッチフィールド美浦はプランタールファームへ商号変更。新規子会社の追加とはみなさず、連結子会社6社を保持。",
+            "2019年度：GOLDEN TOKYU CONSTRUCTIONの決算日を3月31日から9月30日へ変更。連結決算日現在の仮決算を使用し、親会社通期を変更・年率換算しない。",
+            "2020年度：INDOCHINE ENGINEERINGと子会社2社、川村積算を追加し連結子会社10社へ。川村積算はみなし取得日が年度末で当年度は貸借対照表のみ連結（58頁）。同社の利益を当年度へ推計加算しない。各社の決算期・仮決算は59頁。",
+            "2021年度：収益認識基準を適用。売上高・売上原価は各64百万円減少、営業損失及び期首利益剰余金への影響なし（66頁）。営業損失△6,078百万円を保持し、64百万円を利益に加減しない。時価算定基準の適用による影響なし（67頁）。TC PACIFIC及び投資事業組合を追加し12社、GOLDEN TOKYUとプランタールファームの決算日変更も保持（61〜62頁）。",
+            "2022年度：時価算定適用指針を将来に適用。連結財務諸表への影響なし（70頁）。プランタールファームの全株式譲渡で連結子会社11社へ（66頁）。非連結2社の清算と混同しない。",
+            "2023年度：INDOCHINE ENGINEERINGと子会社2社の決算日を6月30日から12月31日へ変更。連結決算日との差の重要な取引を調整。子会社名JSCからLLCへの変更を保持し、一定の決算期間へ無検証に補正しない。",
+            "2024年度：法人税等基準を適用、前年への遡及適用を含め連結財務諸表への影響なし。連結子会社11社、海外5社の12月31日決算と重要取引調整を保持。",
+            "連結子会社数は6/6/6/6/6/10/12/11/11/11/11社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 18178,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3411745cbe3d183f52aae65f11e15bbc18522cfafb70e19a3952e13f59ddefd5",
+              "evidenceId": "8f939ac644c806d38799e49f7d9c2f7fc634ea097d30ea0695695e480842bee9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007X84",
+                "documentTitle": "東急建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "efdeb86360f733d952742d0e9dd232cfe74ff654528c75460cc822b9ffb22b9e",
+                "documentVersionSha256": "efdeb86360f733d952742d0e9dd232cfe74ff654528c75460cc822b9ffb22b9e",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 平成26年４月１日            (自 平成27年４月１日\n                           至 平成27年３月31日)           至 平成28年３月31日)\n売上高\n  完成工事高                                260,454                294,063\n  不動産事業等売上高                              2,360                  2,329\n  売上高合計                                262,815                296,393\n営業利益                                     6,009                 18,178",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    484.9,
+                    303.36151,
+                    511.9,
+                    312.35251
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準等を将来に適用。連結財務諸表・1株当たり情報への影響額なし。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 88,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  東急建設株式会社(E00316)\n                                                                       有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       6社\n     連結子会社名は次のとおり。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      株式会社リッチフィールド美浦\n      大阪消防ＰＦＩ株式会社\n (2) 非連結子会社数        3社\n     非連結子会社名は次のとおり。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      RAY WILSON CO.\n      なお、上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n     余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いて\n     いる。",
+                "subsidiaryFiscalPeriodPage": 48,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日である。連結財務諸表の作成にあ\n    たっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調\n    整を行っている。\n     また、株式会社リッチフィールド美浦の決算日は６月30日である。連結財務諸表の作成にあたっては、連結決算\n    日現在で実施した仮決算に基づく財務諸表を使用している。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致している。\n\n\n\n\n                                                   48/90"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 17211,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8b6d40cc4deb00904828598a0805523bc9ea384e7faef46fdfd6d19dc352ee15",
+              "evidenceId": "d3a89c6bfe90b38a6585e281d4653c3300b2a539be6a9e119d58a1f99617b7a6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AOF5",
+                "documentTitle": "東急建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "546c5071c8d9acb688b9108b3acbd74d3d48d0138a0535dc6a4a4016fe16e03b",
+                "documentVersionSha256": "546c5071c8d9acb688b9108b3acbd74d3d48d0138a0535dc6a4a4016fe16e03b",
+                "pdfPage": 45,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                          (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 平成27年４月１日              (自 平成28年４月１日\n                           至 平成28年３月31日)             至 平成29年３月31日)\n売上高\n  完成工事高                                294,063                  237,749\n  不動産事業等売上高                              2,329                    5,869\n  売上高合計                                296,393                  243,618\n営業利益                                    18,178                   17,211",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2016年4月以後取得の建物附属設備・構築物を定率法から定額法へ変更。損益影響は軽微。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 90,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  東急建設株式会社(E00316)\n                                                                       有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       6社\n     連結子会社名は次のとおり。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      株式会社リッチフィールド美浦\n      大阪消防ＰＦＩ株式会社\n (2) 非連結子会社数        3社\n     非連結子会社名は次のとおり。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      RAY WILSON CO.\n      なお、上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n     余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いて\n     いる。",
+                "subsidiaryFiscalPeriodPage": 50,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日である。連結財務諸表の作成にあ\n    たっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調\n    整を行っている。\n     また、株式会社リッチフィールド美浦の決算日は６月30日である。連結財務諸表の作成にあたっては、連結決算\n    日現在で実施した仮決算に基づく財務諸表を使用している。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致している。\n\n\n\n\n                                                   50/92"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 21416,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d6048d02a07a78666e958e8071d84a5356c615464ff90ef7df72d44b9752be28",
+              "evidenceId": "1f96376171e388a8a9fa33114aad88d754b35453e076a64c9d53cc8cdec3b085",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DGD7",
+                "documentTitle": "東急建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "aca699a007ccfcccbc94293d0cc7253c6b63d1473e80e4c6571f445a922659fc",
+                "documentVersionSha256": "aca699a007ccfcccbc94293d0cc7253c6b63d1473e80e4c6571f445a922659fc",
+                "pdfPage": 45,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 平成28年４月１日            (自 平成29年４月１日\n                           至 平成29年３月31日)           至 平成30年３月31日)\n売上高\n  完成工事高                                237,749                318,707\n  不動産事業等売上高                              5,869                  2,003\n  売上高合計                                243,618                320,711\n営業利益                                    17,211                 21,416",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 90,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  東急建設株式会社(E00316)\n                                                                       有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       6社\n     連結子会社名は次のとおり。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      株式会社リッチフィールド美浦\n      大阪消防ＰＦＩ株式会社\n (2) 非連結子会社数        2社\n     非連結子会社名は次のとおり。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      なお、前連結会計年度まで非連結子会社であったRAY WILSON CO.は清算結了している。\n      上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n     （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いてい\n     る。",
+                "subsidiaryFiscalPeriodPage": 50,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日である。連結財務諸表の作成にあ\n    たっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調\n    整を行っている。\n     また、株式会社リッチフィールド美浦の決算日は６月30日である。連結財務諸表の作成にあたっては、連結決算\n    日現在で実施した仮決算に基づく財務諸表を使用している。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致している。\n\n\n\n\n                                                   50/92"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 21987,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "96b5916c270ea314a388f99c86a95d46d5accc1749e96f7b33d342140028e26a",
+              "evidenceId": "783f639c467b51e622f0496f31595494d18e6c469faa23ab2137fd7ff19bed9a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G8IC",
+                "documentTitle": "東急建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4b1c2b5c151185154694d4345a619a80e3bff91ec1e49a9e2b6e23b8a7410920",
+                "documentVersionSha256": "4b1c2b5c151185154694d4345a619a80e3bff91ec1e49a9e2b6e23b8a7410920",
+                "pdfPage": 48,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                          (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2017年４月１日             (自 2018年４月１日\n                           至 2018年３月31日)            至 2019年３月31日)\n売上高\n 完成工事高                                  318,707                329,548\n 不動産事業等売上高                                2,003                  1,888\n 売上高合計                                  320,711                331,437\n営業利益                                     21,416                 21,987",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 48,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "リッチフィールド美浦はプランタールファームへ商号変更。新規子会社の追加とはみなさず、連結子会社6社を保持。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 53,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                   東急建設株式会社(E00316)\n                                                                        有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       6社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      株式会社プランタールファーム\n      大阪消防ＰＦＩ株式会社\n      なお、株式会社リッチフィールド美浦は当連結会計年度において株式会社プランタールファームに商号変更\n     しております。\n (2) 非連結子会社数        2社\n     非連結子会社名は次のとおりであります。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n     （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いており\n     ます。",
+                "subsidiaryFiscalPeriodPage": 53,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日であります。連結財務諸表の作成に\n    あたっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な\n    調整を行っております。\n     また、株式会社プランタールファームの決算日は６月30日であります。連結財務諸表の作成にあたっては、連結\n    決算日現在で実施した仮決算に基づく財務諸表を使用しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。\n\n\n\n\n                                                   53/96"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 20315,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "718c63114ec44aa7b918a30dca9a7cd65ed3cdd48bd045c0e5119c4bec1c6c6a",
+              "evidenceId": "884f0534167f6e3ca6011f4b546bae7c7790600d5b9953b2fae6d87997947a99",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IYOC",
+                "documentTitle": "東急建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "dc4b5f1c4fc01bb866aea149afb6f76264e0e7acde7bde1a812fb3cce3be8140",
+                "documentVersionSha256": "dc4b5f1c4fc01bb866aea149afb6f76264e0e7acde7bde1a812fb3cce3be8140",
+                "pdfPage": 49,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                          (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n売上高\n 完成工事高                                   329,548               320,083\n 不動産事業等売上高                                 1,888                 2,086\n 売上高合計                                   331,437               322,170\n営業利益                                      21,987                20,315",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 49,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "GOLDEN TOKYU CONSTRUCTIONの決算日を3月31日から9月30日へ変更。連結決算日現在の仮決算を使用し、親会社通期を変更・年率換算しない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 97,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                    東急建設株式会社(E00316)\n                                                                         有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       6社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      株式会社プランタールファーム\n      大阪消防ＰＦＩ株式会社\n (2) 非連結子会社数        2社\n     非連結子会社名は次のとおりであります。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n     （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いており\n     ます。",
+                "subsidiaryFiscalPeriodPage": 54,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日であります。連結財務諸表の作成に\n    あたっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な\n    調整を行っております。\n     また、株式会社プランタールファームの決算日は６月30日、GOLDEN TOKYU CONSTRUCTION CO., LTD.の決算日は９\n    月30日であります。連結財務諸表の作成にあたっては、連結決算日現在で実施した仮決算に基づく財務諸表を使用\n    しております。なお、GOLDEN TOKYU CONSTRUCTION CO., LTD.は当連結会計年度において、決算日を３月31日から９\n    月30日に変更しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。\n\n\n\n\n                                                   54/101"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 3549,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ddd5d59816fd060e73d5789b62938a1639962df2a0b05c7049974d5242863442",
+              "evidenceId": "b22ddc6f77113e746c3bb622e077a1c719648b18a8eaaee63f7adbe40aa4820a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LOJH",
+                "documentTitle": "東急建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cbce13cd7d39c251610b429142f4336f36df3c1df9be6cd1b3dc58688314993e",
+                "documentVersionSha256": "cbce13cd7d39c251610b429142f4336f36df3c1df9be6cd1b3dc58688314993e",
+                "pdfPage": 52,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                          (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2019年４月１日             (自 2020年４月１日\n                           至 2020年３月31日)            至 2021年３月31日)\n売上高\n 完成工事高                                   320,083               229,016\n 不動産事業等売上高                                 2,086                 2,467\n 売上高合計                                   322,170               231,483\n営業利益                                      20,315                 3,549",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 52,
+                  "value_bbox": [
+                    481.45001,
+                    297.361481,
+                    503.95001,
+                    306.352481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "INDOCHINE ENGINEERINGと子会社2社、川村積算を追加し連結子会社10社へ。川村積算はみなし取得日が年度末で当年度は貸借対照表のみ連結（58頁）。同社の利益を当年度へ推計加算しない。各社の決算期・仮決算は59頁。",
+                  "連結子会社10社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 104,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 58,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                東急建設株式会社(E00316)\n                                                                     有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       10社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM JSC.\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      株式会社プランタールファーム\n      大阪消防ＰＦＩ株式会社\n      当連結会計年度において、INDOCHINE ENGINEERING LIMITED の全株式を取得したことに伴い同社及びその子会\n     社２社を連結の範囲に含めております。また、株式会社川村積算の全株式を取得したことに伴い連結の範囲に含\n     めております。なお、株式会社川村積算は2021年１月28日に株式を取得しましたが、みなし取得日を当連結会計\n     年度末としているため、当連結会計年度は貸借対照表のみ連結しております。\n (2) 非連結子会社数        2社\n     非連結子会社名は次のとおりであります。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n     （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いており\n     ます。",
+                "subsidiaryFiscalPeriodPage": 59,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIAの決算日は12月31日であります。連結財務諸表の作成に\n    あたっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な\n    調整を行っております。\n     また、株式会社プランタールファーム、INDOCHINE ENGINEERING LIMITED及びその子会社２社の決算日は６月30\n    日、GOLDEN TOKYU CONSTRUCTION CO., LTD.の決算日は９月30日であります。連結財務諸表の作成にあたっては、連\n    結決算日現在で実施した仮決算に基づく財務諸表を使用しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": -6078,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1cb1cb12a336b8cb2b01437786b9e893263bee5c2bed3bdc14466698d04e4afe",
+              "evidenceId": "d5df8246234638be04f5836b606a8730420cda9340fe7686cee53da23bf44a7e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OFLQ",
+                "documentTitle": "東急建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "62fdccdacfd48ade31cf7957c43e3a76844608780b511a528cf216f0750696c1",
+                "documentVersionSha256": "62fdccdacfd48ade31cf7957c43e3a76844608780b511a528cf216f0750696c1",
+                "pdfPage": 55,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2020年４月１日              (自 2021年４月１日\n                           至 2021年３月31日)             至 2022年３月31日)\n売上高\n 完成工事高                                   229,016          ※１    255,547\n 不動産事業等売上高                                 2,467                     2,536\n 売上高合計                                   231,483                258,083\n営業利益又は営業損失（△）                              3,549                △6,078",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    472.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。売上高・売上原価は各64百万円減少、営業損失及び期首利益剰余金への影響なし（66頁）。営業損失△6,078百万円を保持し、64百万円を利益に加減しない。時価算定基準の適用による影響なし（67頁）。TC PACIFIC及び投資事業組合を追加し12社、GOLDEN TOKYUとプランタールファームの決算日変更も保持（61〜62頁）。",
+                  "連結子会社12社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 113,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  東急建設株式会社(E00316)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       12社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM JSC.\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      TC PACIFIC CONSTRUCTION, LLC\n      株式会社プランタールファーム\n      大阪消防ＰＦＩ株式会社\n      東急建設-ＧＢイノベーション投資事業有限責任組合\n      当連結会計年度において、2020年11月に設立しておりましたTC PACIFIC CONSTRUCTION, LLCに出資したため、\n     連結の範囲に含めております。\n      また、東急建設-ＧＢイノベーション投資事業有限責任組合を設立したことに伴い連結の範囲に含めておりま\n     す。\n (2) 非連結子会社数        2社\n     非連結子会社名は次のとおりであります。\n      さくらんぼ消防ＰＦＩ株式会社\n      株式会社港南台リタイアメントヴィレッジプロジェクト\n      上記の非連結子会社は小規模会社であり、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金\n     （持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため連結の範囲から除いており\n     ます。",
+                "subsidiaryFiscalPeriodPage": 62,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIA、TC PACIFIC CONSTRUCTION, LLCの決算日は12月31日で\n    あります。連結財務諸表の作成にあたっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要\n    な取引については、連結上必要な調整を行っております。\n     また、INDOCHINE ENGINEERING LIMITED及びその子会社２社の決算日は６月30日、株式会社プランタールファーム\n    の決算日は９月30日であります。連結財務諸表の作成にあたっては、連結決算日現在で実施した仮決算に基づく財\n    務諸表を使用しております。\n     なお、当連結会計年度においてGOLDEN TOKYU CONSTRUCTION CO., LTD.は決算日を９月30日から３月31日に、株式\n    会社プランタールファームは決算日を６月30日から９月30日にそれぞれ変更しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 5107,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ac07577f27eafa22f2f9bdbb44fc41ee839d165356835103fd133a9c38292761",
+              "evidenceId": "18481ce76d4686066088ffdae01f9d3f819d356de4666096cad93cbc819d0e78",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R6UJ",
+                "documentTitle": "東急建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "3aedec6bc338947a193f955220fbc1656e2d2dcd7636696518f24d33d346a119",
+                "documentVersionSha256": "3aedec6bc338947a193f955220fbc1656e2d2dcd7636696518f24d33d346a119",
+                "pdfPage": 60,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2021年４月１日                   (自 2022年４月１日\n                           至 2022年３月31日)                  至 2023年３月31日)\n売上高\n 完成工事高                                ※１    255,547            ※１    278,776\n 不動産事業等売上高                                       2,536                10,091\n 売上高合計                                      258,083                  288,867\n営業利益又は営業損失（△）                               △6,078                     5,107",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    481.45001,
+                    297.815221,
+                    503.95001,
+                    306.806221
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定適用指針を将来に適用。連結財務諸表への影響なし（70頁）。プランタールファームの全株式譲渡で連結子会社11社へ（66頁）。非連結2社の清算と混同しない。",
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            東急建設株式会社(E00316)\n                                                                 有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       11社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM JSC.\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      TC PACIFIC CONSTRUCTION, LLC\n      大阪消防ＰＦＩ株式会社\n      東急建設-ＧＢイノベーション投資事業有限責任組合\n      当連結会計年度において、株式会社プランタールファームの全株式を譲渡したことにより、連結の範囲から除\n     外しております。\n (2) 非連結子会社数        該当ありません。\n     前連結会計年度まで非連結子会社であったさくらんぼ消防ＰＦＩ株式会社及び株式会社港南台リタイアメント\n    ヴィレッジプロジェクトは、当連結会計年度において清算を結了しております。",
+                "subsidiaryFiscalPeriodPage": 67,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIA、TC PACIFIC CONSTRUCTION, LLCの決算日は12月31日で\n    あります。連結財務諸表の作成にあたっては、同決算日現在の財務諸表を使用し、連結決算日との間に生じた重要\n    な取引については、連結上必要な調整を行っております。\n     また、INDOCHINE ENGINEERING LIMITED及びその子会社２社の決算日は６月30日であります。連結財務諸表の作成\n    にあたっては、連結決算日現在で実施した仮決算に基づく財務諸表を使用しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 8155,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e56cf342361a59b5f04e89e3dca74f7b639757911a0756f33a9fbdd4186c43e8",
+              "evidenceId": "4394f01270c2c9edcaba3042698a89c4a6cbb494e3d071de9b60be046da613d5",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TUHH",
+                "documentTitle": "東急建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d859f94e7079c81e84569d2d177b39e68f0995fec0854460061584f6243a9cb4",
+                "documentVersionSha256": "d859f94e7079c81e84569d2d177b39e68f0995fec0854460061584f6243a9cb4",
+                "pdfPage": 62,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2022年４月１日                 (自 2023年４月１日\n                           至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                ※１    278,776          ※１    282,488\n 不動産事業等売上高                                   10,091                  3,192\n 売上高合計                                      288,867                285,681\n営業利益                                          5,107                  8,155",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 62,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "INDOCHINE ENGINEERINGと子会社2社の決算日を6月30日から12月31日へ変更。連結決算日との差の重要な取引を調整。子会社名JSCからLLCへの変更を保持し、一定の決算期間へ無検証に補正しない。",
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 120,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 68,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                        東急建設株式会社(E00316)\n                                                                                             有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       11社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM LLC\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      TC PACIFIC CONSTRUCTION, LLC\n      大阪消防ＰＦＩ株式会社\n      東急建設-ＧＢイノベーション投資事業有限責任組合\n      なお、当連結会計年度において、INDOCHINE ENGINEERING VIETNAM JSC.は、INDOCHINE ENGINEERING VIETNAM\n     LLCに商号変更しております。\n (2) 非連結子会社数        該当ありません。",
+                "subsidiaryFiscalPeriodPage": 68,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIA、TC PACIFIC CONSTRUCTION, LLC、INDOCHINE\n    ENGINEERING LIMITED及びその子会社２社の決算日は12月31日であります。連結財務諸表の作成にあたっては、同決\n    算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調整を行っており\n    ます。\n     なお、当連結会計年度において、INDOCHINE ENGINEERING LIMITED及びその子会社２社は決算日を６月30日から12\n    月31日に変更しております。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。\n\n\n\n\n                                                   68/127"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 8839,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "676e8fdd8fd13fa16b810f13a40fbfbcae98f786982f39d62a031ba9d06e842a",
+              "evidenceId": "8f241438c4b048800d926538ada85d1f2bae4013c124da6b10e06ff3cdf9285d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W0EF",
+                "documentTitle": "東急建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "8429788b63a4c4b8de36926937d7766de200cf472235ed52f18945542160da8e",
+                "documentVersionSha256": "8429788b63a4c4b8de36926937d7766de200cf472235ed52f18945542160da8e",
+                "pdfPage": 66,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                ※１    282,488          ※１    288,170\n 不動産事業等売上高                                    3,192                     4,968\n 売上高合計                                      285,681                293,139\n営業利益                                          8,155                     8,839",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 66,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準を適用、前年への遡及適用を含め連結財務諸表への影響なし。連結子会社11社、海外5社の12月31日決算と重要取引調整を保持。",
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 124,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 72,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                        東急建設株式会社(E00316)\n                                                                                             有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       11社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM LLC\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      TC PACIFIC CONSTRUCTION, LLC\n      大阪消防ＰＦＩ株式会社\n      東急建設-ＧＢイノベーション投資事業有限責任組合\n (2) 非連結子会社数        該当ありません。",
+                "subsidiaryFiscalPeriodPage": 72,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIA、TC PACIFIC CONSTRUCTION, LLC、INDOCHINE\n    ENGINEERING LIMITED及びその子会社２社の決算日は12月31日であります。連結財務諸表の作成にあたっては、同決\n    算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調整を行っており\n    ます。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。\n\n\n\n\n                                                   72/131"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 16306,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "303f990f474af72788125443bf97523b7fd982139e50e81fa1991d9420a9b618",
+              "evidenceId": "77930ff329b36b8179c59ef9e6dcdf72ed6a98f41f3d6ad33a8cc3ddf7ffb28a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YFDZ",
+                "documentTitle": "東急建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "55942d51f51af2058a007e3eae67a1e3a89fec618b066fc18fb9ccfd7105fff9",
+                "documentVersionSha256": "55942d51f51af2058a007e3eae67a1e3a89fec618b066fc18fb9ccfd7105fff9",
+                "pdfPage": 73,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2024年４月１日                   (自 2025年４月１日\n                           至 2025年３月31日)                  至 2026年３月31日)\n売上高\n 完成工事高                                ※１    288,170            ※１    333,587\n 不動産事業等売上高                                       4,968                    7,593\n 売上高合計                                      293,139                  341,181\n営業利益                                             8,839                16,306",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "tokyu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社11社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 132,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 79,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                        東急建設株式会社(E00316)\n                                                                                             有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数       11社\n     連結子会社名は次のとおりであります。\n      東建産業株式会社\n      東急リニューアル株式会社\n      PT. TOKYU CONSTRUCTION INDONESIA\n      GOLDEN TOKYU CONSTRUCTION CO., LTD.\n      INDOCHINE ENGINEERING LIMITED\n      INDOCHINE ENGINEERING VIETNAM LLC\n      INDOCHINE ENGINEERING PTY.LIMITED\n      株式会社川村積算\n      TC PACIFIC CONSTRUCTION, LLC\n      大阪消防ＰＦＩ株式会社\n      東急建設-ＧＢイノベーション投資事業有限責任組合\n (2) 非連結子会社数\n      該当ありません。",
+                "subsidiaryFiscalPeriodPage": 79,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、PT. TOKYU CONSTRUCTION INDONESIA、TC PACIFIC CONSTRUCTION, LLC、INDOCHINE\n    ENGINEERING LIMITED及びその子会社２社の決算日は12月31日であります。連結財務諸表の作成にあたっては、同決\n    算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、連結上必要な調整を行っており\n    ます。\n     その他の連結子会社の事業年度の末日は、連結決算日と一致しております。\n\n\n\n\n                                                   79/139"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "695e11b73ee28f5d29c1382084ba1baa1912f4f081b531dfb03fa3ba50342fb0"
       }
     ],
     "mappings": [
@@ -8552,6 +9284,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "TOKYU",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "TOKYU:operating_income_consolidated@FY2015_FY2025_TOKYU_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -8562,5 +9316,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "0f9f14af4c462c8472ebf15665906d63b3ee9afcf32dd21d72a16c8dacd03338"
+  "snapshotHash": "e190d43f9493c85455d648692d5f52d7f4cbc5c22b5ac3af39e43a77e452e4db"
 }
