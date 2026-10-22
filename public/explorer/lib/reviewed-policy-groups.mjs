@@ -1,7 +1,7 @@
 /** A source-checked reported history is displayable across policy changes.
  * Calculations remain limited to one explicitly reviewed accounting interval.
  * This contract is currently scoped to the explicitly reviewed company/metric pairs. */
-const REVIEWED_PL_COMPANIES=["ASANUMA","PENTA","OKUMURA","KUMAGAI","NISHIMATSU","TODA","TOA","TOKYU","HASEKO","TAISEI","SHIMIZU"];
+const REVIEWED_PL_COMPANIES=["ASANUMA","PENTA","OKUMURA","KUMAGAI","NISHIMATSU","TODA","TOA","TOKYU","HASEKO","TAISEI","SHIMIZU","KAJIMA","OBAYASHI","ANDO_HAZAMA"];
 const REVIEWED_PL_METRICS=['net_sales_consolidated','ordinary_income_consolidated'];
 export function validReviewedPolicyGroups(s){
  if(s?.comparisonPolicyMode!=='reported_values_with_reviewed_groups'||!['KAJIMA','OBAYASHI','TAISEI','SHIMIZU','ANDO_HAZAMA','NISHIMATSU','PENTA','OKUMURA','KUMAGAI','TODA','TOA','TOKYU','HASEKO','ASANUMA','KITANO','TAKENAKA','MATSUI','ZENITAKA','INFR','SMCC','MAEDA'].includes(s.companyId)||!(s.metricId==='operating_income_consolidated'||(REVIEWED_PL_COMPANIES.includes(s.companyId)&&REVIEWED_PL_METRICS.includes(s.metricId)))||s.comparisonScope!=='consolidated'||(s.unit!=='百万円'&&!(s.companyId==='SMCC'&&s.unit==='億円'&&s.accountingStandard==='not_stated_in_selected_parent_table'))||s.cycle!=='年度次'||!Array.isArray(s.comparisonPolicyGroups)||!s.comparisonPolicyGroups.length||!Array.isArray(s.points)||!s.points.length)return false;
