@@ -3335,6 +3335,691 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "7c47bf819363d605df66beda74a95d8f1b90192a0f931a5a7392e6123a40735b"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ANDO_HAZAMA:operating_income_consolidated@FY2015_FY2025_ANDO_HAZAMA_OPERATING",
+          "companyId": "ANDO_HAZAMA",
+          "metricId": "operating_income_consolidated",
+          "label": "安藤・間 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ANDO_HAZAMA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_ANDO_HAZAMA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6898755245b394f1aac4b3fcf9f3d53697f18098ace81485859809c9c2e23881",
+              "sourceLocator": {
+                "pdf_page": 74
+              },
+              "sourceQuote": "企業結合会計基準等を適用。連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2016_2019",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "917bffa992d9986e6d6e524ca63d5cd2d2f8f6a00eab3f221000a400a15d40af",
+              "sourceLocator": {
+                "pdf_page": 69
+              },
+              "sourceQuote": "建物附属設備・構築物の減価償却方法を定率法から定額法に変更し、営業利益は20百万円増加。"
+            },
+            {
+              "id": "g2020_2021",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "879d60c16c7631d6e5c0895be388930f57c75b035c8ef752f93361994dde76a9",
+              "sourceLocator": {
+                "pdf_page": 70
+              },
+              "sourceQuote": "2021年度の収益認識基準の遡及適用により、2020年度は修正後27,356百万円を表示。修正前27,357百万円は別出典とともに保持。注記の減少額0百万円と表示額差1百万円は区別し、差引き計算で数値を作らない。2019年度以前へ修正を広げない。"
+            },
+            {
+              "id": "g2022_2023",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0339fc52d33124e89de29d21203c7f8b80ddc229e70f928eaefa21840e56530c",
+              "sourceLocator": {
+                "pdf_page": 85
+              },
+              "sourceQuote": "時価算定の適用指針を適用。連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2024_2025",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "93b15957c0538a1cf7826a957b179764266be671f3d26b4e4a9d64a608e5379f",
+              "sourceLocator": {
+                "pdf_page": 81
+              },
+              "sourceQuote": "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表への影響なし。",
+            "2016年度：建物附属設備・構築物の減価償却方法を定率法から定額法に変更し、営業利益は20百万円増加。",
+            "2020年度：2021年度の収益認識基準の遡及適用により、2020年度は修正後27,356百万円を表示。修正前27,357百万円は別出典とともに保持。注記の減少額0百万円と表示額差1百万円は区別し、差引き計算で数値を作らない。2019年度以前へ修正を広げない。",
+            "2021年度：収益認識基準を適用し、前年連結財務諸表も遡及適用。2020年度の営業利益は前年欄27,356百万円を採用。時価算定基準等の適用による当年度連結財務諸表への影響なし。",
+            "2022年度：時価算定の適用指針を適用。連結財務諸表への影響なし。",
+            "2024年度：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+            "2025年度：QXYリソーシズは株式取得により連結子会社に追加。みなし取得日は2025年12月31日で、当年度は貸借対照表のみ連結。被取得企業の業績を当年度営業利益に加算しない。",
+            "連結子会社数は8/9/6/7/6/6/6/6/6/6/7社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 25456,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3f1b969b5eadcf4ae4f3035f8b440f8089301e76cf3dee6a560748492dae1f08",
+              "evidenceId": "73f237cd879e86cc33063a58942a1e07a8dcde0f9fe758dd510f5aab31f3977e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S10081C6",
+                "documentTitle": "安藤・間 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6898755245b394f1aac4b3fcf9f3d53697f18098ace81485859809c9c2e23881",
+                "documentVersionSha256": "6898755245b394f1aac4b3fcf9f3d53697f18098ace81485859809c9c2e23881",
+                "pdfPage": 65,
+                "sourceQuote": "   ②【連結損益計算書及び連結包括利益計算書】\n【連結損益計算書】\n                                                             (単位：百万円)\n                                前連結会計年度                  当連結会計年度\n                           (自    平成26年４月１日          (自    平成27年４月１日\n                            至    平成27年３月31日)         至    平成28年３月31日)\n売上高\n 完成工事高                                 ※１ 355,068               ※１ 360,869\n\n その他の事業売上高                                 14,634                   18,388\n営業利益                                       18,518                   25,456",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 65,
+                  "value_bbox": [
+                    483.98083,
+                    285.03415,
+                    510.98083,
+                    294.02515
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。連結財務諸表への影響なし。",
+                  "連結子会社8社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 126,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 71,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社安藤・間(E00317)\n                                                        有価証券報告書\n   【注記事項】\n（継続企業の前提に関する事項）\n     該当事項なし。\n\n\n（連結財務諸表作成のための基本となる重要な事項）\n １ 連結の範囲に関する事項\n   (1）連結子会社の数8社（前連結会計年度７社）\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおり。\n       なお、ハザマアンドウムリンダ（インドネシア共和国）は当連結会計年度において新たに設立したことによ\n      り、当連結会計年度から連結子会社に含めている。\n\n\n     (2）主要な非連結子会社名\n        東大インタラクトＰＦＩ株式会社\n         非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益（持分に見合\n        う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ\n        全体としても重要性がないため、連結の範囲から除外している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 37018,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1788550c72b94150aea2c289fdc08168da3c939867ee6913061ddc98afeaeb69",
+              "evidenceId": "053583ab8d535b5b332a40406ed0c0e49382581a21f49a731c4f5bcacafba325",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AQ57",
+                "documentTitle": "安藤・間 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "917bffa992d9986e6d6e524ca63d5cd2d2f8f6a00eab3f221000a400a15d40af",
+                "documentVersionSha256": "917bffa992d9986e6d6e524ca63d5cd2d2f8f6a00eab3f221000a400a15d40af",
+                "pdfPage": 60,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n売上高\n 完成工事高                                ※１ 360,869               ※１ 378,982\n\n その他の事業売上高                                18,388                   29,011\n営業利益                                      25,456                   37,018",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "建物附属設備・構築物の減価償却方法を定率法から定額法に変更し、営業利益は20百万円増加。",
+                  "連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 123,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社安藤・間(E00317)\n                                                        有価証券報告書\n   【注記事項】\n（継続企業の前提に関する事項）\n    該当事項なし。\n\n\n（連結財務諸表作成のための基本となる重要な事項）\n １ 連結の範囲に関する事項\n   (1）連結子会社の数9社（前連結会計年度８社）\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおり。\n       なお、非連結子会社であった株式会社アーバンプランニングは重要性が増したため、当連結会計年度から連\n      結子会社に含めている。\n\n\n     (2）主要な非連結子会社名\n        東大インタラクトＰＦＩ株式会社\n         非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益（持分に見合\n        う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ\n        全体としても重要性がないため、連結の範囲から除外している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 35714,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ffb8f45dc2c7df22e8b35ae34035d8224419457229f61d76de61dcb419ba3417",
+              "evidenceId": "3eae54a38a92ddfe35ddb95df2ae6850b53cb7cffa88cdad2f6bf044a3603633",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DGXQ",
+                "documentTitle": "安藤・間 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6f66b8943ed4bb260739bf54336dadbef1002a2f6485c601d1b0ccc8f4d61dcb",
+                "documentVersionSha256": "6f66b8943ed4bb260739bf54336dadbef1002a2f6485c601d1b0ccc8f4d61dcb",
+                "pdfPage": 59,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n売上高\n 完成工事高                                ※１ 378,982               ※１ 348,878\n\n その他の事業売上高                                29,011                   28,141\n営業利益                                      37,018                   35,714",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 122,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社安藤・間(E00317)\n                                                        有価証券報告書\n   【注記事項】\n（継続企業の前提に関する事項）\n    該当事項なし。\n\n\n（連結財務諸表作成のための基本となる重要な事項）\n １ 連結の範囲に関する事項\n   (1）連結子会社の数6社（前連結会計年度９社）\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおり。\n       なお、連結子会社であったハザマアンドウシンガポール、ハザマアンドウマレーシア及びアンドウマレーシ\n      アは重要性が低下したため、当連結会計年度より連結の範囲から除外している。\n\n\n     (2）主要な非連結子会社名\n        東大インタラクトＰＦＩ株式会社\n         非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益（持分に見合\n        う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ\n        全体としても重要性がないため、連結の範囲から除外している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 23692,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "b1fa770066ef31152483aa8a46ed6c66051a5acd0334dc54d8dfb5b0d9c4929c",
+              "evidenceId": "55f09e17b2a9a502b59293e8c6833d63766feb44b4a027b336f444aacfc603f9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100GADI",
+                "documentTitle": "安藤・間 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4c7db5e10137a073230237da14bf8173c7fdec27b65989621e1ab7e3936f0bd3",
+                "documentVersionSha256": "4c7db5e10137a073230237da14bf8173c7fdec27b65989621e1ab7e3936f0bd3",
+                "pdfPage": 60,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2017年４月１日            (自 2018年４月１日\n                           至 2018年３月31日)           至 2019年３月31日)\n売上高\n 完成工事高                               ※１ 348,878            ※１ 334,244\n\n その他の事業売上高                               28,141                25,726\n営業利益                                     35,714                23,692",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 123,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社安藤・間(E00317)\n                                                        有価証券報告書\n   【注記事項】\n（継続企業の前提に関する事項）\n    該当事項はありません。\n\n\n（連結財務諸表作成のための基本となる重要な事項）\n １ 連結の範囲に関する事項\n   (1）連結子会社の数7社（前連結会計年度６社）\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりです。\n       なお、非連結子会社であったベトナムディベロップメントコンストラクションは重要性が増したため、当連\n      結会計年度から連結子会社に含めています。\n\n\n     (2）主要な非連結子会社名\n        東大インタラクトＰＦＩ株式会社\n         非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益（持分に見合\n        う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ\n        全体としても重要性がないため、連結の範囲から除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 24699,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ad7fcbeaf62e5ba31339a67ab711b1b2e27db770888c2bf5b5920bdb9dfc27ce",
+              "evidenceId": "b129e07a07a3e917e3b557421a8c3cbdb723c1dda9d93d44bce648616ccfae1c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J0XC",
+                "documentTitle": "安藤・間 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "8520cc41dbf9f70eb52b477cb10ff2b0d969b1c438a861abe8dd6aa898c7261a",
+                "documentVersionSha256": "8520cc41dbf9f70eb52b477cb10ff2b0d969b1c438a861abe8dd6aa898c7261a",
+                "pdfPage": 58,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2018年４月１日                 (自 2019年４月１日\n                           至 2019年３月31日)                至 2020年３月31日)\n売上高\n 完成工事高                               ※１     334,244          ※１    358,190\n その他の事業売上高                                   25,726                 19,944\n 売上高合計                                      359,971                378,135\n営業利益                                         23,692                 24,699",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 123,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         株式会社安藤・間(E00317)\n                                                              有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度７社)\n     主要な連結子会社名は、「第１     企業の概況   ４   関係会社の状況」に記載のとおりです。\n        なお、連結子会社であった株式会社アーバンプランニングは重要性が低下したため、当連結会計年度より連結\n     の範囲から除外しています。\n (2) 主要な非連結子会社名\n     東大インタラクトＰＦＩ株式会社\n        非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益(持分に見合う\n     額)及び利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ全体とし\n     ても重要性がないため、連結の範囲から除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 27356,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ea5d842e28bbefe72d21e7900f21045f6f3a24abff00384f824d9fef5c57e554",
+              "evidenceId": "a1d12d5afea2da3be0bd3e0651515d92cc078458f81b015353e16f826cdaf380",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020_2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OK9O",
+                "documentTitle": "安藤・間 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "879d60c16c7631d6e5c0895be388930f57c75b035c8ef752f93361994dde76a9",
+                "documentVersionSha256": "879d60c16c7631d6e5c0895be388930f57c75b035c8ef752f93361994dde76a9",
+                "pdfPage": 59,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2020年４月１日                (自 2021年４月１日\n                           至 2021年３月31日)               至 2022年３月31日)\n売上高\n 完成工事高                                      331,694         ※７    316,153\n その他の事業売上高                                   20,451         ※７     24,139\n 売上高合計                                      352,146               340,293\n営業利益                                         27,356                26,600",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    351.75001,
+                    290.861481,
+                    378.75001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2021年度の収益認識基準の遡及適用により、2020年度は修正後27,356百万円を表示。修正前27,357百万円は別出典とともに保持。注記の減少額0百万円と表示額差1百万円は区別し、差引き計算で数値を作らない。2019年度以前へ修正を広げない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 126,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         株式会社安藤・間(E00317)\n                                                              有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度６社)\n     主要な連結子会社名は、「第１     企業の概況   ４   関係会社の状況」に記載のとおりです。\n (2) 主要な非連結子会社名\n     東大インタラクトＰＦＩ株式会社\n        非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益(持分に見合う\n     額)及び利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ全体とし\n     ても重要性がないため、連結の範囲から除外しています。",
+                "reviewedRestatement": {
+                  "status": "source_reviewed_restatement",
+                  "originalValue": 27357,
+                  "restatedValue": 27356,
+                  "originalSourceFileSha256": "8406755805f05e108aa149adc1c37c921aac784afffb95f9fec7780403afa937",
+                  "originalDocumentId": "S100LUJY",
+                  "originalPdfPage": 61,
+                  "restatementDocumentId": "S100OK9O",
+                  "restatementPdfPage": 70,
+                  "sourceQuote": "EDINET提出書類\n                                                          株式会社安藤・間(E00317)\n                                                               有価証券報告書\n(会計方針の変更)\n（収益認識に関する会計基準等の適用）\n   「収益認識に関する会計基準」（企業会計基準第29号     2020年３月31日。以下「収益認識会計基準」とい\n う。）等を当連結会計年度の期首から適用し、約束した財又はサービスの支配が顧客に移転した時点で、当該財\n 又はサービスと交換に受け取ると見込まれる金額で収益を認識することとしています。これにより、工事契約に\n 関して、従来は、工事の進捗部分について成果の確実性が認められる場合には工事進行基準、その他の工事につ\n いては工事完成基準によっていましたが、財又はサービスに対する支配が顧客に一定の期間にわたり移転する場\n 合には、財又はサービスを顧客に移転する履行義務を充足するにつれて、一定の期間にわたり収益を認識する方\n 法に変更しています。履行義務の充足に係る進捗度の測定は、各報告期間の期末日までに発生した工事原価が、\n 予想される工事原価の合計に占める割合に基づいて行っています。また、履行義務の充足に係る進捗度を合理的\n に見積もることができないが、発生する費用を回収することが見込まれる場合は、原価回収基準にて収益を認識\n しています。なお、契約における取引開始日から完全に履行義務を充足すると見込まれる時点までの期間がごく\n 短い工事契約については代替的な取扱いを適用し、一定の期間にわたり収益を認識せず、完全に履行義務を充足\n した時点で収益を認識しています。当該会計方針の変更は、原則として遡及適用され、前連結会計年度について\n は遡及適用後の連結財務諸表となっています。ただし、収益認識会計基準第85項に定める以下の方法を適用して\n います。\n (1) 前連結会計年度の期首より前までに従前の取扱いに従ってほとんどすべての収益の額を認識した契約につい\n   て、比較情報を遡及的に修正しないこと\n (2) 当連結会計年度の期首より前までに従前の取扱いに従ってほとんどすべての収益の額を認識した契約に含ま\n   れる変動対価の額について、変動対価の額に関する不確実性が解消された時の金額を用いて比較情報を遡及\n   的に修正すること\n   この結果、遡及適用を行う前と比べて、前連結会計年度の連結貸借対照表は、受取手形・完成工事未収入金等\n は70百万円増加し、未成工事支出金は294百万円減少し、未成工事受入金は223百万円減少しています。また、前\n 連結会計年度の期首の純資産に累積的影響額が反映されたことにより、利益剰余金の前期首残高は０百万円増加\n しています。前連結会計年度の連結損益計算書は、売上高は145百万円増加し、売上原価は145百万円増加し、営\n 業利益、経常利益及び税金等調整前当期純利益はそれぞれ０百万円減少しています。\n   前連結会計年度の連結キャッシュ・フロー計算書は、税金等調整前当期純利益は０百万円減少しています。\n   前連結会計年度の期首の純資産に累積的影響額が反映されたことにより、連結株主資本等変動計算書の利益剰\n 余金の期首残高は０百万円増加しています。\n   遡及適用を行う前と比べて、１株当たり当期純利益は、０円00銭減少しています。\n   なお、収益認識会計基準第89-３項に定める経過的な取扱いに従って、前連結会計年度に係る「収益認識関\n 係」の注記は記載していません。",
+                  "note": "2020年度は2021年度資料の遡及適用後27,356百万円を表示。修正前27,357百万円と両資料を保持。資料の影響額0百万円と表示額差1百万円を区別。"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 26600,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "06fd98d8e3a95121ac467166d2e818970553baa6e7c3f23523fc57e36ac12695",
+              "evidenceId": "d51811dfe7bd2e7a36f089571ac9019a7655d1fc3f229a3fe925b3d82be5b8d1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020_2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OK9O",
+                "documentTitle": "安藤・間 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "879d60c16c7631d6e5c0895be388930f57c75b035c8ef752f93361994dde76a9",
+                "documentVersionSha256": "879d60c16c7631d6e5c0895be388930f57c75b035c8ef752f93361994dde76a9",
+                "pdfPage": 59,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2020年４月１日                (自 2021年４月１日\n                           至 2021年３月31日)               至 2022年３月31日)\n売上高\n 完成工事高                                      331,694         ※７    316,153\n その他の事業売上高                                   20,451         ※７     24,139\n 売上高合計                                      352,146               340,293\n営業利益                                         27,356                26,600",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用し、前年連結財務諸表も遡及適用。2020年度の営業利益は前年欄27,356百万円を採用。時価算定基準等の適用による当年度連結財務諸表への影響なし。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 126,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                         株式会社安藤・間(E00317)\n                                                              有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度６社)\n     主要な連結子会社名は、「第１     企業の概況   ４   関係会社の状況」に記載のとおりです。\n (2) 主要な非連結子会社名\n     東大インタラクトＰＦＩ株式会社\n        非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益(持分に見合う\n     額)及び利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ全体とし\n     ても重要性がないため、連結の範囲から除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 19853,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "bb9ba7465785e679c47d5f989ea33b815b5cf9e9825cafc86db005f56425a0b6",
+              "evidenceId": "a845a9fe91c693cb1a895196982e2190b50f9b600cc2e96c88436290f867b4ea",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R8S4",
+                "documentTitle": "安藤・間 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0339fc52d33124e89de29d21203c7f8b80ddc229e70f928eaefa21840e56530c",
+                "documentVersionSha256": "0339fc52d33124e89de29d21203c7f8b80ddc229e70f928eaefa21840e56530c",
+                "pdfPage": 73,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2021年４月１日                (自 2022年４月１日\n                           至 2022年３月31日)               至 2023年３月31日)\n売上高\n 完成工事高                               ※７     316,153         ※７    345,858\n その他の事業売上高                            ※７     24,139         ※７     26,288\n 売上高合計                                      340,293               372,146\n営業利益                                         26,600                19,853",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用。連結財務諸表への影響なし。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 140,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 80,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     株式会社安藤・間(E00317)\n                                                          有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度６社)\n     主要な連結子会社名\n     安藤ハザマ興業株式会社\n     青山機工株式会社\n     菱晃開発株式会社\n     ハザマアンドウ（タイランド）\n     ハザマアンドウムリンダ\n     ベトナムディベロップメントコンストラクション\n\n\n (2) 主要な非連結子会社名\n     東大インタラクトＰＦＩ株式会社\n      非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益(持分に見合う\n     額)及び利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ全体とし\n     ても重要性がないため、連結の範囲から除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 18591,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1c387748212aa803abd92a91c12b701060d29e4382b7de77847a20da576b9a6d",
+              "evidenceId": "fe8290dcc9d2723075129da35e503f9d4b1c410caf482fb454c0bef128c43967",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TUPC",
+                "documentTitle": "安藤・間 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "975e7398f8a5840dcf3f2011c6784afa1de414c794d9e2fd06ddc8cd54ce8caa",
+                "documentVersionSha256": "975e7398f8a5840dcf3f2011c6784afa1de414c794d9e2fd06ddc8cd54ce8caa",
+                "pdfPage": 66,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2022年４月１日                (自 2023年４月１日\n                           至 2023年３月31日)               至 2024年３月31日)\n売上高\n 完成工事高                               ※６     345,858         ※６    364,008\n その他の事業売上高                            ※６     26,288         ※６     30,119\n 売上高合計                                      372,146               394,128\n営業利益                                         19,853                18,591",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 66,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 130,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 73,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     株式会社安藤・間(E00317)\n                                                          有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度６社)\n     主要な連結子会社名\n     安藤ハザマ興業株式会社\n     青山機工株式会社\n     菱晃開発株式会社\n     ハザマアンドウ（タイランド）\n     ハザマアンドウムリンダ\n     ベトナムディベロップメントコンストラクション\n\n\n (2) 主要な非連結子会社名\n     東大インタラクトＰＦＩ株式会社\n      非連結子会社は、企業集団における重要性が低く、またこれらの総資産、売上高、当期純損益(持分に見合う\n     額)及び利益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしておらず、かつ全体とし\n     ても重要性がないため、連結の範囲から除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 35243,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e551aa62626d4acaca341e8e2731fbd278ecba076105c5714ac9c6bbf31f701c",
+              "evidenceId": "d44469590751cb7eeed0e36c2d176d8c31510539d456d29496f085d0c5568598",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W5WD",
+                "documentTitle": "安藤・間 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "93b15957c0538a1cf7826a957b179764266be671f3d26b4e4a9d64a608e5379f",
+                "documentVersionSha256": "93b15957c0538a1cf7826a957b179764266be671f3d26b4e4a9d64a608e5379f",
+                "pdfPage": 70,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2023年４月１日                (自 2024年４月１日\n                           至 2024年３月31日)               至 2025年３月31日)\n売上高\n 完成工事高                               ※６     364,008         ※６    398,142\n その他の事業売上高                            ※６     30,119         ※６     27,018\n 売上高合計                                      394,128               425,160\n営業利益                                         18,591                35,243",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 70,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 135,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 77,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     株式会社安藤・間(E00317)\n                                                          有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数6社(前連結会計年度6社)\n     主要な連結子会社名\n     安藤ハザマ興業株式会社\n     青山機工株式会社\n     菱晃開発株式会社\n     ハザマアンドウ（タイランド）\n     ハザマアンドウムリンダ\n     ベトナムディベロップメントコンストラクション\n\n\n (2) 主要な非連結子会社\n     該当事項はありません。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 33618,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4b6e147f124131b0d768a2d1163f43805a5a21959ed77c9314ef3e11736c6cc6",
+              "evidenceId": "80d51ea3ad3a950c4fd3b8099ae459a7cffbc83d99254aaf212ba93c42de15d7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YHJP",
+                "documentTitle": "安藤・間 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e469d3d2c2529cfa6dead310092fb5d2d260276edf6479dbe430fc5c02336c08",
+                "documentVersionSha256": "e469d3d2c2529cfa6dead310092fb5d2d260276edf6479dbe430fc5c02336c08",
+                "pdfPage": 75,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2024年４月１日                (自 2025年４月１日\n                           至 2025年３月31日)               至 2026年３月31日)\n売上高\n 完成工事高                               ※６     398,142         ※６    409,206\n その他の事業売上高                            ※６     27,018         ※６     30,409\n 売上高合計                                      425,160               439,615\n営業利益                                         35,243                33,618",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 75,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "ando-hazama-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "QXYリソーシズは株式取得により連結子会社に追加。みなし取得日は2025年12月31日で、当年度は貸借対照表のみ連結。被取得企業の業績を当年度営業利益に加算しない。",
+                  "連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 143,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 82,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                       株式会社安藤・間(E00317)\n                                                            有価証券報告書\n    【注記事項】\n    (継続企業の前提に関する事項)\n     該当事項はありません。\n\n\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社の数7社(前連結会計年度6社)\n     主要な連結子会社名\n     安藤ハザマ興業株式会社\n     青山機工株式会社\n     菱晃開発株式会社\n     ハザマアンドウ（タイランド）\n     ハザマアンドウムリンダ\n     ベトナムディベロップメントコンストラクション\n     ＱＸＹリソーシズ\n     ＱＸＹリソーシズは2026年１月５日の株式取得に伴い、当連結会計年度より連結子会社となりました。なお、み\n    なし取得日を2025年12月31日としているため、当連結会計年度は貸借対照表のみ連結しています。\n\n\n (2) 主要な非連結子会社\n     該当事項はありません。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "bb3017da6c20056176895b2d873921632d132ba5471ee59971dab741bddbdc44"
       }
     ],
     "mappings": [
@@ -3477,6 +4162,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ANDO_HAZAMA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "ANDO_HAZAMA:operating_income_consolidated@FY2015_FY2025_ANDO_HAZAMA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -3487,5 +4194,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "d92bf1e25e1907cdad1e320ba8b017cbe658f105730acd7fda24dde49003867e"
+  "snapshotHash": "a980770000a3ac9671d034f0f112b0f8b4425e44897dcc6197450548afe4d593"
 }
