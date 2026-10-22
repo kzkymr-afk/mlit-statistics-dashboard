@@ -9757,6 +9757,775 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "9f619dcce819ab1d54d7c43f665237cc164143419e9638cd7f64fbd9dbae84f5"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ASANUMA:operating_income_consolidated@FY2015_FY2025_ASANUMA_OPERATING",
+          "companyId": "ASANUMA",
+          "metricId": "operating_income_consolidated",
+          "label": "淺沼組 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ASANUMA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_ASANUMA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "企業結合基準等を適用し当期純利益・非支配株主持分等の表示を変更。選択した変更注記に営業利益への影響額明示がないことを影響ゼロと推定しない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "減価償却を定率法から定額法へ変更、損益影響軽微。小田原斎場PFIを新設、城北シンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない（47頁）。同じ社数を同一構成とみなさない。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+              "sourceLocator": {
+                "pdf_page": 51
+              },
+              "sourceQuote": "連結子会社5社の当年度範囲と同一決算日を確認。前年度に清算した会社の損益を当年度に延長しない。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+              "sourceLocator": {
+                "pdf_page": 54
+              },
+              "sourceQuote": "SINGAPORE PAINTS & CONTRACTORを取得し連結子会社6社へ。みなし取得日2018年12月31日につき当年度は貸借対照表のみ連結。同社の当年度利益を推計加算しない。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "ひらかたシンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない。Singapore社の12月31日決算と重要取引調整を保持。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "連結子会社5社、Singapore社の12月31日決算と連結決算日までの重要取引調整を保持。一定範囲に調整した利益ではない。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+              "sourceLocator": {
+                "pdf_page": 65
+              },
+              "sourceQuote": "収益認識基準を適用、連結財務諸表への影響軽微（65頁）。影響ゼロと読み替えず前年営業利益も置換しない。時価算定基準は影響なし。Evergreen社はみなし取得日2022年1月31日のため当年度は貸借対照表のみ連結（61頁）。同社利益を推計加算しない。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+              "sourceLocator": {
+                "pdf_page": 62
+              },
+              "sourceQuote": "Evergreen社の決算日を4月30日から12月31日へ変更。当年度は2022年2月1日〜12月31日の11ヵ月間を連結。親会社の12か月通期を変更せず、子会社損益の年率換算・欠損補間を行わない。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+              "sourceLocator": {
+                "pdf_page": 65
+              },
+              "sourceQuote": "Evergreen社の前年11ヵ月連結を明記した翌年資料と照合（65頁）。当年度と前年を同じ子会社会計期間へ無検証に調整しない。法人税等基準は翌2025年3月期から適用予定、影響評価中（68頁）。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+              "sourceLocator": {
+                "pdf_page": 72
+              },
+              "sourceQuote": "法人税等基準は前年資料で当年度適用予定とされていたが、保存有報で当年度の適用影響額を明示した変更注記は確認できず未確認。影響ゼロと推定せず、この年度をまたぐ同条件計算は停止。連結6社・海外2社12月31日決算の報告値を保持。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+              "sourceLocator": {
+                "pdf_page": 70
+              },
+              "sourceQuote": "連結子会社6社と海外2社の12月31日決算・重要取引調整を保持。前年の未確認の法人税等基準影響を無検証に解消しない。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準等を適用し当期純利益・非支配株主持分等の表示を変更。選択した変更注記に営業利益への影響額明示がないことを影響ゼロと推定しない。",
+            "2016年度：減価償却を定率法から定額法へ変更、損益影響軽微。小田原斎場PFIを新設、城北シンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない（47頁）。同じ社数を同一構成とみなさない。",
+            "2017年度：連結子会社5社の当年度範囲と同一決算日を確認。前年度に清算した会社の損益を当年度に延長しない。",
+            "2018年度：SINGAPORE PAINTS & CONTRACTORを取得し連結子会社6社へ。みなし取得日2018年12月31日につき当年度は貸借対照表のみ連結。同社の当年度利益を推計加算しない。",
+            "2019年度：ひらかたシンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない。Singapore社の12月31日決算と重要取引調整を保持。",
+            "2020年度：連結子会社5社、Singapore社の12月31日決算と連結決算日までの重要取引調整を保持。一定範囲に調整した利益ではない。",
+            "2021年度：収益認識基準を適用、連結財務諸表への影響軽微（65頁）。影響ゼロと読み替えず前年営業利益も置換しない。時価算定基準は影響なし。Evergreen社はみなし取得日2022年1月31日のため当年度は貸借対照表のみ連結（61頁）。同社利益を推計加算しない。",
+            "2022年度：Evergreen社の決算日を4月30日から12月31日へ変更。当年度は2022年2月1日〜12月31日の11ヵ月間を連結。親会社の12か月通期を変更せず、子会社損益の年率換算・欠損補間を行わない。",
+            "2023年度：Evergreen社の前年11ヵ月連結を明記した翌年資料と照合（65頁）。当年度と前年を同じ子会社会計期間へ無検証に調整しない。法人税等基準は翌2025年3月期から適用予定、影響評価中（68頁）。",
+            "2024年度：法人税等基準は前年資料で当年度適用予定とされていたが、保存有報で当年度の適用影響額を明示した変更注記は確認できず未確認。影響ゼロと推定せず、この年度をまたぐ同条件計算は停止。連結6社・海外2社12月31日決算の報告値を保持。",
+            "2025年度：連結子会社6社と海外2社の12月31日決算・重要取引調整を保持。前年の未確認の法人税等基準影響を無検証に解消しない。",
+            "連結子会社数は5/5/5/6/5/5/6/6/6/6/6社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 6454,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "09cc7ee7b4691008525fc4e9827fc006a99ed6d3ea7cd6e87142e2b016a16d0d",
+              "evidenceId": "fc728652bf2eb8bd1cbba0ad1fc481472934def3c75c4b9d0a2bbf5020832a92",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007YO9",
+                "documentTitle": "淺沼組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+                "documentVersionSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+                "pdfPage": 38,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                   125,481                   145,662\n  その他の事業売上高                                 1,356                     1,319\n  売上高合計                                   126,837                   146,982\n営業利益                                        2,608                     6,454",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    489.4,
+                    337.36151,
+                    511.9,
+                    346.35251
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準等を適用し当期純利益・非支配株主持分等の表示を変更。選択した変更注記に営業利益への影響額明示がないことを影響ゼロと推定しない。",
+                  "連結子会社5社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    ㈱城北シンフォニア\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n\n\n   桜井給食ファシリティーズ㈱は当連結会計年度において新たに設立したことにより、連結子会社に含めることと\n  した。\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 6665,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "61108b1c4d2bbb88509c18b4ec977c8b693489f198592731163b619d5a5e6b3e",
+              "evidenceId": "0cdc62ae4ea6d9bc45f90218578d6c13d93a2a6738d717960d0101e50ac203dd",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AOGE",
+                "documentTitle": "淺沼組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+                "documentVersionSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+                "pdfPage": 40,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   145,662                   131,618\n  その他の事業売上高                                 1,319                     1,080\n  売上高合計                                   146,982                   132,699\n営業利益                                        6,454                     6,665",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 40,
+                  "value_bbox": [
+                    489.4,
+                    337.134621,
+                    511.9,
+                    346.125621
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却を定率法から定額法へ変更、損益影響軽微。小田原斎場PFIを新設、城北シンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない（47頁）。同じ社数を同一構成とみなさない。",
+                  "連結子会社5社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n   小田原斎場ＰＦＩ㈱は当連結会計年度において新たに設立したことにより、連結子会社に含めることとした。\n   なお、㈱城北シンフォニアは、当連結会計年度において清算結了したため、上記連結子会社数に含んでいない\n  が、清算結了日までの損益計算書及びキャッシュ・フロー計算書については連結している。\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 47,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 7953,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fc7e1ee3c98f130cefb65d78f50780c2661e537ef1611b2a874ffc919e632075",
+              "evidenceId": "c0dd5e11f1a3b7926e241c6d7732b0a44ada60f59fb51ea23e96cf974c3ce46e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DFS9",
+                "documentTitle": "淺沼組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+                "documentVersionSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+                "pdfPage": 44,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成28年４月１日                (自 平成29年４月１日\n                           至 平成29年３月31日)               至 平成30年３月31日)\n売上高\n  完成工事高                                   131,618                   142,181\n  その他の事業売上高                                 1,080                     1,253\n  売上高合計                                   132,699                   143,434\n営業利益                                        6,665                     7,953",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 44,
+                  "value_bbox": [
+                    489.4,
+                    337.134621,
+                    511.9,
+                    346.125621
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社の当年度範囲と同一決算日を確認。前年度に清算した会社の損益を当年度に延長しない。",
+                  "連結子会社5社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 96,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 51,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 5700,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f1df71361a8905a9334e3c3576d530194fb29d903ffc5bcd0426f7739efec7a3",
+              "evidenceId": "5cc5637ea25a8b17b3a9cf0206ed5473199fa889932136e452d03cca3bdc39ee",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100GALH",
+                "documentTitle": "淺沼組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+                "documentVersionSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+                "pdfPage": 47,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2017年４月１日                  (自 2018年４月１日\n                           至 2018年３月31日)                 至 2019年３月31日)\n売上高\n 完成工事高                                      142,181                   134,194\n その他の事業売上高                                    1,253                     1,518\n 売上高合計                                      143,434                   135,713\n営業利益                                          7,953                     5,700",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 47,
+                  "value_bbox": [
+                    481.45001,
+                    331.361481,
+                    503.95001,
+                    340.352481
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "SINGAPORE PAINTS & CONTRACTORを取得し連結子会社6社へ。みなし取得日2018年12月31日につき当年度は貸借対照表のみ連結。同社の当年度利益を推計加算しない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 99,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数      6社\n   連結子会社名\n     淺沼建物㈱\n     SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n     宇都宮郷の森斎場㈱\n     ㈱ひらかたシンフォニア\n     桜井給食ファシリティーズ㈱\n     小田原斎場ＰＦＩ㈱\n\n\n   SINGAPORE PAINTS & CONTRACTOR PTE. LTD.は2018年10月19日の株式取得に伴い、当連結会計年度より連結子会社\n  となった。なお、みなし取得日を2018年12月31日としており、連結決算日との差異が３ヶ月を超えないことから、\n  当連結会計年度は貸借対照表のみ連結している。\n\n\n (2) 非連結子会社名\n     アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 54,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日である。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っている。\n\n\n\n\n                                               54/101"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 6601,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d389aa5d5f9f80e0c46d833a6ff451d8766bc1630bfaf90c19bdc906e4311aed",
+              "evidenceId": "b3dfd54c7e61e7a0227305ab352dd67530568dc45702890231bd51239042ad21",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IV2W",
+                "documentTitle": "淺沼組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+                "documentVersionSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+                "pdfPage": 50,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2018年４月１日                  (自 2019年４月１日\n                           至 2019年３月31日)                 至 2020年３月31日)\n売上高\n 完成工事高                                      134,194                   140,034\n その他の事業売上高                                    1,518                     1,437\n 売上高合計                                      135,713                   141,472\n営業利益                                          5,700                     6,601",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    481.45001,
+                    331.361481,
+                    503.95001,
+                    340.352481
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "ひらかたシンフォニアは清算結了までの損益・CFを連結し、期末社数5社に含めない。Singapore社の12月31日決算と重要取引調整を保持。",
+                  "連結子会社5社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 100,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 57,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数     5社\n   連結子会社名\n    淺沼建物㈱\n    SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n    宇都宮郷の森斎場㈱\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n   ㈱ひらかたシンフォニアは、当連結会計年度において清算結了したため、上記連結子会社数に含んでおりません\n  が、清算結了日までの損益計算書及びキャッシュ・フロー計算書については連結しております。\n\n\n (2) 非連結子会社名\n    ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 57,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日であります。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                               57/104"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 5291,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "b32cfc336d4d7d81f4919a9d8d8ca5cd5b5b9e1e30a67d9c59aa9fded45104c8",
+              "evidenceId": "4c1506b819a5137d143e5eb790fca9cba2911f0d1d3e6ee9c1e267b5dce55c39",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LKZO",
+                "documentTitle": "淺沼組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+                "documentVersionSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+                "pdfPage": 52,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2019年４月１日                  (自 2020年４月１日\n                           至 2020年３月31日)                 至 2021年３月31日)\n売上高\n 完成工事高                                      140,034                   137,846\n その他の事業売上高                                    1,437                     1,087\n 売上高合計                                      141,472                   138,934\n営業利益                                          6,601                     5,291",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 52,
+                  "value_bbox": [
+                    481.45001,
+                    331.361481,
+                    503.95001,
+                    340.352481
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社、Singapore社の12月31日決算と連結決算日までの重要取引調整を保持。一定範囲に調整した利益ではない。",
+                  "連結子会社5社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 103,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 59,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数     5社\n   連結子会社名\n    淺沼建物㈱\n    SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n    宇都宮郷の森斎場㈱\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n (2) 非連結子会社名\n    ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 59,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日であります。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                               59/108"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 4835,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "911fc3dba61f25fa989d37c001ca794097711237f73063bf3e90c8cbd1016045",
+              "evidenceId": "4fe6ef5e55f2f97aea1e0f2f7ad9166512b2f937f03f2f947b49c17efad6ed0d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OB4U",
+                "documentTitle": "淺沼組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+                "documentVersionSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+                "pdfPage": 54,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2020年４月１日                  (自 2021年４月１日\n                           至 2021年３月31日)                 至 2022年３月31日)\n売上高\n 完成工事高                                      137,846            ※1   134,407\n その他の事業売上高                                    1,087              ※1   1,070\n 売上高合計                                      138,934                   135,478\n営業利益                                          5,291                     4,835",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    481.45001,
+                    331.361481,
+                    503.95001,
+                    340.352481
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用、連結財務諸表への影響軽微（65頁）。影響ゼロと読み替えず前年営業利益も置換しない。時価算定基準は影響なし。Evergreen社はみなし取得日2022年1月31日のため当年度は貸借対照表のみ連結（61頁）。同社利益を推計加算しない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 113,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数      6社\n   連結子会社名\n     淺沼建物㈱\n     SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n     EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n     宇都宮郷の森斎場㈱\n     桜井給食ファシリティーズ㈱\n     小田原斎場ＰＦＩ㈱\n\n\n   EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.は、2022年１月６日の株式取得に伴い、当連結会計年度より\n  連結の範囲に含めておりますが、2022年１月31日をみなし取得日としているため、当連結会計年度は貸借対照表の\n  みを連結しております。\n\n\n (2) 非連結子会社名\n     ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n     THAI ASANUMA HOLDINGS CO., LTD.\n     THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.の決算日は12月31日であり、連結財務諸表の作成に\n あたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用しております。\n  また、2022年１月６日付で株式を取得したEVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.は、2022年１月31日\n をみなし取得日としているため、当連結会計年度は貸借対照表のみを連結しております。\n  いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                      61/119"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 5691,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1af277683946724ab21943800e695a10b73de0562ed6e8a0c72c7022aef35857",
+              "evidenceId": "49262c825f7180ae3d70e580ad460e289076ab3bd3f71c4332bf996110257282",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R0CO",
+                "documentTitle": "淺沼組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+                "documentVersionSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+                "pdfPage": 55,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2021年４月１日            (自 2022年４月１日\n                           至 2022年３月31日)           至 2023年３月31日)\n売上高\n 完成工事高                               ※１ 134,407            ※１ 141,758\n\n その他の事業売上高                                1,070                 2,678\n営業利益                                      4,835                 5,691",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    488.47836,
+                    327.390871,
+                    510.97836,
+                    336.381871
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "Evergreen社の決算日を4月30日から12月31日へ変更。当年度は2022年2月1日〜12月31日の11ヵ月間を連結。親会社の12か月通期を変更せず、子会社損益の年率換算・欠損補間を行わない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 62,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n    なお、EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.については、決算日を４月30日から12月31日に変更して\n  おります。この決算期変更に伴い、当連結会計年度においては、2022年２月１日から2022年12月31日までの11ヵ月間\n  を連結しております。\n\n\n\n\n                                                   62/115"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 4057,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "025ee8d6b32329c9aae0d15e2ba41daa5b6a484cc84891b5462cd09399137519",
+              "evidenceId": "b3d44af2b9cfa5bd36b1b0e4b45ad73f1e17a57edc10b049cc4a1f8ca984eaa2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TWJQ",
+                "documentTitle": "淺沼組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+                "documentVersionSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+                "pdfPage": 58,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2022年４月１日            (自 2023年４月１日\n                           至 2023年３月31日)           至 2024年３月31日)\n売上高\n 完成工事高                                  141,758               149,415\n その他の事業売上高                                2,678                 3,261\n 売上高合計                               ※１ 144,436            ※１ 152,676\n営業利益                                      5,691                 4,057",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    488.47836,
+                    327.390871,
+                    510.97836,
+                    336.381871
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "Evergreen社の前年11ヵ月連結を明記した翌年資料と照合（65頁）。当年度と前年を同じ子会社会計期間へ無検証に調整しない。法人税等基準は翌2025年3月期から適用予定、影響評価中（68頁）。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 115,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 65,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n    なお、EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.については、前連結会計年度において決算日を４月30日\n  から12月31日に変更しております。この決算期変更に伴い、前連結会計年度においては、2022年２月１日から2022年\n  12月31日までの11ヵ月間を連結しております。\n\n\n\n\n                                                   65/122"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 6867,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "63ac5efe07f419789f2865cf1ab54c10f81ac6a9ee00d489ca35ae858da714ca",
+              "evidenceId": "3917acfb50c0e5ef85d831220594d035c86179f124cb265bf5b2bd0c1d002f91",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W1YE",
+                "documentTitle": "淺沼組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+                "documentVersionSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+                "pdfPage": 62,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n売上高\n 完成工事高                                   149,415               163,661\n その他の事業売上高                                 3,261                 3,344\n 売上高合計                                ※１ 152,676            ※１ 167,005\n営業利益                                       4,057                 6,867",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 62,
+                  "value_bbox": [
+                    488.47836,
+                    327.390871,
+                    510.97836,
+                    336.381871
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準は前年資料で当年度適用予定とされていたが、保存有報で当年度の適用影響額を明示した変更注記は確認できず未確認。影響ゼロと推定せず、この年度をまたぐ同条件計算は停止。連結6社・海外2社12月31日決算の報告値を保持。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 69,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                   69/126"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 7211,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "64d6498dc9f40c8f8908df81488b0f192c0b5460031cb30dc3c08258ca52da8f",
+              "evidenceId": "bc2b90c5c20a9e9fd01024049323a3440bf59db4f357aa93ef9ceddd41f59d5b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YD5O",
+                "documentTitle": "淺沼組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+                "documentVersionSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+                "pdfPage": 63,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n売上高\n 完成工事高                                   163,661               171,518\n その他の事業売上高                                 3,344                 3,776\n 売上高合計                                ※１ 167,005            ※１ 175,294\n営業利益                                       6,867                 7,211",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "value_bbox": [
+                    488.47836,
+                    326.462541,
+                    510.97836,
+                    335.453541
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社6社と海外2社の12月31日決算・重要取引調整を保持。前年の未確認の法人税等基準影響を無検証に解消しない。",
+                  "連結子会社6社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 70,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                   70/126"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "a21ea28084a67c204ff8b924d90c35001f8063a7e294eebc5dfe6ad1850c5b4e"
       }
     ],
     "mappings": [
@@ -10097,6 +10866,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ASANUMA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "ASANUMA:operating_income_consolidated@FY2015_FY2025_ASANUMA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -10107,5 +10898,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "8e39af9c1fe8cf6816748bceeee66fd961cd78505dd7d32196bc5619e3c77ce3"
+  "snapshotHash": "84c7ac743a325bb0b544c529e0c2fd4347a6443bc1bc2d13caf2eef3720a8308"
 }
