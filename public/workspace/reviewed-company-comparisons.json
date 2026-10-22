@@ -17470,6 +17470,1724 @@
           "accountingStandard": "JGAAP"
         },
         "snapshotHash": "7c8d76beb99f8e8e02fc5e260ad74415c3cba2eebe3849edaf60d0ca0ae74c82"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "KUMAGAI:net_sales_consolidated@FY2015_FY2025_KUMAGAI_PL_BATCH",
+          "companyId": "KUMAGAI",
+          "metricId": "net_sales_consolidated",
+          "label": "熊谷組 / 売上高（連結）",
+          "metricLabelAsDisclosed": "完成工事高（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "KUMAGAI_NET_SALES_CONSOLIDATED_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_KUMAGAI_PL_BATCH",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+              "sourceLocator": {
+                "pdf_page": 40
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成26年４月１日          (自    平成27年４月１日\n                           至    平成27年３月31日)         至    平成28年３月31日)\n完成工事高                                    362,090                  343,647\n完成工事原価                                ※１ 333,052               ※１ 304,579\n\n完成工事総利益                                   29,038                   39,068\n販売費及び一般管理費                          ※２,※３ 12,934             ※２,※３ 14,528\n完成工事高                                    362,090                  343,647"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+              "sourceLocator": {
+                "pdf_page": 40
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n完成工事高                                    343,647                  344,706\n完成工事原価                                ※１ 304,579               ※１ 303,625\n\n完成工事総利益                                   39,068                   41,080\n販売費及び一般管理費                          ※２,※３ 14,528             ※２,※３ 15,945\n完成工事高                                    343,647                  344,706"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+              "sourceLocator": {
+                "pdf_page": 43
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n完成工事高                                    344,706                  374,019\n完成工事原価                                ※１ 303,625               ※１ 333,789\n\n完成工事総利益                                   41,080                   40,230\n販売費及び一般管理費                          ※２,※３ 15,945             ※２,※３ 17,188\n完成工事高                                    344,706                  374,019"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "                                                                        EDINET提出書類\n                                                               株式会社      熊谷組(E00056)\n                                                                         有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2017年４月１日            (自 2018年４月１日\n                           至 2018年３月31日)           至 2019年３月31日)\n完成工事高                                   374,019               389,058\n完成工事原価                            ※１,※３ 333,789         ※１,※３ 343,527\n\n完成工事総利益                                  40,230                45,530\n販売費及び一般管理費                        ※２,※３ 17,188           ※２,※３ 19,065\n完成工事高                                   374,019               389,058"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+              "sourceLocator": {
+                "pdf_page": 53
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n完成工事高                                    389,058               436,151\n完成工事原価                             ※１,※３ 343,527         ※１,※３ 390,653\n\n完成工事総利益                                   45,530                45,498\n販売費及び一般管理費                         ※２,※３ 19,065           ※２,※３ 20,057\n完成工事高                                    389,058               436,151"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2019年４月１日             (自 2020年４月１日\n                           至 2020年３月31日)            至 2021年３月31日)\n完成工事高                                    436,151               450,232\n完成工事原価                             ※１,※３ 390,653         ※１,※３ 402,147\n\n完成工事総利益                                   45,498                48,084\n販売費及び一般管理費                         ※２,※３ 20,057           ※２,※３ 20,015\n完成工事高                                    436,151               450,232"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2020年４月１日             (自 2021年４月１日\n                           至 2021年３月31日)            至 2022年３月31日)\n完成工事高                                    450,232            ※１ 425,216\n\n完成工事原価                             ※２,※４ 402,147         ※２,※４ 381,750\n\n完成工事総利益                                  48,084                 43,466\n完成工事高                                    450,232            ※１ 425,216"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+              "sourceLocator": {
+                "pdf_page": 68
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2021年４月１日             (自 2022年４月１日\n                           至 2022年３月31日)            至 2023年３月31日)\n完成工事高                                 ※１ 425,216            ※１ 403,502\n\n完成工事原価                             ※２,※４ 381,750         ※２,※４ 370,291\n\n完成工事総利益                                  43,466                 33,211\n完成工事高                                 ※１ 425,216            ※１ 403,502"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+              "sourceLocator": {
+                "pdf_page": 72
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2022年４月１日             (自 2023年４月１日\n                           至 2023年３月31日)            至 2024年３月31日)\n完成工事高                                 ※１ 403,502            ※１ 443,193\n\n完成工事原価                             ※２,※４ 370,291         ※２,※４ 407,112\n\n完成工事総利益                                  33,211                 36,080\n完成工事高                                 ※１ 403,502            ※１ 443,193"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+              "sourceLocator": {
+                "pdf_page": 86
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n完成工事高                                 ※１ 443,193            ※１ 498,581\n\n完成工事原価                             ※２,※４ 407,112         ※２,※４ 460,266\n\n完成工事総利益                                  36,080                 38,315\n完成工事高                                 ※１ 443,193            ※１ 498,581"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+              "sourceLocator": {
+                "pdf_page": 100
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n完成工事高                                 ※１ 498,581            ※１ 487,698\n\n完成工事原価                                ※２ 460,266            ※２ 434,458\n\n完成工事総利益                                   38,315                53,239\n完成工事高                                 ※１ 498,581            ※１ 487,698"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表への影響なし。",
+            "2015〜2025年度の当社連結損益計算書は完成工事高と表記。連結CurrentYearDurationのNetSalesと当該行の金額を照合し売上高の参照項目へ接続。セグメント完成工事高や単体とは区別。",
+            "2021年度：収益認識基準を適用し、完成工事高・完成工事原価はそれぞれ776百万円減少（66〜67頁）。期首利益剰余金への累積的影響なし。報告額を保持し、776百万円を利益減少へ転用したり過年度を置換しない。時価算定基準の連結財務諸表への影響なし。",
+            "2022年度：時価算定指針を当年度から将来適用。選択注記に影響額の明示なし。影響ゼロと推定しない。",
+            "2024年度：法人税等基準の適用。当年度と前年度への遡及適用の連結財務諸表への影響なしという当該注記の範囲で保持。",
+            "2025年度：KGディノ・リゾート、ローカルエナジーシステムを連結範囲追加（7社から9社）。Japan Wind Farm Constructionを持分法へ追加。一定範囲へ調整しない。経常利益は資料の報告額であり、持分法損益を別途足さない。営業利益や事業別利益と同等と扱わない。",
+            "連結子会社7/7/7/7/7/7/7/7/7/7/9社。在外子会社の12月末決算と連結調整を保持。",
+            "新規2項目は年別区分。既存営業利益の複数年度計算許可を継承せず、会社間同等性・自動合算を許可しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 343647,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3375ede3748354f7f289fc620a6a3f769747d76e1743a52415f3bfef3bbfb176",
+              "evidenceId": "2f983b7ac3535faeba18860c1d793e5e31dae8a0db31a66248383154387f6e52",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S10081EP",
+                "documentTitle": "熊谷組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+                "documentVersionSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+                "pdfPage": 40,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成26年４月１日          (自    平成27年４月１日\n                           至    平成27年３月31日)         至    平成28年３月31日)\n完成工事高                                    362,090                  343,647\n完成工事原価                                ※１ 333,052               ※１ 304,579\n\n完成工事総利益                                   29,038                   39,068\n販売費及び一般管理費                          ※２,※３ 12,934             ※２,※３ 14,528\n完成工事高                                    362,090                  343,647",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 40,
+                  "value_bbox": [
+                    479.48083,
+                    120.19925,
+                    510.98083,
+                    129.19025
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：企業結合会計基準等を適用。連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 83,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n    ㈱上越シビックサービス\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n   金（持分に見合う額）等が、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n   いる。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "343,647",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 344706,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "99ce390364e066814e7a8ea3f2da0a8f7358edb1281b1e0c7afea81aaa7e3be0",
+              "evidenceId": "341057742c6fa19617a36296c2872885980cf66b7ad5fdd2ce8d4a35d01b5d95",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100ARAS",
+                "documentTitle": "熊谷組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+                "documentVersionSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+                "pdfPage": 40,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n完成工事高                                    343,647                  344,706\n完成工事原価                                ※１ 304,579               ※１ 303,625\n\n完成工事総利益                                   39,068                   41,080\n販売費及び一般管理費                          ※２,※３ 14,528             ※２,※３ 15,945\n完成工事高                                    343,647                  344,706",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 40,
+                  "value_bbox": [
+                    479.48083,
+                    120.199221,
+                    510.98083,
+                    129.190221
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 84,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n    ㈱上越シビックサービス\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n   金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n   いる。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "344,706",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 374019,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "14755c9807ae5826b817c7740a56db8ccdd62cdd3ad0b8e88206c22a38da9c78",
+              "evidenceId": "ba5a039c71f0e16cea0a2d486c5b40cef8189243f62932a6487ab5279c4a3210",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DGYX",
+                "documentTitle": "熊谷組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+                "documentVersionSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+                "pdfPage": 43,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n完成工事高                                    344,706                  374,019\n完成工事原価                                ※１ 303,625               ※１ 333,789\n\n完成工事総利益                                   41,080                   40,230\n販売費及び一般管理費                          ※２,※３ 15,945             ※２,※３ 17,188\n完成工事高                                    344,706                  374,019",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    479.48083,
+                    120.199221,
+                    510.98083,
+                    129.190221
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 85,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "374,019",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 389058,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "57b0d9beb5e54110e5c4030bc367535c7d2c32000b4d46cada640dcffb855e22",
+              "evidenceId": "45707ac4de409e31b3a359e1acea5a4823ce732b1a52c03cc3c234a8e0cbb8ce",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100GA30",
+                "documentTitle": "熊谷組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+                "documentVersionSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                        EDINET提出書類\n                                                               株式会社      熊谷組(E00056)\n                                                                         有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2017年４月１日            (自 2018年４月１日\n                           至 2018年３月31日)           至 2019年３月31日)\n完成工事高                                   374,019               389,058\n完成工事原価                            ※１,※３ 333,789         ※１,※３ 343,527\n\n完成工事総利益                                  40,230                45,530\n販売費及び一般管理費                        ※２,※３ 17,188           ※２,※３ 19,065\n完成工事高                                   374,019               389,058",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    479.48083,
+                    120.199221,
+                    510.98083,
+                    129.190221
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 86,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "389,058",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 436151,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "edb6b20f8feeb212002d22380abf354188c3bfc324e6a8d8b6f6bf9f690898c0",
+              "evidenceId": "7b1fdd914171a443767e52f02ae13f28932ec3337d3e9acb42c55b571b85d00d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J0GD",
+                "documentTitle": "熊谷組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+                "documentVersionSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+                "pdfPage": 53,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n完成工事高                                    389,058               436,151\n完成工事原価                             ※１,※３ 343,527         ※１,※３ 390,653\n\n完成工事総利益                                   45,530                45,498\n販売費及び一般管理費                         ※２,※３ 19,065           ※２,※３ 20,057\n完成工事高                                    389,058               436,151",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 53,
+                  "value_bbox": [
+                    479.48083,
+                    120.199221,
+                    510.98083,
+                    129.190221
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 97,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 58,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "436,151",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 450232,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0a2a4175c4c691be953dcf224e72971557d046ff5fc2bae3975a8b943319f6e8",
+              "evidenceId": "8494386198b9da0d1ae1a579aff0bb5da1ab782b5a773ca04ceb8e0869589664",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LTLP",
+                "documentTitle": "熊谷組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+                "documentVersionSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+                "pdfPage": 57,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2019年４月１日             (自 2020年４月１日\n                           至 2020年３月31日)            至 2021年３月31日)\n完成工事高                                    436,151               450,232\n完成工事原価                             ※１,※３ 390,653         ※１,※３ 402,147\n\n完成工事総利益                                   45,498                48,084\n販売費及び一般管理費                         ※２,※３ 20,057           ※２,※３ 20,015\n完成工事高                                    436,151               450,232",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 57,
+                  "value_bbox": [
+                    479.48083,
+                    120.199221,
+                    510.98083,
+                    129.190221
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "450,232",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 425216,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d66d483a8da3811b70165b2964311781eee63be9b512fa2a9c167e4e64e06565",
+              "evidenceId": "ecdd62291dd48129cacc07f30cb8772070067dbc843db59dc1f3851ea4a27703",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OL2D",
+                "documentTitle": "熊谷組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+                "documentVersionSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+                "pdfPage": 59,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2020年４月１日             (自 2021年４月１日\n                           至 2021年３月31日)            至 2022年３月31日)\n完成工事高                                    450,232            ※１ 425,216\n\n完成工事原価                             ※２,※４ 402,147         ※２,※４ 381,750\n\n完成工事総利益                                  48,084                 43,466\n完成工事高                                    450,232            ※１ 425,216",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    479.47836,
+                    120.202721,
+                    510.97836,
+                    129.193721
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：収益認識基準を適用。完成工事高・完成工事原価はそれぞれ776百万円減少、期首利益剰余金に反映すべき累積的影響なし（66〜67頁）。776百万円を営業利益減少へ転用せず、前年利益の置換も行わない。時価算定基準等の適用による影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "425,216",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 403502,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7f8fa1c974796cba4929d4a792689dc9c2e35853d5998204113192ae9e0c15cf",
+              "evidenceId": "a65775ae63b3ebf3795078a27dbe06b3938167aa63db5946e61d8f4d774e82de",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R8SU",
+                "documentTitle": "熊谷組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+                "documentVersionSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+                "pdfPage": 68,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2021年４月１日             (自 2022年４月１日\n                           至 2022年３月31日)            至 2023年３月31日)\n完成工事高                                 ※１ 425,216            ※１ 403,502\n\n完成工事原価                             ※２,※４ 381,750         ※２,※４ 370,291\n\n完成工事総利益                                  43,466                 33,211\n完成工事高                                 ※１ 425,216            ※１ 403,502",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 68,
+                  "value_bbox": [
+                    479.47836,
+                    120.202721,
+                    510.97836,
+                    129.193721
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：時価算定の適用指針を当年度から将来に適用。選択した当該変更注記に影響額の明示はなく、影響ゼロと推定しない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 73,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "403,502",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 443193,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "274074978fcf66985b78144a408e1e396c422bcdeaf09e0699663ede65cf8d32",
+              "evidenceId": "61cc06c218edbd68dbbccc5112e6fdb72932f310ccfc85ede687ed5d1e51ce95",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TUWN",
+                "documentTitle": "熊谷組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+                "documentVersionSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+                "pdfPage": 72,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2022年４月１日             (自 2023年４月１日\n                           至 2023年３月31日)            至 2024年３月31日)\n完成工事高                                 ※１ 403,502            ※１ 443,193\n\n完成工事原価                             ※２,※４ 370,291         ※２,※４ 407,112\n\n完成工事総利益                                  33,211                 36,080\n完成工事高                                 ※１ 403,502            ※１ 443,193",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 72,
+                  "value_bbox": [
+                    479.47836,
+                    120.202721,
+                    510.97836,
+                    129.193721
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 121,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 77,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                             株式会社    熊谷組(E00056)\n                                                                                     有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４               関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "443,193",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 498581,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4871e7f90c46bca1a5c3714122290630b1ef1032caf9fa58dd26810423ccb04b",
+              "evidenceId": "fa474920c1c8fd22a452941abf6cf9f11ec2cf30f6dfda3bd33266e3b70a30c5",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W6FA",
+                "documentTitle": "熊谷組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+                "documentVersionSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+                "pdfPage": 86,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n完成工事高                                 ※１ 443,193            ※１ 498,581\n\n完成工事原価                             ※２,※４ 407,112         ※２,※４ 460,266\n\n完成工事総利益                                  36,080                 38,315\n完成工事高                                 ※１ 443,193            ※１ 498,581",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 86,
+                  "value_bbox": [
+                    479.47836,
+                    120.202721,
+                    510.97836,
+                    129.193721
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 136,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 91,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                       株式会社    熊谷組(E00056)\n                                                               有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ローカルエナジーシステム㈱\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "498,581",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 487698,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "b8b53fa243c8b12ea1d0f7f7e05fad358059d832dea613b715301c17f82e2bfe",
+              "evidenceId": "e727619f030ba9bfe3b896ee573e92309df0a100ab65d662b1f7cea2793d4ba2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YK9Q",
+                "documentTitle": "熊谷組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+                "documentVersionSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+                "pdfPage": 100,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n完成工事高                                 ※１ 498,581            ※１ 487,698\n\n完成工事原価                                ※２ 460,266            ※２ 434,458\n\n完成工事総利益                                   38,315                53,239\n完成工事高                                 ※１ 498,581            ※１ 487,698",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 100,
+                  "value_bbox": [
+                    479.47836,
+                    120.202721,
+                    510.97836,
+                    129.193721
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の売上高の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：KGディノ・リゾート及びローカルエナジーシステムの重要性が増したため連結範囲に追加（連結子会社7社から9社）。Japan Wind Farm Constructionも持分法適用へ追加。一定の構成による利益増減とはみなさず、持分法損益を営業利益へ加算しない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 155,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 106,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                   株式会社    熊谷組(E00056)\n                                                                           有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 9社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n    なお、当連結会計年度より、㈱ＫＧディノ・リゾート及びローカルエナジーシステム㈱の重要性が増したため、\n   連結の範囲に含めている。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:NetSales",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "487,698",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": false,
+                  "disclosedLabel": "完成工事高"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked",
+          "accountingStandard": "JGAAP"
+        },
+        "snapshotHash": "6471788b1da89046d652b21708020655181821a4282b772fab61ac4b11d96f78"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "KUMAGAI:ordinary_income_consolidated@FY2015_FY2025_KUMAGAI_PL_BATCH",
+          "companyId": "KUMAGAI",
+          "metricId": "ordinary_income_consolidated",
+          "label": "熊谷組 / 経常利益（連結）",
+          "metricLabelAsDisclosed": "経常利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "KUMAGAI_ORDINARY_INCOME_CONSOLIDATED_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_KUMAGAI_PL_BATCH",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+              "sourceLocator": {
+                "pdf_page": 40
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成26年４月１日          (自    平成27年４月１日\n                           至    平成27年３月31日)         至    平成28年３月31日)\n完成工事高                                    362,090                  343,647\n完成工事原価                                ※１ 333,052               ※１ 304,579\n\n完成工事総利益                                   29,038                   39,068\n販売費及び一般管理費                          ※２,※３ 12,934             ※２,※３ 14,528\n経常利益                                      15,658                   25,772"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+              "sourceLocator": {
+                "pdf_page": 40
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n完成工事高                                    343,647                  344,706\n完成工事原価                                ※１ 304,579               ※１ 303,625\n\n完成工事総利益                                   39,068                   41,080\n販売費及び一般管理費                          ※２,※３ 14,528             ※２,※３ 15,945\n経常利益                                      25,772                   25,358"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+              "sourceLocator": {
+                "pdf_page": 43
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n完成工事高                                    344,706                  374,019\n完成工事原価                                ※１ 303,625               ※１ 333,789\n\n完成工事総利益                                   41,080                   40,230\n販売費及び一般管理費                          ※２,※３ 15,945             ※２,※３ 17,188\n経常利益                                      25,358                   22,682"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "                                                                        EDINET提出書類\n                                                               株式会社      熊谷組(E00056)\n                                                                         有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2017年４月１日            (自 2018年４月１日\n                           至 2018年３月31日)           至 2019年３月31日)\n完成工事高                                   374,019               389,058\n完成工事原価                            ※１,※３ 333,789         ※１,※３ 343,527\n\n完成工事総利益                                  40,230                45,530\n販売費及び一般管理費                        ※２,※３ 17,188           ※２,※３ 19,065\n経常利益                                     22,682                26,553"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+              "sourceLocator": {
+                "pdf_page": 53
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n完成工事高                                    389,058               436,151\n完成工事原価                             ※１,※３ 343,527         ※１,※３ 390,653\n\n完成工事総利益                                   45,530                45,498\n販売費及び一般管理費                         ※２,※３ 19,065           ※２,※３ 20,057\n経常利益                                      26,553                25,718"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2019年４月１日             (自 2020年４月１日\n                           至 2020年３月31日)            至 2021年３月31日)\n完成工事高                                    436,151               450,232\n完成工事原価                             ※１,※３ 390,653         ※１,※３ 402,147\n\n完成工事総利益                                   45,498                48,084\n販売費及び一般管理費                         ※２,※３ 20,057           ※２,※３ 20,015\n経常利益                                      25,718                28,400"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2020年４月１日             (自 2021年４月１日\n                           至 2021年３月31日)            至 2022年３月31日)\n完成工事高                                    450,232            ※１ 425,216\n\n完成工事原価                             ※２,※４ 402,147         ※２,※４ 381,750\n\n完成工事総利益                                  48,084                 43,466\n経常利益                                      28,400                23,732"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+              "sourceLocator": {
+                "pdf_page": 68
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2021年４月１日             (自 2022年４月１日\n                           至 2022年３月31日)            至 2023年３月31日)\n完成工事高                                 ※１ 425,216            ※１ 403,502\n\n完成工事原価                             ※２,※４ 381,750         ※２,※４ 370,291\n\n完成工事総利益                                  43,466                 33,211\n経常利益                                      23,732                12,236"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+              "sourceLocator": {
+                "pdf_page": 72
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2022年４月１日             (自 2023年４月１日\n                           至 2023年３月31日)            至 2024年３月31日)\n完成工事高                                 ※１ 403,502            ※１ 443,193\n\n完成工事原価                             ※２,※４ 370,291         ※２,※４ 407,112\n\n完成工事総利益                                  33,211                 36,080\n経常利益                                      12,236                13,040"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+              "sourceLocator": {
+                "pdf_page": 86
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n完成工事高                                 ※１ 443,193            ※１ 498,581\n\n完成工事原価                             ※２,※４ 407,112         ※２,※４ 460,266\n\n完成工事総利益                                  36,080                 38,315\n経常利益                                      13,040                14,411"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+              "sourceLocator": {
+                "pdf_page": 100
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n完成工事高                                 ※１ 498,581            ※１ 487,698\n\n完成工事原価                                ※２ 460,266            ※２ 434,458\n\n完成工事総利益                                   38,315                53,239\n経常利益                                      14,411                27,049"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表への影響なし。",
+            "2015〜2025年度の当社連結損益計算書は完成工事高と表記。連結CurrentYearDurationのNetSalesと当該行の金額を照合し売上高の参照項目へ接続。セグメント完成工事高や単体とは区別。",
+            "2021年度：収益認識基準を適用し、完成工事高・完成工事原価はそれぞれ776百万円減少（66〜67頁）。期首利益剰余金への累積的影響なし。報告額を保持し、776百万円を利益減少へ転用したり過年度を置換しない。時価算定基準の連結財務諸表への影響なし。",
+            "2022年度：時価算定指針を当年度から将来適用。選択注記に影響額の明示なし。影響ゼロと推定しない。",
+            "2024年度：法人税等基準の適用。当年度と前年度への遡及適用の連結財務諸表への影響なしという当該注記の範囲で保持。",
+            "2025年度：KGディノ・リゾート、ローカルエナジーシステムを連結範囲追加（7社から9社）。Japan Wind Farm Constructionを持分法へ追加。一定範囲へ調整しない。経常利益は資料の報告額であり、持分法損益を別途足さない。営業利益や事業別利益と同等と扱わない。",
+            "連結子会社7/7/7/7/7/7/7/7/7/7/9社。在外子会社の12月末決算と連結調整を保持。",
+            "新規2項目は年別区分。既存営業利益の複数年度計算許可を継承せず、会社間同等性・自動合算を許可しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 25772,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f2cdb29531ee24fb196460b095e4da683d129995d54f304c5aed8d983c21268f",
+              "evidenceId": "b33b9a021e6e2e942d6bda8a114af1d810b3c61de6f785acddb7725f6a6b83df",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S10081EP",
+                "documentTitle": "熊谷組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+                "documentVersionSha256": "01d15ac9dcaebc551e85ab8c339318e1a159b83f29ef89028d03c2323e38327d",
+                "pdfPage": 40,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成26年４月１日          (自    平成27年４月１日\n                           至    平成27年３月31日)         至    平成28年３月31日)\n完成工事高                                    362,090                  343,647\n完成工事原価                                ※１ 333,052               ※１ 304,579\n\n完成工事総利益                                   29,038                   39,068\n販売費及び一般管理費                          ※２,※３ 12,934             ※２,※３ 14,528\n経常利益                                      15,658                   25,772",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 40,
+                  "value_bbox": [
+                    483.98083,
+                    363.76948,
+                    510.98083,
+                    372.76048
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：企業結合会計基準等を適用。連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 83,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n    ㈱上越シビックサービス\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n   金（持分に見合う額）等が、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n   いる。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,772",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 25358,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4abc30ddf867364d810d844860c5d9b5e901096196f99ea8c1e6637587ea4b3a",
+              "evidenceId": "2cd2269161752971a46fda15b508891544a1bde97ed6e0e71c03de624b467c3a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100ARAS",
+                "documentTitle": "熊谷組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+                "documentVersionSha256": "7ab30454faacb825b19c86572e89c9245abf4ff41ff625621644d39bbde56401",
+                "pdfPage": 40,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n完成工事高                                    343,647                  344,706\n完成工事原価                                ※１ 304,579               ※１ 303,625\n\n完成工事総利益                                   39,068                   41,080\n販売費及び一般管理費                          ※２,※３ 14,528             ※２,※３ 15,945\n経常利益                                      25,772                   25,358",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 40,
+                  "value_bbox": [
+                    483.98083,
+                    351.315711,
+                    510.98083,
+                    360.306711
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 84,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n    ㈱上越シビックサービス\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰余\n   金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n   いる。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,358",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 22682,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8c1f95645edb3e87bbbe8536768bd94c34e29e766fcc356f9326dc8057e2bd1e",
+              "evidenceId": "00fe3b252d2f2ac03c8066d70ccac34c363fca28d2e9e5736115dc2fc19132aa",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DGYX",
+                "documentTitle": "熊谷組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+                "documentVersionSha256": "93b2bf59c731e296bdeb028885cd75fecd19ed4abf0b94a36ae991c83600b209",
+                "pdfPage": 43,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                   株式会社      熊谷組(E00056)\n                                                                             有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n完成工事高                                    344,706                  374,019\n完成工事原価                                ※１ 303,625               ※１ 333,789\n\n完成工事総利益                                   41,080                   40,230\n販売費及び一般管理費                          ※２,※３ 15,945             ※２,※３ 17,188\n経常利益                                      25,358                   22,682",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    483.98083,
+                    388.676931,
+                    510.98083,
+                    397.667931
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 85,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "22,682",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 26553,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "237de8a67d48e59177851250eee3539db538c22e40f96c36f56c9e4600034ac4",
+              "evidenceId": "6e6ececad01d5ddcf98d9f7ace7f7c14d36c14e11fa67189460b1638dd72acfa",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100GA30",
+                "documentTitle": "熊谷組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+                "documentVersionSha256": "0bf1f2092d8922282615ef9a51460884428e3857b65bd83361b01178cdb03f9b",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                        EDINET提出書類\n                                                               株式会社      熊谷組(E00056)\n                                                                         有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2017年４月１日            (自 2018年４月１日\n                           至 2018年３月31日)           至 2019年３月31日)\n完成工事高                                   374,019               389,058\n完成工事原価                            ※１,※３ 333,789         ※１,※３ 343,527\n\n完成工事総利益                                  40,230                45,530\n販売費及び一般管理費                        ※２,※３ 17,188           ※２,※３ 19,065\n経常利益                                     22,682                26,553",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    483.98083,
+                    388.676931,
+                    510.98083,
+                    397.667931
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 86,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "26,553",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 25718,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "2d86b7a69840a0a3ce75183edfe8db411f04457432894261a4488053c2332340",
+              "evidenceId": "e75e2a50785566a13dd6216e377f17c4b7b576a01be46082bce95c325ad7a2f0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J0GD",
+                "documentTitle": "熊谷組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+                "documentVersionSha256": "5ea7730fd22901a22960bdab6475a0da762393b93651dab439cd449cebdf1c42",
+                "pdfPage": 53,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n完成工事高                                    389,058               436,151\n完成工事原価                             ※１,※３ 343,527         ※１,※３ 390,653\n\n完成工事総利益                                   45,530                45,498\n販売費及び一般管理費                         ※２,※３ 19,065           ※２,※３ 20,057\n経常利益                                      26,553                25,718",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 53,
+                  "value_bbox": [
+                    483.98083,
+                    376.223191,
+                    510.98083,
+                    385.214191
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 97,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 58,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社    熊谷組(E00056)\n                                                         有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ㈱上越シビックサービス\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "25,718",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 28400,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "404cd45492d5108a30bf3116c886e29733b1fc1d5c6cd4a4a0320114389b9493",
+              "evidenceId": "2e5eb2b4b13fc4270b9f0c65c45afaf682eb1416628a96531a8ab062e7508582",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LTLP",
+                "documentTitle": "熊谷組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+                "documentVersionSha256": "2c663f31db2b06dd6ea4768531e67ed8dc80b87679d7de45a810cbcc6f1db882",
+                "pdfPage": 57,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2019年４月１日             (自 2020年４月１日\n                           至 2020年３月31日)            至 2021年３月31日)\n完成工事高                                    436,151               450,232\n完成工事原価                             ※１,※３ 390,653         ※１,※３ 402,147\n\n完成工事総利益                                   45,498                48,084\n販売費及び一般管理費                         ※２,※３ 20,057           ※２,※３ 20,015\n経常利益                                      25,718                28,400",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 57,
+                  "value_bbox": [
+                    483.98083,
+                    376.223191,
+                    510.98083,
+                    385.214191
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 101,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "28,400",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 23732,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f4efc6a97d187d8f49dcb63a8c144841226018a50a351201bc1e100b28ead2d4",
+              "evidenceId": "21e17d4263b7449f6ac974912f115840d62328721d0b8513cf03d0f6c68fb774",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OL2D",
+                "documentTitle": "熊谷組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+                "documentVersionSha256": "38ff993f545dd1fdadf781311e46c2a97824ae1f91e46a2f18a56ba31d3413f9",
+                "pdfPage": 59,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2020年４月１日             (自 2021年４月１日\n                           至 2021年３月31日)            至 2022年３月31日)\n完成工事高                                    450,232            ※１ 425,216\n\n完成工事原価                             ※２,※４ 402,147         ※２,※４ 381,750\n\n完成工事総利益                                  48,084                 43,466\n経常利益                                      28,400                23,732",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    483.97836,
+                    378.062501,
+                    510.97836,
+                    387.053501
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：収益認識基準を適用。完成工事高・完成工事原価はそれぞれ776百万円減少、期首利益剰余金に反映すべき累積的影響なし（66〜67頁）。776百万円を営業利益減少へ転用せず、前年利益の置換も行わない。時価算定基準等の適用による影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "23,732",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 12236,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ad71ade97cedb56f8d57d72068aeee492b694a9c383b87e03dedc598acd5919a",
+              "evidenceId": "e04abfb3c922c777e7595b3e0cceb3dc66303ffc967410d505f217ef3f6fa4e1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R8SU",
+                "documentTitle": "熊谷組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+                "documentVersionSha256": "6fe2fd293ad68d6ed1f48ca254f9da9f4ced49dddcf297bd127e13060cc4bdc1",
+                "pdfPage": 68,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2021年４月１日             (自 2022年４月１日\n                           至 2022年３月31日)            至 2023年３月31日)\n完成工事高                                 ※１ 425,216            ※１ 403,502\n\n完成工事原価                             ※２,※４ 381,750         ※２,※４ 370,291\n\n完成工事総利益                                  43,466                 33,211\n経常利益                                      23,732                12,236",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 68,
+                  "value_bbox": [
+                    483.97836,
+                    378.062501,
+                    510.97836,
+                    387.053501
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：時価算定の適用指針を当年度から将来に適用。選択した当該変更注記に影響額の明示はなく、影響ゼロと推定しない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 73,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  株式会社    熊谷組(E00056)\n                                                                          有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４            関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "12,236",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 13040,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "6f4596d28e6832474adb95bbff075eabc8b07e6eb8ceff577958fbabe8e8c6f4",
+              "evidenceId": "648307b1f32c50752e0587c8724e56ebd8ac8c4eade3592cfa31417e90dc1104",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TUWN",
+                "documentTitle": "熊谷組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+                "documentVersionSha256": "41f3458265de386601f04e4c0ec818d10f3afd225bccc1eaeff7332d40f93520",
+                "pdfPage": 72,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2022年４月１日             (自 2023年４月１日\n                           至 2023年３月31日)            至 2024年３月31日)\n完成工事高                                 ※１ 403,502            ※１ 443,193\n\n完成工事原価                             ※２,※４ 370,291         ※２,※４ 407,112\n\n完成工事総利益                                  33,211                 36,080\n経常利益                                      12,236                13,040",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 72,
+                  "value_bbox": [
+                    483.97836,
+                    365.608761,
+                    510.97836,
+                    374.599761
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 121,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 77,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                             株式会社    熊谷組(E00056)\n                                                                                     有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４               関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "13,040",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 14411,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9eee39659f7aa8bacb5c411dc6ce94659460efdb851a089583b8e13aa7230817",
+              "evidenceId": "4af22889224a53dcca1d2670b2fcd04a6587ba39af5169822b44a374c9074911",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W6FA",
+                "documentTitle": "熊谷組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+                "documentVersionSha256": "62c745d213b1bf7a8d350c07436f7eb8a686116bf239db84bb67f69d5c4ca42c",
+                "pdfPage": 86,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n完成工事高                                 ※１ 443,193            ※１ 498,581\n\n完成工事原価                             ※２,※４ 407,112         ※２,※４ 460,266\n\n完成工事総利益                                  36,080                 38,315\n経常利益                                      13,040                14,411",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 86,
+                  "value_bbox": [
+                    483.97836,
+                    378.062501,
+                    510.97836,
+                    387.053501
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社7社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 136,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 91,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                       株式会社    熊谷組(E00056)\n                                                               有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 7社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     ローカルエナジーシステム㈱\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "14,411",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": true,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 27049,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "80ac976bff6af8a329f89cd091062146cb9ef411eb306b3540c7a1cf9fbee434",
+              "evidenceId": "b0b3ea0c31145516eb7d5e39c63fcef5dfaa07516609370730435e0a701d22f6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YK9Q",
+                "documentTitle": "熊谷組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+                "documentVersionSha256": "a3e0b2533613039a415d3c9dcea159049c5cf382e3f953edf7fc602331737912",
+                "pdfPage": 100,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                株式会社      熊谷組(E00056)\n                                                                          有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n完成工事高                                 ※１ 498,581            ※１ 487,698\n\n完成工事原価                                ※２ 460,266            ※２ 434,458\n\n完成工事総利益                                   38,315                53,239\n経常利益                                      14,411                27,049",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 100,
+                  "value_bbox": [
+                    483.97836,
+                    390.516231,
+                    510.97836,
+                    399.507231
+                  ]
+                },
+                "comparisonVerificationId": "kumagai-pl-three-metrics-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・当社連結損益計算書の経常利益の通期報告値。単体/セグメントへの転用、一定連結範囲への調整をしない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "資料の既存注記（営業利益を含む原資料の記述）：KGディノ・リゾート及びローカルエナジーシステムの重要性が増したため連結範囲に追加（連結子会社7社から9社）。Japan Wind Farm Constructionも持分法適用へ追加。一定の構成による利益増減とはみなさず、持分法損益を営業利益へ加算しない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：連結子会社9社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "資料の既存注記（営業利益を含む原資料の記述）：会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。",
+                  "当該指標の複数年度同条件計算は未確認。年別区分、会社間同等性未確認・自動合算禁止を保持。"
+                ],
+                "basisPage": 155,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 106,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                   株式会社    熊谷組(E00056)\n                                                                           有価証券報告書\n   【注記事項】\n    （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n (1）連結子会社の数 9社\n    連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおり。\n    なお、当連結会計年度より、㈱ＫＧディノ・リゾート及びローカルエナジーシステム㈱の重要性が増したため、\n   連結の範囲に含めている。\n (2）主要な非連結子会社の名称等\n    主要な非連結子会社\n     KUMAGAI INDIA PRIVATE LIMITED\n    連結の範囲から除いた理由\n     非連結子会社は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:OrdinaryIncome",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "27,049",
+                  "sharedMetadataVerified": true,
+                  "nextPriorVerified": false,
+                  "disclosedLabel": "経常利益"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked",
+          "accountingStandard": "JGAAP"
+        },
+        "snapshotHash": "c81464d9b88339a426f5ac4ee13e514f3a197af30aed599393c343aa275fe76b"
       }
     ],
     "mappings": [
@@ -17992,6 +19710,50 @@
         "companyId": "OKUMURA",
         "legacyMetricId": "ordinary_income_consolidated",
         "reviewedSeriesId": "OKUMURA:ordinary_income_consolidated@FY2015_FY2025_OKUMURA_PL_BATCH",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "KUMAGAI",
+        "legacyMetricId": "net_sales_consolidated",
+        "reviewedSeriesId": "KUMAGAI:net_sales_consolidated@FY2015_FY2025_KUMAGAI_PL_BATCH",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "KUMAGAI",
+        "legacyMetricId": "ordinary_income_consolidated",
+        "reviewedSeriesId": "KUMAGAI:ordinary_income_consolidated@FY2015_FY2025_KUMAGAI_PL_BATCH",
         "fiscalYears": [
           2015,
           2016,
@@ -21513,5 +23275,5 @@
       }
     ]
   },
-  "snapshotHash": "ce33f8bd2c22604c79ff886e5769e2d7edacf1285fd9655373695c4f866e7b95"
+  "snapshotHash": "368c866c49178a20005ba1885af50ad16f5eff9d2bce59f7705dffe4d9bcd6b7"
 }
