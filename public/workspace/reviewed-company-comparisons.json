@@ -1958,6 +1958,701 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "2e574f0e731c02cc87d5de668db0f5b70638cee26ec7cc097eb56b979c4faf7a"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "TAISEI:operating_income_consolidated@FY2015_FY2025_TAISEI_OPERATING",
+          "companyId": "TAISEI",
+          "metricId": "operating_income_consolidated",
+          "label": "大成建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "TAISEI_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_TAISEI_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "8a359570565b4ac025a1e90e13ed989ead1df8621f5b0e54d1f86da4b8e8a06a",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "企業結合会計基準等を適用。取得関連費用を発生年度の費用とする方法へ変更。"
+            },
+            {
+              "id": "g2016_2020",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "c176042408b453b6182c47a30ba8b8438717468c33e3effb00e3dba4e9198df1",
+              "sourceLocator": {
+                "pdf_page": 58
+              },
+              "sourceQuote": "繰延税金資産の回収可能性の適用指針と減価償却方法を変更。連結財務諸表への影響は軽微。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "c51d6909656f46d6b63b30bf06f593cfe88657c7b95cac2e891900ab3e6f7bc9",
+              "sourceLocator": {
+                "pdf_page": 72
+              },
+              "sourceQuote": "収益認識基準を適用（連結財務諸表への影響は軽微）。時価算定基準等も適用（影響なし）。2020年度以前と同条件の計算は対象外。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "32fd7ffea5673013ba1a2fb82ae887c4bf897dd07a95321a201c1bce4e13ab88",
+              "sourceLocator": {
+                "pdf_page": 88
+              },
+              "sourceQuote": "時価算定の適用指針を適用。連結財務諸表への影響は軽微。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0c2b7dc179e13cfa22b7c413787e7b2580b165178f40704677e96fe91013da5c",
+              "sourceLocator": {
+                "pdf_page": 93
+              },
+              "sourceQuote": "ピーエス三菱他10社を株式取得により連結に追加。一定の連結範囲による増減ではない。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "0386aa968ed367f863dc41b8d5730c0fa82459e0f2601dfab70b89abcced8b56",
+              "sourceLocator": {
+                "pdf_page": 104
+              },
+              "sourceQuote": "法人税等の会計基準を適用。連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "2aeee37e4fe8d4c77353f1cd35a02a03d98fd054388d12a930b61ad373afc24e",
+              "sourceLocator": {
+                "pdf_page": 117
+              },
+              "sourceQuote": "東洋建設他7社を株式取得により連結に追加。一定の連結範囲による増減ではない。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。取得関連費用を発生年度の費用とする方法へ変更。",
+            "2016年度：繰延税金資産の回収可能性の適用指針と減価償却方法を変更。連結財務諸表への影響は軽微。",
+            "2021年度：収益認識基準を適用（連結財務諸表への影響は軽微）。時価算定基準等も適用（影響なし）。2020年度以前と同条件の計算は対象外。",
+            "2022年度：時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+            "2023年度：ピーエス三菱他10社を株式取得により連結に追加。一定の連結範囲による増減ではない。",
+            "2024年度：法人税等の会計基準を適用。連結財務諸表への影響なし。",
+            "2025年度：東洋建設他7社を株式取得により連結に追加。一定の連結範囲による増減ではない。",
+            "連結子会社数は29/29/31/32/42/43/43/45/59/61/75社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 117468,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "dc615504a51ff3bd8cb93a1f68fac0702361d061c4e5538f22937f4b94da25f0",
+              "evidenceId": "674d055ecb56c49285618a9f13b7255ccd93557fb90e29e691163bcb447ba408",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007XPB",
+                "documentTitle": "大成建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "8a359570565b4ac025a1e90e13ed989ead1df8621f5b0e54d1f86da4b8e8a06a",
+                "documentVersionSha256": "8a359570565b4ac025a1e90e13ed989ead1df8621f5b0e54d1f86da4b8e8a06a",
+                "pdfPage": 45,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                 (単位：百万円)\n                            前連結会計年度                          当連結会計年度\n                          (自 平成26年４月１日                     (自 平成27年４月１日\n                           至 平成27年３月31日)                    至 平成28年３月31日)\n売上高\n  完成工事高                               ※1    1,404,529            ※1    1,394,677\n  開発事業等売上高                                      168,740                    151,211\n  売上高合計                                     1,573,270                  1,545,889\n営業利益                                             70,417                    117,468",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "value_bbox": [
+                    480.4,
+                    337.36151,
+                    511.9,
+                    346.35251
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。取得関連費用を発生年度の費用とする方法へ変更。",
+                  "連結子会社29社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 114,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 53,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            大成建設株式会社(E00052)\n                                                                 有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数   29社\n      主要な連結子会社名は、「第１   企業の概況   ４   関係会社の状況」に記載しているため、省略している。\n      このうち、ワイビー浜町開発特定目的会社他２社については重要性が増したことにより、また大成ミャン\n     マーについては新規設立により子会社となったため、当連結会計年度より連結の範囲に含めている。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 140822,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5fe81974f533f68ad0c3197ef8658631bd1090aac57bf104a9d0655927f03112",
+              "evidenceId": "4ba0df64dff1e73f1d4cc3d8792320e7769a053dd688fca3a4b665c4e87ca539",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AMTW",
+                "documentTitle": "大成建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "c176042408b453b6182c47a30ba8b8438717468c33e3effb00e3dba4e9198df1",
+                "documentVersionSha256": "c176042408b453b6182c47a30ba8b8438717468c33e3effb00e3dba4e9198df1",
+                "pdfPage": 46,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                   (単位：百万円)\n                            前連結会計年度                            当連結会計年度\n                          (自 平成27年４月１日                       (自 平成28年４月１日\n                           至 平成28年３月31日)                      至 平成29年３月31日)\n売上高\n  完成工事高                               ※1     1,394,677             ※1     1,342,454\n  開発事業等売上高                                      151,211                      144,798\n  売上高合計                                      1,545,889                    1,487,252\n営業利益                                            117,468                      140,822",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 46,
+                  "value_bbox": [
+                    480.4,
+                    346.234611,
+                    511.9,
+                    355.225611
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "繰延税金資産の回収可能性の適用指針と減価償却方法を変更。連結財務諸表への影響は軽微。",
+                  "連結子会社29社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 109,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                 大成建設株式会社(E00052)\n                                                                      有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    29社\n      主要な連結子会社名は、「第１    企業の概況    ４   関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、京丹建設㈱については重要性が増したことにより、当連結会計年度より連結の範囲に含めており\n     ます。\n      また、清算した（同）心斎ブリッジについては、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 181859,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4769ebb9015d662889ae9b821afc2fc124494b35da238d8d901bbe360148b220",
+              "evidenceId": "516ba69c6b143c8a9acd1b616fa654bcb037964cc56eba3fa9fc0a697b4fb214",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DBBN",
+                "documentTitle": "大成建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "84125cc1aae41cdbfd3f918c5d8fc875282fc1f2874c52525345d5c337f82520",
+                "documentVersionSha256": "84125cc1aae41cdbfd3f918c5d8fc875282fc1f2874c52525345d5c337f82520",
+                "pdfPage": 46,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                 (単位：百万円)\n                            前連結会計年度                          当連結会計年度\n                          (自 平成28年４月１日                     (自 平成29年４月１日\n                           至 平成29年３月31日)                    至 平成30年３月31日)\n売上高\n  完成工事高                               ※1     1,342,454           ※1     1,445,276\n  開発事業等売上高                                      144,798                    140,220\n  売上高合計                                      1,487,252                  1,585,497\n営業利益                                            140,822                    181,859",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 46,
+                  "value_bbox": [
+                    480.4,
+                    346.134621,
+                    511.9,
+                    355.125621
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社31社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 110,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                             大成建設株式会社(E00052)\n                                                                  有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    31社\n      主要な連結子会社名は、「第１    企業の概況    ４   関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、大成プロインタン建設他１社については新規設立により子会社となったため、当連結会計年度よ\n     り連結の範囲に含めております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 153323,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "98d1fcb0c48695ed36e5e075564ed94c1568506cdd986194c91a478540aaac18",
+              "evidenceId": "4349551838fdb36eedfeff7d1c2f08daab1ae2949ba699e6e0c6ae9372e2a40c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G3FX",
+                "documentTitle": "大成建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ba928979bd308b001fd244630be4fa107241cfa653a89fe9b1692b8031da67cf",
+                "documentVersionSha256": "ba928979bd308b001fd244630be4fa107241cfa653a89fe9b1692b8031da67cf",
+                "pdfPage": 51,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2017年４月１日                  (自 2018年４月１日\n                           至 2018年３月31日)                 至 2019年３月31日)\n売上高\n 完成工事高                              ※1     1,445,276          ※1     1,511,724\n 開発事業等売上高                                     140,220                   139,153\n 売上高合計                                     1,585,497                 1,650,877\n営業利益                                          181,859                   153,323",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 51,
+                  "value_bbox": [
+                    472.45001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社32社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 114,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 59,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    32社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、従来、持分法適用関連会社であった大成フィリピン建設については株式の追加取得により、ま\n     た、大成コンセッション㈱他１社については新規設立等により、それぞれ子会社となったため、当連結会計年\n     度より連結の範囲に含めております。\n      なお、清算したワイビー浜町開発特定目的会社他１社については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 167755,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4cf7e9401a82c5d93649b5264150ce6005d290bee2d54d22bdfd7f75e6a9cd93",
+              "evidenceId": "bf4fc964694895a435f58ba3c83b602376540052edb996f03370cefd1ffad8a0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IUVK",
+                "documentTitle": "大成建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7282c7083d5657fb9d90c91fb50725d8971e3591d30569c3cb572b55b67de27a",
+                "documentVersionSha256": "7282c7083d5657fb9d90c91fb50725d8971e3591d30569c3cb572b55b67de27a",
+                "pdfPage": 56,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2018年４月１日                  (自 2019年４月１日\n                           至 2019年３月31日)                 至 2020年３月31日)\n売上高\n 完成工事高                              ※1     1,511,724          ※1     1,612,497\n 開発事業等売上高                                     139,153                   138,832\n 売上高合計                                     1,650,877                 1,751,330\n営業利益                                          153,323                   167,755",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "value_bbox": [
+                    472.45001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社42社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 114,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    42社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、泰明工業㈱他２社については、重要性が増したこと等により、また、大成USA LCC他８社につい\n     ては新規設立等により、それぞれ子会社となったため、当連結会計年度より連結の範囲に含めております。\n      なお、清算した大成コンストラクション他１社については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 130516,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5a841dace8e32d6d7d8e3b949f5c00b8342c03a03e03f52d4648641d3ff61025",
+              "evidenceId": "9676c4aeb71c11e14715c080ef71daa23c3393a7c9d3ea9917ad53f5e0043eb7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LMW1",
+                "documentTitle": "大成建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cfb03bc81a1f0dc0ffb5ebcba2dfbd23852f11004e24baf47c8ed2766fdeae32",
+                "documentVersionSha256": "cfb03bc81a1f0dc0ffb5ebcba2dfbd23852f11004e24baf47c8ed2766fdeae32",
+                "pdfPage": 59,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2019年４月１日                  (自 2020年４月１日\n                           至 2020年３月31日)                 至 2021年３月31日)\n売上高\n 完成工事高                              ※1     1,612,497          ※1     1,326,663\n 開発事業等売上高                                     138,832                   153,478\n 売上高合計                                     1,751,330                 1,480,141\n営業利益                                          167,755                   130,516",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    472.45001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社43社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 121,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 67,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    43社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、大成ディベロップメントハノイについては新規設立により子会社となったため、当連結会計年度\n     より連結の範囲に含めております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 96077,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7d9f433be9a94d72bd04c8498d56af440decc3fb1c6486ccfcc0f53d3c02ba77",
+              "evidenceId": "34e9255f595b43c43038b552c46680fc260324ab80ecd09e79f49ffb92a1b310",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OB6L",
+                "documentTitle": "大成建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "c51d6909656f46d6b63b30bf06f593cfe88657c7b95cac2e891900ab3e6f7bc9",
+                "documentVersionSha256": "c51d6909656f46d6b63b30bf06f593cfe88657c7b95cac2e891900ab3e6f7bc9",
+                "pdfPage": 60,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2020年４月１日                 (自 2021年４月１日\n                           至 2021年３月31日)                至 2022年３月31日)\n売上高\n 完成工事高                                     1,326,663                1,385,516\n 開発事業等売上高                                    153,478                  157,723\n 売上高合計                                     1,480,141         ※1     1,543,240\n営業利益                                         130,516                    96,077",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    476.95001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用（連結財務諸表への影響は軽微）。時価算定基準等も適用（影響なし）。2020年度以前と同条件の計算は対象外。",
+                  "連結子会社43社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 128,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 68,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    43社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 54740,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "b7d1e256433631753ec852608a4e02c9c149bb1e3fdb718800dd6e24f3fcc185",
+              "evidenceId": "8785d5a9e3b62491006d04358d78962fcc8b1ee9054fcf577aeb27600bae9a66",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R0RE",
+                "documentTitle": "大成建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "32fd7ffea5673013ba1a2fb82ae887c4bf897dd07a95321a201c1bce4e13ab88",
+                "documentVersionSha256": "32fd7ffea5673013ba1a2fb82ae887c4bf897dd07a95321a201c1bce4e13ab88",
+                "pdfPage": 76,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                  (単位：百万円)\n                            前連結会計年度                          当連結会計年度\n                          (自 2021年４月１日                     (自 2022年４月１日\n                           至 2022年３月31日)                    至 2023年３月31日)\n売上高\n 完成工事高                                     1,385,516                    1,499,803\n 開発事業等売上高                                    157,723                      142,909\n 売上高合計                              ※1     1,543,240             ※1     1,642,712\n営業利益                                           96,077                       54,740",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 76,
+                  "value_bbox": [
+                    476.95001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用。連結財務諸表への影響は軽微。",
+                  "連結子会社45社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 145,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 84,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    45社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、大成不動産投資顧問㈱他２社については新規設立により子会社となったため、当連結会計年度よ\n     り連結の範囲に含めております。\n      なお、清算したＰＰ大成インドネシア建設については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 26480,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "893a5b5d00784433c1cb0508871bc418b722cd54bf382a827d0feb16b5b504a8",
+              "evidenceId": "82c6160119634566b721bf148b5c65490bf3612754fda3c2d14b0f9035d2850b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TL7V",
+                "documentTitle": "大成建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0c2b7dc179e13cfa22b7c413787e7b2580b165178f40704677e96fe91013da5c",
+                "documentVersionSha256": "0c2b7dc179e13cfa22b7c413787e7b2580b165178f40704677e96fe91013da5c",
+                "pdfPage": 85,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                  (単位：百万円)\n                            前連結会計年度                          当連結会計年度\n                          (自 2022年４月１日                     (自 2023年４月１日\n                           至 2023年３月31日)                    至 2024年３月31日)\n売上高\n 完成工事高                                     1,499,803                    1,602,000\n 開発事業等売上高                                    142,909                      163,023\n 売上高合計                              ※1     1,642,712             ※1     1,765,023\n営業利益                                           54,740                       26,480",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 85,
+                  "value_bbox": [
+                    476.95001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "ピーエス三菱他10社を株式取得により連結に追加。一定の連結範囲による増減ではない。",
+                  "連結子会社59社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 160,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 93,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                  大成建設株式会社(E00052)\n                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    59社\n      主要な連結子会社名は、「第１    企業の概況    ４    関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、㈱ピーエス三菱他10社については株式取得により、また、大成クリーンエネルギー㈱他３社につ\n     いては新規設立により、それぞれ子会社となったため、当連結会計年度より連結の範囲に含めております。\n      なお、清算した㈱ホテルプリシード郡山については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 120160,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "252571c412bfebc00b1049365313bbddec30b3c98eb93f9faf0662b3fc2e556e",
+              "evidenceId": "ed671313720ce9c7b29e20710d23e223da79ba87d4698c899b1bdfebc09a7904",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100VY00",
+                "documentTitle": "大成建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0386aa968ed367f863dc41b8d5730c0fa82459e0f2601dfab70b89abcced8b56",
+                "documentVersionSha256": "0386aa968ed367f863dc41b8d5730c0fa82459e0f2601dfab70b89abcced8b56",
+                "pdfPage": 92,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2023年４月１日                   (自 2024年４月１日\n                           至 2024年３月31日)                  至 2025年３月31日)\n売上高\n 完成工事高                                     1,602,000                  1,975,150\n 開発事業等売上高                                    163,023                    179,073\n 売上高合計                              ※1     1,765,023           ※1     2,154,223\n営業利益                                           26,480                    120,160",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 92,
+                  "value_bbox": [
+                    472.45001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等の会計基準を適用。連結財務諸表への影響なし。",
+                  "連結子会社61社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 165,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 100,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               大成建設株式会社(E00052)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    61社\n      主要な連結子会社名は、「第１    企業の概況    ４   関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、大成インディア他４社については新規設立により子会社となったため、当連結会計年度より連結\n     の範囲に含めております。\n      また、清算した㈱ＳＨ建築事務所他１社及び出資持分の一部譲渡により持分法適用関連会社となった(同)Ｔ\n     Ｓインベストメント１号については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 187973,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9b6aa289890feb8cbcc7892ee41e0eecc13008c032e56da43615d0289929deaa",
+              "evidenceId": "025717fdea226477919177c7263679ceebad0df1c4e68c5e26565255772dc483",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YBGF",
+                "documentTitle": "大成建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "2aeee37e4fe8d4c77353f1cd35a02a03d98fd054388d12a930b61ad373afc24e",
+                "documentVersionSha256": "2aeee37e4fe8d4c77353f1cd35a02a03d98fd054388d12a930b61ad373afc24e",
+                "pdfPage": 109,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2024年４月１日                   (自 2025年４月１日\n                           至 2025年３月31日)                  至 2026年３月31日)\n売上高\n 完成工事高                                     1,975,150                  1,895,789\n 開発事業等売上高                                    179,073                    193,301\n 売上高合計                              ※1     2,154,223           ※1     2,089,091\n営業利益                                          120,160                    187,973",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 109,
+                  "value_bbox": [
+                    472.45001,
+                    346.361481,
+                    503.95001,
+                    355.352481
+                  ]
+                },
+                "comparisonVerificationId": "taisei-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "東洋建設他7社を株式取得により連結に追加。一定の連結範囲による増減ではない。",
+                  "連結子会社75社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 181,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 117,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               大成建設株式会社(E00052)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数    75社\n      主要な連結子会社名は、「第１    企業の概況    ４   関係会社の状況」に記載しているため、省略しておりま\n     す。\n      このうち、東洋建設㈱他７社については株式取得により、また、ＴＳインベストメント２号特定目的会社他\n     ６社については新規設立により子会社となったため、当連結会計年度より連結の範囲に含めております。\n      また、清算した京丹建設㈱については、連結の範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "77ab02ca4a75e9e404dd5592bc6f27f253e73e57d08b13980b5d9378d1ebf524"
       }
     ],
     "mappings": [
@@ -2056,6 +2751,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "TAISEI",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "TAISEI:operating_income_consolidated@FY2015_FY2025_TAISEI_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -2066,5 +2783,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "c83a5f88f48b520d9301d172665eceee183fb0fe4b80b6eb968a018f8a8f0817"
+  "snapshotHash": "1c131a6f4995129e345a19ba1f7cd4227c4684e3fdcf4b8a3b3407eebc9f8bd2"
 }
