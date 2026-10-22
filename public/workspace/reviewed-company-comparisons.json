@@ -14434,7 +14434,414 @@
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
       }
+    ],
+    "reportingRegimeSeries": [
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "INFR:operating_income_consolidated@INFR_JGAAP_REPORTED_20261022",
+          "companyId": "INFR",
+          "metricId": "operating_income_consolidated",
+          "metricLabelAsDisclosed": "営業利益（連結） / JGAAP",
+          "label": "インフロニア / 営業利益（連結） / JGAAP",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "accountingStandard": "JGAAP",
+          "comparisonFamily": "INFR_OPERATING_JGAAP",
+          "reviewWindow": "INFR_JGAAP_REPORTED_20261022",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "aece0ecc9a55c24f8ca2ac7a813d2695cd6f24a02a429d0f44cb04edd43138c3",
+              "sourceLocator": {
+                "pdf_page": 77
+              },
+              "sourceQuote": "2021年10月1日設立。69/72/77頁で連結は2021年4月1日〜2022年3月31日・前田建設の連結財務諸表承継、単体は10月〜3月と確認。XBRL共通期間contextは10月1日開始でPDFと異なるため、XBRL期間一致とは判定せずPDF監査記載を表示期間の根拠とする。連結27社、海外子会社12月決算・重要取引調整。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6d9eae621f045a864189619c09cd94278ac8444a17e8c434a2040e8a52752ec9",
+              "sourceLocator": {
+                "pdf_page": 92
+              },
+              "sourceQuote": "日本基準の当年連結営業利益40,495百万円。連結28社、重要性増加・設立・取得・売却等による構成変更を保持。翌年度のIFRS比較値44,415百万円へ置換しない。"
+            }
+          ],
+          "sourceCoverage": [
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31"
+          ],
+          "policyNotes": [
+            "表示区分：日本基準2021〜2022年度。2015〜2020年度は法人設立前につき適用外で、欠損やゼロではない。日本基準とIFRSを別系列・別グラフで表示し線をつながない。",
+            "2021年10月1日設立。69/72/77頁で連結は2021年4月1日〜2022年3月31日・前田建設の連結財務諸表承継、単体は10月〜3月と確認。XBRL共通期間contextは10月1日開始でPDFと異なるため、XBRL期間一致とは判定せずPDF監査記載を表示期間の根拠とする。連結27社、海外子会社12月決算・重要取引調整。",
+            "日本基準の当年連結営業利益40,495百万円。連結28社、重要性増加・設立・取得・売却等による構成変更を保持。翌年度のIFRS比較値44,415百万円へ置換しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 37489,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cfc7670d5344b978403a016216756f51ca62ac22c9a9d1301ca009c13d3765ac",
+              "evidenceId": "e2d8c8aa5da3cd4d7baad386256055f4f6e858428e695c753e23d39318bdc629",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OBO5",
+                "documentTitle": "インフロニア・ホールディングス 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "aece0ecc9a55c24f8ca2ac7a813d2695cd6f24a02a429d0f44cb04edd43138c3",
+                "documentVersionSha256": "aece0ecc9a55c24f8ca2ac7a813d2695cd6f24a02a429d0f44cb04edd43138c3",
+                "pdfPage": 72,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                (単位：百万円)\n                            当連結会計年度\n                          (自 2021年４月１日\n                           至 2022年３月31日)\n売上高\n 完成工事高                              ※１   390,678\n その他の事業売上高                          ※１   292,234\n 売上高合計                                   682,912\n営業利益                                      37,489",
+                "sourceLocator": {
+                  "pdf_page": 72,
+                  "value_bbox": [
+                    351.75,
+                    290.861481,
+                    378.75,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "infr-operating-regimes-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "JGAAP・連結損益計算書の営業利益。単体/事業利益/セグメント利益と区別し、PDFの実期間と当年連結範囲を保持。",
+                "accountingStandard": "JGAAP",
+                "basisPage": 69,
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2021年10月1日設立。69/72/77頁で連結は2021年4月1日〜2022年3月31日・前田建設の連結財務諸表承継、単体は10月〜3月と確認。XBRL共通期間contextは10月1日開始でPDFと異なるため、XBRL期間一致とは判定せずPDF監査記載を表示期間の根拠とする。連結27社、海外子会社12月決算・重要取引調整。",
+                  "2015〜2020年度は設立前につき適用外。ゼロ・欠損を補わない。日本基準とIFRSを別系列にし、年度間の条件一致・合算・案件配賦は未確認。"
+                ],
+                "nativePeriodDiscrepancy": {
+                  "xbrlStart": "2021-10-01",
+                  "pdfConsolidatedStart": "2021-04-01",
+                  "status": "retained_not_claimed_equal",
+                  "pdfBasisPages": [
+                    69,
+                    72,
+                    77
+                  ]
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 40495,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e52705f6ce83b21d53175d43b680212a205a832dfa363db500c437489c561972",
+              "evidenceId": "e2847cc7bdbc74f5e6573d836bba3a0a224e362f45139d81347731cb616d2ac7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100QZK6",
+                "documentTitle": "インフロニア・ホールディングス 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6d9eae621f045a864189619c09cd94278ac8444a17e8c434a2040e8a52752ec9",
+                "documentVersionSha256": "6d9eae621f045a864189619c09cd94278ac8444a17e8c434a2040e8a52752ec9",
+                "pdfPage": 86,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2021年４月１日                 (自 2022年４月１日\n                           至 2022年３月31日)                至 2023年３月31日)\n売上高\n 完成工事高                              ※１   390,678             ※１     400,937\n その他の事業売上高                          ※１   292,234             ※１     308,703\n 売上高合計                                   682,912                    709,641\n営業利益                                      37,489                     40,495",
+                "sourceLocator": {
+                  "pdf_page": 86,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "infr-operating-regimes-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "JGAAP・連結損益計算書の営業利益。単体/事業利益/セグメント利益と区別し、PDFの実期間と当年連結範囲を保持。",
+                "accountingStandard": "JGAAP",
+                "basisPage": 83,
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "日本基準の当年連結営業利益40,495百万円。連結28社、重要性増加・設立・取得・売却等による構成変更を保持。翌年度のIFRS比較値44,415百万円へ置換しない。",
+                  "2015〜2020年度は設立前につき適用外。ゼロ・欠損を補わない。日本基準とIFRSを別系列にし、年度間の条件一致・合算・案件配賦は未確認。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "421b942c3ca649b34bde439e07f530b6c5fcd9761a9bbe581f64b33612fe1158"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "INFR:operating_income_consolidated@INFR_IFRS_REPORTED_20261022",
+          "companyId": "INFR",
+          "metricId": "operating_income_consolidated",
+          "metricLabelAsDisclosed": "営業利益（連結） / IFRS",
+          "label": "インフロニア / 営業利益（連結） / IFRS",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "accountingStandard": "IFRS",
+          "comparisonFamily": "INFR_OPERATING_IFRS",
+          "reviewWindow": "INFR_IFRS_REPORTED_20261022",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a06cfe7b0811591e3a264b1c6493c94afa24551e809cd2f037a3ca7e4976ea03",
+              "sourceLocator": {
+                "pdf_page": 106
+              },
+              "sourceQuote": "2023年度からIFRS適用、移行日は2022年4月1日（106/173頁）。日本基準の参考値43,267百万円・事業利益51,461百万円とIFRS営業利益51,060百万円を区別。JWDホールディングス3取得後の損益のみを含み、取得期首と仮定した情報で補わない。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "c573d2fbb08d58bf5db93e8f61f4e755f88796aecd12df9c23ce8a8e31b42d9f",
+              "sourceLocator": {
+                "pdf_page": 131
+              },
+              "sourceQuote": "IFRS連結営業利益47,148百万円。日本風力開発等の連結範囲と取得原価配分の確定を保持し、一定範囲の利益へ無検証に調整しない。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "104a0ac370cc09315be004963f5f02a69c649f79482a863deefa9525b4c6601a",
+              "sourceLocator": {
+                "pdf_page": 132
+              },
+              "sourceQuote": "IFRS連結営業利益75,805百万円。三井住友建設を2025年9月18日に取得（147/148頁）、期首取得仮定の情報を実績に置換しない。取得後当期利益12,571百万円は営業利益ではなく加減しない。旧参考表の非開示/nullは保持し、当年有報の検証済み別観測を追加。"
+            }
+          ],
+          "sourceCoverage": [
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "policyNotes": [
+            "表示区分：IFRS2023〜2025年度。2015〜2020年度は法人設立前につき適用外で、欠損やゼロではない。日本基準とIFRSを別系列・別グラフで表示し線をつながない。",
+            "2023年度からIFRS適用、移行日は2022年4月1日（106/173頁）。日本基準の参考値43,267百万円・事業利益51,461百万円とIFRS営業利益51,060百万円を区別。JWDホールディングス3取得後の損益のみを含み、取得期首と仮定した情報で補わない。",
+            "IFRS連結営業利益47,148百万円。日本風力開発等の連結範囲と取得原価配分の確定を保持し、一定範囲の利益へ無検証に調整しない。",
+            "IFRS連結営業利益75,805百万円。三井住友建設を2025年9月18日に取得（147/148頁）、期首取得仮定の情報を実績に置換しない。取得後当期利益12,571百万円は営業利益ではなく加減しない。旧参考表の非開示/nullは保持し、当年有報の検証済み別観測を追加。"
+          ],
+          "points": [
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 51060,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "6815aca031743102fbaed224f0e1fcff634ff1cad33888887f39809872ccd425",
+              "evidenceId": "5b7e624c36c17d093044316e6cb178892d4fa46fbecb1e6b0826bcd3ba4e26d3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TQDB",
+                "documentTitle": "インフロニア・ホールディングス 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a06cfe7b0811591e3a264b1c6493c94afa24551e809cd2f037a3ca7e4976ea03",
+                "documentVersionSha256": "a06cfe7b0811591e3a264b1c6493c94afa24551e809cd2f037a3ca7e4976ea03",
+                "pdfPage": 100,
+                "sourceQuote": "② 【連結損益計算書】\n                                                            （単位：百万円）\n                                   前連結会計年度                 当連結会計年度\n                       注記        (自 2022年４月１日            (自 2023年４月１日\n                                  至 2023年３月31日)           至 2024年３月31日)\n\n\n売上高                    ６,30                    711,810             793,264\n                    13,14,27,3\n売上原価                                          △614,069            △681,379\n営業利益                    ６                       44,415              51,060",
+                "sourceLocator": {
+                  "pdf_page": 100,
+                  "value_bbox": [
+                    472.55,
+                    263.152721,
+                    499.55,
+                    272.143721
+                  ]
+                },
+                "comparisonVerificationId": "infr-operating-regimes-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "IFRS・連結損益計算書の営業利益。単体/事業利益/セグメント利益と区別し、PDFの実期間と当年連結範囲を保持。",
+                "accountingStandard": "IFRS",
+                "basisPage": 106,
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2023年度からIFRS適用、移行日は2022年4月1日（106/173頁）。日本基準の参考値43,267百万円・事業利益51,461百万円とIFRS営業利益51,060百万円を区別。JWDホールディングス3取得後の損益のみを含み、取得期首と仮定した情報で補わない。",
+                  "2015〜2020年度は設立前につき適用外。ゼロ・欠損を補わない。日本基準とIFRSを別系列にし、年度間の条件一致・合算・案件配賦は未確認。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 47148,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "891bc6ce8da3825461ae37540a7cbec3b346c43b9c26945cf00f15896d244917",
+              "evidenceId": "f5c1eb8ab7dddbe979b5de069026521ec761a8d2da36c3fd6ec0e7dd10027ef0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W181",
+                "documentTitle": "インフロニア・ホールディングス 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "c573d2fbb08d58bf5db93e8f61f4e755f88796aecd12df9c23ce8a8e31b42d9f",
+                "documentVersionSha256": "c573d2fbb08d58bf5db93e8f61f4e755f88796aecd12df9c23ce8a8e31b42d9f",
+                "pdfPage": 125,
+                "sourceQuote": "② 【連結損益計算書】\n                                                           （単位：百万円）\n                                  前連結会計年度                 当連結会計年度\n                      注記        (自 2023年４月１日            (自 2024年４月１日\n                                 至 2024年３月31日)           至 2025年３月31日)\n\n\n売上高                   ６,30                   793,264              847,548\n                    13,14,27,\n売上原価                                        △681,379            △732,034\n営業利益                    ６                     51,060               47,148",
+                "sourceLocator": {
+                  "pdf_page": 125,
+                  "value_bbox": [
+                    477.05,
+                    263.152721,
+                    504.05,
+                    272.143721
+                  ]
+                },
+                "comparisonVerificationId": "infr-operating-regimes-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "IFRS・連結損益計算書の営業利益。単体/事業利益/セグメント利益と区別し、PDFの実期間と当年連結範囲を保持。",
+                "accountingStandard": "IFRS",
+                "basisPage": 131,
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "IFRS連結営業利益47,148百万円。日本風力開発等の連結範囲と取得原価配分の確定を保持し、一定範囲の利益へ無検証に調整しない。",
+                  "2015〜2020年度は設立前につき適用外。ゼロ・欠損を補わない。日本基準とIFRSを別系列にし、年度間の条件一致・合算・案件配賦は未確認。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 75805,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1f70ed2d146c1af978be1ae705ce0127603b0ef9cc117c14f688dc286815133c",
+              "evidenceId": "eece66ebd33290dfc0a0a209d93043f76c406b67327574aeaf3dcd16a75b343c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YCIP",
+                "documentTitle": "インフロニア・ホールディングス 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "104a0ac370cc09315be004963f5f02a69c649f79482a863deefa9525b4c6601a",
+                "documentVersionSha256": "104a0ac370cc09315be004963f5f02a69c649f79482a863deefa9525b4c6601a",
+                "pdfPage": 126,
+                "sourceQuote": "② 【連結損益計算書】\n                                                           （単位：百万円）\n                                  前連結会計年度                 当連結会計年度\n                      注記        (自 2024年４月１日            (自 2025年４月１日\n                                 至 2025年３月31日)           至 2026年３月31日)\n\n\n売上高                   ６,30                   847,548            1,124,878\n                    13,14,27,\n売上原価                                        △732,034            △960,912\n営業利益                    ６                     47,148               75,805",
+                "sourceLocator": {
+                  "pdf_page": 126,
+                  "value_bbox": [
+                    477.05,
+                    276.652721,
+                    504.05,
+                    285.643721
+                  ]
+                },
+                "comparisonVerificationId": "infr-operating-regimes-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "IFRS・連結損益計算書の営業利益。単体/事業利益/セグメント利益と区別し、PDFの実期間と当年連結範囲を保持。",
+                "accountingStandard": "IFRS",
+                "basisPage": 132,
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "IFRS連結営業利益75,805百万円。三井住友建設を2025年9月18日に取得（147/148頁）、期首取得仮定の情報を実績に置換しない。取得後当期利益12,571百万円は営業利益ではなく加減しない。旧参考表の非開示/nullは保持し、当年有報の検証済み別観測を追加。",
+                  "2015〜2020年度は設立前につき適用外。ゼロ・欠損を補わない。日本基準とIFRSを別系列にし、年度間の条件一致・合算・案件配賦は未確認。"
+                ]
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "194d29bea52e4fabcdb152c7e9b6033d339301d37a261a4e0250a3ff278b2ce2"
+      }
+    ],
+    "reportingRegimeMappings": [
+      {
+        "companyId": "INFR",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "INFR:operating_income_consolidated@INFR_JGAAP_REPORTED_20261022",
+        "fiscalYears": [
+          2021,
+          2022
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "INFR",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "INFR:operating_income_consolidated@INFR_IFRS_REPORTED_20261022",
+        "fiscalYears": [
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "IFRS"
+      }
     ]
   },
-  "snapshotHash": "2beb9540423a7882d5aac93895750de203e6de1ffb74772d88288e7d540aaedb"
+  "snapshotHash": "7168c926d3a98975c5a62f36fc1a31ce09cd669b7430a7c910bc9c6a9755caf5"
 }

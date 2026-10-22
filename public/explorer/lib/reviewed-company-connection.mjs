@@ -12,13 +12,16 @@ export async function reviewedCompanyCatalog(wrapper){
  if(!p||wrapper.snapshotHash!==await canonicalSha256(p)||p.schemaVersion!==1||p.datasetId!=='atlas-reviewed-company-connection'||p.automaticAggregationAllowed!==false||!Array.isArray(p.mappings)||!Array.isArray(p.series))throw Error('会社別比較の出典と確認範囲が一致しません。');
  const histories=p.fullHistorySeries??[],historyMappings=p.fullHistoryMappings??[];
  if(!Array.isArray(histories)||!Array.isArray(historyMappings)||histories.length!==historyMappings.length||histories.length>2||new Set(histories.map(r=>r?.payload?.companyId)).size!==histories.length||histories.some(r=>!['MATSUI','ZENITAKA'].includes(r?.payload?.companyId)||r.payload.metricId!=='operating_income_consolidated'||r.payload.points?.length!==11)||historyMappings.some((m,i)=>m.reviewedSeriesId!==histories[i]?.payload?.id||!['MATSUI','ZENITAKA'].includes(m.companyId)||m.companyId!==histories[i]?.payload?.companyId||m.legacyMetricId!=='operating_income_consolidated'||JSON.stringify(m.fiscalYears)!==JSON.stringify(Array.from({length:11},(_,i)=>2015+i))))throw Error('全年度履歴の会社・項目・対象年度を確認できません。');
- const catalog=await verifiedWorkbenchCatalog([...p.series,...histories]),keys=new Set();
+ const regimes=p.reportingRegimeSeries??[],regimeMaps=p.reportingRegimeMappings??[];
+ if(!Array.isArray(regimes)||!Array.isArray(regimeMaps)||regimes.length!==regimeMaps.length||(regimes.length!==0&&regimes.length!==2))throw Error('連結報告区分が不足しています。');
+ for(const [i,r]of regimes.entries()){const m=regimeMaps[i],std=i===0?'JGAAP':'IFRS',ys=i===0?[2021,2022]:[2023,2024,2025],a=r?.payload;if(a?.companyId!=='INFR'||a.metricId!=='operating_income_consolidated'||a.accountingStandard!==std||m?.companyId!=='INFR'||m.legacyMetricId!==a.metricId||m.reviewedSeriesId!==a.id||m.accountingStandard!==std||m.unit!=='百万円'||m.scope!=='consolidated'||m.periodKind!=='annual_flow'||JSON.stringify(m.fiscalYears)!==JSON.stringify(ys)||JSON.stringify(a.points.map(p=>+p.periodStart.slice(0,4)))!==JSON.stringify(ys)||a.points.some(p=>p.periodStart!==`${+p.periodStart.slice(0,4)}-04-01`||p.periodEnd!==`${+p.periodStart.slice(0,4)+1}-03-31`||p.provenance.accountingStandard!==std))throw Error('設立後の会社・年度・会計基準・連結期間が一致しません。');}
+ const catalog=await verifiedWorkbenchCatalog([...p.series,...histories,...regimes]),keys=new Set();
  for(const m of [...p.mappings,...historyMappings]){const k=m.companyId+':'+m.legacyMetricId+(historyMappings.includes(m)?':full-history':''),s=catalog.series.find(s=>s.id===m.reviewedSeriesId);
   if(keys.has(k)||!s||s.companyId!==m.companyId||s.metricId!==m.legacyMetricId||s.comparisonScope!==m.scope||s.unit!==m.unit||m.scope!=='consolidated'||m.periodKind!=='annual_flow'||m.accountingStandard!=='JGAAP'||s.points.some(pt=>pt.provenance.accountingStandard!=='JGAAP'||!m.fiscalYears.includes(+pt.periodStart.slice(0,4))||!reviewedFiscalPeriodMatches(m,pt)))throw Error('会社・年度・通期・単位・連結範囲の対応が確認できません。');
   keys.add(k);
  }
- if(keys.size!==catalog.series.length)throw Error('比較する指標の対応が不足しています。');
- return {...catalog,mappings:p.mappings,fullHistoryMappings:historyMappings,responses:[...p.series,...histories],sourceSnapshot:wrapper.snapshotHash};
+ if(keys.size!==catalog.series.length-regimes.length)throw Error('比較する指標の対応が不足しています。');
+ return {...catalog,mappings:p.mappings,fullHistoryMappings:historyMappings,reportingRegimeMappings:regimeMaps,responses:[...p.series,...histories,...regimes],sourceSnapshot:wrapper.snapshotHash};
 }
 /** Exact source-pinned KITANO unit conversion representation differences only; no epsilon. */
 function reviewedUnitPrecisionMatches(legacy,series,point,match){
@@ -34,9 +37,21 @@ function reviewedMatsuiPrecisionMatches(legacy,series,point,match){
  return pins.some(x=>point.timeCode===`${x.year}100000`&&point.numericValue===x.legacy&&match.periodStart===`${x.year}-04-01`&&match.periodEnd===`${x.year+1}-03-31`&&match.numericValue===x.value&&p.sourceNumericValue===x.raw&&p.sourceUnit==='千円'&&p.unitConversionFactor===0.001&&p.sourceDocumentId===x.doc&&p.pdfPage===x.page&&p.sourceFileSha256===x.sha&&p.accountingStandard==='JGAAP');
 }
 
+function connectInfrRegimes(legacy,catalog){
+ const wrong=legacy.tableId!=='buildbase-company-annual'||legacy.cycle!=='年度次'||legacy.unit!=='百万円'||[legacy.scope,legacy.comparisonScope].some(s=>['standalone','non_consolidated','segment'].includes(s)),maps=catalog.reportingRegimeMappings,remaining=[],accepted=new Map(),reasons=[];
+ for(const point of legacy.points){const y=/^\d{4}100000$/.test(point.timeCode)?+point.timeCode.slice(0,4):null,m=maps.find(m=>m.fiscalYears.includes(y)),source=catalog.series.find(s=>s.id===m?.reviewedSeriesId),match=source?.points.find(p=>+p.periodStart.slice(0,4)===y),p=match?.provenance;
+ if(y!==null&&y>=2015&&y<2021){reasons.push('法人設立前につき適用外です。');continue;}
+ const supplement=y===2025&&point.numericValue===null&&point.status==='not_disclosed'&&match?.numericValue===75805&&p?.sourceDocumentId==='S100YCIP'&&p.pdfPage===126&&p.sourceFileSha256==='104a0ac370cc09315be004963f5f02a69c649f79482a863deefa9525b4c6601a'&&p.accountingStandard==='IFRS'&&match.periodStart==='2025-04-01'&&match.periodEnd==='2026-03-31';
+ const reason=wrong?'通期・単位・連結範囲が異なるため、参考表示に残します。':!m||!match?(y!==null&&y<2021?'法人設立前につき適用外です。':'確認した連結報告期間ではありません。'):!supplement&&(point.status!=='confirmed_value'||point.numericValue!==match.numericValue)?'参考表と検証済み観測が一致しないため、確認が必要です。':'';
+ if(reason){remaining.push({...point,comparisonUnresolvedReason:reason});reasons.push(reason);}else{if(!accepted.has(source.id))accepted.set(source.id,{source,points:[]});accepted.get(source.id).points.push(match);}}
+ const entries=[];for(const {source,points}of accepted.values()){const e=verifiedSeriesSelection(catalog,{cat01:'INFR',tab:'operating_income_consolidated',reviewWindow:source.reviewWindow},undefined,undefined,legacy.color),times=new Set(points.map(p=>p.timeCode));e.points=e.points.filter(p=>times.has(p.timeCode));e.timeLabels=Object.fromEntries(e.points.map(p=>[p.timeCode,p.timeLabel]));e.legacyReference={seriesId:legacy.id,originalPoints:structuredClone(legacy.points),sourceSnapshot:catalog.sourceSnapshot};e.notes.push('2025年度の旧参考表は非開示/nullのまま保持し、有報当期の出典・数値・実期間を検証した別観測を表示します。日本基準とIFRSを合流させません。');entries.push(e);}
+ if(remaining.length)entries.push({...legacy,points:remaining,automaticComparisonAllowed:false,notes:[...legacy.notes,...new Set(reasons)]});return {entries,reviewedPoints:[...accepted.values()].reduce((n,x)=>n+x.points.length,0),reasons:[...new Set(reasons)]};
+}
+
 /** Never change legacy permissions. Use separate reviewed observations only on exact matches. */
 export function connectReviewedCompanySelection(legacy,catalog){
  if(legacy.datasetId!=='buildbase-company-comparison')return {entries:[legacy],reviewedPoints:0,reasons:[]};
+ if(legacy.coordinates.cat01==='INFR'&&legacy.coordinates.tab==='operating_income_consolidated'&&catalog?.reportingRegimeMappings?.length)return connectInfrRegimes(legacy,catalog);
  const co=legacy.coordinates.cat01,metric=legacy.coordinates.tab,full=catalog?.fullHistoryMappings?.find(m=>m.companyId===co&&m.legacyMetricId===metric),m=(full&&legacy.points.some(p=>/^\d{4}100000$/.test(p.timeCode)&&+p.timeCode.slice(0,4)<2024)?full:null)??catalog?.mappings.find(m=>m.companyId===co&&m.legacyMetricId===metric),source=catalog?.series.find(s=>s.id===m?.reviewedSeriesId);
  const accepted=[],remaining=[],reasons=[];
  const wrongPeriod=legacy.tableId!=='buildbase-company-annual'||legacy.cycle!=='年度次';
