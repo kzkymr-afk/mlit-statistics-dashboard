@@ -15023,6 +15023,402 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "bac5c51b708db9298339fc46aeb3f57a012581f94715ef4e6187a4c973e46e20"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "MAEDA:operating_income_consolidated@MAEDA_JGAAP_2015_2020_REPORTED",
+          "companyId": "MAEDA",
+          "metricId": "operating_income_consolidated",
+          "label": "前田建設工業 / 営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "accountingStandard": "JGAAP",
+          "comparisonFamily": "MAEDA_JGAAP_REPORTED",
+          "reviewWindow": "MAEDA_JGAAP_2015_2020_REPORTED",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9c0594e3ac1f778fd5fb100ed7b88ee7eb841e1e2acfddfdc78a9024e337ba5b",
+              "sourceLocator": {
+                "pdf_page": 50
+              },
+              "sourceQuote": "企業結合基準適用による営業利益等への影響は軽微。ゼロ影響とはしない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "dfe530a34067209044af171c9c9d63a2aaaea68a7c693de441b871a6c3dfbfc9",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "減価償却方法変更による営業利益等への影響は軽微。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "fde0b2f60b7e4a4512ac07bdb472f82f7449243fa777fcfeb315e1165029beab",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "当年連結範囲・会計方針を保持。異なる年度を同一範囲と断定しない。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "94e42848110d0aca022a1bfb43f8f7a1b5f8a2fb67e8b84563f3b0c1c9c322d4",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "当年連結範囲・会計方針を保持。異なる年度を同一範囲と断定しない。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cfa67638a49d14e0b4ae24c9a2e30b3bd357f1557e472ee3104d220ce7f93f90",
+              "sourceLocator": {
+                "pdf_page": 66
+              },
+              "sourceQuote": "前田道路を持分法適用から連結へ変更。旧年度と同一範囲に換算しない。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cf8007cb4a83863347d1d386b320b42a6aaa1295a5f5959318eb15a72bfd0cd3",
+              "sourceLocator": {
+                "pdf_page": 65
+              },
+              "sourceQuote": "連結子会社26社へ範囲拡大。海外子会社12月決算に必要な連結調整。"
+            }
+          ],
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31"
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準適用による営業利益等への影響は軽微。ゼロ影響とはしない。",
+            "2016年度：減価償却方法変更による営業利益等への影響は軽微。",
+            "2019年度：前田道路を持分法適用から連結へ変更。旧年度と同一範囲に換算しない。",
+            "2020年度：連結子会社26社へ範囲拡大。海外子会社12月決算に必要な連結調整。",
+            "2021〜2025年度も存続法人に適用可能。自社公告は個別、親会社2024/2025連結表は億円丸めで基準・範囲内訳未確認のため、旧nullを補間せず通常比較未接続。非開示とは断定しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 18703,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "85a1be5df58e1c8aaa1c7353dd812e73b0f6ab3c992707f3cd6da3e6dc9bbd44",
+              "evidenceId": "75f8da85b5d747e1f24a99c88e9985fa65d8855db40f1fcb5c10ff55770ccaf6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007VQS",
+                "documentTitle": "前田建設工業 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9c0594e3ac1f778fd5fb100ed7b88ee7eb841e1e2acfddfdc78a9024e337ba5b",
+                "documentVersionSha256": "9c0594e3ac1f778fd5fb100ed7b88ee7eb841e1e2acfddfdc78a9024e337ba5b",
+                "pdfPage": 42,
+                "sourceQuote": "                                                                       EDINET提出書類\n                                                                 前田建設工業株式会社(E00051)\n                                                                        有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                               前連結会計年度                   当連結会計年度\n                          (自    平成26年４月１日           (自    平成27年４月１日\n                           至    平成27年３月31日)          至    平成28年３月31日)\n売上高\n 完成工事高                                    370,161                  384,992\n 開発事業等売上高                                  35,215                   56,731\n 売上高合計                                    405,376                  441,723\n売上原価\n営業利益                                       10,978                   18,703",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    483.98083,
+                    285.03415,
+                    510.98083,
+                    294.02515
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 48,
+                "consolidationScopeQuote": "                                                   EDINET提出書類\n                                             前田建設工業株式会社(E00051)\n                                                    有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項なし。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 9社\n   連結子会社名\n    ㈱前田製作所\n    フジミ工研㈱\n    ㈱エフビーエス\n    正友地所㈱\n    ㈱ミヤマ工業\n    ㈱ＪＭ\n    Thai Maeda Corporation Ltd.\n     吹越台地風力開発㈱\n    匿名組合五葉山太陽光発電\n   当連結会計年度より、非連結子会社であった吹越台地風力開発㈱、匿名組合五葉山太陽光発電は、重要性が\n  増したため、連結の範囲に含めている。また、連結子会社であった匿名組合青海シーサイドプロジェクトは、\n  重要性が低下したため、連結の範囲から除外している。\n(2）主要な非連結子会社名\n    ㈱ジェイシティー\n  （連結の範囲から除いた理由）\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n  益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外している。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n    ㈱ジェイシティー\n(2）持分法適用の関連会社数 4社\n   主要な会社名\n    前田道路㈱、東洋建設㈱\n(3）持分法を適用していない非連結子会社（㈱ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社（神\n  大病院パーキングサービス㈱他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分に見合う\n  額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外している。\n\n\n３． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用している。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用している。\n    時価のないもの\n     移動平均法による原価法を採用している。\n  ②デリバティブ\n    時価法を採用している。\n  ③たな卸資産\n   未成工事支出金\n    個別法による原価法を採用している。\n   販売用不動産、商品及び製品、開発事業等支出金、材料貯蔵品\n    個別法による原価法（収益性の低下による簿価切下げの方法）を採用している。\n\n\n\n                                  48/101\n",
+                "comparisonLimitations": [
+                  "企業結合基準適用による営業利益等への影響は軽微。ゼロ影響とはしない。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 23103,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "2b2b07cbfa3f272bc7f7614f8ff4862457ac19e8a86509a89da203aeda16404a",
+              "evidenceId": "9abce085027026a6aea21bae5294dffe3c97bdc6064f0365845339af9841cfb9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AJAO",
+                "documentTitle": "前田建設工業 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "dfe530a34067209044af171c9c9d63a2aaaea68a7c693de441b871a6c3dfbfc9",
+                "documentVersionSha256": "dfe530a34067209044af171c9c9d63a2aaaea68a7c693de441b871a6c3dfbfc9",
+                "pdfPage": 39,
+                "sourceQuote": "                                                                      EDINET提出書類\n                                                                前田建設工業株式会社(E00051)\n                                                                       有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成27年４月１日          (自    平成28年４月１日\n                           至    平成28年３月31日)         至    平成29年３月31日)\n売上高\n 完成工事高                                   384,992                  375,301\n その他の事業売上高                                56,731                   47,285\n 売上高合計                                   441,723                  422,587\n売上原価\n営業利益                                      18,703                   23,103",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "                                                   EDINET提出書類\n                                             前田建設工業株式会社(E00051)\n                                                    有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項なし。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 9社\n   連結子会社名\n    ㈱前田製作所\n    フジミ工研㈱\n    ㈱エフビーエス\n    ㈱ミヤマ工業\n    ㈱ＪＭ\n    Thai Maeda Corporation Ltd.\n     匿名組合五葉山太陽光発電\n     愛知道路コンセッション㈱\n    匿名組合愛知道路コンセッション\n   当連結会計年度より、新たに設立した愛知道路コンセッション㈱及び匿名組合愛知道路コンセッションを連\n  結の範囲に含めている。また、連結子会社であった正友地所㈱及び吹越台地風力開発㈱は、当社が保有する株\n  式をすべて売却したため、連結の範囲から除外している。\n(2）主要な非連結子会社名\n    ㈱ジェイシティー\n  （連結の範囲から除いた理由）\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n  益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外している。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n    ㈱ジェイシティー\n(2）持分法適用の関連会社数 5社\n   主要な会社名\n    前田道路㈱、東洋建設㈱\n   当連結会計年度より、持分法非適用関連会社であった仙台国際空港㈱は重要性が増したため、持分法適用の範\n  囲に含めている。\n(3）持分法を適用していない非連結子会社（㈱ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社（神\n  大病院パーキングサービス㈱他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分に見合う\n  額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外している。\n\n\n３． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用している。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用している。\n    時価のないもの\n     移動平均法による原価法を採用している。\n  ②デリバティブ\n    時価法を採用している。\n\n\n\n\n                                  45/99\n",
+                "comparisonLimitations": [
+                  "減価償却方法変更による営業利益等への影響は軽微。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 35386,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "81855382b9c43d584efd753bec6a7b66d313d0043c491da0e0b1d8657a301fe2",
+              "evidenceId": "3b5a8c76b234cb185f0a814b80cd7deeda3036f13b06f01594ece8b095687f47",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DBDO",
+                "documentTitle": "前田建設工業 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "fde0b2f60b7e4a4512ac07bdb472f82f7449243fa777fcfeb315e1165029beab",
+                "documentVersionSha256": "fde0b2f60b7e4a4512ac07bdb472f82f7449243fa777fcfeb315e1165029beab",
+                "pdfPage": 39,
+                "sourceQuote": "                                                                      EDINET提出書類\n                                                                前田建設工業株式会社(E00051)\n                                                                       有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                               前連結会計年度                  当連結会計年度\n                          (自    平成28年４月１日          (自    平成29年４月１日\n                           至    平成29年３月31日)         至    平成30年３月31日)\n売上高\n 完成工事高                                   375,301                  409,803\n その他の事業売上高                                47,285                   57,921\n 売上高合計                                   422,587                  467,724\n売上原価\n営業利益                                      23,103                   35,386",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "                                                    EDINET提出書類\n                                              前田建設工業株式会社(E00051)\n                                                     有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項なし。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 9社\n   連結子会社名\n    (株)前田製作所\n    フジミ工研(株)\n    (株)エフビーエス・ミヤマ\n    (株)ＪＭ\n   Thai Maeda Corporation Ltd.\n   匿名組合五葉山太陽光発電\n   愛知道路コンセッション(株)\n    匿名組合愛知道路コンセッション\n    匿名組合美祢太陽光発電\n   当連結会計年度より、新たに設立した匿名組合美祢太陽光発電を連結の範囲に含めている。また、連結子会\n  社であった(株)ミヤマ工業は(株)エフビーエスと合併したため、連結の範囲から除外している。なお、(株)エ\n  フビーエスは(株)エフビーエス・ミヤマに商号を変更している。\n(2）主要な非連結子会社名\n    (株)ジェイシティー\n  （連結の範囲から除いた理由）\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n 益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外している。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n    (株)ジェイシティー\n(2）持分法適用の関連会社数 5社\n   主要な会社名\n    前田道路(株)、東洋建設(株)\n(3）持分法を適用していない非連結子会社（(株)ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社\n  （神大病院パーキングサービス(株)他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分に見\n  合う額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外している。\n\n\n３． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用している。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用している。\n    時価のないもの\n     移動平均法による原価法を採用している。\n  ②デリバティブ\n    時価法を採用している。\n  ③たな卸資産\n   未成工事支出金\n    個別法による原価法を採用している。\n   販売用不動産、商品及び製品、開発事業等支出金、材料貯蔵品\n    個別法による原価法（収益性の低下による簿価切下げの方法）を採用している。\n\n\n\n                                 45/98\n",
+                "comparisonLimitations": [
+                  "当年連結範囲・会計方針を保持。異なる年度を同一範囲と断定しない。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 35944,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4d7d648ac1b616b1f12ddc38496e13da81ba056c939f9e1019fdb27d46573b69",
+              "evidenceId": "746a689c66d5840cc764978b53505f54f6a69ff8bf92e4af27405b5537278ea6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G4IW",
+                "documentTitle": "前田建設工業 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "94e42848110d0aca022a1bfb43f8f7a1b5f8a2fb67e8b84563f3b0c1c9c322d4",
+                "documentVersionSha256": "94e42848110d0aca022a1bfb43f8f7a1b5f8a2fb67e8b84563f3b0c1c9c322d4",
+                "pdfPage": 46,
+                "sourceQuote": "                                                                   EDINET提出書類\n                                                             前田建設工業株式会社(E00051)\n                                                                    有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2017年４月１日             (自 2018年４月１日\n                           至 2018年３月31日)            至 2019年３月31日)\n売上高\n 完成工事高                                   409,803               436,264\n その他の事業売上高                                57,921                55,823\n 売上高合計                                   467,724               492,087\n売上原価\n営業利益                                      35,386                35,944",
+                "sourceLocator": {
+                  "pdf_page": 46,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 52,
+                "consolidationScopeQuote": "                                                    EDINET提出書類\n                                              前田建設工業株式会社(E00051)\n                                                     有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項はありません。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 10社\n   連結子会社名\n    (株)前田製作所\n    フジミ工研(株)\n    (株)エフビーエス・ミヤマ\n    (株)ＪＭ\n   Thai Maeda Corporation Ltd.\n   匿名組合五葉山太陽光発電\n   愛知道路コンセッション(株)\n    匿名組合愛知道路コンセッション\n    匿名組合美祢太陽光発電\n    匿名組合八峰風力開発\n   当連結会計年度より、非連結子会社であった匿名組合八峰風力開発は、重要性が増したため、連結の範囲に\n  含めています。\n(2）主要な非連結子会社名\n    (株)ジェイシティー\n  （連結の範囲から除いた理由）\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n 益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外しています。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n     (株)ジェイシティー\n(2）持分法適用の関連会社数 5社\n   主要な会社名\n     前田道路(株)、東洋建設(株)\n(3）持分法を適用していない非連結子会社（(株)ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社\n  （神大病院パーキングサービス(株)他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分に見\n  合う額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外していま\n  す。\n\n\n３． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用しています。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用しています。\n    時価のないもの\n     移動平均法による原価法を採用しています。\n  ②デリバティブ\n    時価法を採用しています。\n\n\n\n\n                                 52/108\n",
+                "comparisonLimitations": [
+                  "当年連結範囲・会計方針を保持。異なる年度を同一範囲と断定しない。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 34045,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "09aed805ab30701cf15bb1643861aef96f5af412a92e215d4f8d2c56c64cfdfd",
+              "evidenceId": "a20f8987e1444637db825af01fbe7c996fea5310e975b2015d89f17493dacaf2",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IWVZ",
+                "documentTitle": "前田建設工業 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cfa67638a49d14e0b4ae24c9a2e30b3bd357f1557e472ee3104d220ce7f93f90",
+                "documentVersionSha256": "cfa67638a49d14e0b4ae24c9a2e30b3bd357f1557e472ee3104d220ce7f93f90",
+                "pdfPage": 60,
+                "sourceQuote": "                                                                  EDINET提出書類\n                                                            前田建設工業株式会社(E00051)\n                                                                   有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 2018年４月１日             (自 2019年４月１日\n                           至 2019年３月31日)            至 2020年３月31日)\n売上高\n 完成工事高                                   436,264              419,849\n その他の事業売上高                                55,823               68,006\n 売上高合計                                   492,087              487,856\n売上原価\n営業利益                                      35,944               34,045",
+                "sourceLocator": {
+                  "pdf_page": 60,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "                                                    EDINET提出書類\n                                              前田建設工業株式会社(E00051)\n                                                     有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項はありません。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 12社\n   連結子会社名\n    前田道路(株)\n   (株)前田製作所\n   フジミ工研(株)\n   (株)エフビーエス・ミヤマ\n   (株)ＪＭ\n   Thai Maeda Corporation Ltd.\n   匿名組合五葉山太陽光発電\n   愛知道路コンセッション(株)\n   匿名組合愛知道路コンセッション\n   匿名組合美祢太陽光発電\n   匿名組合八峰風力開発\n   前田総合インフラ(株)\n   当連結会計年度より、新たに設立した前田総合インフラ(株)を連結の範囲に含めています。また、当連結会\n  計年度において、連結子会社の前田総合インフラ(株)が株式を追加取得したことに伴い、持分法適用関連会社\n  であった前田道路(株)を連結の範囲に含めています。\n(2）主要な非連結子会社名\n   (株)ジェイシティー\n （連結の範囲から除いた理由）\n  非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n 益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外しています。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n     (株)ジェイシティー\n(2）持分法適用の関連会社数 5社\n   主要な会社名\n     東洋建設(株)\n   当連結会計年度より、持分法非適用関連会社であった愛知国際会議展示場(株)は重要性が増したため、持分\n  法適用の範囲に含めています。また、当連結会計年度において、連結子会社の前田総合インフラ(株)が株式を\n  追加取得したことに伴い、前田道路(株)を連結の範囲に含めたため、持分法適用の範囲から除外しています。\n(3）持分法を適用していない非連結子会社（(株)ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社\n  （(株)豊田東部スクールランチサービス他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分\n  に見合う額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外してい\n  ます。\n\n\n３． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用しています。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用しています。\n    時価のないもの\n     移動平均法による原価法を採用しています。\n\n\n\n                                 66/129\n",
+                "comparisonLimitations": [
+                  "前田道路を持分法適用から連結へ変更。旧年度と同一範囲に換算しない。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 46343,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5f3cf047aaac1c13f10e6a4566f37ef88b2f9654433f79d5230e807c35414dc9",
+              "evidenceId": "14f2cf5cf2d466a174498e1afb26363d0c1bcf17345b858338677bca9f227c86",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "recordKind": "reviewed_source_observation_not_canonical_fact",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LNSH",
+                "documentTitle": "前田建設工業 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cf8007cb4a83863347d1d386b320b42a6aaa1295a5f5959318eb15a72bfd0cd3",
+                "documentVersionSha256": "cf8007cb4a83863347d1d386b320b42a6aaa1295a5f5959318eb15a72bfd0cd3",
+                "pdfPage": 59,
+                "sourceQuote": "                                                                EDINET提出書類\n                                                          前田建設工業株式会社(E00051)\n                                                                 有価証券報告書\n  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2019年４月１日          (自 2020年４月１日\n                           至 2020年３月31日)         至 2021年３月31日)\n売上高\n 完成工事高                                419,849               394,278\n その他の事業売上高                             68,006               283,780\n 売上高合計                                487,856               678,059\n売上原価\n営業利益                                   34,045                46,343",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    483.98083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "maeda-operating-annual-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "自社日本基準・連結損益計算書の通期営業利益。親会社合計・前田個別・HD後の会社別連結集計とは区別する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "                                                       EDINET提出書類\n                                                 前田建設工業株式会社(E00051)\n                                                        有価証券報告書\n【注記事項】\n （継続企業の前提に関する事項）\n  該当事項はありません。\n\n\n  （連結財務諸表作成のための基本となる重要な事項）\n１． 連結の範囲に関する事項\n(1）連結子会社数 26社\n   主要な連結子会社名\n    前田道路(株)\n   (株)前田製作所\n   愛知道路コンセッション(株)\n   当連結会計年度より、非連結子会社であった(株)ニチユウ、(株)冨士土木、宮田建設(株)、(株)リアスコ\n  ン、青野建設(株)、(株)アオイ産業、東海アスコン(株)、双和産業(株)、(株)船田土木、砂町アスコン(株)、\n  新栄建設(株)、京浜リサイクルセンター(株)、(株)エコセンター大阪、アールテックコンサルタント(株)、マ\n  エダ・パシフィック・コーポレーションは重要性が増したため、連結の範囲に含めています。また、当連結会\n  計年度において、連結子会社であった前田総合インフラ(株)は当社を存続会社とする吸収合併に伴う消滅によ\n  り、連結の範囲から除外しています。\n(2）主要な非連結子会社名\n    (株)ジェイシティー\n  （連結の範囲から除いた理由）\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利\n  益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため除外しています。\n\n\n２． 持分法の適用に関する事項\n(1）持分法適用の非連結子会社数 1社\n   会社名\n     (株)ジェイシティー\n(2）持分法適用の関連会社数 5社\n   主要な会社名\n     東洋建設(株)\n(3）持分法を適用していない非連結子会社（(株)ちばシティ消費生活ピーエフアイ・サービス他）及び関連会社\n  （(株)豊田東部スクールランチサービス他）は、それぞれ当期純損益（持分に見合う額）及び利益剰余金（持分\n  に見合う額）等に及ぼす影響が軽微であり、かつ全体としても重要性がないため、持分法の適用から除外してい\n  ます。\n\n\n３． 連結子会社の事業年度等に関する事項\n 連結子会社のうち、マエダ・パシフィック・コーポレーションの決算日は12月31日です。従って連結財務諸表の\n作成にあたっては、子会社決算日現在の財務諸表を使用し、連結決算日との間に生じた重要な取引については、必\n要な調整を行っています。\n\n\n４． 会計方針に関する事項\n(1）重要な資産の評価基準及び評価方法\n  ①有価証券\n   満期保有目的の債券\n    償却原価法（定額法）を採用しています。\n   その他有価証券\n    時価のあるもの\n     決算日の市場価格等に基づく時価法（評価差額は全部純資産直入法により処理し、売却原価は移動平均法\n    により算定）を採用しています。\n    時価のないもの\n     移動平均法による原価法を採用しています。\n  ②デリバティブ\n    時価法を採用しています。\n\n\n\n\n                          65/132\n",
+                "comparisonLimitations": [
+                  "連結子会社26社へ範囲拡大。海外子会社12月決算に必要な連結調整。",
+                  "2021年度のHD化前後を無検証に連続させない。2021〜2025年度の通常比較接続は資料確認待ち。年度ごとに計算制限を保持。"
+                ]
+              }
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "2c316a05fb11ddf729c7662568cbbca6b62613446f561740189e3a8f923fff9e"
       }
     ],
     "fullHistoryMappings": [
@@ -15085,6 +15481,23 @@
           2022,
           2023,
           2024
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "MAEDA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "MAEDA:operating_income_consolidated@MAEDA_JGAAP_2015_2020_REPORTED",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
         ],
         "unit": "百万円",
         "scope": "consolidated",
@@ -15595,5 +16008,5 @@
       }
     ]
   },
-  "snapshotHash": "f9d27c4c1eef77d4f49348ca80f14e579c6375b453cb1ecb6a9da581c2927a5e"
+  "snapshotHash": "3880256199e0f1afa30ccf0dc03a0c1c7010101e67429d167fb634b5bff68961"
 }
