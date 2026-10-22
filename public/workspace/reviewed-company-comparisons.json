@@ -13405,6 +13405,988 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "348406ea4ca669de7ee7fc36602db8470993f0a7c6ebb9ce373f76ec0edcb78b"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ZENITAKA:operating_income_consolidated@FY2015_FY2025_ZENITAKA_OPERATING",
+          "companyId": "ZENITAKA",
+          "metricId": "operating_income_consolidated",
+          "label": "錢高組 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ZENITAKA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_ZENITAKA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "1c63520d2e7f0d1d9e94dc630d5a93a599dc7281b5185eeae8c1a8959cb919eb",
+              "sourceLocator": {
+                "pdf_page": 43
+              },
+              "sourceQuote": "企業結合基準に伴う純利益等・非支配株主持分の表示変更（43頁）。表示変更を営業利益の数値調整としない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7f9aba144e4cbbe174cb913c07dfbf0160493b01767f5301af22cfd76e33c550",
+              "sourceLocator": {
+                "pdf_page": 43
+              },
+              "sourceQuote": "減価償却変更の連結財務諸表への影響軽微（43頁）。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "5ffadf2ebb83af8508e9b5aaa68a7c4cffdc9263d484649bdb7fdcb36ee2fcee",
+              "sourceLocator": {
+                "pdf_page": 40
+              },
+              "sourceQuote": "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "696e11c3f51d5e36f685563c9613435cb1eae3c24fe75295aa853edb8418edf8",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "be8b153d6f55d8b161740506c6c66878e61c791b71f7aa2c8076b7feadc018f4",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4ce77e79924cd44629509a9c75bd3e27b9aa5f33b0f38e3399244d225ef82a8a",
+              "sourceLocator": {
+                "pdf_page": 42
+              },
+              "sourceQuote": "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a7a39e752210a8e20e3132847ce4f1c6e78e892c4d3484cc803f2626cbd9ac26",
+              "sourceLocator": {
+                "pdf_page": 44
+              },
+              "sourceQuote": "収益認識基準を適用、累積影響額なし・期首利益剰余金へ加減なし。当期連結財務諸表への影響軽微（44頁）。軽微をゼロに置換しない。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "1ec13a84aea878e5294b290e9800099a92e215c4f4e9bd9c9beebd948688e653",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "時価算定適用指針の連結財務諸表への影響なし（45頁）。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f886f676c0d77505812d052915ba9d8f39b93ea2f8b349ca6bd9de87295cf7df",
+              "sourceLocator": {
+                "pdf_page": 48
+              },
+              "sourceQuote": "会計方針変更は該当事項なし（48頁）。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "b3fd1bb6bd00de998465349b59b816826e844b16991f7fdf8b58eba6b54b1cd2",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "法人税等基準の連結財務諸表への影響なし（56頁）。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "会計方針変更は該当事項なし（57頁）。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合基準に伴う純利益等・非支配株主持分の表示変更（43頁）。表示変更を営業利益の数値調整としない。",
+            "2016年度：減価償却変更の連結財務諸表への影響軽微（43頁）。",
+            "2021年度：収益認識基準を適用、累積影響額なし・期首利益剰余金へ加減なし。当期連結財務諸表への影響軽微（44頁）。軽微をゼロに置換しない。",
+            "2022年度：時価算定適用指針の連結財務諸表への影響なし（45頁）。",
+            "2023年度：会計方針変更は該当事項なし（48頁）。",
+            "2024年度：法人税等基準の連結財務諸表への影響なし（56頁）。",
+            "2025年度：会計方針変更は該当事項なし（57頁）。",
+            "全11年度の原資料は百万円表示。連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、年末から親会社3月末までの重要取引なし。他の子会社は親会社と同一決算。非連結会社を連結値へ追加しない。年度別会計区分をまたぐ指数・相関・合算・案件配賦は未確認。従来2024/2025年度の会社間確認は元の2年度系列に保持し、全11年度へ拡張しない。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 4526,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "de2c016196226b5440ee030c1743f660d606ff7f257abf612d9bd245c942734c",
+              "evidenceId": "6ff9c191d39a49e56df729cc4a9c72efd3cbd9b3ca63dd073e5746f67630fdc4",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100804T",
+                "documentTitle": "錢高組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "1c63520d2e7f0d1d9e94dc630d5a93a599dc7281b5185eeae8c1a8959cb919eb",
+                "documentVersionSha256": "1c63520d2e7f0d1d9e94dc630d5a93a599dc7281b5185eeae8c1a8959cb919eb",
+                "pdfPage": 37,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    平成26年４月１日         (自    平成27年４月１日\n                           至    平成27年３月31日)        至    平成28年３月31日)\n売上高\n 完成工事高                                  109,642                 112,701\n 不動産事業等売上高                                3,613                   2,340\n 売上高合計                                  113,256                 115,041\n営業利益                                      2,301                   4,526",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 37,
+                  "value_bbox": [
+                    488.48083,
+                    284.10582,
+                    510.98083,
+                    293.09682
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合基準に伴う純利益等・非支配株主持分の表示変更（43頁）。表示変更を営業利益の数値調整としない。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4526,
+                "unitConversionFactor": 1,
+                "basisPage": 83,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 41,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                 株式会社錢高組(E00069)\n                                                     有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況４   関係会社の状況」に記載のとおりである。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いている。",
+                "subsidiaryFiscalPeriodPage": 41,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日である。連結財務\n   諸表の作成にあたっては、同決算日現在の財務諸表を使用している。なお、連結決算日までの期間に発生し\n   た重要な取引はない。\n    上記以外の連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 3766,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "dddcd5fa016cd360f63a86746ebd126e43107910e51f7dd60bf21be3551911b7",
+              "evidenceId": "1cfa7a480270aab41609bfdb54f46ce5683e71de960c96621ed5f5779479fba9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100APHN",
+                "documentTitle": "錢高組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7f9aba144e4cbbe174cb913c07dfbf0160493b01767f5301af22cfd76e33c550",
+                "documentVersionSha256": "7f9aba144e4cbbe174cb913c07dfbf0160493b01767f5301af22cfd76e33c550",
+                "pdfPage": 37,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    平成27年４月１日         (自    平成28年４月１日\n                           至    平成28年３月31日)        至    平成29年３月31日)\n売上高\n 完成工事高                                  112,701                 109,255\n 不動産事業等売上高                                2,340                   1,665\n 売上高合計                                  115,041                 110,920\n営業利益                                      4,526                   3,766",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 37,
+                  "value_bbox": [
+                    488.48083,
+                    284.105791,
+                    510.98083,
+                    293.096791
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却変更の連結財務諸表への影響軽微（43頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3766,
+                "unitConversionFactor": 1,
+                "basisPage": 84,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 41,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  株式会社錢高組(E00069)\n                                                      有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況４   関係会社の状況」に記載のとおりである。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いている。",
+                "subsidiaryFiscalPeriodPage": 41,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日である。連結財務\n   諸表の作成にあたっては、同決算日現在の財務諸表を使用している。なお、連結決算日までの期間に発生し\n   た重要な取引はない。\n    上記以外の連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 7048,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "20019864a15c5d965c1d6668cc71ad9807460e618c453446ab13e7116e935d5d",
+              "evidenceId": "c6124ccc237ea7aa713829587c91f51787a2e615d3f57c6d06ac506e4914d29a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DH4I",
+                "documentTitle": "錢高組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5ffadf2ebb83af8508e9b5aaa68a7c4cffdc9263d484649bdb7fdcb36ee2fcee",
+                "documentVersionSha256": "5ffadf2ebb83af8508e9b5aaa68a7c4cffdc9263d484649bdb7fdcb36ee2fcee",
+                "pdfPage": 36,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                               前連結会計年度                 当連結会計年度\n                          (自    平成28年４月１日         (自    平成29年４月１日\n                           至    平成29年３月31日)        至    平成30年３月31日)\n売上高\n 完成工事高                                  109,255                 122,996\n 不動産事業等売上高                                1,665                   3,008\n 売上高合計                                  110,920                 126,005\n営業利益                                      3,766                   7,048",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 36,
+                  "value_bbox": [
+                    488.48083,
+                    284.105791,
+                    510.98083,
+                    293.096791
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 7048,
+                "unitConversionFactor": 1,
+                "basisPage": 82,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 40,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                  株式会社錢高組(E00069)\n                                                      有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況４   関係会社の状況」に記載のとおりである。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いている。",
+                "subsidiaryFiscalPeriodPage": 40,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日である。連結財務\n   諸表の作成にあたっては、同決算日現在の財務諸表を使用している。なお、連結決算日までの期間に発生し\n   た重要な取引はない。\n    上記以外の連結子会社の事業年度は、連結財務諸表提出会社と同一である。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 5869,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fa8da62f7a90c7baa31df778b5676e59b53045391ac1223bdb32b55f9ec94774",
+              "evidenceId": "d915c7fcf68c0952768c4bcda9a683a2d106ada5030e62939d991503c4124f4b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G5BH",
+                "documentTitle": "錢高組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "696e11c3f51d5e36f685563c9613435cb1eae3c24fe75295aa853edb8418edf8",
+                "documentVersionSha256": "696e11c3f51d5e36f685563c9613435cb1eae3c24fe75295aa853edb8418edf8",
+                "pdfPage": 38,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2017年４月１日          (自 2018年４月１日\n                           至 2018年３月31日)         至 2019年３月31日)\n売上高\n 完成工事高                                122,996              125,461\n 不動産事業等売上高                              3,008                2,669\n 売上高合計                                126,005              128,130\n営業利益                                    7,048                5,869",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    488.48083,
+                    284.105791,
+                    510.98083,
+                    293.096791
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5869,
+                "unitConversionFactor": 1,
+                "basisPage": 83,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 42,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 42,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 5951,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7ca8002a7e22a4358d3ab0420717b0364cd2b5bd3e76af833704b50b15019797",
+              "evidenceId": "2877885900417d7dd71c5ddf39aca723e834be698f1fd4db0dec7cb990601aa7",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100J13I",
+                "documentTitle": "錢高組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "be8b153d6f55d8b161740506c6c66878e61c791b71f7aa2c8076b7feadc018f4",
+                "documentVersionSha256": "be8b153d6f55d8b161740506c6c66878e61c791b71f7aa2c8076b7feadc018f4",
+                "pdfPage": 38,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2018年４月１日          (自 2019年４月１日\n                           至 2019年３月31日)         至 2020年３月31日)\n売上高\n 完成工事高                                125,461              130,481\n 不動産事業等売上高                              2,669                2,475\n 売上高合計                                128,130              132,957\n営業利益                                    5,869                5,951",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    488.48083,
+                    284.105791,
+                    510.98083,
+                    293.096791
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5951,
+                "unitConversionFactor": 1,
+                "basisPage": 14,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 42,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 42,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 4603,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "cf1a9849fdfd9c377e97b649f21377840eebdba8f9fdc631a6d7516c3bd627e8",
+              "evidenceId": "4ef4e658233bfd0adf98bb14cc8070609021ad711376c7bed2e91cf0a895fa2c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LP24",
+                "documentTitle": "錢高組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4ce77e79924cd44629509a9c75bd3e27b9aa5f33b0f38e3399244d225ef82a8a",
+                "documentVersionSha256": "4ce77e79924cd44629509a9c75bd3e27b9aa5f33b0f38e3399244d225ef82a8a",
+                "pdfPage": 38,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2019年４月１日          (自 2020年４月１日\n                           至 2020年３月31日)         至 2021年３月31日)\n売上高\n 完成工事高                                130,481              102,710\n 不動産事業等売上高                              2,475                3,081\n 売上高合計                                132,957              105,792\n営業利益                                    5,951                4,603",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    488.48083,
+                    284.105791,
+                    510.98083,
+                    293.096791
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社5社。ゼット・ウェスト・アメリカは12月31日決算、連結決算日までの重要取引なし。他社は親会社と同一決算。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4603,
+                "unitConversionFactor": 1,
+                "basisPage": 83,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 42,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及\n   び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の\n   範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 42,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 2247,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e992b1a8c37d54b09b4a2d521cf7c2f37192dc5d8cca124de40e46744f4a94ba",
+              "evidenceId": "b7378caee54b0d1929df3af4654db70554430a780fe068ca0dbab1dc2fa32ebe",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OIHB",
+                "documentTitle": "錢高組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a7a39e752210a8e20e3132847ce4f1c6e78e892c4d3484cc803f2626cbd9ac26",
+                "documentVersionSha256": "a7a39e752210a8e20e3132847ce4f1c6e78e892c4d3484cc803f2626cbd9ac26",
+                "pdfPage": 38,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2020年４月１日          (自 2021年４月１日\n                           至 2021年３月31日)         至 2022年３月31日)\n売上高\n 完成工事高                                102,710               99,305\n 不動産事業等売上高                              3,081                2,597\n 売上高合計                                105,792           ※１ 101,903\n営業利益                                    4,603                2,247",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    488.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用、累積影響額なし・期首利益剰余金へ加減なし。当期連結財務諸表への影響軽微（44頁）。軽微をゼロに置換しない。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 2247,
+                "unitConversionFactor": 1,
+                "basisPage": 85,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 42,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）\n    及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連\n    結の範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 42,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 1526,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1812cd80f8956133d76db955fbd909f2517b29f90341b872b4db46a501919032",
+              "evidenceId": "cbbb14ad5cada767ab881470f9e4f1cb0b69a0933689ffaa92e409092d4c9b8c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R5E4",
+                "documentTitle": "錢高組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "1ec13a84aea878e5294b290e9800099a92e215c4f4e9bd9c9beebd948688e653",
+                "documentVersionSha256": "1ec13a84aea878e5294b290e9800099a92e215c4f4e9bd9c9beebd948688e653",
+                "pdfPage": 39,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2021年４月１日          (自 2022年４月１日\n                           至 2022年３月31日)         至 2023年３月31日)\n売上高\n 完成工事高                                 99,305              105,256\n 不動産事業等売上高                              2,597                2,378\n 売上高合計                             ※１ 101,903           ※１ 107,635\n営業利益                                    2,247                1,526",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "value_bbox": [
+                    488.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定適用指針の連結財務諸表への影響なし（45頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 1526,
+                "unitConversionFactor": 1,
+                "basisPage": 87,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 43,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）\n    及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連\n    結の範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 43,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 3321,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "721fb2d3b182487eb846e0756f2fc4ec3a665eacfdd0ae6ae915c52a0adeaa09",
+              "evidenceId": "284e742da9626908d210973a08e8e4932f07f97944e49f4a7a8bf3c6f16059d6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TRNF",
+                "documentTitle": "錢高組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f886f676c0d77505812d052915ba9d8f39b93ea2f8b349ca6bd9de87295cf7df",
+                "documentVersionSha256": "f886f676c0d77505812d052915ba9d8f39b93ea2f8b349ca6bd9de87295cf7df",
+                "pdfPage": 42,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                      (単位：百万円)\n                            前連結会計年度               当連結会計年度\n                          (自 2022年４月１日          (自 2023年４月１日\n                           至 2023年３月31日)         至 2024年３月31日)\n売上高\n 完成工事高                                105,256              118,285\n 不動産事業等売上高                              2,378                2,691\n 売上高合計                             ※１ 107,635           ※１ 120,977\n営業利益                                    1,526                3,321",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 42,
+                  "value_bbox": [
+                    488.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会計方針変更は該当事項なし（48頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3321,
+                "unitConversionFactor": 1,
+                "basisPage": 92,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 46,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）\n    及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連\n    結の範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 46,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 3712,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "6f7007ac2d12617cfe2aed11230c4be453a8dd10847ca5d88b9e98c8facb887b",
+              "evidenceId": "38036525954310d670841c163a7b01833db448b36a4dd5eb774c4e85b0ffb1bb",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W3SK",
+                "documentTitle": "錢高組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "b3fd1bb6bd00de998465349b59b816826e844b16991f7fdf8b58eba6b54b1cd2",
+                "documentVersionSha256": "b3fd1bb6bd00de998465349b59b816826e844b16991f7fdf8b58eba6b54b1cd2",
+                "pdfPage": 49,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                       (単位：百万円)\n                            前連結会計年度                当連結会計年度\n                          (自 2023年４月１日           (自 2024年４月１日\n                           至 2024年３月31日)          至 2025年３月31日)\n売上高\n 完成工事高                                 118,285              118,204\n 不動産事業等売上高                               2,691                2,455\n 売上高合計                              ※１ 120,977           ※１ 120,660\n営業利益                                     3,321                3,712",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 49,
+                  "value_bbox": [
+                    488.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準の連結財務諸表への影響なし（56頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3712,
+                "unitConversionFactor": 1,
+                "basisPage": 99,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 53,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）\n    及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連\n    結の範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 53,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "nextReportComparisonStatus": "exact_match",
+                "previouslyPublishedObservation": {
+                  "timeCode": "2024-04-01/2025-03-31",
+                  "timeLabel": "2024-04-01 ～ 2025-03-31",
+                  "periodStart": "2024-04-01",
+                  "periodEnd": "2025-03-31",
+                  "numericValue": 3712,
+                  "status": "confirmed_value",
+                  "implicitNumericZero": false,
+                  "factId": "8172dad881799efa0421d063c0eee8db337e5949bfdd9e3da7ac3c6a9f85fe83",
+                  "evidenceId": "541b7414d2caee7f99ef2ba3743fca1b2a58046d9414b1e7942358fe88f24344",
+                  "eligibility": {
+                    "automaticComparisonAllowed": true,
+                    "automaticAggregationAllowed": false
+                  },
+                  "provenance": {
+                    "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                    "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                    "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                    "pdfPage": 9,
+                    "sourceQuote": "連結損益計算書、売上高合計/営業利益、2024年4月1日〜2025年3月31日、百万円。3,712。",
+                    "comparisonVerificationId": "saved-primary-two-company-20261022",
+                    "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                    "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                    "retrievedAt": null,
+                    "currentOfficialVersionMatchStatus": "unconfirmed",
+                    "sourceLocator": {
+                      "pdf_page": 9,
+                      "value_bbox": [
+                        373.535894,
+                        298.907033,
+                        395.933985,
+                        307.866016
+                      ]
+                    },
+                    "accountingStandard": "JGAAP",
+                    "corroboratingAnnualReport": {
+                      "documentId": "S100YJ24",
+                      "pdfPage": 50,
+                      "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                    }
+                  },
+                  "recordKind": "reviewed_source_observation_not_canonical_fact"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 4708,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "115b21bc9e1551b05d36fd1bde11f5f5618402a6825093c529f04754b92c8c49",
+              "evidenceId": "19dcdc1cafabdf7f9e11c0921b3a5fedd1465faf95a8e2640ed526b918d347d9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YJ24",
+                "documentTitle": "錢高組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66",
+                "documentVersionSha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66",
+                "pdfPage": 50,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                       (単位：百万円)\n                            前連結会計年度                当連結会計年度\n                          (自 2024年４月１日           (自 2025年４月１日\n                           至 2025年３月31日)          至 2026年３月31日)\n売上高\n 完成工事高                                 118,204              122,803\n 不動産事業等売上高                               2,455                2,694\n 売上高合計                              ※１ 120,660           ※１ 125,497\n営業利益                                     3,712                4,708",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    488.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "zenitaka-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期報告値。単位換算は明示し会計影響や比較欄差を無検証に補正しない。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会計方針変更は該当事項なし（57頁）。",
+                  "原資料は百万円表示。原資料にない小数値を補わない。",
+                  "年度別の会計条件・資料間差・表示精度の境界をまたぐ指数・相関は停止。会社間の同等性・合算・案件配賦は未確認。"
+                ],
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4708,
+                "unitConversionFactor": 1,
+                "basisPage": 100,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社錢高組(E00069)\n                                                          有価証券報告書\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n １．連結の範囲に関する事項\n  (1) 連結子会社の数 5社\n      連結子会社名は、「第１ 企業の概況   ４   関係会社の状況」に記載のとおりであります。\n  (2) 主要な非連結子会社の名称等\n    主要な非連結子会社\n     ゼニタカ・アメリカ・コーポレーション他\n   （連結の範囲から除いた理由）\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）\n    及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連\n    結の範囲から除いております。",
+                "subsidiaryFiscalPeriodPage": 54,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうちゼット・ウェスト・アメリカ・コーポレーションの決算日は12月31日であります。連結\n   財務諸表の作成にあたっては、同決算日現在の財務諸表を使用しております。なお、連結決算日までの期間\n   に発生した重要な取引はありません。\n    上記以外の連結子会社の事業年度は、連結決算日と同一であります。",
+                "consolidationScopeNames": [
+                  "五番町ビル株式会社",
+                  "京町堀地所株式会社",
+                  "ゼニタカ地所株式会社",
+                  "泉地所株式会社",
+                  "ゼット・ウェスト・アメリカ・コーポレーション"
+                ],
+                "consolidationScopeNamesPage": 6,
+                "previouslyPublishedObservation": {
+                  "timeCode": "2025-04-01/2026-03-31",
+                  "timeLabel": "2025-04-01 ～ 2026-03-31",
+                  "periodStart": "2025-04-01",
+                  "periodEnd": "2026-03-31",
+                  "numericValue": 4708,
+                  "status": "confirmed_value",
+                  "implicitNumericZero": false,
+                  "factId": "4ff7d7c4c5bcbc98869adc4bb4f719da0fe7bcc18c4dbe3ec5108e324ae27d02",
+                  "evidenceId": "ff08098b59a0bffe01a89e64e145b90d6375263af5f79e2f985f8d71f28c1421",
+                  "eligibility": {
+                    "automaticComparisonAllowed": true,
+                    "automaticAggregationAllowed": false
+                  },
+                  "provenance": {
+                    "sourceUrl": "https://www.zenitaka.co.jp/news/shi2603-4.pdf",
+                    "sourceFileSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                    "documentVersionSha256": "320a16096c724f4f57ef647d714df39c26af96f2c5a41c8fe59b5090966c3fc9",
+                    "pdfPage": 9,
+                    "sourceQuote": "連結損益計算書、売上高合計/営業利益、2025年4月1日〜2026年3月31日、百万円。4,708。",
+                    "comparisonVerificationId": "saved-primary-two-company-20261022",
+                    "definitionChangeStatus": "reviewed_consistent_within_selected_window",
+                    "definitionReviewQuote": "日本基準・連結損益計算書の売上高合計/営業利益。通期実績、百万円。両社の2026年3月期短信2頁で連結範囲の重要変更・会計方針変更・見積変更・修正再表示なしを確認。会社固有の事業構成や連結子会社の差は残る。",
+                    "retrievedAt": null,
+                    "currentOfficialVersionMatchStatus": "unconfirmed",
+                    "sourceLocator": {
+                      "pdf_page": 9,
+                      "value_bbox": [
+                        497.969749,
+                        298.907033,
+                        520.36784,
+                        307.866016
+                      ]
+                    },
+                    "accountingStandard": "JGAAP",
+                    "corroboratingAnnualReport": {
+                      "documentId": "S100YJ24",
+                      "pdfPage": 50,
+                      "sha256": "fa78931034ad70651bb5da93df1587549a0723ddd0c18f54b6a289ba8fd74c66"
+                    }
+                  },
+                  "recordKind": "reviewed_source_observation_not_canonical_fact"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "cde0e4074d6197e048e6ee97dd3826c1c27060de7d1f6a963932d7be45495eec"
       }
     ],
     "fullHistoryMappings": [
@@ -13429,8 +14411,30 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ZENITAKA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "ZENITAKA:operating_income_consolidated@FY2015_FY2025_ZENITAKA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ]
   },
-  "snapshotHash": "df672dfa47b8ad9bdbdce5e6a43b721bebcdf50a08b0a6e51ed5de401be921db"
+  "snapshotHash": "2beb9540423a7882d5aac93895750de203e6de1ffb74772d88288e7d540aaedb"
 }
