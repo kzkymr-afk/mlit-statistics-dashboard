@@ -10580,7 +10580,7 @@
               "sourceLocator": {
                 "pdf_page": 48
               },
-              "sourceQuote": "2016年度：減価償却変更影響軽微。2016年度当年有報は千円未満四捨五入で4,856,529千円。翌2017年度有報は千円未満切捨てに変更し前年欄も組替表示したため4,856,528千円（翌年有報35頁、主要指標2頁）。1千円差は表示端数処理の変更として確認済み。両報告値を保持し、元の円単位実額や経済的な利益修正を推計しない。"
+              "sourceQuote": "2016年度：減価償却変更による営業利益・経常利益・税前利益への影響は軽微。当年有報の報告値を保持。"
             },
             {
               "id": "g2017",
@@ -10589,7 +10589,7 @@
               "status": "source_reviewed_policy_group",
               "sourceFileSha256": "f24f0b49c969e5c00f70a9f4c2d1725521906aac4b349c2731543895fce1b2c6",
               "sourceLocator": {
-                "pdf_page": 38
+                "pdf_page": 35
               },
               "sourceQuote": "2017年度：千円未満の端数処理を四捨五入から切捨てへ変更し、前年欄も切捨て表示へ組替。2016年度の当年報告値と翌年比較欄は表示方法が異なる。両値を保持し、混在精度の同条件計算は許可しない。"
             },
@@ -11396,7 +11396,7 @@
           ],
           "canonicalFreshness": "not_checked"
         },
-        "snapshotHash": "87bdf955e47bda5a42b4b16a4af42ec4b08db9f621380e42fd1ab0c5debfb6c5"
+        "snapshotHash": "83b8c3088c7b14f064c613fc2042d8ff7822b1cb39fcf8f84e78b66868ed5548"
       },
       {
         "payload": {
@@ -16070,5 +16070,5 @@
       }
     ]
   },
-  "snapshotHash": "3cd6bafba1da1658fc3c19766bb81578d76ab8786630a8a2b0fb63202131c372"
+  "snapshotHash": "e8f5d1953c7724c9467879dfa16cca0ece7e14bcaa7fb978de1b6b75910b3425"
 }
