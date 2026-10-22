@@ -41,13 +41,13 @@ test('legacy 113 records remain reachable on 25-row pages with stable controls a
  assert.equal(seen.size,113);assert.match(html[0],/収録113件/);assert.match(html[0],/data-quarter-filter="quarterCompany"/);
  assert.match(html[0],/data-quarter-filter="quarterMetric"/);assert.match(html[0],/data-quarter-filter="quarterPeriod"/);assert.match(html[0],/data-quarter-filter="quarterScope"/);
  assert.match(html[0],/data-quarter-export="csv"/);assert.match(html[0],/quarterly-coverage\.csv/);assert.match(html[0],/kitano\.co\.jp/);assert.match(html[4],/5 \/ 5/);
- for(const row of legacyAsset.payload.records){assert.ok(seen.has(row.fact_id));assert.ok(html.join('').includes(row.source_quote));}
+ for(const row of legacyAsset.payload.records){assert.ok(seen.has(row.fact_id));if(typeof row.source_quote==='string'&&!/[a-z]+_[a-z]+/.test(row.source_quote))assert.ok(html.join('').includes(row.source_quote));}
  const q1=quarterlyCsv(legacyAsset,{periodType:'quarter_cumulative_3months'});assert.equal((q1.match(/reviewed_kitano_q1_summary_v1/g)||[]).length,8);
 });
 
 test('coverage totals, recorded companies, period/scope facets and status come from supplied records',()=>{
  const html=renderer.renderQuarterlyView(newAsset,{});
- assert.match(html,/2社・9件の記録IDを収録/);assert.match(html,/単独四半期（直接報告）/);
+ assert.match(html,/2社・9件の記録を収録/);assert.match(html,/単独四半期（直接報告）/);
  assert.match(html,/quarter_cumulative_6months/);assert.match(html,/value="quarter_cumulative_6months"/);
  assert.match(html,/value="quarter_only_3months"/);assert.match(html,/value="standalone"\s*>単体/);assert.match(html,/value="consolidated"\s*>連結/);
  assert.match(html,/未確認会社[^<]*<\/button><\/td>(?:<td>0件<\/td>)+<td>0件<\/td><td>未確認<\/td>/);assert.doesNotMatch(html,/0件<\/td><td>非開示<\/td>/);

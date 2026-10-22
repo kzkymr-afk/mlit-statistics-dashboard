@@ -2250,7 +2250,7 @@ export default function StatisticsSystemWorkbench() {
             <label htmlFor="atlas-catalog-search">全収録統計を検索</label>
             <input id="atlas-catalog-search" className="system-search" type="search"
               value={tableSearch} onChange={(event) => setTableSearch(event.target.value)}
-              placeholder="統計名・表名・ID" />
+              placeholder="統計名・表名" />
             <small>{catalog ? `${catalog.datasets.length}分野 · ${catalog.tables.length}表` : "カタログを読込中"} · 周期・分野を横断</small>
             <a className="system-selected-count" href="#atlas-comparison-chart">グラフ {selectedSeries.length} / {MAX_SELECTED_SERIES}系列</a>
             <Link className="system-evidence-link" href="/buildbase-data/">公開資料レコード（子会社・工事・本文）を探索 · 数値系列とは別</Link>
@@ -2264,7 +2264,7 @@ export default function StatisticsSystemWorkbench() {
                     <small>{table.statisticsName} · {displayCycle(table.cycle)} · {tableCoverageLabel(table)}</small>
                   </button>
                 ))}
-                {catalog && !catalogSearchResults.length ? <p>該当する表がありません。収録済みの表名・統計名・IDが検索対象です。</p> : null}
+                {catalog && !catalogSearchResults.length ? <p>該当する表がありません。収録済みの表名・統計名が検索対象です。</p> : null}
               </div>
             ) : null}
           </div>
@@ -2463,7 +2463,7 @@ export default function StatisticsSystemWorkbench() {
                     {displayCycle(table.cycle)} ·{" "}
                     {tableCoverageLabel(table)}
                   </span>
-                  <small>{table.id}</small>
+
                 </button>
               ))}
               {catalog && datasetTables.length === 0 ? (
@@ -2492,7 +2492,7 @@ export default function StatisticsSystemWorkbench() {
                   <span>{meta.table.statisticsName}</span>
                   <strong>{meta.table.title}</strong>
                   <small>
-                    統計表ID {meta.table.id} · {displayCycle(meta.table.cycle)}
+                    {displayCycle(meta.table.cycle)}
                   </small>
                 </div>
                   <div className="system-query-actions system-selection-actions">
@@ -2555,7 +2555,7 @@ export default function StatisticsSystemWorkbench() {
                   <>
                     <p className="system-dataset-note" role="status">
                       {buildBaseEvidence
-                        ? `公開版 ${buildBaseEvidence.snapshotHash.slice(0, 12)} · 数値と根拠の版一致。正本の最新更新との照合は未確認です。元値の参考表示です。自動比較・自動集計は許可されていません。`
+                        ? `数値と出典資料の版は一致しています。正本の最新更新との照合は未確認です。元値の参考表示です。自動比較・自動集計は許可されていません。`
                         : buildBaseEvidenceError || "BuildBase の根拠を確認中です。自動比較・自動集計は許可されていません。"}
                       {" "}<Link href="/buildbase-data/">出典・訂正・定性レコードを探す</Link>
                     </p>
@@ -2702,7 +2702,7 @@ export default function StatisticsSystemWorkbench() {
                           const checkedUrl = item.datasetId === VERIFIED_DATASET_ID && item.reviewWindow ? verifiedOfficialBytesCheckedUrl(point) : null;
                           return <p key={point.timeCode}><a href={point.provenance.sourceUrl} target="_blank" rel="noreferrer">{item.timeLabels[point.timeCode]} · PDF {point.provenance.pdfPage}頁</a>
                             {checkedUrl ? <><br /><a href={checkedUrl} target="_blank" rel="noreferrer">照合時点に保存資料と同じバイトを確認した公式PDF</a></> : null}
-                            <br />{point.provenance.sourceQuote}<br />保存資料SHA: {point.provenance.sourceFileSha256}</p>;
+                            <br />{point.provenance.sourceQuote}</p>;
                         })}
                       </details>
                       {item.notes.length ? (
@@ -2847,9 +2847,9 @@ export default function StatisticsSystemWorkbench() {
                     {item.displayOrigins?.map((origin) => {
                       const url = safeEvidenceUrl(origin.point.provenance?.sourceUrl);
                       return <p key={`${origin.seriesId}:${origin.timeCode}`}>
-                        {origin.timeCode} · {origin.reviewWindow} · {origin.seriesId} · {pointDisplayValue(origin.point)}
+                        {origin.timeCode} · {pointDisplayValue(origin.point)}
                         {url ? <> · <a href={url} target="_blank" rel="noreferrer">原典</a></> : null}
-                        {origin.point.provenance?.sourceFileSha256 ? <> · 保存資料SHA: {origin.point.provenance.sourceFileSha256}</> : null}
+
                       </p>;
                     })}
                   </details>
@@ -2935,7 +2935,7 @@ export default function StatisticsSystemWorkbench() {
                                   {cell.origins.map((origin) => {
                                     const url = safeEvidenceUrl(origin.point.provenance?.sourceUrl);
                                     return <span key={`${origin.series.id}:${origin.point.sourceId}`} style={{ display: "block", overflowWrap: "anywhere" }}>
-                                      {origin.series.id} · {origin.point.sourceId}
+                                      出典資料の記録
                                       {url ? <> · <a href={url} target="_blank" rel="noreferrer">原典</a></> : null}
                                     </span>;
                                   })}

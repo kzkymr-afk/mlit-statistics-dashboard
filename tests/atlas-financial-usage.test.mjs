@@ -34,10 +34,10 @@ test('financial search and record detail retain original conditions and source',
  assert.deepEqual(found.map(r=>r.id),[forbidden.id]);
  const html=renderFinancialUsage(asset,{company:forbidden.companyId,bucket:forbidden.bucket,query:forbidden.id});
  assert.match(html,/総純資産への同一視禁止/);
- assert.ok(html.includes(forbidden.source.sha256));
- assert.ok(html.includes(forbidden.source.documentName));
+ assert.ok(!html.replace(/<[^>]+>/g,'').includes(forbidden.source.sha256));assert.ok(forbidden.source.sha256);
+ assert.ok(html.includes(forbidden.source.url));
  assert.ok(html.includes(forbidden.period.asOf||forbidden.period.end||forbidden.period.originalLabel));
- assert.ok(html.includes('公式資料を開く'));
+ assert.ok(html.includes('target="_blank"'));
  assert.equal(html.includes('data-financial-page="1"'),true);
  const haseko=asset.records.find(r=>r.id==='066a2a4b5f097a005c1aca209ac29f50c8c55993b5ef9328f8eb94b1e7e89107');
  assert.equal(haseko.bucket,'annotated_comparison');

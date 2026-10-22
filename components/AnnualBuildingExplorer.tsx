@@ -604,7 +604,7 @@ export default function AnnualBuildingExplorer({
               href={catalog.sourceUrl}
               target="_blank"
             >
-              e-Stat原表 ↗
+              e-Stat出典資料 ↗
             </a>
           </div>
         </header>
@@ -1028,7 +1028,7 @@ export default function AnnualBuildingExplorer({
           </div>
           <p className="source-footnote">
             原本ExcelはBusinessフォルダ内に年度別保存し、画面では検証済みDBから生成した読み取り専用データを参照します。
-            同一年度に分割表がある場合はグラフ上で合算し、原表自体は改変しません。
+            同一年度に分割表がある場合はグラフ上で合算し、出典資料自体は改変しません。
           </p>
         </section>
 

@@ -10,7 +10,7 @@ const builtAtLabel = builtAtUtc ? builtAtUtc.replace("T", " ").replace(/\.\d{3}Z
 export default function AtlasBuildStamp() {
   return (
     <div className={styles.bar} aria-label="画面の版とビルド時刻" data-atlas-build-id={buildId} data-atlas-build-time={builtAtUtc}>
-      <strong className={styles.version}>{channelLabel} · v{version} · {buildId}</strong>
+      <strong className={styles.version}>{channelLabel} · v{version}</strong>
       <time dateTime={builtAtUtc || undefined}>画面ビルド: {builtAtLabel}</time>
       <span className={styles.note}>統計データの更新日時とは別です</span>
     </div>
