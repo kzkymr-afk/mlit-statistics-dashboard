@@ -4702,6 +4702,710 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "d6014d7f24961cdd9bb4bb7888a764117eaa6b6addfaa675a93ecb91270e39cd"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "PENTA:operating_income_consolidated@FY2015_FY2025_PENTA_OPERATING",
+          "companyId": "PENTA",
+          "metricId": "operating_income_consolidated",
+          "label": "五洋建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "PENTA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_PENTA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "373f5f9c61a2e424d747727867360d31c1c77b3d24c6069c050cd327bfae9a19",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "企業結合会計基準等を適用（影響なし）。一部海外子会社2社の決算期変更により2015年1月〜2016年3月の15か月分の損益を含む（52頁）。親会社は12か月通期であり、子会社の収録期間を通常年度と同一とみなさない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "41dac85959ceff5d6ead3563668f0e50587285c31c5f63cab95687fe90414fea",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "減価償却方法を変更（連結財務諸表への影響は軽微）。一部海外子会社4社の決算期変更により2016年1月〜2017年3月の15か月分の損益を含む（56頁）。他年度との同条件の計算は対象外。"
+            },
+            {
+              "id": "g2017_2019",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "670ca222ab57c2d1f04d04b4f9d099970985098f8d4e8ff5eb2ebf3ad56c8148",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "在外連結子会社1社は12月決算、その他24社は親会社と同じ決算期。資料に記載された連結損益を使用し、一定範囲への調整利益ではない。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "700880498b683f65b2cc42d050a26e1625a2c80d90fc8d4c33a82826a469dabb",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "UG M＆E社の全株式取得により連結範囲に追加。前年と一定の連結範囲による増減とはみなさない。"
+            },
+            {
+              "id": "g2021_2023",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+              "sourceLocator": {
+                "pdf_page": 69
+              },
+              "sourceQuote": "収益認識基準を適用。期首利益剰余金は34百万円増、当年度連結財務諸表への影響は軽微。34百万円を営業利益の増加額へ転用しない。時価算定基準等の適用による連結財務諸表への影響なし。"
+            },
+            {
+              "id": "g2024_2025",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a21c6c74d6db4a7b17d90aad9944dea0dd66de12275af91a519a0cbb567ec1ea",
+              "sourceLocator": {
+                "pdf_page": 94
+              },
+              "sourceQuote": "法人税等・包括利益表示・税効果会計の基準等を適用。連結財務諸表への影響なし。ジャパンオフショアマリンDK社の新設により連結範囲に追加。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用（影響なし）。一部海外子会社2社の決算期変更により2015年1月〜2016年3月の15か月分の損益を含む（52頁）。親会社は12か月通期であり、子会社の収録期間を通常年度と同一とみなさない。",
+            "2016年度：減価償却方法を変更（連結財務諸表への影響は軽微）。一部海外子会社4社の決算期変更により2016年1月〜2017年3月の15か月分の損益を含む（56頁）。他年度との同条件の計算は対象外。",
+            "2017年度：在外連結子会社1社は12月決算、その他24社は親会社と同じ決算期。資料に記載された連結損益を使用し、一定範囲への調整利益ではない。",
+            "2020年度：UG M＆E社の全株式取得により連結範囲に追加。前年と一定の連結範囲による増減とはみなさない。",
+            "2021年度：収益認識基準を適用。期首利益剰余金は34百万円増、当年度連結財務諸表への影響は軽微。34百万円を営業利益の増加額へ転用しない。時価算定基準等の適用による連結財務諸表への影響なし。",
+            "2024年度：法人税等・包括利益表示・税効果会計の基準等を適用。連結財務諸表への影響なし。ジャパンオフショアマリンDK社の新設により連結範囲に追加。",
+            "連結子会社数は27/27/25/26/27/28/30/30/30/31/31社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 20617,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7f23ada6b1b70f9355633161a920519f7e47fbeafe703e5dfa9fdea4ef0d49b0",
+              "evidenceId": "051a996bbafd39f0c8667ab922c3e9b72ff8c345cdac72d794c5d1aa3138ab87",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007UHI",
+                "documentTitle": "五洋建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "373f5f9c61a2e424d747727867360d31c1c77b3d24c6069c050cd327bfae9a19",
+                "documentVersionSha256": "373f5f9c61a2e424d747727867360d31c1c77b3d24c6069c050cd327bfae9a19",
+                "pdfPage": 46,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                            ※1     414,892           ※1     477,164\n  開発事業等売上高                                 11,345                   14,399\n  売上高合計                                   426,237                  491,564\n営業利益                                       12,293                   20,617",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 46,
+                  "value_bbox": [
+                    484.9,
+                    296.40778,
+                    511.9,
+                    305.39878
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用（影響なし）。一部海外子会社2社の決算期変更により2015年1月〜2016年3月の15か月分の損益を含む（52頁）。親会社は12か月通期であり、子会社の収録期間を通常年度と同一とみなさない。",
+                  "連結子会社27社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 102,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 52,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    すべての子会社（27社）を連結している。子会社名は「第１企業の概況   ４関係会社の状況」に記載のとおり。\n    （新規）新規設立により１社を連結の範囲に含めた。\n        ピーティー・ペンタオーシャン社\n    （除外）清算結了により１社を連結の範囲から除外した。\n        ＫＤシッピング社",
+                "subsidiaryFiscalPeriodPage": 52,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外子会社５社の決算日は12月31日である。連結財務諸表作成にあたっては同決算日現在の\n    財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引について\n    は連結上必要な調整を行っている。\n    上記以外の連結子会社22社の決算日は連結財務諸表提出会社と同一である。\n    なお、ペンタオーシャン・マレーシア社及びアンカットラウト社は、決算日を12月31日から３月31日に変更して\n    いる。この決算期変更に伴い、当連結会計年度において、平成27年１月１日から平成28年３月31日までを連結し\n    ている。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 24274,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "71fbafe907b9405f9cfefae38d54bfb02972cb7767c3f892b35603e1b0c86e03",
+              "evidenceId": "7ee4ff5b7fb235dff4bfea897299bf9c58dcfb926752915d487720a56220aa04",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AKPY",
+                "documentTitle": "五洋建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "41dac85959ceff5d6ead3563668f0e50587285c31c5f63cab95687fe90414fea",
+                "documentVersionSha256": "41dac85959ceff5d6ead3563668f0e50587285c31c5f63cab95687fe90414fea",
+                "pdfPage": 50,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                           前連結会計年度                     当連結会計年度\n                         (自 平成27年４月１日                (自 平成28年４月１日\n                          至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                           ※1     477,164           ※1    487,132\n  開発事業等売上高                                14,399                  13,203\n  売上高合計                                  491,564                 500,336\n営業利益                                      20,617                  24,274",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    484.9,
+                    296.180881,
+                    511.9,
+                    305.171881
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却方法を変更（連結財務諸表への影響は軽微）。一部海外子会社4社の決算期変更により2016年1月〜2017年3月の15か月分の損益を含む（56頁）。他年度との同条件の計算は対象外。",
+                  "連結子会社27社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    すべての子会社（27社）を連結している。子会社名は「第１企業の概況   ４関係会社の状況」に記載のとおり。",
+                "subsidiaryFiscalPeriodPage": 56,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外子会社１社の決算日は12月31日である。連結財務諸表作成にあたっては同決算日現在の\n    財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引について\n    は連結上必要な調整を行っている。\n    上記以外の連結子会社26社の決算日は連結財務諸表提出会社と同一である。\n    なお、タイ・ペンタオーシャン社他３社の決算日を12月31日から３月31日に変更している。この決算期変更に伴\n    い、当連結会計年度において、平成28年１月１日から平成29年３月31日までを連結している。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 27617,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "913414045b537b7c272d7d7afe914889ba0507529aa0cd1807344297a15c4c0a",
+              "evidenceId": "a0f07d822ffa33f7fe3644ed96a55e7a0a9488cfbc98a6334a0eb12f57de6d33",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DBIJ",
+                "documentTitle": "五洋建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "670ca222ab57c2d1f04d04b4f9d099970985098f8d4e8ff5eb2ebf3ad56c8148",
+                "documentVersionSha256": "670ca222ab57c2d1f04d04b4f9d099970985098f8d4e8ff5eb2ebf3ad56c8148",
+                "pdfPage": 50,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                           前連結会計年度                     当連結会計年度\n                         (自 平成28年４月１日                (自 平成29年４月１日\n                          至 平成29年３月31日)               至 平成30年３月31日)\n売上高\n  完成工事高                           ※1    487,132            ※1    517,526\n  開発事業等売上高                               13,203                       9,376\n  売上高合計                                 500,336                  526,902\n営業利益                                     24,274                   27,617",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    484.9,
+                    296.180881,
+                    511.9,
+                    305.171881
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "在外連結子会社1社は12月決算、その他24社は親会社と同じ決算期。資料に記載された連結損益を使用し、一定範囲への調整利益ではない。",
+                  "連結子会社25社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    すべての子会社（25社）を連結している。子会社名は「第１企業の概況   ４関係会社の状況」に記載のとおり。\n    （除外）清算結了により以下の２社を連結の範囲から除外した。\n        ジュピター・ファイブ社\n        ネプチューン・ファイブ社",
+                "subsidiaryFiscalPeriodPage": 56,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社１社の決算日は12月31日である。連結財務諸表作成にあたっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社24社の決算日は連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 29232,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f06f6d0e7a0a19d709281a58d7774cc1138851d5c18d9df8a3bcb8fc775f2788",
+              "evidenceId": "826e7e28ab9ae3085fc37f9da10ce2f4908fb453992b76b00723c6e412d9ade3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G5K9",
+                "documentTitle": "五洋建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "01cd17a2fb59b46885f64fbfbf9e7050df91dee7ea7ef7b4ee807f085c15defa",
+                "documentVersionSha256": "01cd17a2fb59b46885f64fbfbf9e7050df91dee7ea7ef7b4ee807f085c15defa",
+                "pdfPage": 54,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                           前連結会計年度                      当連結会計年度\n                         (自 2017年４月１日                 (自 2018年４月１日\n                          至 2018年３月31日)                至 2019年３月31日)\n売上高\n 完成工事高                             ※1     517,526            ※1     531,851\n その他の売上高                                      9,376                  10,098\n 売上高合計                                    526,902                   541,949\n営業利益                                       27,617                    29,232",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 54,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社26社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 109,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 60,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            五洋建設株式会社(E00086)\n                                                                 有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    すべての子会社（26社）を連結している。子会社名は「第１企業の概況       ４関係会社の状況」に記載のとおり。\n    （新規）新規設立により１社を連結の範囲に含めた。\n        ペンタオーシャン・ラオス社",
+                "subsidiaryFiscalPeriodPage": 60,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成にあたっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社24社の決算日は連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 33161,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5126fe2dc153f8ecff238922969733b96f08f81fd166d3991e4fea56f73f9021",
+              "evidenceId": "b8f0b415554ea75659c9c8c4bfe0476bd39779d4f0df42a8a07fb79a993200a6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017_2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IX64",
+                "documentTitle": "五洋建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+                "documentVersionSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+                "pdfPage": 55,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2018年４月１日                (自 2019年４月１日\n                           至 2019年３月31日)               至 2020年３月31日)\n売上高\n 完成工事高                              ※1     531,851           ※1     564,135\n その他の売上高                                    10,098                      9,707\n 売上高合計                                     541,949                  573,842\n営業利益                                        29,232                   33,161",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社27社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 110,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      五洋建設株式会社(E00086)\n                                                           有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数     27社\n        連結子会社名は「第１企業の概況    ４関係会社の状況」に記載のとおり。\n        （新   規）新規設立により１社を連結の範囲に含めた。\n               ＰＫＹマリン㈱\n    ロ．非連結子会社の数     １社\n        （新   規）新規設立により１社を非連結子会社とした。\n               天保山ターミナルサービス㈱\n        非連結子会社（１社）は総資産、売上高、当期純利益（持分に見合う額）及び利益剰余金（持分に見合う\n        額）等からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社１社の決算日は12月31日である。連結財務諸表作成にあたっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社26社の決算日は連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 30460,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1ffe60dea1ad9f3b169cd2e461d63e74e3798d3aeb9ff098a2acda00837df95c",
+              "evidenceId": "0c474c7ce1813676b22fd0ddf40f397ec39bf7ef01fcea3512dcb670be56c664",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LOJE",
+                "documentTitle": "五洋建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "700880498b683f65b2cc42d050a26e1625a2c80d90fc8d4c33a82826a469dabb",
+                "documentVersionSha256": "700880498b683f65b2cc42d050a26e1625a2c80d90fc8d4c33a82826a469dabb",
+                "pdfPage": 58,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2019年４月１日                 (自 2020年４月１日\n                           至 2020年３月31日)                至 2021年３月31日)\n売上高\n 完成工事高                              ※1     564,135            ※1     464,214\n その他の売上高                                       9,707                     6,844\n 売上高合計                                     573,842                   471,058\n営業利益                                        33,161                    30,460",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "UG M＆E社の全株式取得により連結範囲に追加。前年と一定の連結範囲による増減とはみなさない。",
+                  "連結子会社28社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    五洋建設株式会社(E00086)\n                                                         有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数     28社\n        連結子会社名は「第１企業の概況   ４関係会社の状況」に記載のとおり。\n        （新規）全株式を取得し子会社化したことにより、１社を連結の範囲に含めている。\n               ＵＧ Ｍ＆Ｅ社\n    ロ．非連結子会社の数      １社\n         天保山ターミナルサービス㈱\n        非連結子会社（１社）は総資産、売上高、当期純利益（持分に見合う額）及び利益剰余金（持分に見合う\n        額）等からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 64,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成にあたっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社26社の決算日は連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 15939,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "5ba0f166bf6cc1df0643a4367a590d0243dde946a07053ab4adf2fc739f864e4",
+              "evidenceId": "fe304a652ed631014a5306794dd9ee6e193f61667394cb2669ccbb630ead9d38",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OETS",
+                "documentTitle": "五洋建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+                "documentVersionSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+                "pdfPage": 59,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                           前連結会計年度                     当連結会計年度\n                         (自 2020年４月１日                (自 2021年４月１日\n                          至 2021年３月31日)               至 2022年３月31日)\n売上高\n 完成工事高                                    464,214                  447,887\n その他の売上高                                    6,844                   10,344\n 売上高合計                                    471,058           ※1     458,231\n営業利益                                       30,460                   15,939",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。期首利益剰余金は34百万円増、当年度連結財務諸表への影響は軽微。34百万円を営業利益の増加額へ転用しない。時価算定基準等の適用による連結財務諸表への影響なし。",
+                  "連結子会社30社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 120,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                            五洋建設株式会社(E00086)\n                                                                 有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数            30社\n         連結子会社名は「第１企業の概況                ４関係会社の状況」に記載のとおり。\n         （新規）新規設立により、２社を連結の範囲に含めている。\n                 ジャパンオフショアマリン㈱\n                 ペンタオーシャン・ベトナム社\n    ロ．非連結子会社の数             １社\n            天保山ターミナルサービス㈱\n         非連結子会社（１社）は総資産、売上高、当期純利益（持分に見合う額）及び利益剰余金（持分に見合う\n         額）等からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 65,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成にあたっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社28社の決算日は連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 4119,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1e12328e5a9572f19e541311d14bcaf8ed9a43dacc78b0c53974059cec4b9cf9",
+              "evidenceId": "ae00a81a4a82eaa8f9f06c51e6e83f410ec70300092eddfd83c1188a666c2fdf",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R58A",
+                "documentTitle": "五洋建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "846c7709741de1e81c7feee5a5fedd46773fcd8716f2918f7190f59a4bcae025",
+                "documentVersionSha256": "846c7709741de1e81c7feee5a5fedd46773fcd8716f2918f7190f59a4bcae025",
+                "pdfPage": 73,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                           前連結会計年度                      当連結会計年度\n                         (自 2021年４月１日                 (自 2022年４月１日\n                          至 2022年３月31日)                至 2023年３月31日)\n売上高\n 完成工事高                                    447,887                   492,118\n その他の売上高                                   10,344                    10,087\n 売上高合計                             ※1     458,231            ※1     502,206\n営業利益                                       15,939                       4,119",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    481.45001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社30社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 133,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 79,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数      30社\n      連結子会社名は、「第１企業の概況    ４関係会社の状況」に記載のとおり。\n    ロ．非連結子会社の数      １社\n       天保山ターミナルサービス㈱\n      (連結の範囲から除いた理由)\n       非連結子会社は、総資産、売上高、当期純利益（持分に見合う額）及び利益剰余金（持分に見合う額）等\n      からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 79,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成に当たっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社28社の決算日は、連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 29152,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "a50eccd0c3572dbc7dab233e037fc7340677d843a5c3d78e24293ed859fb6862",
+              "evidenceId": "97a4085eb855f8122079f6f34e78d3cdd24b9cf282dd37d26e3aa130c483eda3",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TRIE",
+                "documentTitle": "五洋建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e10999cceccd08a2c0299359f39fd9e3e3bf7fc7a4041b3d6e853c8fb797da5f",
+                "documentVersionSha256": "e10999cceccd08a2c0299359f39fd9e3e3bf7fc7a4041b3d6e853c8fb797da5f",
+                "pdfPage": 75,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                           前連結会計年度                      当連結会計年度\n                         (自 2022年４月１日                 (自 2023年４月１日\n                          至 2023年３月31日)                至 2024年３月31日)\n売上高\n 完成工事高                                    492,118                  600,833\n その他の売上高                                   10,087                   16,874\n 売上高合計                             ※1     502,206            ※1    617,708\n営業利益                                          4,119                 29,152",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 75,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社30社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 135,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 81,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数      30社\n      連結子会社名は、「第１企業の概況    ４関係会社の状況」に記載のとおり。\n    ロ．非連結子会社の数      １社\n       天保山ターミナルサービス㈱\n      (連結の範囲から除いた理由)\n       非連結子会社は、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等\n      からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 81,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成に当たっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社28社の決算日は、連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 21697,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "a00f576620abe4e93f9e9c36ff51d73ec9315f9c27a72584765101a54865e10f",
+              "evidenceId": "5021af9fda368abfe50e2bf625392a43d4a61e76113f3baf78c5edfacdb4f8fd",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W0M5",
+                "documentTitle": "五洋建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a21c6c74d6db4a7b17d90aad9944dea0dd66de12275af91a519a0cbb567ec1ea",
+                "documentVersionSha256": "a21c6c74d6db4a7b17d90aad9944dea0dd66de12275af91a519a0cbb567ec1ea",
+                "pdfPage": 85,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2023年４月１日                 (自 2024年４月１日\n                           至 2024年３月31日)                至 2025年３月31日)\n売上高\n 完成工事高                                    600,833                   703,077\n その他の売上高                                   16,874                    24,414\n 売上高合計                              ※1    617,708             ※1    727,491\n営業利益                                       29,152                    21,697",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 85,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等・包括利益表示・税効果会計の基準等を適用。連結財務諸表への影響なし。ジャパンオフショアマリンDK社の新設により連結範囲に追加。",
+                  "連結子会社31社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 147,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 91,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                       五洋建設株式会社(E00086)\n                                                            有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数      31社\n      連結子会社名は、「第１企業の概況      ４関係会社の状況」に記載のとおり。\n      （新   規）新規設立により１社を連結の範囲に含めた。\n                 ジャパンオフショアマリンＤＫ社\n    ロ．非連結子会社の数      １社\n       天保山ターミナルサービス㈱\n      (連結の範囲から除いた理由)\n       非連結子会社は、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等\n      からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 91,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成に当たっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社29社の決算日は、連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 55304,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "b5a608c5297975c734c6428a34ad1b037aadb2a64f1fc3d73830cc0f42139d76",
+              "evidenceId": "0970ba389e15b7695a80a71e0bf07e4de2eb20717b9271f0836121dfe798b567",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YF3Y",
+                "documentTitle": "五洋建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f0bc3af8ce4994b39586433679e97df4222ad62fa5efa612fa41f8efb90524fe",
+                "documentVersionSha256": "f0bc3af8ce4994b39586433679e97df4222ad62fa5efa612fa41f8efb90524fe",
+                "pdfPage": 93,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2024年４月１日                 (自 2025年４月１日\n                           至 2025年３月31日)                至 2026年３月31日)\n売上高\n 完成工事高                                    703,077                   770,972\n その他の売上高                                   24,414                    23,334\n 売上高合計                              ※1    727,491             ※1    794,306\n営業利益                                       21,697                    55,304",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 93,
+                  "value_bbox": [
+                    476.95001,
+                    290.407751,
+                    503.95001,
+                    299.398751
+                  ]
+                },
+                "comparisonVerificationId": "penta-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社31社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 154,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 99,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     五洋建設株式会社(E00086)\n                                                          有価証券報告書\n 【注記事項】\n（連結財務諸表作成のための基本となる重要な事項）\n１   連結の範囲に関する事項\n    イ．連結子会社の数      31社\n      連結子会社名は、「第１企業の概況    ４関係会社の状況」に記載のとおり。\n    ロ．非連結子会社の数      １社\n       天保山ターミナルサービス㈱\n      (連結の範囲から除いた理由)\n       非連結子会社は、総資産、売上高、当期純損益（持分に見合う額）及び利益剰余金（持分に見合う額）等\n      からみて、いずれも連結財務諸表に及ぼす影響が軽微であるため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 99,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、在外連結子会社２社の決算日は12月31日である。連結財務諸表作成に当たっては、同決算日\n    現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生した重要な取引に\n    ついては連結上必要な調整を行っている。\n    上記以外の連結子会社29社の決算日は、連結財務諸表提出会社と同一である。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "93ca754693379fead4c5387aa27ae75508d474cefe84ef4868d46dc1ca67c114"
       }
     ],
     "mappings": [
@@ -4888,6 +5592,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "PENTA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "PENTA:operating_income_consolidated@FY2015_FY2025_PENTA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -4898,5 +5624,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "765e47b06bffad1d17b54135439eba9603afb6e7802d8306a4d7c58aa843ae3e"
+  "snapshotHash": "907d9feb4259774a966cb77205838c2c406a190e1a278e2b53d09698dc94db36"
 }
