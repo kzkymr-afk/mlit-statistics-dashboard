@@ -1,8 +1,8 @@
 /** A source-checked reported history is displayable across policy changes.
  * Calculations remain limited to one explicitly reviewed accounting interval.
- * This contract is currently scoped to the one company/metric reviewed here. */
+ * This contract is currently scoped to the explicitly reviewed company/metric pairs. */
 export function validReviewedPolicyGroups(s){
- if(s?.comparisonPolicyMode!=='reported_values_with_reviewed_groups'||s.companyId!=='KAJIMA'||s.metricId!=='operating_income_consolidated'||s.comparisonScope!=='consolidated'||s.unit!=='百万円'||s.cycle!=='年度次'||!Array.isArray(s.comparisonPolicyGroups)||!s.comparisonPolicyGroups.length||!Array.isArray(s.points)||!s.points.length)return false;
+ if(s?.comparisonPolicyMode!=='reported_values_with_reviewed_groups'||!['KAJIMA','OBAYASHI'].includes(s.companyId)||s.metricId!=='operating_income_consolidated'||s.comparisonScope!=='consolidated'||s.unit!=='百万円'||s.cycle!=='年度次'||!Array.isArray(s.comparisonPolicyGroups)||!s.comparisonPolicyGroups.length||!Array.isArray(s.points)||!s.points.length)return false;
  const groups=s.comparisonPolicyGroups,ids=new Set();
  for(const g of groups){if(ids.has(g.id)||!g.id||g.status!=='source_reviewed_policy_group'||!/^\d{4}-04-01$/.test(g.periodStart)||!/^\d{4}-03-31$/.test(g.periodEnd)||g.periodStart>=g.periodEnd||!/^[a-f0-9]{64}$/.test(g.sourceFileSha256||'')||!Number.isInteger(g.sourceLocator?.pdf_page)||g.sourceLocator.pdf_page<1||!g.sourceQuote)return false;ids.add(g.id);}
  const sorted=[...groups].sort((a,b)=>a.periodStart.localeCompare(b.periodStart));if(sorted.some((g,i)=>i&&sorted[i-1].periodEnd>=g.periodStart))return false;

@@ -1,0 +1,6 @@
+/** Only the reviewed Obayashi FY2024 retrospective restatement is connected. */
+export function validReviewedRestatement(series,point){
+ const r=point?.provenance?.reviewedRestatement;
+ return series?.companyId==='OBAYASHI'&&series.metricId==='operating_income_consolidated'&&series.comparisonScope==='consolidated'&&series.unit==='百万円'&&series.cycle==='年度次'&&point.periodStart==='2024-04-01'&&point.periodEnd==='2025-03-31'&&point.numericValue===142469&&r?.status==='source_reviewed_restatement'&&r.originalValue===143442&&r.restatedValue===142469&&r.originalDocumentId==='S100W0FJ'&&r.originalPdfPage===96&&r.restatementDocumentId==='S100YITC'&&r.restatementPdfPage===117&&r.originalSourceFileSha256==='5da206e9f60ea2ab0c4616050538e84163cc7bc163d35f92eceacda5e476aeca'&&point.provenance.sourceFileSha256==='e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d'&&point.provenance.sourceDocumentId==='S100YITC'&&point.provenance.pdfPage===106&&r.sourceQuote.includes('遡及適用')&&r.sourceQuote.includes('972百万円')&&typeof r.note==='string'&&r.note.length>0;
+}
+export function reviewedRestatementMatches(legacy,series,point,match){return legacy?.coordinates?.cat01==='OBAYASHI'&&legacy.coordinates.tab==='operating_income_consolidated'&&point?.timeCode==='2024100000'&&point.numericValue===143442&&validReviewedRestatement(series,match);}

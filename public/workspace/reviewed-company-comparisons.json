@@ -1309,6 +1309,655 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "5f4a70b5b6d5e0900f33c7fd0bf521d411ce9407ef81132bbd25e2617e2e8fb7"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "OBAYASHI:operating_income_consolidated@FY2015_FY2025_OBAYASHI_OPERATING",
+          "companyId": "OBAYASHI",
+          "metricId": "operating_income_consolidated",
+          "label": "大林組 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "OBAYASHI_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_OBAYASHI_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "625bd2af7b1446598086c26ac12a7a3c9b416704570234836a669598df5a32b0",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "企業結合会計基準等を適用。資料に記載された利益額を使用。"
+            },
+            {
+              "id": "g2016_2020",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "fbd8e684b4b2e341df6166f290f8631b86597e72b698c81163ff1b9a39ede3cf",
+              "sourceLocator": {
+                "pdf_page": 61
+              },
+              "sourceQuote": "減価償却方法を変更（連結財務諸表への影響は軽微）。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ef137d3bc6b640b0373d1917c5d2afa97503000235a5adb6c164363420cccdc6",
+              "sourceLocator": {
+                "pdf_page": 89
+              },
+              "sourceQuote": "収益認識基準を適用し、営業利益に1,643百万円の影響。2020年度以前との同条件での計算は対象外。"
+            },
+            {
+              "id": "g2022_2023",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9604b816fa94410a4b5bdfaba623adb7f708aac564dd16e061c41ce3309a4ff3",
+              "sourceLocator": {
+                "pdf_page": 97
+              },
+              "sourceQuote": "時価算定の適用指針を適用（影響は軽微）。"
+            },
+            {
+              "id": "g2024_2025",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d",
+              "sourceLocator": {
+                "pdf_page": 117
+              },
+              "sourceQuote": "在外子会社等の収益・費用の為替換算を決算日相場から期中平均相場へ変更。2024年度も遡及修正。資料にある減少額972百万円と表示値の差973百万円を再計算で置き換えず、資料の表示額を保持。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。資料に記載された利益額を使用。",
+            "2016年度：減価償却方法を変更（連結財務諸表への影響は軽微）。",
+            "2021年度：収益認識基準を適用し、営業利益に1,643百万円の影響。2020年度以前との同条件での計算は対象外。",
+            "2022年度：時価算定の適用指針を適用（影響は軽微）。",
+            "2024年度：法人税等の基準を適用（影響なし）。2025年度資料により、2024年度営業利益は143,442から142,469百万円へ遡及修正。2024・2025年度は期中平均為替相場による換算で比較。2023年度以前にはこの変更を遡及適用していない。",
+            "2025年度：在外子会社等の収益・費用の為替換算を決算日相場から期中平均相場へ変更。2024年度も遡及修正。資料にある減少額972百万円と表示値の差973百万円を再計算で置き換えず、資料の表示額を保持。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 106380,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "1a63af59cf07776486537da7ede53c3743cfdbbc8235f9bc7beca63774653655",
+              "evidenceId": "5573aa924cebbaabf49f1bcdbaba2b6887807b6bd6b3439d58b6b148fcd6815e",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007ZDM",
+                "documentTitle": "大林組 有価証券報告書 第112期（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "625bd2af7b1446598086c26ac12a7a3c9b416704570234836a669598df5a32b0",
+                "documentVersionSha256": "625bd2af7b1446598086c26ac12a7a3c9b416704570234836a669598df5a32b0",
+                "pdfPage": 52,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                             (単位：百万円)\n                              前連結会計年度                    当連結会計年度\n                         (自    平成26年４月１日            (自    平成27年４月１日\n                          至    平成27年３月31日)           至    平成28年３月31日)\n売上高\n 完成工事高                               ※１ 1,673,040             ※１ 1,695,752\n\n 不動産事業等売上高                                100,941                   82,081\n営業利益                                       48,388                  106,380",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 52,
+                  "value_bbox": [
+                    479.48083,
+                    285.03415,
+                    510.98083,
+                    294.02515
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。資料に記載された利益額を使用。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 124,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 133742,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fed8a3aa167fa9594c31e643bbba2363e8603b59448be3a31f48c9d0c77014dc",
+              "evidenceId": "3bea980ecb519f8d83c961a9f0f81a9a7269b9ccfd8127d6e8f48624c0441035",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100ALJP",
+                "documentTitle": "大林組 有価証券報告書 第113期（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "fbd8e684b4b2e341df6166f290f8631b86597e72b698c81163ff1b9a39ede3cf",
+                "documentVersionSha256": "fbd8e684b4b2e341df6166f290f8631b86597e72b698c81163ff1b9a39ede3cf",
+                "pdfPage": 52,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                              前連結会計年度                  当連結会計年度\n                         (自    平成27年４月１日          (自    平成28年４月１日\n                          至    平成28年３月31日)         至    平成29年３月31日)\n売上高\n 完成工事高                             ※１ 1,695,752             ※１ 1,802,525\n\n 不動産事業等売上高                               82,081                   70,195\n営業利益                                    106,380                  133,742",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 52,
+                  "value_bbox": [
+                    479.48083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "減価償却方法を変更（連結財務諸表への影響は軽微）。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 124,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 137800,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "aadcd551d0498acb81c3fa9f62b5c0f17bb2705709427c51c642e485c5654de1",
+              "evidenceId": "59e17309a9c1224e6ebe44a0dd99c0f7ecfbe9294b0650775973987073a723cf",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DD1L",
+                "documentTitle": "大林組 有価証券報告書 第114期（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ed1acf7ce0f14a0d808435af978b62320d949674baf5699024c3565cebf13bae",
+                "documentVersionSha256": "ed1acf7ce0f14a0d808435af978b62320d949674baf5699024c3565cebf13bae",
+                "pdfPage": 58,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                           (単位：百万円)\n                              前連結会計年度                  当連結会計年度\n                         (自    平成28年４月１日          (自    平成29年４月１日\n                          至    平成29年３月31日)         至    平成30年３月31日)\n売上高\n 完成工事高                             ※１ 1,802,525             ※１ 1,820,947\n\n 不動産事業等売上高                               70,195                   79,708\n営業利益                                    133,742                  137,800",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    479.48083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 127,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 155480,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ca9a3d3284ce1548f1ca779643e3afd60b47847949eb6cbe5e6a39514d5d29da",
+              "evidenceId": "2c14dbe12e290b1716e93c5acbb7b5bdc08b349f6a681b399811a613c8d0ebd6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G8TS",
+                "documentTitle": "大林組 有価証券報告書 第115期（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "26d9c58fd11bdcc0363d62a5d64482ceb77f4afa54fef98f6510656a12687ebc",
+                "documentVersionSha256": "26d9c58fd11bdcc0363d62a5d64482ceb77f4afa54fef98f6510656a12687ebc",
+                "pdfPage": 65,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       (単位：百万円)\n                           前連結会計年度                 当連結会計年度\n                         (自 2017年４月１日            (自 2018年４月１日\n                          至 2018年３月31日)           至 2019年３月31日)\n売上高\n 完成工事高                            ※１ 1,820,947          ※１ 1,945,514\n\n 不動産事業等売上高                              79,708                94,170\n営業利益                                   137,800               155,480",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 65,
+                  "value_bbox": [
+                    479.48083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 130,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 152871,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9184e544f6fd7cabd798791e5e953a73c5b56c6154ea534a92868eb41c2da5af",
+              "evidenceId": "75216ae8fa6019641cca3aa134ff1f13859422c370f70aeeeb3b0d8921aaa931",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IYP5",
+                "documentTitle": "大林組 有価証券報告書 第116期（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f0c21096e8c7f9dd7e8704e2b1a91906ab4d467d92d4fad80cacbccf43fc32da",
+                "documentVersionSha256": "f0c21096e8c7f9dd7e8704e2b1a91906ab4d467d92d4fad80cacbccf43fc32da",
+                "pdfPage": 65,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       (単位：百万円)\n                           前連結会計年度                 当連結会計年度\n                         (自 2018年４月１日            (自 2019年４月１日\n                          至 2019年３月31日)           至 2020年３月31日)\n売上高\n 完成工事高                            ※１ 1,945,514          ※１ 1,952,419\n\n 不動産事業等売上高                              94,170               120,623\n営業利益                                   155,480               152,871",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 65,
+                  "value_bbox": [
+                    479.48083,
+                    285.962451,
+                    510.98083,
+                    294.953451
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 134,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 123161,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e05f15db55b1dac616a7b52bcf9439201f1bde1caffd6689e3f61a00afdf44b6",
+              "evidenceId": "9967b82ed322548ab436f350f90c1bd25d11e39528f2b673a51c69905ffc576a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LORK",
+                "documentTitle": "大林組 有価証券報告書 第117期（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ba00b317a39ed31bf2749e769239ea78747da109c8d19b3f86d3c31559f29e4d",
+                "documentVersionSha256": "ba00b317a39ed31bf2749e769239ea78747da109c8d19b3f86d3c31559f29e4d",
+                "pdfPage": 73,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                           前連結会計年度                  当連結会計年度\n                         (自 2019年４月１日             (自 2020年４月１日\n                          至 2020年３月31日)            至 2021年３月31日)\n売上高\n 完成工事高                             ※１ 1,952,419          ※１ 1,683,280\n\n 不動産事業等売上高                              120,623                83,612\n営業利益                                    152,871               123,161",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    479.48083,
+                    285.034121,
+                    510.98083,
+                    294.025121
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 145,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 41051,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9df4861b696d53745e7ecd415d1fa302447b6d20ac75ce8ecc2f6af2a94801b2",
+              "evidenceId": "d78170a6e6549e24ea0f0f74c827aa69772cf38cab683ae58226604c7645301b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OE64",
+                "documentTitle": "大林組 有価証券報告書 第118期（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ef137d3bc6b640b0373d1917c5d2afa97503000235a5adb6c164363420cccdc6",
+                "documentVersionSha256": "ef137d3bc6b640b0373d1917c5d2afa97503000235a5adb6c164363420cccdc6",
+                "pdfPage": 77,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                           前連結会計年度                  当連結会計年度\n                         (自 2020年４月１日             (自 2021年４月１日\n                          至 2021年３月31日)            至 2022年３月31日)\n売上高\n 完成工事高                                1,683,280             1,795,208\n 不動産事業等売上高                               83,612               127,676\n 売上高合計                                1,766,893          ※１ 1,922,884\n営業利益                                    123,161                41,051",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 77,
+                  "value_bbox": [
+                    483.97836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用し、営業利益に1,643百万円の影響。2020年度以前との同条件での計算は対象外。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 156,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 93800,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "029837aeaaca4601702fb559fb4d3e39b54901aa9149d44409ad75bddd584c9d",
+              "evidenceId": "7c4ac789cac9c6a69580a5e6c70cccaa7054f56a288e274becf09f0d702ea499",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R95O",
+                "documentTitle": "大林組 有価証券報告書 第119期（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9604b816fa94410a4b5bdfaba623adb7f708aac564dd16e061c41ce3309a4ff3",
+                "documentVersionSha256": "9604b816fa94410a4b5bdfaba623adb7f708aac564dd16e061c41ce3309a4ff3",
+                "pdfPage": 86,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                           前連結会計年度                  当連結会計年度\n                         (自 2021年４月１日             (自 2022年４月１日\n                          至 2022年３月31日)            至 2023年３月31日)\n売上高\n 完成工事高                                1,795,208             1,847,688\n 不動産事業等売上高                              127,676               136,200\n 売上高合計                             ※１ 1,922,884          ※１ 1,983,888\n営業利益                                     41,051                93,800",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 86,
+                  "value_bbox": [
+                    483.97836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用（影響は軽微）。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 164,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 79381,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "447385491fcc7343a7a6136b90f5e8efae2835d35068c2ac040e3f06bd574604",
+              "evidenceId": "a1b45058231ecc9ff19e7864bf515aba62ce1e1c30eb1bbd182f6354fd87ffa1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TXH2",
+                "documentTitle": "大林組 有価証券報告書 第120期（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "384939af219e7de057f7b0b02115b96d54aff58b5b21ce7a0133e5d3a1f5053f",
+                "documentVersionSha256": "384939af219e7de057f7b0b02115b96d54aff58b5b21ce7a0133e5d3a1f5053f",
+                "pdfPage": 92,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        (単位：百万円)\n                           前連結会計年度                  当連結会計年度\n                         (自 2022年４月１日             (自 2023年４月１日\n                          至 2023年３月31日)            至 2024年３月31日)\n売上高\n 完成工事高                                1,847,688             2,206,764\n 不動産事業等売上高                              136,200               118,398\n 売上高合計                             ※１ 1,983,888          ※１ 2,325,162\n営業利益                                     93,800                79,381",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 92,
+                  "value_bbox": [
+                    483.97836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 172,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 142469,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "27947a2e310772b549955eac91c3a0a3006d529bfcc825d67b0076d3cdbd94d4",
+              "evidenceId": "d12301288109647102d8fc7616055846bbe95e1765959697d0b5648e67f9d377",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YITC",
+                "documentTitle": "大林組 有価証券報告書 第122期（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d",
+                "documentVersionSha256": "e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d",
+                "pdfPage": 106,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                         (単位：百万円)\n                           前連結会計年度                   当連結会計年度\n                         (自 2024年４月１日              (自 2025年４月１日\n                          至 2025年３月31日)             至 2026年３月31日)\n売上高\n 完成工事高                                 2,467,763             2,409,378\n 不動産事業等売上高                               123,001               176,880\n 売上高合計                              ※１ 2,590,765          ※１ 2,586,258\n営業利益                                     142,469               194,678",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 106,
+                  "value_bbox": [
+                    354.47836,
+                    286.397591,
+                    385.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等の基準を適用（影響なし）。2025年度資料により、2024年度営業利益は143,442から142,469百万円へ遡及修正。2024・2025年度は期中平均為替相場による換算で比較。2023年度以前にはこの変更を遡及適用していない。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 176,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して",
+                "reviewedRestatement": {
+                  "status": "source_reviewed_restatement",
+                  "originalValue": 143442,
+                  "restatedValue": 142469,
+                  "originalSourceFileSha256": "5da206e9f60ea2ab0c4616050538e84163cc7bc163d35f92eceacda5e476aeca",
+                  "originalDocumentId": "S100W0FJ",
+                  "originalPdfPage": 96,
+                  "restatementDocumentId": "S100YITC",
+                  "restatementPdfPage": 117,
+                  "sourceQuote": "EDINET提出書類\n                                                   株式会社大林組(E00055)\n                                                       有価証券報告書\n（会計方針の変更）\n\n\n （在外子会社等の収益及び費用の換算方法の変更）\n   在外子会社等の収益及び費用は、従来、各社の決算日の直物為替相場により円貨に換算していたが、当連結\n  会計年度の期首より期中平均相場により円貨に換算する方法に変更している。\n   この変更は、当社グループの海外事業の拡大に伴い在外子会社等の売上高及び損益の重要性が増しているこ\n  と、並びに近年の為替相場の変動状況を勘案した結果、一時的な為替相場の変動による期間損益への影響を緩\n  和し、連結会計年度を通じて発生する在外子会社等の業績をより適切に連結財務諸表に反映させるために行っ\n  たものである。\n   当該会計方針の変更を遡及適用し、前連結会計年度については遡及適用後の連結財務諸表となっている。\n   この結果、遡及適用前と比べ、前連結会計年度の売上高は29,336百万円、営業利益は972百万円、経常利益\n  は1,147百万円、親会社株主に帰属する当期純利益は696百万円それぞれ減少しており、１株当たり当期純利益\n  は97銭減少している。また、前連結会計年度末の利益剰余金は696百万円減少し、為替換算調整勘定は同額増\n  加している。\n   なお、前連結会計年度の期首より前の連結会計年度については、累積的影響額が軽微であるため、この変更\n  の遡及適用は行っていない。",
+                  "note": "2024年度は2025年度資料の遡及修正後の数値を表示。修正前143,442百万円は保存している。"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 194678,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "c9ad537eafb2037ae11184814dcdc636a95eea86d644b1fda6ae395ea7504d4a",
+              "evidenceId": "c4c778c74879fe6249090e7f2d4c7d4786750246aaa1a095c0622779a7abd34a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YITC",
+                "documentTitle": "大林組 有価証券報告書 第122期（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d",
+                "documentVersionSha256": "e77a5eeea668be63d1e4c1f7fa3b51389d445e12262e9a11f334fd73e83ca12d",
+                "pdfPage": 106,
+                "sourceQuote": " ②【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                         (単位：百万円)\n                           前連結会計年度                   当連結会計年度\n                         (自 2024年４月１日              (自 2025年４月１日\n                          至 2025年３月31日)             至 2026年３月31日)\n売上高\n 完成工事高                                 2,467,763             2,409,378\n 不動産事業等売上高                               123,001               176,880\n 売上高合計                              ※１ 2,590,765          ※１ 2,586,258\n営業利益                                     142,469               194,678",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 106,
+                  "value_bbox": [
+                    479.47836,
+                    286.397591,
+                    510.97836,
+                    295.388591
+                  ]
+                },
+                "comparisonVerificationId": "obayashi-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。資料に記載された利益額であり、会計方針変更の影響を除去した実質増減や一定の連結範囲を意味しない。計算条件の異なる区分をまたぐ指数・相関を停止する。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "在外子会社等の収益・費用の為替換算を決算日相場から期中平均相場へ変更。2024年度も遡及修正。資料にある減少額972百万円と表示値の差973百万円を再計算で置き換えず、資料の表示額を保持。",
+                  "会社間の同等性は今回確認していない。単体・セグメント利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 191,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準に準拠して"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "2e574f0e731c02cc87d5de668db0f5b70638cee26ec7cc097eb56b979c4faf7a"
       }
     ],
     "mappings": [
@@ -1385,6 +2034,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "OBAYASHI",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "OBAYASHI:operating_income_consolidated@FY2015_FY2025_OBAYASHI_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -1395,5 +2066,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "2fd1833af7c9d42b8d51c2bdf085f428b0043c0249210ba6b0b8db0934753167"
+  "snapshotHash": "c83a5f88f48b520d9301d172665eceee183fb0fe4b80b6eb968a018f8a8f0817"
 }
