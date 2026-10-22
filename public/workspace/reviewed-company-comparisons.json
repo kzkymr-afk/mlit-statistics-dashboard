@@ -5406,6 +5406,688 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "93ca754693379fead4c5387aa27ae75508d474cefe84ef4868d46dc1ca67c114"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "OKUMURA:operating_income_consolidated@FY2015_FY2025_OKUMURA_OPERATING",
+          "companyId": "OKUMURA",
+          "metricId": "operating_income_consolidated",
+          "label": "奥村組 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "OKUMURA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_OKUMURA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9c01ff055eaae2b49e0408121578f58e8b1f5adb6a07e1b5b8cdec38e6c00b6a",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし。"
+            },
+            {
+              "id": "g2016_2017",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "1e1b2329950fcafc9b901282894b799822039f43989bf8bc1442155235afaedb",
+              "sourceLocator": {
+                "pdf_page": 47
+              },
+              "sourceQuote": "建物附属設備・構築物の減価償却方法を定率法から定額法に変更。営業利益等への影響は軽微。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "e26cca3d3f5233e25a00200c92898ad236000fe8bbe51059186a534bb132a641",
+              "sourceLocator": {
+                "pdf_page": 57
+              },
+              "sourceQuote": "石狩新港新エネルギー発電への出資により連結子会社を2社から3社へ変更。前年と一定の連結範囲による増減とはみなさない。"
+            },
+            {
+              "id": "g2019_2020",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "5b2afe69a4b9e9df7024e40ad708a4a7afa3f5a3a8035e224cc1e77d0221560c",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "店内部門の人件費1,355百万円を販管費から完成工事原価へ変更。過年度データ不足により遡及適用せず、当年度から将来に適用。営業利益等への影響は軽微であり、1,355百万円を利益減少へ転用しない。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a1be7caf270254e3476d70a8a6df616c1ffe9701269dc57ebe910aea8223af57",
+              "sourceLocator": {
+                "pdf_page": 69
+              },
+              "sourceQuote": "収益認識基準を適用。営業利益等への影響は軽微、期首利益剰余金は63百万円増加。63百万円を営業利益増加へ転用しない。時価算定基準等の適用による影響なし。平田バイオエナジーの新設により連結子会社を追加。"
+            },
+            {
+              "id": "g2022_2025",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7b5b339a80d8c90387febe86692b4df0dfdd2de3643c78a971e21f65cca5b02f",
+              "sourceLocator": {
+                "pdf_page": 68
+              },
+              "sourceQuote": "時価算定の適用指針を適用。連結財務諸表への影響なし。兼業事業の表示名称を投資開発事業等へ変更しており、連結営業利益をセグメント利益へ転用しない。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし。",
+            "2016年度：建物附属設備・構築物の減価償却方法を定率法から定額法に変更。営業利益等への影響は軽微。",
+            "2018年度：石狩新港新エネルギー発電への出資により連結子会社を2社から3社へ変更。前年と一定の連結範囲による増減とはみなさない。",
+            "2019年度：店内部門の人件費1,355百万円を販管費から完成工事原価へ変更。過年度データ不足により遡及適用せず、当年度から将来に適用。営業利益等への影響は軽微であり、1,355百万円を利益減少へ転用しない。",
+            "2021年度：収益認識基準を適用。営業利益等への影響は軽微、期首利益剰余金は63百万円増加。63百万円を営業利益増加へ転用しない。時価算定基準等の適用による影響なし。平田バイオエナジーの新設により連結子会社を追加。",
+            "2022年度：時価算定の適用指針を適用。連結財務諸表への影響なし。兼業事業の表示名称を投資開発事業等へ変更しており、連結営業利益をセグメント利益へ転用しない。",
+            "連結子会社数は2/2/2/3/3/3/4/4/4/4/4社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 8423,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "948cf86e870fe8fe1d74ed5ec6e89154823f20928ca984eb467e79f933c7e411",
+              "evidenceId": "92010c11be4e76b713a82168e073853c8e17aa4ad3e8316fabe7cb297a58ab0c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007NWH",
+                "documentTitle": "奥村組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9c01ff055eaae2b49e0408121578f58e8b1f5adb6a07e1b5b8cdec38e6c00b6a",
+                "documentVersionSha256": "9c01ff055eaae2b49e0408121578f58e8b1f5adb6a07e1b5b8cdec38e6c00b6a",
+                "pdfPage": 38,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成26年４月１日                 (自 平成27年４月１日\n                           至 平成27年３月31日)                至 平成28年３月31日)\n売上高\n  完成工事高                                   194,752                   195,178\n  不動産事業等売上高                                10,515                    10,113\n  売上高合計                                   205,268                   205,291\n営業利益                                           4,052                     8,423",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    489.4,
+                    296.86151,
+                    511.9,
+                    305.85251
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。連結財務諸表及び1株当たり情報への影響額なし。",
+                  "連結子会社2社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 94,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 44,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     株式会社奥村組(E00083)\n                                                         有価証券報告書\n\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n      2社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n\n(2) 非連結子会社数\n      9社\n   主要な非連結子会社名\n     オーエステー工業㈱\n\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益剰\n  余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n  います。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 11678,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "79ea344b04e69e35b2899c220ec4174d02c835acbb3b7c0550ec51e83881db59",
+              "evidenceId": "b6def32c3b447b1aef4cda590a15e4f2d24bd7314c350a4f4e2951425a3bcad9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100ADQ7",
+                "documentTitle": "奥村組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "1e1b2329950fcafc9b901282894b799822039f43989bf8bc1442155235afaedb",
+                "documentVersionSha256": "1e1b2329950fcafc9b901282894b799822039f43989bf8bc1442155235afaedb",
+                "pdfPage": 38,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成27年４月１日                 (自 平成28年４月１日\n                           至 平成28年３月31日)                至 平成29年３月31日)\n売上高\n  完成工事高                                   195,178                   193,202\n  不動産事業等売上高                                10,113                     9,888\n  売上高合計                                   205,291                   203,090\n営業利益                                           8,423                 11,678",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 38,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "建物附属設備・構築物の減価償却方法を定率法から定額法に変更。営業利益等への影響は軽微。",
+                  "連結子会社2社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 93,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 44,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社奥村組(E00083)\n                                                        有価証券報告書\n\n【注記事項】\n （連結財務諸表作成のための基本となる重要な事項）\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     2社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     オーエステー工業㈱\n\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益剰\n  余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n  います。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 15853,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "e21a5df5546cf6c1d53c5f9af2b15280f1bbeaa3296d4db1f91703ad7674a9fd",
+              "evidenceId": "e19bef6841997cd7fa47b1ff185f2941f47d042d2dcdc921d693c74c6586caa0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016_2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100D4KU",
+                "documentTitle": "奥村組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d57ac42ecbb17eb51b7f592fd425718cbe21e34a28be5efe31c2e80d63e2617e",
+                "documentVersionSha256": "d57ac42ecbb17eb51b7f592fd425718cbe21e34a28be5efe31c2e80d63e2617e",
+                "pdfPage": 41,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 平成28年４月１日                 (自 平成29年４月１日\n                           至 平成29年３月31日)                至 平成30年３月31日)\n売上高\n  完成工事高                                   193,202                   213,135\n  不動産事業等売上高                                 9,888                    10,791\n  売上高合計                                   203,090                   223,927\n営業利益                                       11,678                    15,853",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 41,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社2社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 96,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社奥村組(E00083)\n                                                        有価証券報告書\n\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     2社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     オーエステー工業㈱\n\n   非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益剰\n  余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外して\n  います。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 13716,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "fde326e9a4166ba6c60c0b229b6adf49f1102970aad292d404698cb6d96524d4",
+              "evidenceId": "a25e82a919cae70499c3e43487d669c0eea58e97d4fcbc583640c56308be4d84",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100FXFO",
+                "documentTitle": "奥村組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e26cca3d3f5233e25a00200c92898ad236000fe8bbe51059186a534bb132a641",
+                "documentVersionSha256": "e26cca3d3f5233e25a00200c92898ad236000fe8bbe51059186a534bb132a641",
+                "pdfPage": 51,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2017年４月１日                   (自 2018年４月１日\n                           至 2018年３月31日)                  至 2019年３月31日)\n売上高\n 完成工事高                                      213,135                    210,020\n 不動産事業等売上高                                   10,791                     10,863\n 売上高合計                                      223,927                    220,884\n営業利益                                         15,853                     13,716",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 51,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "石狩新港新エネルギー発電への出資により連結子会社を2社から3社へ変更。前年と一定の連結範囲による増減とはみなさない。",
+                  "連結子会社3社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 57,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                       株式会社奥村組(E00083)\n                                                           有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     3社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩新港新エネルギー発電(同)\n    なお、石狩新港新エネルギー発電(同)については、2018年12月26日付で出資を行い、当連結会計年度より連結\n   子会社としています。\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     オーエステー工業㈱\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n   剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n   しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 11516,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "97c8f3206d52fc26acd3d9cd302ce2e254c4e4f0da1f7f4a6e5e5dd574a72782",
+              "evidenceId": "5fd2d6c2fdaeacfcfc04a969158bb1e2b8a43864fe54a530417e6ce587696108",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IROJ",
+                "documentTitle": "奥村組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5b2afe69a4b9e9df7024e40ad708a4a7afa3f5a3a8035e224cc1e77d0221560c",
+                "documentVersionSha256": "5b2afe69a4b9e9df7024e40ad708a4a7afa3f5a3a8035e224cc1e77d0221560c",
+                "pdfPage": 50,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2018年４月１日                (自 2019年４月１日\n                           至 2019年３月31日)               至 2020年３月31日)\n売上高\n 完成工事高                                      210,020                 216,905\n 不動産事業等売上高                                   10,863                   9,466\n 売上高合計                                      220,884                 226,371\n営業利益                                         13,716                  11,516",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "店内部門の人件費1,355百万円を販管費から完成工事原価へ変更。過年度データ不足により遡及適用せず、当年度から将来に適用。営業利益等への影響は軽微であり、1,355百万円を利益減少へ転用しない。",
+                  "連結子会社3社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 110,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社奥村組(E00083)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     3社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n\n(2) 非連結子会社数\n     10社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n    非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利益\n   剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n   しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 12880,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "3c61739bbd5cf8947475bf352c2ebfc5f4883282bb63e6c3c75d3123cb77e4ac",
+              "evidenceId": "751392c0f1e593627c01d97fb6b186497f2b2ddd7795e1f429843db54d7f1b02",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LHA0",
+                "documentTitle": "奥村組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "b3ce08fa94989722dc8eb3a4091f35c5d47067ae41bf384027dedd499fdb9d01",
+                "documentVersionSha256": "b3ce08fa94989722dc8eb3a4091f35c5d47067ae41bf384027dedd499fdb9d01",
+                "pdfPage": 51,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2019年４月１日                 (自 2020年４月１日\n                           至 2020年３月31日)                至 2021年３月31日)\n売上高\n 完成工事高                                      216,905                  209,805\n 不動産事業等売上高                                    9,466                   10,907\n 売上高合計                                      226,371                  220,712\n営業利益                                         11,516                   12,880",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 51,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社3社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 110,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 57,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社奥村組(E00083)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     3社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n\n\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n    益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n    除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 12647,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "526c88b34b5bcd516666751237ad3de3ebed029043e2b9cfeed040b4f020f836",
+              "evidenceId": "026a362feb0716b9c77c3e7e4cfe502495ecbb590068a1c6803f74de27fbea50",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100O7D8",
+                "documentTitle": "奥村組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a1be7caf270254e3476d70a8a6df616c1ffe9701269dc57ebe910aea8223af57",
+                "documentVersionSha256": "a1be7caf270254e3476d70a8a6df616c1ffe9701269dc57ebe910aea8223af57",
+                "pdfPage": 58,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2020年４月１日                   (自 2021年４月１日\n                           至 2021年３月31日)                  至 2022年３月31日)\n売上高\n 完成工事高                                      209,805                    229,906\n 不動産事業等売上高                                   10,907                     12,552\n 売上高合計                                      220,712             ※1     242,458\n営業利益                                         12,880                     12,647",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。営業利益等への影響は軽微、期首利益剰余金は63百万円増加。63百万円を営業利益増加へ転用しない。時価算定基準等の適用による影響なし。平田バイオエナジーの新設により連結子会社を追加。",
+                  "連結子会社4社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 121,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                      株式会社奥村組(E00083)\n                                                          有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     4社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n     平田バイオエナジー(同)\n    2022年１月17日付で平田バイオエナジー(同)を設立し、同社を新たに連結子会社としています。\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n\n\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n    益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n    除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 11847,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "4923b91c40fa8801263e447eef7f9f24b9ef6e5143cc7bda52d9d2b8b5f59dc5",
+              "evidenceId": "87098aa7492cae028428f3fb7bf572d4840ebadb10db501c9f222d2588ac1241",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100QZIS",
+                "documentTitle": "奥村組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7b5b339a80d8c90387febe86692b4df0dfdd2de3643c78a971e21f65cca5b02f",
+                "documentVersionSha256": "7b5b339a80d8c90387febe86692b4df0dfdd2de3643c78a971e21f65cca5b02f",
+                "pdfPage": 58,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2021年４月１日                  (自 2022年４月１日\n                           至 2022年３月31日)                 至 2023年３月31日)\n売上高\n 完成工事高                                      229,906                   236,649\n 投資開発事業等売上高                                  12,552                    12,793\n 売上高合計                                ※1    242,458            ※1     249,442\n営業利益                                         12,647                    11,847",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用。連結財務諸表への影響なし。兼業事業の表示名称を投資開発事業等へ変更しており、連結営業利益をセグメント利益へ転用しない。",
+                  "連結子会社4社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社奥村組(E00083)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     4社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n     平田バイオエナジー(同)\n\n(2) 非連結子会社数\n     9社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n\n\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n    益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n    除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 13708,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "87f98609c888f3d715fcb5feead5def040f3ce8f98e2c99e70c7a87c1ee8f19e",
+              "evidenceId": "cc5128a438898f14f5f07f6a3b6582ef55b92b2a8e16ab7c0f0ffa427cbc3cbf",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TKYY",
+                "documentTitle": "奥村組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "39f1ffbbc20e2ffa527b408bef52f7a9c7289e778c924239e2568202c709282a",
+                "documentVersionSha256": "39f1ffbbc20e2ffa527b408bef52f7a9c7289e778c924239e2568202c709282a",
+                "pdfPage": 59,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2022年４月１日                   (自 2023年４月１日\n                           至 2023年３月31日)                  至 2024年３月31日)\n売上高\n 完成工事高                                       236,649                  268,340\n 投資開発事業等売上高                                   12,793                   19,805\n 売上高合計                                ※1     249,442            ※1    288,146\n営業利益                                          11,847                   13,708",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社奥村組(E00083)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     4社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n     平田バイオエナジー(同)\n\n(2) 非連結子会社数\n     7社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n\n\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n    益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n    除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 9731,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ac9b4d5805ba0619898414d1ec151d336fe77e8919e77ba5368dbef9e9518a44",
+              "evidenceId": "b6dcdf8558e175d7bef7ebf0ee895e8ba6c79f44560cb5f0bbfc8ebdc81ca47f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100VWHS",
+                "documentTitle": "奥村組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0a13c3737203b2ad29418a563b476830a3a1614c2050a87658fbc2386a97282f",
+                "documentVersionSha256": "0a13c3737203b2ad29418a563b476830a3a1614c2050a87658fbc2386a97282f",
+                "pdfPage": 68,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2023年４月１日                (自 2024年４月１日\n                           至 2024年３月31日)               至 2025年３月31日)\n売上高\n 完成工事高                                      268,340                284,575\n 投資開発事業等売上高                                  19,805                 13,647\n 売上高合計                                ※1    288,146          ※1    298,222\n営業利益                                         13,708                  9,731",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 68,
+                  "value_bbox": [
+                    481.45001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 131,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 74,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   株式会社奥村組(E00083)\n                                                       有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n(1) 連結子会社数\n     4社\n   連結子会社名\n     奥村機械製作㈱\n     太平不動産㈱\n     石狩バイオエナジー(同)\n     平田バイオエナジー(同)\n\n(2) 非連結子会社数\n     6社\n   主要な非連結子会社名\n     加須農業集落排水ＰＦＩ㈱\n\n\n     非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n    益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n    除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 15928,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0af24281e86d5f083312f0f5fb7844b3d904a25604b258746a8a2c678115bf9c",
+              "evidenceId": "980f3d77e3a80884dc54127aadb74f2ec6e0fd3ac7e194d0bdfd23c214de683f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100Y95Z",
+                "documentTitle": "奥村組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ad56dce68cd6aaffdf8162f9c5421dfffe37d489156cda7a0a545abff044be27",
+                "documentVersionSha256": "ad56dce68cd6aaffdf8162f9c5421dfffe37d489156cda7a0a545abff044be27",
+                "pdfPage": 66,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2024年４月１日                (自 2025年４月１日\n                           至 2025年３月31日)               至 2026年３月31日)\n売上高\n 完成工事高                                      284,575                295,390\n 投資開発事業等売上高                                  13,647                 11,811\n 売上高合計                                ※1    298,222          ※1    307,202\n営業利益                                          9,731                 15,928",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 66,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "okumura-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社4社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 127,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 72,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     株式会社奥村組(E00083)\n                                                         有価証券報告書\n【注記事項】\n (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n (1) 連結子会社数\n       4社\n     連結子会社名\n       奥村機械製作㈱\n       太平不動産㈱\n       石狩バイオエナジー(同)\n       平田バイオエナジー(同)\n\n (2) 非連結子会社数\n       5社\n     主要な非連結子会社名\n       吹田南千里ＰＦＩ㈱\n\n\n       非連結子会社は、いずれも小規模会社であり、合計の総資産、売上高、当期純損益(持分に見合う額)及び利\n      益剰余金(持分に見合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から\n      除外しています。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "1c9c3c424526c9cfed1318d181f6516ead4a4ed5306ec106a063db553532f595"
       }
     ],
     "mappings": [
@@ -5614,6 +6296,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "OKUMURA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "OKUMURA:operating_income_consolidated@FY2015_FY2025_OKUMURA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -5624,5 +6328,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "907d9feb4259774a966cb77205838c2c406a190e1a278e2b53d09698dc94db36"
+  "snapshotHash": "a1df5f76123721daf95368ee515f8965eceecc38c910f24faf90ac68a56d58ae"
 }
