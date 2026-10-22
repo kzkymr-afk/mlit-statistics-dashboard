@@ -6757,6 +6757,775 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "5668e7c16bc9c04abbe770fc02c297132bdcca4d2af6fd1153be47fe8ee6adbe"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "TODA:operating_income_consolidated@FY2015_FY2025_TODA_OPERATING",
+          "companyId": "TODA",
+          "metricId": "operating_income_consolidated",
+          "label": "戸田建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "TODA_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_TODA_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f08bdbf35faa81b35eedbdcb9ab92e88ac3bc2e2afc60d5afc19605a918f64c8",
+              "sourceLocator": {
+                "pdf_page": 52
+              },
+              "sourceQuote": "企業結合会計基準等を将来に適用。連結財務諸表への影響は軽微（単体注記の影響なしと混同しない）。 連結子会社15社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ad798db4a432b38e661430ac1242feec8f9dc8dc7cee6fd87d819a615389d01d",
+              "sourceLocator": {
+                "pdf_page": 53
+              },
+              "sourceQuote": "2016年4月以後取得の建物附属設備・構築物の減価償却を定率法から定額法へ変更。連結財務諸表への影響は軽微。 連結子会社16社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d3aa86971ea25622fa468253fe4a158fe4c93f19ff82aeb0335361a8814ad331",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": " 連結子会社18社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "43d1b1e78846e543b0cc2d1a5e3d6fff9b74f2d7d78363480fc00c55ba1007db",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": " 連結子会社21社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "92f5b730487572dd65ad1ea4f11092284523a45d7c17ef6ac0fd872e2a12946f",
+              "sourceLocator": {
+                "pdf_page": 70
+              },
+              "sourceQuote": " 連結子会社26社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d45ec8e39f0f74be008253ac0c3443c881b7121bd1f37c385d6f238b1b461a86",
+              "sourceLocator": {
+                "pdf_page": 73
+              },
+              "sourceQuote": " 連結子会社25社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "478a2d89f83736bb4ccc7ad3c78394f8a70d035e7a9f0c70b6517d65926e1a88",
+              "sourceLocator": {
+                "pdf_page": 77
+              },
+              "sourceQuote": "収益認識基準を適用。売上高・売上原価はそれぞれ30億円増加、期首利益剰余金への影響なし（76〜77頁）。30億円を営業利益増加へ転用せず、前年利益の置換も行わない。時価算定基準の適用による影響なし。 連結子会社30社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "cca328638384e8f3a3c23ce62a0a1b46e40f914a931864f6adb9ce932763ac75",
+              "sourceLocator": {
+                "pdf_page": 87
+              },
+              "sourceQuote": "時価算定適用指針を将来に適用。連結財務諸表への影響は軽微。五島フローティングウィンドファームの決算日変更により当年度の同社は9か月、戸田ソーラーエナジー深谷は12か月（84頁）。親会社通期を短縮せず、年率換算・欠損補間を行わない。 連結子会社39社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7dd82606f68936f33debbf744ff2127bae1a63f08a982b133e76eca7fa653a58",
+              "sourceLocator": {
+                "pdf_page": 86
+              },
+              "sourceQuote": " 連結子会社43社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "9a579af7db9423f2bbf3d4a29333715f9f74b9aa3b78304f4f551519971f89e4",
+              "sourceLocator": {
+                "pdf_page": 94
+              },
+              "sourceQuote": "法人税等基準を適用、前年遡及適用を含め影響なし。販管費の一部を原価に含める表示変更で前年の原価・粗利益・販管費を組替え（94頁）。前年営業利益17,908百万円は一致し、粗利益等の差額を営業利益に転用しない。 連結子会社47社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "6a6136b00ca0198021b18d596fb951c18f5ba23702f170ffede2938d40b53a4f",
+              "sourceLocator": {
+                "pdf_page": 100
+              },
+              "sourceQuote": "販管費の一部を完成工事原価へ含める表示変更により、前年の原価・粗利益・販管費を組替え（100頁）。前年営業利益26,638百万円は一致し、粗利益の差額929百万円を営業利益に転用しない。連結子会社48社、戸田ソーラーシェアリング及びAqua Nishiharaを追加、TODA Energia 2は子会社間吸収合併で除外。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を将来に適用。連結財務諸表への影響は軽微（単体注記の影響なしと混同しない）。 連結子会社15社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2016年度：2016年4月以後取得の建物附属設備・構築物の減価償却を定率法から定額法へ変更。連結財務諸表への影響は軽微。 連結子会社16社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2017年度： 連結子会社18社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2018年度： 連結子会社21社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2019年度： 連結子会社26社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2020年度： 連結子会社25社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2021年度：収益認識基準を適用。売上高・売上原価はそれぞれ30億円増加、期首利益剰余金への影響なし（76〜77頁）。30億円を営業利益増加へ転用せず、前年利益の置換も行わない。時価算定基準の適用による影響なし。 連結子会社30社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2022年度：時価算定適用指針を将来に適用。連結財務諸表への影響は軽微。五島フローティングウィンドファームの決算日変更により当年度の同社は9か月、戸田ソーラーエナジー深谷は12か月（84頁）。親会社通期を短縮せず、年率換算・欠損補間を行わない。 連結子会社39社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2023年度： 連結子会社43社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2024年度：法人税等基準を適用、前年遡及適用を含め影響なし。販管費の一部を原価に含める表示変更で前年の原価・粗利益・販管費を組替え（94頁）。前年営業利益17,908百万円は一致し、粗利益等の差額を営業利益に転用しない。 連結子会社47社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+            "2025年度：販管費の一部を完成工事原価へ含める表示変更により、前年の原価・粗利益・販管費を組替え（100頁）。前年営業利益26,638百万円は一致し、粗利益の差額929百万円を営業利益に転用しない。連結子会社48社、戸田ソーラーシェアリング及びAqua Nishiharaを追加、TODA Energia 2は子会社間吸収合併で除外。",
+            "連結子会社数は15/16/18/21/26/25/30/39/43/47/48社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 21629,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d2ad64ade0cd9bd755e5c543eefe26fe888e10695c149edd18022d601506d93a",
+              "evidenceId": "4fd19e298edad3401174b25085e0a2900587cb1bcca13a3a86d4edbdb39d50be",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100834H",
+                "documentTitle": "戸田建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f08bdbf35faa81b35eedbdcb9ab92e88ac3bc2e2afc60d5afc19605a918f64c8",
+                "documentVersionSha256": "f08bdbf35faa81b35eedbdcb9ab92e88ac3bc2e2afc60d5afc19605a918f64c8",
+                "pdfPage": 43,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n\n\n                                                              (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成26年４月１日                   (自 平成27年４月１日\n                           至 平成27年３月31日)                  至 平成28年３月31日)\n売上高\n  完成工事高                                     407,650                    475,433\n営業利益                                         12,978                     21,629",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 43,
+                  "value_bbox": [
+                    484.9,
+                    311.96151,
+                    511.9,
+                    320.95251
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を将来に適用。連結財務諸表への影響は軽微（単体注記の影響なしと混同しない）。 連結子会社15社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社15社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 100,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 50,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     戸田建設株式会社(E00147)\n                                                          有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 15社\n     主要な連結子会社名は、「第１企業の概況 ４関係会社の状況」に記載の通り。\n     なお、当連結会計年度において、五島フローティングウィンドパワー（同）を新たに設立したことにより、連結\n     子会社に含めている。\n (2) 主要な非連結子会社名\n     千葉フィールズパートナーズ㈱等\n     非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n     余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     している。",
+                "subsidiaryFiscalPeriodPage": 50,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるブラジル戸田建設㈱、戸田建設工程（上海）有限公司、アメリカ戸田建設㈱、タイ戸田建設\n    ㈱、ベトナム戸田建設(有)、戸田フィリピン㈱、ＡＢＴＤ㈱の決算日は12月31日である。連結財務諸表の作成にあ\n    たっては同決算日現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生し\n    た重要な取引については連結上必要な調整を行っている。上記以外の連結子会社の決算日は連結決算日と同一であ\n    る。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 24998,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "2a4fadc67553fd385335ad5ebd290afc6170a71eb563e9c920f8023b736168ba",
+              "evidenceId": "db65f187f12f14643ffde2ca7c7f1556ea85a389c62a5fd6f9dfe17a78e39766",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AQEO",
+                "documentTitle": "戸田建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ad798db4a432b38e661430ac1242feec8f9dc8dc7cee6fd87d819a615389d01d",
+                "documentVersionSha256": "ad798db4a432b38e661430ac1242feec8f9dc8dc7cee6fd87d819a615389d01d",
+                "pdfPage": 44,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n\n\n                                                              (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成27年４月１日                   (自 平成28年４月１日\n                           至 平成28年３月31日)                  至 平成29年３月31日)\n売上高\n  完成工事高                                     475,433                    409,238\n営業利益                                         21,629                     24,998",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 44,
+                  "value_bbox": [
+                    484.9,
+                    311.734611,
+                    511.9,
+                    320.725611
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "2016年4月以後取得の建物附属設備・構築物の減価償却を定率法から定額法へ変更。連結財務諸表への影響は軽微。 連結子会社16社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社16社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 105,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     戸田建設株式会社(E00147)\n                                                          有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 16社\n     主要な連結子会社名は、「第１企業の概況   ４関係会社の状況」に記載の通り。\n   なお、当連結会計年度において、オフショアウィンドファームコンストラクション（同）を新たに設立したことに\n   より、連結子会社に含めている。\n(2) 主要な非連結子会社名\n    千葉フィールズパートナーズ㈱等\n    非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    している。",
+                "subsidiaryFiscalPeriodPage": 51,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるブラジル戸田建設㈱、戸田建設工程（上海）有限公司、アメリカ戸田建設㈱、タイ戸田建設\n    ㈱、ベトナム戸田建設(有)、戸田フィリピン㈱、ＡＢＴＤ㈱の決算日は12月31日である。連結財務諸表の作成にあ\n    たっては同決算日現在の財務諸表を使用している。ただし、１月１日から連結決算日３月31日までの期間に発生し\n    た重要な取引については連結上必要な調整を行っている。上記以外の連結子会社の決算日は連結決算日と同一であ\n    る。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 30463,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "051b6e59217e8b4a1bd2dd378aab2ce79320856be01b989985b91a2be390e3c4",
+              "evidenceId": "f00b35d5988f8b8783736286be99ead0cce0f1299446d8587acbf6bc0cb16870",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DE99",
+                "documentTitle": "戸田建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d3aa86971ea25622fa468253fe4a158fe4c93f19ff82aeb0335361a8814ad331",
+                "documentVersionSha256": "d3aa86971ea25622fa468253fe4a158fe4c93f19ff82aeb0335361a8814ad331",
+                "pdfPage": 50,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成28年４月１日                   (自 平成29年４月１日\n                           至 平成29年３月31日)                  至 平成30年３月31日)\n売上高\n  完成工事高                                     409,238                    414,177\n  投資開発事業等売上高                                 13,483                     14,848\n  売上高合計                                     422,722                    429,026\n営業利益                                         24,998                     30,463",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    484.9,
+                    296.634621,
+                    511.9,
+                    305.625621
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  " 連結子会社18社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社18社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 107,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                          戸田建設株式会社(E00147)\n                                                               有価証券報告書\n\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 18社\n     主要な連結子会社名は、「第１   企業の概況」の「４    関係会社の状況」に記載の通りであります。\n     このうち、平成29年10月２日付で株式を取得した㈱日新ライフ及びその子会社１社につき、当連結会計年度より連\n    結の範囲に含めております。\n\n\n(2) 主要な非連結子会社名\n    ㈱千葉フィールズパートナーズ等\n     非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n     余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n     しております。",
+                "subsidiaryFiscalPeriodPage": 56,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるブラジル戸田建設㈱、アメリカ戸田建設㈱、タイ戸田建設㈱、ベトナム戸田建設(有)他３社の\n    決算日は12月31日であります。連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しております。た\n    だし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行ってお\n    ります。上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 34518,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7b5e70b08ac94d8ed7d011f3ec76ac95beb771b310f92df6495e06de9f320037",
+              "evidenceId": "034c973bb629c14f021b0241acc9dc031e19d0c11dea38f4472a8e93cf9d4c61",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G1LK",
+                "documentTitle": "戸田建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "43d1b1e78846e543b0cc2d1a5e3d6fff9b74f2d7d78363480fc00c55ba1007db",
+                "documentVersionSha256": "43d1b1e78846e543b0cc2d1a5e3d6fff9b74f2d7d78363480fc00c55ba1007db",
+                "pdfPage": 58,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                 (単位：百万円)\n                            前連結会計年度                         当連結会計年度\n                          (自 2017年４月１日                    (自 2018年４月１日\n                           至 2018年３月31日)                   至 2019年３月31日)\n売上高\n 完成工事高                                       414,177                     494,826\n 投資開発事業等売上高                                   14,848                      15,610\n 売上高合計                                       429,026                     510,436\n営業利益                                          30,463                      34,518",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 58,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  " 連結子会社21社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社21社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 64,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                           戸田建設株式会社(E00147)\n                                                                有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 21社\n      主要な連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載の通りであります。\n      このうち、2018年12月14日及び2019年１月25日付で株式を取得した佐藤工業㈱及びその子会社２社と2019年３\n     月28日付で新規に設立した戸田グループインドネシア㈱を当連結会計年度より連結の範囲に含めております。ま\n     た、前連結会計年度まで連結子会社であった戸田建設工程（上海）有限公司は、清算結了したことにより連結の\n     範囲から除外しております。当連結会計年度においては、清算結了時までの損益計算書のみ連結しております。\n\n\n(2) 主要な非連結子会社名\n    ㈱千葉フィールズパートナーズ等\n    非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    しております。",
+                "subsidiaryFiscalPeriodPage": 64,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるブラジル戸田建設㈱、アメリカ戸田建設㈱、タイ戸田建設㈱、ベトナム戸田建設(有)他３社の\n    決算日は12月31日であります。連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しております。た\n    だし、１月１日から連結決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行ってお\n    ります。上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 35243,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "185962986e0238ce1004ea81829fb26b5b9619af6f1d6da0e6d26cc3993cd5c4",
+              "evidenceId": "2c8202925171577504b61c3cbb0c210a3f88fbd3398e7cad64d2aa21dda42186",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IPWQ",
+                "documentTitle": "戸田建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "92f5b730487572dd65ad1ea4f11092284523a45d7c17ef6ac0fd872e2a12946f",
+                "documentVersionSha256": "92f5b730487572dd65ad1ea4f11092284523a45d7c17ef6ac0fd872e2a12946f",
+                "pdfPage": 64,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                 (単位：百万円)\n                            前連結会計年度                         当連結会計年度\n                          (自 2018年４月１日                    (自 2019年４月１日\n                           至 2019年３月31日)                   至 2020年３月31日)\n売上高\n 完成工事高                                        494,826                    498,509\n 投資開発事業等売上高                                    15,610                     20,174\n 売上高合計                                        510,436                    518,683\n営業利益                                           34,518                     35,243",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  " 連結子会社26社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社26社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 128,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                               戸田建設株式会社(E00147)\n                                                                    有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 26社\n      主要な連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載の通りであります。\n      このうち、ＴＯＢＩＣ有限会社、PT TODA EKSEKUTIF PROPERTIES、ＴＯＤＡ農房合同会社及び戸田インベスト\n     メントブラジル有限会社を新規設立したため、連結の範囲に含めております。\n     また、当連結会計年度より、当社の連結子会社である株式会社アペックエンジニアリングがミサワ環境技術株式\n     会社の全株式を取得したため、同社を連結の範囲に含めております。\n\n\n(2) 主要な非連結子会社名\n    ㈱千葉フィールズパートナーズ等\n    非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益剰\n    余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外\n    しております。",
+                "subsidiaryFiscalPeriodPage": 70,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるブラジル戸田建設㈱、アメリカ戸田建設㈱、タイ戸田建設㈱、ベトナム戸田建設(有)、戸田グ\n    ループインドネシア㈱、ＴＯＢＩＣ(有)、戸田インベストメントブラジル(有)他３社の決算日は12月31日でありま\n    す。連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しております。ただし、１月１日から連結決\n    算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っております。上記以外の連結子\n    会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 27697,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0589d946f5f2a6d4e88fc7bf331e6601c1f7abc540bed78951d937c5c7703efa",
+              "evidenceId": "7ad82e2f4a0bf8e5e58d662ef888b8cf8367db462a9204d48faae6a7ac955bff",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LSQ5",
+                "documentTitle": "戸田建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d45ec8e39f0f74be008253ac0c3443c881b7121bd1f37c385d6f238b1b461a86",
+                "documentVersionSha256": "d45ec8e39f0f74be008253ac0c3443c881b7121bd1f37c385d6f238b1b461a86",
+                "pdfPage": 67,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2019年４月１日                   (自 2020年４月１日\n                           至 2020年３月31日)                  至 2021年３月31日)\n売上高\n 完成工事高                                      498,509                    487,994\n 投資開発事業等売上高                                  20,174                     19,140\n 売上高合計                                      518,683                    507,134\n営業利益                                         35,243                     27,697",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 67,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  " 連結子会社25社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社25社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 126,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 73,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                                 戸田建設株式会社(E00147)\n                                                                                                      有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n (1) 連結子会社の数 25社\n      主要な連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載の通りであります。\n      なお、当連結会計年度において、連結子会社である株式会社日新ライフ及びその子会社である株式会社櫻橋商\n     会は、当社を存続会社とする吸収合併により消滅したため、連結の範囲から除外しております。\n\n\n(2) 主要な非連結子会社名\n    エスシーシー・ヒューマンコミュニティサービス㈱等\n     非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n    剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n    外しております。",
+                "subsidiaryFiscalPeriodPage": 73,
+                "subsidiaryFiscalPeriodQuote": "連結子会社である\n     Toda America, Inc. 、 Construtora Toda do Brasil S/A 、 Thai Toda Corporation Ltd. 、 Toda Vietnam Co.,\n     Ltd.、PT Toda Group Indonesia、Tobic Co., Ltd.、Toda Investimento do Brasil Ltda.他"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 24385,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "029f8e89c315ba932b1f8b15c05f7b1b63d2fa162645724622d3affa42e38de3",
+              "evidenceId": "ab2647a700b9d4be9ff2a91e9b7406c48b8b00eda5328292d43574c0991ac9e6",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OLZA",
+                "documentTitle": "戸田建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "478a2d89f83736bb4ccc7ad3c78394f8a70d035e7a9f0c70b6517d65926e1a88",
+                "documentVersionSha256": "478a2d89f83736bb4ccc7ad3c78394f8a70d035e7a9f0c70b6517d65926e1a88",
+                "pdfPage": 67,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                              (単位：百万円)\n                            前連結会計年度                      当連結会計年度\n                          (自 2020年４月１日                 (自 2021年４月１日\n                           至 2021年３月31日)                至 2022年３月31日)\n売上高\n 完成工事高                                      487,994                   472,641\n 投資開発事業等売上高                                  19,140                    28,868\n 売上高合計                                      507,134           ※1      501,509\n営業利益                                         27,697                    24,385",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 67,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用。売上高・売上原価はそれぞれ30億円増加、期首利益剰余金への影響なし（76〜77頁）。30億円を営業利益増加へ転用せず、前年利益の置換も行わない。時価算定基準の適用による影響なし。 連結子会社30社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社30社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 138,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 73,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                          戸田建設株式会社(E00147)\n                                                                                               有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１  連結の範囲に関する事項\n (1) 連結子会社の数 30社\n      主要な連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載の通りであります。\n      なお、当連結会計年度において、昭和建設株式会社については株式取得に伴い、五島フローティングウィンド\n     ファーム合同会社他２社については新規設立に伴い、及び戸田ソーラーエナジー深谷合同会社については重要性\n     が増したことに伴い、連結の範囲に含めております。\n\n (2) 主要な非連結子会社名\n      エスシーシー・ヒューマンコミュニティサービス株式会社\n      非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n     剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n     外しております。",
+                "subsidiaryFiscalPeriodPage": 73,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるToda America, Inc.、Construtora Toda do Brasil S/A、Thai Toda Corporation Ltd.、Toda\n     Vietnam Co., Ltd.、PT Toda Group Indonesia、Tobic Co., Ltd.、Toda Energia do Brasil Ltda.他５社の決算日\n     は12月31日であり、連結財務諸表の作成にあたっては同決算日現在の財務諸表を使用しております。ただし、連結\n     決算日３月31日までの期間に発生した重要な取引については連結上必要な調整を行っております。\n       また、戸田ソーラーエナジー深谷合同会社の決算日は１月31日であり、連結財務諸表の作成にあたっては連結決\n     算日現在で実施した仮決算に基づく財務諸表を使用しております。\n       なお、上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 14135,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "50eaafbb256099851ee39357520af8c0fc450f53ba32d48e7451c9f032886a37",
+              "evidenceId": "7e11d0687ab70da90685597e4fc82ceaf7f6f0d17d74937a726ba857f42e25eb",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R9O5",
+                "documentTitle": "戸田建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "cca328638384e8f3a3c23ce62a0a1b46e40f914a931864f6adb9ce932763ac75",
+                "documentVersionSha256": "cca328638384e8f3a3c23ce62a0a1b46e40f914a931864f6adb9ce932763ac75",
+                "pdfPage": 78,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2021年４月１日                   (自 2022年４月１日\n                           至 2022年３月31日)                  至 2023年３月31日)\n売上高\n 完成工事高                                        472,641                   518,426\n 投資開発事業等売上高                                    28,868                    28,729\n 売上高合計                                ※1      501,509            ※1     547,155\n営業利益                                           24,385                    14,135",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 78,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定適用指針を将来に適用。連結財務諸表への影響は軽微。五島フローティングウィンドファームの決算日変更により当年度の同社は9か月、戸田ソーラーエナジー深谷は12か月（84頁）。親会社通期を短縮せず、年率換算・欠損補間を行わない。 連結子会社39社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社39社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 152,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 84,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                         戸田建設株式会社(E00147)\n                                                                                              有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１  連結の範囲に関する事項\n (1) 連結子会社の数 39社\n      主要な連結子会社名は、「第１ 企業の概況」の「４ 関係会社の状況」に記載のとおりであります。\n      なお、株式を追加取得したことにより子会社としたPT Tatamulia Nusantara Indah及び同社の子会社７社、並\n     びに新たに設立したTODA Energia 2 Ltda.を連結の範囲に含めております。\n\n (2) 主要な非連結子会社名\n      エスシーシー・ヒューマンコミュニティサービス株式会社\n      非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n     剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n     外しております。\n\n (3) 開示対象特別目的会社\n      開示対象特別目的会社の概要、開示対象特別目的会社を利用した取引の概要及び開示対象特別目的会社との取\n     引金額等については、「開示対象特別目的会社関係」として記載しております。",
+                "subsidiaryFiscalPeriodPage": 84,
+                "subsidiaryFiscalPeriodQuote": "連結子会社であるToda America, Inc.、Thai Toda Corporation Ltd.、Toda Vietnam Co., Ltd.、PT Toda Group\n     Indonesia、Tobic Co., Ltd.、TODA Energia do Brasil Ltda.、PT Tatamulia Nusantara Indah及び五島フロー\n     ティングウィンドファーム合同会社他14社の決算日は12月31日であり、連結財務諸表の作成にあたっては同決算日\n     現在の財務諸表を使用しております。ただし、連結決算日３月31日までの期間に発生した重要な取引については連\n     結上必要な調整を行っております。\n       また、当連結会計年度において、五島フローティングウィンドファーム合同会社は決算日を３月31日から12月31\n     日に、戸田ソーラーエナジー深谷合同会社は決算日を１月31日から３月31日にそれぞれ変更しております。当連結\n     会計年度における会計期間については、五島フローティングウィンドファーム合同会社が９か月、前連結会計年度\n     において2022年３月31日で仮決算を実施した戸田ソーラーエナジー深谷合同会社が12か月となっております。\n       なお、上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 17908,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d1c9120e7be4a6c422d97c0ca07dcf42078be5bc3bdbff29573d48b44722f46b",
+              "evidenceId": "c536a1b021453825b17a912a7654648d0cac9773838587031fd0f7b6cd086e63",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TV43",
+                "documentTitle": "戸田建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7dd82606f68936f33debbf744ff2127bae1a63f08a982b133e76eca7fa653a58",
+                "documentVersionSha256": "7dd82606f68936f33debbf744ff2127bae1a63f08a982b133e76eca7fa653a58",
+                "pdfPage": 80,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2022年４月１日                   (自 2023年４月１日\n                           至 2023年３月31日)                  至 2024年３月31日)\n売上高\n 完成工事高                                      518,426                    487,656\n 投資開発事業等売上高                                  28,729                     34,778\n 売上高合計                               ※1     547,155             ※1     522,434\n営業利益                                         14,135                     17,908",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 80,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  " 連結子会社43社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社43社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 150,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 86,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                                  戸田建設株式会社(E00147)\n                                                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１  連結の範囲に関する事項\n (1) 連結子会社の数 43社\n       主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n       なお、新たに設立したToda Asia Pacific Pte. Ltd.、並びに株式を取得したことにより子会社としたUsina\n     Eolica Casqueira A Ltda.及びUsina Eolica Casqueira B Ltda.を連結の範囲に含めております。また、連結子\n     会社であったConstrutora Toda do Brasil S/Aについては全株式を譲渡したことにより連結の範囲から除外して\n     おります。\n\n (2) 主要な非連結子会社名\n      エスシーシー・ヒューマンコミュニティサービス株式会社\n      非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n     剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n     外しております。\n\n (3) 開示対象特別目的会社\n      開示対象特別目的会社の概要、開示対象特別目的会社を利用した取引の概要及び開示対象特別目的会社との取\n     引金額等については、「開示対象特別目的会社関係」として記載しております。",
+                "subsidiaryFiscalPeriodPage": 86,
+                "subsidiaryFiscalPeriodQuote": "連結子会社である五島フローティングウィンドファーム合同会社、Thai Toda Corporation Ltd.、Toda America,\n     Inc. 、 Toda Asia Pacific Pte. Ltd. 、 TODA Investimentos do Brasil Ltda. 、 Toda Vietnam Co., Ltd. 、 PT\n     Tatamulia Nusantara Indah及びPT Toda Group Indonesia他17社の決算日は12月31日であり、連結財務諸表の作成\n     にあたっては同決算日現在の財務諸表を使用しております。ただし、連結決算日３月31日までの期間に発生した重\n     要な取引については連結上必要な調整を行っております。\n       なお、上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 26638,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "93dec5624f0f584df223f19ac1674f62d6caf8533ed77a962626062e2621f85c",
+              "evidenceId": "d40e8fbdcf42bec338f77ee975c1f8a296e1343cfec4cf32caea961106a56f9d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W4H2",
+                "documentTitle": "戸田建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9a579af7db9423f2bbf3d4a29333715f9f74b9aa3b78304f4f551519971f89e4",
+                "documentVersionSha256": "9a579af7db9423f2bbf3d4a29333715f9f74b9aa3b78304f4f551519971f89e4",
+                "pdfPage": 84,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                 (単位：百万円)\n                            前連結会計年度                         当連結会計年度\n                          (自 2023年４月１日                    (自 2024年４月１日\n                           至 2024年３月31日)                   至 2025年３月31日)\n売上高\n 完成工事高                                        487,656                   526,025\n 投資開発事業等売上高                                    34,778                    60,635\n 売上高合計                                ※1      522,434            ※1     586,661\n営業利益                                           17,908                    26,638",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 84,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等基準を適用、前年遡及適用を含め影響なし。販管費の一部を原価に含める表示変更で前年の原価・粗利益・販管費を組替え（94頁）。前年営業利益17,908百万円は一致し、粗利益等の差額を営業利益に転用しない。 連結子会社47社。各年度の連結範囲の変更を保持し、一定範囲の利益とみなさない。",
+                  "連結子会社47社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 157,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 90,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                                  戸田建設株式会社(E00147)\n                                                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１  連結の範囲に関する事項\n (1) 連結子会社の数 47社\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n      なお、新たに設立した戸田建設不動産投資顧問株式会社、フローティング・ウィンド・アグリゲーション株式\n     会社、Toda Group Thai Co., Ltd.及びPlatinum Landscape, Inc.並びに、株式を取得したことにより子会社とし\n     たCoherent Hotel Ltd.及び株式会社カケンを連結の範囲に含めております。\n\n (2) 主要な非連結子会社名\n      エスシーシー・ヒューマンコミュニティサービス株式会社\n      非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n     剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n     外しております。",
+                "subsidiaryFiscalPeriodPage": 90,
+                "subsidiaryFiscalPeriodQuote": "連結子会社である五島フローティングウィンドファーム合同会社、Thai Toda Corporation Ltd.、Toda America,\n     Inc. 、 Toda Asia Pacific Pte. Ltd. 、 TODA Investimentos do Brasil Ltda. 、 Toda Vietnam Co., Ltd. 、 PT\n     Tatamulia Nusantara Indah及びPT Toda Group Indonesia他20社の決算日は12月31日であり、連結財務諸表の作成\n     にあたっては同決算日現在の財務諸表を使用しております。ただし、連結決算日３月31日までの期間に発生した重\n     要な取引については連結上必要な調整を行っております。\n       なお、上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 38215,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "8e8d997b252364028064dd8674b1ae487e0ca77265150065277e1227061a451b",
+              "evidenceId": "d2e9b631c8b2fc693f0380c87e252b5be9fd87ff227c32e822df120f005bfbc9",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YG3E",
+                "documentTitle": "戸田建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "6a6136b00ca0198021b18d596fb951c18f5ba23702f170ffede2938d40b53a4f",
+                "documentVersionSha256": "6a6136b00ca0198021b18d596fb951c18f5ba23702f170ffede2938d40b53a4f",
+                "pdfPage": 89,
+                "sourceQuote": " ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                                (単位：百万円)\n                            前連結会計年度                        当連結会計年度\n                          (自 2024年４月１日                   (自 2025年４月１日\n                           至 2025年３月31日)                  至 2026年３月31日)\n売上高\n 完成工事高                                      526,025                    587,231\n 投資開発事業等売上高                                  60,635                     58,505\n 売上高合計                               ※1     586,661             ※1     645,737\n営業利益                                         26,638                     38,215",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 89,
+                  "value_bbox": [
+                    476.95001,
+                    290.861481,
+                    503.95001,
+                    299.852481
+                  ]
+                },
+                "comparisonVerificationId": "toda-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "販管費の一部を完成工事原価へ含める表示変更により、前年の原価・粗利益・販管費を組替え（100頁）。前年営業利益26,638百万円は一致し、粗利益の差額929百万円を営業利益に転用しない。連結子会社48社、戸田ソーラーシェアリング及びAqua Nishiharaを追加、TODA Energia 2は子会社間吸収合併で除外。",
+                  "連結子会社48社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 160,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 95,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                                  戸田建設株式会社(E00147)\n                                                                                                       有価証券報告書\n 【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１  連結の範囲に関する事項\n (1) 連結子会社の数 48社\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n      なお、当連結会計年度において、新たに設立した戸田ソーラーシェアリング合同会社、並びに株式を取得した\n     ことにより子会社としたAqua Nishihara Corporation Ltd.を連結の範囲に含めております。また、連結子会社で\n     あったTODA Energia 2 Ltda.はTODA Investimentos do Brasil Ltda.に吸収合併されたため、同社を連結の範囲\n     から除外しております。\n (2) 主要な非連結子会社名\n      エスシーシー・ヒューマンコミュニティサービス株式会社\n      非連結子会社はいずれも小規模会社であり、合計の総資産、売上高、当期純損益（持分に見合う額）及び利益\n     剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除\n     外しております。",
+                "subsidiaryFiscalPeriodPage": 95,
+                "subsidiaryFiscalPeriodQuote": "連結子会社である五島フローティングウィンドファーム合同会社、Thai Toda Corporation Ltd.、Toda America,\n     Inc. 、 Toda Asia Pacific Pte. Ltd. 、 TODA Investimentos do Brasil Ltda. 、 Toda Vietnam Co., Ltd. 、 PT\n     Tatamulia Nusantara Indah及びPT Toda Group Indonesia他20社の決算日は12月31日であり、連結財務諸表の作成\n     にあたっては同決算日現在の財務諸表を使用しております。ただし、連結決算日３月31日までの期間に発生した重\n     要な取引については連結上必要な調整を行っております。\n       なお、上記以外の連結子会社の決算日は連結決算日と同一であります。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "73ffddcddf11b44db1bedd25c48dd4e6ebfd446faf6cb3fb42e7999bded07fc7"
       }
     ],
     "mappings": [
@@ -7009,6 +7778,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "TODA",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "TODA:operating_income_consolidated@FY2015_FY2025_TODA_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -7019,5 +7810,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "5084b6132033f9287c6aea9d36dbf8351428c4afbfb335fe2cd1e24a031ebd6e"
+  "snapshotHash": "49cf0a07c462422d1b770c0ae346fe31ba7238662b2c4b7d70a50acdacef753b"
 }
