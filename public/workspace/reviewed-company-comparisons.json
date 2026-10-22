@@ -2653,6 +2653,688 @@
           "canonicalFreshness": "not_checked"
         },
         "snapshotHash": "77ab02ca4a75e9e404dd5592bc6f27f253e73e57d08b13980b5d9378d1ebf524"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "SHIMIZU:operating_income_consolidated@FY2015_FY2025_SHIMIZU_OPERATING",
+          "companyId": "SHIMIZU",
+          "metricId": "operating_income_consolidated",
+          "label": "清水建設 / 営業利益（連結）",
+          "metricLabelAsDisclosed": "営業利益（連結）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "SHIMIZU_OPERATING_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_SHIMIZU_OPERATING",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015_2018",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "bdc644aa9f7e5a4ccd957b767eb587873fcceccda9826daf8dcf497cc107d77c",
+              "sourceLocator": {
+                "pdf_page": 58
+              },
+              "sourceQuote": "企業結合会計基準等を適用。連結財務諸表への影響は軽微。"
+            },
+            {
+              "id": "g2019_2020",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "4951bb0183576c1753beb5f1921a9f6ae2195e6ebddda3a1ed735690b5f855e7",
+              "sourceLocator": {
+                "pdf_page": 78
+              },
+              "sourceQuote": "建物・構築物の減価償却を定率法から定額法に変更。営業利益は1,836百万円増加。2018年度以前と同条件の計算は対象外。"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "7e24a50de35c8b3efc0330a1c40f8536e5fead8c7fabd24a1670ba2ae68e6034",
+              "sourceLocator": {
+                "pdf_page": 80
+              },
+              "sourceQuote": "収益認識基準を適用し営業利益は555百万円減少。2020年度以前と同条件の計算は対象外。日本道路の取得は期末貸借対照表のみ連結し、同社の当年度損益を連結営業利益へ加算しない。"
+            },
+            {
+              "id": "g2022_2023",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "5c51787b00c2eee6867afbddf3f478395f627d69eceb47f96eb948f6af1033c5",
+              "sourceLocator": {
+                "pdf_page": 89
+              },
+              "sourceQuote": "時価算定の適用指針を適用（影響は軽微）。日本道路を含む連結損益の範囲と前年との相違に注意。"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ee413814bd8c77f21ae395b7c68f021a68cb3987d916a1775d7d075f35d286b6",
+              "sourceLocator": {
+                "pdf_page": 99
+              },
+              "sourceQuote": "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。Grandwork Interiorは当年度末貸借対照表のみ連結し、当年度連結損益に業績を含めない。"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a7f695e9e48e4febdeafa5b42fcc4887d012d0edf2c2e96673c24a3b2d5a9d25",
+              "sourceLocator": {
+                "pdf_page": 129
+              },
+              "sourceQuote": "Grandwork Interiorの取得原価配分を確定（前年貸借対照表の修正）。前年営業利益71,030百万円は前年欄と一致。あおみ建設は期末貸借対照表のみ連結し、当年度連結損益に業績を含めない。"
+            }
+          ],
+          "policyNotes": [
+            "2015年度：企業結合会計基準等を適用。連結財務諸表への影響は軽微。",
+            "2019年度：建物・構築物の減価償却を定率法から定額法に変更。営業利益は1,836百万円増加。2018年度以前と同条件の計算は対象外。",
+            "2021年度：収益認識基準を適用し営業利益は555百万円減少。2020年度以前と同条件の計算は対象外。日本道路の取得は期末貸借対照表のみ連結し、同社の当年度損益を連結営業利益へ加算しない。",
+            "2022年度：時価算定の適用指針を適用（影響は軽微）。日本道路を含む連結損益の範囲と前年との相違に注意。",
+            "2024年度：法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。Grandwork Interiorは当年度末貸借対照表のみ連結し、当年度連結損益に業績を含めない。",
+            "2025年度：Grandwork Interiorの取得原価配分を確定（前年貸借対照表の修正）。前年営業利益71,030百万円は前年欄と一致。あおみ建設は期末貸借対照表のみ連結し、当年度連結損益に業績を含めない。",
+            "連結子会社数は60/62/65/66/70/74/117/125/123/129/138社。各年度の連結範囲で報告された利益の推移。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 94668,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "95df7c41af572effbba9f898f5914a41f5a241d2820000df8c308f119fbc6f41",
+              "evidenceId": "01bae1be1740a5aaa63c934b5535223626f22e42a0a97155ed9d39124c02e563",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007XJ9",
+                "documentTitle": "清水建設 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "bdc644aa9f7e5a4ccd957b767eb587873fcceccda9826daf8dcf497cc107d77c",
+                "documentVersionSha256": "bdc644aa9f7e5a4ccd957b767eb587873fcceccda9826daf8dcf497cc107d77c",
+                "pdfPage": 50,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                       (単位：百万円)\n                          前連結会計年度                  当連結会計年度\n                     (自    平成26年４月１日          (自    平成27年４月１日\n                      至    平成27年３月31日)         至    平成28年３月31日)\n売上高\n 完成工事高                         ※１ 1,444,843             ※１ 1,516,054\n\n 開発事業等売上高                           123,000                  148,879\n営業利益                                 50,032                   94,668",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    483.98083,
+                    290.46248,
+                    510.98083,
+                    299.45348
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "企業結合会計基準等を適用。連結財務諸表への影響は軽微。",
+                  "連結子会社60社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 109,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   清水建設株式会社(E00053)\n                                                        有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（60社）を連結している。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりである。\n  なお，当連結会計年度から子会社となった４社を連結の範囲に含めている。また，子会社でなくなった５社を連\n 結の範囲に含めていない。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 128835,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "9551642b5a9c0844fcb0d1aefd692bec1f870e696bc4016a94a19c35fa454d37",
+              "evidenceId": "29c226cd7218e32998f42742f43e9e4ddba3549a2ba7e84474bdf8f98b694720",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AJAY",
+                "documentTitle": "清水建設 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "9647409bf698db17ba59ba229d599c755b867720c9206f61445242025715eaee",
+                "documentVersionSha256": "9647409bf698db17ba59ba229d599c755b867720c9206f61445242025715eaee",
+                "pdfPage": 50,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                       (単位：百万円)\n                          前連結会計年度                  当連結会計年度\n                     (自    平成27年４月１日          (自    平成28年４月１日\n                      至    平成28年３月31日)         至    平成29年３月31日)\n売上高\n 完成工事高                         ※１ 1,516,054             ※１ 1,410,120\n\n 開発事業等売上高                           148,879                  157,306\n営業利益                                 94,668                  128,835",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 50,
+                  "value_bbox": [
+                    479.48083,
+                    290.462451,
+                    510.98083,
+                    299.453451
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社62社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 107,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 56,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   清水建設株式会社(E00053)\n                                                        有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（62社）を連結している。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりである。\n  なお，当連結会計年度から子会社となった３社を連結の範囲に含めている。また，子会社でなくなった１社を連\n 結の範囲に含めていない。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 121373,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "90bd5085dd171630b4b9977ef09be0b1490f2c9b2ef740255d12c192b1433a46",
+              "evidenceId": "8f40086224e3ad8c4c32c53789200b22f23164cfd7aceb04c4f1e1ca451856d1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DFEZ",
+                "documentTitle": "清水建設 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "e6872221dae22410c710c26ca9ce7f311a4686c04ccdc5267279ecf343cab36f",
+                "documentVersionSha256": "e6872221dae22410c710c26ca9ce7f311a4686c04ccdc5267279ecf343cab36f",
+                "pdfPage": 53,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                       (単位：百万円)\n                          前連結会計年度                  当連結会計年度\n                     (自    平成28年４月１日          (自    平成29年４月１日\n                      至    平成29年３月31日)         至    平成30年３月31日)\n売上高\n 完成工事高                         ※１ 1,410,120             ※１ 1,354,583\n\n 開発事業等売上高                           157,306                  164,851\n営業利益                                128,835                  121,373",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 53,
+                  "value_bbox": [
+                    479.48083,
+                    290.462451,
+                    510.98083,
+                    299.453451
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社65社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 58,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   清水建設株式会社(E00053)\n                                                        有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（65社）を連結している。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりである。\n  なお，当連結会計年度から子会社となった５社を連結の範囲に含めている。また，子会社でなくなった２社を連\n 結の範囲に含めていない。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 129724,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d534c58d5783c87863621c181cfa89f273a3100428b4659aeb4aa3928613d391",
+              "evidenceId": "b0460a7d0d20a33f46b92ef0587230f61d6052856e7b8dc44181472098acd4ee",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015_2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100G7RN",
+                "documentTitle": "清水建設 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5aa14ec14d1de8ba9b0a1edf981276bf58e301a72ac5cc3008f37d17db00da6d",
+                "documentVersionSha256": "5aa14ec14d1de8ba9b0a1edf981276bf58e301a72ac5cc3008f37d17db00da6d",
+                "pdfPage": 61,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                    (単位：百万円)\n                       前連結会計年度                  当連結会計年度\n                     (自 2017年４月１日             (自 2018年４月１日\n                      至 2018年３月31日)            至 2019年３月31日)\n売上高\n 完成工事高                         ※１ 1,354,583          ※１ 1,504,636\n\n 開発事業等売上高                           164,851               160,324\n営業利益                                121,373               129,724",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 61,
+                  "value_bbox": [
+                    479.48083,
+                    290.462451,
+                    510.98083,
+                    299.453451
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社66社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 117,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 66,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                   清水建設株式会社(E00053)\n                                                        有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（66社）を連結している。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりである。\n  なお，当連結会計年度から子会社となった４社を連結の範囲に含めている。また，子会社でなくなった３社を連\n 結の範囲に含めていない。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 133894,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "741ea3b7aa318983d393a309e5debe5ff34798f33d72785fba1ec8fbb122cf6a",
+              "evidenceId": "92dfe76c2b7a08aa2a8fa6ea67d3d12db5f11356b77042adde5fff843a50d0d1",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IXTR",
+                "documentTitle": "清水建設 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "4951bb0183576c1753beb5f1921a9f6ae2195e6ebddda3a1ed735690b5f855e7",
+                "documentVersionSha256": "4951bb0183576c1753beb5f1921a9f6ae2195e6ebddda3a1ed735690b5f855e7",
+                "pdfPage": 71,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                    (単位：百万円)\n                       前連結会計年度                  当連結会計年度\n                     (自 2018年４月１日             (自 2019年４月１日\n                      至 2019年３月31日)            至 2020年３月31日)\n売上高\n 完成工事高                         ※１ 1,504,636          ※１ 1,517,883\n\n 開発事業等売上高                           160,324               180,409\n営業利益                                129,724               133,894",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 71,
+                  "value_bbox": [
+                    479.48083,
+                    290.462451,
+                    510.98083,
+                    299.453451
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "建物・構築物の減価償却を定率法から定額法に変更。営業利益は1,836百万円増加。2018年度以前と同条件の計算は対象外。",
+                  "連結子会社70社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 126,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 76,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    清水建設株式会社(E00053)\n                                                         有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（70社）を連結している。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりである。\n  なお，当連結会計年度から子会社となった７社を連結の範囲に含めている。また，子会社でなくなった３社を連\n 結の範囲に含めていない。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 100151,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "78159d3f210e64f4dc3b54ebcfb0333a6a06535a1db8885cfc524bc44c36d3f8",
+              "evidenceId": "87eb2af0f8cbbc8139035e1c9f7f332274ab29f1e8a45e4c2851491b0999e38c",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019_2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LSED",
+                "documentTitle": "清水建設 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "70a983941ac1de8d2dd78acd64e4318c7d23322196c71704e89696ab0796c339",
+                "documentVersionSha256": "70a983941ac1de8d2dd78acd64e4318c7d23322196c71704e89696ab0796c339",
+                "pdfPage": 71,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                    (単位：百万円)\n                       前連結会計年度                  当連結会計年度\n                     (自 2019年４月１日             (自 2020年４月１日\n                      至 2020年３月31日)            至 2021年３月31日)\n売上高\n 完成工事高                         ※１ 1,517,883          ※１ 1,301,363\n\n 開発事業等売上高                           180,409               155,109\n営業利益                                133,894               100,151",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 71,
+                  "value_bbox": [
+                    479.48083,
+                    290.462451,
+                    510.98083,
+                    299.453451
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社74社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 128,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 76,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     清水建設株式会社(E00053)\n                                                          有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（74社）を連結しております。\n  主要な連結子会社名は，「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n  なお，当連結会計年度から子会社となった７社を連結の範囲に含めております。また，子会社でなくなった３社\n を連結の範囲に含めておりません。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 45145,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "aefd56a06a8fee2938ed44b602a81a0dbca9e1e1afeafbaadab8e2ee00e69cd9",
+              "evidenceId": "abd47c1f24a0562e16a0007084c87e73f23c467d99b68638b2abbbe74a5aea25",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OG9M",
+                "documentTitle": "清水建設 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "7e24a50de35c8b3efc0330a1c40f8536e5fead8c7fabd24a1670ba2ae68e6034",
+                "documentVersionSha256": "7e24a50de35c8b3efc0330a1c40f8536e5fead8c7fabd24a1670ba2ae68e6034",
+                "pdfPage": 73,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2020年４月１日            (自 2021年４月１日\n                           至 2021年３月31日)           至 2022年３月31日)\n売上高\n 完成工事高                                1,301,363             1,295,969\n 開発事業等売上高                               155,109               186,992\n 売上高合計                                1,456,473          ※１ 1,482,961\n営業利益                                    100,151                45,145",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 73,
+                  "value_bbox": [
+                    483.97836,
+                    291.825921,
+                    510.97836,
+                    300.816921
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "収益認識基準を適用し営業利益は555百万円減少。2020年度以前と同条件の計算は対象外。日本道路の取得は期末貸借対照表のみ連結し、同社の当年度損益を連結営業利益へ加算しない。",
+                  "連結子会社117社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 133,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 78,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     清水建設株式会社(E00053)\n                                                          有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（117社）を連結しております。\n  主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n  なお、当連結会計年度において、持分法適用関連会社であった日本道路㈱の株式を当社が追加取得したことに伴\n い、同社及び同社の連結子会社43社を連結の範囲に含めております。この他、当連結会計年度から子会社となった\n ４社を連結の範囲に含めており、子会社でなくなった５社を連結の範囲に含めておりません。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 54647,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "ac88041f8dfba562f11dbb96818405e6e5242465c64c7c57acfbe8d802010ffc",
+              "evidenceId": "9f0a27407114be000ece7d0b84252934db52c3d0d8e0fa6634571cdc7aaadf3d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R7BX",
+                "documentTitle": "清水建設 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "5c51787b00c2eee6867afbddf3f478395f627d69eceb47f96eb948f6af1033c5",
+                "documentVersionSha256": "5c51787b00c2eee6867afbddf3f478395f627d69eceb47f96eb948f6af1033c5",
+                "pdfPage": 82,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                        (単位：百万円)\n                            前連結会計年度                 当連結会計年度\n                          (自 2021年４月１日            (自 2022年４月１日\n                           至 2022年３月31日)           至 2023年３月31日)\n売上高\n 完成工事高                                1,295,969             1,693,895\n 開発事業等売上高                               186,992               239,919\n 売上高合計                             ※１ 1,482,961          ※１ 1,933,814\n営業利益                                     45,145                54,647",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 82,
+                  "value_bbox": [
+                    483.97836,
+                    291.825921,
+                    510.97836,
+                    300.816921
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "時価算定の適用指針を適用（影響は軽微）。日本道路を含む連結損益の範囲と前年との相違に注意。",
+                  "連結子会社125社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 140,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 87,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     清水建設株式会社(E00053)\n                                                          有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１ 連結の範囲に関する事項\n  すべての子会社（125社）を連結しております。\n  主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n  なお、当連結会計年度から子会社となった９社を連結の範囲に含めており、子会社でなくなった１社を連結の範\n 囲に含めておりません。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": -24685,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "6362253c7ab7f47857876b89cbf25a6ed2995917606ffe1cc96349f8c53cc36f",
+              "evidenceId": "cda391201f426ccf76c2c3f48ee6ff95cd7d8b77a8f6506ed379a67b1cc14d2a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022_2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TSMP",
+                "documentTitle": "清水建設 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "0b6c2a3b52997e47dc23a080ebbf8a16a5a4d2ab663d22523f5ca0185b13f62b",
+                "documentVersionSha256": "0b6c2a3b52997e47dc23a080ebbf8a16a5a4d2ab663d22523f5ca0185b13f62b",
+                "pdfPage": 92,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                    (単位：百万円)\n                       前連結会計年度                  当連結会計年度\n                     (自 2022年４月１日             (自 2023年４月１日\n                      至 2023年３月31日)            至 2024年３月31日)\n売上高\n 完成工事高                            1,693,895             1,753,155\n 開発事業等売上高                           239,919               252,363\n 売上高合計                         ※１ 1,933,814          ※１ 2,005,518\n営業利益又は営業損失（△）                        54,647              △24,685",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 92,
+                  "value_bbox": [
+                    474.97836,
+                    292.052791,
+                    510.97836,
+                    301.043791
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結子会社123社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 154,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 97,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     清水建設株式会社(E00053)\n                                                          有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    (1)連結子会社数 123社\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n      なお、当連結会計年度から子会社となった６社を連結の範囲に含めており、子会社でなくなった８社を連結の\n    範囲に含めておりません。\n\n    (2)非連結子会社（丸彦商事㈱他）は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合\n    う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼさないため、連結の\n    範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 71030,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "02b2a88feb79e587d63f63bab56078ba33dd4b1f422601bd80f74232e71067c4",
+              "evidenceId": "2f54ed8831090521414e2b79121393b33e2f3d8c875df0c9f78f0cfa17419a5b",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W7C5",
+                "documentTitle": "清水建設 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ee413814bd8c77f21ae395b7c68f021a68cb3987d916a1775d7d075f35d286b6",
+                "documentVersionSha256": "ee413814bd8c77f21ae395b7c68f021a68cb3987d916a1775d7d075f35d286b6",
+                "pdfPage": 92,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                    (単位：百万円)\n                       前連結会計年度                  当連結会計年度\n                     (自 2023年４月１日             (自 2024年４月１日\n                      至 2024年３月31日)            至 2025年３月31日)\n売上高\n 完成工事高                            1,753,155             1,696,021\n 開発事業等売上高                           252,363               248,339\n 売上高合計                         ※１ 2,005,518          ※１ 1,944,360\n営業利益又は営業損失（△）                      △24,685                 71,030",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 92,
+                  "value_bbox": [
+                    483.97836,
+                    291.825921,
+                    510.97836,
+                    300.816921
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "法人税等の会計基準を適用。前年度への遡及適用を含め連結財務諸表への影響なし。Grandwork Interiorは当年度末貸借対照表のみ連結し、当年度連結損益に業績を含めない。",
+                  "連結子会社129社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 155,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 97,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                        清水建設株式会社(E00053)\n                                                             有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    (1)連結子会社数 129社\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n      なお、当連結会計年度から子会社となった８社を連結の範囲に含めており、子会社でなくなった２社を連結の\n    範囲に含めておりません。\n\n    (2)非連結子会社（丸彦商事㈱他）は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合\n    う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼさないため、連結の\n    範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 118669,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "7093b94a753a710e9e5d4df49562d6fc5b7e191c292eadef26f7d664349a4487",
+              "evidenceId": "9a8b8b63e71a4a83caed5f4c1dd00809b17d8e61505c2e0cf1bab4c184d95458",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YDXD",
+                "documentTitle": "清水建設 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a7f695e9e48e4febdeafa5b42fcc4887d012d0edf2c2e96673c24a3b2d5a9d25",
+                "documentVersionSha256": "a7f695e9e48e4febdeafa5b42fcc4887d012d0edf2c2e96673c24a3b2d5a9d25",
+                "pdfPage": 102,
+                "sourceQuote": "  ②【連結損益計算書及び連結包括利益計算書】\n 【連結損益計算書】\n                                                     (単位：百万円)\n                       前連結会計年度                   当連結会計年度\n                     (自 2024年４月１日              (自 2025年４月１日\n                      至 2025年３月31日)             至 2026年３月31日)\n売上高\n 完成工事高                             1,696,021             1,845,300\n 開発事業等売上高                            248,339               212,501\n 売上高合計                          ※１ 1,944,360          ※１ 2,057,802\n営業利益                                  71,030               118,669",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 102,
+                  "value_bbox": [
+                    479.47836,
+                    291.825921,
+                    510.97836,
+                    300.816921
+                  ]
+                },
+                "comparisonVerificationId": "shimizu-operating-all-years-20261022",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の営業利益の通期実績。会計方針・連結範囲変更の影響を除去した利益ではない。異なる確認区分をまたぐ指数・相関計算は停止。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "Grandwork Interiorの取得原価配分を確定（前年貸借対照表の修正）。前年営業利益71,030百万円は前年欄と一致。あおみ建設は期末貸借対照表のみ連結し、当年度連結損益に業績を含めない。",
+                  "連結子会社138社。連結範囲は各年度の資料によるもので、一定範囲に調整した利益ではない。",
+                  "会社間の同等性は未確認。単体・事業別利益へ転用せず、自動合算しない。"
+                ],
+                "basisPage": 167,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 107,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                     清水建設株式会社(E00053)\n                                                          有価証券報告書\n     【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１   連結の範囲に関する事項\n    (1)連結子会社数 138社\n      主要な連結子会社名は、「第１ 企業の概況 ４ 関係会社の状況」に記載のとおりであります。\n      なお、当連結会計年度から子会社となった13社を連結の範囲に含めており、子会社でなくなった４社を連結の\n    範囲に含めておりません。\n\n    (2)非連結子会社（丸彦商事㈱他）は、いずれも小規模であり、合計の総資産、売上高、当期純損益（持分に見合\n    う額）及び利益剰余金（持分に見合う額）等は、いずれも連結財務諸表に重要な影響を及ぼさないため、連結の\n    範囲から除外しております。"
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked"
+        },
+        "snapshotHash": "7c47bf819363d605df66beda74a95d8f1b90192a0f931a5a7392e6123a40735b"
       }
     ],
     "mappings": [
@@ -2773,6 +3455,28 @@
         "scope": "consolidated",
         "periodKind": "annual_flow",
         "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "SHIMIZU",
+        "legacyMetricId": "operating_income_consolidated",
+        "reviewedSeriesId": "SHIMIZU:operating_income_consolidated@FY2015_FY2025_SHIMIZU_OPERATING",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
       }
     ],
     "limitations": [
@@ -2783,5 +3487,5 @@
       "2年度のみのため相関計算に必要な3組に届かない。"
     ]
   },
-  "snapshotHash": "1c131a6f4995129e345a19ba1f7cd4227c4684e3fdcf4b8a3b3407eebc9f8bd2"
+  "snapshotHash": "d92bf1e25e1907cdad1e320ba8b017cbe658f105730acd7fda24dde49003867e"
 }
