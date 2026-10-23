@@ -1,3 +1,5 @@
+import {validReviewedCompletedWorkSeries} from './reviewed-completed-work-policy.mjs';
+import {validReviewedBacklogSeries} from './reviewed-backlog-policy.mjs';
 import {validReviewedStockSeries} from './reviewed-stock-policy.mjs';
 import {validReviewedCashFlowSeries} from './reviewed-cash-flow-policy.mjs';
 import {validReviewedInvestmentCostSeries} from './reviewed-investment-cost-policy.mjs';
@@ -21,6 +23,8 @@ function validReviewedProfitAttribution(s){
  return (s.companyId==='ASANUMA'||s.companyId==='PENTA')&&s.accountingStandard==='JGAAP'&&s.points.every(p=>{const v=p.provenance,r=v?.profitAttributionReview,y=+p.periodStart.slice(0,4);return y>=2015&&y<=2025&&v?.comparisonVerificationId===(s.companyId==='PENTA'?(owner?'penta-owners-parent-2015-2025-20261023':'penta-total-profit-2015-2025-candidate-20261023'):owner?'asanuma-owners-parent-2015-2025-20261022':'asanuma-total-profit-2015-2025-candidate-20261023')&&v?.metricNativeEvidence?.nativeConcept===concept&&v.metricNativeEvidence.context==='CurrentYearDuration'&&v.sourceUnit==='百万円'&&v.sourceNumericValue===p.numericValue&&v.unitConversionFactor===1&&v.taxReview?.operatingIncomeNoEffectJudgmentInherited===false&&v.taxReview.taxNeutralParentAmountGenerated===false&&r?.state===state&&r.parentConcept==='jppfs_cor:ProfitLossAttributableToOwnersOfParent'&&r.totalProfitConcept==='jppfs_cor:ProfitLoss'&&r.nonControllingConcept==='jppfs_cor:ProfitLossAttributableToNonControllingInterests'&&(owner?r.parentReportedAmount:r.totalProfitReportedAmount)===p.numericValue&&r.parentAmountGeneratedFromComponents===false&&(owner||r.totalProfitAmountGeneratedFromComponents===false)&&r.displayedTotalMinusNciMinusParent===r.totalProfitReportedAmount-r.nonControllingReportedAmount-r.parentReportedAmount;});
 }
 export function validReviewedPolicyGroups(s){
+ if(s?.comparisonPolicyMode==='reported_completed_work_with_groups')return validReviewedCompletedWorkSeries(s);
+ if(s?.comparisonPolicyMode==='reported_backlog_with_reviewed_dates')return validReviewedBacklogSeries(s);
  if(s?.comparisonPolicyMode==='reported_stocks_with_reviewed_dates')return validReviewedStockSeries(s);
  if(s?.comparisonPolicyMode==='reported_cashflows_with_reviewed_groups')return validReviewedCashFlowSeries(s);
  if(s?.comparisonPolicyMode==='reported_investment_costs_with_groups')return validReviewedInvestmentCostSeries(s);
@@ -43,6 +47,8 @@ export function validReviewedPolicyGroups(s){
 export function reviewedPointDefinition(s,p){return p?.provenance?.definitionChangeStatus==='reviewed_consistent_within_selected_window'||(p?.provenance?.definitionChangeStatus==='reviewed_consistent_within_policy_group'&&validReviewedPolicyGroups(s));}
 export function policyCalculationError(s){
  if(!s?.comparisonPolicyMode)return '';
+ if(s.comparisonPolicyMode==='reported_completed_work_with_groups')return validReviewedCompletedWorkSeries(s)?'完成工事と開発事業等/その他の原開示区分です。受注・全売上・附帯事業を含む表と混同せず、年度をまたぐ同条件計算・自動合算は未確認です。':'完成工事の出典・範囲・金額を確認できません。';
+ if(s.comparisonPolicyMode==='reported_backlog_with_reviewed_dates')return validReviewedBacklogSeries(s)?'原開示の繰越残高です。為替修正・附帯事業・合計と内訳の範囲差を保持し、跨年同条件計算と自動合算は未確認です。':'繰越の出典・範囲・残高基準日を確認できません。';
  if(s.comparisonPolicyMode==='reported_stocks_with_reviewed_dates')return validReviewedStockSeries(s)?'期末残高です。表示方法・連結範囲等をまたぐ同条件計算と期間合算は未確認です。':'期末日・残高定義・原資料の対応を確認できません。';
  if(s.comparisonPolicyMode==='reported_cashflows_with_reviewed_groups')return validReviewedCashFlowSeries(s)?'CFの表示値・為替差・期末残高を区別しています。連結範囲等をまたぐ同条件計算・期間合算は未確認です。':'CFの原概念・実期間・残高突合の証跡を確認できません。';
  if(s.comparisonPolicyMode==='reported_investment_costs_with_groups')return validReviewedInvestmentCostSeries(s)?'有形・無形/費用とCF/連結範囲の原定義を保持しています。年度をまたぐ同条件計算・自動合算は未確認です。':'投資・費用の原定義・出典位置・実期間を確認できません。';
