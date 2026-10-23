@@ -46118,6 +46118,2169 @@
           "accountingStandard": "JGAAP"
         },
         "snapshotHash": "add2eef275231cfa1418560ea3d2d9383557b65a0a872ee73ef5add73d1dd3e5"
+      },
+      {
+        "payload": {
+          "schemaVersion": 1,
+          "datasetId": "buildbase-source-verified-comparison",
+          "id": "ASANUMA:profit_consolidated@FY2015_FY2025_TOTAL_PROFIT_REPORTED",
+          "companyId": "ASANUMA",
+          "metricId": "profit_consolidated",
+          "label": "淺沼組 / 当期純利益（連結）",
+          "metricLabelAsDisclosed": "当期純利益（連結、非支配株主帰属損益を含む）",
+          "cycle": "年度次",
+          "unit": "百万円",
+          "currency": "JPY",
+          "priceBasis": "nominal",
+          "comparisonScope": "consolidated",
+          "comparisonFamily": "ASANUMA_TOTAL_PROFIT_REPORTED_2015_2025",
+          "reviewWindow": "FY2015_FY2025_ASANUMA_TOTAL_PROFIT_REPORTED",
+          "automaticComparisonAllowed": true,
+          "automaticAggregationAllowed": false,
+          "comparisonPolicyMode": "reported_values_with_reviewed_groups",
+          "sourceCoverage": [
+            "2015-04-01/2016-03-31",
+            "2016-04-01/2017-03-31",
+            "2017-04-01/2018-03-31",
+            "2018-04-01/2019-03-31",
+            "2019-04-01/2020-03-31",
+            "2020-04-01/2021-03-31",
+            "2021-04-01/2022-03-31",
+            "2022-04-01/2023-03-31",
+            "2023-04-01/2024-03-31",
+            "2024-04-01/2025-03-31",
+            "2025-04-01/2026-03-31"
+          ],
+          "comparisonPolicyGroups": [
+            {
+              "id": "g2015",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+              "sourceLocator": {
+                "pdf_page": 39
+              },
+              "sourceQuote": "                                                                         EDINET提出書類\n                                                                      株式会社淺沼組(E00120)\n                                                                          有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                   125,481                   145,662\n当期純利益                            2,805             6,746"
+            },
+            {
+              "id": "g2016",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+              "sourceLocator": {
+                "pdf_page": 41
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                         株式会社淺沼組(E00120)\n                                                                             有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   145,662                   131,618\n当期純利益                         6,746               7,306"
+            },
+            {
+              "id": "g2017",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+              "sourceLocator": {
+                "pdf_page": 45
+              },
+              "sourceQuote": "                                                                            EDINET提出書類\n                                                                         株式会社淺沼組(E00120)\n                                                                             有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成28年４月１日                (自 平成29年４月１日\n                           至 平成29年３月31日)               至 平成30年３月31日)\n売上高\n  完成工事高                                   131,618                   142,181\n当期純利益                         7,306                5,229"
+            },
+            {
+              "id": "g2018",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+              "sourceLocator": {
+                "pdf_page": 48
+              },
+              "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2017年４月１日                  (自 2018年４月１日\n                           至 2018年３月31日)                 至 2019年３月31日)\n売上高\n 完成工事高                                      142,181                   134,194\n その他の事業売上高                                    1,253                     1,518\n当期純利益                                  5,229                4,168"
+            },
+            {
+              "id": "g2019",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+              "sourceLocator": {
+                "pdf_page": 51
+              },
+              "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2018年４月１日                  (自 2019年４月１日\n                           至 2019年３月31日)                 至 2020年３月31日)\n売上高\n 完成工事高                                      134,194                   140,034\n その他の事業売上高                                    1,518                     1,437\n当期純利益                                  4,168                4,310"
+            },
+            {
+              "id": "g2020",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+              "sourceLocator": {
+                "pdf_page": 53
+              },
+              "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2019年４月１日                  (自 2020年４月１日\n                           至 2020年３月31日)                 至 2021年３月31日)\n売上高\n 完成工事高                                      140,034                   137,846\n その他の事業売上高                                    1,437                     1,087\n当期純利益                         4,310                 4,155"
+            },
+            {
+              "id": "g2021",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+              "sourceLocator": {
+                "pdf_page": 55
+              },
+              "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2020年４月１日                  (自 2021年４月１日\n                           至 2021年３月31日)                 至 2022年３月31日)\n売上高\n 完成工事高                                      137,846            ※1   134,407\n その他の事業売上高                                    1,087              ※1   1,070\n当期純利益                         4,155                 3,770"
+            },
+            {
+              "id": "g2022",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+              "sourceLocator": {
+                "pdf_page": 56
+              },
+              "sourceQuote": "                                                                    EDINET提出書類\n                                                                 株式会社淺沼組(E00120)\n                                                                     有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2021年４月１日            (自 2022年４月１日\n                           至 2022年３月31日)           至 2023年３月31日)\n売上高\n 完成工事高                               ※１ 134,407            ※１ 141,758\n\n当期純利益                         3,770                  4,406"
+            },
+            {
+              "id": "g2023",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+              "sourceLocator": {
+                "pdf_page": 59
+              },
+              "sourceQuote": "                                                                    EDINET提出書類\n                                                                 株式会社淺沼組(E00120)\n                                                                     有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2022年４月１日            (自 2023年４月１日\n                           至 2023年３月31日)           至 2024年３月31日)\n売上高\n 完成工事高                                  141,758               149,415\n その他の事業売上高                                2,678                 3,261\n当期純利益                         4,406                   5,007"
+            },
+            {
+              "id": "g2024",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+              "sourceLocator": {
+                "pdf_page": 63
+              },
+              "sourceQuote": "                                                                     EDINET提出書類\n                                                                  株式会社淺沼組(E00120)\n                                                                      有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n売上高\n 完成工事高                                   149,415               163,661\n その他の事業売上高                                 3,261                 3,344\n当期純利益                         5,007                4,773"
+            },
+            {
+              "id": "g2025",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "status": "source_reviewed_policy_group",
+              "sourceFileSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+              "sourceLocator": {
+                "pdf_page": 64
+              },
+              "sourceQuote": "                                                                     EDINET提出書類\n                                                                  株式会社淺沼組(E00120)\n                                                                      有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n売上高\n 完成工事高                                   163,661               171,518\n その他の事業売上高                                 3,344                 3,776\n当期純利益                         4,773                 5,210"
+            }
+          ],
+          "policyNotes": [
+            "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+            "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+            "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+            "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+            "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+            "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+          ],
+          "points": [
+            {
+              "timeCode": "2015-04-01/2016-03-31",
+              "timeLabel": "2015-04-01 ～ 2016-03-31",
+              "periodStart": "2015-04-01",
+              "periodEnd": "2016-03-31",
+              "numericValue": 6746,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "0cf0d6090269a39c81846fc0bf7e196b15c11bc2dd29299e7533053ca8f4ecf1",
+              "evidenceId": "a4b8e461019081a659a98aebcb382633f4df6be9e6408d1104ef46c875e0aa63",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2015",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S1007YO9",
+                "documentTitle": "淺沼組 有価証券報告書（2016年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+                "documentVersionSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+                "pdfPage": 39,
+                "sourceQuote": "                                                                         EDINET提出書類\n                                                                      株式会社淺沼組(E00120)\n                                                                          有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                   125,481                   145,662\n当期純利益                            2,805             6,746",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 39,
+                  "statement_header_pdf_page": 38,
+                  "value_bbox": [
+                    489.4,
+                    288.15778,
+                    511.9,
+                    297.14878
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 45,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    ㈱城北シンフォニア\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n\n\n   桜井給食ファシリティーズ㈱は当連結会計年度において新たに設立したことにより、連結子会社に含めることと\n  した。\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 45,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "6,746",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 6746,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 6728,
+                  "totalProfitReportedAmount": 6746,
+                  "nonControllingReportedAmount": 17,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 6746,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "当期純利益",
+                        "raw": "6,746",
+                        "bbox": [
+                          489.4,
+                          288.15778,
+                          511.9,
+                          297.14878
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 17,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "17",
+                        "bbox": [
+                          502.9,
+                          301.65778,
+                          511.9,
+                          310.64878
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6149,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,149",
+                        "bbox": [
+                          489.4,
+                          234.15778,
+                          511.9,
+                          243.14878
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": -597,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "法人税等合計",
+                        "raw": "△597",
+                        "bbox": [
+                          489.4,
+                          274.65778,
+                          511.9,
+                          283.64878
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 621,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "621",
+                        "bbox": [
+                          498.4,
+                          247.84528,
+                          511.9,
+                          256.83628
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -1218,
+                      "pdfCell": {
+                        "pdfPage": 39,
+                        "label": "法人税等調整額",
+                        "raw": "△1,218",
+                        "bbox": [
+                          480.4,
+                          260.97028,
+                          511.9,
+                          269.96128
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    41,
+                    42,
+                    47,
+                    48,
+                    58,
+                    61
+                  ],
+                  "reportedIncomeTaxes": -597,
+                  "reportedDeferredIncomeTaxes": -1218,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2016-04-01/2017-03-31",
+              "timeLabel": "2016-04-01 ～ 2017-03-31",
+              "periodStart": "2016-04-01",
+              "periodEnd": "2017-03-31",
+              "numericValue": 7306,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "feec73a65291628253e2ac480ce2b4be793160fef64fa1ac1a7d9aa377af8a7b",
+              "evidenceId": "a69cab8364388c861455f2626be9ece86e1a5f4c3697f4499ae53c6a4ca22447",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2016",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100AOGE",
+                "documentTitle": "淺沼組 有価証券報告書（2017年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+                "documentVersionSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+                "pdfPage": 41,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                         株式会社淺沼組(E00120)\n                                                                             有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   145,662                   131,618\n当期純利益                         6,746               7,306",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 41,
+                  "statement_header_pdf_page": 40,
+                  "value_bbox": [
+                    486.70001,
+                    125.930881,
+                    509.20001,
+                    134.921881
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 91,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 47,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n   小田原斎場ＰＦＩ㈱は当連結会計年度において新たに設立したことにより、連結子会社に含めることとした。\n   なお、㈱城北シンフォニアは、当連結会計年度において清算結了したため、上記連結子会社数に含んでいない\n  が、清算結了日までの損益計算書及びキャッシュ・フロー計算書については連結している。\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 47,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "7,306",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 7306,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 7294,
+                  "totalProfitReportedAmount": 7306,
+                  "nonControllingReportedAmount": 11,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 7306,
+                      "pdfCell": {
+                        "pdfPage": 41,
+                        "label": "当期純利益",
+                        "raw": "7,306",
+                        "bbox": [
+                          486.70001,
+                          125.930881,
+                          509.20001,
+                          134.921881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 11,
+                      "pdfCell": {
+                        "pdfPage": 41,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "11",
+                        "bbox": [
+                          500.20001,
+                          139.430881,
+                          509.20001,
+                          148.421881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6408,
+                      "pdfCell": {
+                        "pdfPage": 40,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,408",
+                        "bbox": [
+                          489.4,
+                          688.134621,
+                          511.9,
+                          697.125621
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": -897,
+                      "pdfCell": {
+                        "pdfPage": 41,
+                        "label": "法人税等合計",
+                        "raw": "△897",
+                        "bbox": [
+                          486.70001,
+                          112.430881,
+                          509.20001,
+                          121.421881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 880,
+                      "pdfCell": {
+                        "pdfPage": 41,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "880",
+                        "bbox": [
+                          495.70001,
+                          85.618381,
+                          509.20001,
+                          94.609381
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -1778,
+                      "pdfCell": {
+                        "pdfPage": 41,
+                        "label": "法人税等調整額",
+                        "raw": "△1,778",
+                        "bbox": [
+                          477.70001,
+                          98.743381,
+                          509.20001,
+                          107.734381
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    50,
+                    63
+                  ],
+                  "reportedIncomeTaxes": -897,
+                  "reportedDeferredIncomeTaxes": -1778,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2017-04-01/2018-03-31",
+              "timeLabel": "2017-04-01 ～ 2018-03-31",
+              "periodStart": "2017-04-01",
+              "periodEnd": "2018-03-31",
+              "numericValue": 5229,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "122584b54febc5c90d380694de70fccbc1d11200babbf8722f0faa21f57dcf18",
+              "evidenceId": "db052634ee625f630b28a1280fbc60489c7adbf6002351687287e6dea2bc236f",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2017",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100DFS9",
+                "documentTitle": "淺沼組 有価証券報告書（2018年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+                "documentVersionSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+                "pdfPage": 45,
+                "sourceQuote": "                                                                            EDINET提出書類\n                                                                         株式会社淺沼組(E00120)\n                                                                             有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成28年４月１日                (自 平成29年４月１日\n                           至 平成29年３月31日)               至 平成30年３月31日)\n売上高\n  完成工事高                                   131,618                   142,181\n当期純利益                         7,306                5,229",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 45,
+                  "statement_header_pdf_page": 44,
+                  "value_bbox": [
+                    486.70001,
+                    125.930881,
+                    509.20001,
+                    134.921881
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 96,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 51,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数   5社\n   連結子会社名\n    淺沼建物㈱\n    宇都宮郷の森斎場㈱\n    ㈱ひらかたシンフォニア\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n (2) 非連結子会社名\n    アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 51,
+                "subsidiaryFiscalPeriodQuote": "連結子会社の決算日は連結決算日と一致している。",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "5,229",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5229,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 5221,
+                  "totalProfitReportedAmount": 5229,
+                  "nonControllingReportedAmount": 7,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 5229,
+                      "pdfCell": {
+                        "pdfPage": 45,
+                        "label": "当期純利益",
+                        "raw": "5,229",
+                        "bbox": [
+                          486.70001,
+                          125.930881,
+                          509.20001,
+                          134.921881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 7,
+                      "pdfCell": {
+                        "pdfPage": 45,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "7",
+                        "bbox": [
+                          504.70001,
+                          139.430881,
+                          509.20001,
+                          148.421881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 7586,
+                      "pdfCell": {
+                        "pdfPage": 44,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "7,586",
+                        "bbox": [
+                          489.4,
+                          688.134621,
+                          511.9,
+                          697.125621
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 2357,
+                      "pdfCell": {
+                        "pdfPage": 45,
+                        "label": "法人税等合計",
+                        "raw": "2,357",
+                        "bbox": [
+                          486.70001,
+                          112.430881,
+                          509.20001,
+                          121.421881
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 1461,
+                      "pdfCell": {
+                        "pdfPage": 45,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "1,461",
+                        "bbox": [
+                          486.70001,
+                          85.618381,
+                          509.20001,
+                          94.609381
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": 895,
+                      "pdfCell": {
+                        "pdfPage": 45,
+                        "label": "法人税等調整額",
+                        "raw": "895",
+                        "bbox": [
+                          495.70001,
+                          98.743381,
+                          509.20001,
+                          107.734381
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    66
+                  ],
+                  "reportedIncomeTaxes": 2357,
+                  "reportedDeferredIncomeTaxes": 895,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2018-04-01/2019-03-31",
+              "timeLabel": "2018-04-01 ～ 2019-03-31",
+              "periodStart": "2018-04-01",
+              "periodEnd": "2019-03-31",
+              "numericValue": 4168,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d0465249e1b8424b29a1e4808059b211e1f2f8604e5b55ba629aadd1d5d011ba",
+              "evidenceId": "0a1f1380a96573dae636cd4ee3c0b55d7935ea84a5a33a3c97a9db88897c897a",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2018",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100GALH",
+                "documentTitle": "淺沼組 有価証券報告書（2019年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+                "documentVersionSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+                "pdfPage": 48,
+                "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2017年４月１日                  (自 2018年４月１日\n                           至 2018年３月31日)                 至 2019年３月31日)\n売上高\n 完成工事高                                      142,181                   134,194\n その他の事業売上高                                    1,253                     1,518\n当期純利益                                  5,229                4,168",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 48,
+                  "statement_header_pdf_page": 47,
+                  "value_bbox": [
+                    481.45001,
+                    126.157751,
+                    503.95001,
+                    135.148751
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 99,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 54,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数      6社\n   連結子会社名\n     淺沼建物㈱\n     SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n     宇都宮郷の森斎場㈱\n     ㈱ひらかたシンフォニア\n     桜井給食ファシリティーズ㈱\n     小田原斎場ＰＦＩ㈱\n\n\n   SINGAPORE PAINTS & CONTRACTOR PTE. LTD.は2018年10月19日の株式取得に伴い、当連結会計年度より連結子会社\n  となった。なお、みなし取得日を2018年12月31日としており、連結決算日との差異が３ヶ月を超えないことから、\n  当連結会計年度は貸借対照表のみ連結している。\n\n\n (2) 非連結子会社名\n     アサヌマ・コンストラクション・リミテッド・インターナショナル\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外している。",
+                "subsidiaryFiscalPeriodPage": 54,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日である。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っている。\n\n\n\n\n                                               54/101",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "4,168",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4168,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4178,
+                  "totalProfitReportedAmount": 4168,
+                  "nonControllingReportedAmount": -10,
+                  "displayedTotalMinusNciMinusParent": 0,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 4168,
+                      "pdfCell": {
+                        "pdfPage": 48,
+                        "label": "当期純利益",
+                        "raw": "4,168",
+                        "bbox": [
+                          481.45001,
+                          126.157751,
+                          503.95001,
+                          135.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": -10,
+                      "pdfCell": {
+                        "pdfPage": 48,
+                        "label": "非支配株主に帰属する当期純利益又は非支配株主に",
+                        "raw": "△10",
+                        "bbox": [
+                          485.95001,
+                          142.907751,
+                          503.95001,
+                          151.898751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6025,
+                      "pdfCell": {
+                        "pdfPage": 47,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,025",
+                        "bbox": [
+                          481.45001,
+                          709.361481,
+                          503.95001,
+                          718.352481
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 1857,
+                      "pdfCell": {
+                        "pdfPage": 48,
+                        "label": "法人税等合計",
+                        "raw": "1,857",
+                        "bbox": [
+                          481.45001,
+                          112.657751,
+                          503.95001,
+                          121.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 1796,
+                      "pdfCell": {
+                        "pdfPage": 48,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "1,796",
+                        "bbox": [
+                          481.45001,
+                          85.845251,
+                          503.95001,
+                          94.836251
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": 60,
+                      "pdfCell": {
+                        "pdfPage": 48,
+                        "label": "法人税等調整額",
+                        "raw": "60",
+                        "bbox": [
+                          494.95001,
+                          98.970251,
+                          503.95001,
+                          107.961251
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    69
+                  ],
+                  "reportedIncomeTaxes": 1857,
+                  "reportedDeferredIncomeTaxes": 60,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2019-04-01/2020-03-31",
+              "timeLabel": "2019-04-01 ～ 2020-03-31",
+              "periodStart": "2019-04-01",
+              "periodEnd": "2020-03-31",
+              "numericValue": 4310,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "eceb5d0c576dc7483e6afb4744776524f465f4214a7df5080076b50f8e1d9e19",
+              "evidenceId": "3c2bdd6a803ee3b860feec3569594a385cb95dc561b3044397044a4f3b2c44fb",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2019",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100IV2W",
+                "documentTitle": "淺沼組 有価証券報告書（2020年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+                "documentVersionSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+                "pdfPage": 51,
+                "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2018年４月１日                  (自 2019年４月１日\n                           至 2019年３月31日)                 至 2020年３月31日)\n売上高\n 完成工事高                                      134,194                   140,034\n その他の事業売上高                                    1,518                     1,437\n当期純利益                                  4,168                4,310",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 51,
+                  "statement_header_pdf_page": 50,
+                  "value_bbox": [
+                    481.45001,
+                    126.157751,
+                    503.95001,
+                    135.148751
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 100,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 57,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数     5社\n   連結子会社名\n    淺沼建物㈱\n    SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n    宇都宮郷の森斎場㈱\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n   ㈱ひらかたシンフォニアは、当連結会計年度において清算結了したため、上記連結子会社数に含んでおりません\n  が、清算結了日までの損益計算書及びキャッシュ・フロー計算書については連結しております。\n\n\n (2) 非連結子会社名\n    ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 57,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日であります。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                               57/104",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "4,310",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4310,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4300,
+                  "totalProfitReportedAmount": 4310,
+                  "nonControllingReportedAmount": 10,
+                  "displayedTotalMinusNciMinusParent": 0,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 4310,
+                      "pdfCell": {
+                        "pdfPage": 51,
+                        "label": "当期純利益",
+                        "raw": "4,310",
+                        "bbox": [
+                          481.45001,
+                          126.157751,
+                          503.95001,
+                          135.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 10,
+                      "pdfCell": {
+                        "pdfPage": 51,
+                        "label": "非支配株主に帰属する当期純利益又は非支配株主に",
+                        "raw": "10",
+                        "bbox": [
+                          494.95001,
+                          142.907751,
+                          503.95001,
+                          151.898751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6500,
+                      "pdfCell": {
+                        "pdfPage": 50,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,500",
+                        "bbox": [
+                          481.45001,
+                          749.861481,
+                          503.95001,
+                          758.852481
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 2189,
+                      "pdfCell": {
+                        "pdfPage": 51,
+                        "label": "法人税等合計",
+                        "raw": "2,189",
+                        "bbox": [
+                          481.45001,
+                          112.657751,
+                          503.95001,
+                          121.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 2172,
+                      "pdfCell": {
+                        "pdfPage": 51,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "2,172",
+                        "bbox": [
+                          481.45001,
+                          85.845251,
+                          503.95001,
+                          94.836251
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": 16,
+                      "pdfCell": {
+                        "pdfPage": 51,
+                        "label": "法人税等調整額",
+                        "raw": "16",
+                        "bbox": [
+                          494.95001,
+                          98.970251,
+                          503.95001,
+                          107.961251
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    60,
+                    73
+                  ],
+                  "reportedIncomeTaxes": 2189,
+                  "reportedDeferredIncomeTaxes": 16,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2020-04-01/2021-03-31",
+              "timeLabel": "2020-04-01 ～ 2021-03-31",
+              "periodStart": "2020-04-01",
+              "periodEnd": "2021-03-31",
+              "numericValue": 4155,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "935bfafedfebb676ff151cc833a1cf43ca15c0dbea717854977a0abee8d5cd7f",
+              "evidenceId": "a241d95d5414b18ed5f8da8e77b29245ee5b9fca02c81a0b30473b19f75293a0",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2020",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100LKZO",
+                "documentTitle": "淺沼組 有価証券報告書（2021年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+                "documentVersionSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+                "pdfPage": 53,
+                "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2019年４月１日                  (自 2020年４月１日\n                           至 2020年３月31日)                 至 2021年３月31日)\n売上高\n 完成工事高                                      140,034                   137,846\n その他の事業売上高                                    1,437                     1,087\n当期純利益                         4,310                 4,155",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 53,
+                  "statement_header_pdf_page": 52,
+                  "value_bbox": [
+                    481.45001,
+                    328.657751,
+                    503.95001,
+                    337.648751
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 103,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 59,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                        株式会社淺沼組(E00120)\n                                                                            有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数     5社\n   連結子会社名\n    淺沼建物㈱\n    SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n    宇都宮郷の森斎場㈱\n    桜井給食ファシリティーズ㈱\n    小田原斎場ＰＦＩ㈱\n\n\n (2) 非連結子会社名\n    ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 59,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD. の決算日は、12月31日であります。\n  連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用し、連結決\n 算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                               59/108",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "4,155",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4155,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4138,
+                  "totalProfitReportedAmount": 4155,
+                  "nonControllingReportedAmount": 16,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 4155,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "当期純利益",
+                        "raw": "4,155",
+                        "bbox": [
+                          481.45001,
+                          328.657751,
+                          503.95001,
+                          337.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 16,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "16",
+                        "bbox": [
+                          494.95001,
+                          342.157751,
+                          503.95001,
+                          351.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6099,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,099",
+                        "bbox": [
+                          481.45001,
+                          274.657751,
+                          503.95001,
+                          283.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 1944,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "法人税等合計",
+                        "raw": "1,944",
+                        "bbox": [
+                          481.45001,
+                          315.157751,
+                          503.95001,
+                          324.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 1880,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "1,880",
+                        "bbox": [
+                          481.45001,
+                          288.345251,
+                          503.95001,
+                          297.336251
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": 63,
+                      "pdfCell": {
+                        "pdfPage": 53,
+                        "label": "法人税等調整額",
+                        "raw": "63",
+                        "bbox": [
+                          494.95001,
+                          301.470251,
+                          503.95001,
+                          310.461251
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    62,
+                    75
+                  ],
+                  "reportedIncomeTaxes": 1944,
+                  "reportedDeferredIncomeTaxes": 63,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2021-04-01/2022-03-31",
+              "timeLabel": "2021-04-01 ～ 2022-03-31",
+              "periodStart": "2021-04-01",
+              "periodEnd": "2022-03-31",
+              "numericValue": 3770,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "128a2d545ccefb1a55b0d8d105d2a6efb20eabacd2a8fc50ea90cfd3c4cb7508",
+              "evidenceId": "7abcee6a5a6882a59fd4039ea9f7337b83b6ae8af782f5ca565fc3259d4b9467",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2021",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100OB4U",
+                "documentTitle": "淺沼組 有価証券報告書（2022年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+                "documentVersionSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+                "pdfPage": 55,
+                "sourceQuote": "                                                                               EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                               (単位：百万円)\n                            前連結会計年度                       当連結会計年度\n                          (自 2020年４月１日                  (自 2021年４月１日\n                           至 2021年３月31日)                 至 2022年３月31日)\n売上高\n 完成工事高                                      137,846            ※1   134,407\n その他の事業売上高                                    1,087              ※1   1,070\n当期純利益                         4,155                 3,770",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 55,
+                  "statement_header_pdf_page": 54,
+                  "value_bbox": [
+                    481.45001,
+                    315.157751,
+                    503.95001,
+                    324.148751
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 113,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 61,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                            株式会社淺沼組(E00120)\n                                                                                有価証券報告書\n 【注記事項】\n  (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n (1) 連結子会社数      6社\n   連結子会社名\n     淺沼建物㈱\n     SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n     EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n     宇都宮郷の森斎場㈱\n     桜井給食ファシリティーズ㈱\n     小田原斎場ＰＦＩ㈱\n\n\n   EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.は、2022年１月６日の株式取得に伴い、当連結会計年度より\n  連結の範囲に含めておりますが、2022年１月31日をみなし取得日としているため、当連結会計年度は貸借対照表の\n  みを連結しております。\n\n\n (2) 非連結子会社名\n     ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n     THAI ASANUMA HOLDINGS CO., LTD.\n     THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n   非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見合\n  う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 61,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.の決算日は12月31日であり、連結財務諸表の作成に\n あたっては、決算日の差異が３ヶ月を超えないため、同日現在の財務諸表を使用しております。\n  また、2022年１月６日付で株式を取得したEVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.は、2022年１月31日\n をみなし取得日としているため、当連結会計年度は貸借対照表のみを連結しております。\n  いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                      61/119",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "3,770",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 3770,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 3748,
+                  "totalProfitReportedAmount": 3770,
+                  "nonControllingReportedAmount": 21,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 3770,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "当期純利益",
+                        "raw": "3,770",
+                        "bbox": [
+                          481.45001,
+                          315.157751,
+                          503.95001,
+                          324.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 21,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "21",
+                        "bbox": [
+                          494.95001,
+                          328.657751,
+                          503.95001,
+                          337.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 5431,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "5,431",
+                        "bbox": [
+                          481.45001,
+                          261.157751,
+                          503.95001,
+                          270.148751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 1660,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "法人税等合計",
+                        "raw": "1,660",
+                        "bbox": [
+                          481.45001,
+                          301.657751,
+                          503.95001,
+                          310.648751
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 1239,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "1,239",
+                        "bbox": [
+                          481.45001,
+                          274.845251,
+                          503.95001,
+                          283.836251
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": 421,
+                      "pdfCell": {
+                        "pdfPage": 55,
+                        "label": "法人税等調整額",
+                        "raw": "421",
+                        "bbox": [
+                          490.45001,
+                          287.970251,
+                          503.95001,
+                          296.961251
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    57,
+                    58,
+                    65,
+                    81,
+                    85
+                  ],
+                  "reportedIncomeTaxes": 1660,
+                  "reportedDeferredIncomeTaxes": 421,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2022-04-01/2023-03-31",
+              "timeLabel": "2022-04-01 ～ 2023-03-31",
+              "periodStart": "2022-04-01",
+              "periodEnd": "2023-03-31",
+              "numericValue": 4406,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "d50dbbe30c3f29591710e241f417747e6af9431efc4003f5f1fb5b7c413673b2",
+              "evidenceId": "5baeab66ed663ebf99414afec0c7eec89e8c6319a90529e0476e2442fded9112",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2022",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100R0CO",
+                "documentTitle": "淺沼組 有価証券報告書（2023年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+                "documentVersionSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+                "pdfPage": 56,
+                "sourceQuote": "                                                                    EDINET提出書類\n                                                                 株式会社淺沼組(E00120)\n                                                                     有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2021年４月１日            (自 2022年４月１日\n                           至 2022年３月31日)           至 2023年３月31日)\n売上高\n 完成工事高                               ※１ 134,407            ※１ 141,758\n\n当期純利益                         3,770                  4,406",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 56,
+                  "statement_header_pdf_page": 55,
+                  "value_bbox": [
+                    488.47836,
+                    324.212541,
+                    510.97836,
+                    333.203541
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 108,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 62,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 62,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n    なお、EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.については、決算日を４月30日から12月31日に変更して\n  おります。この決算期変更に伴い、当連結会計年度においては、2022年２月１日から2022年12月31日までの11ヵ月間\n  を連結しております。\n\n\n\n\n                                                   62/115",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "4,406",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4406,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4200,
+                  "totalProfitReportedAmount": 4406,
+                  "nonControllingReportedAmount": 206,
+                  "displayedTotalMinusNciMinusParent": 0,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 4406,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "当期純利益",
+                        "raw": "4,406",
+                        "bbox": [
+                          488.47836,
+                          324.212541,
+                          510.97836,
+                          333.203541
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 206,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "206",
+                        "bbox": [
+                          497.47836,
+                          337.416281,
+                          510.97836,
+                          346.407281
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6505,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,505",
+                        "bbox": [
+                          488.47836,
+                          272.147591,
+                          510.97836,
+                          281.138591
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 2099,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "法人税等合計",
+                        "raw": "2,099",
+                        "bbox": [
+                          488.47836,
+                          311.008801,
+                          510.97836,
+                          319.999801
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 2111,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "2,111",
+                        "bbox": [
+                          488.47836,
+                          285.351321,
+                          510.97836,
+                          294.342321
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -12,
+                      "pdfCell": {
+                        "pdfPage": 56,
+                        "label": "法人税等調整額",
+                        "raw": "△12",
+                        "bbox": [
+                          492.97836,
+                          298.031931,
+                          510.97836,
+                          307.022931
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    58,
+                    59,
+                    80
+                  ],
+                  "reportedIncomeTaxes": 2099,
+                  "reportedDeferredIncomeTaxes": -12,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2023-04-01/2024-03-31",
+              "timeLabel": "2023-04-01 ～ 2024-03-31",
+              "periodStart": "2023-04-01",
+              "periodEnd": "2024-03-31",
+              "numericValue": 5007,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "f9eb0f36923cc2e52ac288301101a69acb65d006878c141caf960186dd8bc3c5",
+              "evidenceId": "b19f4a56ae941cdaf0934451b0a5d8d6b78a517e82cc5497d15450ca1d4a9e8d",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2023",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100TWJQ",
+                "documentTitle": "淺沼組 有価証券報告書（2024年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+                "documentVersionSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+                "pdfPage": 59,
+                "sourceQuote": "                                                                    EDINET提出書類\n                                                                 株式会社淺沼組(E00120)\n                                                                     有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                       （単位：百万円）\n                            前連結会計年度                 当連結会計年度\n                          (自 2022年４月１日            (自 2023年４月１日\n                           至 2023年３月31日)           至 2024年３月31日)\n売上高\n 完成工事高                                  141,758               149,415\n その他の事業売上高                                2,678                 3,261\n当期純利益                         4,406                   5,007",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 59,
+                  "statement_header_pdf_page": 58,
+                  "value_bbox": [
+                    488.47836,
+                    311.305061,
+                    510.97836,
+                    320.296061
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 115,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 65,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 65,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n    なお、EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.については、前連結会計年度において決算日を４月30日\n  から12月31日に変更しております。この決算期変更に伴い、前連結会計年度においては、2022年２月１日から2022年\n  12月31日までの11ヵ月間を連結しております。\n\n\n\n\n                                                   65/122",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "5,007",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5007,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4670,
+                  "totalProfitReportedAmount": 5007,
+                  "nonControllingReportedAmount": 336,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 5007,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "当期純利益",
+                        "raw": "5,007",
+                        "bbox": [
+                          488.47836,
+                          311.305061,
+                          510.97836,
+                          320.296061
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 336,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "336",
+                        "bbox": [
+                          497.47836,
+                          324.508801,
+                          510.97836,
+                          333.499801
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 7012,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "7,012",
+                        "bbox": [
+                          488.47836,
+                          259.693851,
+                          510.97836,
+                          268.684851
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 2004,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "法人税等合計",
+                        "raw": "2,004",
+                        "bbox": [
+                          488.47836,
+                          298.101321,
+                          510.97836,
+                          307.092321
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 2404,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "2,404",
+                        "bbox": [
+                          488.47836,
+                          272.897591,
+                          510.97836,
+                          281.888591
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -399,
+                      "pdfCell": {
+                        "pdfPage": 59,
+                        "label": "法人税等調整額",
+                        "raw": "△399",
+                        "bbox": [
+                          488.47836,
+                          285.351321,
+                          510.97836,
+                          294.342321
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    68,
+                    83
+                  ],
+                  "reportedIncomeTaxes": 2004,
+                  "reportedDeferredIncomeTaxes": -399,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2024-04-01/2025-03-31",
+              "timeLabel": "2024-04-01 ～ 2025-03-31",
+              "periodStart": "2024-04-01",
+              "periodEnd": "2025-03-31",
+              "numericValue": 4773,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "93a7bb1a81469cf7af0002e10754bac74240dd1337261fcf176642ebb4c8370e",
+              "evidenceId": "cfe0fbd4877c957b20e28e9aff93a438a813f3cbbeec910565048022724f91fe",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2024",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100W1YE",
+                "documentTitle": "淺沼組 有価証券報告書（2025年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+                "documentVersionSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+                "pdfPage": 63,
+                "sourceQuote": "                                                                     EDINET提出書類\n                                                                  株式会社淺沼組(E00120)\n                                                                      有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2023年４月１日             (自 2024年４月１日\n                           至 2024年３月31日)            至 2025年３月31日)\n売上高\n 完成工事高                                   149,415               163,661\n その他の事業売上高                                 3,261                 3,344\n当期純利益                         5,007                4,773",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 63,
+                  "statement_header_pdf_page": 62,
+                  "value_bbox": [
+                    488.47836,
+                    311.305061,
+                    510.97836,
+                    320.296061
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 69,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 69,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                   69/126",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "4,773",
+                  "nextPriorVerified": true
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 4773,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 4692,
+                  "totalProfitReportedAmount": 4773,
+                  "nonControllingReportedAmount": 81,
+                  "displayedTotalMinusNciMinusParent": 0,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 4773,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "当期純利益",
+                        "raw": "4,773",
+                        "bbox": [
+                          488.47836,
+                          311.305061,
+                          510.97836,
+                          320.296061
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 81,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "81",
+                        "bbox": [
+                          501.97836,
+                          324.508801,
+                          510.97836,
+                          333.499801
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 6442,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "6,442",
+                        "bbox": [
+                          488.47836,
+                          259.693851,
+                          510.97836,
+                          268.684851
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 1669,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "法人税等合計",
+                        "raw": "1,669",
+                        "bbox": [
+                          488.47836,
+                          298.101321,
+                          510.97836,
+                          307.092321
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 2106,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "2,106",
+                        "bbox": [
+                          488.47836,
+                          272.897591,
+                          510.97836,
+                          281.888591
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -437,
+                      "pdfCell": {
+                        "pdfPage": 63,
+                        "label": "法人税等調整額",
+                        "raw": "△437",
+                        "bbox": [
+                          488.47836,
+                          285.351321,
+                          510.97836,
+                          294.342321
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    72,
+                    87,
+                    88
+                  ],
+                  "reportedIncomeTaxes": 1669,
+                  "reportedDeferredIncomeTaxes": -437,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed",
+                  "identifiedTaxRateChange": {
+                    "pdfPage": 88,
+                    "sourceQuote": "                                                       EDINET提出書類\n                                                    株式会社淺沼組(E00120)\n                                                        有価証券報告書\n３.法人税等の税率の変更による繰延税金資産及び繰延税金負債の金額の修正\n   「所得税法等の一部を改正する法律」（令和７年法律第13号）が2025年３月31日に国会で成立したことに伴い、\n 2026年４月１日以後開始する連結会計年度より、「防衛特別法人税」の課税が行われることになりました。\n   これに伴い、2026年４月１日に開始する連結会計年度以降に解消が見込まれる一時差異に係る繰延税金資産及び繰\n 延税金負債については、法定実効税率を30.4％から31.4％に変更し計算しております。\n   この変更により、当連結会計年度の繰延税金資産の金額（繰延税金負債の金額を控除した金額）は２百万円増加\n し、法人税等調整額が31百万円減少しております。\n\n\n\n\n                            88/126\n",
+                    "deferredIncomeTaxDecreaseMillion": 31,
+                    "parentAttributableAmountEffect": "not separately quantified;do not add/subtract31"
+                  }
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            },
+            {
+              "timeCode": "2025-04-01/2026-03-31",
+              "timeLabel": "2025-04-01 ～ 2026-03-31",
+              "periodStart": "2025-04-01",
+              "periodEnd": "2026-03-31",
+              "numericValue": 5210,
+              "status": "confirmed_value",
+              "implicitNumericZero": false,
+              "factId": "023b19ac3e7a3a123c464734197adba4a54f8a0e38ce1792cc19ca5e883787a6",
+              "evidenceId": "052398e4cab64d8cc5b4273fc54c0bbff3bef661e3642f6adaee0f10c4eddb90",
+              "eligibility": {
+                "automaticComparisonAllowed": true,
+                "automaticAggregationAllowed": false
+              },
+              "comparisonPolicyGroup": "g2025",
+              "provenance": {
+                "sourceUrl": null,
+                "sourceDocumentId": "S100YD5O",
+                "documentTitle": "淺沼組 有価証券報告書（2026年3月期）",
+                "sourceLinkStatus": "saved_document_identified_individual_url_unconfirmed",
+                "sourceFileSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+                "documentVersionSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+                "pdfPage": 64,
+                "sourceQuote": "                                                                     EDINET提出書類\n                                                                  株式会社淺沼組(E00120)\n                                                                      有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                        （単位：百万円）\n                            前連結会計年度                  当連結会計年度\n                          (自 2024年４月１日             (自 2025年４月１日\n                           至 2025年３月31日)            至 2026年３月31日)\n売上高\n 完成工事高                                   163,661               171,518\n その他の事業売上高                                 3,344                 3,776\n当期純利益                         4,773                 5,210",
+                "sourceQuoteKind": "verbatim_saved_pdf_text_selection",
+                "sourceLocator": {
+                  "pdf_page": 64,
+                  "statement_header_pdf_page": 63,
+                  "value_bbox": [
+                    488.47836,
+                    311.305061,
+                    510.97836,
+                    320.296061
+                  ]
+                },
+                "comparisonVerificationId": "asanuma-total-profit-2015-2025-candidate-20261023",
+                "definitionChangeStatus": "reviewed_consistent_within_policy_group",
+                "definitionReviewQuote": "日本基準・連結損益計算書の当期純利益。親会社株主帰属額と非支配株主帰属損益を含む総額で、単体純利益や親会社帰属のみと区別。",
+                "accountingStandard": "JGAAP",
+                "retrievedAt": null,
+                "currentOfficialVersionMatchStatus": "unconfirmed",
+                "comparisonLimitations": [
+                  "連結損益計算書の当期純利益（ProfitLoss）の直接報告値。親会社株主に帰属する額と非支配株主に帰属する損益の両方を含み、親会社帰属額や単体当期純利益と区別。構成要素を足して生成せず、当期純利益行を直接照合する。",
+                  "2015〜2025年度の当年PDF/XBRL/既存参考値が一致し、2015〜2024は翌年同concept前年欄も一致。保存版間に訂正差なし。最新公式版・以後訂正・個別公式URLは未確認。",
+                  "2018年度は連結当期純利益4,168、親会社帰属4,178、非支配株主損失△10百万円。損失符号を反転せず、期末の非支配株主持分残高を期中利益として加減しない。",
+                  "親会社帰属額＋非支配株主帰属額と当期純利益の百万円表示値に1百万円差が出る年度は両値と差を保持。元円額・端数処理方法・訂正額を断定せず、報告値を足算や税調整で置換しない。",
+                  "2024年度の連結当期純利益4,773百万円には連結税効果注記88頁の税率変更による法人税等調整額31百万円減少を含む。税中立な利益へ調整しない。親会社帰属4,692/非支配81百万円と別に扱い、2022税/OCI基準改正の影響を営業利益の判断からゼロとしない。",
+                  "各年別比較区分を維持。税・取得/子会社構成・短縮決算・会計変更をまたぐ同条件の指数/相関/合算は未許可。"
+                ],
+                "basisPage": 119,
+                "basisQuote": "我が国において一般に公正妥当と認められる企業会計の基準",
+                "consolidationScopePage": 70,
+                "consolidationScopeQuote": "EDINET提出書類\n                                                                                      株式会社淺沼組(E00120)\n                                                                                          有価証券報告書\n  【注記事項】\n    (連結財務諸表作成のための基本となる重要な事項)\n１．連結の範囲に関する事項\n  (1) 連結子会社数 6社\n      連結子会社名\n       淺沼建物㈱\n       SINGAPORE PAINTS & CONTRACTOR PTE. LTD.\n       EVERGREEN ENGINEERING & CONSTRUCTION PTE. LTD.\n       宇都宮郷の森斎場㈱\n       桜井給食ファシリティーズ㈱\n       小田原斎場ＰＦＩ㈱\n\n\n  (2) 非連結子会社名\n       ASANUMA CONSTRUCTION LTD., INTERNATIONAL\n       THAI ASANUMA HOLDINGS CO., LTD.\n       THAI ASANUMA CONSTRUCTION CO., LTD.\n\n\n     非連結子会社は、小規模会社であり、総資産、売上高、当期純損益(持分に見合う額)及び利益剰余金(持分に見\n    合う額)等は、いずれも連結財務諸表に重要な影響を及ぼしていないため、連結の範囲から除外しております。",
+                "subsidiaryFiscalPeriodPage": 70,
+                "subsidiaryFiscalPeriodQuote": "連結子会社のうち、SINGAPORE PAINTS & CONTRACTOR PTE. LTD.及びEVERGREEN ENGINEERING & CONSTRUCTION PTE.\n  LTD.の決算日は12月31日であり、連結財務諸表の作成にあたっては、決算日の差異が３ヶ月を超えないため、同日現\n  在の財務諸表を使用しております。\n    いずれの会社も連結決算日との間に重要な取引が生じた場合は、連結上必要な調整を行っております。\n\n\n\n\n                                                   70/126",
+                "metricNativeEvidence": {
+                  "nativeConcept": "jppfs_cor:ProfitLoss",
+                  "context": "CurrentYearDuration",
+                  "unit": "JPY",
+                  "scale": 6,
+                  "rawSourceValue": "5,210",
+                  "nextPriorVerified": false
+                },
+                "sourceUnit": "百万円",
+                "sourceNumericValue": 5210,
+                "unitConversionFactor": 1,
+                "profitAttributionReview": {
+                  "state": "reported_total_profit_directly_verified",
+                  "parentConcept": "jppfs_cor:ProfitLossAttributableToOwnersOfParent",
+                  "totalProfitConcept": "jppfs_cor:ProfitLoss",
+                  "nonControllingConcept": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+                  "parentReportedAmount": 5181,
+                  "totalProfitReportedAmount": 5210,
+                  "nonControllingReportedAmount": 28,
+                  "displayedTotalMinusNciMinusParent": 1,
+                  "sourceCells": {
+                    "jppfs_cor:ProfitLoss": {
+                      "value": 5210,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "当期純利益",
+                        "raw": "5,210",
+                        "bbox": [
+                          488.47836,
+                          311.305061,
+                          510.97836,
+                          320.296061
+                        ]
+                      }
+                    },
+                    "jppfs_cor:ProfitLossAttributableToNonControllingInterests": {
+                      "value": 28,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "非支配株主に帰属する当期純利益",
+                        "raw": "28",
+                        "bbox": [
+                          501.97836,
+                          324.508801,
+                          510.97836,
+                          333.499801
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeBeforeIncomeTaxes": {
+                      "value": 7112,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "税金等調整前当期純利益",
+                        "raw": "7,112",
+                        "bbox": [
+                          488.47836,
+                          259.693851,
+                          510.97836,
+                          268.684851
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxes": {
+                      "value": 1902,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "法人税等合計",
+                        "raw": "1,902",
+                        "bbox": [
+                          488.47836,
+                          298.101321,
+                          510.97836,
+                          307.092321
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesCurrent": {
+                      "value": 2573,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "法人税、住民税及び事業税",
+                        "raw": "2,573",
+                        "bbox": [
+                          488.47836,
+                          272.897591,
+                          510.97836,
+                          281.888591
+                        ]
+                      }
+                    },
+                    "jppfs_cor:IncomeTaxesDeferred": {
+                      "value": -670,
+                      "pdfCell": {
+                        "pdfPage": 64,
+                        "label": "法人税等調整額",
+                        "raw": "△670",
+                        "bbox": [
+                          488.47836,
+                          285.351321,
+                          510.97836,
+                          294.342321
+                        ]
+                      }
+                    }
+                  },
+                  "parentAmountGeneratedFromComponents": false,
+                  "precisionNote": "報告値は百万円表示。表示数値間の差を保持し、元円額・端数処理の方法・訂正額と断定せず親会社帰属額を再計算しない。",
+                  "totalProfitAmountGeneratedFromComponents": false
+                },
+                "taxReview": {
+                  "scope": "consolidated financial section",
+                  "sourcePages": [
+                    73,
+                    90
+                  ],
+                  "reportedIncomeTaxes": 1902,
+                  "reportedDeferredIncomeTaxes": -670,
+                  "operatingIncomeNoEffectJudgmentInherited": false,
+                  "taxNeutralParentAmountGenerated": false,
+                  "sameConditionAcrossYears": "unconfirmed"
+                }
+              },
+              "recordKind": "reviewed_source_observation_not_canonical_fact"
+            }
+          ],
+          "canonicalFreshness": "not_checked",
+          "accountingStandard": "JGAAP"
+        },
+        "snapshotHash": "2eac4c26b949be816f595d89e5603dd09b347ed07e010ae4352701ed3e19ecd2"
       }
     ],
     "mappings": [
@@ -47312,6 +49475,28 @@
         "companyId": "ASANUMA",
         "legacyMetricId": "profit_attributable_owners_parent",
         "reviewedSeriesId": "ASANUMA:profit_attributable_owners_parent@FY2015_FY2025_OWNERS_PARENT_REPORTED",
+        "fiscalYears": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "unit": "百万円",
+        "scope": "consolidated",
+        "periodKind": "annual_flow",
+        "accountingStandard": "JGAAP"
+      },
+      {
+        "companyId": "ASANUMA",
+        "legacyMetricId": "profit_consolidated",
+        "reviewedSeriesId": "ASANUMA:profit_consolidated@FY2015_FY2025_TOTAL_PROFIT_REPORTED",
         "fiscalYears": [
           2015,
           2016,
@@ -56268,5 +58453,5 @@
       }
     ]
   },
-  "snapshotHash": "5403fe586792f062bb1f9c2fd0f73ba2c8572f6140539a17f055277663e176ee"
+  "snapshotHash": "810a27e059c74d9fd72d2f87b2604f63c9938a4c445b584a1dbc89184f26089d"
 }
