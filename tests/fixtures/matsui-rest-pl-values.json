@@ -1,0 +1,2416 @@
+[
+  {
+    "metricId": "comprehensive_income_consolidated",
+    "name": "包括利益（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      2573.262,
+      4963.372,
+      4237.803,
+      2953.562,
+      1591.792,
+      4166.531,
+      1713.0,
+      2179.0,
+      4606.0,
+      4030.0,
+      8435.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sourceSection": "連結経営指標等の推移・包括利益",
+        "yearAxis": {
+          "raw": "2023年３月",
+          "bbox": [
+            280.25,
+            175.247081,
+            325.25,
+            184.238081
+          ]
+        }
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sourceSection": "連結経営指標等の推移・包括利益",
+        "yearAxis": {
+          "raw": "2024年３月",
+          "bbox": [
+            342.25,
+            175.247081,
+            387.25,
+            184.238081
+          ]
+        }
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 40,
+        "bbox": [
+          346.2,
+          173.180881,
+          386.7,
+          182.171881
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2573262.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 40,
+        "bbox": [
+          471.4,
+          173.180881,
+          511.9,
+          182.171881
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 4963372.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 44,
+        "bbox": [
+          338.25001,
+          167.407751,
+          378.75001,
+          176.398751
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 4237803.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 44,
+        "bbox": [
+          463.45001,
+          167.407751,
+          503.95001,
+          176.398751
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2953562.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 44,
+        "bbox": [
+          463.45001,
+          167.407751,
+          503.95001,
+          176.398751
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 1591792.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 44,
+        "bbox": [
+          463.45001,
+          167.407751,
+          503.95001,
+          176.398751
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 4166531.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 44,
+        "bbox": [
+          481.45001,
+          167.407751,
+          503.95001,
+          176.398751
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 1713.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書（連結経営指標等の推移）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 2,
+        "bbox": [
+          306.375,
+          271.450821,
+          328.875,
+          280.441821
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report_consolidated5year_summary",
+        "sourceUnit": "百万円",
+        "raw": 2179.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書（連結経営指標等の推移）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 2,
+        "bbox": [
+          368.375,
+          271.450821,
+          390.875,
+          280.441821
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report_consolidated5year_summary",
+        "sourceUnit": "百万円",
+        "raw": 4606.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 56,
+        "bbox": [
+          356.25001,
+          167.407751,
+          378.75001,
+          176.398751
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 4030.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 56,
+        "bbox": [
+          481.45001,
+          167.407751,
+          503.95001,
+          176.398751
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 8435.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "extraordinary_income_consolidated",
+    "name": "特別利益合計（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 9,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      731.158,
+      360.0,
+      183.8,
+      129.016,
+      130.0,
+      295.0,
+      951.0,
+      233.0,
+      368.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "metricId": "extraordinary_income_consolidated",
+        "fiscalYear": 2015,
+        "status": "checked_consolidated_PL_has_no_separate_extraordinary_income_line",
+        "rawNumericValue": null,
+        "zeroGenerated": false,
+        "notCompanywideNondisclosureClaim": true,
+        "originalSourceDocumentId": "S1007VJH",
+        "originalSourceSha256": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "originalPDFPage": 37,
+        "sourceQuote": "                                                                              EDINET提出書類\n                                                                          松井建設株式会社(E00064)\n                                                                               有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：千円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成26年４月１日                   (自 平成27年４月１日\n                           至 平成27年３月31日)                  至 平成28年３月31日)\n売上高\n  完成工事高                                  83,239,803                86,618,039\n  不動産事業等売上高                               1,869,636                 1,340,831\n  売上高合計                                  85,109,440                87,958,870\n売上原価\n  完成工事原価                           ※１    76,541,426          ※１    77,407,871\n  不動産事業等売上原価                                 1,282,372                   761,069\n  売上原価合計                                 77,823,799                78,168,941\n売上総利益\n  完成工事総利益                                    6,698,377                 9,210,167\n  不動産事業等総利益                                    587,263                   579,761\n  売上総利益合計                                    7,285,640                 9,789,928\n販売費及び一般管理費                         ※２        3,652,669        ※２       3,669,021\n営業利益                                         3,632,971                 6,120,907\n営業外収益\n  受取利息                                          32,168                    27,060\n  受取配当金                                        110,823                   156,147\n  匿名組合投資利益                                         733                        −\n  労災保険還付金                                       53,118                    68,327\n  償却債権取立益                                       28,632                        −\n  その他                                           39,849                    53,750\n  営業外収益合計                                      265,326                   305,286\n営業外費用\n  支払利息                                          16,590                    25,731\n  支払手数料                                          7,999                    58,021\n  その他                                            1,697                    11,832\n  営業外費用合計                                       26,288                    95,586\n経常利益                                         3,872,009                 6,330,607\n特別損失\n  訴訟和解金                                         40,988                        −\n  固定資産除却損                                       30,605                    55,187\n  減損損失                                  ※３     113,909            ※３     354,815\n  特別損失合計                                       185,504                   410,002\n税金等調整前当期純利益                                  3,686,505                 5,920,604\n法人税、住民税及び事業税                                 1,409,000                 2,269,200\n法人税等調整額                                         85,883                 △187,018\n法人税等合計                                       1,494,883                 2,082,181\n当期純利益                                        2,191,622                 3,838,422\n親会社株主に帰属する当期純利益                              2,191,622                 3,838,422\n\n\n\n\n                           37/86\n",
+        "officialComparisonSourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "officialComparisonSourceYear": 2016,
+        "officialSelectedPDFPage": 39
+      },
+      "2016": {
+        "metricId": "extraordinary_income_consolidated",
+        "fiscalYear": 2016,
+        "status": "checked_consolidated_PL_has_no_separate_extraordinary_income_line",
+        "rawNumericValue": null,
+        "zeroGenerated": false,
+        "notCompanywideNondisclosureClaim": true,
+        "originalSourceDocumentId": "S100AJWY",
+        "originalSourceSha256": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "originalPDFPage": 39,
+        "sourceQuote": "                                                                           EDINET提出書類\n                                                                       松井建設株式会社(E00064)\n                                                                            有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n  【連結損益計算書】\n                                                                (単位：千円)\n                            前連結会計年度                        当連結会計年度\n                          (自 平成27年４月１日                   (自 平成28年４月１日\n                           至 平成28年３月31日)                  至 平成29年３月31日)\n売上高\n  完成工事高                                  86,618,039                84,658,922\n  不動産事業等売上高                               1,340,831                 4,682,422\n  売上高合計                                  87,958,870                89,341,344\n売上原価\n  完成工事原価                           ※１    77,407,871          ※１    75,697,652\n  不動産事業等売上原価                                   761,069              3,391,414\n  売上原価合計                                 78,168,941                79,089,066\n売上総利益\n  完成工事総利益                                    9,210,167              8,961,270\n  不動産事業等総利益                                    579,761              1,291,008\n  売上総利益合計                                    9,789,928             10,252,278\n販売費及び一般管理費                         ※２        3,669,021        ※２    4,166,565\n営業利益                                         6,120,907              6,085,713\n営業外収益\n  受取利息                                          27,060                 21,411\n  受取配当金                                        156,147                169,396\n  労災保険還付金                                       68,327                 66,563\n  その他                                           53,750                 77,793\n  営業外収益合計                                      305,286                335,163\n営業外費用\n  支払利息                                          25,731                 12,960\n  支払手数料                                         58,021                 16,680\n  その他                                           11,832                  5,124\n  営業外費用合計                                       95,586                 34,765\n経常利益                                         6,330,607              6,386,111\n特別損失\n  固定資産除却損                                       55,187                 32,330\n  減損損失                                  ※３     354,815                     −\n  特別損失合計                                       410,002                 32,330\n税金等調整前当期純利益                                  5,920,604              6,353,781\n法人税、住民税及び事業税                                 2,269,200              1,785,500\n法人税等調整額                                      △187,018                 177,993\n法人税等合計                                       2,082,181              1,963,493\n当期純利益                                        3,838,422              4,390,287\n親会社株主に帰属する当期純利益                              3,838,422              4,390,287\n\n\n\n\n                           39/88\n",
+        "officialComparisonSourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "officialComparisonSourceYear": 2016,
+        "officialSelectedPDFPage": 39
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          347.25001,
+          506.861481,
+          378.75001,
+          515.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 731158.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          506.861481,
+          503.95001,
+          515.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 360000.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          506.861481,
+          503.95001,
+          515.852481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 183800.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          493.361481,
+          503.95001,
+          502.352481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 129016.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          490.45001,
+          493.361481,
+          503.95001,
+          502.352481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 130.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          364.0134,
+          369.487,
+          377.5134,
+          378.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 295.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          478.8696,
+          376.805,
+          499.6596,
+          387.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 951.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          365.25001,
+          506.861481,
+          378.75001,
+          515.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 233.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          490.45001,
+          506.861481,
+          503.95001,
+          515.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 368.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "extraordinary_losses_consolidated",
+    "name": "特別損失合計（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      410.002,
+      32.33,
+      590.212,
+      105.337,
+      286.909,
+      169.591,
+      162.0,
+      432.0,
+      21.0,
+      174.0,
+      172.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          355.2,
+          512.634621,
+          386.7,
+          521.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 410002.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          484.9,
+          512.634621,
+          511.9,
+          521.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 32330.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          347.25001,
+          560.861481,
+          378.75001,
+          569.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 590212.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          560.861481,
+          503.95001,
+          569.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 105337.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          574.361481,
+          503.95001,
+          583.352481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 286909.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          547.361481,
+          503.95001,
+          556.352481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 169591.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          490.45001,
+          560.861481,
+          503.95001,
+          569.852481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 162.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          364.0134,
+          429.487,
+          377.5134,
+          438.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 432.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          485.7996,
+          404.805,
+          499.6596,
+          415.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 21.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          365.25001,
+          587.861481,
+          378.75001,
+          596.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 174.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          490.45001,
+          587.861481,
+          503.95001,
+          596.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 172.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "income_before_taxes_consolidated",
+    "name": "税引前当期純利益（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      5920.604,
+      6353.781,
+      5536.619,
+      5402.35,
+      3718.661,
+      3248.767,
+      2746.0,
+      2565.0,
+      1697.0,
+      3903.0,
+      6426.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          346.2,
+          526.134621,
+          386.7,
+          535.125621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 5920604.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          471.4,
+          526.134621,
+          511.9,
+          535.125621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 6353781.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          338.25001,
+          574.361481,
+          378.75001,
+          583.352481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 5536619.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          574.361481,
+          503.95001,
+          583.352481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 5402350.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          587.861481,
+          503.95001,
+          596.852481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3718661.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          560.861481,
+          503.95001,
+          569.852481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3248767.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          481.45001,
+          574.361481,
+          503.95001,
+          583.352481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 2746.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          355.0134,
+          444.487,
+          377.5134,
+          453.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 2565.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          469.1096,
+          418.805,
+          499.6596,
+          429.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 1697.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          356.25001,
+          601.361481,
+          378.75001,
+          610.352481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 3903.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          481.45001,
+          601.361481,
+          503.95001,
+          610.352481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 6426.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "income_taxes_consolidated",
+    "name": "法人税等合計（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      2082.181,
+      1963.493,
+      1918.957,
+      1706.147,
+      1159.537,
+      996.733,
+      954.0,
+      862.0,
+      535.0,
+      1176.0,
+      2076.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          346.2,
+          566.634621,
+          386.7,
+          575.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2082181.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          471.4,
+          566.634621,
+          511.9,
+          575.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 1963493.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          338.25001,
+          614.861481,
+          378.75001,
+          623.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 1918957.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          614.861481,
+          503.95001,
+          623.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 1706147.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          628.361481,
+          503.95001,
+          637.352481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 1159537.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          472.45001,
+          601.361481,
+          503.95001,
+          610.352481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 996733.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          490.45001,
+          614.861481,
+          503.95001,
+          623.852481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 954.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          364.0134,
+          474.487,
+          377.5134,
+          483.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 862.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          478.8696,
+          446.805,
+          499.6596,
+          457.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 535.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          356.25001,
+          641.861481,
+          378.75001,
+          650.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 1176.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          481.45001,
+          641.861481,
+          503.95001,
+          650.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 2076.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "interest_expenses_consolidated",
+    "name": "支払利息（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      25.731,
+      12.96,
+      10.218,
+      19.048,
+      18.002,
+      33.309,
+      12.0,
+      12.0,
+      16.0,
+      47.0,
+      26.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          359.7,
+          404.634621,
+          386.7,
+          413.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 25731.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          484.9,
+          404.634621,
+          511.9,
+          413.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 12960.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          351.75001,
+          398.861481,
+          378.75001,
+          407.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 10218.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          476.95001,
+          398.861481,
+          503.95001,
+          407.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 19048.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          476.95001,
+          398.861481,
+          503.95001,
+          407.852481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 18002.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          476.95001,
+          398.861481,
+          503.95001,
+          407.852481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 33309.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          494.95001,
+          398.861481,
+          503.95001,
+          407.852481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 12.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          281.5134,
+          295.487,
+          290.5134,
+          304.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 12.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          372.7996,
+          306.805,
+          386.6596,
+          317.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 16.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          369.75001,
+          398.861481,
+          378.75001,
+          407.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 47.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          494.95001,
+          398.861481,
+          503.95001,
+          407.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 26.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "profit_attributable_owners_parent",
+    "name": "親会社株主帰属当期純利益（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      3838.422,
+      4390.287,
+      3617.661,
+      3696.202,
+      2559.123,
+      2252.034,
+      1792.0,
+      1702.0,
+      1161.0,
+      2726.0,
+      4350.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          346.2,
+          593.634621,
+          386.7,
+          602.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3838422.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          471.4,
+          593.634621,
+          511.9,
+          602.625621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 4390287.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          338.25001,
+          641.861481,
+          378.75001,
+          650.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3617661.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          641.861481,
+          503.95001,
+          650.852481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3696202.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          655.361481,
+          503.95001,
+          664.352481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2559123.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          628.361481,
+          503.95001,
+          637.352481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2252034.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          481.45001,
+          641.861481,
+          503.95001,
+          650.852481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 1792.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          355.0134,
+          504.487,
+          377.5134,
+          513.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 1702.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          469.1096,
+          474.805,
+          499.6596,
+          485.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 1161.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          356.25001,
+          668.861481,
+          378.75001,
+          677.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 2726.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          481.45001,
+          668.861481,
+          503.95001,
+          677.852481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 4350.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  },
+  {
+    "metricId": "profit_consolidated",
+    "name": "当期純利益（連結）",
+    "kind": "statement",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "百万円",
+    "values": [
+      3838.422,
+      4390.287,
+      3617.661,
+      3696.202,
+      2559.123,
+      2252.034,
+      1792.0,
+      1702.0,
+      1161.0,
+      2726.0,
+      4350.0
+    ],
+    "targetYearStates": {
+      "2015": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2016": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2017": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2018": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2019": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2020": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2021": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      },
+      "2022": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2023": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf"
+      },
+      "2024": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      },
+      "2025": {
+        "status": "numeric_verified",
+        "officialURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf"
+      }
+    },
+    "sources": [
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          346.2,
+          580.134621,
+          386.7,
+          589.125621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3838422.0,
+        "factor": 0.001,
+        "originalDoc": "S1007VJH",
+        "originalSha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "title": "松井建設 第88期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 39,
+        "bbox": [
+          471.4,
+          580.134621,
+          511.9,
+          589.125621
+        ],
+        "sourceYear": 2016,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 4390287.0,
+        "factor": 0.001,
+        "originalDoc": "S100AJWY",
+        "originalSha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          338.25001,
+          628.361481,
+          378.75001,
+          637.352481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3617661.0,
+        "factor": 0.001,
+        "originalDoc": "S100D9VW",
+        "originalSha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "title": "松井建設 第90期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          628.361481,
+          503.95001,
+          637.352481
+        ],
+        "sourceYear": 2018,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 3696202.0,
+        "factor": 0.001,
+        "originalDoc": "S100G2WM",
+        "originalSha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "title": "松井建設 第91期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          641.861481,
+          503.95001,
+          650.852481
+        ],
+        "sourceYear": 2019,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2559123.0,
+        "factor": 0.001,
+        "originalDoc": "S100IUY0",
+        "originalSha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "title": "松井建設 第92期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 43,
+        "bbox": [
+          463.45001,
+          614.861481,
+          503.95001,
+          623.852481
+        ],
+        "sourceYear": 2020,
+        "type": "annual_securities_report",
+        "sourceUnit": "千円",
+        "raw": 2252034.0,
+        "factor": 0.001,
+        "originalDoc": "S100LT7Y",
+        "originalSha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "title": "松井建設 第93期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 43,
+        "bbox": [
+          481.45001,
+          628.361481,
+          503.95001,
+          637.352481
+        ],
+        "sourceYear": 2021,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 1792.0,
+        "factor": 1,
+        "originalDoc": "S100OH52",
+        "originalSha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2022",
+        "title": "第94期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2023/05/%E7%AC%AC%EF%BC%99%EF%BC%94%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "3014ef7c1e4fb70ef87d114871b334f97205b1fe52294bcd3982957633ddf872",
+        "page": 28,
+        "bbox": [
+          355.0134,
+          489.487,
+          377.5134,
+          498.478
+        ],
+        "sourceYear": 2022,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 1702.0,
+        "factor": 1,
+        "originalDoc": "S100R79M",
+        "originalSha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_AGM_2023",
+        "title": "第95期 定時株主総会招集ご通知（連結計算書類）",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2024/05/9606-%E7%AC%AC95%E6%9C%9F%E5%AE%9A%E6%99%82%E6%A0%AA%E4%B8%BB%E7%B7%8F%E4%BC%9A%E6%8B%9B%E9%9B%86%E3%81%94%E9%80%9A%E7%9F%A5.pdf",
+        "sha": "ee4931b2bccc827899014d79918ed3f754fad1d3d28a0ca315c6dd14ffbacc76",
+        "page": 39,
+        "bbox": [
+          469.1096,
+          460.805,
+          499.6596,
+          471.305
+        ],
+        "sourceYear": 2023,
+        "type": "AGM_consolidated_financial_statements",
+        "sourceUnit": "百万円",
+        "raw": 1161.0,
+        "factor": 1,
+        "originalDoc": "S100TV4B",
+        "originalSha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          356.25001,
+          655.361481,
+          378.75001,
+          664.352481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 2726.0,
+        "factor": 1,
+        "originalDoc": "S100W4NZ",
+        "originalSha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1"
+      },
+      {
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "title": "松井建設 第97期 有価証券報告書",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 55,
+        "bbox": [
+          481.45001,
+          655.361481,
+          503.95001,
+          664.352481
+        ],
+        "sourceYear": 2025,
+        "type": "annual_securities_report",
+        "sourceUnit": "百万円",
+        "raw": 4350.0,
+        "factor": 1,
+        "originalDoc": "S100YHYW",
+        "originalSha": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b"
+      }
+    ]
+  }
+]

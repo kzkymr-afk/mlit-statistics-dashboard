@@ -57,3 +57,7 @@ next-env.d.ts
 /public/data/
 /public/system/
 /public/system.building/
+
+# Generated from the verified compressed financial dataset
+/public/workspace/reviewed-company-comparisons.json
+/public/workspace/reviewed-company-comparisons.json.gz

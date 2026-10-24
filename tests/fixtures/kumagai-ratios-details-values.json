@@ -1,0 +1,4265 @@
+[
+  {
+    "metricId": "dividend_per_share_standalone_reported",
+    "kind": "ratio",
+    "name": "1株当たり配当額（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "円",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      4.0,
+      7.0,
+      90.0,
+      100.0,
+      120.0,
+      120.0,
+      120.0,
+      130.0,
+      130.0,
+      130.0,
+      47.0
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          512.997,
+          312.667,
+          531.06,
+          321.658
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          512.997,
+          312.667,
+          531.06,
+          321.658
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          508.434,
+          305.107,
+          530.934,
+          314.098
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          504.000009,
+          273.667,
+          531.060012,
+          282.658
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          504.0,
+          273.667,
+          531.060003,
+          282.658
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          504.0,
+          273.667,
+          531.060003,
+          282.658
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          282.116569,
+          528.82803,
+          291.075705
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          281.486774,
+          528.82803,
+          290.44591
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          281.486774,
+          528.82803,
+          290.44591
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          281.486774,
+          528.82803,
+          290.44591
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          506.430239,
+          281.486774,
+          528.82808,
+          290.44591
+        ],
+        "concept": "jpcrp_cor:DividendPaidPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "earnings_per_share_consolidated_reported",
+    "kind": "ratio",
+    "name": "EPS（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "円",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      32.35,
+      43.99,
+      389.63,
+      285.48,
+      417.34,
+      384.68,
+      342.13,
+      179.64,
+      192.35,
+      217.72,
+      116.93
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 5,
+        "bbox": [
+          508.446,
+          329.707,
+          530.946,
+          338.698
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 5,
+        "bbox": [
+          508.446,
+          329.707,
+          530.946,
+          338.698
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 5,
+        "bbox": [
+          503.997,
+          316.987,
+          531.06,
+          325.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 5,
+        "bbox": [
+          503.999997,
+          316.987,
+          531.06,
+          325.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 5,
+        "bbox": [
+          503.999997,
+          316.987,
+          531.06,
+          325.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 5,
+        "bbox": [
+          503.999997,
+          316.987,
+          531.06,
+          325.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 5,
+        "bbox": [
+          501.950621,
+          325.418312,
+          528.82803,
+          334.377448
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 5,
+        "bbox": [
+          501.950621,
+          324.788417,
+          528.82803,
+          333.747554
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 5,
+        "bbox": [
+          501.950621,
+          324.788417,
+          528.82803,
+          333.747554
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 5,
+        "bbox": [
+          501.950621,
+          324.788417,
+          528.82803,
+          333.747554
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 5,
+        "bbox": [
+          501.950621,
+          324.788417,
+          528.82803,
+          333.747554
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      }
+    ]
+  },
+  {
+    "metricId": "earnings_per_share_standalone_reported",
+    "kind": "ratio",
+    "name": "EPS（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "円",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      27.73,
+      37.33,
+      316.72,
+      302.88,
+      317.37,
+      322.2,
+      295.71,
+      157.25,
+      122.51,
+      144.67,
+      105.42
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          508.446,
+          401.347,
+          530.946,
+          410.338
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          508.446,
+          401.347,
+          530.946,
+          410.338
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          503.997,
+          390.067,
+          531.06,
+          399.058
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          503.999997,
+          313.987,
+          531.06,
+          322.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          503.999997,
+          313.987,
+          531.06,
+          322.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          503.999997,
+          313.987,
+          531.06,
+          322.978
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          322.432033,
+          528.82803,
+          331.391169
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          321.802138,
+          528.82803,
+          330.761275
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          321.802138,
+          528.82803,
+          330.761275
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          321.802138,
+          528.82803,
+          330.761275
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          321.802138,
+          528.82803,
+          330.761275
+        ],
+        "concept": "jpcrp_cor:BasicEarningsLossPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "equity_ratio_consolidated",
+    "kind": "ratio",
+    "name": "自己資本比率（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      25.4,
+      29.5,
+      37.9,
+      38.1,
+      39.5,
+      43.2,
+      45.6,
+      45.1,
+      38.5,
+      39.3,
+      41.8
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 5,
+        "bbox": [
+          513.0,
+          381.547,
+          531.063,
+          390.538
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 5,
+        "bbox": [
+          513.0,
+          381.547,
+          531.063,
+          390.538
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 5,
+        "bbox": [
+          513.0,
+          364.987,
+          531.063,
+          373.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 5,
+        "bbox": [
+          513.0,
+          364.987,
+          531.060003,
+          373.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 5,
+        "bbox": [
+          513.0,
+          364.987,
+          531.060003,
+          373.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 5,
+        "bbox": [
+          513.0,
+          364.987,
+          531.060003,
+          373.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          373.199573,
+          528.82813,
+          382.15871
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          372.569679,
+          528.82813,
+          381.528815
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          372.569679,
+          528.82813,
+          381.528815
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          372.569679,
+          528.82813,
+          381.528815
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          372.569679,
+          528.82813,
+          381.528815
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      }
+    ]
+  },
+  {
+    "metricId": "equity_ratio_standalone",
+    "kind": "ratio",
+    "name": "自己資本比率（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      21.0,
+      25.7,
+      35.9,
+      37.3,
+      37.5,
+      41.5,
+      44.0,
+      43.7,
+      36.4,
+      36.2,
+      38.5
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          513.0,
+          453.067,
+          531.063,
+          462.058
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          513.0,
+          453.067,
+          531.063,
+          462.058
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          513.0,
+          438.067,
+          531.063,
+          447.058
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          513.0,
+          361.987,
+          531.060003,
+          370.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          513.0,
+          361.987,
+          531.060003,
+          370.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          513.0,
+          361.987,
+          531.060003,
+          370.978
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          370.213294,
+          528.82813,
+          379.172431
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          369.5833,
+          528.82813,
+          378.542436
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          369.5833,
+          528.82813,
+          378.542436
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          369.5833,
+          528.82813,
+          378.542436
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          369.5833,
+          528.82813,
+          378.542436
+        ],
+        "concept": "jpcrp_cor:EquityToAssetRatioSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "net_assets_per_share_consolidated_reported",
+    "kind": "ratio",
+    "name": "1株当たり純資産（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "円",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      173.76,
+      215.03,
+      2707.51,
+      2894.41,
+      3177.22,
+      3516.06,
+      3751.08,
+      3894.1,
+      4185.54,
+      4236.31,
+      1105.63
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 5,
+        "bbox": [
+          504.0,
+          305.707,
+          531.063,
+          314.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 5,
+        "bbox": [
+          504.0,
+          305.707,
+          531.063,
+          314.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 5,
+        "bbox": [
+          495.0,
+          296.707,
+          531.063,
+          305.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 5,
+        "bbox": [
+          495.0,
+          296.707,
+          531.060003,
+          305.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 5,
+        "bbox": [
+          495.0,
+          296.707,
+          531.060003,
+          305.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 5,
+        "bbox": [
+          495.0,
+          296.707,
+          531.060003,
+          305.698
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 5,
+        "bbox": [
+          492.991384,
+          305.260779,
+          528.827931,
+          314.219916
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 5,
+        "bbox": [
+          492.991384,
+          304.630785,
+          528.827931,
+          313.589921
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 5,
+        "bbox": [
+          492.991384,
+          304.630785,
+          528.827931,
+          313.589921
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 5,
+        "bbox": [
+          492.991384,
+          304.630785,
+          528.827931,
+          313.589921
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 5,
+        "bbox": [
+          492.991384,
+          304.630785,
+          528.827931,
+          313.589921
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant"
+      }
+    ]
+  },
+  {
+    "metricId": "net_assets_per_share_standalone_reported",
+    "kind": "ratio",
+    "name": "1株当たり純資産（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "円",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      118.29,
+      153.08,
+      2146.9,
+      2354.39,
+      2536.07,
+      2811.31,
+      2956.55,
+      3042.87,
+      3237.08,
+      3204.57,
+      825.58
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          504.009,
+          281.827,
+          531.072,
+          290.818
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          504.0,
+          281.827,
+          531.063,
+          290.818
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          495.0,
+          274.387,
+          531.063,
+          283.378
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          495.0,
+          253.267,
+          531.060003,
+          262.258
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          495.0,
+          253.267,
+          531.060003,
+          262.258
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          495.0,
+          253.267,
+          531.060003,
+          262.258
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          492.991384,
+          261.958836,
+          528.827931,
+          270.917973
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          492.991384,
+          261.328942,
+          528.827931,
+          270.288078
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          492.991384,
+          261.328942,
+          528.827931,
+          270.288078
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          492.991384,
+          261.328942,
+          528.827931,
+          270.288078
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          501.950621,
+          261.328942,
+          528.82803,
+          270.288078
+        ],
+        "concept": "jpcrp_cor:NetAssetsPerShareSummaryOfBusinessResults",
+        "context": "CurrentYearInstant_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "payout_ratio_standalone_reported",
+    "kind": "ratio",
+    "name": "配当性向（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      14.4,
+      18.7,
+      28.4,
+      33.0,
+      37.8,
+      37.2,
+      40.6,
+      82.7,
+      106.1,
+      89.9,
+      44.6
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          512.997,
+          513.787,
+          531.06,
+          522.778
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          512.997,
+          513.787,
+          531.06,
+          522.778
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          512.997,
+          498.907,
+          531.06,
+          507.898
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          513.0,
+          422.707,
+          531.060003,
+          431.698
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          513.0,
+          422.707,
+          531.060003,
+          431.698
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          513.0,
+          422.707,
+          531.060003,
+          431.698
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          430.686391,
+          528.82813,
+          439.645528
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          430.056496,
+          528.82813,
+          439.015633
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          506.430239,
+          430.056496,
+          528.82808,
+          439.015633
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          430.056496,
+          528.82813,
+          439.015633
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          430.056496,
+          528.82813,
+          439.015633
+        ],
+        "concept": "jpcrp_cor:PayoutRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "price_earnings_ratio_consolidated_reported",
+    "kind": "ratio",
+    "name": "PER（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "倍",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      8.8,
+      6.6,
+      8.8,
+      12.1,
+      6.0,
+      7.8,
+      7.9,
+      14.8,
+      21.7,
+      18.5,
+      13.1
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 5,
+        "bbox": [
+          517.44,
+          421.987,
+          530.94,
+          430.978
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 5,
+        "bbox": [
+          517.44,
+          421.987,
+          530.94,
+          430.978
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 5,
+        "bbox": [
+          517.44,
+          405.547,
+          530.94,
+          414.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 5,
+        "bbox": [
+          513.000003,
+          405.547,
+          531.060006,
+          414.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 5,
+        "bbox": [
+          517.44,
+          405.547,
+          530.94,
+          414.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 5,
+        "bbox": [
+          517.44,
+          405.547,
+          530.94,
+          414.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 5,
+        "bbox": [
+          515.389475,
+          413.514938,
+          528.82818,
+          422.474074
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          412.885043,
+          528.82813,
+          421.844179
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          412.885043,
+          528.82813,
+          421.844179
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          412.885043,
+          528.82813,
+          421.844179
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          412.885043,
+          528.82813,
+          421.844179
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      }
+    ]
+  },
+  {
+    "metricId": "price_earnings_ratio_standalone_reported",
+    "kind": "ratio",
+    "name": "PER（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "倍",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      10.3,
+      7.8,
+      10.8,
+      11.4,
+      7.9,
+      9.3,
+      9.2,
+      16.9,
+      34.1,
+      27.9,
+      14.5
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          512.997,
+          493.627,
+          531.06,
+          502.618
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          517.44,
+          493.627,
+          530.94,
+          502.618
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          513.003,
+          478.627,
+          531.066,
+          487.618
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          512.999994,
+          402.547,
+          531.059997,
+          411.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          517.44,
+          402.547,
+          530.94,
+          411.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          517.44,
+          402.547,
+          530.94,
+          411.538
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          515.389475,
+          410.528659,
+          528.82818,
+          419.487795
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          409.898764,
+          528.82813,
+          418.857901
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          409.898764,
+          528.82813,
+          418.857901
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          409.898764,
+          528.82813,
+          418.857901
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          409.898764,
+          528.82813,
+          418.857901
+        ],
+        "concept": "jpcrp_cor:PriceEarningsRatioSummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "roe",
+    "kind": "ratio",
+    "name": "ROE（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      20.4,
+      22.6,
+      15.3,
+      10.2,
+      13.7,
+      11.5,
+      9.5,
+      4.7,
+      4.8,
+      5.2,
+      10.9
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 5,
+        "bbox": [
+          512.994,
+          401.707,
+          531.057,
+          410.698
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 5,
+        "bbox": [
+          512.994,
+          401.707,
+          531.057,
+          410.698
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 5,
+        "bbox": [
+          513.0,
+          385.267,
+          531.063,
+          394.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 5,
+        "bbox": [
+          513.0,
+          385.267,
+          531.060003,
+          394.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 5,
+        "bbox": [
+          513.0,
+          385.267,
+          531.060003,
+          394.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 5,
+        "bbox": [
+          513.0,
+          385.267,
+          531.060003,
+          394.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 5,
+        "bbox": [
+          515.389475,
+          393.357306,
+          528.82818,
+          402.316442
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 5,
+        "bbox": [
+          515.389475,
+          392.727411,
+          528.82818,
+          401.686547
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 5,
+        "bbox": [
+          515.389475,
+          392.727411,
+          528.82818,
+          401.686547
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 5,
+        "bbox": [
+          515.389475,
+          392.727411,
+          528.82818,
+          401.686547
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 5,
+        "bbox": [
+          510.909857,
+          392.727411,
+          528.82813,
+          401.686547
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration"
+      }
+    ]
+  },
+  {
+    "metricId": "roe_standalone_reported",
+    "kind": "ratio",
+    "name": "ROE（会社開示・単体）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      26.2,
+      27.5,
+      16.3,
+      13.5,
+      13.0,
+      12.1,
+      10.4,
+      5.2,
+      3.9,
+      4.5,
+      13.0
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 6,
+        "bbox": [
+          513.0,
+          473.347,
+          531.063,
+          482.338
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 6,
+        "bbox": [
+          513.0,
+          473.347,
+          531.063,
+          482.338
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 6,
+        "bbox": [
+          513.0,
+          458.347,
+          531.063,
+          467.338
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 6,
+        "bbox": [
+          513.0,
+          382.267,
+          531.060003,
+          391.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 6,
+        "bbox": [
+          513.0,
+          382.267,
+          531.060003,
+          391.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 6,
+        "bbox": [
+          513.0,
+          382.267,
+          531.060003,
+          391.258
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          390.370927,
+          528.82813,
+          399.330063
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 6,
+        "bbox": [
+          515.389475,
+          389.741032,
+          528.82818,
+          398.700168
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 6,
+        "bbox": [
+          515.389475,
+          389.741032,
+          528.82818,
+          398.700168
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 6,
+        "bbox": [
+          515.389475,
+          389.741032,
+          528.82818,
+          398.700168
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 6,
+        "bbox": [
+          510.909857,
+          389.741032,
+          528.82813,
+          398.700168
+        ],
+        "concept": "jpcrp_cor:RateOfReturnOnEquitySummaryOfBusinessResults",
+        "context": "CurrentYearDuration_NonConsolidatedMember"
+      }
+    ]
+  },
+  {
+    "metricId": "reported_orders_negotiated_ratio_civil_standalone",
+    "kind": "ratio",
+    "name": "土木受注 特命比率（会社開示・単体・請負金額比）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      38.7,
+      25.7,
+      24.1,
+      24.4,
+      32.6,
+      20.6,
+      14.0,
+      18.2,
+      18.4,
+      28.7,
+      34.8
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          334.44,
+          536.107,
+          352.377,
+          545.098
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          334.44,
+          531.187,
+          352.377,
+          540.178
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          334.44,
+          528.907,
+          352.377,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          334.44,
+          528.907,
+          352.379997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          334.44,
+          528.907,
+          352.379997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          334.44,
+          528.907,
+          352.379997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          333.215367,
+          564.576158,
+          351.133641,
+          573.535294
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          333.215367,
+          562.950903,
+          351.133641,
+          571.91004
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          333.215367,
+          536.073894,
+          351.133641,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          333.215367,
+          536.073894,
+          351.133641,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          333.215367,
+          536.073894,
+          351.133641,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      }
+    ]
+  },
+  {
+    "metricId": "reported_orders_competitive_ratio_civil_standalone",
+    "kind": "ratio",
+    "name": "土木受注 競争比率（会社開示・単体・請負金額比）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      61.3,
+      74.3,
+      75.9,
+      75.6,
+      67.4,
+      79.4,
+      86.0,
+      81.8,
+      81.6,
+      71.3,
+      65.2
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          423.72,
+          536.107,
+          441.657,
+          545.098
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          423.72,
+          531.187,
+          441.657,
+          540.178
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          423.72,
+          528.907,
+          441.657,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          423.72,
+          528.907,
+          441.659997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          423.72,
+          528.907,
+          441.659997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          423.72,
+          528.907,
+          441.659997,
+          537.898
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          422.061113,
+          564.576158,
+          439.979387,
+          573.535294
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          422.061113,
+          562.950903,
+          439.979387,
+          571.91004
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          422.061113,
+          536.073894,
+          439.979387,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          422.061113,
+          536.073894,
+          439.979387,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          422.061113,
+          536.073894,
+          439.979387,
+          545.03303
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      }
+    ]
+  },
+  {
+    "metricId": "reported_orders_negotiated_ratio_building_standalone",
+    "kind": "ratio",
+    "name": "建築受注 特命比率（会社開示・単体・請負金額比）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      35.7,
+      38.9,
+      38.0,
+      19.0,
+      23.7,
+      45.6,
+      33.0,
+      28.4,
+      12.7,
+      48.6,
+      48.6
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          334.44,
+          556.027,
+          352.377,
+          565.018
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          334.44,
+          550.987,
+          352.377,
+          559.978
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          334.44,
+          548.827,
+          352.377,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          334.44,
+          548.827,
+          352.379997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          334.44,
+          548.827,
+          352.379997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          334.44,
+          548.827,
+          352.379997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          333.215367,
+          584.36063,
+          351.133641,
+          593.319766
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          333.215367,
+          582.735276,
+          351.133641,
+          591.694412
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          333.215367,
+          555.858366,
+          351.133641,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          333.215367,
+          555.858366,
+          351.133641,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          333.215367,
+          555.858366,
+          351.133641,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      }
+    ]
+  },
+  {
+    "metricId": "reported_orders_competitive_ratio_building_standalone",
+    "kind": "ratio",
+    "name": "建築受注 競争比率（会社開示・単体・請負金額比）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      64.3,
+      61.1,
+      62.0,
+      81.0,
+      76.3,
+      54.4,
+      67.0,
+      71.6,
+      87.3,
+      51.4,
+      51.4
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          423.72,
+          556.027,
+          441.657,
+          565.018
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          423.72,
+          550.987,
+          441.657,
+          559.978
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          423.72,
+          548.827,
+          441.657,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          423.72,
+          548.827,
+          441.659997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          423.72,
+          548.827,
+          441.659997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          423.72,
+          548.827,
+          441.659997,
+          557.818
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          422.061113,
+          584.36063,
+          439.979387,
+          593.319766
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          422.061113,
+          582.735276,
+          439.979387,
+          591.694412
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          422.061113,
+          555.858366,
+          439.979387,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          422.061113,
+          555.858366,
+          439.979387,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          422.061113,
+          555.858366,
+          439.979387,
+          564.817502
+        ],
+        "concept": "issuer_ASR:OrderMethodRatio",
+        "context": "IssuerStandaloneAnnualOrderValueRatio"
+      }
+    ]
+  },
+  {
+    "metricId": "debt_equity_ratio_consolidated_reported",
+    "kind": "ratio",
+    "name": "D/Eレシオ（会社開示・連結・有利子負債÷自己資本）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "倍",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      0.27,
+      0.19,
+      0.11,
+      0.1,
+      0.08,
+      0.07,
+      0.07,
+      0.13,
+      0.29,
+      0.23,
+      0.26
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 19,
+        "bbox": [
+          319.601958,
+          172.352533,
+          343.368536,
+          185.808292
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 19,
+        "bbox": [
+          393.147764,
+          172.352533,
+          416.914342,
+          185.808292
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 19,
+        "bbox": [
+          466.717449,
+          172.352533,
+          490.484027,
+          185.808292
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 19,
+        "bbox": [
+          540.33,
+          199.635911,
+          564.07,
+          213.009124
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 19,
+        "bbox": [
+          457.980767,
+          173.309986,
+          481.755201,
+          186.773706
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 20,
+        "bbox": [
+          457.980767,
+          173.309986,
+          481.755201,
+          186.773706
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 20,
+        "bbox": [
+          457.980767,
+          173.309986,
+          481.755201,
+          186.773706
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 21,
+        "bbox": [
+          514.155253,
+          184.542165,
+          537.926131,
+          197.986226
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 22,
+        "bbox": [
+          514.275253,
+          184.572089,
+          538.044161,
+          198.050287
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 23,
+        "bbox": [
+          511.916224,
+          183.572639,
+          534.167537,
+          196.466592
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 23,
+        "bbox": [
+          495.116224,
+          183.572639,
+          517.367537,
+          196.466592
+        ],
+        "concept": "issuer_presentation:DebtEquityRatio",
+        "context": "IssuerConsolidatedDebtEquityRatioAtFiscalEnd"
+      }
+    ]
+  },
+  {
+    "metricId": "employees_civil_consolidated_reported",
+    "kind": "people",
+    "name": "土木事業 / 就業人員（連結セグメント原区分）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "人",
+    "measureKind": "stock",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      761,
+      787,
+      797,
+      822,
+      867,
+      887,
+      898,
+      895,
+      892,
+      919,
+      949
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 10,
+        "bbox": [
+          452.64,
+          120.547,
+          466.14,
+          129.538
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 10,
+        "bbox": [
+          452.64,
+          120.547,
+          466.14,
+          129.538
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 10,
+        "bbox": [
+          452.64,
+          120.547,
+          466.14,
+          129.538
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 10,
+        "bbox": [
+          452.28,
+          119.107,
+          465.78,
+          128.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 10,
+        "bbox": [
+          452.28,
+          119.107,
+          465.78,
+          128.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 10,
+        "bbox": [
+          452.28,
+          119.107,
+          465.78,
+          128.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          128.445028,
+          463.497407,
+          137.404164
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          127.815133,
+          463.497407,
+          136.77427
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          127.815133,
+          463.497407,
+          136.77427
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          127.815133,
+          463.497407,
+          136.77427
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 97,
+        "bbox": [
+          450.058703,
+          436.900194,
+          463.497407,
+          445.85933
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000CivilEngineeringWorksReportableSegmentsMember"
+      }
+    ]
+  },
+  {
+    "metricId": "employees_building_consolidated_reported",
+    "kind": "people",
+    "name": "建築事業 / 就業人員（連結セグメント原区分）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "人",
+    "measureKind": "stock",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      1122,
+      1172,
+      1191,
+      1257,
+      1268,
+      1283,
+      1268,
+      1272,
+      1279,
+      1296,
+      1256
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 10,
+        "bbox": [
+          443.64,
+          140.707,
+          466.14,
+          149.698
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 10,
+        "bbox": [
+          443.64,
+          140.707,
+          466.14,
+          149.698
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 10,
+        "bbox": [
+          443.64,
+          140.707,
+          466.14,
+          149.698
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 10,
+        "bbox": [
+          443.28,
+          139.147,
+          465.78,
+          148.138
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 10,
+        "bbox": [
+          443.28,
+          139.147,
+          465.78,
+          148.138
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 10,
+        "bbox": [
+          443.28,
+          139.147,
+          465.78,
+          148.138
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          148.35392,
+          463.497308,
+          157.313057
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          147.724026,
+          463.497308,
+          156.683162
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          147.724026,
+          463.497308,
+          156.683162
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          147.724026,
+          463.497308,
+          156.683162
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 97,
+        "bbox": [
+          441.099466,
+          456.808986,
+          463.497308,
+          465.768122
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000BuildingConstructionWorksReportableSegmentsMember"
+      }
+    ]
+  },
+  {
+    "metricId": "employees_subsidiaries_consolidated_reported",
+    "kind": "people",
+    "name": "子会社 / 就業人員（連結セグメント原区分）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "人",
+    "measureKind": "stock",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      1479,
+      1493,
+      1510,
+      1535,
+      1576,
+      1639,
+      1712,
+      1771,
+      1778,
+      1827,
+      1767
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 10,
+        "bbox": [
+          443.64,
+          160.987,
+          466.14,
+          169.978
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 10,
+        "bbox": [
+          443.64,
+          160.987,
+          466.14,
+          169.978
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 10,
+        "bbox": [
+          443.64,
+          160.987,
+          466.14,
+          169.978
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 10,
+        "bbox": [
+          443.28,
+          159.187,
+          465.78,
+          168.178
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 10,
+        "bbox": [
+          443.28,
+          159.187,
+          465.78,
+          168.178
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 10,
+        "bbox": [
+          443.28,
+          159.187,
+          465.78,
+          168.178
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          168.262813,
+          463.497308,
+          177.221949
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          167.632918,
+          463.497308,
+          176.592054
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          167.632918,
+          463.497308,
+          176.592054
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 10,
+        "bbox": [
+          441.099466,
+          167.632918,
+          463.497308,
+          176.592054
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 97,
+        "bbox": [
+          441.099466,
+          476.717878,
+          463.497308,
+          485.677015
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_jpcrp030000-asr_E00056-000SubsidiariesReportableSegmentsMember"
+      }
+    ]
+  },
+  {
+    "metricId": "employees_corporate_shared_consolidated_reported",
+    "kind": "people",
+    "name": "全社(共通) / 就業人員（連結セグメント原区分）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "人",
+    "measureKind": "stock",
+    "periodBasis": "fiscal_year_end_instant",
+    "values": [
+      340,
+      346,
+      394,
+      418,
+      443,
+      450,
+      460,
+      468,
+      483,
+      494,
+      535
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2015",
+        "title": "第79期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 10,
+        "bbox": [
+          452.64,
+          181.267,
+          466.14,
+          190.258
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2016",
+        "title": "第80期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 10,
+        "bbox": [
+          452.64,
+          181.267,
+          466.14,
+          190.258
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2017",
+        "title": "第81期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 10,
+        "bbox": [
+          452.64,
+          181.267,
+          466.14,
+          190.258
+        ],
+        "concept": "official_pdf_employee_table:ConsolidatedSegmentWorkers",
+        "context": "IssuerConsolidatedSegmentEmployeeTableAtFiscalEnd"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2018",
+        "title": "第82期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 10,
+        "bbox": [
+          452.28,
+          179.107,
+          465.78,
+          188.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2019",
+        "title": "第83期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 10,
+        "bbox": [
+          452.28,
+          179.107,
+          465.78,
+          188.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2020",
+        "title": "第84期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 10,
+        "bbox": [
+          452.28,
+          179.107,
+          465.78,
+          188.098
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2021",
+        "title": "第85期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          188.171705,
+          463.497407,
+          197.130841
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2022",
+        "title": "第86期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          187.54181,
+          463.497407,
+          196.500947
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2023",
+        "title": "第87期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          187.54181,
+          463.497407,
+          196.500947
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2024",
+        "title": "第88期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 10,
+        "bbox": [
+          450.058703,
+          187.54181,
+          463.497407,
+          196.500947
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      },
+      {
+        "doc": "KUMAGAI_OFFICIAL_ASR_2025",
+        "title": "第89期有価証券報告書",
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 97,
+        "bbox": [
+          450.058703,
+          496.626771,
+          463.497407,
+          505.585907
+        ],
+        "concept": "jpcrp_cor:NumberOfEmployees",
+        "context": "CurrentYearInstant_CorporateSharedMember"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2036 @@
+[
+  {
+    "metricId": "advertising_expenses_sga_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 11.602,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 68,
+        "bbox": [
+          484.9,
+          416.40778,
+          511.9,
+          425.39878
+        ],
+        "unit": "千円",
+        "raw": 11602.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "11,602"
+      },
+      {
+        "year": 2016,
+        "value": 17.02,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 70,
+        "bbox": [
+          484.9,
+          416.180881,
+          511.9,
+          425.171881
+        ],
+        "unit": "千円",
+        "raw": 17020.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "17,020"
+      },
+      {
+        "year": 2017,
+        "value": 12.635,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 70,
+        "bbox": [
+          484.9,
+          416.180881,
+          511.9,
+          425.171881
+        ],
+        "unit": "千円",
+        "raw": 12635.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "12,635"
+      },
+      {
+        "year": 2018,
+        "value": 17.311,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 74,
+        "bbox": [
+          476.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "千円",
+        "raw": 17311.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "17,311"
+      },
+      {
+        "year": 2019,
+        "value": 15.763,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 75,
+        "bbox": [
+          476.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "千円",
+        "raw": 15763.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "15,763"
+      },
+      {
+        "year": 2020,
+        "value": 15.894,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 77,
+        "bbox": [
+          476.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "千円",
+        "raw": 15894.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "15,894"
+      },
+      {
+        "year": 2021,
+        "value": 15.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 80,
+        "bbox": [
+          494.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "百万円",
+        "raw": 15.0,
+        "factor": 1,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "15"
+      },
+      {
+        "year": 2022,
+        "value": 18.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 85,
+        "bbox": [
+          494.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "百万円",
+        "raw": 18.0,
+        "factor": 1,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "18"
+      },
+      {
+        "year": 2023,
+        "value": 24.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 86,
+        "bbox": [
+          494.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "百万円",
+        "raw": 24.0,
+        "factor": 1,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "24"
+      },
+      {
+        "year": 2024,
+        "value": 32.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 90,
+        "bbox": [
+          494.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "百万円",
+        "raw": 32.0,
+        "factor": 1,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "32"
+      },
+      {
+        "year": 2025,
+        "value": 40.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 92,
+        "bbox": [
+          494.95001,
+          410.407751,
+          503.95001,
+          419.398751
+        ],
+        "unit": "百万円",
+        "raw": 40.0,
+        "factor": 1,
+        "concept": "jppfs_cor:AdvertisingExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "40"
+      }
+    ]
+  },
+  {
+    "metricId": "capital_expenditures_consolidated_reported",
+    "scope": "consolidated",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 682,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 15,
+        "bbox": [
+          59.8,
+          105.14212,
+          525.899996,
+          114.13312
+        ],
+        "unit": "百万円",
+        "raw": 682,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "6億82百万円"
+      },
+      {
+        "year": 2016,
+        "value": 2239,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 17,
+        "bbox": [
+          59.8,
+          105.142091,
+          525.899996,
+          114.133091
+        ],
+        "unit": "百万円",
+        "raw": 2239,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "22億39百万円"
+      },
+      {
+        "year": 2017,
+        "value": 218,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 17,
+        "bbox": [
+          59.8,
+          105.142091,
+          525.899996,
+          114.133091
+        ],
+        "unit": "百万円",
+        "raw": 218,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "2億18百万円"
+      },
+      {
+        "year": 2018,
+        "value": 1200,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 17,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649989,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 1200,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "1,200百万円"
+      },
+      {
+        "year": 2019,
+        "value": 1220,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 15,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649989,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 1220,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "1,220百万円"
+      },
+      {
+        "year": 2020,
+        "value": 885,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 15,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649998,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 885,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "885百万円"
+      },
+      {
+        "year": 2021,
+        "value": 2676,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 15,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649989,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 2676,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "2,676百万円"
+      },
+      {
+        "year": 2022,
+        "value": 597,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 20,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649998,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 597,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "597百万円"
+      },
+      {
+        "year": 2023,
+        "value": 833,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 20,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649998,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 833,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "833百万円"
+      },
+      {
+        "year": 2024,
+        "value": 763,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 21,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649998,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 763,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "763百万円"
+      },
+      {
+        "year": 2025,
+        "value": 955,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 20,
+        "bbox": [
+          54.55,
+          99.142091,
+          520.649998,
+          108.133091
+        ],
+        "unit": "百万円",
+        "raw": 955,
+        "factor": 1,
+        "concept": "jpcrp_cor:CapitalExpendituresOverviewOfCapitalExpendituresEtc",
+        "context": "CurrentYearDuration",
+        "asPrinted": "955百万円"
+      }
+    ]
+  },
+  {
+    "metricId": "depreciation_expenses_consolidated",
+    "scope": "consolidated",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 332.883,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 61,
+        "bbox": [
+          460.12498,
+          243.61151,
+          491.62498,
+          252.60251
+        ],
+        "unit": "千円",
+        "raw": 332883.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "332,883"
+      },
+      {
+        "year": 2016,
+        "value": 354.569,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 63,
+        "bbox": [
+          460.12498,
+          243.384611,
+          491.62498,
+          252.375611
+        ],
+        "unit": "千円",
+        "raw": 354569.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "354,569"
+      },
+      {
+        "year": 2017,
+        "value": 400.179,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 63,
+        "bbox": [
+          460.12498,
+          243.384611,
+          491.62498,
+          252.375611
+        ],
+        "unit": "千円",
+        "raw": 400179.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "400,179"
+      },
+      {
+        "year": 2018,
+        "value": 451.923,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 67,
+        "bbox": [
+          454.87498,
+          243.611481,
+          486.37498,
+          252.602481
+        ],
+        "unit": "千円",
+        "raw": 451923.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "451,923"
+      },
+      {
+        "year": 2019,
+        "value": 552.934,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 68,
+        "bbox": [
+          454.87498,
+          243.611481,
+          486.37498,
+          252.602481
+        ],
+        "unit": "千円",
+        "raw": 552934.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "552,934"
+      },
+      {
+        "year": 2020,
+        "value": 535.859,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 70,
+        "bbox": [
+          454.87498,
+          243.611481,
+          486.37498,
+          252.602481
+        ],
+        "unit": "千円",
+        "raw": 535859.0,
+        "factor": 0.001,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "535,859"
+      },
+      {
+        "year": 2021,
+        "value": 589.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 72,
+        "bbox": [
+          470.875,
+          339.190221,
+          484.375,
+          348.181221
+        ],
+        "unit": "百万円",
+        "raw": 589.0,
+        "factor": 1,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "589"
+      },
+      {
+        "year": 2022,
+        "value": 502.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 77,
+        "bbox": [
+          470.875,
+          323.736481,
+          484.375,
+          332.727481
+        ],
+        "unit": "百万円",
+        "raw": 502.0,
+        "factor": 1,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "502"
+      },
+      {
+        "year": 2023,
+        "value": 498.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 78,
+        "bbox": [
+          470.875,
+          323.736481,
+          484.375,
+          332.727481
+        ],
+        "unit": "百万円",
+        "raw": 498.0,
+        "factor": 1,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "498"
+      },
+      {
+        "year": 2024,
+        "value": 493.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 82,
+        "bbox": [
+          470.875,
+          323.736481,
+          484.375,
+          332.727481
+        ],
+        "unit": "百万円",
+        "raw": 493.0,
+        "factor": 1,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "493"
+      },
+      {
+        "year": 2025,
+        "value": 508.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 84,
+        "bbox": [
+          470.875,
+          323.736481,
+          484.375,
+          332.727481
+        ],
+        "unit": "百万円",
+        "raw": 508.0,
+        "factor": 1,
+        "concept": "jpcrp_cor:DepreciationSegmentInformation",
+        "context": "CurrentYearDuration",
+        "asPrinted": "508"
+      }
+    ]
+  },
+  {
+    "metricId": "donations_sga_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 26.39,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 68,
+        "bbox": [
+          484.9,
+          470.40778,
+          511.9,
+          479.39878
+        ],
+        "unit": "千円",
+        "raw": 26390.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "26,390"
+      },
+      {
+        "year": 2016,
+        "value": 95.745,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 70,
+        "bbox": [
+          484.9,
+          456.680881,
+          511.9,
+          465.671881
+        ],
+        "unit": "千円",
+        "raw": 95745.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "95,745"
+      },
+      {
+        "year": 2017,
+        "value": 5.028,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 70,
+        "bbox": [
+          489.4,
+          470.180881,
+          511.9,
+          479.171881
+        ],
+        "unit": "千円",
+        "raw": 5028.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "5,028"
+      },
+      {
+        "year": 2018,
+        "value": 34.479,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 74,
+        "bbox": [
+          476.95001,
+          464.407751,
+          503.95001,
+          473.398751
+        ],
+        "unit": "千円",
+        "raw": 34479.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "34,479"
+      },
+      {
+        "year": 2019,
+        "value": 13.439,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 75,
+        "bbox": [
+          476.95001,
+          464.407751,
+          503.95001,
+          473.398751
+        ],
+        "unit": "千円",
+        "raw": 13439.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "13,439"
+      },
+      {
+        "year": 2020,
+        "value": 32.613,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 77,
+        "bbox": [
+          476.95001,
+          464.407751,
+          503.95001,
+          473.398751
+        ],
+        "unit": "千円",
+        "raw": 32613.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "32,613"
+      },
+      {
+        "year": 2021,
+        "value": 24.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 80,
+        "bbox": [
+          494.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "百万円",
+        "raw": 24.0,
+        "factor": 1,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "24"
+      },
+      {
+        "year": 2022,
+        "value": 15.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 85,
+        "bbox": [
+          494.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "百万円",
+        "raw": 15.0,
+        "factor": 1,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "15"
+      },
+      {
+        "year": 2023,
+        "value": 23.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 86,
+        "bbox": [
+          494.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "百万円",
+        "raw": 23.0,
+        "factor": 1,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "23"
+      },
+      {
+        "year": 2024,
+        "value": 9.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 90,
+        "bbox": [
+          499.45001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "百万円",
+        "raw": 9.0,
+        "factor": 1,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9"
+      },
+      {
+        "year": 2025,
+        "value": 18.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 92,
+        "bbox": [
+          494.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "百万円",
+        "raw": 18.0,
+        "factor": 1,
+        "concept": "jppfs_cor:ContributionSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "18"
+      }
+    ]
+  },
+  {
+    "metricId": "entertainment_expenses_sga_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 29.592,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 68,
+        "bbox": [
+          484.9,
+          456.90778,
+          511.9,
+          465.89878
+        ],
+        "unit": "千円",
+        "raw": 29592.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "29,592"
+      },
+      {
+        "year": 2016,
+        "value": 58.382,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 70,
+        "bbox": [
+          484.9,
+          443.180881,
+          511.9,
+          452.171881
+        ],
+        "unit": "千円",
+        "raw": 58382.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "58,382"
+      },
+      {
+        "year": 2017,
+        "value": 62.369,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 70,
+        "bbox": [
+          484.9,
+          456.680881,
+          511.9,
+          465.671881
+        ],
+        "unit": "千円",
+        "raw": 62369.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "62,369"
+      },
+      {
+        "year": 2018,
+        "value": 64.04,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 74,
+        "bbox": [
+          476.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "千円",
+        "raw": 64040.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "64,040"
+      },
+      {
+        "year": 2019,
+        "value": 60.28,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 75,
+        "bbox": [
+          476.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "千円",
+        "raw": 60280.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "60,280"
+      },
+      {
+        "year": 2020,
+        "value": 30.468,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 77,
+        "bbox": [
+          476.95001,
+          450.907751,
+          503.95001,
+          459.898751
+        ],
+        "unit": "千円",
+        "raw": 30468.0,
+        "factor": 0.001,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "30,468"
+      },
+      {
+        "year": 2021,
+        "value": 36.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 80,
+        "bbox": [
+          494.95001,
+          437.407751,
+          503.95001,
+          446.398751
+        ],
+        "unit": "百万円",
+        "raw": 36.0,
+        "factor": 1,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "36"
+      },
+      {
+        "year": 2022,
+        "value": 54.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 85,
+        "bbox": [
+          494.95001,
+          437.407751,
+          503.95001,
+          446.398751
+        ],
+        "unit": "百万円",
+        "raw": 54.0,
+        "factor": 1,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "54"
+      },
+      {
+        "year": 2023,
+        "value": 62.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 86,
+        "bbox": [
+          494.95001,
+          437.407751,
+          503.95001,
+          446.398751
+        ],
+        "unit": "百万円",
+        "raw": 62.0,
+        "factor": 1,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "62"
+      },
+      {
+        "year": 2024,
+        "value": 70.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 90,
+        "bbox": [
+          494.95001,
+          437.407751,
+          503.95001,
+          446.398751
+        ],
+        "unit": "百万円",
+        "raw": 70.0,
+        "factor": 1,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "70"
+      },
+      {
+        "year": 2025,
+        "value": 75.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 92,
+        "bbox": [
+          494.95001,
+          437.407751,
+          503.95001,
+          446.398751
+        ],
+        "unit": "百万円",
+        "raw": 75.0,
+        "factor": 1,
+        "concept": "jppfs_cor:EntertainmentExpensesSGA",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "75"
+      }
+    ]
+  },
+  {
+    "metricId": "labor_completed_work_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 12224.355,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 70,
+        "bbox": [
+          404.525,
+          133.25777,
+          449.525,
+          142.24877
+        ],
+        "unit": "千円",
+        "raw": 12224355.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "12,224,355"
+      },
+      {
+        "year": 2016,
+        "value": 10172.125,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 72,
+        "bbox": [
+          404.525,
+          133.257741,
+          449.525,
+          142.248741
+        ],
+        "unit": "千円",
+        "raw": 10172125.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "10,172,125"
+      },
+      {
+        "year": 2017,
+        "value": 11666.188,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 72,
+        "bbox": [
+          404.525,
+          133.257741,
+          449.525,
+          142.248741
+        ],
+        "unit": "千円",
+        "raw": 11666188.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "11,666,188"
+      },
+      {
+        "year": 2018,
+        "value": 10904.944,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 76,
+        "bbox": [
+          399.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "千円",
+        "raw": 10904944.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "10,904,944"
+      },
+      {
+        "year": 2019,
+        "value": 12095.959,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 77,
+        "bbox": [
+          399.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "千円",
+        "raw": 12095959.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "12,095,959"
+      },
+      {
+        "year": 2020,
+        "value": 10522.499,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 79,
+        "bbox": [
+          399.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "千円",
+        "raw": 10522499.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "10,522,499"
+      },
+      {
+        "year": 2021,
+        "value": 9740.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 82,
+        "bbox": [
+          421.775,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "百万円",
+        "raw": 9740.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,740"
+      },
+      {
+        "year": 2022,
+        "value": 10136.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 87,
+        "bbox": [
+          417.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "百万円",
+        "raw": 10136.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "10,136"
+      },
+      {
+        "year": 2023,
+        "value": 12084.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 88,
+        "bbox": [
+          417.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "百万円",
+        "raw": 12084.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "12,084"
+      },
+      {
+        "year": 2024,
+        "value": 11455.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 92,
+        "bbox": [
+          417.275,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "百万円",
+        "raw": 11455.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "11,455"
+      },
+      {
+        "year": 2025,
+        "value": 9827.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 94,
+        "bbox": [
+          421.775,
+          133.257741,
+          444.275,
+          142.248741
+        ],
+        "unit": "百万円",
+        "raw": 9827.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:LaborCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,827"
+      }
+    ]
+  },
+  {
+    "metricId": "materials_completed_work_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 9565.176,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 70,
+        "bbox": [
+          409.025,
+          116.44527,
+          449.525,
+          125.43627
+        ],
+        "unit": "千円",
+        "raw": 9565176.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,565,176"
+      },
+      {
+        "year": 2016,
+        "value": 8891.141,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 72,
+        "bbox": [
+          409.025,
+          116.445241,
+          449.525,
+          125.436241
+        ],
+        "unit": "千円",
+        "raw": 8891141.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "8,891,141"
+      },
+      {
+        "year": 2017,
+        "value": 9768.144,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 72,
+        "bbox": [
+          409.025,
+          116.445241,
+          449.525,
+          125.436241
+        ],
+        "unit": "千円",
+        "raw": 9768144.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,768,144"
+      },
+      {
+        "year": 2018,
+        "value": 9613.56,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 76,
+        "bbox": [
+          403.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "千円",
+        "raw": 9613560.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,613,560"
+      },
+      {
+        "year": 2019,
+        "value": 9860.738,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 77,
+        "bbox": [
+          403.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "千円",
+        "raw": 9860738.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,860,738"
+      },
+      {
+        "year": 2020,
+        "value": 8032.363,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 79,
+        "bbox": [
+          403.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "千円",
+        "raw": 8032363.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "8,032,363"
+      },
+      {
+        "year": 2021,
+        "value": 8179.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 82,
+        "bbox": [
+          421.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "百万円",
+        "raw": 8179.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "8,179"
+      },
+      {
+        "year": 2022,
+        "value": 9593.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 87,
+        "bbox": [
+          421.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "百万円",
+        "raw": 9593.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,593"
+      },
+      {
+        "year": 2023,
+        "value": 11502.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 88,
+        "bbox": [
+          417.275,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "百万円",
+        "raw": 11502.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "11,502"
+      },
+      {
+        "year": 2024,
+        "value": 11038.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 92,
+        "bbox": [
+          417.275,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "百万円",
+        "raw": 11038.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "11,038"
+      },
+      {
+        "year": 2025,
+        "value": 9523.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 94,
+        "bbox": [
+          421.775,
+          116.445241,
+          444.275,
+          125.436241
+        ],
+        "unit": "百万円",
+        "raw": 9523.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:MaterialsCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "9,523"
+      }
+    ]
+  },
+  {
+    "metricId": "overhead_completed_work_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 6899.533,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 70,
+        "bbox": [
+          409.025,
+          184.25777,
+          449.525,
+          193.24877
+        ],
+        "unit": "千円",
+        "raw": 6899533.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "6,899,533"
+      },
+      {
+        "year": 2016,
+        "value": 7100.468,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 72,
+        "bbox": [
+          409.025,
+          184.257741,
+          449.525,
+          193.248741
+        ],
+        "unit": "千円",
+        "raw": 7100468.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,100,468"
+      },
+      {
+        "year": 2017,
+        "value": 7301.457,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 72,
+        "bbox": [
+          409.025,
+          184.257741,
+          449.525,
+          193.248741
+        ],
+        "unit": "千円",
+        "raw": 7301457.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,301,457"
+      },
+      {
+        "year": 2018,
+        "value": 7748.518,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 76,
+        "bbox": [
+          403.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "千円",
+        "raw": 7748518.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,748,518"
+      },
+      {
+        "year": 2019,
+        "value": 7871.454,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 77,
+        "bbox": [
+          403.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "千円",
+        "raw": 7871454.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,871,454"
+      },
+      {
+        "year": 2020,
+        "value": 7501.594,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 79,
+        "bbox": [
+          403.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "千円",
+        "raw": 7501594.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,501,594"
+      },
+      {
+        "year": 2021,
+        "value": 7619.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 82,
+        "bbox": [
+          421.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "百万円",
+        "raw": 7619.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,619"
+      },
+      {
+        "year": 2022,
+        "value": 7514.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 87,
+        "bbox": [
+          421.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "百万円",
+        "raw": 7514.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "7,514"
+      },
+      {
+        "year": 2023,
+        "value": 8453.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 88,
+        "bbox": [
+          421.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "百万円",
+        "raw": 8453.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "8,453"
+      },
+      {
+        "year": 2024,
+        "value": 6975.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 92,
+        "bbox": [
+          421.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "百万円",
+        "raw": 6975.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "6,975"
+      },
+      {
+        "year": 2025,
+        "value": 8361.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 94,
+        "bbox": [
+          421.775,
+          184.257741,
+          444.275,
+          193.248741
+        ],
+        "unit": "百万円",
+        "raw": 8361.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:OverheadCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "8,361"
+      }
+    ]
+  },
+  {
+    "metricId": "subcontract_completed_work_standalone",
+    "scope": "standalone",
+    "rows": [
+      {
+        "year": 2015,
+        "value": 48568.421,
+        "doc": "S1007VJH",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+        "sha": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "page": 70,
+        "bbox": [
+          404.525,
+          167.25777,
+          449.525,
+          176.24877
+        ],
+        "unit": "千円",
+        "raw": 48568421.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "48,568,421"
+      },
+      {
+        "year": 2016,
+        "value": 49180.881,
+        "doc": "MATSUI_OFFICIAL_ASR_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "page": 72,
+        "bbox": [
+          404.525,
+          167.257741,
+          449.525,
+          176.248741
+        ],
+        "unit": "千円",
+        "raw": 49180881.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "49,180,881"
+      },
+      {
+        "year": 2017,
+        "value": 53197.821,
+        "doc": "S100D9VW",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+        "sha": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+        "page": 72,
+        "bbox": [
+          404.525,
+          167.257741,
+          449.525,
+          176.248741
+        ],
+        "unit": "千円",
+        "raw": 53197821.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "53,197,821"
+      },
+      {
+        "year": 2018,
+        "value": 52636.836,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 76,
+        "bbox": [
+          399.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "千円",
+        "raw": 52636836.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "52,636,836"
+      },
+      {
+        "year": 2019,
+        "value": 55746.831,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 77,
+        "bbox": [
+          399.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "千円",
+        "raw": 55746831.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "55,746,831"
+      },
+      {
+        "year": 2020,
+        "value": 51208.072,
+        "doc": "MATSUI_OFFICIAL_ASR_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "page": 79,
+        "bbox": [
+          399.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "千円",
+        "raw": 51208072.0,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "51,208,072"
+      },
+      {
+        "year": 2021,
+        "value": 47938.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2021",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "page": 82,
+        "bbox": [
+          417.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "百万円",
+        "raw": 47938.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "47,938"
+      },
+      {
+        "year": 2022,
+        "value": 51964.0,
+        "doc": "S100R79M",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+        "sha": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "page": 87,
+        "bbox": [
+          417.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "百万円",
+        "raw": 51964.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "51,964"
+      },
+      {
+        "year": 2023,
+        "value": 57391.0,
+        "doc": "S100TV4B",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+        "sha": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "page": 88,
+        "bbox": [
+          417.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "百万円",
+        "raw": 57391.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "57,391"
+      },
+      {
+        "year": 2024,
+        "value": 59313.0,
+        "doc": "S100W4NZ",
+        "url": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+        "sha": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "page": 92,
+        "bbox": [
+          417.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "百万円",
+        "raw": 59313.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "59,313"
+      },
+      {
+        "year": 2025,
+        "value": 55227.0,
+        "doc": "MATSUI_OFFICIAL_ASR_2025",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+        "sha": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+        "page": 94,
+        "bbox": [
+          417.275,
+          167.257741,
+          444.275,
+          176.248741
+        ],
+        "unit": "百万円",
+        "raw": 55227.0,
+        "factor": 1,
+        "concept": "issuer_disclosed:SubcontractCompletedWork",
+        "context": "CurrentYearDuration_NonConsolidatedMember",
+        "asPrinted": "55,227"
+      }
+    ]
+  }
+]

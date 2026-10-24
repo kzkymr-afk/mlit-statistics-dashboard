@@ -1,0 +1,4179 @@
+{
+  "snapshot": {
+    "sourceSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/1bea38d40edfa5fad980537245d729ae6845690bc446fe75ee5a49d714d13d2b.json",
+    "sha256": "1bea38d40edfa5fad980537245d729ae6845690bc446fe75ee5a49d714d13d2b",
+    "groups": 689,
+    "points": 7450,
+    "PENTA": {
+      "groups": 57,
+      "points": 576
+    },
+    "ASANUMA": {
+      "groups": 113,
+      "points": 1231
+    },
+    "OKUMURA": {
+      "groups": 215,
+      "points": 2356
+    },
+    "KUMAGAI": {
+      "groups": 137,
+      "points": 1495
+    },
+    "MATSUI": {
+      "groups": 133,
+      "points": 1418
+    },
+    "NISHIMATSU": {
+      "groups": 34,
+      "points": 374
+    },
+    "primaryMaterialsVerified": 237,
+    "sourceRoot": "/Volumes/SSD_External/Business/Platforms/BuildBase/yuho_auto_extract",
+    "noNetworkFetch": true,
+    "originalSource13ObservationRows": 143,
+    "globalCoreFactCountsNotDoubleAdded": true,
+    "metadataOnlyPublicationPrivacyNormalization": {
+      "priorSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/a6739c61503321be1b37314b7c853115ac3e01db68084a7bd0f3571070ca8443.json",
+      "priorSHA256": "a6739c61503321be1b37314b7c853115ac3e01db68084a7bd0f3571070ca8443",
+      "fieldsChanged": 12,
+      "allNumbersUnitsDatesURLsSourceSHAsQuotesEligibilityAndRestrictionsUnchanged": true
+    }
+  },
+  "series": {
+    "KUMAGAI:completed_work_cost_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "e4e62702398981b961a9d270d7da12d88874916f7635e092b6b4ecd60756ecce",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_cost_consolidated"
+    },
+    "KUMAGAI:completed_work_gross_profit_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "ace53e7249703ef30d92f21331f63ad4069f9bce283b74f2653c5dc3cba89578",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_profit_consolidated"
+    },
+    "KUMAGAI:selling_general_administrative_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "bfcad61def2da619dc2649d7fa2373ceff34a334d211c9428cbaa7ea1db5bffd",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "selling_general_administrative_expenses_consolidated"
+    },
+    "KUMAGAI:non_operating_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "13da29193be1cba8ee5dac70ff113d6f93110da0276b1956039c5cdb47d3c22f",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "non_operating_income_consolidated"
+    },
+    "KUMAGAI:non_operating_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "7231f8d1094f5af7ae3af1fc09ae087b84708e100f126dec23ba08dbca92b6e1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "non_operating_expenses_consolidated"
+    },
+    "KUMAGAI:interest_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "cbae2f6de5bb2d68e4e5eef590e2c0147f1759f4db3142f92d2405d5dc2bc627",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "interest_income_consolidated"
+    },
+    "KUMAGAI:dividends_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "38965eb864893e6652418362610d29e51cdb8c0455f45a1901d4bf36a9f91bc8",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "dividends_income_consolidated"
+    },
+    "KUMAGAI:interest_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "9832b7cb243d8773b038a5f49c26601beca721572fc232d791d25bfda1e641dd",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "interest_expenses_consolidated"
+    },
+    "KUMAGAI:extraordinary_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "78b261d838ffa8d55bfa2bd8057024137edcf7f519a655193d3b3e376f64a987",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "extraordinary_income_consolidated"
+    },
+    "KUMAGAI:extraordinary_losses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "3682f584c3be6ac52aec049b2dc8d761931975a22171ef3873278e3aaa338d2e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "extraordinary_losses_consolidated"
+    },
+    "KUMAGAI:income_before_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "2f41ed250cb27524e6a7afed491437be4e89bbad10a5d740554788bfa0b1443a",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "income_before_taxes_consolidated"
+    },
+    "KUMAGAI:income_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "bb3d8bad6a610d17dbfce761874d1858d93dd8adec9b77c4a8ff6b2161cba6c2",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "income_taxes_consolidated"
+    },
+    "KUMAGAI:profit_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "e772003c3e96e7ef0c2f00c097398482a4f6d3914cc8518ebe554737b0df4100",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "profit_consolidated"
+    },
+    "KUMAGAI:profit_attributable_owners_parent@FY2015_FY2025_REPORTED": {
+      "hash": "1b7e77ca0269c8b6ba2bcff00334537bd5c7ca4b2c5b4743c41290a3e182ccf6",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "profit_attributable_owners_parent"
+    },
+    "KUMAGAI:comprehensive_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "a8e201b0718bc69a05dcf39c5740e83ef99a9986ac6d36be44792aa8361bafd6",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "comprehensive_income_consolidated"
+    },
+    "KUMAGAI:selling_general_administrative_expenses_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "2e89cb44481a59ffe517916b9593b0ccabef921139301967f3e76e6739a6ba75",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "selling_general_administrative_expenses_standalone"
+    },
+    "KUMAGAI:operating_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "1f018f08d30ecbb6ae60cfc43b9ee84fb32e677d7eaade59c5884aaa1a2d8a87",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "operating_income_standalone"
+    },
+    "KUMAGAI:non_operating_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "8d1bc58eccbf1a3dc24d12d76c5c36ee0d871d2bae9073a64a0e988c8fa27372",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "non_operating_income_standalone"
+    },
+    "KUMAGAI:non_operating_expenses_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "df133698ef305498476b7eecb433ccb14ed5272f051394f74cf5113ed547bca6",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "non_operating_expenses_standalone"
+    },
+    "KUMAGAI:interest_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "8d34a1c605f533702a0595d6b1878380db87fedd8fb812209543edaa26567596",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "interest_income_standalone"
+    },
+    "KUMAGAI:dividends_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "bfcefc7132427b2d6a85cf78e1dd82d96a7b6e1cccfb26ab263ea69dc19fdbae",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "dividends_income_standalone"
+    },
+    "KUMAGAI:interest_expenses_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "17ebeca17529a4e554ea26cb88fc40af381b8d7fe83c41ce5f30e36fd11b52dd",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "interest_expenses_standalone"
+    },
+    "KUMAGAI:ordinary_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "569b4855529526ffe4b86c9bc9af71567c0de15d5eac5ea3d982ff8114676eda",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "ordinary_income_standalone"
+    },
+    "KUMAGAI:extraordinary_income_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "d2dc401c3a770778c17c7320fb68f8e0a12ae26281bce748ae93b546ad5b9442",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "extraordinary_income_standalone"
+    },
+    "KUMAGAI:extraordinary_losses_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "4c3518009e87424b5d4e0b28b87f3193fdc9c59a329fa19779c6ed02e97cd84b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "extraordinary_losses_standalone"
+    },
+    "KUMAGAI:income_before_taxes_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "5f794c30b46d7396c60bec4a67637943af897976fe54e39c01e4d1b36725dae2",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "income_before_taxes_standalone"
+    },
+    "KUMAGAI:income_taxes_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "8252469b019440ac457a42cce47026d6b278cf5bee63c25df4bd1f0d955ff11e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "income_taxes_standalone"
+    },
+    "KUMAGAI:profit_standalone@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "cbc316ffe92bc00ccb8a8811e85ffddcae9c1994a821d1e4c1326cd5dda1b88a",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "profit_standalone"
+    },
+    "MATSUI:cost_of_sales_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "5e1ad6bbce088e036baa617677f1939236cecb7899b657e445e716313b2faf9e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "cost_of_sales_consolidated"
+    },
+    "MATSUI:gross_profit_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "2f3981911f1ee8f5a40ca23fbab53099ffd76ee8684b99030a6b95f87e09a11f",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "gross_profit_consolidated"
+    },
+    "MATSUI:non_operating_expenses_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "ecb71b318a082c363ace526ccc043d8a25327076324ce968333b2987982b6ba6",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "non_operating_expenses_consolidated"
+    },
+    "MATSUI:non_operating_income_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "84ae380c463c83ca95901817cacd0c4568f483df6d4b0ed0a717e778a6ab8aed",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "non_operating_income_consolidated"
+    },
+    "MATSUI:selling_general_administrative_expenses_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "954bfcd20360cdc9477897e1e51e7e2bb8d3975cc395d5bcc4e67716441a687d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "selling_general_administrative_expenses_consolidated"
+    },
+    "MATSUI:comprehensive_income_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "a0171f02d0d86d84da5b27acfdc187d478cbbd92a35d22e9a79ec2bee14de8c2",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "comprehensive_income_consolidated"
+    },
+    "MATSUI:extraordinary_income_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "77b58f82892f0cae200411cf2311c19464a7beb76cfeaa50349069654381d44e",
+      "points": 9,
+      "company": "MATSUI",
+      "metric": "extraordinary_income_consolidated"
+    },
+    "MATSUI:extraordinary_losses_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "8e61ccf2795f092bacd62da0dc085733e11c234d1ffab987d0736f01fecc7767",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "extraordinary_losses_consolidated"
+    },
+    "MATSUI:income_before_taxes_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "f389ef494281bb6309624fc01cfce31f95ca2480f7a4f91538854d67445e0de4",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "income_before_taxes_consolidated"
+    },
+    "MATSUI:income_taxes_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "ac3078273d2205b5829a7c9c77e8823075582069af84f365a7c7a0c874158ab3",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "income_taxes_consolidated"
+    },
+    "MATSUI:interest_expenses_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "2da5d832610a7071348c9ae4d7c82897abbd6bb6924c58ed8ded2f8b3aeb1593",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "interest_expenses_consolidated"
+    },
+    "MATSUI:profit_attributable_owners_parent@FY2015_FY2025_REPORTED_PL": {
+      "hash": "7f5ac8dee10b1b7d4b71f3e9e65a1b8d28b7511d5f4f02d6cde857ea899555a5",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "profit_attributable_owners_parent"
+    },
+    "MATSUI:profit_consolidated@FY2015_FY2025_REPORTED_PL": {
+      "hash": "22f16d35391750fc66a36c5251c320949643573ebb5af178270c12abb0fe2482",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "profit_consolidated"
+    },
+    "MATSUI:dividends_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "35300e0d94b325699a28abebda406b7410c7310822050086d83074765f5de9c9",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "dividends_income_consolidated"
+    },
+    "MATSUI:interest_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "9c64ce3840ddfacd91bd9cb957271f4abeaf0f24918fcbf47b4bd4bde4650c94",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "interest_income_consolidated"
+    },
+    "NISHIMATSU:cost_of_sales_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "20a28482bf4abad87340c4c20cffbcd3b26c53f72d29b2078dcc1e13acd90688",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "cost_of_sales_consolidated"
+    },
+    "NISHIMATSU:gross_profit_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "9d1c188b9f1665f1e6ab240e8aec18bbc406008994bb6499531db19c2dd89484",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "gross_profit_consolidated"
+    },
+    "NISHIMATSU:non_operating_expenses_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "bfbc7f395b2aae84f735877a018eebb29bc5a649516b464585c6ead1c9d43b78",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "non_operating_expenses_consolidated"
+    },
+    "NISHIMATSU:non_operating_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "d87827d1ba649142e2b04e9ab19563a9c01c0a644624d839b51b325eba9b1c65",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "non_operating_income_consolidated"
+    },
+    "NISHIMATSU:selling_general_administrative_expenses_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "4e6c9c1fc5b6369e8e6bb81ec68c1ea786b3a3aaac9d2f97b70db3f944360a0f",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "selling_general_administrative_expenses_consolidated"
+    },
+    "NISHIMATSU:comprehensive_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "baed50597077d134c1554c7d1b51b5541f3117958dff12de1e7b3731d2d19658",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "comprehensive_income_consolidated"
+    },
+    "NISHIMATSU:dividends_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "3d634f0a9c03136bc2ce33a70ab93767a7ca3b53a7c7192b3d5615344a2a26cb",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "dividends_income_consolidated"
+    },
+    "NISHIMATSU:extraordinary_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "b18e0ae3dc93013083bd655e309e5c767e43c64b98e55c6feabe52529d8ab95b",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "extraordinary_income_consolidated"
+    },
+    "NISHIMATSU:extraordinary_losses_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "1661e8427648c5bfe5bd2c17910af8ccde950584652490978d904fd6953b706c",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "extraordinary_losses_consolidated"
+    },
+    "NISHIMATSU:income_before_taxes_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "ce33ab6197be5b78e080a44cbc028b5f5b3471458b44261d7b8b0ee3d0c7d6c1",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "income_before_taxes_consolidated"
+    },
+    "NISHIMATSU:income_taxes_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "512b70bee90c4c3bbcf0b3bdd3356ddbfb85bfe8d44d8a6b0b6c249052785f84",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "income_taxes_consolidated"
+    },
+    "NISHIMATSU:interest_expenses_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "ac7f09b562c82fc7b2e532f105bb19057e209d076184cfe2779b579bb5d62c43",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "interest_expenses_consolidated"
+    },
+    "NISHIMATSU:interest_income_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "2a7d40d3108ee7638fb0af6c61b960a405e23cfbb44121a15e819271c174d671",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "interest_income_consolidated"
+    },
+    "NISHIMATSU:profit_attributable_owners_parent@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "abbd40ce6a63a9657ee5e5c7324b23e6c912877c1f10c42e6f03305e8a7465e5",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "profit_attributable_owners_parent"
+    },
+    "NISHIMATSU:profit_consolidated@FY2015_FY2025_REPORTED_STATEMENT": {
+      "hash": "73009b994007fd1980fe1ac5611abfe10cfeabb25d4e276fae553c6b428c99f2",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "profit_consolidated"
+    },
+    "PENTA:segment_depreciation_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "edff461bbe0908b3a6aee401de8d739f475ff97504eccf071516e32608455885",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_depreciation_domestic_building_reported"
+    },
+    "PENTA:segment_depreciation_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "1aa826c72032d850962418ac80ad40731087cc0624f672ad776045eb1bde64c2",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_depreciation_domestic_civil_reported"
+    },
+    "PENTA:segment_depreciation_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "28823eb1d1212560bc0941c1a38befa9dc428c9b5943c2ad9164209eb46a3ea3",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "segment_depreciation_domestic_development_reported"
+    },
+    "PENTA:segment_depreciation_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "daa638de3d5d779baeb7c704b59062e97425e91a2bb1d4143bd899147257fa71",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_depreciation_other_reported"
+    },
+    "PENTA:segment_depreciation_overseas_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "0ff5c9d9adf2a94065c18ffdbae26ce551e9ac9bb764ef20f8dd12ba41b6e2ee",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_depreciation_overseas_reported"
+    },
+    "PENTA:segment_external_sales_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "c19d16343323a897190cca7ac0995168bd8689133809ef4cffbe149cbe625d25",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_external_sales_domestic_building_reported"
+    },
+    "PENTA:segment_external_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "d1f32e98c10b9f34be041f00a25efe976bc9c823417af1609cd62dbda86e674d",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_external_sales_domestic_civil_reported"
+    },
+    "PENTA:segment_external_sales_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "09ddb121a33a01f44db803d65a29e09220184721f14b2baf823b1ce90c190fb9",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "segment_external_sales_domestic_development_reported"
+    },
+    "PENTA:segment_external_sales_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "d0a0d4574c289793a30c079b3e3528be517dfcdde5ff9a85ca97181e72e0c740",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_external_sales_other_reported"
+    },
+    "PENTA:segment_external_sales_overseas_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "df169237043fc379ff3f7805843f9ba174ac9524213bfc1a90a1196e7f727a6e",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_external_sales_overseas_reported"
+    },
+    "PENTA:segment_internal_sales_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "175fbbe8aad300c2449df7f5056b5a3fb8b6f9e2f7c5566856d2099a7d5efcef",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_internal_sales_domestic_building_reported"
+    },
+    "PENTA:segment_internal_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "b426e793fe80ee7bd747505c65c865594fd938f8d642e3499a7e28e4cf64108a",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_internal_sales_domestic_civil_reported"
+    },
+    "PENTA:segment_internal_sales_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "7fc894fa9b40f11773e4d8ed00a2c0877f76d5cb06e76d4b2dac4b0caa94cccd",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "segment_internal_sales_domestic_development_reported"
+    },
+    "PENTA:segment_internal_sales_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "0824b92db0fe0482924562eff527edc26611c4b128574dad964737d52365a5ec",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_internal_sales_other_reported"
+    },
+    "PENTA:segment_operating_profit_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "77033f9c7328d0ef288ac9321dedf01e34d1f922e3d09ee26d21a30f70a167d9",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_operating_profit_domestic_building_reported"
+    },
+    "PENTA:segment_operating_profit_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "291ef7ddf11cc961514312b05ec45ee634822d2938c08cab8b52391a5b9feb57",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_operating_profit_domestic_civil_reported"
+    },
+    "PENTA:segment_operating_profit_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "68ad7479918897d49521d30fc1790a85c89d06cdf87e27bd4d2cfd4182d88243",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "segment_operating_profit_domestic_development_reported"
+    },
+    "PENTA:segment_operating_profit_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "654af0e818d6f121ddeff121c3d4422be481af9868f002626988c0a23c60e1a1",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_operating_profit_other_reported"
+    },
+    "PENTA:segment_operating_profit_overseas_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "f674c8ee1c948b2c5857ba619ec8373b408b1e32191302236c59853e6b7c858e",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_operating_profit_overseas_reported"
+    },
+    "PENTA:segment_total_sales_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "32369cbad206a2095c9fc3e690e1feacac2edcb978f9289a305eecad978c9935",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_total_sales_domestic_building_reported"
+    },
+    "PENTA:segment_total_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "47a69cb033767e20aa52f0714891a8b95aa46375682f417114bf2bd88d50070d",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_total_sales_domestic_civil_reported"
+    },
+    "PENTA:segment_total_sales_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "dd9d36cdd93c812cf3d8137dbddb17e949e37498ad65cff422ef948e91ce4c90",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "segment_total_sales_domestic_development_reported"
+    },
+    "PENTA:segment_total_sales_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "5b7789601d9448423e8816fe81c2e8dd3b9401ed1b3f624139a95d1444af4395",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_total_sales_other_reported"
+    },
+    "PENTA:segment_total_sales_overseas_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "2e5fe5b5e892b3f84301686d3d3ff25ec789610d93a1a9e329c8ed4e042a1c35",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "segment_total_sales_overseas_reported"
+    },
+    "PENTA:supplementary_business_gross_profit_domestic_building_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "b340914284aa12beb4238f2762067622f891c030bdc2420289bd7afb7763699f",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "supplementary_business_gross_profit_domestic_building_reported"
+    },
+    "PENTA:supplementary_business_gross_profit_domestic_civil_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "7c13d5cc27d0dbc9c8cfa6b5ee66f7f6d3c4942f37475c674627f1b021565ac8",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "supplementary_business_gross_profit_domestic_civil_reported"
+    },
+    "PENTA:supplementary_business_gross_profit_domestic_development_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "885a127cec89b7edeb3588c108ed4280b69c7315d767d16f11dd1fea3724b92d",
+      "points": 3,
+      "company": "PENTA",
+      "metric": "supplementary_business_gross_profit_domestic_development_reported"
+    },
+    "PENTA:supplementary_business_gross_profit_other_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "3dfc682e5a3d5d6ffc1f0b87782be4dd50147106703378424a09a43099e9a70b",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "supplementary_business_gross_profit_other_reported"
+    },
+    "PENTA:supplementary_business_gross_profit_overseas_reported@FY2015_FY2025_SEGMENT": {
+      "hash": "e3547fadcf4ccf9ef647e8a1ac1f786dc75406affd01c66d712df16c86e17fdd",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "supplementary_business_gross_profit_overseas_reported"
+    },
+    "ASANUMA:segment_external_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "9f8b04bc55c0a0ee06ece1ae653e3fc22328577e73736a2fcbd2316c9f0e7ca8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_external_sales_building_reported"
+    },
+    "ASANUMA:segment_external_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "a4666dd6eac2da03aea5208284171c675d331211cb26b1ed085de72a13d3658d",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_external_sales_civil_reported"
+    },
+    "ASANUMA:segment_external_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "c5726511ca75a94e4f0dbada73295fadcb08e8e5bc4ec7d7e8a70690643c8749",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_external_sales_other_reported"
+    },
+    "ASANUMA:segment_internal_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "cbed64eda4510a85ce12d3745a8880700fdc5ac746f34cde988ad4474a7de896",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_internal_sales_other_reported"
+    },
+    "ASANUMA:segment_total_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "5f889ed3dc816e531907a7dc3b276cd7228b98983a45e572e3e2c64ac721e41a",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_total_sales_building_reported"
+    },
+    "ASANUMA:segment_total_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "fd341cf2d3b6617fab8b00f68f8e4b40cff13b1751d441a3c7fdc5bb58a17471",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_total_sales_civil_reported"
+    },
+    "ASANUMA:segment_total_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "480780b607058c3e6a921553b1300614cd88a107ce384807e2a99ebcb18ddf86",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_total_sales_other_reported"
+    },
+    "ASANUMA:segment_operating_profit_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "b7792c42e1a9d874706f98d006bba7d3d620d80997bd48d09e9f08482606c76e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_operating_profit_building_reported"
+    },
+    "ASANUMA:segment_operating_profit_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "4b7500e228f4bbccbb72c8ffcce525a72e10fca9d7ae228bdf6ab99cb9c3ffd1",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_operating_profit_civil_reported"
+    },
+    "ASANUMA:segment_operating_profit_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "cb6682ab4d19e91fd03e495104bf00cf398cc9d445d87a07d449a75f46d47cfb",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "segment_operating_profit_other_reported"
+    },
+    "ASANUMA:segment_internal_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2c20f37307d01e61b1f56e6a255194603d215b77f99f8922dcae10e4476028b4",
+      "points": 1,
+      "company": "ASANUMA",
+      "metric": "segment_internal_sales_building_reported"
+    },
+    "OKUMURA:segment_external_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "563388686f79da6220b854893d0bc55eadea608ad0d1cebf2d466e0441f491b1",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_external_sales_civil_reported"
+    },
+    "OKUMURA:segment_external_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "0abb670fa9a6fcfba012ae4979a7c0f8aa094c3d3c33c0224032414dda80986d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_external_sales_building_reported"
+    },
+    "OKUMURA:segment_external_sales_development_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "75a3acd0608180a8777893755aaac831c3c7638f57c7d553eb393e20968c01bf",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_external_sales_development_reported"
+    },
+    "OKUMURA:segment_external_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "18663760c74208d505f6f2b0c571b46594faffbfa3bcf446d5249fcdfc3bcb4d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_external_sales_other_reported"
+    },
+    "OKUMURA:segment_internal_sales_development_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "b75f874174623136dc905fb88feedb0d254c86d30a7bcdc6ee9140ef952c692f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_internal_sales_development_reported"
+    },
+    "OKUMURA:segment_internal_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "d7ee5880726635996b7bd1d8824a499e9614079e6cfb82bdc1b9b76bfdd92189",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_internal_sales_other_reported"
+    },
+    "OKUMURA:segment_total_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "783fb53f6f6d6006078eecb95b0a7d41de033abd8bedc60b401217f6c7e97fa2",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_total_sales_civil_reported"
+    },
+    "OKUMURA:segment_total_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "7e24df0c6b9e734808a50ea713e4c1e04fafe0434323bc62422a5c284e73c289",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_total_sales_building_reported"
+    },
+    "OKUMURA:segment_total_sales_development_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "f85168bf0f21d8d2482bc9314918017e1e632c581741afb57b21f3c31f2b4a28",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_total_sales_development_reported"
+    },
+    "OKUMURA:segment_total_sales_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2493eacf5ba507f9c8409544abfb7c2e99792e3a4fcbe75105d9744629a4292e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_total_sales_other_reported"
+    },
+    "OKUMURA:segment_operating_profit_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "c4daba3d04c0635247f8e5c70cb13a342a0965d09fb6027b8fbf4fa04dd09bd6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_operating_profit_civil_reported"
+    },
+    "OKUMURA:segment_operating_profit_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "07659dacc748808212df1c0836b0aee83e1c32d960ffdebe531ad27ee3d08db5",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_operating_profit_building_reported"
+    },
+    "OKUMURA:segment_operating_profit_development_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2b000d0ffcaf37cc140075ed9d068c79c6e2fc33a7f56ebc71cbbbc7cbc4f771",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_operating_profit_development_reported"
+    },
+    "OKUMURA:segment_operating_profit_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "461c0985bc2cd7d9c26cb059bedbe3590804afdc7433afc206b3d11a67828ae4",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_operating_profit_other_reported"
+    },
+    "OKUMURA:segment_depreciation_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "6143d3361693988bbd91f2de227f0db11c7ecf31634c896a9d7bc66e57d7774e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_depreciation_civil_reported"
+    },
+    "OKUMURA:segment_depreciation_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "86dfeaa4cd9fc45824d851942017022fbb6b57ae2808dd903bc998618ac06f1f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_depreciation_building_reported"
+    },
+    "OKUMURA:segment_depreciation_development_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "342cd2e804f2892297f90f9040c2cecbe74f9269a483660bd0fb03ecb5ab75db",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_depreciation_development_reported"
+    },
+    "OKUMURA:segment_depreciation_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "7d154f1eec9c860a3d31f092a3f4d9f8787e779ec675a61f214f0ebdd7732a4a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "segment_depreciation_other_reported"
+    },
+    "OKUMURA:segment_internal_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "887126923f306a2fddda42cb3556b524a32c881765f675cb14eaca9da00b8dea",
+      "points": 2,
+      "company": "OKUMURA",
+      "metric": "segment_internal_sales_building_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "e7bbbce20f3daf132727de12ca772e3e57c010f69dab82a79dddcb57cf0e1e7d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_civil_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "c6c48ad4adc161afa18268df2d08a325202061c7aaf8dfee39e011d9a6232091",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_building_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_real_estate_sale_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "17a76b2f7a4ca2a0460e3b4ae421a17533417bedd2a6da8643cdbce617833d67",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_real_estate_sale_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_real_estate_rental_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "0a5965cea3e70923642ca31aa1eec94ee7ea2837ce663ea978af1d4006e90019",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_real_estate_rental_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_real_estate_total_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "23b52083d3a781f6008b1525a836f4aa7bb9279c89d6143f62713cb36b983ad8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_real_estate_total_reported"
+    },
+    "OKUMURA:supplementary_business_gross_profit_noncompleted_total_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "f52ff421dc774df6e287193b91ba07ef0637c537825a9d30dc25d4f7e530d2ea",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "supplementary_business_gross_profit_noncompleted_total_reported"
+    },
+    "KUMAGAI:segment_external_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "a06f654197d8fb90250a5700b088f3376f7bedb13fd59804bb81caafc0c3daf3",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_external_sales_civil_reported"
+    },
+    "KUMAGAI:segment_external_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "4ca7d503309441e3e7fe158a9a133614b9941a6520c2a9aac3bab8697efd58d5",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_external_sales_building_reported"
+    },
+    "KUMAGAI:segment_external_sales_subsidiaries_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "cf1ab9b706fbd4a84d9a340fdbe889d3ee127b267cd1b90b059471c53289f93d",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_external_sales_subsidiaries_reported"
+    },
+    "KUMAGAI:segment_internal_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "11ac26f6b0c93c2678815cb0eff05bf02b77fb6f4a944d393219cea7a0532f7e",
+      "points": 10,
+      "company": "KUMAGAI",
+      "metric": "segment_internal_sales_building_reported"
+    },
+    "KUMAGAI:segment_internal_sales_subsidiaries_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "47807d70316a4b8c264d4faf28a18615ae268ffad35d16ef1202a31149b8ee54",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_internal_sales_subsidiaries_reported"
+    },
+    "KUMAGAI:segment_total_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "25399d841a1de99044e2a8683d88773616453650cecbb4302783a0b31e3d625f",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_total_sales_civil_reported"
+    },
+    "KUMAGAI:segment_total_sales_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "1fcf4171905999508a5228e2bfb4d577933547a7e1daaaf03b6534bb2a85f7c1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_total_sales_building_reported"
+    },
+    "KUMAGAI:segment_total_sales_subsidiaries_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "d3ae62752499ac2c97c2d1c90fa5cc38e1e04a87b6ab0379e768cc2eea48676b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_total_sales_subsidiaries_reported"
+    },
+    "KUMAGAI:segment_operating_profit_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2c22fb4c8459532c9e69e009cc97d2d8bcf512a6500684a241d0e80c8f5f3626",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_operating_profit_civil_reported"
+    },
+    "KUMAGAI:segment_operating_profit_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "33be3dd582489eef10cbf6627a998f7a01a946d8dc98f0c72ec8fa71262ee909",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_operating_profit_building_reported"
+    },
+    "KUMAGAI:segment_operating_profit_subsidiaries_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "1f006f491472065135b673bdf66bb2bd2060fc25a748971562329cd8eade19e3",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_operating_profit_subsidiaries_reported"
+    },
+    "KUMAGAI:segment_depreciation_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "1b9c8ceba4e30202e8412c83d0ae10a77090b82b43a8ac3869d8ed76fea1b208",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_depreciation_civil_reported"
+    },
+    "KUMAGAI:segment_depreciation_building_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "f1a10be25e418a5bc11a77b7531078a120dfccf0a3f843ebefa3a46336bed6ed",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_depreciation_building_reported"
+    },
+    "KUMAGAI:segment_depreciation_subsidiaries_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "289f2b207f52eb5d7cf0411b094808aa07d72ff483db4768138fa3f57566506c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "segment_depreciation_subsidiaries_reported"
+    },
+    "KUMAGAI:segment_internal_sales_civil_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "433a40651b44810b70b1c3a81e9f73e90f891b6e709d786b7e14356eca454888",
+      "points": 1,
+      "company": "KUMAGAI",
+      "metric": "segment_internal_sales_civil_reported"
+    },
+    "MATSUI:segment_assets_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "21c01f1836be56a97ba846ca57de3a65c6e791d501a0a6e948151c060807fb0d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_assets_adjustment_reported"
+    },
+    "MATSUI:segment_assets_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "52944238201c6d3ec594c0bc66909caabdb42322d0fb8f21dd19b1c8d62f462a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_assets_construction_reported"
+    },
+    "MATSUI:segment_assets_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2da2a063bf1cf7930f2c26fd5ac15264d93a5778cf262afa2b61aa611d2bdcc8",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_assets_real_estate_other_reported"
+    },
+    "MATSUI:segment_depreciation_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "0aa0ac7025265e4798560bcc987ae21549b86e105dd7a092944242e19fa15537",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_depreciation_adjustment_reported"
+    },
+    "MATSUI:segment_depreciation_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "bc8049d1ae05c83dbe522ae1187c089bb841bbb7e580c8b3430ddd7ed2cdad89",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_depreciation_construction_reported"
+    },
+    "MATSUI:segment_depreciation_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "a6d1152c2501fce8b32a54bd1d07d98e14cd7f412c71f759d1b552b6b22ca828",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_depreciation_real_estate_other_reported"
+    },
+    "MATSUI:segment_external_sales_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "889ea3f7e8efe1f013e49fc53d1018886a9dacbee7c5511b50b12d35552f2a09",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_external_sales_construction_reported"
+    },
+    "MATSUI:segment_external_sales_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "e6c2192f3b9e45ec77c244f06da11a98b37339f584d5a7c9635703bd15321722",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_external_sales_real_estate_other_reported"
+    },
+    "MATSUI:segment_fixed_asset_increase_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "b34efc520b0149e2461e69ce92863d440dbf45c64c93bea0cd285093484af1b9",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_fixed_asset_increase_adjustment_reported"
+    },
+    "MATSUI:segment_fixed_asset_increase_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "2ef83df803e1a40f171a94e3ffe55362ffde6ede6d3e77aa8dccee584fda1068",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_fixed_asset_increase_construction_reported"
+    },
+    "MATSUI:segment_fixed_asset_increase_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "afd4ec159debfbc2b32154437aeb86a390164dab9bc6f7ce4020906260656864",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_fixed_asset_increase_real_estate_other_reported"
+    },
+    "MATSUI:segment_internal_sales_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "6d6e2a46f9718302eaf850b87a4299397035928fde9613109f897ea6bba11416",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_internal_sales_adjustment_reported"
+    },
+    "MATSUI:segment_internal_sales_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "1be77d1a274c1cbea9f9e6de52d37976332b6297720c7cc7ad1882a866d20226",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_internal_sales_construction_reported"
+    },
+    "MATSUI:segment_internal_sales_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "9843f91b98b0d072fcd99a118ad2a6e58f86ad92792b8814f13c9a0ceefc4f63",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_internal_sales_real_estate_other_reported"
+    },
+    "MATSUI:segment_operating_profit_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "f249a6fe031e3e0b656268754ae47eced7c36059f5b8117117399c3d6a99a12c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_operating_profit_adjustment_reported"
+    },
+    "MATSUI:segment_operating_profit_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "281082141487ccb669cd40874adacdefdf30c57e8d16f4e6438edde354923bca",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_operating_profit_construction_reported"
+    },
+    "MATSUI:segment_operating_profit_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "138338d6fe55bfa79fc95cca27af9c3da7de5b333177b990cef8093cce4078df",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_operating_profit_real_estate_other_reported"
+    },
+    "MATSUI:segment_total_sales_adjustment_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "4a9a64113ecdc235beacdfac759827c652675c1404be46cdaae032bc0385b725",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_total_sales_adjustment_reported"
+    },
+    "MATSUI:segment_total_sales_construction_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "691a1092e44c7b6ddedbcc1280e4a2e90fc0e4287c52e9fe7e4b2b631e3a1b84",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_total_sales_construction_reported"
+    },
+    "MATSUI:segment_total_sales_real_estate_other_reported@FY2015_FY2025_REPORTED_SEGMENT": {
+      "hash": "e95a5a87503dd234802f43c0c13f440f31573ddb445a6a798de3e09e173f6b49",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "segment_total_sales_real_estate_other_reported"
+    },
+    "PENTA:average_age_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "89f39d210911f18bdd0f428db0ae507495aa26ff7f09494616349e157f32baa7",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_age_standalone"
+    },
+    "PENTA:average_annual_salary_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "422f1599cc111484ee06cc68007db2afce3d7d49fbfb0734d71f04e11ebe09e4",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_annual_salary_standalone"
+    },
+    "PENTA:average_other_workers_consolidated@FY2015_FY2025_PEOPLE": {
+      "hash": "453558132bd76049aaf842ff7e1777b37167d9d23b169614ad7c537705b53867",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_other_workers_consolidated"
+    },
+    "PENTA:average_other_workers_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "9d5795293d594bba4153f191cf60135d91b8a581c69ca950f640d522c44feda9",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_other_workers_standalone"
+    },
+    "PENTA:average_service_years_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "2a423a9a357dfe9a29d2a23e4787b98b0a3a81bff946a2e0bbbc4f90f20c4e61",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_service_years_standalone"
+    },
+    "PENTA:average_temporary_employees_consolidated@FY2015_FY2025_PEOPLE": {
+      "hash": "ab838555b081eb13715c7de5b8cfd51dc2a69f87ca6a6d6f93b8046fb72486c7",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_temporary_employees_consolidated"
+    },
+    "PENTA:average_temporary_employees_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "2795dea4d6be551f3de581a8915493a1e399735c6d08a9e5971990ba76169ea6",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "average_temporary_employees_standalone"
+    },
+    "PENTA:employees_consolidated@FY2015_FY2025_PEOPLE": {
+      "hash": "1ec34e621ce936131c38a59f9fbeb82e714a2a56113b55bcca6b90ccf7296ec2",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "employees_consolidated"
+    },
+    "PENTA:employees_standalone@FY2015_FY2025_PEOPLE": {
+      "hash": "d9c705a100b225ffc5ceea205d581419325959f8fc9916cfb7fa9e4259139287",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "employees_standalone"
+    },
+    "ASANUMA:employees_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "decf5a750105641c41b72e3bc384a17a770e1e0a15c8172df93f6a78ae695952",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "employees_consolidated"
+    },
+    "ASANUMA:employees_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "0feee486614678f1307679cacf451a56088d17d6789bc5a2f748a0bf5add9a4e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "employees_standalone"
+    },
+    "ASANUMA:average_annual_salary_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "e7107cf9139d02b72c37840faa12c0664e85d9c3baa4f4bb1653c6af3426b7f0",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "average_annual_salary_standalone"
+    },
+    "ASANUMA:average_age_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "ed96ce9fb1654ef5a2ac6f9d7caaf24c5d0d91f52526342d1d1d92ef377ceedd",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "average_age_standalone"
+    },
+    "ASANUMA:average_service_years_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "612707f79df3fb6b05e20f2dbc3e936166deb6a9a11a4aa8021bcb5c4f49a773",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "average_service_years_standalone"
+    },
+    "OKUMURA:employees_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "20ed3c353341acdc41219487d254d5a0c75a00c0ce101e373372a70b3058b16d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "employees_consolidated"
+    },
+    "OKUMURA:employees_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "cc2ccab08b30a2a9818ee108b063635f2544246f72e9075397de9efb4e7dd1e0",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "employees_standalone"
+    },
+    "OKUMURA:average_annual_salary_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "0ebec20f7623df242e20b2788d9cdd880e01e8eb0eae3e159735d96a6b853427",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "average_annual_salary_standalone"
+    },
+    "OKUMURA:average_age_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "2d99536762e8698fc612b8ba776e3ede9c1fed6f6fe23a277347e183f8242358",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "average_age_standalone"
+    },
+    "OKUMURA:average_service_years_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "1201df3ccab6f2af602ff2577fa1f11e8a7e25e7c967cd251cc9036b6fe8043a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "average_service_years_standalone"
+    },
+    "OKUMURA:temporary_employees_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "a34e50aa4eaaf8694401023d1d752952233503255e99c9d9278fa653c8f8ca42",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "temporary_employees_consolidated_reported"
+    },
+    "OKUMURA:temporary_employees_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "62d5ad35d46197ceec728062b2428398e844b975ea29e9872b34d103d7c9a793",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "temporary_employees_standalone_reported"
+    },
+    "KUMAGAI:employees_consolidated@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "5f8f89b36d42efaa64b4f4acd1a385de7ad8d6078a5078cd476d0c554eeba2eb",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_consolidated"
+    },
+    "KUMAGAI:employees_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "aa2f4f5e8cf0244559c2f2d1f8cf684291756d9fe5a4ca7aa275b809306700f1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_standalone"
+    },
+    "KUMAGAI:average_annual_salary_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "a3909c6716cbc643691838fee680d828d33e7fd38592f1eb54b68403f2dcb4b1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "average_annual_salary_standalone"
+    },
+    "KUMAGAI:average_age_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "d6cf55e3abd0e45139924ab25330cd743c9276d27efa0be5dfc49566803ad53e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "average_age_standalone"
+    },
+    "KUMAGAI:average_service_years_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "0bbfb43b8283f8dc81218c86c34f326986580468daa58e3849c8ce594c5287fe",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "average_service_years_standalone"
+    },
+    "KUMAGAI:employees_civil_consolidated_reported@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "1104e69d0c156439d6b368011e4267f6292574cf4438924675259266ed1a87f2",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_civil_consolidated_reported"
+    },
+    "KUMAGAI:employees_building_consolidated_reported@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "33081e74a3e5fd9a86e067ec05d4a2ea457376ccc91b5cbb310da0cb197c2c32",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_building_consolidated_reported"
+    },
+    "KUMAGAI:employees_subsidiaries_consolidated_reported@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "ca921ac3dd6c1448dbb2b422574153210a7ca1fcba9398b93e7b525c6e2d6b12",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_subsidiaries_consolidated_reported"
+    },
+    "KUMAGAI:employees_corporate_shared_consolidated_reported@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "aa8e829525218e7866c7f98cf948072a97fad638aa01b1431c7fb86a6840cc64",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "employees_corporate_shared_consolidated_reported"
+    },
+    "MATSUI:average_age_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "10f81b1af9b6ed0ffb0ef47eb585e0dff9417e12f61aa6ea8fdb82d92f1dae54",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "average_age_standalone"
+    },
+    "MATSUI:average_annual_salary_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "6352ef574a31af7f9a226c1469f451210be13e41aa7b2101c1b316454868c001",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "average_annual_salary_standalone"
+    },
+    "MATSUI:average_service_years_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "72ce078f060169b00feb9c20b281bf650c543788d5bba87aa13e59de42de918b",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "average_service_years_standalone"
+    },
+    "MATSUI:contract_employees_annual_average_consolidated@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "cf943673a6d4f8d1d5d2a14e0262b5d733088422ba8d4102469c3afa6d35104e",
+      "points": 4,
+      "company": "MATSUI",
+      "metric": "contract_employees_annual_average_consolidated"
+    },
+    "MATSUI:contract_employees_annual_average_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "2a4ad61363db839344d7f40bf76dcb21bc9adf12322daffd1c6dd43246524998",
+      "points": 4,
+      "company": "MATSUI",
+      "metric": "contract_employees_annual_average_standalone"
+    },
+    "MATSUI:employees_consolidated@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "2bd19f67586cb8020e3e4e7e08455f2db8928433c2b3c132f77e2397378a5e9c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "employees_consolidated"
+    },
+    "MATSUI:employees_standalone@FY2015_FY2025_REPORTED_PEOPLE": {
+      "hash": "c30b1c1cf2fd7b9c847411608188991ba2ca8f219c411589d7330dd05b7fd6f6",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "employees_standalone"
+    },
+    "PENTA:building_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "927df0073ebdaaf62e449755d1f3e43be07162b593fdbbb3387e6133678c5ee0",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "building_orders_competitive_ratio"
+    },
+    "PENTA:building_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "f26e57f6d3f0ebdb1b40f84217ec0442587390970caecf5222ba080c14bf8c1a",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "building_orders_special_contract_ratio"
+    },
+    "PENTA:civil_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "06d7eeaef34979d799409c0c8c621bab776c760d4eb637c1cb893f001e9aaeb2",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "civil_orders_competitive_ratio"
+    },
+    "PENTA:civil_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "712472f1ebd5dc40f4d01812c8200cbc06e26abda20f53458f22b3de02514711",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "civil_orders_special_contract_ratio"
+    },
+    "PENTA:completed_work_gross_margin_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "39a1ab65ebab30d86b877f24041b14456012175770968ea9fefc4f0c6434315c",
+      "points": 8,
+      "company": "PENTA",
+      "metric": "completed_work_gross_margin_consolidated_reported"
+    },
+    "PENTA:completed_work_gross_margin_standalone_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "35452a8eed9daebd4e19eef208712106e977ded845a6f38438cb6ea3e792568f",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "completed_work_gross_margin_standalone_reported"
+    },
+    "PENTA:debt_equity_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "a53a083023330f8bc83069385e7c1741cf1cdceee21db5a2174dec19f201de7c",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "debt_equity_ratio_consolidated_reported"
+    },
+    "PENTA:dividend_per_share_standalone_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "f0952786d4c1dbaac774b49edd32274d85459432ef906c9ea579c1b210527ab4",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "dividend_per_share_standalone_reported"
+    },
+    "PENTA:earnings_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "65f6b6cd2edf0c4a21428d28bfc8bb4f1adcb5f363799b94d8777197f15e446e",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "earnings_per_share_consolidated_reported"
+    },
+    "PENTA:equity_ratio_consolidated@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "bf75e6561f516bd9db32e166057edcbe91e84ea69dc9a6aee7993b37f3ce9f85",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "equity_ratio_consolidated"
+    },
+    "PENTA:net_assets_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "3ff20f9193aee7d0a9562e72968c687456530aae238882535445e8dfddb2e61c",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "net_assets_per_share_consolidated_reported"
+    },
+    "PENTA:net_debt_equity_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "4192db7c20418ac17d43c9721070373dd3670edef8fbefc74c8f486dea58e872",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "net_debt_equity_ratio_consolidated_reported"
+    },
+    "PENTA:operating_margin_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "572a9fb6f1c93cb1c53cbcaee61bc5dd7d77bb8289e4cc9344082a04e0cb110f",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "operating_margin_consolidated_reported"
+    },
+    "PENTA:operating_margin_standalone_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "ab1758ef57cfd78a8955e15f2f60244bb3b104be530c2707257b974f39c95b47",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "operating_margin_standalone_reported"
+    },
+    "PENTA:payout_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "39ae3d425cfda4267b62dca62efbd146030047d946d0b4c018c91acddb51c4fe",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "payout_ratio_consolidated_reported"
+    },
+    "PENTA:payout_ratio_standalone_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "bfcf3c8c599911d43e939329c59486ec91a82869ac34115b902b3a739e553095",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "payout_ratio_standalone_reported"
+    },
+    "PENTA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "1340aa385d25005e62f7c4187dd9613d9caa85e58ba9445365c82113cb7342a8",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "price_earnings_ratio_consolidated_reported"
+    },
+    "PENTA:roe@FY2015_FY2025_ISSUER_RATIO": {
+      "hash": "6d3181105b597126978e0ede23763526e2eb51bfef0949785550ce5c481153a3",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "roe"
+    },
+    "ASANUMA:roe@FY2015_FY2025_REPORTED": {
+      "hash": "d369d8e0171aa6d4ea236daf33db2c43e1429540a31147dcc6da523780e9170e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "roe"
+    },
+    "ASANUMA:equity_ratio_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "0a3ddfe7d806adcf5e728499f6fe0093eb23e0017826a07f2b4b55543a5a0c89",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "equity_ratio_consolidated"
+    },
+    "ASANUMA:earnings_per_share_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "71df8c08031a8b07c1dc218b245f62def19ca545b0feee7549f8abc62b9b72e6",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "earnings_per_share_consolidated_reported"
+    },
+    "ASANUMA:net_assets_per_share_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "d7671bbc4e5db7324d7cbcc3d36012d2c63b27cc78122670460408d42670fdff",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "net_assets_per_share_consolidated_reported"
+    },
+    "ASANUMA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "af19c65a0f7549452b7ab9e07eec0a94a5178803b3d9a51c7df11c19cf2076dc",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "price_earnings_ratio_consolidated_reported"
+    },
+    "ASANUMA:roe_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "4d65bcc20099cca54e4e37c6138367c90384840fa17468fdc21aa95ecfd9d363",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "roe_standalone_reported"
+    },
+    "ASANUMA:equity_ratio_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "9a473f46eb89460f79adaf03b69b46eb4e2b0c502e7a8e549960507aca09b822",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "equity_ratio_standalone"
+    },
+    "ASANUMA:earnings_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "8ce0d589d925eb5a958288bb5b95c60bc5ad38ae316a06d89f828dc51ab820ad",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "earnings_per_share_standalone_reported"
+    },
+    "ASANUMA:net_assets_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "37f2477d36cc281347053e913dfe7c4fd2f2787dff460852590ada426afb6d94",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "net_assets_per_share_standalone_reported"
+    },
+    "ASANUMA:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "a84e7fc99846e036064f6555ce95b539f6192210535e51647daa103f132b2622",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "price_earnings_ratio_standalone_reported"
+    },
+    "ASANUMA:dividend_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "0c7fb655a6c8a674e9162168038194bf543cc3083caf67410b3f1e3da3d3e3e8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "dividend_per_share_standalone_reported"
+    },
+    "ASANUMA:payout_ratio_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "12b5a93ceb3dc6c0fca6352e4b755c5de2105c16c5ac7c49490db22257d74d6b",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "payout_ratio_standalone_reported"
+    },
+    "ASANUMA:building_orders_special_contract_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "d6d90f50b495bb483f878ffeb34e35e62807404da29bd83613712f50ac141f2a",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "building_orders_special_contract_ratio"
+    },
+    "ASANUMA:building_orders_competitive_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "c6abd04d33814300550022f9eda89de9d90577dafaa012b465f2b7483b9c78a5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "building_orders_competitive_ratio"
+    },
+    "ASANUMA:civil_orders_special_contract_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "ffc7b22f6d9fdf299430244a0b85036cfca99b1dfb0a3ed11b4209a5ff4ddbcc",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "civil_orders_special_contract_ratio"
+    },
+    "ASANUMA:civil_orders_competitive_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "fa8b70913cbfad3ab9a4d3682764ea6ea2a6688bd1551bff7e8812740c5d5c23",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "civil_orders_competitive_ratio"
+    },
+    "ASANUMA:operating_margin_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "f3002ab9e93f72c41e4da1c781bf927f7b34bb0dfda11fca1affa0cd14beb0a5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "operating_margin_consolidated_reported"
+    },
+    "ASANUMA:completed_work_gross_margin_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "2c2f7157aa4b00c43bd6a703c835e9a19c1814dea64dfa07c3d27d4285388bfc",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_gross_margin_consolidated_reported"
+    },
+    "ASANUMA:operating_margin_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "0ad268383cb2116355752c2860b3c5f4327745510da15a8f97a14ee1fa2d32ea",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "operating_margin_standalone_reported"
+    },
+    "ASANUMA:completed_work_gross_margin_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "eecd35b496a61ae47c52e11f37a96c806f06d47324ef94f7135b17966e2fd69a",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_gross_margin_standalone_reported"
+    },
+    "ASANUMA:roic_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "a91168d6ec6a6a46caa4570cb417c2cf839cc6bb484f6801fa98a385d5e87f95",
+      "points": 9,
+      "company": "ASANUMA",
+      "metric": "roic_consolidated_reported"
+    },
+    "OKUMURA:roe@FY2015_FY2025_REPORTED": {
+      "hash": "17ff45b34d2f89f08b3c31d2957b3836bc1d220cbbd6b7708f4c4b2a45dfbb8e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "roe"
+    },
+    "OKUMURA:equity_ratio_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "f4aaae3e317ebbf644783471bb0ea78155923adf4db54b13dd171985eeadd613",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "equity_ratio_consolidated"
+    },
+    "OKUMURA:earnings_per_share_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "ee06f5519051777c36cf4ac94f7f6a9d18e8243e572c47e8965f27fb1d731f0f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "earnings_per_share_consolidated_reported"
+    },
+    "OKUMURA:net_assets_per_share_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "27ee78f767ddc20eb98d62d09007231d702439a948bdec603118c5340673657d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "net_assets_per_share_consolidated_reported"
+    },
+    "OKUMURA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "017cae587549e8842c59f8df96a0b2cc94e8d2b2a03b2dd7b63d813cbaa64828",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "price_earnings_ratio_consolidated_reported"
+    },
+    "OKUMURA:roe_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "05f05882402ddead42c1f019bd99733b5365c197fb30f1c3dfcddc14703d5a0e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "roe_standalone_reported"
+    },
+    "OKUMURA:equity_ratio_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "63458ff883bb664cd6a76f569855049b33e68358942237620be819d9cc4b303f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "equity_ratio_standalone"
+    },
+    "OKUMURA:earnings_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "765c6543c68000a618b44365404f2c4196261c4991bd11f38b8d22d2fdb743f6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "earnings_per_share_standalone_reported"
+    },
+    "OKUMURA:net_assets_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "158d88ed38c7013aa1df001f97680bd30fb71a59931a265cf3ef9811adbe845a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "net_assets_per_share_standalone_reported"
+    },
+    "OKUMURA:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "5e169c204ae50af03389ff506d5146caead6b1c7bc327973329cdedfc91f3ee8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "price_earnings_ratio_standalone_reported"
+    },
+    "OKUMURA:dividend_per_share_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "defe349e5ab649d7d22057b5517400c87ef97fa3301f2424bda8c92a43a85916",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "dividend_per_share_standalone_reported"
+    },
+    "OKUMURA:payout_ratio_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "ece6e6b84dcf36a8a433995a907ffe6bcc3c7ccdba779b98f41bcfa8a31d3d40",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "payout_ratio_standalone_reported"
+    },
+    "OKUMURA:reported_business_gross_margin_civil_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "ce6cedbefee4bedd40d04d6fa78820abe4cbb372f51dbad65727e98cb29cee3d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "reported_business_gross_margin_civil_consolidated"
+    },
+    "OKUMURA:reported_business_gross_margin_building_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "294c969be66f3b3b52dca4ca31ee65ad80e45fbf05fd5f43628ad31c31d03904",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "reported_business_gross_margin_building_consolidated"
+    },
+    "OKUMURA:reported_business_gross_margin_real_estate_sale_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "0700605aef5ae4d3f33ed09e3630e095bf04793cb8733176a53c597fb5f23e83",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "reported_business_gross_margin_real_estate_sale_consolidated"
+    },
+    "OKUMURA:reported_business_gross_margin_real_estate_rental_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "47a412bdada72998ac5c5b874e70c4aed3c4a412ddb72fb4ccbbd8a454798342",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "reported_business_gross_margin_real_estate_rental_consolidated"
+    },
+    "OKUMURA:civil_orders_special_contract_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "5a6786bf077ed0249cc4697dd8fcaed5eca5e16e63651611a204c411ae86711d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "civil_orders_special_contract_ratio"
+    },
+    "OKUMURA:civil_orders_competitive_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "a086ad7e48e096776542ee4c9a08db79147f184d48a005dc1d4d210433e164ab",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "civil_orders_competitive_ratio"
+    },
+    "OKUMURA:building_orders_special_contract_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "dbff923695f6af0a0eb065cab2e31af952b321d9c51e798e842f791b8e3b1ba5",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "building_orders_special_contract_ratio"
+    },
+    "OKUMURA:building_orders_competitive_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "485373c179febb4f949ae6e387b823c84f00a22ad7ac615cd411435380da300e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "building_orders_competitive_ratio"
+    },
+    "OKUMURA:construction_orders_special_contract_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "c62bb0975a30cda3bb1d82ca7d76c618599155413d05f166830511b047b44030",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "construction_orders_special_contract_ratio"
+    },
+    "OKUMURA:construction_orders_competitive_ratio@FY2015_FY2025_REPORTED": {
+      "hash": "2b82897f35668852e1fe6c491788ee472b00b7caad6d70b743b59e2893858e52",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "construction_orders_competitive_ratio"
+    },
+    "OKUMURA:operating_margin_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "2b6213f7e46dc60aeaf28565d953f88c794f301903bba4228bdfabf81e7da9fc",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "operating_margin_consolidated_reported"
+    },
+    "OKUMURA:operating_margin_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "3f24f1244603321e51dfc8b339593772c35cf856ac959f1bf457179cddbaae4b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "operating_margin_standalone_reported"
+    },
+    "OKUMURA:completed_work_gross_margin_civil_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "542622a5d51af6ad1866ace7931cfb7c4f07fdf5fd09344fbffa3ce153c2ae9f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_gross_margin_civil_standalone_reported"
+    },
+    "OKUMURA:completed_work_gross_margin_building_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "d62ff58a9839da954589afd593c622e49a17ae34ce3a4afbbcb903b57a4f4545",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_gross_margin_building_standalone_reported"
+    },
+    "OKUMURA:completed_work_gross_margin_construction_standalone_reported@FY2015_FY2025_REPORTED": {
+      "hash": "525a94c0946911b17ee4cf7023117cc4f85e1c97d9c8ce9ea27fb4b9ddaf8aa3",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_gross_margin_construction_standalone_reported"
+    },
+    "KUMAGAI:dividend_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "c03c03fed1e33213858d337c2a1f694a0fb9246cf52ee0ec0ea8d5a3275d29f0",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "dividend_per_share_standalone_reported"
+    },
+    "KUMAGAI:earnings_per_share_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "2ed66ff3047e7e656842350264a85bc7836d4f9312e15c68de6a7edcb4e54c72",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "earnings_per_share_consolidated_reported"
+    },
+    "KUMAGAI:earnings_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "fb9e2ca65df26a7e067af782836cd8836ce84606e788113ed86c57e61beda8db",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "earnings_per_share_standalone_reported"
+    },
+    "KUMAGAI:equity_ratio_consolidated@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "a1c534c7ab26c9c1e2c547cc8b29f0e6fee7b83d21da38bec8ecee44f1297be9",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "equity_ratio_consolidated"
+    },
+    "KUMAGAI:equity_ratio_standalone@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "a290e432dffb80d852f12d6316c9569abd560f978b67e52de1c0810370cf4861",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "equity_ratio_standalone"
+    },
+    "KUMAGAI:net_assets_per_share_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "2c2a80527f63ed5008fd15a55e86a16492007ea9dde2bb0d080204f783e4a794",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "net_assets_per_share_consolidated_reported"
+    },
+    "KUMAGAI:net_assets_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "62b96d10bd75f7630e9d8bb4fb24ff41f7fc85d474f92337a4c722daeec03900",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "net_assets_per_share_standalone_reported"
+    },
+    "KUMAGAI:payout_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "f9df5b34fc5336c127062a96781330883a5fb1e6f9bf2aa0c42450374b4632cf",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "payout_ratio_standalone_reported"
+    },
+    "KUMAGAI:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "daabd695eab60cc3321902f1b3b13b4fb1f6de3295940c217080798de646357f",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "price_earnings_ratio_consolidated_reported"
+    },
+    "KUMAGAI:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "1b634ab26466a6162ad266f5e86c2f8bef79f59e7975fa4c9c42ea148adc3225",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "price_earnings_ratio_standalone_reported"
+    },
+    "KUMAGAI:roe@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "3c47fe65ea48581aba4951f46f9727f4880292f2ddfcf0628bce0a577998796a",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "roe"
+    },
+    "KUMAGAI:roe_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "f7f9d471b25d3726b4b1bb519f7a9ae246ac81555a788dd02409ef6157aab50c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "roe_standalone_reported"
+    },
+    "KUMAGAI:reported_orders_negotiated_ratio_civil_standalone@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "4d112bf3a141eff74775369b5cbabadf9411ff3491bf4ed33ddce7f99fc99880",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "reported_orders_negotiated_ratio_civil_standalone"
+    },
+    "KUMAGAI:reported_orders_competitive_ratio_civil_standalone@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "d960bea86a1fdcd17ce384142e245ce6ef97faa65f6f0b559e43bc0af1e3f1f5",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "reported_orders_competitive_ratio_civil_standalone"
+    },
+    "KUMAGAI:reported_orders_negotiated_ratio_building_standalone@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "27e613903c2984ba76d90c0d2f1189387fc374026b9fa550c6031fb826c1aa9d",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "reported_orders_negotiated_ratio_building_standalone"
+    },
+    "KUMAGAI:reported_orders_competitive_ratio_building_standalone@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "ba581803c9e9d894835ffab52cd9ea6b0f1fea2c4681b2f2049a0f362c6f5e66",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "reported_orders_competitive_ratio_building_standalone"
+    },
+    "KUMAGAI:debt_equity_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "4a95b37980e28390e0f8e76c8fa7b73869cece7ecfc7096b76eb82db7a0584b3",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "debt_equity_ratio_consolidated_reported"
+    },
+    "KUMAGAI:payout_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "a9e62a13dd68e94e73aa3aa8ca393c542bcd0a9837ceb7e60ed849d1f7c6da9c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "payout_ratio_consolidated_reported"
+    },
+    "KUMAGAI:completed_work_gross_margin_domestic_civil_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "c48400ed8e9688365a317cc200ab3b7f421e04462abc60bb20a3af2a60302710",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_margin_domestic_civil_standalone_reported"
+    },
+    "KUMAGAI:completed_work_gross_margin_domestic_building_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "ccd23b0cae557cc9dfae19b56f8c867e7c75c1195d7b80f89ec87749f4c4c0a4",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_margin_domestic_building_standalone_reported"
+    },
+    "KUMAGAI:operating_margin_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "346fe30480dfad9fa76a3721e37176a967919e642f35df75d44b1324e3a4f943",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "operating_margin_consolidated_reported"
+    },
+    "MATSUI:book_value_per_share_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "f4174f9a48cd5935a0be2429503a8882499148d459b0bebe7a49cf83f02d35ac",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "book_value_per_share_consolidated_reported"
+    },
+    "MATSUI:book_value_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "bedfc327e041c94b7f5886af6aba036dc27973f8e5340e3a767a5379d5219521",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "book_value_per_share_standalone_reported"
+    },
+    "MATSUI:dividend_payout_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "97fa3bb55257ff0a7b7197842e39ed739ea3a9dbb2cd6a35b81d1deb6c0923fb",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "dividend_payout_ratio_standalone_reported"
+    },
+    "MATSUI:dividend_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "8dfa1c5f62028ceb5addfa4979cca68325297fadade84d16e1b34bd0d612c491",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "dividend_per_share_standalone_reported"
+    },
+    "MATSUI:earnings_per_share_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "c805c92e5f70d1c36627ea70df394a72b7aad7fc6d411c62c7088ca4d76f6f09",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "earnings_per_share_consolidated_reported"
+    },
+    "MATSUI:earnings_per_share_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "db2b7702cd64784b2138e49b0100c1375bd8aa625778ffb2c1f0244d8fe1e59f",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "earnings_per_share_standalone_reported"
+    },
+    "MATSUI:equity_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "2b1b90f0cd9adbc6d7422f48133060dc56cd9f2e80556f199e2597bce94b2f88",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "equity_ratio_consolidated_reported"
+    },
+    "MATSUI:equity_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "443b9b6dfb1c30083cc594caa40086c08d849e61357ff0d0351573c2b76a992d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "equity_ratio_standalone_reported"
+    },
+    "MATSUI:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "7468ff650149f04fdeeec6c3bd55bee59e9eaeb453a3b5c8a4ce736c93e6018b",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "price_earnings_ratio_consolidated_reported"
+    },
+    "MATSUI:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "4a23020ea736c77bd147a8142a82dd6848f525aec29eb50f33acd480ed1999c2",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "price_earnings_ratio_standalone_reported"
+    },
+    "MATSUI:roe_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "d6871d5cde7363e2b4979b13289584aa357072a904226be4e08ca16601468b54",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "roe_consolidated_reported"
+    },
+    "MATSUI:roe_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "a1a966e9f50e15bc353a9c78e45ee11a27a947a3f4d9d169ead57c96b4979620",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "roe_standalone_reported"
+    },
+    "MATSUI:building_orders_competitive_ratio@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "5c8ded97a273a93bd778c23411ffc0669537d664c24deeea642aa03bee6615bf",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "building_orders_competitive_ratio"
+    },
+    "MATSUI:building_orders_special_contract_ratio@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "b4f06ecf949dc95df86c7a4690755aa3a1caacf85549bcfe2a0b8e26a526d1d1",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "building_orders_special_contract_ratio"
+    },
+    "MATSUI:civil_orders_competitive_ratio@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "fd48e53a61e0055a85f70a801f8bb5f3933a13928e7a33b50012e4ca3e81e8a4",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "civil_orders_competitive_ratio"
+    },
+    "MATSUI:civil_orders_special_contract_ratio@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "ac534cd5633133119e4830a66d855a1f56cd14fdcbf816099a55a2c50dd87aa5",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "civil_orders_special_contract_ratio"
+    },
+    "MATSUI:dividend_payout_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "8033efec1f68dd9896774aa0fd1270bbf9fa4b64d56ab1fd9f09139daf0f33df",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "dividend_payout_ratio_consolidated_reported"
+    },
+    "MATSUI:doe_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "191fd2840aaf8dd6f7abd9dcbd766e03b457c404e592931407f09ec3519b1e17",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "doe_consolidated_reported"
+    },
+    "MATSUI:operating_margin_consolidated_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "7e45177305ff482deb440899b29fa64d7232cf6d19bbbd4cc3589d4a0c92a3d1",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "operating_margin_consolidated_reported"
+    },
+    "MATSUI:orders_share_building_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "05d422133bb53172751f87669baa0e7c6768f5cb653ccb427b745de684c8bfb4",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_share_building_standalone_reported"
+    },
+    "MATSUI:orders_share_civil_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "2872cb3518500016f7616ef6bfa21b0ae31cef05c948f1c03db593fec6c15103",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_share_civil_standalone_reported"
+    },
+    "MATSUI:orders_share_construction_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "b8573d0d91d7db1df922c64349407e58eba97cd2479cd5dfea516a8aba553b08",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_share_construction_standalone_reported"
+    },
+    "MATSUI:orders_share_other_business_standalone_reported@FY2015_FY2025_REPORTED_RATIO": {
+      "hash": "b17b3c134b1f41407e15789b21bb0806194bd28d6a0d3ff40a622523bc24a9b7",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_share_other_business_standalone_reported"
+    },
+    "PENTA:net_interest_bearing_debt_consolidated@FY2015_FY2025_REPORTED_NET_DEBT": {
+      "hash": "8c8a74e8cd535857871597ee5bf9991c918dc41d292506b1f01a66bd6cc34abd",
+      "points": 11,
+      "company": "PENTA",
+      "metric": "net_interest_bearing_debt_consolidated"
+    },
+    "KUMAGAI:total_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "17e80415f70dacbf603612c25c04baafbe670f57353262c5e118a20671bdc1fd",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "total_assets_consolidated"
+    },
+    "KUMAGAI:net_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "d8a67e0fc979b221b0a4ff87a0649818ba1924127f46a1e721bcbc2077a3c53f",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "net_assets_consolidated"
+    },
+    "KUMAGAI:shareholders_equity_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "a464ff2bef1828e5ee0760cbeb52012ed7062a5c2de46cfbfe7b6962d779773b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "shareholders_equity_consolidated"
+    },
+    "KUMAGAI:own_capital_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "07c0eda5da18ea5b9b5fb730e869182d59f96da99caf8a3f1d04d64d7e74ce5b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "own_capital_consolidated"
+    },
+    "KUMAGAI:guarantee_liabilities_consolidated@FY2015_FY2025_REPORTED_NOTE": {
+      "hash": "e00f2b120d442ce9854cfe42d18f8af209113a97c4f928da8418896bce54b93a",
+      "points": 10,
+      "company": "KUMAGAI",
+      "metric": "guarantee_liabilities_consolidated"
+    },
+    "KUMAGAI:operating_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "a2c4902590132bd503870dd2b6358725496d7620699be770b90b669c9dbec8f2",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "operating_cash_flow_consolidated"
+    },
+    "KUMAGAI:investing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "667ad3b980d24703af3f0c74e6cd9bb3f294922f4db7f7112a1265aebe082aa3",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "investing_cash_flow_consolidated"
+    },
+    "KUMAGAI:financing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "e7628919f5ef952795e8bf3d022df259be59b1f8d00764f9c3555bb7233471b0",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "financing_cash_flow_consolidated"
+    },
+    "KUMAGAI:cash_equivalents_end_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "e8f8ff5f3ee56090427d25e5c01d97f8f534bc0391a15739c13cf89c020c3604",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "cash_equivalents_end_consolidated"
+    },
+    "OKUMURA:operating_income_consolidated@FY2015_FY2025_OKUMURA_OPERATING": {
+      "hash": "1c9c3c424526c9cfed1318d181f6516ead4a4ed5306ec106a063db553532f595",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "operating_income_consolidated"
+    },
+    "ASANUMA:operating_income_consolidated@FY2015_FY2025_ASANUMA_OPERATING": {
+      "hash": "dcf27ee062178d50a1c93d7db62b557de0f979f27d62a003d97c9b5b772ec60d",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "operating_income_consolidated"
+    },
+    "ASANUMA:net_sales_consolidated@FY2015_FY2025_ASANUMA_PL_BATCH": {
+      "hash": "583cd3fb873a4600c7386d508bbfe91dfbf9f8c4b7691b0d81a46686b7398f45",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "net_sales_consolidated"
+    },
+    "ASANUMA:ordinary_income_consolidated@FY2015_FY2025_ASANUMA_PL_BATCH": {
+      "hash": "9146c5e7e2817e0f46c44cb8514be91831d48d261a4996c69e3f6d1ce14967ec",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "ordinary_income_consolidated"
+    },
+    "OKUMURA:net_sales_consolidated@FY2015_FY2025_OKUMURA_PL_BATCH": {
+      "hash": "89fd75e8ed0c0db1fffb8fe4223fc724d2860481b2a758caa3cf2aa9c7edb978",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "net_sales_consolidated"
+    },
+    "OKUMURA:ordinary_income_consolidated@FY2015_FY2025_OKUMURA_PL_BATCH": {
+      "hash": "7c8d76beb99f8e8e02fc5e260ad74415c3cba2eebe3849edaf60d0ca0ae74c82",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "ordinary_income_consolidated"
+    },
+    "ASANUMA:profit_attributable_owners_parent@FY2015_FY2025_OWNERS_PARENT_REPORTED": {
+      "hash": "add2eef275231cfa1418560ea3d2d9383557b65a0a872ee73ef5add73d1dd3e5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "profit_attributable_owners_parent"
+    },
+    "ASANUMA:profit_consolidated@FY2015_FY2025_TOTAL_PROFIT_REPORTED": {
+      "hash": "2eac4c26b949be816f595d89e5603dd09b347ed07e010ae4352701ed3e19ecd2",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "profit_consolidated"
+    },
+    "ASANUMA:cost_of_sales_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "43393a213c016b7071cb73a99c24159779509eab3676ba949fc97c27aac719f9",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "cost_of_sales_consolidated"
+    },
+    "ASANUMA:gross_profit_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "8a8c79a88128552c4bf4e8cd80b2e9a19e14f980de185ccfc31612cb11005048",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "gross_profit_consolidated"
+    },
+    "ASANUMA:selling_general_administrative_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "564efa1efc14be774d1a6d0f10fcf080578be960c57273c2d3fd63c3e4475a47",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "selling_general_administrative_expenses_consolidated"
+    },
+    "ASANUMA:non_operating_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "16d7642147eb0f8599b9497cf4327fe67aab44632517dd609a08f1bee1bef550",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "non_operating_income_consolidated"
+    },
+    "ASANUMA:non_operating_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "73d247062d01847fd188158e84a12485cf722aa6dd2658ec766fae1949286415",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "non_operating_expenses_consolidated"
+    },
+    "ASANUMA:interest_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "ce8e06a632811aec054d6e9c3e3aaeeffa24bed467e148f143c4e8e8656a8981",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "interest_income_consolidated"
+    },
+    "ASANUMA:dividends_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "2cf17233e4d6b094ec9393fc7f1949546806d90dff01a381a6163a3487b27d24",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "dividends_income_consolidated"
+    },
+    "ASANUMA:interest_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "7b4a209c5cf0096fe492a99b57f26ef3b58e5ee51cd3b20f508bdbc06b205dca",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "interest_expenses_consolidated"
+    },
+    "ASANUMA:extraordinary_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "d9412837f90660b16f36bf711ac3b7f437a8a0bfd8ead4aa491a1205a3be6f86",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "extraordinary_income_consolidated"
+    },
+    "ASANUMA:extraordinary_losses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "12a3eb35006d4dc449815801a2965ee2fe273c25d3a785f063689d6f54452830",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "extraordinary_losses_consolidated"
+    },
+    "ASANUMA:income_before_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "073dbf4112ccd5528b878b27105fb2f6ffe51a55061e36af76c60e87dd39002f",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "income_before_taxes_consolidated"
+    },
+    "ASANUMA:income_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "fa58b2bdcec0fc330186ffdabbac8ec964a59d761219217fa4f4178f5f774714",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "income_taxes_consolidated"
+    },
+    "ASANUMA:comprehensive_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "ad0cee1b37b5fd4e430ddbd16b7fbc43eeda8dfbe7defd20ac7ccaf4fd7e233d",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "comprehensive_income_consolidated"
+    },
+    "OKUMURA:cost_of_sales_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "70dc77b86ab3e20bdd264f908b364368f970a2b9437c8671ce70ce0bc23c6ff7",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "cost_of_sales_consolidated"
+    },
+    "OKUMURA:gross_profit_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "b9f6a4fab5f2599718eba5493cc7612b46cf5014d98acfa243956c29b05e65e8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "gross_profit_consolidated"
+    },
+    "OKUMURA:selling_general_administrative_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "62c8c1a70055c043f6d8f695d112f801d52939ff01e78b55870398645312e23b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "selling_general_administrative_expenses_consolidated"
+    },
+    "OKUMURA:non_operating_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "851c73270beff2f28e2bc91ea37c0f77c4d10f447221ada5ffd0adf6224765fb",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "non_operating_income_consolidated"
+    },
+    "OKUMURA:non_operating_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "643b48f88bcba2237ef851e6cf64a3a672d986053c980cf3d5fc878e20d8e11a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "non_operating_expenses_consolidated"
+    },
+    "OKUMURA:interest_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "de41c0a83379dfa4cc7a4f14a3573ab6372c4fd3f27340b7b8b387a29ab2bc51",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "interest_income_consolidated"
+    },
+    "OKUMURA:dividends_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "e757cfd47058ed8088b643e0f56f6c0531092927edb9f205e6d6e534ef7dc0cf",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "dividends_income_consolidated"
+    },
+    "OKUMURA:interest_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "4f19ce1d574376429d3bd1b8cd238443b9c9cdbbc4b009da108e472cd4fcc066",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "interest_expenses_consolidated"
+    },
+    "OKUMURA:extraordinary_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "2a03b05e1cb5e02465867a344994674d38c284940f9a5b30d7d182684f617f11",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "extraordinary_income_consolidated"
+    },
+    "OKUMURA:extraordinary_losses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "adde709d309248546c285115f574836fd999447a4f8657ce603d5cc91fcf631d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "extraordinary_losses_consolidated"
+    },
+    "OKUMURA:income_before_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "6a3d959ccf6e2030567ab56424be075fc150ca30f2e17902c38b878d10f07712",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "income_before_taxes_consolidated"
+    },
+    "OKUMURA:income_taxes_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "455afd8571ce2323a068c616727dd69866e816ae48e13a106eb76b5f12460640",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "income_taxes_consolidated"
+    },
+    "OKUMURA:comprehensive_income_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "d814f650132a0e68375debff068721a5fecde67d0b721ca9865079287d77b329",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "comprehensive_income_consolidated"
+    },
+    "OKUMURA:profit_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "44c3766abd09549f53b6a80390dfa2e0d680b8ba2af9384c870eb887c117fadb",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "profit_consolidated"
+    },
+    "OKUMURA:profit_attributable_owners_parent@FY2015_FY2025_REPORTED": {
+      "hash": "467e39fc5803f5a98f8fb879267d20c7c151361b9103fbff2064110b883cd5f6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "profit_attributable_owners_parent"
+    },
+    "ASANUMA:total_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "5b8d2b010c43187168f344ec100b7b0822f24ee5b7eeae382c83c47453b9820e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "total_assets_consolidated"
+    },
+    "ASANUMA:net_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "3d40b776e6bed26b6fb1de6ba06a159ec4d03d9d4332855791c9a344ad6ef467",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "net_assets_consolidated"
+    },
+    "ASANUMA:shareholders_equity_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "4915f5dd92f274c641c4dc6e96400a20b4b8c45d45a1865db3f2f404db4a42b7",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "shareholders_equity_consolidated"
+    },
+    "ASANUMA:own_capital_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "ddc11d0ab5f45427f15a5b1992a2962954c6b5886d603bae683216bcce514e67",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "own_capital_consolidated"
+    },
+    "OKUMURA:total_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "6aad749333c265fe7d57c2bc3d2b1ef21e2a84101e18a92da7a658a414f3ed49",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "total_assets_consolidated"
+    },
+    "OKUMURA:net_assets_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "77e91f03fd454b81eb7e4160070ddbc0f88eac356b2a014894a65769e2772ef6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "net_assets_consolidated"
+    },
+    "OKUMURA:shareholders_equity_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "73629b15892aba3a399dd9a47a3783d5967cdf31b6b292bf36a6a35e748bd305",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "shareholders_equity_consolidated"
+    },
+    "OKUMURA:own_capital_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "d207e490e4aaa9fba38c1d28800b98fba5ccfb4ca504cdd44c1b22e3e6121174",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "own_capital_consolidated"
+    },
+    "OKUMURA:interest_bearing_debt_consolidated@FY2015_FY2025_ORIGINAL_STOCK": {
+      "hash": "b57b4bba57bef5efff62d5b1cb4724aec720b3d5579530892c5b972ddc4530a8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "interest_bearing_debt_consolidated"
+    },
+    "MATSUI:net_assets_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "9508e823f9d97ed2414ca1d026ef30f050d56ba0bb889cf9a05e84b6d96e3b4e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "net_assets_consolidated"
+    },
+    "MATSUI:shareholders_equity_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "30af2b49248a4201dadf825462d82c71670aa1321cdaed830afbe419da2f6cdf",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "shareholders_equity_consolidated"
+    },
+    "MATSUI:total_assets_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "acfff6a58d678f405ae06a02cc404cf890252cb0d7cdde78f082ef1127cf6b6b",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "total_assets_consolidated"
+    },
+    "MATSUI:guarantee_liabilities_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "5b738a01cc5af39c585811834c0b738c0a031e74f8dea914b470ba43b0eaad71",
+      "points": 2,
+      "company": "MATSUI",
+      "metric": "guarantee_liabilities_consolidated"
+    },
+    "MATSUI:own_capital_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "48ced22c1ce20cf594ffd738fc97302c27ca901d92e8f917e9af03f361bc851a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "own_capital_consolidated"
+    },
+    "NISHIMATSU:net_assets_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "3501bc2574c47a61a8004764d9933593aed490e4e0f68827da87d12142c649c5",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "net_assets_consolidated"
+    },
+    "NISHIMATSU:shareholders_equity_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "bac99c7bddcfee956d486dadbd7b367647f62797718b319aad29141dec9b2415",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "shareholders_equity_consolidated"
+    },
+    "NISHIMATSU:total_assets_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "3b75f71c61a7b231c31daa7d587ee1351e236c0c860c4fdf529b8488f0e2aeca",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "total_assets_consolidated"
+    },
+    "NISHIMATSU:guarantee_liabilities_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "252814ba0633784bca072b23f025f62a8a02fa954132c8a9ec0e993ff1cef8c2",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "guarantee_liabilities_consolidated"
+    },
+    "NISHIMATSU:own_capital_consolidated@FY2015_FY2025_REPORTED_STOCK": {
+      "hash": "7509d08afbfd9806b41d40faaf35399dfefa1d300690da645f2d99d4710b8f9f",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "own_capital_consolidated"
+    },
+    "ASANUMA:operating_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "9b2cb28d6beddfa557b4a0bfa7d75cdd15f1d3414b423b725fa5079a2b9b5f35",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "operating_cash_flow_consolidated"
+    },
+    "ASANUMA:investing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "b12b8ae40c1fff20b1613aeea4b68a673d75ddf7f8f8cddeb12e284cfaaa23d4",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "investing_cash_flow_consolidated"
+    },
+    "ASANUMA:financing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "9ad2c598d0473bfc6c4b745f61aff901e47d81da2931be0d35f6b0f66d13e5c5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "financing_cash_flow_consolidated"
+    },
+    "ASANUMA:cash_equivalents_end_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "175c449e3a6b9f6182dcbfe80e1fdc102577874b75875376cbb259327822a7d8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "cash_equivalents_end_consolidated"
+    },
+    "OKUMURA:operating_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "0f340f19f31052a3d6a80fd937af1b81f8bed57338d77933ad8f77bd62f12b26",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "operating_cash_flow_consolidated"
+    },
+    "OKUMURA:investing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "26ea73ac15e09eb1145e96674ad8ed49279937c734f2eb701f94bfd360df9f45",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "investing_cash_flow_consolidated"
+    },
+    "OKUMURA:financing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "79af9b76e26f5e08bcfec42a0e34e449aa55e634539400f87c23a63f45387a5c",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "financing_cash_flow_consolidated"
+    },
+    "OKUMURA:cash_equivalents_end_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "d76d05da861ab39d31757f7312340b05d3498e564766ab8cde2ae32dfea70bbe",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "cash_equivalents_end_consolidated"
+    },
+    "MATSUI:cash_equivalents_end_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "b9bf5e85bbf7d5e67ac3448c7dd2e1cfb023ae62e808f967f7bc46e10a051af9",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "cash_equivalents_end_consolidated"
+    },
+    "MATSUI:financing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "1a5827c7aa4897bc494e85a1fce68bd18ccd46a41c34410a2ab3435c9fc5097e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "financing_cash_flow_consolidated"
+    },
+    "MATSUI:investing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "5ac54ec4838754d4c54c380d12ceeb53a11d65634df2baf6d768b670cd3df08e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "investing_cash_flow_consolidated"
+    },
+    "MATSUI:operating_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "5ed430af4244d9a0e0b3271eee6f47fa2845cf102bb4b006b8d95cb1b3c2f52a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "operating_cash_flow_consolidated"
+    },
+    "NISHIMATSU:cash_equivalents_end_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "249360de72f09a7594d5ce32ace0f9bcbfef8fdb4d43b44ee6ec9bd9cc618471",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "cash_equivalents_end_consolidated"
+    },
+    "NISHIMATSU:financing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "6992b69d5e49f078b748a51b7308edfa655ab81cbbcf7487701aeebd96e90f6a",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "financing_cash_flow_consolidated"
+    },
+    "NISHIMATSU:investing_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "fb21e1261e6c79c9a85439da717a3353f7d31c453eb95c027b65449a845a2502",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "investing_cash_flow_consolidated"
+    },
+    "NISHIMATSU:operating_cash_flow_consolidated@FY2015_FY2025_REPORTED_CF": {
+      "hash": "4f9428dc103daab41b9ade4837e61452146562e5b87ff65550dfdb7a2a9a610c",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "operating_cash_flow_consolidated"
+    },
+    "ASANUMA:capital_expenditures_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "e6f46f6b1dabf45fba0edfd682e7f4ac48cd4c3664f7db867d25b4aae361f996",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "capital_expenditures_consolidated_reported"
+    },
+    "ASANUMA:research_development_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "684693c82f0c90e4435bcc33cf75627b88e24cc3e56af37a7e25d9e6b2d3b50d",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "research_development_expenses_consolidated"
+    },
+    "OKUMURA:capital_expenditures_consolidated_including_intangibles@FY2015_FY2025_REPORTED": {
+      "hash": "32fc3b532cb319aaf8df349f76d57a57cb15f27ce8e9351e064f8506a843f6ee",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "capital_expenditures_consolidated_including_intangibles"
+    },
+    "OKUMURA:depreciation_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "cc6e30bd1c2298157cd5c1c60f487761e65043bb4077f93a2e68aa0586ac8576",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "depreciation_expenses_consolidated"
+    },
+    "OKUMURA:research_development_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "da98962873ffda4fb5001b870242a9576cdfcbeae64bb1e2925a69d65b82cbe4",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "research_development_expenses_consolidated"
+    },
+    "KUMAGAI:capital_expenditures_consolidated_reported@FY2015_FY2025_REPORTED": {
+      "hash": "fc99d1fce38ed4c0b58a524861a4f76e084bc6d278cec308a1d48fde965bcdfe",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "capital_expenditures_consolidated_reported"
+    },
+    "KUMAGAI:depreciation_expenses_consolidated_reported_presentation@FY2015_FY2025_REPORTED": {
+      "hash": "95071b71d3b27e4e2128cca244d53e6644ec77eee4b5b0d5bee578742c193d22",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "depreciation_expenses_consolidated_reported_presentation"
+    },
+    "KUMAGAI:research_development_expenses_consolidated@FY2015_FY2025_REPORTED": {
+      "hash": "52e2c2a093af1699b922787a149f042f8f0f183fa12245e51c4de5eb6472ee5a",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "research_development_expenses_consolidated"
+    },
+    "MATSUI:capital_expenditures_consolidated_reported@FY2015_FY2025_REPORTED_COST": {
+      "hash": "bc10d8fa7b8f3e349b974239696ac6132db87c897c81b85051ccfd414988948e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "capital_expenditures_consolidated_reported"
+    },
+    "MATSUI:depreciation_expenses_consolidated@FY2015_FY2025_REPORTED_COST": {
+      "hash": "b8626a6466594a64ca8b41f8067d6c0f679d05b132ff9ff19f8d4c687106db61",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "depreciation_expenses_consolidated"
+    },
+    "NISHIMATSU:capital_expenditures_consolidated_reported@FY2015_FY2025_REPORTED_COST": {
+      "hash": "0519042608f32fe2efce4e123c2f610e478ae6542b0e86694fa69cee64285282",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "capital_expenditures_consolidated_reported"
+    },
+    "NISHIMATSU:depreciation_expenses_consolidated@FY2015_FY2025_REPORTED_COST": {
+      "hash": "fced92e7b6604cecaac75b4e5bd03c38f179f1800532354a111ea30a5194cd83",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "depreciation_expenses_consolidated"
+    },
+    "NISHIMATSU:research_development_expenses_consolidated@FY2015_FY2025_REPORTED_COST": {
+      "hash": "b7a8b90855f0b0ecf8c870bcea0afbfa8db9c09efcb179de575138d8eed69e74",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "research_development_expenses_consolidated"
+    },
+    "ASANUMA:materials_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "d905847b7e471089b3dc8703f4593c5546a79039669e0bea3ba34e0766d5d971",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "materials_completed_work_standalone"
+    },
+    "ASANUMA:labor_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "40a9303a631b26f079f06b20ee80570bcb193bfd73e918ec62371900e372d53e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "labor_completed_work_standalone"
+    },
+    "ASANUMA:subcontract_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "e25edcc6e14c3c30d500cdb7fa918744617fe73a9ee6b3c6b7f53f0374edf2e2",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "subcontract_completed_work_standalone"
+    },
+    "ASANUMA:overhead_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "3444984ab68b5e8d57e5a5db625f4ebc1fe43a74828984af0f3dc254348c7e5a",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "overhead_completed_work_standalone"
+    },
+    "OKUMURA:materials_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "1b00a0119a627e1b322abe41d343e3284ada8ef2173462c8a962e64579d05014",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "materials_completed_work_standalone"
+    },
+    "OKUMURA:subcontract_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "8bd6152565435e2b46900985ff6173a74479e8b5e042a22169f0b0b1935a7f00",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "subcontract_completed_work_standalone"
+    },
+    "OKUMURA:overhead_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "73ed312fc369b46e48d76f707481a34c8e4709065b9062b843483c8d714f2869",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "overhead_completed_work_standalone"
+    },
+    "OKUMURA:labor_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "bcb3d8e3d1050c9d5568f88493cf27ea6303e5390f2ef8a76cfe60d3ad5fcd47",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "labor_completed_work_standalone"
+    },
+    "KUMAGAI:materials_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "f05161c3698a93a7a39a0a9e4187828d557217ba0268018edeb72412022505db",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "materials_completed_work_standalone"
+    },
+    "KUMAGAI:labor_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "b97c321e22e8849566372fea476a675eed4367f58c6ddc78c58905bbb5d2f46b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "labor_completed_work_standalone"
+    },
+    "KUMAGAI:subcontract_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "b44d398a3986be7dd6b8edebe050bfd2c8ad694ef6d72b132442369f0bbf7b14",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "subcontract_completed_work_standalone"
+    },
+    "KUMAGAI:overhead_completed_work_standalone@FY2015_FY2025_REPORTED": {
+      "hash": "eb6e9cfd0718a4580f91877a4940432aa05ebc32df42c07378c1c3d31188afc4",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "overhead_completed_work_standalone"
+    },
+    "MATSUI:labor_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "00289e9cce91d6d2175c3f384e47f1f0ccaac76bb97b94db6bcf4b805792a24d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "labor_completed_work_standalone"
+    },
+    "MATSUI:materials_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "a5df5f89317d2f2f1a63edd732a5d0b4ed4bca53dba8cdedf4bcf74de41d05f5",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "materials_completed_work_standalone"
+    },
+    "MATSUI:overhead_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "ceb6232c49ef1e45e2970864e9de0151f0c96c6f3f0865f3824c4a40d1215e23",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "overhead_completed_work_standalone"
+    },
+    "MATSUI:subcontract_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "8cf833447e92b7cc4be191e35d6a32696a71d567301e0c4494487416c473e5a1",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "subcontract_completed_work_standalone"
+    },
+    "NISHIMATSU:labor_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "fe10e4050716f379974bee9fc2785600f8e5a03d156a83b0173bd6fa2f434e9c",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "labor_completed_work_standalone"
+    },
+    "NISHIMATSU:materials_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "9a9113cb036157f78b36931dde8cdb2cc3eea03f668be76534f13d2b9d91e918",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "materials_completed_work_standalone"
+    },
+    "NISHIMATSU:overhead_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "5c10b5d11aa24017ddde17ce4c551b79cf73c4ce883fe0ccc465411cf203fd6b",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "overhead_completed_work_standalone"
+    },
+    "NISHIMATSU:subcontract_completed_work_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "de196cce1e114e53e2a9306533ba0889adf26de2167210cbfdd0a7624c1a1a49",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "subcontract_completed_work_standalone"
+    },
+    "ASANUMA:advertising_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "f4f7d4a2a6d46f0f41b3a336f303affa4c95cce4c423df71a62f7b11f494be79",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "advertising_expenses_sga_standalone"
+    },
+    "ASANUMA:entertainment_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "027ec688a033e7c728ef55e27eb44870ecef7fdf03bfd554c4686519ef90c003",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "entertainment_expenses_sga_standalone"
+    },
+    "ASANUMA:donations_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "5f7bea11c645a32fcb649cadb658a4ec75cea990a13d4f19fca7c8847fb635c3",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "donations_sga_standalone"
+    },
+    "OKUMURA:advertising_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "b1ce495e609d2f8d74555881a9a659cc0f5fd1724a651e66c6d8a895738abc78",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "advertising_expenses_sga_standalone"
+    },
+    "OKUMURA:entertainment_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "fab952484d767a36746c7f176e5c15ece64ab9b0817a7378d1b742e8badfa53e",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "entertainment_expenses_sga_standalone"
+    },
+    "OKUMURA:donations_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "0c6ebde5df0e0053cfd180d3e195172af37d2e048cae89a4bea5b79e486ed528",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "donations_sga_standalone"
+    },
+    "KUMAGAI:advertising_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "07ceefd06ccecafe3595c1e7d3590b60e4b5494c3b523096e99e1060d9930924",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "advertising_expenses_sga_standalone"
+    },
+    "KUMAGAI:entertainment_expenses_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "491b64fc3809bc5c267eff8590e0f3cbfab5658d40bbb33848697b87e71ae076",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "entertainment_expenses_sga_standalone"
+    },
+    "KUMAGAI:donations_sga_standalone@FY2015_FY2025_STANDALONE_SGA": {
+      "hash": "af5187bfe807926901fa2c7d20efc823881a61026920be2683f2d630f57758cb",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "donations_sga_standalone"
+    },
+    "MATSUI:advertising_expenses_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "55706450e43a386b41ce26189e4344fb9adce8c9a3aa15ac3fd9b1d460afeef9",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "advertising_expenses_sga_standalone"
+    },
+    "MATSUI:donations_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "bd10dd597c265a3e746bdd96c597c10bf950c3b2bef05db1335cd4e00d195252",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "donations_sga_standalone"
+    },
+    "MATSUI:entertainment_expenses_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "eb37d9d015012b7cb4e60bb81b4a3e722d752739bdd88c268d472ce31313fb0a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "entertainment_expenses_sga_standalone"
+    },
+    "NISHIMATSU:advertising_expenses_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "17c1fa2f73a5975360005cee8737d53e532c94ee0071b6867010954aaaea992a",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "advertising_expenses_sga_standalone"
+    },
+    "NISHIMATSU:donations_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "3d5b47cf05981ad294ddaff9f49d27f6a56c54a1c7077a75950b00af9207fde6",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "donations_sga_standalone"
+    },
+    "NISHIMATSU:entertainment_expenses_sga_standalone@FY2015_FY2025_REPORTED_COST": {
+      "hash": "21e4d667e4b3df1b2b42806dac95ffce0fc631a0f5a3c1dda82119626124c546",
+      "points": 11,
+      "company": "NISHIMATSU",
+      "metric": "entertainment_expenses_sga_standalone"
+    },
+    "ASANUMA:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "71fc44a6845417ca958cb3adbc4d354fb3ca9e551506851fd99e38952cdc5b43",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_building_standalone"
+    },
+    "ASANUMA:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "54dad1c00963faadda9abd51ea33cb2098bdb1525c321eab9ac62fa11669a0b4",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_civil_standalone"
+    },
+    "ASANUMA:orders_construction_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "4afaa80450c9447efc43e2041637b872e01c07d4ff9fd872fcdf1135745ef005",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_construction_standalone"
+    },
+    "ASANUMA:orders_total_consolidated_reported@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "1845bd84fd40bfcab2e9102bcad7aeafcc78473885336debacf1382e13c8f1d2",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_total_consolidated_reported"
+    },
+    "ASANUMA:orders_building_consolidated_reported@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "d0c7cfd2b7e114dd2ef907114e036354cefda473edcfd9eb3d6161d49ab13a95",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_building_consolidated_reported"
+    },
+    "ASANUMA:orders_civil_consolidated_reported@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "6c8955ca08932ee10b07a592b71fa24ef79ae71afb722a997f89c6924d6cd7ec",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_civil_consolidated_reported"
+    },
+    "ASANUMA:orders_government_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "1948d640fc7742beb8cfb54b3173060d3f5920b94e28e634c8dcf0caee0115c8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_government_building_standalone"
+    },
+    "ASANUMA:orders_private_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "6c23dbdaf694fb692a655777fbbd8090d9af25dcf12c7588c61a61ce45de432b",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_private_building_standalone"
+    },
+    "ASANUMA:orders_government_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "69cb43ec6a40e1b8fbbd40011f7d0ecc09f84a75936350aa124b48cd8b423e5d",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_government_civil_standalone"
+    },
+    "ASANUMA:orders_private_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "afd46b1012c7ea01baaa1b782a4f456ed896f039814066e09a5449197b858c5c",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_private_civil_standalone"
+    },
+    "ASANUMA:orders_overseas_reported_geography_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "3ea314915fe0b3270de6a394aeb8767cc703dc03d77b7788f8d3fe8ec85d8bd0",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "orders_overseas_reported_geography_standalone"
+    },
+    "OKUMURA:orders_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "8e871032b092aa066d3937ab1d3ecfcff0e5c706485b3d1ee845778072911f61",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_total_standalone"
+    },
+    "OKUMURA:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a328017f95859f0f245c02a834a39562ff23a6ff2d43f48731fb4aacde07761c",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_civil_standalone"
+    },
+    "OKUMURA:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "c7125b80db41d8f03c327004c949014189d7985332f052c7e8380b733c2238fa",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_building_standalone"
+    },
+    "OKUMURA:orders_region_kanto_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "950c16c08559db8c5ec0f1d8d6d25de472ef27bb7c3592a1e382e33d09f94d28",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_region_kanto_standalone"
+    },
+    "OKUMURA:orders_region_kansai_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "28cda0257f3fcdc25efcca69f9a77705567dffc6666d629be34ba914bc2a90e6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_region_kansai_standalone"
+    },
+    "OKUMURA:orders_region_other_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "91a112ad8ee2dbdddf76c31244f02570cb153e348350be687a1aa18b6ab69ef3",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_region_other_standalone"
+    },
+    "OKUMURA:orders_domestic_government_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "56a1ea0678633528e4214e77a3538ea184ba7851fc70e6174a66d5be9868d72f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_government_civil_standalone"
+    },
+    "OKUMURA:orders_domestic_private_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "28d329fabac9a89af7d5d55e939874e53490bc4568b55af805c5c2f81a8f4197",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_private_civil_standalone"
+    },
+    "OKUMURA:orders_overseas_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "9bd91433829b7c2f1083d3f6bc7866963963c0d4e3a3326fed0dcf4e7015b1b1",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_overseas_civil_standalone"
+    },
+    "OKUMURA:orders_domestic_government_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "7710560e10e057ab51b4b7d98afb706d5f61cfca392aa951825de68c0ee2fded",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_government_building_standalone"
+    },
+    "OKUMURA:orders_domestic_private_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "fe1f930a18e8a8f7009cdec30b99dfad6328f2e347457eaf883658d3a7e829d9",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_private_building_standalone"
+    },
+    "OKUMURA:orders_domestic_government_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "222eac55e91d21754743f79a26656a097b3b63769940e20adaa71b6dbd3b3059",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_government_standalone"
+    },
+    "OKUMURA:orders_domestic_private_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "329e20fbf23918e407363586be15ac13f83bb033a5c2b34106e4470cf2dfca14",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_private_standalone"
+    },
+    "OKUMURA:orders_overseas_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "9aca32d225166b1fc18c88fb6c85dad8fba51793a8dc9a12fdb75227202ed123",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_overseas_standalone"
+    },
+    "OKUMURA:orders_domestic_government_national_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "e43526e5283c9f3da1b3d03c0697ee9d23a5ea52e16884e1d737e6ec1dd4b15d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_government_national_standalone"
+    },
+    "OKUMURA:orders_domestic_government_local_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "de538bdfda1eb9bba162765f0ea408d9e78c687d7b45eee6b40e3a19b7081775",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_government_local_standalone"
+    },
+    "OKUMURA:orders_domestic_private_manufacturing_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a503c5af69bf0dc34a3fe8779b73c756a9b91bf3f2f89b4eaba77c641ea299b0",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_private_manufacturing_standalone"
+    },
+    "OKUMURA:orders_domestic_private_nonmanufacturing_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "3ac8bc633f6ba709ea9e8a18131c722f660927945229d3514e50f8b08c92045b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_domestic_private_nonmanufacturing_standalone"
+    },
+    "OKUMURA:orders_size_3billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "578fc0566e0e360089b966b15241d88d9a5097e32f809cf1f14c2372307efaae",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_size_3billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_count_size_3billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "01a5373aa70eb265278d09386cfc76196019a8cca4ff073f215d694bcb52795d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_count_size_3billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_size_2billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "ceeb6a5113956f4cbacb2d6f9182557f5b82eef43c02fdbe5a51865832689f0b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_size_2billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_count_size_2billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a8f2d9d36f0602b2afb8185e37787b6f69b91a742e3ed67a86138dd69470d910",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_count_size_2billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_size_1billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "f5f03a719c76741e2c75e72750d3a8a661709f99b6b88bc4d722169f4c7d495d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_size_1billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_count_size_1billion_plus_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "112ce821df8a87abdb259edad1421ec2f5fa37cb3051fb11e6d0e52533c08ce4",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_count_size_1billion_plus_total_standalone"
+    },
+    "OKUMURA:orders_reported_c2c39bbe9f_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "16ebceaebdfe94c054e042ee997767f17262b44379f615d3cd7445c4e5f72464",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_c2c39bbe9f_standalone"
+    },
+    "OKUMURA:orders_reported_4eddb4b865_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "0a264c0667476ca50583dd16302a7ecbd156959868a2c95183c23a999060a512",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_4eddb4b865_standalone"
+    },
+    "OKUMURA:orders_reported_773f30a2c8_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "79535d8d08ac9fce6bef3de042052f625d242fab7daa690648d5cd23e8ff8cdd",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_773f30a2c8_standalone"
+    },
+    "OKUMURA:orders_reported_08f68e3842_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "47a00e5ec6d3ebbd5565d67902b552ba6ac83b2944003a9c77388e1315cf5eb9",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_08f68e3842_standalone"
+    },
+    "OKUMURA:orders_reported_4ab11b103f_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "1fadfb53fa84e744b354d89a55d0125cd9f84d335260ce3db8be9360600f7fad",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_4ab11b103f_standalone"
+    },
+    "OKUMURA:orders_reported_fcfcdc51bc_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "013eeceb58d033da9d49d194ba85347575841ca80892d825cd9c76bfa904a039",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_fcfcdc51bc_standalone"
+    },
+    "OKUMURA:orders_reported_a841b7e16d_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "e427b227e92c8e767a4b7e4b7edd7cb3af007ab55ec40e21c8a89079f641e396",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_a841b7e16d_standalone"
+    },
+    "OKUMURA:orders_reported_5322d57cea_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a03170b52de04833f8fe280027a8511759ce5bdcd1a3191f261e9bf0deb80924",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_5322d57cea_standalone"
+    },
+    "OKUMURA:orders_reported_e2524ed77c_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "ca7de8cd5b4ab1112021337abbf87d6567882fbb8e6d3b59f48f47da219a827c",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_e2524ed77c_standalone"
+    },
+    "OKUMURA:orders_reported_d91341e0a5_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a8968d2207d1a2e50af684babdaee84a4d53aaf71a8eef30fec69ad8bf8ef66f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_d91341e0a5_standalone"
+    },
+    "OKUMURA:orders_reported_2518fe4134_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "edf3781e67f45cab6ce3ec8838869390899e7266df2ca05495e93b0743afc585",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_2518fe4134_standalone"
+    },
+    "OKUMURA:orders_reported_a4c870b809_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a05e6dd839c321d95c747e07c66da8a2ed05a8ec0490c2b0108a11fb8b872fa2",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_a4c870b809_standalone"
+    },
+    "OKUMURA:orders_reported_a3bcc766e9_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "4f96f1a8cdcdf3152bcd90ca88be21e4686657df9eace8710933f63bca0539e1",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_a3bcc766e9_standalone"
+    },
+    "OKUMURA:orders_reported_01367507ed_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "3b962dee0575de97b9f237b3af75eba8479cfcae2d5734ada783e436fcd1bebb",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_01367507ed_standalone"
+    },
+    "OKUMURA:orders_reported_e21ce1e016_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "36a4cfeab5cea4defc9d642f09f7e19d29fb966ce40162443e1fb7756aa20611",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_e21ce1e016_standalone"
+    },
+    "OKUMURA:orders_reported_2e458fd2dc_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "ae36adb8983469548661c504625426da5abad0499ddf7c30d4472614787fc165",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_2e458fd2dc_standalone"
+    },
+    "OKUMURA:orders_reported_818bae9825_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a2a52630aadc4db55ad812f1a400c6092f9b63a956580e985dae0ce5364bed77",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_reported_818bae9825_standalone"
+    },
+    "OKUMURA:orders_size_under_1billion_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "611b6d0211d88da53bb5490f15f25f184d9e27df4ff725d9c6d3f278b13ead79",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "orders_size_under_1billion_total_standalone"
+    },
+    "KUMAGAI:orders_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "441a77fc82551a2ee0ef4cf0c36e392ed7a8ea407eb9a604bc5972fa5ab2bcc5",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_total_standalone"
+    },
+    "KUMAGAI:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "0e7f725ee1fe5fd8389bd10329db024864055383d7e4ffb5fcbbd0f9da4ab5ee",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_civil_standalone"
+    },
+    "KUMAGAI:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "83ed1625b1e78f92154f5de439e09c70add85eaa28660b92412fa79fad29d28c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_building_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "42bf6003e817630ebecf9c66c5458e59375f3c5097254750411111d5b15543bd",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_standalone"
+    },
+    "KUMAGAI:orders_domestic_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "5e1d35c0acce1a8a5b6f877f4906448d7cd2558d75a6cd097bfc777413d0c364",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_building_standalone"
+    },
+    "KUMAGAI:orders_overseas_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "38b351caeb211fb90c9feca93f95531bb9aae4891670094b0d47f1ee6ab1465e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_overseas_standalone"
+    },
+    "KUMAGAI:orders_domestic_government_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "3d50beea7855e19babbc8336439f2fcbd9612e3497cd68f0e011f50971b4d842",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_government_civil_standalone"
+    },
+    "KUMAGAI:orders_domestic_private_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "5f81e8647076029b35d0b8264a77ce2f3714ff5ee6b2871341f4ce6f54011633",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_private_civil_standalone"
+    },
+    "KUMAGAI:orders_domestic_government_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "672e3117f7a4e97c2841f899311c27e15b175e2bbd8e062e32793ceaebb90d7c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_government_building_standalone"
+    },
+    "KUMAGAI:orders_domestic_private_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "05b30621edf1ab1f6aefc3333676c3a1f9ed87c65cba08d4f964d054ea62048b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_private_building_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_roads_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "e03008831efcfe32761ff2e18db224ebe191979242c9e275437aa9aa976db87c",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_roads_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_railways_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "a8a55b973eaa383bf4d912732eb31294245931c17bf490b489bb60029c125ab0",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_railways_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_power_energy_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "f981a595e443ad87e982317c450f1e0cf75830c16daab1d06dc8575d7e915b2f",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_power_energy_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_water_sewerage_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "0fbef7387653cbd1431c1c395f210d389f4c2148f23adcb1c20c7e1614a55d19",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_water_sewerage_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_nuclear_accident_processing_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "4b81846083c76545c3488839fd102e55ffebf6c78efbd70d6e4e3b45ef681164",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_nuclear_accident_processing_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_land_development_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "5a5bed1f2810beaff8fe866caf735973bced07a9d79ee71ceadd32847268bd70",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_land_development_standalone"
+    },
+    "KUMAGAI:orders_domestic_civil_erosion_flood_control_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "81b2a140ef4ab42ac331b1aebba7c5894d3a7a678c05a9229a33e492b0bb63e7",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "orders_domestic_civil_erosion_flood_control_standalone"
+    },
+    "MATSUI:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "d2d9f904376e3faf48b1bc06929d02a8baf1a8e91249cc1f0a9e724d7608bc21",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_building_standalone"
+    },
+    "MATSUI:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "b281da1fe9dcdca79b28b34e163f1283bb7aff9503d42e8c87564faa3e33cc19",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_civil_standalone"
+    },
+    "MATSUI:orders_construction_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "679a61d8332544adefb6dfe91204d5fe32622077269cf911024a8f3906f96129",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_construction_standalone"
+    },
+    "MATSUI:orders_other_business_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "35b53033d674ec68ae3ec360b4fbd440b24ea862e283e81cc3bb74c2507f2a2f",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_other_business_standalone"
+    },
+    "MATSUI:orders_total_standalone@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "332cf7f54e571612441d992637675478ccd1fe7bd7dddb06142ac020fec2c10d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_total_standalone"
+    },
+    "MATSUI:orders_consolidated_issuer_reported@FY2015_FY2025_REPORTED_ORDERS": {
+      "hash": "f1de6deab430bcda236a2a22def427fe6b3090340f9d31eaf26be9bf6375eb61",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "orders_consolidated_issuer_reported"
+    },
+    "ASANUMA:completed_work_revenue_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "045d1ac790992d0c05cf2f5582dc0aa49c6443fdba11fbc04e411a74cac5a3ac",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_consolidated"
+    },
+    "ASANUMA:completed_work_cost_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "0a45822c3ba06ff2088c23588cdded6975e8175edae5cb59051a7bbd9aaaa26e",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_cost_consolidated"
+    },
+    "ASANUMA:completed_work_gross_profit_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "080908439abf0f9a4269da40d003423c4a85caaeec42155b593f681dfe2354aa",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_gross_profit_consolidated"
+    },
+    "ASANUMA:noncompleted_work_sales_reported_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "489cae0e3586936534d2d0a7252e6dbd4f5e45bca609a3746fb4e361bee2b4f5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "noncompleted_work_sales_reported_consolidated"
+    },
+    "ASANUMA:completed_work_revenue_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5684d25426392348476577658349cada9d783ad80d1f8dda8a1cb2123db5746b",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_standalone"
+    },
+    "ASANUMA:completed_work_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "fb66ded3d93cbe135e4db8263f13378f5b912b29340dbf5987b5594e875c4e22",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_cost_standalone"
+    },
+    "ASANUMA:completed_work_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "6167e882f4fb1e78574e02cf921c9235fe185b9e66d2271fc55fccbaa5d88f20",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_gross_profit_standalone"
+    },
+    "ASANUMA:noncompleted_work_sales_reported_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5f2c37f4ee8f17c82690cabe6cc41647f82161de56e0b38826601197e412b2e8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "noncompleted_work_sales_reported_standalone"
+    },
+    "ASANUMA:completed_work_revenue_building_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5cf785b389ebf17836603ce5895159a43b4befd5e86070324d506c27fce02080",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_building_standalone"
+    },
+    "ASANUMA:completed_work_revenue_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "4729781fbf4c698444481f2df1716e4815f0df50399f9c9b606b14498869ee80",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_civil_standalone"
+    },
+    "ASANUMA:completed_work_revenue_government_building_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "d89284a85ba6f64e9adeb13d8a3c7892f58c0837e880bce2a95fcc1849e8fcf8",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_government_building_standalone"
+    },
+    "ASANUMA:completed_work_revenue_government_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "4b4daf0614deaa4b3b0c117735b20d0a8f99cb0c231ea98da83df68ce800ce1c",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_government_civil_standalone"
+    },
+    "ASANUMA:completed_work_revenue_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5987324a968d54f81759c5d7d96cc29e00a72b0ddfd854b1c6414601a6843c6c",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_government_standalone"
+    },
+    "ASANUMA:completed_work_revenue_overseas_reported_geography_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "39da5b91bcff502bbbfa0474d65e551284108b24bf5bcfff15fbbca6cda72104",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_overseas_reported_geography_standalone"
+    },
+    "ASANUMA:completed_work_revenue_private_building_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "70815e3a41d7255ec9be31fdd5e98bb12143d1bcb3b34aeb0c19f07d37c6210a",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_private_building_standalone"
+    },
+    "ASANUMA:completed_work_revenue_private_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "cfa99dfd48bb8bd74127fbe465bee1084660f136f2322f1c3e974bed646157c2",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_private_civil_standalone"
+    },
+    "ASANUMA:completed_work_revenue_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "c69bd53e930c6b9f4deb9548bbaf36b664fc207037c0b7430daf0bb38991a8c6",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "completed_work_revenue_private_standalone"
+    },
+    "OKUMURA:completed_work_revenue_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "a045099bb520b7cdc51e64ffb0e15cbb2ac22e2483ff7747b1876077118e0d24",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_revenue_consolidated"
+    },
+    "OKUMURA:completed_work_revenue_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "b6778de7b294dc1da0c9b3e843f5b8e590a7fa81f9911b7adfd9d1b06200dca0",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_revenue_standalone"
+    },
+    "OKUMURA:completed_work_cost_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "dfe3aa2436357c365fc047c1c05bff01200701cc38cd56a908ffc663307e8423",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_cost_consolidated"
+    },
+    "OKUMURA:completed_work_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "f4653a29f2a7840ae9f81edd65964c27a2315122fddf92404672b37a2f163e5f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_cost_standalone"
+    },
+    "OKUMURA:completed_work_gross_profit_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "055e1659ab9c501317e005b7f26f29f0e1f336f27dd5cffc78d88113cf5ca2e5",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_gross_profit_consolidated"
+    },
+    "OKUMURA:completed_work_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "442e5eecaf8176696187950c3487e0cff7d823c8d7a8573304a2a14a11d0b399",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_work_gross_profit_standalone"
+    },
+    "OKUMURA:noncompleted_work_sales_reported_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "8dfeae2928a463af45313a584147b5ada00911bd14ad039ee00c36cb7e3a9b30",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "noncompleted_work_sales_reported_consolidated"
+    },
+    "OKUMURA:noncompleted_work_sales_reported_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "a8780e46929bc04e859190bc3bb142c04e89241a3cdaa56c2a66c4fa96ee8ae8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "noncompleted_work_sales_reported_standalone"
+    },
+    "OKUMURA:completed_reported_209194f799_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5d37f0b403a1c0b74a97ae8bfbc378121df28a1a236a470f05fa3ea9cd8ba62b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_209194f799_standalone"
+    },
+    "OKUMURA:completed_reported_0f3bbd5e54_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "7ba6f18b4859916f03983b53b14d2f475c8e949625aa5845afe3142be60def5a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_0f3bbd5e54_standalone"
+    },
+    "OKUMURA:completed_reported_3c80782b0e_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "49a466173f0f0e5a5036a35bfc98e8cc006a725b420947a067560d66c0ab0dc7",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_3c80782b0e_standalone"
+    },
+    "OKUMURA:completed_reported_75d7fc7f4f_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "327a44968ce00d985591b50b921b64a143321df773a9e25a0e666f637b1fff5c",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_75d7fc7f4f_standalone"
+    },
+    "OKUMURA:completed_reported_8e74e253c3_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "9bd8fac6621d7b7000ca5437c898c8de58a564805ff8cc16020010372d36b98a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_8e74e253c3_standalone"
+    },
+    "OKUMURA:completed_reported_80d12e3b39_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "2ce5a2fa6273ffbd382bc636ac813e5cf845e3417562292e586c04d9ad1971b2",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_80d12e3b39_standalone"
+    },
+    "OKUMURA:completed_reported_2778f3c9e7_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5acdc6bb36babf06f8b6dcc28138ce1d94d27e0828af6c70d9f63d18be2af0b8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_2778f3c9e7_standalone"
+    },
+    "OKUMURA:completed_reported_7220e5fdc3_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "7b9021c848242147bc8b457c8685cd14ae2c70ba6f8232a4ebcbbeb594d9ef50",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_7220e5fdc3_standalone"
+    },
+    "OKUMURA:completed_reported_efa8f7d1ea_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "21c499ba0319fd0c73dc95c132a14af9b5db4d7824cac3e15510b1c1a46b70de",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_efa8f7d1ea_standalone"
+    },
+    "OKUMURA:completed_reported_2002e0c1b2_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "f5c647dd138a7d0daff1da62a424425d1427286ae6f50dbdacefe92b4b4563cd",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_2002e0c1b2_standalone"
+    },
+    "OKUMURA:completed_reported_e0ad4a6359_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e3c5a38cf9f29ecda91df692de992aedc50108bbfa4ca2d5830723654d7a13df",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_e0ad4a6359_standalone"
+    },
+    "OKUMURA:completed_reported_83583e9278_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "32cc8710968304d837321ad68b25afb5d21c2d5bbb1ca11ef80632e1d758a503",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_83583e9278_standalone"
+    },
+    "OKUMURA:completed_reported_feb9e97fec_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "c769c4b2ae5c696c9d5d877749f8e5fa1590a4cd60337b315f6b00ef3317e8f1",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_feb9e97fec_standalone"
+    },
+    "OKUMURA:completed_reported_0f05cc6f43_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "8c74f1ddbe75154328c0fae255abed72710bc07a58dbd82e78003a3017002b5d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_0f05cc6f43_standalone"
+    },
+    "OKUMURA:completed_reported_5c5a8d039c_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "94b2d3eeb2fac589b4117fcc1388a769175c98ac69c7d08ddf6fdb8474ee31de",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_5c5a8d039c_standalone"
+    },
+    "OKUMURA:completed_reported_6abcadf54b_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "45b033baeb6da314b6ed1e70106169e4c3fd1629baadb139d53d8db4a7e462f5",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_6abcadf54b_standalone"
+    },
+    "OKUMURA:completed_reported_8a4ba3ea16_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "80b3882ff3a63c91f85877ecf31e55b91180562242c3e673875cc45917872b4d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_8a4ba3ea16_standalone"
+    },
+    "OKUMURA:completed_reported_c15ebd26b9_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "0b80eb48e037505bb90faa5b7cf10c43f23954d73d25f9037daf860bf8852918",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_c15ebd26b9_standalone"
+    },
+    "OKUMURA:completed_reported_44097966cb_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "59ff917c19671e769e400c9680aa5b16d58560c910b1ba2273ebeb83f83e10c9",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_44097966cb_standalone"
+    },
+    "OKUMURA:completed_reported_0c7444c1e8_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "fb0f25971c9e7eb69b03498b3e2a7455b40728bee7508f041e747a64581efd3b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_0c7444c1e8_standalone"
+    },
+    "OKUMURA:completed_reported_d4f7796918_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "d9c0fd567e23ad34b183625241db30c8369b36b169c91c9bd5314aa8da5b157a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_d4f7796918_standalone"
+    },
+    "OKUMURA:completed_reported_3c45b8d891_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e328171e4c59dd1890598ff669b4b5e1f3f8e90dc650476c055a021d9630f7f7",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_3c45b8d891_standalone"
+    },
+    "OKUMURA:completed_reported_3fe8e5e724_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "5ba96dac05057943e461f0684aaa1c5f38fe3ff719e4f94177ab17415ae86906",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_3fe8e5e724_standalone"
+    },
+    "OKUMURA:completed_reported_371cabb495_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "07dde7ad2cb1bfbe6a4aec203cf533e80c56ff6292abe39ddf670744524d6344",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_371cabb495_standalone"
+    },
+    "OKUMURA:completed_reported_9f8cc2b801_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "c81c5e8ba4e55438ec5faa29db2222d37a551a9d4fbf52284c110a60c268df20",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_9f8cc2b801_standalone"
+    },
+    "OKUMURA:completed_reported_5f312e82dc_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e326b9f2ec44ff7f77e75671307d706c47f7b556aa937a60aca60015d62c2c43",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_5f312e82dc_standalone"
+    },
+    "OKUMURA:completed_reported_bd7b147618_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "4f70d77bf434ef90aba3e318d69968d8e7445e509a8a9bea0a8d9b2f90fa9d6f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_bd7b147618_standalone"
+    },
+    "OKUMURA:completed_reported_f435cd0711_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "64efb6f8d956eb63595ee0890446a6ae1bfee72766282571b7c61fbfb8b689c0",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_f435cd0711_standalone"
+    },
+    "OKUMURA:completed_reported_849cd86df7_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "120159f0835514c41e8b88cc592cff02d9f8c60ac82497b6e491eca821e4a274",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_849cd86df7_standalone"
+    },
+    "OKUMURA:completed_reported_b636bae3ff_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e2c015084100de38313ed543bcf816f61197ebf1b381f4c5729a53addb45ea60",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_b636bae3ff_standalone"
+    },
+    "OKUMURA:completed_reported_5a4beff055_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "bf0fec64214d521cf49f939516a5ed99b4b5332e3eab6ba22dfbd148de990867",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_5a4beff055_standalone"
+    },
+    "OKUMURA:completed_reported_7fbb557633_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "369acba228742bbe2e1c2cd987443fa5964e920f6254e4208d8b7b3ffbc49561",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_7fbb557633_standalone"
+    },
+    "OKUMURA:completed_reported_ed1e7dba05_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "421f3d484ade4371a8c6c3d6dd03750217ed689721d43f4f0c1fd205d8f59b5b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_ed1e7dba05_standalone"
+    },
+    "OKUMURA:completed_reported_53aa2503b0_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "1a873b9cfa6d23c4d7905fe00413d059fd9b79f10e48bbb0eac7b84ea71d00b6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_53aa2503b0_standalone"
+    },
+    "OKUMURA:completed_reported_e0468e23c4_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "f4c30c8e781112db3f4ec13fe13a5214949777147bf408f76fea1421cab895c4",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_e0468e23c4_standalone"
+    },
+    "OKUMURA:completed_reported_631cb3a2ef_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "07d909ce2701b4a8b8d3afde9a0b4fbbb44786b606fa5b1683bc0898b38b3322",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "completed_reported_631cb3a2ef_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "2fd37cc91a359902d472d479309916bc42a34524f7f57faefdf7d0adde93d139",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_government_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "00a977ac648170a5bbf0c278341a903722bbb6268a1d7839a9394001bf917419",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_private_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "865c183af47949edc17761bea67bcd0e3948a4d2ee4c8a19ad996343d7c4d50d",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_civil_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "fae78559bc43dfb4c11b5569565fe6b455e5b210212d6c3862b0723835ff2f6e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_civil_government_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_civil_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "d6c3c8e1a33f98ee3eb0cf38ffbefb17562b4a4d6f3fb3418f8f89378c8518d8",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_civil_private_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "941fd8266e97e740322e4cda5bacc828b8ce98dab9029479d1d9e8d46922f2cf",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_civil_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_building_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "28043445c4024d4965fc755473ba7bfe1e19e17b6266b18e16f6c2d3d7b04308",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_building_government_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_building_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "4aff68c7005a52dc5352ccf49703c972d2cb3d174a9c245eb00c226d8ff80af4",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_building_private_standalone"
+    },
+    "KUMAGAI:completed_work_revenue_building_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "c12b656e28d398356371cf843fc7402c4e0d3ec559593a7f7227379708b56095",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_revenue_building_standalone"
+    },
+    "KUMAGAI:completed_work_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "2c468f3ce4ca992d433262515e963d4a33bbcb789d18e2ad03b0f62ba661428d",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_cost_standalone"
+    },
+    "KUMAGAI:completed_work_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "3e000ac3027beebf388868ad701d3ee5fc7a4bb4987674e54868aeda5957076b",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_profit_standalone"
+    },
+    "KUMAGAI:completed_work_gross_profit_domestic_civil_standalone_reported@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "18d8d7e41b6e2830bf28d1a348072fd4ff05dece23bf6d7106f7f7b9e6cc3d40",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_profit_domestic_civil_standalone_reported"
+    },
+    "KUMAGAI:completed_work_gross_profit_domestic_building_standalone_reported@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "79af3fba3f3b2a81356b66d316d6348b644992874f19cad48267b67eb9967b98",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "completed_work_gross_profit_domestic_building_standalone_reported"
+    },
+    "MATSUI:completed_sales_building_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "75675f5b3838ed45f2967564e84dffbf296b11f2b22371fe0b94eee195509758",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_building_government_standalone"
+    },
+    "MATSUI:completed_sales_building_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "daa7c3ef336144c75a8cd9b35f1c992ebc0facc6465baf604a08605551469494",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_building_private_standalone"
+    },
+    "MATSUI:completed_sales_civil_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "2de0111602d9528a03869e0c20feeab4cbf0facb11641635d28660bdb197748a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_civil_government_standalone"
+    },
+    "MATSUI:completed_sales_civil_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e81a8910d3006fdf51910d749f6bf98221bfc389e22f73ba1cb12f627f0f19ab",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_civil_private_standalone"
+    },
+    "MATSUI:completed_sales_construction_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "82625d313bdd056eb4ccf37a7956a9a93cdd98cff3dc1ca63727c8073203a041",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_construction_government_standalone"
+    },
+    "MATSUI:completed_sales_construction_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "2c9c74de2d38738466f4b33e4cd19012d079654f32cd837bc06d5bd51bc59601",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_construction_private_standalone"
+    },
+    "MATSUI:completed_sales_other_business_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "49e940ba90273a22aa0dbb7c37c9535ed5a2575b777f4220c59cd3af1ec3b072",
+      "points": 2,
+      "company": "MATSUI",
+      "metric": "completed_sales_other_business_government_standalone"
+    },
+    "MATSUI:completed_sales_other_business_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "151ee879487b9d3926d18b17f966f6fa0578dd7d8ffbb5873ae380cf4802b049",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_other_business_private_standalone"
+    },
+    "MATSUI:completed_sales_total_government_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "4ba2421ecd50830ec3c1ace0a66c39ccedd8e40f98b821a5e49a9a36cfe6d91d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_total_government_standalone"
+    },
+    "MATSUI:completed_sales_total_private_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "9e5da04868e4e171ae5f72b99cdaca8a9329daa8607e7dcfb2fa27b26405e30a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_sales_total_private_standalone"
+    },
+    "MATSUI:completed_work_cost_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "75f09f96209fa9b2ee76d04e269bda0fac3be0039c5b1688ff8891153d0e9463",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_cost_consolidated"
+    },
+    "MATSUI:completed_work_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "59ed61545c75dbbc2356657cd2cc40812e2f4d4e0610885c52983e1e079629ab",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_cost_standalone"
+    },
+    "MATSUI:completed_work_gross_profit_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "f99309ee33d4bcd8c573e656caf03359b1abaed89b019a106d66be5531d57535",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_gross_profit_consolidated"
+    },
+    "MATSUI:completed_work_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "712321e2ea65222396ece17aec6f259499bb47b9b2e731779c3489713e764f6c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_gross_profit_standalone"
+    },
+    "MATSUI:completed_work_revenue_building_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "d0d5e62032ae874e683c5585f87d93bfbafb27123beab4999b9957930cf25712",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_revenue_building_standalone"
+    },
+    "MATSUI:completed_work_revenue_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e59407db0a9e90ad5da01786f00f85178c4ee86e8299bb6bd0afb3aca4d00dc5",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_revenue_civil_standalone"
+    },
+    "MATSUI:completed_work_revenue_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "59c74a175ec4e7dbffdb6932dabd881cdf6c45eff8bd5fca8e3ce8aebc5f27b0",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_revenue_consolidated"
+    },
+    "MATSUI:completed_work_revenue_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "0b7dda2e206ac74a1ddbb3cda06ec7248d873011b5c8f4044fb49971aea61f5c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "completed_work_revenue_standalone"
+    },
+    "MATSUI:other_business_cost_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "476372509c007db5fb07b399a24a744586790def25a5306ad9230c8c82fb873c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_cost_consolidated"
+    },
+    "MATSUI:other_business_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "6e4d37dbd226b9d03c0114ad4b8a25bf934a2bf5ba66c8456291463de99a8e9c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_cost_standalone"
+    },
+    "MATSUI:other_business_gross_profit_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "05ef9c4116ccda7860077a791caabf8b8c675df6f385620379437d50f9bc23b5",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_gross_profit_consolidated"
+    },
+    "MATSUI:other_business_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e173c73e4b56fb5ca2628fb03ea5a7819cb0977c24377c33fcd3fdb4279a8972",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_gross_profit_standalone"
+    },
+    "MATSUI:other_business_sales_consolidated@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "b2b47001380b1301d8f59eca5c4f5935f1dd65f0d7a6a2c36bfa6637da182a24",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_sales_consolidated"
+    },
+    "MATSUI:other_business_sales_standalone@FY2015_FY2025_REPORTED_COMPLETED": {
+      "hash": "e292b0028f9d0cfd7bee46a839de1cef133a1921badbd03668d17ce19f6e96e3",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "other_business_sales_standalone"
+    },
+    "ASANUMA:backlog_closing_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "68029080553c3015a601a9bae817b6d42e2ca42f7d87d040ae9b75468de1bdf4",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_building_standalone"
+    },
+    "ASANUMA:backlog_closing_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "dec831b4b533f2b0937e8be3910e9658186e765d7f5c72ea774c7a699e8e0f52",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_civil_standalone"
+    },
+    "ASANUMA:backlog_closing_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "a70bbd65f8f04c696841f2680e9ceb2a24d547392aac2775398e91e23613b190",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_construction_standalone"
+    },
+    "ASANUMA:backlog_closing_government_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "a4a23b8ad955bec8689ba5e22d35e42a5a438251b1cd75852fec24b2d6905883",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_government_building_standalone"
+    },
+    "ASANUMA:backlog_closing_government_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "a5b3f3b04665b586a4a64148ce7d12cc9856a4cd5304a01f844d187ead006641",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_government_civil_standalone"
+    },
+    "ASANUMA:backlog_closing_government_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "175e74b6149bd6c9c4fdd6fce3f8e7d694a52d9ff857089d7d520d28b10850d5",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_government_construction_standalone"
+    },
+    "ASANUMA:backlog_closing_overseas_reported_geography_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "51d5317b2d3f24cbdcd174d8f0a436f87b0710d97e29577d8e04cbf4ec970992",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_overseas_reported_geography_standalone"
+    },
+    "ASANUMA:backlog_closing_private_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "ab830b8a7bf9a25c30c5f45f0da46a27480a5ec5ff613460103402bcb1f125d6",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_private_building_standalone"
+    },
+    "ASANUMA:backlog_closing_private_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "401e885cca1686e6f52a990847996fc1babd6c158c89f6ea479cc955890b69d0",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_private_civil_standalone"
+    },
+    "ASANUMA:backlog_closing_private_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "c4319164c41c037e80e2f0779ce3ffa7ab936a34d44825a673ee05c2fa65c6dc",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_closing_private_construction_standalone"
+    },
+    "ASANUMA:backlog_opening_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "26943e0739ea1a57fe8225401db5b3bcee00f0fc98faac25da74da9f5efa73ce",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_opening_building_standalone"
+    },
+    "ASANUMA:backlog_opening_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "532dab59c1a139fe9d628f4b939f67379e7dd28d11357efadab19553a0b22e02",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_opening_civil_standalone"
+    },
+    "ASANUMA:backlog_opening_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "7738007e500244d9b9a465b1f36ff57eb751fd32e6d4c916c9dbfb2dabb79c99",
+      "points": 11,
+      "company": "ASANUMA",
+      "metric": "backlog_opening_construction_standalone"
+    },
+    "OKUMURA:backlog_opening_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "00d432caa0e5cdd60a5203b38b065d8141e20aa7430b389171c16c505a2febeb",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_opening_civil_standalone"
+    },
+    "OKUMURA:backlog_opening_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "91e3cab90df1d7365761133c3bef6d11f5ec7222edfc488161a2e7015eacb7ae",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_opening_building_standalone"
+    },
+    "OKUMURA:backlog_opening_total_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "09cdfc435496450acb550614b70fc7172bac3377605a9222c98a41ffe2da97c9",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_opening_total_standalone"
+    },
+    "OKUMURA:backlog_closing_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "e60609b2022278b80a60ba27bb8e5e48aabc443b328a5d4cdd6f566d17baec5b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_closing_civil_standalone"
+    },
+    "OKUMURA:backlog_closing_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "ac52fb2a0367b36778acd1d87f410c937706877af1abcbd8657cf6bb983c53cc",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_closing_building_standalone"
+    },
+    "OKUMURA:backlog_closing_total_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "bf93c30e6c3dd46e83569649e42dccc33999ada5a1379edaa2b01a0b9ac2d954",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_closing_total_standalone"
+    },
+    "OKUMURA:backlog_reported_7de8f7b0a3_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "4c166dffc969c788a248885377e40384eca926070f15f9aacd73a52da1aea4b6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_7de8f7b0a3_standalone"
+    },
+    "OKUMURA:backlog_reported_47b559d068_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "09ca95e7436e2bdce266c4ecc073c7bf4b4edf47451ed5af3c01fe15cbef5808",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_47b559d068_standalone"
+    },
+    "OKUMURA:backlog_reported_7e34a814cf_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "d0c5a5d166dfe24b61772ee129bd541687546ba452ece86b98074a2028c2eed7",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_7e34a814cf_standalone"
+    },
+    "OKUMURA:backlog_reported_7850b4113d_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "882a463cc29e192993b807a346524ab19d64982e0091f713cbd09971c3f12fa6",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_7850b4113d_standalone"
+    },
+    "OKUMURA:backlog_reported_b75204d898_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "568f5d2f6075f68413a07268e22c6b6f26683b4e9c2c2300fb053d4866b4ed5d",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_b75204d898_standalone"
+    },
+    "OKUMURA:backlog_reported_208bd05f2e_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "d09bce00cb276cc08ed545433d5a78994ea11537dc73a64eeae2c047057315ba",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_208bd05f2e_standalone"
+    },
+    "OKUMURA:backlog_reported_2d78f553be_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "f0ea01c31a4cdfc7446ed30770e8e7b3d96f91d32ae22b0afca43d0ab4b81a3b",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_2d78f553be_standalone"
+    },
+    "OKUMURA:backlog_reported_656f1f5542_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "fb1c6edb4aa0b6bbd744223a905157d5f49e665cfd84e33cd37e90d978bbbc32",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_656f1f5542_standalone"
+    },
+    "OKUMURA:backlog_reported_623a0599da_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "2401ab623e54c8ee01c85e239dcebe10239c51a8156ad98ed68018073322fa49",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_623a0599da_standalone"
+    },
+    "OKUMURA:backlog_reported_88a6914336_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "db569ec30ae4131a912ee67d96ef3d4f293be4b0a0331a19f6694c3d59bb6117",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_88a6914336_standalone"
+    },
+    "OKUMURA:backlog_reported_eec48a688f_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "b43c67233f4557c26cf7c280fb61e4279dea28cef3939b52a2b81fd249db3f38",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_eec48a688f_standalone"
+    },
+    "OKUMURA:backlog_reported_59d8d66a23_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "125c162c62ce412164ee149fa288fde6e12c46bfe3ddd56d5d225922d1f9028a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_59d8d66a23_standalone"
+    },
+    "OKUMURA:backlog_reported_d3f44c05ba_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "6c891e3f2959cdc1266fe0729eb19a3c1671ebbbcee80f40a47ed340338a5b32",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_d3f44c05ba_standalone"
+    },
+    "OKUMURA:backlog_reported_ad2234c983_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "5a2eac927e85ba063c4b87d69b50edec69ada958dfe394a6615676d4ecd62527",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_ad2234c983_standalone"
+    },
+    "OKUMURA:backlog_reported_f240d66b9a_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "69124b2df6fbeba15a22cb963daa5b7a63edf4fb67216870ed28ae919c123955",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_f240d66b9a_standalone"
+    },
+    "OKUMURA:backlog_reported_ee220a277a_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "47ec8b23ba7611a1ad323bf29ca1c4578e7fc9dc2669e73bcff404ef84b0ee0c",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_ee220a277a_standalone"
+    },
+    "OKUMURA:backlog_reported_cf2f429f91_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "8252dd90d4d54999fbf17405914d548e435b5481e7f1eaa1c6f2c153908953b8",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_cf2f429f91_standalone"
+    },
+    "OKUMURA:backlog_reported_27dd447fd1_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "b96796f7561d33112421dc843e326eed6ed5c785affee9544d9adb2347ebd918",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_27dd447fd1_standalone"
+    },
+    "OKUMURA:backlog_reported_73843eabb5_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "1a12e4b59f88f4b53dc888639d39adda2b8129340b05ad7df4833eac130931df",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_73843eabb5_standalone"
+    },
+    "OKUMURA:backlog_reported_288f21ce25_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "8dc5a9ee090adf253dfd3a4250d0442797de794de37b029f66a266b29104c44f",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_288f21ce25_standalone"
+    },
+    "OKUMURA:backlog_reported_5f1c60109d_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "214c91665c90c59acd7ac4c43d883d4dfddb90a50b99e506ab1e3b7a6eb58773",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_5f1c60109d_standalone"
+    },
+    "OKUMURA:backlog_reported_e8e1be45f4_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "0042324515bba4846e760054f109e8c57616574cc0c5c88f8defc578f1b44130",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_e8e1be45f4_standalone"
+    },
+    "OKUMURA:backlog_reported_e20a3238f4_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "2f4649085e4fc9ff43550907db78cfed40b2cbb2bb866d03088bb3dc4f4e2d8a",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_e20a3238f4_standalone"
+    },
+    "OKUMURA:backlog_reported_422e650f43_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "db2debd50f4c06da9b13a03e6cb31b242a8bef6e9b6caa7592fef38eb22dfa13",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_422e650f43_standalone"
+    },
+    "OKUMURA:backlog_reported_fc43cf618b_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "0f01587f7cb4d3f8abf4316c8f4571a7d8661bfde49c11f682b0327706a3e696",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_fc43cf618b_standalone"
+    },
+    "OKUMURA:backlog_reported_5ec2816750_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "a549c66ee1f31033be0bb7dc03878982a00bac74289b40bec4852033e2ae1948",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_5ec2816750_standalone"
+    },
+    "OKUMURA:backlog_reported_e2d78dae5f_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "5da2c6a3cb26ddfab4d42f92ecce15eafacb59cbd1435931810d520515969c12",
+      "points": 11,
+      "company": "OKUMURA",
+      "metric": "backlog_reported_e2d78dae5f_standalone"
+    },
+    "KUMAGAI:backlog_opening_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "dd406979f55e1d72514d20d97bb9031b1e39fded3d49f31a7264fad50f864c84",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_opening_civil_standalone"
+    },
+    "KUMAGAI:backlog_opening_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "d993f5bc749e0c355dd3918f5423f02b503b704244d604753d8fecf84ced0381",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_opening_building_standalone"
+    },
+    "KUMAGAI:backlog_opening_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "c7cb38f9981589fbc10192e1c04cc91016fb25dffac3fd6782d1d2a72f3a6d5e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_opening_standalone"
+    },
+    "KUMAGAI:backlog_closing_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "cf88f3917068bca7e17f173fe6d25876918041f38af9bbabe751b5ef26f51226",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_civil_standalone"
+    },
+    "KUMAGAI:backlog_closing_before_fx_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "b9b198c9dc707eba53e31454db386d1ee921cc4f1da733c77655dff0ee4bc2e9",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_before_fx_civil_standalone"
+    },
+    "KUMAGAI:backlog_closing_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "b7a11e41b7b43eb4c73273f0ba3e91d11e12aa754d51bee38450569e18e450a1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_building_standalone"
+    },
+    "KUMAGAI:backlog_closing_before_fx_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "d1c0d510c02f280980ce747d0ea0ce430595bc4efa4d1c9e5c8f30a73d0b8243",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_before_fx_building_standalone"
+    },
+    "KUMAGAI:backlog_closing_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "19a2e51f3de5febd48dd053812f044c023b1b8b01114b2c09e3448bffa62f043",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_standalone"
+    },
+    "KUMAGAI:backlog_closing_before_fx_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "eb33e011aaed0bd72a3df9c27a833ea6971b1996314545cb88b7932d7c20ba2e",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_before_fx_standalone"
+    },
+    "KUMAGAI:backlog_closing_civil_government_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "be115e09433dc78b7f7ee0f40e62564d1253ba7bf3ac8f4be7efd4abffecf3b1",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_civil_government_standalone"
+    },
+    "KUMAGAI:backlog_closing_civil_private_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "a090a04266863e1f27e4f9e80511ca0ffa3f89808a72777f61bd947399f85958",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_civil_private_standalone"
+    },
+    "KUMAGAI:backlog_closing_building_government_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "8235dd6be3de215d70c3610b5c22d33eeb4ce51d41140755392d53ae26644d85",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_building_government_standalone"
+    },
+    "KUMAGAI:backlog_closing_building_private_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "1b264f2d334d31d0becddd6a6a76409a817fb1836deec68a6fbb2f05572f9571",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_building_private_standalone"
+    },
+    "KUMAGAI:backlog_closing_government_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "ae26a4938f4d699f2f254b37d3a306321aad7378d4f5673608210d7872627fe4",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_government_standalone"
+    },
+    "KUMAGAI:backlog_closing_private_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "c8293b24a0785cda0460d5246615d75026f8800067a799b1a536a760c3cb4ede",
+      "points": 11,
+      "company": "KUMAGAI",
+      "metric": "backlog_closing_private_standalone"
+    },
+    "MATSUI:backlog_closing_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "e0f9aafff0bd4873c609e6e388a377e7689aeacc1a9ff6437ef6b11bba0f400e",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_building_standalone"
+    },
+    "MATSUI:backlog_closing_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "89be874edeec54f1e7bb710029de24c920020092030afd5dc3117edbe24e1f15",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_civil_standalone"
+    },
+    "MATSUI:backlog_closing_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "5135c91a4bbaa8521c65b51c2292aa5250809fa24c451c9349919b95cd761f48",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_construction_standalone"
+    },
+    "MATSUI:backlog_closing_other_business_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "bca538444814df9c55be611351d2b08d3baef4225acb7faca40e258287394525",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_other_business_standalone"
+    },
+    "MATSUI:backlog_closing_total_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "63a35dc40aa164a26b418807873c504efef6a93b46e1acb24d850e2345a9738f",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_total_standalone"
+    },
+    "MATSUI:backlog_opening_building_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "9b6afa3605280ba6ee1e8775ef511eb1b92b9cfe5a6dad4d3cae39b94fd567fb",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_opening_building_standalone"
+    },
+    "MATSUI:backlog_opening_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "06563106954913a9abb36b823f9294cf804ca3a0e8124769c24e88563a38f117",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_opening_civil_standalone"
+    },
+    "MATSUI:backlog_opening_construction_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "9b8c03eedd05ac553bfc6988622dc02eb65c2672a69c076df38971cc0c0101b2",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_opening_construction_standalone"
+    },
+    "MATSUI:backlog_opening_other_business_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "c8825e78fa1e2bfb064e9c657fb9afbd22ac12a34d976e87f552b0400ed9e92d",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_opening_other_business_standalone"
+    },
+    "MATSUI:backlog_opening_total_standalone@FY2015_FY2025_REPORTED_BACKLOG": {
+      "hash": "95c5b7fb27561ca750bf4ddb884d8fde212aaabad2df26fb7d31bbf9b11b442f",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_opening_total_standalone"
+    },
+    "MATSUI:backlog_closing_building_government_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "75e8768f1034ce83ea323b825fae7bade1348e5495f135d2bf59db42c6a7565a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_building_government_standalone"
+    },
+    "MATSUI:backlog_closing_building_private_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "8c580753a42ac2eb5a20e1c4d16dde40b283f9c0db22652d5dc5d4aaa7706f3a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_building_private_standalone"
+    },
+    "MATSUI:backlog_closing_civil_government_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "023e690d77f698530047c8f9793f350d56e58a0923fc00e840c05e1126157361",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_civil_government_standalone"
+    },
+    "MATSUI:backlog_closing_civil_private_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "b2302cd13a5985667e49df9bcf740ff5618c3f84269965d5be7a680959760493",
+      "points": 8,
+      "company": "MATSUI",
+      "metric": "backlog_closing_civil_private_standalone"
+    },
+    "MATSUI:backlog_closing_construction_government_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "e9c6c46637022ba0e3b2ece52d3679b5a1c67fa953110e17777aa14c6eb2f59c",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_construction_government_standalone"
+    },
+    "MATSUI:backlog_closing_construction_private_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "04775c5486484d06f9a4f39b25bde5e006725bfe6a563b1dd6ae4acde666cf6a",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_construction_private_standalone"
+    },
+    "MATSUI:backlog_closing_other_business_government_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "ebbf43b61d2f5d5a3cee6702efa984f69a22ad55192f7dd57220e52db1585d06",
+      "points": 3,
+      "company": "MATSUI",
+      "metric": "backlog_closing_other_business_government_standalone"
+    },
+    "MATSUI:backlog_closing_other_business_private_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "e544bf10160144cbbdde85f5d3c66ef0b31b2f7b1ee21a72422d58b087e9bdf8",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_other_business_private_standalone"
+    },
+    "MATSUI:backlog_closing_total_government_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "5bea0a4ddd3a9d3f59c1c0a0d500d284e118da9db4f6c6ff52eb2529fdd3fc27",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_total_government_standalone"
+    },
+    "MATSUI:backlog_closing_total_private_standalone@FY2015_FY2025_REPORTED_CLOSING": {
+      "hash": "2137bbf6d8a3d85e705b1927a11f990a77de6958adcc990d09e15bb1f10a07ac",
+      "points": 11,
+      "company": "MATSUI",
+      "metric": "backlog_closing_total_private_standalone"
+    }
+  }
+}

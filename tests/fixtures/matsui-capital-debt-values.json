@@ -1,0 +1,369 @@
+[
+  {
+    "metricId": "guarantee_liabilities_consolidated",
+    "targetStates": {
+      "2015": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S1007VJH",
+        "originalSourceSha256": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2016": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100AJWY",
+        "originalSourceSha256": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2017": {
+        "status": "explicit_dash_prior_year_guarantee_note",
+        "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2018",
+        "sourceFileSha256": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "sourceUrl": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "pdfPage": 52,
+        "targetAsOf": "2018-03-31",
+        "display": "−",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2018": {
+        "status": "numeric_verified_direct_guarantee_note"
+      },
+      "2019": {
+        "status": "numeric_verified_direct_guarantee_note"
+      },
+      "2020": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100LT7Y",
+        "originalSourceSha256": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2021": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100OH52",
+        "originalSourceSha256": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2022": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100R79M",
+        "originalSourceSha256": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2023": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100TV4B",
+        "originalSourceSha256": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2024": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100W4NZ",
+        "originalSourceSha256": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      },
+      "2025": {
+        "status": "saved_ASR_checked_no_separate_guarantee_note;official_supplementary_not_exhausted",
+        "originalSourceDocumentId": "S100YHYW",
+        "originalSourceSha256": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b",
+        "zeroGenerated": false,
+        "notNondisclosure": true
+      }
+    },
+    "rows": [
+      {
+        "year": 2018,
+        "value": 68.664,
+        "doc": "MATSUI_OFFICIAL_ASR_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+        "page": 52,
+        "bbox": [
+          450.75,
+          416.573981,
+          477.75,
+          425.564981
+        ],
+        "unit": "千円",
+        "raw": 68664,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:GuaranteeObligationsTotal",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "year": 2019,
+        "value": 37.57,
+        "doc": "MATSUI_OFFICIAL_ASR_2019",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+        "sha": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+        "page": 53,
+        "bbox": [
+          450.75,
+          403.173981,
+          477.75,
+          412.164981
+        ],
+        "unit": "千円",
+        "raw": 37570,
+        "factor": 0.001,
+        "concept": "issuer_disclosed:GuaranteeObligationsTotal",
+        "context": "CurrentYearInstant"
+      }
+    ]
+  },
+  {
+    "metricId": "own_capital_consolidated",
+    "targetStates": {
+      "2015": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2016": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2017": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2018": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2019": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2020": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2021": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2022": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2023": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2024": {
+        "status": "numeric_verified_direct_self_capital"
+      },
+      "2025": {
+        "status": "numeric_verified_direct_self_capital"
+      }
+    },
+    "rows": [
+      {
+        "year": 2015,
+        "value": 28155,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2017/05/%E5%B9%B3%E6%88%9029%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "3bdf40df9e4e985304892dc054d6f69023bfb00ffefcc54d8b9674a2e0f67d7d",
+        "page": 1,
+        "bbox": [
+          308.276767,
+          463.052728,
+          361.113208,
+          472.297229
+        ],
+        "unit": "百万円",
+        "raw": 28155,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2016,
+        "value": 32599,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2016",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2017/05/%E5%B9%B3%E6%88%9029%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "3bdf40df9e4e985304892dc054d6f69023bfb00ffefcc54d8b9674a2e0f67d7d",
+        "page": 1,
+        "bbox": [
+          181.322925,
+          463.052728,
+          234.159367,
+          472.297229
+        ],
+        "unit": "百万円",
+        "raw": 32599,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "year": 2017,
+        "value": 36135,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/05/2019%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "ff6c1404d47e4ae4e8624dafe3940d72554b713ec062c64c3cbb4665be79f460",
+        "page": 1,
+        "bbox": [
+          326.806117,
+          468.340588,
+          379.642558,
+          477.585089
+        ],
+        "unit": "百万円",
+        "raw": 36135,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2018,
+        "value": 38326,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2018",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/05/2019%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "ff6c1404d47e4ae4e8624dafe3940d72554b713ec062c64c3cbb4665be79f460",
+        "page": 1,
+        "bbox": [
+          190.5876,
+          468.340588,
+          243.424042,
+          477.585089
+        ],
+        "unit": "百万円",
+        "raw": 38326,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "year": 2019,
+        "value": 39124,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/05/2021%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "367ed2e11dbb051bce638c9c3aaf94cd945beb43c590bc51aff077b74d9af74a",
+        "page": 1,
+        "bbox": [
+          326.806117,
+          468.340628,
+          379.642558,
+          477.585129
+        ],
+        "unit": "百万円",
+        "raw": 39124,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2020,
+        "value": 42527,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2020",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/05/2021%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "367ed2e11dbb051bce638c9c3aaf94cd945beb43c590bc51aff077b74d9af74a",
+        "page": 1,
+        "bbox": [
+          190.5876,
+          468.340628,
+          243.424042,
+          477.585129
+        ],
+        "unit": "百万円",
+        "raw": 42527,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "year": 2021,
+        "value": 42879,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_Q2_2022",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/11/2023%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E7%AC%AC2%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1%E3%80%80%E5%85%A8%E6%96%87.pdf",
+        "sha": "177ec2c26e08b19a399e02e09e8d9a3fcdfa0901cdd9a20877d176d0575f554b",
+        "page": 1,
+        "bbox": [
+          398.77857,
+          456.5279,
+          452.77857,
+          465.5189
+        ],
+        "unit": "百万円",
+        "raw": 42879,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2022,
+        "value": 44172,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2023",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/03/9604-2024%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+        "sha": "d2ecaa618fa733b6520d9289eab74a585b71108efa5d6dd0c7ab12cac712cc08",
+        "page": 1,
+        "bbox": [
+          382.19356,
+          453.38791,
+          436.19356,
+          462.37891
+        ],
+        "unit": "百万円",
+        "raw": 44172,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2023,
+        "value": 47619,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2024",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/03/2025%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+        "sha": "bc97072b3db9a456320e75bf26a17515d63008f15a0016358ab58c813ebbec74",
+        "page": 1,
+        "bbox": [
+          381.97857,
+          453.4379,
+          435.97857,
+          462.4289
+        ],
+        "unit": "百万円",
+        "raw": 47619,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      },
+      {
+        "year": 2024,
+        "value": 50616,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_2024",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/03/2025%E5%B9%B43%E6%9C%88%E6%9C%9F%E3%80%80%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+        "sha": "bc97072b3db9a456320e75bf26a17515d63008f15a0016358ab58c813ebbec74",
+        "page": 1,
+        "bbox": [
+          231.97857,
+          453.4379,
+          285.97857,
+          462.4289
+        ],
+        "unit": "百万円",
+        "raw": 50616,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "CurrentYearInstant"
+      },
+      {
+        "year": 2025,
+        "value": 57028,
+        "doc": "MATSUI_OFFICIAL_TANSHIN_Q1_2026",
+        "url": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/08/2027%E5%B9%B43%E6%9C%88%E6%9C%9F-%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E7%9F%AD%E4%BF%A1.pdf",
+        "sha": "37d4510968fba15e5d86cdf393e321452a56d3ee0255863c6603078ba7aad8e3",
+        "page": 1,
+        "bbox": [
+          383.47857,
+          436.7279,
+          437.47857,
+          445.7189
+        ],
+        "unit": "百万円",
+        "raw": 57028,
+        "factor": 1,
+        "concept": "issuer_disclosed:SelfCapital",
+        "context": "Prior1YearInstant"
+      }
+    ]
+  }
+]

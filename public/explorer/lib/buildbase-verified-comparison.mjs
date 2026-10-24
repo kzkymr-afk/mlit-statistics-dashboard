@@ -25,6 +25,15 @@ export function validateComparisonEquivalence(payload) {
 }
 
 
+/** Optional exact decimal metadata must agree with the numeric body, without Number rounding aliases. */
+export function exactNormalizationMatches(point) {
+  const raw=point?.provenance?.normalizationExactMillionDecimal;
+  if(raw===undefined||raw===null)return true;
+  if(typeof raw!=='string'||typeof point?.numericValue!=='number'||!Number.isFinite(point.numericValue))return false;
+  const canonical=value=>{const m=/^([+-]?)(\d+)(?:\.(\d*))?(?:[eE]([+-]?\d+))?$/.exec(value);if(!m)return null;let digits=(m[2]+(m[3]||'')).replace(/^0+/,'');if(!digits)return '0';let exponent=BigInt(m[4]||'0')-BigInt((m[3]||'').length);while(digits.endsWith('0')){digits=digits.slice(0,-1);exponent++;}return (m[1]==='-'?'-':'')+digits+'@'+exponent;};
+  const a=canonical(raw);return a!==null&&a===canonical(String(point.numericValue));
+}
+
 /** Only the supplemental reviewed API can produce this kind of series. */
 export async function seriesFromBuildBaseComparison(response) {
   const payload = response?.payload;
@@ -42,6 +51,7 @@ export async function seriesFromBuildBaseComparison(response) {
   const times = new Set();
   for (const point of payload.points) {
     const source = point.provenance;
+    if(!exactNormalizationMatches(point))throw new Error("観測値の出典・正規化文字列と数値が一致しません。");
     if(source?.reviewedRestatement&&!validReviewedRestatement(payload,point))throw Error("遡及修正の資料と対象年度を確認できません。");
     if (times.has(point.timeCode) || point.timeCode !== `${point.periodStart}/${point.periodEnd}` ||
         point.status !== "confirmed_value" || point.implicitNumericZero !== false ||

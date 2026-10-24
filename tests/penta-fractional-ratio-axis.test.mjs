@@ -1,0 +1,5 @@
+import test from'node:test';import assert from'node:assert/strict';import fs from'node:fs';import{axisTickLabel}from'../public/shared/display-text.mjs';
+test('D/E chart range has five distinct fractional ticks',()=>{const ticks=[1.08,.81,.54,.27,0].map(axisTickLabel);assert.deepEqual(ticks,['1.08','0.81','0.54','0.27','0']);assert.equal(new Set(ticks).size,5);});
+test('small negative and fractional percentage axes preserve sign and decimals',()=>{assert.equal(axisTickLabel(-.034),'-0.034');assert.equal(axisTickLabel(18.7),'18.7');assert.equal(axisTickLabel(.00001234),'0.000012');});
+test('large tick abbreviation and invalid values retain readable behavior',()=>{assert.equal(axisTickLabel(10000),'1.0万');assert.equal(axisTickLabel(-25000),'-2.5万');assert.equal(axisTickLabel(2500),'2,500');assert.equal(axisTickLabel(NaN),'');});
+test('formatter is axis only;point labels still render original numeric values',()=>{const s=fs.readFileSync('public/workspace/app.mjs','utf8');assert.ok(s.includes('fmt=axisTickLabel'));assert.ok(s.includes("p.numericValue.toLocaleString('ja-JP')"));assert.ok(s.includes('installImeSearch'));});

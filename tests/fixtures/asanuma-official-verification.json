@@ -1,0 +1,144 @@
+{
+  "verifiedItems": 13,
+  "verifiedYearPoints": 143,
+  "annualOriginalPDFsBinaryMatch": 11,
+  "fiscalYears": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "correctionFY2024": "official2025-07-01correction_report_scope_roles_list_only;13financial_items_not_changed",
+  "publishedFiveSeriesModified": false,
+  "automaticComparisonRestrictionsReleased": false,
+  "annualEvidence": [
+    {
+      "fiscalYear": 2015,
+      "documentId": "S1007YO9",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/h280629_y.pdf",
+      "label": "第81期（自平成27年4月1日至平成28年3月31日）有価証券報告書（2016.06.29）",
+      "retrievedUtc": "2026-10-23T16:00:57.150776+00:00",
+      "officialSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+      "savedSha256": "a9b79a053f3cfa3fc2294ebb87658bdb6bd014f96ba03f5eb998fe9d99e7e90d",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2015-official.pdf"
+    },
+    {
+      "fiscalYear": 2016,
+      "documentId": "S100AOGE",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/h290629_y.pdf",
+      "label": "第82期（自平成28年4月1日至平成29年3月31日）有価証券報告書（2017.06.29）",
+      "retrievedUtc": "2026-10-23T16:00:57.670378+00:00",
+      "officialSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+      "savedSha256": "88087b3d2138d2a04e2d5cfb391f3aee73cecd0259e5f43360ed73f058cb6ab3",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2016-official.pdf"
+    },
+    {
+      "fiscalYear": 2017,
+      "documentId": "S100DFS9",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20180628_y.pdf",
+      "label": "第83期（自平成29年4月1日至平成30年3月31日）有価証券報告書（2018.06.28）",
+      "retrievedUtc": "2026-10-23T16:00:58.088807+00:00",
+      "officialSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+      "savedSha256": "233bc22157e9999da7ae20340acc35ed87d1d74cc4b476d18cc6cbb1df4d81b9",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2017-official.pdf"
+    },
+    {
+      "fiscalYear": 2018,
+      "documentId": "S100GALH",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20190627_y.pdf",
+      "label": "第84期（自2018年4月1日至2019年3月31日）有価証券報告書（2019.06.27）",
+      "retrievedUtc": "2026-10-23T16:00:58.494340+00:00",
+      "officialSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+      "savedSha256": "aa081671c13d07d6d93e8e478c6c7d42eff0bca9e58b30bb2f6f3d290e9d76d0",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2018-official.pdf"
+    },
+    {
+      "fiscalYear": 2019,
+      "documentId": "S100IV2W",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20200629_y.pdf",
+      "label": "第85期（自2019年4月1日至2020年3月31日）有価証券報告書（2020.06.29）",
+      "retrievedUtc": "2026-10-23T16:00:58.966024+00:00",
+      "officialSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+      "savedSha256": "dc53737a5f30f1732bc66501b2e989b69e7870788a39ac10503329bf90790f5c",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2019-official.pdf"
+    },
+    {
+      "fiscalYear": 2020,
+      "documentId": "S100LKZO",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20210628y.pdf",
+      "label": "第86期（自2020年4月1日至2021年3月31日）有価証券報告書（2021.06.28）",
+      "retrievedUtc": "2026-10-23T16:00:59.448700+00:00",
+      "officialSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+      "savedSha256": "de5839ca856162e8ba562d200f3a0a10e74bd4617b3cc05e6f2845fc199aa630",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2020-official.pdf"
+    },
+    {
+      "fiscalYear": 2021,
+      "documentId": "S100OB4U",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20220623y.pdf",
+      "label": "第87期（自2021年4月1日至2022年3月31日）有価証券報告書（2022.06.23）",
+      "retrievedUtc": "2026-10-23T16:00:59.935736+00:00",
+      "officialSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+      "savedSha256": "ee7b418da38d935da63fa9205c52c9720361faf8aad009be76df4c730f3d75bb",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2021-official.pdf"
+    },
+    {
+      "fiscalYear": 2022,
+      "documentId": "S100R0CO",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20230623y.pdf",
+      "label": "第88期（自2022年4月1日至2023年3月31日）有価証券報告書（2023.06.23）",
+      "retrievedUtc": "2026-10-23T16:01:00.448134+00:00",
+      "officialSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+      "savedSha256": "d55b81b1d2e24993f36995cfc350b86d17d1ec4292ae60a203591559eda937a9",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2022-official.pdf"
+    },
+    {
+      "fiscalYear": 2023,
+      "documentId": "S100TWJQ",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20240628y.pdf",
+      "label": "第89期（自2023年4月1日至2024年3月31日）有価証券報告書（2024.06.28）",
+      "retrievedUtc": "2026-10-23T16:01:01.220224+00:00",
+      "officialSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+      "savedSha256": "126e4680471e140862cfbbc04b65fdfc5c3732f01b1a4fec41d597e64e8f1fc3",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2023-official.pdf"
+    },
+    {
+      "fiscalYear": 2024,
+      "documentId": "S100W1YE",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20250623y.pdf",
+      "label": "第90期（自2024年4月1日至2025年3月31日）有価証券報告書（2025.06.23）",
+      "retrievedUtc": "2026-10-23T16:01:02.040230+00:00",
+      "officialSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+      "savedSha256": "f1a3e877dfd1f4bafa6f235977555e4e7cc347945844a030c7136aac575441a7",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2024-official.pdf"
+    },
+    {
+      "fiscalYear": 2025,
+      "documentId": "S100YD5O",
+      "url": "https://www.asanuma.co.jp/ir/pdf/quarter/20260618y.pdf",
+      "label": "第91期（自2025年4月1日至2026年3月31日）有価証券報告書（2026.06.18）",
+      "retrievedUtc": "2026-10-23T16:01:02.855282+00:00",
+      "officialSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+      "savedSha256": "bda63d99eff7e97c9eedd142d21fcfed242fc86747bb1ee8d5c36fca69dc513e",
+      "sameBinary": true,
+      "officialLocalFile": "review-evidence/2025-official.pdf"
+    }
+  ]
+}

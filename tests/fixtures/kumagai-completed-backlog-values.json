@@ -1,0 +1,3962 @@
+[
+  {
+    "metricId": "completed_work_revenue_government_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      105228,
+      79242,
+      81528,
+      87017,
+      100737,
+      90237,
+      65532,
+      60512,
+      83586,
+      93672,
+      110214
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          321.0,
+          196.267,
+          352.5,
+          205.258
+        ],
+        "raw": "105,228"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          325.44,
+          196.267,
+          352.377,
+          205.258
+        ],
+        "raw": "79,242"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          325.44,
+          196.267,
+          352.377,
+          205.258
+        ],
+        "raw": "81,528"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          325.44,
+          196.267,
+          352.379997,
+          205.258
+        ],
+        "raw": "87,017"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          321.0,
+          196.267,
+          352.5,
+          205.258
+        ],
+        "raw": "100,737"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          325.44,
+          196.267,
+          352.379997,
+          205.258
+        ],
+        "raw": "90,237"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          324.256131,
+          205.965158,
+          351.133541,
+          214.924295
+        ],
+        "raw": "65,532"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          324.256031,
+          205.335263,
+          351.133441,
+          214.2944
+        ],
+        "raw": "60,512"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          324.256031,
+          205.335263,
+          351.133441,
+          214.2944
+        ],
+        "raw": "83,586"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          324.256031,
+          205.335263,
+          351.133441,
+          214.2944
+        ],
+        "raw": "93,672"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          319.776413,
+          205.335263,
+          351.133391,
+          214.2944
+        ],
+        "raw": "110,214"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_private_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      162268,
+      194475,
+      213050,
+      220073,
+      251487,
+      270003,
+      265488,
+      238805,
+      244341,
+      278621,
+      262870
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "162,268"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "194,475"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "213,050"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "220,073"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "251,487"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          410.28,
+          196.267,
+          441.78,
+          205.258
+        ],
+        "raw": "270,003"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          408.622159,
+          205.965158,
+          439.979137,
+          214.924295
+        ],
+        "raw": "265,488"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          408.622159,
+          205.335263,
+          439.979137,
+          214.2944
+        ],
+        "raw": "238,805"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          408.622159,
+          205.335263,
+          439.979137,
+          214.2944
+        ],
+        "raw": "244,341"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          408.622159,
+          205.335263,
+          439.979137,
+          214.2944
+        ],
+        "raw": "278,621"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          408.622159,
+          205.335263,
+          439.979137,
+          214.2944
+        ],
+        "raw": "262,870"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      267497,
+      273717,
+      294579,
+      307090,
+      352224,
+      360240,
+      331021,
+      299317,
+      327927,
+      372294,
+      373085
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "267,497"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "273,717"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "294,579"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "307,090"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "352,224"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          499.44,
+          196.267,
+          530.94,
+          205.258
+        ],
+        "raw": "360,240"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          497.468004,
+          205.965158,
+          528.824982,
+          214.924295
+        ],
+        "raw": "331,021"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          497.467904,
+          205.335263,
+          528.824882,
+          214.2944
+        ],
+        "raw": "299,317"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          497.467904,
+          205.335263,
+          528.824882,
+          214.2944
+        ],
+        "raw": "327,927"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          497.467904,
+          205.335263,
+          528.824882,
+          214.2944
+        ],
+        "raw": "372,294"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          497.467904,
+          205.335263,
+          528.824882,
+          214.2944
+        ],
+        "raw": "373,085"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_civil_government_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      58837,
+      52489,
+      60360,
+      62520,
+      75722,
+      57847,
+      44742,
+      41502,
+      55426,
+      62947,
+      75672
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          325.44,
+          155.947,
+          352.377,
+          164.938
+        ],
+        "raw": "58,837"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          325.44,
+          155.947,
+          352.377,
+          164.938
+        ],
+        "raw": "52,489"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          325.44,
+          155.947,
+          352.377,
+          164.938
+        ],
+        "raw": "60,360"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          325.44,
+          155.947,
+          352.379997,
+          164.938
+        ],
+        "raw": "62,520"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          325.44,
+          155.947,
+          352.379997,
+          164.938
+        ],
+        "raw": "75,722"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          325.44,
+          155.947,
+          352.379997,
+          164.938
+        ],
+        "raw": "57,847"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          324.256031,
+          165.649794,
+          351.133441,
+          174.60893
+        ],
+        "raw": "44,742"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          324.256031,
+          165.019899,
+          351.133441,
+          173.979035
+        ],
+        "raw": "41,502"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          324.256031,
+          165.019899,
+          351.133441,
+          173.979035
+        ],
+        "raw": "55,426"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          324.256031,
+          165.019899,
+          351.133441,
+          173.979035
+        ],
+        "raw": "62,947"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          324.256031,
+          165.019899,
+          351.133441,
+          173.979035
+        ],
+        "raw": "75,672"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_civil_private_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      31268,
+      39012,
+      46444,
+      49137,
+      46513,
+      63598,
+      49335,
+      48434,
+      44702,
+      42160,
+      40306
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          414.72,
+          155.947,
+          441.657,
+          164.938
+        ],
+        "raw": "31,268"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          414.72,
+          155.947,
+          441.657,
+          164.938
+        ],
+        "raw": "39,012"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          414.72,
+          155.947,
+          441.657,
+          164.938
+        ],
+        "raw": "46,444"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          414.72,
+          155.947,
+          441.659997,
+          164.938
+        ],
+        "raw": "49,137"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          414.72,
+          155.947,
+          441.659997,
+          164.938
+        ],
+        "raw": "46,513"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          414.72,
+          155.947,
+          441.659997,
+          164.938
+        ],
+        "raw": "63,598"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          413.101777,
+          165.649794,
+          439.979187,
+          174.60893
+        ],
+        "raw": "49,335"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          413.101777,
+          165.019899,
+          439.979187,
+          173.979035
+        ],
+        "raw": "48,434"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          413.101777,
+          165.019899,
+          439.979187,
+          173.979035
+        ],
+        "raw": "44,702"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          413.101777,
+          165.019899,
+          439.979187,
+          173.979035
+        ],
+        "raw": "42,160"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          413.101777,
+          165.019899,
+          439.979187,
+          173.979035
+        ],
+        "raw": "40,306"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_civil_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      90106,
+      91501,
+      106805,
+      111657,
+      122236,
+      121446,
+      94077,
+      89936,
+      100128,
+      105107,
+      115978
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          504.0,
+          155.947,
+          530.937,
+          164.938
+        ],
+        "raw": "90,106"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          504.0,
+          155.947,
+          530.937,
+          164.938
+        ],
+        "raw": "91,501"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          499.44,
+          155.947,
+          530.94,
+          164.938
+        ],
+        "raw": "106,805"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          499.44,
+          155.947,
+          530.94,
+          164.938
+        ],
+        "raw": "111,657"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          499.44,
+          155.947,
+          530.94,
+          164.938
+        ],
+        "raw": "122,236"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          499.44,
+          155.947,
+          530.94,
+          164.938
+        ],
+        "raw": "121,446"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          501.947523,
+          165.649794,
+          528.824932,
+          174.60893
+        ],
+        "raw": "94,077"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          501.947523,
+          165.019899,
+          528.824932,
+          173.979035
+        ],
+        "raw": "89,936"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          497.467904,
+          165.019899,
+          528.824882,
+          173.979035
+        ],
+        "raw": "100,128"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          497.467904,
+          165.019899,
+          528.824882,
+          173.979035
+        ],
+        "raw": "105,107"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          497.467904,
+          165.019899,
+          528.824882,
+          173.979035
+        ],
+        "raw": "115,978"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_building_government_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      46390,
+      26753,
+      21167,
+      24497,
+      25015,
+      32389,
+      20790,
+      19010,
+      28159,
+      30725,
+      34542
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          325.44,
+          175.867,
+          352.377,
+          184.858
+        ],
+        "raw": "46,390"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          325.44,
+          175.867,
+          352.377,
+          184.858
+        ],
+        "raw": "26,753"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          325.44,
+          175.867,
+          352.377,
+          184.858
+        ],
+        "raw": "21,167"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          325.44,
+          175.867,
+          352.379997,
+          184.858
+        ],
+        "raw": "24,497"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          325.44,
+          175.867,
+          352.379997,
+          184.858
+        ],
+        "raw": "25,015"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          325.44,
+          175.867,
+          352.379997,
+          184.858
+        ],
+        "raw": "32,389"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          324.256131,
+          185.434166,
+          351.133541,
+          194.393302
+        ],
+        "raw": "20,790"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          324.256031,
+          184.804271,
+          351.133441,
+          193.763408
+        ],
+        "raw": "19,010"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          324.256031,
+          184.804271,
+          351.133441,
+          193.763408
+        ],
+        "raw": "28,159"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          324.256031,
+          184.804271,
+          351.133441,
+          193.763408
+        ],
+        "raw": "30,725"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          324.256031,
+          184.804271,
+          351.133441,
+          193.763408
+        ],
+        "raw": "34,542"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_building_private_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      131000,
+      155462,
+      166605,
+      170935,
+      204973,
+      206405,
+      216152,
+      190370,
+      199639,
+      236460,
+      222564
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "131,000"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "155,462"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "166,605"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "170,935"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "204,973"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          410.28,
+          175.867,
+          441.78,
+          184.858
+        ],
+        "raw": "206,405"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          408.622159,
+          185.434166,
+          439.979137,
+          194.393302
+        ],
+        "raw": "216,152"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          408.622159,
+          184.804271,
+          439.979137,
+          193.763408
+        ],
+        "raw": "190,370"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          408.622159,
+          184.804271,
+          439.979137,
+          193.763408
+        ],
+        "raw": "199,639"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          408.622159,
+          184.804271,
+          439.979137,
+          193.763408
+        ],
+        "raw": "236,460"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          408.622159,
+          184.804271,
+          439.979137,
+          193.763408
+        ],
+        "raw": "222,564"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_revenue_building_standalone",
+    "kind": "completed",
+    "opening": false,
+    "fxBasis": null,
+    "values": [
+      177391,
+      182215,
+      187773,
+      195432,
+      229988,
+      238794,
+      236943,
+      209381,
+      227799,
+      267186,
+      257106
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "177,391"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "182,215"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "187,773"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "195,432"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "229,988"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          499.44,
+          175.867,
+          530.94,
+          184.858
+        ],
+        "raw": "238,794"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          497.468004,
+          185.434166,
+          528.824982,
+          194.393302
+        ],
+        "raw": "236,943"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          497.467904,
+          184.804271,
+          528.824882,
+          193.763408
+        ],
+        "raw": "209,381"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          497.467904,
+          184.804271,
+          528.824882,
+          193.763408
+        ],
+        "raw": "227,799"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          497.467904,
+          184.804271,
+          528.824882,
+          193.763408
+        ],
+        "raw": "267,186"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          497.467904,
+          184.804271,
+          528.824882,
+          193.763408
+        ],
+        "raw": "257,106"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_opening_civil_standalone",
+    "kind": "backlog",
+    "opening": true,
+    "fxBasis": "opening_as_reported",
+    "values": [
+      119604,
+      138957,
+      151171,
+      174257,
+      218351,
+      188487,
+      167023,
+      183772,
+      195109,
+      201270,
+      206822
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          255.72,
+          309.1214,
+          281.9768,
+          316.514
+        ],
+        "raw": "119,604"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          249.723,
+          304.987,
+          281.223,
+          313.978
+        ],
+        "raw": "138,957"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          249.723,
+          302.707,
+          281.223,
+          311.698
+        ],
+        "raw": "151,171"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          249.720003,
+          302.707,
+          281.220003,
+          311.698
+        ],
+        "raw": "174,257"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          249.720003,
+          302.707,
+          281.220003,
+          311.698
+        ],
+        "raw": "218,351"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          249.720003,
+          302.707,
+          281.220003,
+          311.698
+        ],
+        "raw": "188,487"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          248.852138,
+          310.852282,
+          280.209116,
+          319.811419
+        ],
+        "raw": "167,023"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          248.852138,
+          311.349962,
+          280.209116,
+          320.309099
+        ],
+        "raw": "183,772"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          248.852138,
+          311.349962,
+          280.209116,
+          320.309099
+        ],
+        "raw": "195,109"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          248.852138,
+          311.349962,
+          280.209116,
+          320.309099
+        ],
+        "raw": "201,270"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          248.852138,
+          311.349962,
+          280.209116,
+          320.309099
+        ],
+        "raw": "206,822"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_opening_building_standalone",
+    "kind": "backlog",
+    "opening": true,
+    "fxBasis": "opening_as_reported",
+    "values": [
+      179592,
+      186304,
+      185105,
+      249211,
+      352041,
+      354626,
+      299098,
+      301684,
+      339733,
+      381142,
+      382084
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          255.72,
+          333.4814,
+          281.9768,
+          340.874
+        ],
+        "raw": "179,592"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          249.723,
+          328.267,
+          281.223,
+          337.258
+        ],
+        "raw": "186,304"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          249.723,
+          325.987,
+          281.223,
+          334.978
+        ],
+        "raw": "185,105"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          249.720003,
+          325.987,
+          281.220003,
+          334.978
+        ],
+        "raw": "249,211"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          249.720003,
+          325.987,
+          281.220003,
+          334.978
+        ],
+        "raw": "352,041"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          249.720003,
+          325.987,
+          281.220003,
+          334.978
+        ],
+        "raw": "354,626"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          248.852138,
+          333.996294,
+          280.209116,
+          342.95543
+        ],
+        "raw": "299,098"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          248.852138,
+          334.493973,
+          280.209116,
+          343.45311
+        ],
+        "raw": "301,684"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          248.852138,
+          334.493973,
+          280.209116,
+          343.45311
+        ],
+        "raw": "339,733"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          248.852138,
+          334.493973,
+          280.209116,
+          343.45311
+        ],
+        "raw": "381,142"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          248.852138,
+          334.493973,
+          280.209116,
+          343.45311
+        ],
+        "raw": "382,084"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_opening_standalone",
+    "kind": "backlog",
+    "opening": true,
+    "fxBasis": "opening_as_reported",
+    "values": [
+      299197,
+      325262,
+      336276,
+      423469,
+      570393,
+      543113,
+      466122,
+      485457,
+      534842,
+      582413,
+      588907
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          255.72,
+          357.8414,
+          281.9768,
+          365.234
+        ],
+        "raw": "299,197"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          249.72,
+          351.907,
+          281.22,
+          360.898
+        ],
+        "raw": "325,262"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          249.72,
+          349.627,
+          281.22,
+          358.618
+        ],
+        "raw": "336,276"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          249.72,
+          349.627,
+          281.22,
+          358.618
+        ],
+        "raw": "423,469"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          249.72,
+          349.627,
+          281.22,
+          358.618
+        ],
+        "raw": "570,393"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          249.72,
+          349.627,
+          281.22,
+          358.618
+        ],
+        "raw": "543,113"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          248.852138,
+          357.513564,
+          280.209116,
+          366.472701
+        ],
+        "raw": "466,122"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          248.852138,
+          358.011344,
+          280.209116,
+          366.970481
+        ],
+        "raw": "485,457"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          248.852138,
+          358.011344,
+          280.209116,
+          366.970481
+        ],
+        "raw": "534,842"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          248.852138,
+          358.011344,
+          280.209116,
+          366.970481
+        ],
+        "raw": "582,413"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          248.852138,
+          358.011344,
+          280.209116,
+          366.970481
+        ],
+        "raw": "588,907"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_civil_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      138957,
+      151171,
+      174257,
+      218351,
+      188487,
+      167147,
+      183772,
+      195109,
+      201270,
+      206822,
+      203538
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          510.72,
+          315.0014,
+          536.9768,
+          322.394
+        ],
+        "raw": "138,957"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          504.72,
+          310.027,
+          536.22,
+          319.018
+        ],
+        "raw": "151,171"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          504.72,
+          307.747,
+          536.22,
+          316.738
+        ],
+        "raw": "174,257"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          504.72,
+          307.747,
+          536.22,
+          316.738
+        ],
+        "raw": "218,351"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          504.72,
+          307.747,
+          536.22,
+          316.738
+        ],
+        "raw": "188,487"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          504.72,
+          307.747,
+          536.22,
+          316.738
+        ],
+        "raw": "167,147"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          502.69709,
+          315.829865,
+          534.054069,
+          324.789001
+        ],
+        "raw": "183,772"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          502.69709,
+          316.327545,
+          534.054069,
+          325.286681
+        ],
+        "raw": "195,109"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          502.69709,
+          316.327545,
+          534.054069,
+          325.286681
+        ],
+        "raw": "201,270"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          502.69709,
+          316.327545,
+          534.054069,
+          325.286681
+        ],
+        "raw": "206,822"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          502.69709,
+          316.327545,
+          534.054069,
+          325.286681
+        ],
+        "raw": "203,538"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_before_fx_civil_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "before_year_end_fx_revision",
+    "values": [
+      138962,
+      151175,
+      174257,
+      218351,
+      188487,
+      167147,
+      183772,
+      195109,
+      201406,
+      207134,
+      203371
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          507.0,
+          303.2414,
+          540.6968,
+          310.634
+        ],
+        "raw": "(138,962)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          500.28,
+          299.947,
+          540.78,
+          308.938
+        ],
+        "raw": "(151,175)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          500.28,
+          297.787,
+          540.78,
+          306.778
+        ],
+        "raw": "(174,257)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          500.28,
+          297.787,
+          540.78,
+          306.778
+        ],
+        "raw": "(218,351)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          500.28,
+          297.787,
+          540.78,
+          306.778
+        ],
+        "raw": "(188,487)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          500.28,
+          297.787,
+          540.78,
+          306.778
+        ],
+        "raw": "(167,147)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          498.217522,
+          305.874984,
+          538.533637,
+          314.834121
+        ],
+        "raw": "(183,772)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          498.217522,
+          306.372664,
+          538.533637,
+          315.331801
+        ],
+        "raw": "(195,109)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          498.217522,
+          306.372664,
+          538.533637,
+          315.331801
+        ],
+        "raw": "(201,406)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          498.217522,
+          306.372664,
+          538.533637,
+          315.331801
+        ],
+        "raw": "(207,134)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          498.217522,
+          306.372664,
+          538.533637,
+          315.331801
+        ],
+        "raw": "(203,371)"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_building_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      186304,
+      185105,
+      249211,
+      352041,
+      354626,
+      299098,
+      301684,
+      339733,
+      381142,
+      382084,
+      328778
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          510.72,
+          339.3614,
+          536.9768,
+          346.754
+        ],
+        "raw": "186,304"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          504.72,
+          333.187,
+          536.22,
+          342.178
+        ],
+        "raw": "185,105"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          504.72,
+          331.027,
+          536.22,
+          340.018
+        ],
+        "raw": "249,211"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          504.72,
+          331.027,
+          536.22,
+          340.018
+        ],
+        "raw": "352,041"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          504.72,
+          331.027,
+          536.22,
+          340.018
+        ],
+        "raw": "354,626"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          504.72,
+          331.027,
+          536.22,
+          340.018
+        ],
+        "raw": "299,098"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          502.69709,
+          338.973876,
+          534.054069,
+          347.933012
+        ],
+        "raw": "301,684"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          502.69709,
+          339.471656,
+          534.054069,
+          348.430792
+        ],
+        "raw": "339,733"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          502.69709,
+          339.471656,
+          534.054069,
+          348.430792
+        ],
+        "raw": "381,142"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          502.69709,
+          339.471656,
+          534.054069,
+          348.430792
+        ],
+        "raw": "382,084"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          502.69709,
+          339.471656,
+          534.054069,
+          348.430792
+        ],
+        "raw": "328,778"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_before_fx_building_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "before_year_end_fx_revision",
+    "values": [
+      186295,
+      185081,
+      249223,
+      352034,
+      354640,
+      299087,
+      301564,
+      339677,
+      381097,
+      382349,
+      328646
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          507.0,
+          327.6014,
+          540.6968,
+          334.994
+        ],
+        "raw": "(186,295)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          500.28,
+          323.227,
+          540.78,
+          332.218
+        ],
+        "raw": "(185,081)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          500.28,
+          320.947,
+          540.78,
+          329.938
+        ],
+        "raw": "(249,223)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          500.28,
+          320.947,
+          540.78,
+          329.938
+        ],
+        "raw": "(352,034)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          500.28,
+          320.947,
+          540.78,
+          329.938
+        ],
+        "raw": "(354,640)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          500.28,
+          320.947,
+          540.78,
+          329.938
+        ],
+        "raw": "(299,087)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          498.217522,
+          329.018995,
+          538.533637,
+          337.978132
+        ],
+        "raw": "(301,564)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          498.217522,
+          329.516775,
+          538.533637,
+          338.475912
+        ],
+        "raw": "(339,677)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          498.217522,
+          329.516775,
+          538.533637,
+          338.475912
+        ],
+        "raw": "(381,097)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          498.217522,
+          329.516775,
+          538.533637,
+          338.475912
+        ],
+        "raw": "(382,349)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          498.217522,
+          329.516775,
+          538.533637,
+          338.475912
+        ],
+        "raw": "(328,646)"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      325262,
+      336276,
+      423469,
+      570393,
+      543113,
+      466245,
+      485457,
+      534842,
+      582413,
+      588907,
+      532317
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          510.72,
+          363.7214,
+          536.9768,
+          371.114
+        ],
+        "raw": "325,262"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          504.72,
+          356.827,
+          536.22,
+          365.818
+        ],
+        "raw": "336,276"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          504.72,
+          354.547,
+          536.22,
+          363.538
+        ],
+        "raw": "423,469"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          504.72,
+          354.547,
+          536.22,
+          363.538
+        ],
+        "raw": "570,393"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          504.72,
+          354.547,
+          536.22,
+          363.538
+        ],
+        "raw": "543,113"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          504.72,
+          354.547,
+          536.22,
+          363.538
+        ],
+        "raw": "466,245"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          502.69709,
+          362.491247,
+          534.054069,
+          371.450383
+        ],
+        "raw": "485,457"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          502.69709,
+          362.988927,
+          534.054069,
+          371.948063
+        ],
+        "raw": "534,842"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          502.69709,
+          362.988927,
+          534.054069,
+          371.948063
+        ],
+        "raw": "582,413"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          502.69709,
+          362.988927,
+          534.054069,
+          371.948063
+        ],
+        "raw": "588,907"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          502.69709,
+          362.988927,
+          534.054069,
+          371.948063
+        ],
+        "raw": "532,317"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_before_fx_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "before_year_end_fx_revision",
+    "values": [
+      325258,
+      336256,
+      423481,
+      570385,
+      543128,
+      466234,
+      485336,
+      534786,
+      582503,
+      589484,
+      532018
+    ],
+    "nextPriorMatches": 10,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 12,
+        "bbox": [
+          507.0,
+          351.8414,
+          540.6968,
+          359.234
+        ],
+        "raw": "(325,258)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 12,
+        "bbox": [
+          500.28,
+          346.867,
+          540.78,
+          355.858
+        ],
+        "raw": "(336,256)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 15,
+        "bbox": [
+          500.28,
+          344.587,
+          540.78,
+          353.578
+        ],
+        "raw": "(423,481)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 15,
+        "bbox": [
+          500.28,
+          344.587,
+          540.78,
+          353.578
+        ],
+        "raw": "(570,385)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 22,
+        "bbox": [
+          500.28,
+          344.587,
+          540.78,
+          353.578
+        ],
+        "raw": "(543,128)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 24,
+        "bbox": [
+          500.28,
+          344.587,
+          540.78,
+          353.578
+        ],
+        "raw": "(466,234)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 23,
+        "bbox": [
+          498.217522,
+          352.536366,
+          538.533637,
+          361.495503
+        ],
+        "raw": "(485,336)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 30,
+        "bbox": [
+          498.217522,
+          353.034046,
+          538.533637,
+          361.993183
+        ],
+        "raw": "(534,786)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 34,
+        "bbox": [
+          498.217522,
+          353.034046,
+          538.533637,
+          361.993183
+        ],
+        "raw": "(582,503)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 39,
+        "bbox": [
+          498.217522,
+          353.034046,
+          538.533637,
+          361.993183
+        ],
+        "raw": "(589,484)"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 49,
+        "bbox": [
+          498.217522,
+          353.034046,
+          538.533637,
+          361.993183
+        ],
+        "raw": "(532,018)"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_civil_government_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      87173,
+      85055,
+      91122,
+      74132,
+      55948,
+      43482,
+      58207,
+      81645,
+      87759,
+      88301,
+      81211
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          266.04,
+          490.387,
+          293.103,
+          499.378
+        ],
+        "raw": "87,173"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          266.04,
+          499.627,
+          293.103,
+          508.618
+        ],
+        "raw": "85,055"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          266.04,
+          499.627,
+          293.103,
+          508.618
+        ],
+        "raw": "91,122"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          266.04,
+          533.107,
+          293.100003,
+          542.098
+        ],
+        "raw": "74,132"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          266.04,
+          541.507,
+          293.100003,
+          550.498
+        ],
+        "raw": "55,948"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          266.04,
+          544.267,
+          293.100003,
+          553.258
+        ],
+        "raw": "43,482"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          265.029531,
+          581.255627,
+          291.906941,
+          590.214764
+        ],
+        "raw": "58,207"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          265.029531,
+          582.118872,
+          291.906941,
+          591.078008
+        ],
+        "raw": "81,645"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          265.029531,
+          587.84259,
+          291.906941,
+          596.801726
+        ],
+        "raw": "87,759"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          265.029531,
+          561.7123,
+          291.906941,
+          570.671436
+        ],
+        "raw": "88,301"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          265.029531,
+          560.71684,
+          291.906941,
+          569.675977
+        ],
+        "raw": "81,211"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_civil_private_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      51784,
+      66116,
+      83135,
+      144218,
+      132538,
+      123664,
+      125564,
+      113463,
+      113511,
+      118520,
+      122327
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          384.96,
+          490.387,
+          412.023,
+          499.378
+        ],
+        "raw": "51,784"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          384.96,
+          499.627,
+          412.023,
+          508.618
+        ],
+        "raw": "66,116"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          384.96,
+          499.627,
+          412.023,
+          508.618
+        ],
+        "raw": "83,135"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          380.52,
+          533.107,
+          412.02,
+          542.098
+        ],
+        "raw": "144,218"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          380.52,
+          541.507,
+          412.02,
+          550.498
+        ],
+        "raw": "132,538"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          380.52,
+          544.267,
+          412.02,
+          553.258
+        ],
+        "raw": "123,664"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          379.011007,
+          581.255627,
+          410.367985,
+          590.214764
+        ],
+        "raw": "125,564"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          379.010907,
+          582.118872,
+          410.367886,
+          591.078008
+        ],
+        "raw": "113,463"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          379.010907,
+          587.84259,
+          410.367886,
+          596.801726
+        ],
+        "raw": "113,511"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          379.010907,
+          561.7123,
+          410.367886,
+          570.671436
+        ],
+        "raw": "118,520"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          379.010907,
+          560.71684,
+          410.367886,
+          569.675977
+        ],
+        "raw": "122,327"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_building_government_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      43944,
+      29138,
+      32078,
+      38801,
+      44268,
+      25860,
+      40987,
+      56658,
+      55925,
+      46971,
+      33089
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          266.04,
+          510.307,
+          293.103,
+          519.298
+        ],
+        "raw": "43,944"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          266.04,
+          519.547,
+          293.103,
+          528.538
+        ],
+        "raw": "29,138"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          266.04,
+          519.547,
+          293.103,
+          528.538
+        ],
+        "raw": "32,078"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          266.04,
+          552.907,
+          293.100003,
+          561.898
+        ],
+        "raw": "38,801"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          266.04,
+          561.427,
+          293.100003,
+          570.418
+        ],
+        "raw": "44,268"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          266.04,
+          564.187,
+          293.100003,
+          573.178
+        ],
+        "raw": "25,860"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          265.029531,
+          601.04,
+          291.906941,
+          609.999136
+        ],
+        "raw": "40,987"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          265.029531,
+          601.903244,
+          291.906941,
+          610.862381
+        ],
+        "raw": "56,658"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          265.029531,
+          607.627062,
+          291.906941,
+          616.586199
+        ],
+        "raw": "55,925"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          265.029531,
+          581.496672,
+          291.906941,
+          590.455809
+        ],
+        "raw": "46,971"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          265.029531,
+          580.501213,
+          291.906941,
+          589.460349
+        ],
+        "raw": "33,089"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_building_private_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      142360,
+      155966,
+      217133,
+      313240,
+      310357,
+      273237,
+      260696,
+      283074,
+      325217,
+      335112,
+      295689
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          380.52,
+          510.307,
+          412.02,
+          519.298
+        ],
+        "raw": "142,360"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          380.52,
+          519.547,
+          412.02,
+          528.538
+        ],
+        "raw": "155,966"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          380.52,
+          519.547,
+          412.02,
+          528.538
+        ],
+        "raw": "217,133"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          380.52,
+          552.907,
+          412.02,
+          561.898
+        ],
+        "raw": "313,240"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          380.52,
+          561.427,
+          412.02,
+          570.418
+        ],
+        "raw": "310,357"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          380.52,
+          564.187,
+          412.02,
+          573.178
+        ],
+        "raw": "273,237"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          379.011007,
+          601.04,
+          410.367985,
+          609.999136
+        ],
+        "raw": "260,696"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          379.010907,
+          601.903244,
+          410.367886,
+          610.862381
+        ],
+        "raw": "283,074"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          379.010907,
+          607.627062,
+          410.367886,
+          616.586199
+        ],
+        "raw": "325,217"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          379.010907,
+          581.496672,
+          410.367886,
+          590.455809
+        ],
+        "raw": "335,112"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          379.010907,
+          580.501213,
+          410.367886,
+          589.460349
+        ],
+        "raw": "295,689"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_government_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      131117,
+      114194,
+      123200,
+      112934,
+      100217,
+      69343,
+      99195,
+      138303,
+      143684,
+      135273,
+      114301
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          261.48,
+          530.707,
+          292.98,
+          539.698
+        ],
+        "raw": "131,117"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          261.48,
+          539.947,
+          292.98,
+          548.938
+        ],
+        "raw": "114,194"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          261.48,
+          539.947,
+          292.98,
+          548.938
+        ],
+        "raw": "123,200"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          261.48,
+          573.427,
+          292.98,
+          582.418
+        ],
+        "raw": "112,934"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          261.48,
+          581.827,
+          292.98,
+          590.818
+        ],
+        "raw": "100,217"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          266.04,
+          584.587,
+          293.100003,
+          593.578
+        ],
+        "raw": "69,343"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          265.029531,
+          621.570992,
+          291.906941,
+          630.530128
+        ],
+        "raw": "99,195"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          260.549913,
+          622.434237,
+          291.906891,
+          631.393373
+        ],
+        "raw": "138,303"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          260.549913,
+          628.158054,
+          291.906891,
+          637.117191
+        ],
+        "raw": "143,684"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          260.549913,
+          602.027664,
+          291.906891,
+          610.986801
+        ],
+        "raw": "135,273"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          260.549913,
+          601.032205,
+          291.906891,
+          609.991341
+        ],
+        "raw": "114,301"
+      }
+    ]
+  },
+  {
+    "metricId": "backlog_closing_private_standalone",
+    "kind": "backlog",
+    "opening": false,
+    "fxBasis": "after_year_end_fx_revision",
+    "values": [
+      194145,
+      222082,
+      300268,
+      457458,
+      442896,
+      396902,
+      386261,
+      396538,
+      438729,
+      453633,
+      418016
+    ],
+    "nextPriorMatches": 0,
+    "sources": [
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/QWqc.pdf",
+        "title": "第79期有価証券報告書",
+        "sha": "ee4c0cc09c11300013070a75faa6bb036913634a9dda98b92d211cff26762f44",
+        "page": 13,
+        "bbox": [
+          380.52,
+          530.707,
+          412.02,
+          539.698
+        ],
+        "raw": "194,145"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/rirq.pdf",
+        "title": "第80期有価証券報告書",
+        "sha": "72fdcd82510e53fe907e128556cac64cc4ed636dc47e5b4bd4c5f67d21b10c4d",
+        "page": 13,
+        "bbox": [
+          380.52,
+          539.947,
+          412.02,
+          548.938
+        ],
+        "raw": "222,082"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/ZAYS.pdf",
+        "title": "第81期有価証券報告書",
+        "sha": "88333d6e610a1cfd3943ca9f6f07c18bd3a6cdcae9554c582a7eba683676c7a0",
+        "page": 16,
+        "bbox": [
+          380.52,
+          539.947,
+          412.02,
+          548.938
+        ],
+        "raw": "300,268"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/OctZ.pdf",
+        "title": "第82期有価証券報告書",
+        "sha": "4197ed661025c18e725c8fc8241adcaaa027b86d2181e6b035c7609c0540857e",
+        "page": 16,
+        "bbox": [
+          380.52,
+          573.427,
+          412.02,
+          582.418
+        ],
+        "raw": "457,458"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/KIQ7.pdf",
+        "title": "第83期有価証券報告書",
+        "sha": "a71e8f77c12bba8f7b7f41e79a05f8f8a358b9fb7481dfea4f48672680556d62",
+        "page": 23,
+        "bbox": [
+          380.52,
+          581.827,
+          412.02,
+          590.818
+        ],
+        "raw": "442,896"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/jfUt.pdf",
+        "title": "第84期有価証券報告書",
+        "sha": "9f9b5383dea85bd3dcecdb149ce1e4ce909cf14c0d1f27f2802ee6cac15af648",
+        "page": 25,
+        "bbox": [
+          380.52,
+          584.587,
+          412.02,
+          593.578
+        ],
+        "raw": "396,902"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/VmgQ.pdf",
+        "title": "第85期有価証券報告書",
+        "sha": "2df13258c30fde3705f6d25425dd8724208503a767bed1be29f88086bb3bff1a",
+        "page": 24,
+        "bbox": [
+          379.011007,
+          621.570992,
+          410.367985,
+          630.530128
+        ],
+        "raw": "386,261"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/GgYN.pdf",
+        "title": "第86期有価証券報告書",
+        "sha": "617a693d647cdcde43e0001b9a1fec6d213ee29fe55cd0101a7b096fadcc3b6e",
+        "page": 31,
+        "bbox": [
+          379.010907,
+          622.434237,
+          410.367886,
+          631.393373
+        ],
+        "raw": "396,538"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/RaPs.pdf",
+        "title": "第87期有価証券報告書",
+        "sha": "417fcb882bcef250f844bcb587da05fe4fa28c085940a566955021c0f13545fb",
+        "page": 35,
+        "bbox": [
+          379.010907,
+          628.158054,
+          410.367886,
+          637.117191
+        ],
+        "raw": "438,729"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/O8pb/DzW4/BGV7.pdf",
+        "title": "第88期有価証券報告書",
+        "sha": "2886de8639c7766869e839dba259918e4b159c349ae797e994e5e9bc6e1058f7",
+        "page": 40,
+        "bbox": [
+          379.010907,
+          602.027664,
+          410.367886,
+          610.986801
+        ],
+        "raw": "453,633"
+      },
+      {
+        "url": "https://pdf.irpocket.com/C1861/WvLb/X9oS/C1yf.pdf",
+        "title": "第89期有価証券報告書",
+        "sha": "bb7296154e09000eabedcd8f20b1a1b0fe83e1ca410ffc1e1a25119fcac7d364",
+        "page": 50,
+        "bbox": [
+          379.010907,
+          601.032205,
+          410.367886,
+          609.991341
+        ],
+        "raw": "418,016"
+      }
+    ]
+  }
+]

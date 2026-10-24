@@ -1,0 +1,483 @@
+{
+  "componentRelations": [
+    {
+      "family": "completed",
+      "fiscalYear": 2015,
+      "reportedTotal": 195178,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 465,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2016,
+      "reportedTotal": 193202,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 50,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2017,
+      "reportedTotal": 213135,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 1,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2018,
+      "reportedTotal": 210021,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2019,
+      "reportedTotal": 216905,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2020,
+      "reportedTotal": 209805,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2021,
+      "reportedTotal": 229907,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2022,
+      "reportedTotal": 236649,
+      "regionSumMinusTotal": -3,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 260,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2023,
+      "reportedTotal": 268340,
+      "regionSumMinusTotal": -3,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2024,
+      "reportedTotal": 284575,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "completed",
+      "fiscalYear": 2025,
+      "reportedTotal": 295390,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2015,
+      "reportedTotal": 252163,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 97,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2016,
+      "reportedTotal": 301843,
+      "regionSumMinusTotal": -3,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2017,
+      "reportedTotal": 290833,
+      "regionSumMinusTotal": 0,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2018,
+      "reportedTotal": 349638,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2019,
+      "reportedTotal": 351595,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2020,
+      "reportedTotal": 364014,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2021,
+      "reportedTotal": 354859,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": 1333,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2022,
+      "reportedTotal": 398127,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2023,
+      "reportedTotal": 466669,
+      "regionSumMinusTotal": -1,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": -1,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2024,
+      "reportedTotal": 558739,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": -1,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "family": "backlog",
+      "fiscalYear": 2025,
+      "reportedTotal": 615630,
+      "regionSumMinusTotal": -2,
+      "governmentCivilBuildingMinusTotal": 0,
+      "privateCivilBuildingMinusTotal": 0,
+      "overseasRegionAndTotalSameAlias": true,
+      "buildingOverseasAsReported": null,
+      "generatedCorrectionAllowed": false
+    }
+  ],
+  "plRelations": [
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2015,
+      "revenue": 195178,
+      "cost": 176505,
+      "grossProfit": 18672,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 10113,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2016,
+      "revenue": 193202,
+      "cost": 170062,
+      "grossProfit": 23140,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 9888,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2017,
+      "revenue": 213135,
+      "cost": 184565,
+      "grossProfit": 28570,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 10791,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2018,
+      "revenue": 210020,
+      "cost": 182685,
+      "grossProfit": 27335,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 10863,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2019,
+      "revenue": 216905,
+      "cost": 191874,
+      "grossProfit": 25031,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 9466,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2020,
+      "revenue": 209805,
+      "cost": 182729,
+      "grossProfit": 27075,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 10907,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2021,
+      "revenue": 229906,
+      "cost": 202378,
+      "grossProfit": 27528,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 12552,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2022,
+      "revenue": 236649,
+      "cost": 208900,
+      "grossProfit": 27748,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 12793,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2023,
+      "revenue": 268340,
+      "cost": 238012,
+      "grossProfit": 30328,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 19805,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2024,
+      "revenue": 284575,
+      "cost": 253369,
+      "grossProfit": 31206,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 13647,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "consolidated",
+      "fiscalYear": 2025,
+      "revenue": 295390,
+      "cost": 258298,
+      "grossProfit": 37092,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 11811,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2015,
+      "revenue": 195178,
+      "cost": 176592,
+      "grossProfit": 18585,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 5928,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2016,
+      "revenue": 193202,
+      "cost": 170094,
+      "grossProfit": 23108,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 5081,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2017,
+      "revenue": 213135,
+      "cost": 184704,
+      "grossProfit": 28431,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 5438,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2018,
+      "revenue": 210021,
+      "cost": 182819,
+      "grossProfit": 27202,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 5496,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2019,
+      "revenue": 216905,
+      "cost": 192002,
+      "grossProfit": 24902,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 5521,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2020,
+      "revenue": 209805,
+      "cost": 182920,
+      "grossProfit": 26884,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 5977,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2021,
+      "revenue": 229907,
+      "cost": 202539,
+      "grossProfit": 27367,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 7322,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2022,
+      "revenue": 236649,
+      "cost": 209112,
+      "grossProfit": 27536,
+      "revenueMinusCostMinusGross": 1,
+      "otherBusinessSales": 5617,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2023,
+      "revenue": 268340,
+      "cost": 238224,
+      "grossProfit": 30116,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 6119,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2024,
+      "revenue": 284575,
+      "cost": 253459,
+      "grossProfit": 31116,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 5784,
+      "generatedCorrectionAllowed": false
+    },
+    {
+      "scope": "standalone",
+      "fiscalYear": 2025,
+      "revenue": 295390,
+      "cost": 258572,
+      "grossProfit": 36818,
+      "revenueMinusCostMinusGross": 0,
+      "otherBusinessSales": 5999,
+      "generatedCorrectionAllowed": false
+    }
+  ],
+  "openingBasisNote": {
+    "fiscalYear": 2020,
+    "component": "total",
+    "opening": 351595,
+    "orders": 222224,
+    "reportedAvailable": 573819,
+    "completed": 209805,
+    "closing": 364014,
+    "displayedOpeningPlusOrdersMinusClosingMinusCompleted": 0,
+    "nextYearOpeningMinusClosing": -2950,
+    "nextYearBasisNote": "(注) １     前事業年度以前に受注した工事で、契約の変更により請負金額の増減がある場合は、当期受注工事高に\n          その増減額を含みます。したがって、当期完成工事高にもかかる増減額が含まれます。\n   ２      次期繰越工事高は(前期繰越工事高＋当期受注工事高−当期完成工事高)です。\n   ３      「収益認識に関する会計基準」(企業会計基準第29号 2020年３月31日)等を当事業年度の期首から適用\n          しており、当事業年度の前期繰越工事高は前事業年度の次期繰越工事高と比べて2,949百万円減少して\n          います。\n\n\n\n\n                                        19/126\n",
+    "currentBasisNote": "(注) １     前事業年度以前に受注した工事で、契約の変更により請負金額の増減がある場合は、当期受注工事高に\n          その増減額を含みます。したがって、当期完成工事高にもかかる増減額が含まれます。\n   ２      次期繰越工事高は(前期繰越工事高＋当期受注工事高−当期完成工事高)です。\n\n\n\n\n                                        14/115\n",
+    "generatedCorrectionAllowed": false
+  },
+  "sourceDifferenceNotCorrected": true
+}

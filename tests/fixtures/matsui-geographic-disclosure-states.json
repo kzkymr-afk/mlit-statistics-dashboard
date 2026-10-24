@@ -1,0 +1,431 @@
+[
+  {
+    "fiscalYear": 2015,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "S1007VJH",
+    "sourceSHA": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007VJH.pdf",
+    "officialEvidence": {
+      "pdfPage": 62,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.21151,
+        312.0,
+        139.20251
+      ],
+      "quote": "                                                                                 EDINET提出書類\n                                                                             松井建設株式会社(E00064)\n                                                                                  有価証券報告書\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成26年４月１日   至   平成27年３月31日）\n                                                                 （単位：千円）\n                 建設事業       不動産事業等                  全社・消去        合計\n    減損損失                −              −               113,909     113,909\n\n\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n                                                                 （単位：千円）\n                 建設事業       不動産事業等                  全社・消去        合計\n    減損損失                −         354,815                   −      354,815\n\n\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成26年４月１日    至   平成27年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成27年４月１日    至   平成28年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成26年４月１日   至   平成27年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n      該当事項なし。\n\n\n\n\n                                            62/86\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S1007VJH",
+      "sourceSHA": "08607c3eee3c10d3e38141328e49160ef80acef79c0e2d9eedccf75a68deb065",
+      "pdfPage": 62,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.21151,
+        312.0,
+        139.20251
+      ],
+      "quote": "                                                                                 EDINET提出書類\n                                                                             松井建設株式会社(E00064)\n                                                                                  有価証券報告書\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成26年４月１日   至   平成27年３月31日）\n                                                                 （単位：千円）\n                 建設事業       不動産事業等                  全社・消去        合計\n    減損損失                −              −               113,909     113,909\n\n\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n                                                                 （単位：千円）\n                 建設事業       不動産事業等                  全社・消去        合計\n    減損損失                −         354,815                   −      354,815\n\n\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成26年４月１日    至   平成27年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成27年４月１日    至   平成28年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成26年４月１日   至   平成27年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n      該当事項なし。\n\n\n\n\n                                            62/86\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2016,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2016",
+    "sourceSHA": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2016/04/%E7%AC%AC88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "officialEvidence": {
+      "pdfPage": 64,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.211481,
+        312.0,
+        139.202481
+      ],
+      "quote": "                                                                                EDINET提出書類\n                                                                            松井建設株式会社(E00064)\n                                                                                 有価証券報告書\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n                                                                （単位：千円）\n                 建設事業       不動産事業等                  全社・消去       合計\n    減損損失                −         354,815                   −     354,815\n\n\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成27年４月１日    至   平成28年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成28年４月１日    至   平成29年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n\n\n                                            64/88\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100AJWY",
+      "sourceSHA": "c58d6262dcaae9ba282081fe725a9c48d63a2ed8de4030040046fef1f4fddab7",
+      "pdfPage": 64,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.211481,
+        312.0,
+        139.202481
+      ],
+      "quote": "                                                                                EDINET提出書類\n                                                                            松井建設株式会社(E00064)\n                                                                                 有価証券報告書\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n                                                                （単位：千円）\n                 建設事業       不動産事業等                  全社・消去       合計\n    減損損失                −         354,815                   −     354,815\n\n\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成27年４月１日    至   平成28年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成28年４月１日    至   平成29年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成27年４月１日   至   平成28年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n\n\n                                            64/88\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2017,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "S100D9VW",
+    "sourceSHA": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D9VW.pdf",
+    "officialEvidence": {
+      "pdfPage": 64,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.211481,
+        312.0,
+        139.202481
+      ],
+      "quote": "                                                                                EDINET提出書類\n                                                                            松井建設株式会社(E00064)\n                                                                                 有価証券報告書\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n                                                                （単位：千円）\n                 建設事業       不動産事業等                  全社・消去       合計\n    減損損失                −         590,212                   −     590,212\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成28年４月１日    至   平成29年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成29年４月１日    至   平成30年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n      該当事項なし。\n\n\n\n\n                                            64/88\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100D9VW",
+      "sourceSHA": "ae214287910704b45d1aa02cd97b20f69a04b28fcd8c5a07627ed7bef9650ea6",
+      "pdfPage": 64,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        60.0,
+        130.211481,
+        312.0,
+        139.202481
+      ],
+      "quote": "                                                                                EDINET提出書類\n                                                                            松井建設株式会社(E00064)\n                                                                                 有価証券報告書\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n                                                                （単位：千円）\n                 建設事業       不動産事業等                  全社・消去       合計\n    減損損失                −         590,212                   −     590,212\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   平成28年４月１日    至   平成29年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   平成29年４月１日    至   平成30年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    平成28年４月１日   至   平成29年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    平成29年４月１日   至   平成30年３月31日）\n      該当事項なし。\n\n\n\n\n                                            64/88\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2018,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2018",
+    "sourceSHA": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2019/06/2019%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "officialEvidence": {
+      "pdfPage": 68,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                              EDINET提出書類\n                                                                          松井建設株式会社(E00064)\n                                                                               有価証券報告書\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2017年４月１日   至   2018年３月31日）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −          590,212              −     590,212\n\n\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n                                                            （単位：千円）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −           83,042              −        83,042\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2017年４月１日    至   2018年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2018年４月１日    至   2019年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2017年４月１日   至   2018年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n      該当事項なし。\n\n\n\n\n                                             68/92\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100G2WM",
+      "sourceSHA": "7aa314f463d37ae5c8bdee725c45802dba017d52d416b9b526d998ebef229210",
+      "pdfPage": 68,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                              EDINET提出書類\n                                                                          松井建設株式会社(E00064)\n                                                                               有価証券報告書\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2017年４月１日   至   2018年３月31日）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −          590,212              −     590,212\n\n\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n                                                            （単位：千円）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −           83,042              −        83,042\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2017年４月１日    至   2018年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2018年４月１日    至   2019年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2017年４月１日   至   2018年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2018年４月１日   至   2019年３月31日）\n      該当事項なし。\n\n\n\n\n                                             68/92\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2019,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2019",
+    "sourceSHA": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2020/06/2020%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "officialEvidence": {
+      "pdfPage": 69,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                              EDINET提出書類\n                                                                          松井建設株式会社(E00064)\n                                                                               有価証券報告書\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2018年４月１日   至   2019年３月31日）\n                                                            （単位：千円）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −           83,042              −        83,042\n\n\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n      該当事項なし。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2018年４月１日    至   2019年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2019年４月１日    至   2020年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2018年４月１日   至   2019年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n      該当事項なし。\n\n\n\n\n                                             69/95\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100IUY0",
+      "sourceSHA": "daf3340c43d54e474f2e88e3f4fd010de3441cd4f065acbf9ef4c530fc3a5235",
+      "pdfPage": 69,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                              EDINET提出書類\n                                                                          松井建設株式会社(E00064)\n                                                                               有価証券報告書\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2018年４月１日   至   2019年３月31日）\n                                                            （単位：千円）\n                 建設事業        不動産事業等             全社・消去       合計\n    減損損失                −           83,042              −        83,042\n\n\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n      該当事項なし。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2018年４月１日    至   2019年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2019年４月１日    至   2020年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2018年４月１日   至   2019年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2019年４月１日   至   2020年３月31日）\n      該当事項なし。\n\n\n\n\n                                             69/95\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2020,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2020",
+    "sourceSHA": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2021/06/2021%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "officialEvidence": {
+      "pdfPage": 71,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                             EDINET提出書類\n                                                                         松井建設株式会社(E00064)\n                                                                              有価証券報告書\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2019年４月１日    至   2020年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n                                                             （単位：千円）\n                 建設事業         不動産事業等           全社・消去         合計\n    減損損失            103,566             −           24,170     127,736\n（注）「全社・消去」の金額は、報告セグメントに帰属しない全社資産に係わる減損損失である。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2019年４月１日    至    2020年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2020年４月１日    至    2021年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2019年４月１日    至   2020年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n      該当事項なし。\n\n\n\n\n                                            71/99\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100LT7Y",
+      "sourceSHA": "c2a12de1196edc0819dcf583571f73b368b56a1d6499a91dfcb08dff8cfb9493",
+      "pdfPage": 71,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        130.211481,
+        306.75,
+        139.202481
+      ],
+      "quote": "                                                                             EDINET提出書類\n                                                                         松井建設株式会社(E00064)\n                                                                              有価証券報告書\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n 【報告セグメントごとの固定資産の減損損失に関する情報】\n\n\n     前連結会計年度（自    2019年４月１日    至   2020年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n                                                             （単位：千円）\n                 建設事業         不動産事業等           全社・消去         合計\n    減損損失            103,566             −           24,170     127,736\n（注）「全社・消去」の金額は、報告セグメントに帰属しない全社資産に係わる減損損失である。\n\n\n 【報告セグメントごとののれんの償却額及び未償却残高に関する情報】\n\n\n     前連結会計年度(自   2019年４月１日    至    2020年３月31日)\n      該当事項なし。\n\n\n     当連結会計年度(自   2020年４月１日    至    2021年３月31日)\n      該当事項なし。\n\n\n 【報告セグメントごとの負ののれん発生益に関する情報】\n\n\n     前連結会計年度（自    2019年４月１日    至   2020年３月31日）\n      該当事項なし。\n\n\n     当連結会計年度（自    2020年４月１日    至   2021年３月31日）\n      該当事項なし。\n\n\n\n\n                                            71/99\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2021,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2021",
+    "sourceSHA": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2022/06/2022%E5%B9%B43%E6%9C%88%E6%9C%9F-%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "officialEvidence": {
+      "pdfPage": 73,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2020年４月１日   至   2021年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2021年４月１日   至   2022年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       73/104\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100OH52",
+      "sourceSHA": "4d192d5bfba3ab73a2e6652d7328e2328ab18d7705bd5525a838c4cbc124ba0c",
+      "pdfPage": 73,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2020年４月１日   至   2021年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2021年４月１日   至   2022年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       73/104\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2022,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "S100R79M",
+    "sourceSHA": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R79M.pdf",
+    "officialEvidence": {
+      "pdfPage": 78,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2021年４月１日   至   2022年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2022年４月１日   至   2023年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       78/108\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100R79M",
+      "sourceSHA": "64450bdf828b1e1352a38810b00a147bd55089207c7dd047d95eb32387e4551d",
+      "pdfPage": 78,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2021年４月１日   至   2022年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2022年４月１日   至   2023年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       78/108\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2023,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "S100TV4B",
+    "sourceSHA": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TV4B.pdf",
+    "officialEvidence": {
+      "pdfPage": 79,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2022年４月１日   至   2023年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2023年４月１日   至   2024年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       79/111\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100TV4B",
+      "sourceSHA": "4ec118b62e30bea608171fce043b020302ea76fa8bbb29818322ced8c6dd7149",
+      "pdfPage": 79,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2022年４月１日   至   2023年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2023年４月１日   至   2024年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       79/111\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2024,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "S100W4NZ",
+    "sourceSHA": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4NZ.pdf",
+    "officialEvidence": {
+      "pdfPage": 83,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2023年４月１日   至   2024年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2024年４月１日   至   2025年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       83/115\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100W4NZ",
+      "sourceSHA": "cea59b4da13d29129eea6bef74056457abe14dd7a84f9bca1e039b2d360407d1",
+      "pdfPage": 83,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        355.665221,
+        306.75,
+        364.656221
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2023年４月１日   至   2024年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2024年４月１日   至   2025年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       83/115\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  },
+  {
+    "fiscalYear": 2025,
+    "status": "source_confirmed_no_foreign_external_customer_sales_geographic_table_omitted",
+    "scope": "consolidated_external_customer_sales",
+    "sourceCriterionAsDisclosed": "本邦以外の外部顧客への売上高",
+    "sourceDocumentId": "MATSUI_OFFICIAL_ASR_2025",
+    "sourceSHA": "2153e8794481ff74a5b5e1f60bf830d302f698c527e93f1372fad50061f8279a",
+    "sourceURL": "https://www.matsui-ken.co.jp/module/wp-content/uploads/2026/06/%E6%9C%89%E4%BE%A1%E8%A8%BC%E5%88%B8%E5%A0%B1%E5%91%8A%E6%9B%B82026.pdf",
+    "officialEvidence": {
+      "pdfPage": 85,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        356.118961,
+        306.75,
+        365.109961
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2024年４月１日   至   2025年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2025年４月１日   至   2026年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       85/117\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "retainedOriginalEvidence": {
+      "sourceDocumentId": "S100YHYW",
+      "sourceSHA": "3877f2f0c6295f81732e1ccb988787269e300aa002086de3b9052a8ee2e8a81b",
+      "pdfPage": 85,
+      "line": "本邦以外の外部顧客への売上高がないため、記載していない。",
+      "bbox": [
+        54.75,
+        356.118961,
+        306.75,
+        365.109961
+      ],
+      "quote": "                                                        EDINET提出書類\n                                                    松井建設株式会社(E00064)\n                                                         有価証券報告書\n 【関連情報】\n     前連結会計年度（自   2024年４月１日   至   2025年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n     当連結会計年度（自   2025年４月１日   至   2026年３月31日）\n１   製品及びサービスごとの情報\n    セグメント情報に同様の情報を開示しているため、記載を省略している。\n\n\n２   地域ごとの情報\n (1) 売上高\n    本邦以外の外部顧客への売上高がないため、記載していない。\n\n\n (2) 有形固定資産\n    本邦以外に所在している有形固定資産がないため、記載していない。\n\n\n３   主要な顧客ごとの情報\n     外部顧客への売上高のうち、連結損益計算書の売上高の10％以上を占める相手先がないため、記載していない。\n\n\n\n\n                                       85/117\n",
+      "selection": "last current-year geographic information block;not preceding year block"
+    },
+    "numericZeroGenerated": false,
+    "notCompanyWideNondisclosure": true,
+    "notOrdersGeographicDisclosure": true,
+    "notConstructionLocationSplit": true
+  }
+]

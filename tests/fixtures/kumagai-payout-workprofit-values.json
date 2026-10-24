@@ -1,0 +1,1017 @@
+[
+  {
+    "metricId": "payout_ratio_consolidated_reported",
+    "kind": "ratio",
+    "name": "配当性向（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      12.4,
+      15.9,
+      23.1,
+      35.0,
+      28.8,
+      31.2,
+      35.1,
+      72.4,
+      67.6,
+      59.7,
+      40.2
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 18,
+        "bbox": [
+          324.488031,
+          214.378408,
+          345.40245,
+          223.483966
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 18,
+        "bbox": [
+          392.428315,
+          214.378408,
+          413.342733,
+          223.483966
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 18,
+        "bbox": [
+          460.376677,
+          214.378408,
+          481.291096,
+          223.483966
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 18,
+        "bbox": [
+          533.997,
+          241.751731,
+          554.876,
+          250.73374
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 18,
+        "bbox": [
+          460.403693,
+          214.382137,
+          481.317281,
+          223.482202
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 19,
+        "bbox": [
+          460.403693,
+          214.382137,
+          481.317281,
+          223.482202
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 19,
+        "bbox": [
+          456.774933,
+          236.049428,
+          477.647936,
+          245.222073
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 20,
+        "bbox": [
+          550.43101,
+          222.848251,
+          574.265744,
+          233.223584
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 21,
+        "bbox": [
+          565.988766,
+          228.674003,
+          591.372746,
+          239.728129
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 22,
+        "bbox": [
+          543.603822,
+          228.441245,
+          567.166383,
+          239.049489
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 22,
+        "bbox": [
+          561.002168,
+          225.263614,
+          586.883106,
+          235.574686
+        ],
+        "concept": "issuer_presentation:payout_ratio_consolidated_reported",
+        "context": "IssuerReportedConsolidatedPayoutRatio"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_gross_profit_domestic_civil_standalone_reported",
+    "kind": "completed",
+    "name": "完成工事総利益（土木・国内・単体・会社開示億円）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "億円",
+    "measureKind": "flow",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      115.0,
+      108.0,
+      106.0,
+      140.0,
+      133.0,
+      137.0,
+      91.0,
+      85.0,
+      123.0,
+      153.0,
+      151.0
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2015",
+        "title": "平成28年3月期決算説明会資料(2016/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_160519_1_1.pdf",
+        "sha": "56813858023177a0021c92daea34426670764726c51620c6bc1d7dfc3be8597a",
+        "page": 6,
+        "bbox": [
+          655.192272,
+          249.343765,
+          672.823496,
+          256.842201
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2016",
+        "title": "平成29年3月期決算説明会資料(2017/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_170522_1_1.pdf",
+        "sha": "d50941a5b9222edec4775e33136e1d047be8d0f40c0f0b442968d85a49325357",
+        "page": 6,
+        "bbox": [
+          655.190794,
+          249.343765,
+          672.822018,
+          256.842201
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 11,
+        "bbox": [
+          428.93,
+          308.102,
+          453.113864,
+          324.086
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 11,
+        "bbox": [
+          501.389,
+          339.2492,
+          525.6332,
+          358.6472
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 11,
+        "bbox": [
+          417.86,
+          291.11036,
+          450.19176,
+          307.07036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 11,
+        "bbox": [
+          418.78,
+          284.99036,
+          459.04,
+          300.95036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 11,
+        "bbox": [
+          422.74,
+          287.85036,
+          454.96,
+          303.81036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 14,
+        "bbox": [
+          422.74,
+          310.12036,
+          454.96,
+          326.08036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 15,
+        "bbox": [
+          418.78,
+          293.18036,
+          459.04,
+          309.14036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 15,
+        "bbox": [
+          418.78,
+          266.23036,
+          459.04,
+          282.19036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 15,
+        "bbox": [
+          418.78,
+          281.299744,
+          459.052,
+          297.283744
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_gross_profit_domestic_building_standalone_reported",
+    "kind": "completed",
+    "name": "完成工事総利益（建築・国内・単体・会社開示億円）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "億円",
+    "measureKind": "flow",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      184.0,
+      215.0,
+      199.0,
+      213.0,
+      219.0,
+      238.0,
+      242.0,
+      160.0,
+      122.0,
+      107.0,
+      248.0
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2015",
+        "title": "平成28年3月期決算説明会資料(2016/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_160519_1_1.pdf",
+        "sha": "56813858023177a0021c92daea34426670764726c51620c6bc1d7dfc3be8597a",
+        "page": 6,
+        "bbox": [
+          655.193722,
+          275.983754,
+          672.824946,
+          283.482191
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2016",
+        "title": "平成29年3月期決算説明会資料(2017/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_170522_1_1.pdf",
+        "sha": "d50941a5b9222edec4775e33136e1d047be8d0f40c0f0b442968d85a49325357",
+        "page": 6,
+        "bbox": [
+          655.192272,
+          275.983754,
+          672.823496,
+          283.482191
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 11,
+        "bbox": [
+          426.94,
+          453.27,
+          451.11176,
+          469.23
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 11,
+        "bbox": [
+          501.389,
+          496.0582,
+          525.6332,
+          515.4562
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 11,
+        "bbox": [
+          417.86,
+          470.61036,
+          450.19176,
+          486.57036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 11,
+        "bbox": [
+          419.76,
+          469.84236,
+          460.02,
+          485.80236
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 11,
+        "bbox": [
+          419.78,
+          469.69836,
+          460.04,
+          485.65836
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 14,
+        "bbox": [
+          419.78,
+          472.941744,
+          460.052,
+          488.925744
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 15,
+        "bbox": [
+          419.78,
+          474.47436,
+          460.04,
+          490.43436
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 15,
+        "bbox": [
+          419.78,
+          472.17036,
+          460.04,
+          488.13036
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 15,
+        "bbox": [
+          420.77,
+          469.917744,
+          461.062,
+          485.901744
+        ],
+        "concept": "issuer_presentation:completed_work_gross_profit_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_gross_margin_domestic_civil_standalone_reported",
+    "kind": "ratio",
+    "name": "完成工事総利益率（土木・国内・単体・会社開示）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      12.8,
+      11.9,
+      9.9,
+      12.5,
+      10.9,
+      11.3,
+      9.7,
+      9.4,
+      12.4,
+      15.0,
+      13.5
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2015",
+        "title": "平成28年3月期決算説明会資料(2016/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_160519_1_1.pdf",
+        "sha": "56813858023177a0021c92daea34426670764726c51620c6bc1d7dfc3be8597a",
+        "page": 6,
+        "bbox": [
+          649.191313,
+          263.283168,
+          673.289325,
+          270.205141
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2016",
+        "title": "平成29年3月期決算説明会資料(2017/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_170522_1_1.pdf",
+        "sha": "d50941a5b9222edec4775e33136e1d047be8d0f40c0f0b442968d85a49325357",
+        "page": 6,
+        "bbox": [
+          649.189624,
+          263.283168,
+          673.287637,
+          270.205141
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 11,
+        "bbox": [
+          450.38,
+          296.4,
+          474.608,
+          308.4
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 11,
+        "bbox": [
+          500.01,
+          260.161,
+          530.238,
+          274.801
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 11,
+        "bbox": [
+          426.41,
+          266.62,
+          456.758,
+          278.62
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 11,
+        "bbox": [
+          426.41,
+          258.02,
+          456.758,
+          270.02
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 11,
+        "bbox": [
+          431.38,
+          305.88,
+          455.608,
+          317.88
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 14,
+        "bbox": [
+          429.38,
+          287.93,
+          453.608,
+          299.93
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 15,
+        "bbox": [
+          427.42,
+          238.58,
+          457.768,
+          250.58
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 15,
+        "bbox": [
+          424.42,
+          326.42,
+          454.768,
+          338.42
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 15,
+        "bbox": [
+          424.42,
+          335.71,
+          454.768,
+          347.71
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_civil_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      }
+    ]
+  },
+  {
+    "metricId": "completed_work_gross_margin_domestic_building_standalone_reported",
+    "kind": "ratio",
+    "name": "完成工事総利益率（建築・国内・単体・会社開示）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "standalone",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      10.5,
+      11.9,
+      10.6,
+      10.9,
+      9.5,
+      10.0,
+      10.3,
+      7.7,
+      5.4,
+      4.0,
+      9.8
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_PRESENTATION_2015",
+        "title": "平成28年3月期決算説明会資料(2016/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_160519_1_1.pdf",
+        "sha": "56813858023177a0021c92daea34426670764726c51620c6bc1d7dfc3be8597a",
+        "page": 6,
+        "bbox": [
+          649.192387,
+          289.923157,
+          673.290399,
+          296.84513
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2016",
+        "title": "平成29年3月期決算説明会資料(2017/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_170522_1_1.pdf",
+        "sha": "d50941a5b9222edec4775e33136e1d047be8d0f40c0f0b442968d85a49325357",
+        "page": 6,
+        "bbox": [
+          649.191086,
+          289.923157,
+          673.289099,
+          296.84513
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2017",
+        "title": "平成30年3月期決算説明会資料(2018/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/pr_180521_1_1.pdf",
+        "sha": "46fb65d22426289ddfcd5ee6a3867bd3e3ae5e88b7a226e786b612d4939ca217",
+        "page": 11,
+        "bbox": [
+          445.42,
+          252.77,
+          475.768,
+          264.77
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2018",
+        "title": "2019年3月期決算説明会資料(2019/05/17)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20190517_1.pdf",
+        "sha": "f5cbed7fc5aaddbdbc76ef0b9dde85bb834cd8a32d9316cd743e51256e1fbddd",
+        "page": 11,
+        "bbox": [
+          501.029,
+          310.711,
+          531.257,
+          325.351
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2019",
+        "title": "2020年3月期決算説明会資料(2020/05/19)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20200519_1.pdf",
+        "sha": "65e00bc48fb1c521f62b19e373b88490c5042f6be3cf673b74e348e68e5876f1",
+        "page": 11,
+        "bbox": [
+          427.37,
+          312.7,
+          451.598,
+          324.7
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2020",
+        "title": "2021年3月期決算説明会資料(2021/05/20)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20210520_1.pdf",
+        "sha": "bfc3a9bbb43e6ea59350f05df1de207a8c7d04b3b356ee1cafbdcc8fc865b356",
+        "page": 11,
+        "bbox": [
+          427.39,
+          303.36,
+          457.738,
+          315.36
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2021",
+        "title": "2022年3月期決算説明会資料(2022/05/18)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20220518_1.pdf",
+        "sha": "55fdb61a29b759436a9019e55ff4f5489d76e6c89302765a7dc1d250bdecea19",
+        "page": 11,
+        "bbox": [
+          424.42,
+          268.97,
+          454.768,
+          280.97
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2022",
+        "title": "2023年3月期決算説明会資料(2023/05/23)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20230523_2.pdf",
+        "sha": "30064a6f0105cd4bc0dd841169fe846b2ea71e028d026d69577b7607de10237b",
+        "page": 14,
+        "bbox": [
+          427.37,
+          350.57,
+          451.598,
+          362.57
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2023",
+        "title": "2024年3月期決算説明会資料(2024/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20240522-1.pdf",
+        "sha": "2180c6cffd396e93be6de959137d409b169a5ee031adca13c34aafa40d2608ab",
+        "page": 15,
+        "bbox": [
+          427.37,
+          368.62,
+          451.598,
+          380.62
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2024",
+        "title": "2025年3月期決算説明会資料(2025/05/22)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20250522_2.pdf",
+        "sha": "ed0c1a2202418f143ddc771771180830a019f0b8dd619bf4a5d40471acfb715b",
+        "page": 15,
+        "bbox": [
+          427.37,
+          446.232,
+          451.598,
+          458.232
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      },
+      {
+        "doc": "KUMAGAI_PRESENTATION_2025",
+        "title": "2026年3月期決算説明会資料(2026/05/21)",
+        "url": "https://www.kumagaigumi.co.jp/ir/uploads/ir_20260521_2.pdf",
+        "sha": "da15b46d92682e55f4c6fdc190251e01e3d2a5ddb74f3a4e09a7a11161d9a903",
+        "page": 15,
+        "bbox": [
+          438.38,
+          378.26,
+          462.608,
+          390.26
+        ],
+        "concept": "issuer_presentation:completed_work_gross_margin_domestic_building_standalone_reported",
+        "context": "IssuerReportedDomesticStandaloneCompletedWorkBySector"
+      }
+    ]
+  }
+]

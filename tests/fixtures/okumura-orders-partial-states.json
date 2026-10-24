@@ -1,0 +1,422 @@
+[
+  {
+    "name": "受注工事高（単体・国内官公庁・国内民間・海外別・建築・海外）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2021,
+      2022
+    ],
+    "dashYears": [
+      2018,
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+    ],
+    "all11DisplayStatesVerified": true,
+    "zeroGenerated": false,
+    "normalConnectionAllowed": false,
+    "rows": [
+      {
+        "year": 2015,
+        "value": 2,
+        "doc": "OKUMURA_FACTBOOK_2015",
+        "sha": "6ef4a09710bb99b2550337a7e40a974b1310298b52082b826cc798ffe2e1d29a",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "2",
+          "bbox": [
+            448.075775,
+            694.00674,
+            453.352725,
+            704.55618
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2016,
+        "value": -47,
+        "doc": "OKUMURA_FACTBOOK_2016",
+        "sha": "b82fe4d4605a704c29d4b83c755e80891318c1fe32dec36ee5cc90494d21878f",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "△ 47",
+          "bbox": [
+            444.445373,
+            714.29922,
+            454.52502,
+            724.36914
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2017,
+        "value": 1,
+        "doc": "OKUMURA_FACTBOOK_2017",
+        "sha": "4412f7052dbfa8904a00b022cc575d665f78aeaf9b7c67eb92556d81db972f0b",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "1",
+          "bbox": [
+            449.532937,
+            698.69922,
+            454.558187,
+            708.76914
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2018,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2018",
+        "sha": "09b0cd001bbe8e145d91e22c2537cbd0935bcdee4d30cc41ea9083d30d7d496a",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            446.416704,
+            698.6349,
+            451.441955,
+            708.70482
+          ]
+        }
+      },
+      {
+        "year": 2019,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2019",
+        "sha": "813e91d08cbacf3dfdf4e885b7e6c53e573e4396d4ef58df556952bc5beb1e44",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            449.531703,
+            698.62962,
+            454.556953,
+            708.69954
+          ]
+        }
+      },
+      {
+        "year": 2020,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2020",
+        "sha": "85c8bf05bb000122891fdf7072dfe7c464dd8d4127f96e12208d3360e8b3f5df",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            449.542987,
+            698.69922,
+            454.568237,
+            708.76914
+          ]
+        }
+      },
+      {
+        "year": 2021,
+        "value": 1333,
+        "doc": "OKUMURA_FACTBOOK_2021",
+        "sha": "d0cfcd629ad0a24f2056629ba095b75376ba4da7e4cea5b3d49873e8f0e2164a",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "1,333",
+          "bbox": [
+            431.41275,
+            699.700676,
+            454.699252,
+            709.771345
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2022,
+        "value": -1072,
+        "doc": "OKUMURA_FACTBOOK_2022",
+        "sha": "9d95367366033ad8e2a0b3e750696a0b06e6b9887330ac25bdb42d95f27381f2",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "△ 1,072",
+          "bbox": [
+            435.012502,
+            722.500676,
+            458.299075,
+            732.571345
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2023,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2023",
+        "sha": "cf2792ce2a1e921eda062857a1fd89f872a7bc534ad9a0362200f478ced832ff",
+        "cell": {
+          "pdfPage": 17,
+          "raw": "‑",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            452.758,
+            705.842847,
+            457.808,
+            715.902477
+          ]
+        }
+      },
+      {
+        "year": 2024,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2024",
+        "sha": "20864c8ef10a2d90733d27d0ac40411313d664a50be6223b6adf16e46c6ab238",
+        "cell": {
+          "pdfPage": 20,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            452.368846,
+            633.220974,
+            457.409033,
+            643.291269
+          ]
+        }
+      },
+      {
+        "year": 2025,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2025",
+        "sha": "516d92ea0fe3af05f7339f0a6e115c4f667df0e64a45dfdd73801aee0c84cc75",
+        "cell": {
+          "pdfPage": 20,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            447.724868,
+            633.220974,
+            452.765055,
+            643.291269
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "受注工事高（単体・工種別・土木・電線路）",
+    "numericYears": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "dashYears": [
+      2015,
+      2016
+    ],
+    "all11DisplayStatesVerified": true,
+    "zeroGenerated": false,
+    "normalConnectionAllowed": false,
+    "rows": [
+      {
+        "year": 2015,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2015",
+        "sha": "6ef4a09710bb99b2550337a7e40a974b1310298b52082b826cc798ffe2e1d29a",
+        "cell": {
+          "pdfPage": 19,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            488.28,
+            571.36856,
+            493.55695,
+            581.918
+          ]
+        }
+      },
+      {
+        "year": 2016,
+        "value": null,
+        "doc": "OKUMURA_FACTBOOK_2016",
+        "sha": "b82fe4d4605a704c29d4b83c755e80891318c1fe32dec36ee5cc90494d21878f",
+        "cell": {
+          "pdfPage": 19,
+          "raw": "-",
+          "state": "direct_reported_dash_not_zero",
+          "bbox": [
+            488.28,
+            571.36856,
+            493.55695,
+            581.918
+          ]
+        }
+      },
+      {
+        "year": 2017,
+        "value": 156,
+        "doc": "OKUMURA_FACTBOOK_2017",
+        "sha": "4412f7052dbfa8904a00b022cc575d665f78aeaf9b7c67eb92556d81db972f0b",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "156",
+          "bbox": [
+            480.96,
+            571.36856,
+            496.797182,
+            581.918
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2018,
+        "value": 327,
+        "doc": "OKUMURA_FACTBOOK_2018",
+        "sha": "09b0cd001bbe8e145d91e22c2537cbd0935bcdee4d30cc41ea9083d30d7d496a",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "327",
+          "bbox": [
+            480.96,
+            571.36856,
+            496.797182,
+            581.918
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2019,
+        "value": 159,
+        "doc": "OKUMURA_FACTBOOK_2019",
+        "sha": "813e91d08cbacf3dfdf4e885b7e6c53e573e4396d4ef58df556952bc5beb1e44",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "159",
+          "bbox": [
+            480.96,
+            571.36856,
+            496.797182,
+            581.918
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2020,
+        "value": 17,
+        "doc": "OKUMURA_FACTBOOK_2020",
+        "sha": "85c8bf05bb000122891fdf7072dfe7c464dd8d4127f96e12208d3360e8b3f5df",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "17",
+          "bbox": [
+            486.24,
+            571.36856,
+            496.797066,
+            581.918
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2021,
+        "value": 4467,
+        "doc": "OKUMURA_FACTBOOK_2021",
+        "sha": "d0cfcd629ad0a24f2056629ba095b75376ba4da7e4cea5b3d49873e8f0e2164a",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "4,467",
+          "bbox": [
+            472.56,
+            571.368356,
+            496.955343,
+            581.918545
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2022,
+        "value": 9264,
+        "doc": "OKUMURA_FACTBOOK_2022",
+        "sha": "9d95367366033ad8e2a0b3e750696a0b06e6b9887330ac25bdb42d95f27381f2",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "9,264",
+          "bbox": [
+            471.831,
+            573.940676,
+            495.117502,
+            584.011345
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2023,
+        "value": 4479,
+        "doc": "OKUMURA_FACTBOOK_2023",
+        "sha": "cf2792ce2a1e921eda062857a1fd89f872a7bc534ad9a0362200f478ced832ff",
+        "cell": {
+          "pdfPage": 18,
+          "raw": "4,479",
+          "bbox": [
+            471.0,
+            574.421465,
+            494.29,
+            584.481095
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2024,
+        "value": 43295,
+        "doc": "OKUMURA_FACTBOOK_2024",
+        "sha": "20864c8ef10a2d90733d27d0ac40411313d664a50be6223b6adf16e46c6ab238",
+        "cell": {
+          "pdfPage": 21,
+          "raw": "43,295",
+          "bbox": [
+            453.839996,
+            555.940945,
+            482.16585,
+            566.01124
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      },
+      {
+        "year": 2025,
+        "value": 5547,
+        "doc": "OKUMURA_FACTBOOK_2025",
+        "sha": "516d92ea0fe3af05f7339f0a6e115c4f667df0e64a45dfdd73801aee0c84cc75",
+        "cell": {
+          "pdfPage": 21,
+          "raw": "5,547",
+          "bbox": [
+            446.88002,
+            545.107127,
+            469.55901,
+            554.937661
+          ],
+          "state": "direct_reported_signed_numeric"
+        }
+      }
+    ]
+  }
+]

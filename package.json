@@ -44,7 +44,10 @@
     "catalog:orders-major50-annual": "node scripts/build-orders-major50-annual-catalog.mjs",
     "ai:stats": "node scripts/statistics-ai.mjs",
     "ai:mcp": "node scripts/mcp-statistics-server.mjs",
-    "ai:company-charts:validate": "node scripts/statistics-ai.mjs company-charts validate"
+    "ai:company-charts:validate": "node scripts/statistics-ai.mjs company-charts validate",
+    "postinstall": "node scripts/prepare-reviewed-company-data.mjs",
+    "prebuild:pages": "node scripts/prepare-reviewed-company-data.mjs",
+    "data:prepare-reviewed-company": "node scripts/prepare-reviewed-company-data.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",

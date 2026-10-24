@@ -1,0 +1,112 @@
+[
+  {
+    "fiscalYear": 2015,
+    "reportedCompletedWorkCostTotal": 77257.48700000001,
+    "displayed4ComponentsSum": 77257.485,
+    "reportedMinusDisplayedComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 70
+  },
+  {
+    "fiscalYear": 2016,
+    "reportedCompletedWorkCostTotal": 75344.616,
+    "displayed4ComponentsSum": 75344.615,
+    "reportedMinusDisplayedComponents": 0.001,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 72
+  },
+  {
+    "fiscalYear": 2017,
+    "reportedCompletedWorkCostTotal": 81933.61200000001,
+    "displayed4ComponentsSum": 81933.61,
+    "reportedMinusDisplayedComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 72
+  },
+  {
+    "fiscalYear": 2018,
+    "reportedCompletedWorkCostTotal": 80903.86,
+    "displayed4ComponentsSum": 80903.85800000001,
+    "reportedMinusDisplayedComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 76
+  },
+  {
+    "fiscalYear": 2019,
+    "reportedCompletedWorkCostTotal": 85574.984,
+    "displayed4ComponentsSum": 85574.982,
+    "reportedMinusDisplayedComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 77
+  },
+  {
+    "fiscalYear": 2020,
+    "reportedCompletedWorkCostTotal": 77264.53,
+    "displayed4ComponentsSum": 77264.528,
+    "reportedMinusDisplayedComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 79
+  },
+  {
+    "fiscalYear": 2021,
+    "reportedCompletedWorkCostTotal": 73476.0,
+    "displayed4ComponentsSum": 73476.0,
+    "reportedMinusDisplayedComponents": 0.0,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 82
+  },
+  {
+    "fiscalYear": 2022,
+    "reportedCompletedWorkCostTotal": 79208.0,
+    "displayed4ComponentsSum": 79207.0,
+    "reportedMinusDisplayedComponents": 1.0,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 87
+  },
+  {
+    "fiscalYear": 2023,
+    "reportedCompletedWorkCostTotal": 89431.0,
+    "displayed4ComponentsSum": 89430.0,
+    "reportedMinusDisplayedComponents": 1.0,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 88
+  },
+  {
+    "fiscalYear": 2024,
+    "reportedCompletedWorkCostTotal": 88782.0,
+    "displayed4ComponentsSum": 88781.0,
+    "reportedMinusDisplayedComponents": 1.0,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 92
+  },
+  {
+    "fiscalYear": 2025,
+    "reportedCompletedWorkCostTotal": 82940.0,
+    "displayed4ComponentsSum": 82938.0,
+    "reportedMinusDisplayedComponents": 2.0,
+    "sumNotCorrected": true,
+    "nestedLaborSubcontractNotAddedAgain": true,
+    "overheadPersonnelNotAddedAgain": true,
+    "sourceOriginalPage": 94
+  }
+]

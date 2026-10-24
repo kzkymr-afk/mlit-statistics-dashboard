@@ -1,0 +1,205 @@
+[
+  {
+    "metricId": "operating_margin_consolidated_reported",
+    "kind": "ratio",
+    "name": "完成工事高営業利益率（会社開示・連結）",
+    "numericYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "points": 11,
+    "scope": "consolidated",
+    "unit": "％",
+    "measureKind": "ratio",
+    "periodBasis": "fiscal_exact_interval",
+    "values": [
+      7.1,
+      7.3,
+      6.2,
+      6.8,
+      5.8,
+      6.2,
+      5.3,
+      2.8,
+      2.9,
+      2.9,
+      5.6
+    ],
+    "sources": [
+      {
+        "doc": "KUMAGAI_TANSHIN_2015",
+        "title": "平成28年3月期 決算短信(2016/05/13)",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/GKnX.pdf",
+        "sha": "bf3d7edfa77e3919ed4cee710e9163e24922e318d5bb69cb4255418492227c58",
+        "page": 1,
+        "bbox": [
+          532.776509,
+          310.24252,
+          543.218847,
+          318.83932
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2016",
+        "title": "平成29年3月期 決算短信(2017/05/12)",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/Eiil.pdf",
+        "sha": "33b3dc87fbda1ed0ec5cdbdab91c5fb997cf1ae660c10cdc6b0f839005dd6c8f",
+        "page": 1,
+        "bbox": [
+          516.4001413427561,
+          317.28729375,
+          535.8571731448762,
+          328.33709999999996
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2017",
+        "title": "平成30年3月期 決算短信(2018/05/14)",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/a9e8.pdf",
+        "sha": "bcc364a0eca3bfd315951e25977bd3a0f47c4c4b502e90016802f6ef1536459b",
+        "page": 1,
+        "bbox": [
+          515.8222791519436,
+          318.9075,
+          535.2773498233216,
+          329.95875
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2018",
+        "title": "2019年3月期 決算短信(2019/05/13)",
+        "url": "https://pdf.irpocket.com/C1861/Rhyn/B4py/aAuE.pdf",
+        "sha": "c0c4d0a05e67344406c7ab6041e77dbcd6b7d1542b52b8c2eaa8f011ff509ff1",
+        "page": 1,
+        "bbox": [
+          522.6876,
+          320.6241,
+          532.78608,
+          329.0157
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2019",
+        "title": "2020年3月期 決算短信(2020/05/13)",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/lKn0.pdf",
+        "sha": "2485581cb2701f08edf397e8540a7b501229f6479fb8cd7e2ceb9c41ea964904",
+        "page": 1,
+        "bbox": [
+          549.013746,
+          360.505014,
+          560.158518,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2020",
+        "title": "2021年3月期 決算短信(2021/05/13)",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/Wk3D.pdf",
+        "sha": "7157caba655af2261a6c0a80ddc69202ccf1f6d6c4133fb171ed53ea83a17608",
+        "page": 1,
+        "bbox": [
+          533.7747,
+          327.0264,
+          544.23645,
+          335.7177
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2021",
+        "title": "2022年3月期 決算短信（2022/05/13）",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/yhWw.pdf",
+        "sha": "15cc335a9e324de31c66e5c92cbd11074edcde3d40cb2939cd1c2451d4800a12",
+        "page": 1,
+        "bbox": [
+          549.011981,
+          360.505014,
+          560.156754,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2022",
+        "title": "2023年3月期 決算短信（2023/05/12）",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/oplV.pdf",
+        "sha": "6f34e2ca9406003e2023ab5b5e6432b7f6e045e1715166ef4ef3bc08350f3d78",
+        "page": 1,
+        "bbox": [
+          549.010071,
+          360.505014,
+          560.154843,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2023",
+        "title": "2024年3月期 決算短信（2024/05/14）",
+        "url": "https://pdf.irpocket.com/C1861/Oxqc/CL7L/ex03.pdf",
+        "sha": "61d013d0853e49dc7331eef6347614fbe5790b1355e905b03e06e770c124ea0d",
+        "page": 1,
+        "bbox": [
+          549.010071,
+          360.505014,
+          560.154843,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2024",
+        "title": "2025年3月期 決算短信〔日本基準〕(連結)",
+        "url": "https://pdf.irpocket.com/C1861/vAfC/jHl7/EXJq.pdf",
+        "sha": "9e9365b92cccd629bae09e4823856d2ca79c9faa9cbd0583fed1c8a7e3042349",
+        "page": 1,
+        "bbox": [
+          549.010071,
+          360.505014,
+          560.154843,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      },
+      {
+        "doc": "KUMAGAI_TANSHIN_2025",
+        "title": "2026年3月期 決算短信〔日本基準〕(連結)",
+        "url": "https://pdf.irpocket.com/C1861/WUpy/YpkJ/r94B.pdf",
+        "sha": "fb9d9c78a932391453c28ed0e4f69b42e51db18ecb0e9116af81e21fb15fd4e0",
+        "page": 1,
+        "bbox": [
+          549.011981,
+          360.505014,
+          560.156754,
+          369.74941
+        ],
+        "concept": "issuer_tanshin:OperatingIncomeToCompletedConstructionRevenueRatio",
+        "context": "IssuerCurrentYearConsolidatedOperatingMargin"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "compression": "gzip",
+  "snapshotHash": "72ca2ec736305e56a1baeff542761f87a449f676c5de29a530927bd5577f7705",
+  "uncompressedBytes": 163599863,
+  "compressedBytes": 13549683,
+  "uncompressedSha256": "48ff0f658efdb29a2c81d209b1a642542b890611c9a9190fad2268d5c1e75ea1",
+  "compressedSha256": "d7de0299a7e31986ace3f309b7bebe151771cae3c1348a09d6d6d87380664e26"
+}

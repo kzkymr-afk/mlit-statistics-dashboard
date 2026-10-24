@@ -1,0 +1,1026 @@
+[
+  {
+    "fiscalYear": 2015,
+    "sourceDocumentId": "S1007ZJD",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S1007ZJD.pdf",
+    "sourceSha256": "08194624eeeef5312c3c82544d8726957745efa4e1381f7b6c5b64300b0f489a",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 877.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "877",
+          "normalized": 877000000.0,
+          "htmlSHA": "699b6a0a47f1e5c52085f2bc1883a9591eedfb0efa0cd2501be641e788a1b5e9"
+        },
+        "pdfCell": {
+          "pdfPage": 39,
+          "bbox": [
+            498.4,
+            728.86151,
+            511.9,
+            737.85251
+          ],
+          "raw": "877",
+          "row": "非支配株主に帰属する当期純利益374877",
+          "quote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成26年４月１日                (自 平成27年４月１日\n                           至 平成27年３月31日)               至 平成28年３月31日)\n売上高\n  完成工事高                                  333,834                  298,485\n  不動産事業等売上高                                9,154                   10,341\n  売上高合計                                  342,989                  308,826\n売上原価\n  完成工事原価                           ※2   314,103             ※2   270,567\n  不動産事業等売上原価                         ※1   6,116               ※1   7,154\n  売上原価合計                                 320,219                  277,722\n売上総利益\n  完成工事総利益                                 19,731                   27,917\n  不動産事業等総利益                                3,038                    3,186\n  売上総利益合計                                 22,769                   31,104\n販売費及び一般管理費                          ※3    14,058             ※3    14,919\n営業利益                                          8,710                16,184\n営業外収益\n  受取利息                                          223                      185\n  受取配当金                                         869                      855\n  為替差益                                          747                        -\n  貸倒引当金戻入額                                       13                       81\n  その他                                           386                      367\n  営業外収益合計                                     2,241                    1,489\n営業外費用\n  支払利息                                          644                      547\n  為替差損                                            -                      576\n  資金調達費用                                        191                      166\n  その他                                           178                       93\n  営業外費用合計                                     1,014                 1,383\n経常利益                                          9,938                16,290\n特別利益\n  固定資産売却益                                  ※5     9                ※5     77\n  投資有価証券売却益                                   1,602                        0\n  特別利益合計                                      1,612                       77\n特別損失\n  固定資産売却損                                 ※6     39               ※6     929\n  固定資産除却損                                  ※7     7               ※7     222\n  減損損失                                   ※8     390               ※8     495\n  建物建替損失                                        112                      385\n  本社移転費用                                        132                       30\n  その他                                           108                       95\n  特別損失合計                                     790                    2,160\n税金等調整前当期純利益                               10,759                   14,208\n法人税、住民税及び事業税                              2,777                    2,787\n法人税等調整額                                  △1,612                   △4,055\n法人税等合計                                        1,164               △1,267\n当期純利益                                         9,595                15,475\n非支配株主に帰属する当期純利益                                 374                   877\n親会社株主に帰属する当期純利益                               9,220                14,598\n\n\n\n\n                          39/103\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 8645.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "8,645",
+          "normalized": 8645000000.0,
+          "htmlSHA": "fb4c111e816d3b7a01316879ccf7f397f4d7750992ae27a417dc17172589e18f"
+        },
+        "pdfCell": {
+          "pdfPage": 40,
+          "bbox": [
+            489.4,
+            213.90778,
+            511.9,
+            222.89878
+          ],
+          "raw": "8,645",
+          "row": "親会社株主に係る包括利益18,2328,645",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                   当連結会計年度\n                 (自 平成26年４月１日              (自 平成27年４月１日\n                  至 平成27年３月31日)             至 平成28年３月31日)\n当期純利益                        9,595                    15,475\nその他の包括利益\n  その他有価証券評価差額金                     7,402                 △6,554\n  為替換算調整勘定                           439                  △289\n  退職給付に係る調整額                       1,311                    742\n  その他の包括利益合計              ※1,※2    9,153         ※1,※2   △6,100\n包括利益                              18,748                  9,375\n（内訳）\n  親会社株主に係る包括利益                    18,232                  8,645\n  非支配株主に係る包括利益                       516                    729\n\n\n\n\n                 40/103\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 729.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "729",
+          "normalized": 729000000.0,
+          "htmlSHA": "fb4c111e816d3b7a01316879ccf7f397f4d7750992ae27a417dc17172589e18f"
+        },
+        "pdfCell": {
+          "pdfPage": 40,
+          "bbox": [
+            498.4,
+            227.40778,
+            511.9,
+            236.39878
+          ],
+          "raw": "729",
+          "row": "非支配株主に係る包括利益516729",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                   当連結会計年度\n                 (自 平成26年４月１日              (自 平成27年４月１日\n                  至 平成27年３月31日)             至 平成28年３月31日)\n当期純利益                        9,595                    15,475\nその他の包括利益\n  その他有価証券評価差額金                     7,402                 △6,554\n  為替換算調整勘定                           439                  △289\n  退職給付に係る調整額                       1,311                    742\n  その他の包括利益合計              ※1,※2    9,153         ※1,※2   △6,100\n包括利益                              18,748                  9,375\n（内訳）\n  親会社株主に係る包括利益                    18,232                  8,645\n  非支配株主に係る包括利益                       516                    729\n\n\n\n\n                 40/103\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2016,
+    "sourceDocumentId": "S100AISE",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100AISE.pdf",
+    "sourceSha256": "0d2eb02f0ebceb462a293da8c0a49dd53ab0a652402a7ce78cfde62a09602d8f",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": -362.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "362",
+          "normalized": -362000000.0,
+          "htmlSHA": "dbf6e355f1beef3a2d311e559c8f01124d43440d872fe7cf66129ea7a408da37"
+        },
+        "pdfCell": {
+          "pdfPage": 42,
+          "bbox": [
+            489.4,
+            741.811491,
+            511.9,
+            750.802491
+          ],
+          "raw": "△362",
+          "row": "非支配株主に帰属する当期純利益又は877△362非支配株主に帰属する当期純損失(△)",
+          "quote": "                                                                       EDINET提出書類\n                                                                   西松建設株式会社(E00060)\n                                                                        有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 平成27年４月１日                (自 平成28年４月１日\n                           至 平成28年３月31日)               至 平成29年３月31日)\n売上高\n  完成工事高                                   298,485                 305,040\n  不動産事業等売上高                                10,341                  10,187\n  売上高合計                                   308,826                 315,228\n売上原価\n  完成工事原価                           ※2     270,567           ※2    265,961\n  不動産事業等売上原価                         ※1     7,154                   7,006\n  売上原価合計                                  277,722                 272,968\n売上総利益\n  完成工事総利益                                  27,917                  39,078\n  不動産事業等総利益                                 3,186                   3,180\n  売上総利益合計                                  31,104                  42,259\n販売費及び一般管理費                          ※3     14,919            ※3    16,999\n営業利益                                       16,184                  25,259\n営業外収益\n  受取利息                                          185                   267\n  受取配当金                                         855                   829\n  貸倒引当金戻入額                                       81                     4\n  その他                                           367                   408\n  営業外収益合計                                     1,489                 1,510\n営業外費用\n  支払利息                                        547                     456\n  為替差損                                        576                     677\n  資金調達費用                                      166                      37\n  その他                                          93                     153\n  営業外費用合計                                   1,383                   1,324\n経常利益                                       16,290                  25,446\n特別利益\n  固定資産売却益                                 ※5     77                ※5   4\n  投資有価証券売却益                                       0                 1,705\n  受取補償金                                           -                   416\n  その他                                             -                    17\n  特別利益合計                                         77                 2,143\n特別損失\n  固定資産売却損                                ※6   929                  ※6   0\n  固定資産除却損                                ※7   222                 ※7   33\n  減損損失                                   ※8   495                       -\n  建物建替損失                                      385                     252\n  本社移転費用                                       30                       -\n  和解金                                          11                     233\n  環境対策引当金繰入額                                    -                      82\n  その他                                          84                      65\n  特別損失合計                                    2,160                     668\n税金等調整前当期純利益                               14,208                   26,921\n法人税、住民税及び事業税                                2,787                   6,862\n法人税等調整額                                  △4,055                     1,210\n法人税等合計                                   △1,267                     8,072\n当期純利益                                     15,475                   18,848\n非支配株主に帰属する当期純利益又は\n                                                877                 △362\n非支配株主に帰属する当期純損失（△）\n親会社株主に帰属する当期純利益                            14,598                  19,210\n\n\n\n\n                          42/106\n",
+          "multilineLabel": true
+        }
+      },
+      "comprehensiveParent": {
+        "value": 19789.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "19,789",
+          "normalized": 19789000000.0,
+          "htmlSHA": "ce3f490a687092c390ec4d8f9a24f85bdff1678749739f06eb50508a9fd1e040"
+        },
+        "pdfCell": {
+          "pdfPage": 43,
+          "bbox": [
+            484.9,
+            213.680881,
+            511.9,
+            222.671881
+          ],
+          "raw": "19,789",
+          "row": "親会社株主に係る包括利益8,64519,789",
+          "quote": "                                                            EDINET提出書類\n                                                        西松建設株式会社(E00060)\n                                                             有価証券報告書\n\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                   当連結会計年度\n                 (自 平成27年４月１日              (自 平成28年４月１日\n                  至 平成28年３月31日)             至 平成29年３月31日)\n当期純利益                       15,475                    18,848\nその他の包括利益\n  その他有価証券評価差額金                    △6,554                  △477\n  為替換算調整勘定                         △289                   △216\n  退職給付に係る調整額                         742                  1,187\n  その他の包括利益合計              ※1,※2   △6,100            ※1,※2   492\n包括利益                               9,375                19,341\n（内訳）\n  親会社株主に係る包括利益                     8,645                19,789\n  非支配株主に係る包括利益                       729                 △448\n\n\n\n\n                 43/106\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": -448.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "448",
+          "normalized": -448000000.0,
+          "htmlSHA": "ce3f490a687092c390ec4d8f9a24f85bdff1678749739f06eb50508a9fd1e040"
+        },
+        "pdfCell": {
+          "pdfPage": 43,
+          "bbox": [
+            489.4,
+            227.180881,
+            511.9,
+            236.171881
+          ],
+          "raw": "△448",
+          "row": "非支配株主に係る包括利益729△448",
+          "quote": "                                                            EDINET提出書類\n                                                        西松建設株式会社(E00060)\n                                                             有価証券報告書\n\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                   当連結会計年度\n                 (自 平成27年４月１日              (自 平成28年４月１日\n                  至 平成28年３月31日)             至 平成29年３月31日)\n当期純利益                       15,475                    18,848\nその他の包括利益\n  その他有価証券評価差額金                    △6,554                  △477\n  為替換算調整勘定                         △289                   △216\n  退職給付に係る調整額                         742                  1,187\n  その他の包括利益合計              ※1,※2   △6,100            ※1,※2   492\n包括利益                               9,375                19,341\n（内訳）\n  親会社株主に係る包括利益                     8,645                19,789\n  非支配株主に係る包括利益                       729                 △448\n\n\n\n\n                 43/106\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 1.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": 0.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2017,
+    "sourceDocumentId": "S100D94R",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100D94R.pdf",
+    "sourceSha256": "18b9e1f93f8d35bf81b589acc00f7e2e8dd7311e3aeeca423288ca0ac950b6f0",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": -59.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "59",
+          "normalized": -59000000.0,
+          "htmlSHA": "89bc0143a51168db84aa01eb0bd5d746bc43848720ac38f37f06e22acc0dbbef"
+        },
+        "pdfCell": {
+          "pdfPage": 45,
+          "bbox": [
+            494.4,
+            720.634621,
+            512.4,
+            729.625621
+          ],
+          "raw": "△59",
+          "row": "非支配株主に帰属する当期純損失(△)△362△59",
+          "quote": "                                                                   EDINET提出書類\n                                                               西松建設株式会社(E00060)\n                                                                    有価証券報告書\n\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                         (単位：百万円)\n                            前連結会計年度                  当連結会計年度\n                          (自 平成28年４月１日             (自 平成29年４月１日\n                           至 平成29年３月31日)            至 平成30年３月31日)\n売上高\n  完成工事高                                  305,040               273,738\n  不動産事業等売上高                               10,187                10,673\n  売上高合計                                  315,228               284,412\n売上原価\n  完成工事原価                           ※1    265,961               236,596\n  不動産事業等売上原価                               7,006                 7,390\n  売上原価合計                                 272,968               243,986\n売上総利益\n  完成工事総利益                                 39,078                37,142\n  不動産事業等総利益                                3,180                 3,282\n  売上総利益合計                                 42,259                40,425\n販売費及び一般管理費                          ※2    16,999          ※2    17,673\n営業利益                                      25,259                22,752\n営業外収益\n  受取利息                                       267                    95\n  受取配当金                                      829                   914\n  貸倒引当金戻入額                                     4                    14\n  その他                                        408                   424\n  営業外収益合計                                  1,510                 1,448\n営業外費用\n  支払利息                                       456                   415\n  為替差損                                       677                    99\n  資金調達費用                                      37                    29\n  その他                                        153                   107\n  営業外費用合計                                  1,324                   652\n経常利益                                      25,446                23,548\n特別利益\n  固定資産売却益                                 ※4   4               ※4   21\n  投資有価証券売却益                                1,705                 1,328\n  受取補償金                                      416                    59\n  その他                                         17                    −\n  特別利益合計                                   2,143                 1,410\n特別損失\n  固定資産売却損                                 ※5   0                ※5   0\n  固定資産除却損                                ※6   33                ※6   7\n  減損損失                                        −                ※7   39\n  じん肺訴訟和解金                                    12                    62\n  建物建替損失                                     252                   344\n  和解金                                        233                     2\n  環境対策引当金繰入額                                  82                    −\n  その他                                         52                     7\n  特別損失合計                                     668                   462\n税金等調整前当期純利益                               26,921               24,495\n法人税、住民税及び事業税                               6,862                7,652\n法人税等調整額                                    1,210                  △12\n法人税等合計                                     8,072                7,640\n当期純利益                                     18,848               16,855\n非支配株主に帰属する当期純損失（△）                         △362                   △59\n親会社株主に帰属する当期純利益                           19,210               16,914\n\n\n\n\n                          45/110\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 21721.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "21,721",
+          "normalized": 21721000000.0,
+          "htmlSHA": "5b95da8a3b839dcffd936a4074fefbb25588790f17078fbcac019f983c8d92bd"
+        },
+        "pdfCell": {
+          "pdfPage": 46,
+          "bbox": [
+            484.9,
+            213.680881,
+            511.9,
+            222.671881
+          ],
+          "raw": "21,721",
+          "row": "親会社株主に係る包括利益19,78921,721",
+          "quote": "                                                           EDINET提出書類\n                                                       西松建設株式会社(E00060)\n                                                            有価証券報告書\n\n   【連結包括利益計算書】\n                                              (単位：百万円)\n                   前連結会計年度                当連結会計年度\n                 (自 平成28年４月１日           (自 平成29年４月１日\n                  至 平成29年３月31日)          至 平成30年３月31日)\n当期純利益                       18,848                 16,855\nその他の包括利益\n  その他有価証券評価差額金                  △477                    4,074\n  為替換算調整勘定                      △216                      192\n  退職給付に係る調整額                    1,187                     668\n  その他の包括利益合計              ※1,※2   492          ※1,※2    4,934\n包括利益                          19,341                   21,790\n（内訳）\n  親会社株主に係る包括利益                19,789                   21,721\n  非支配株主に係る包括利益                 △448                        68\n\n\n\n\n                 46/110\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 68.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "68",
+          "normalized": 68000000.0,
+          "htmlSHA": "5b95da8a3b839dcffd936a4074fefbb25588790f17078fbcac019f983c8d92bd"
+        },
+        "pdfCell": {
+          "pdfPage": 46,
+          "bbox": [
+            502.9,
+            227.180881,
+            511.9,
+            236.171881
+          ],
+          "raw": "68",
+          "row": "非支配株主に係る包括利益△44868",
+          "quote": "                                                           EDINET提出書類\n                                                       西松建設株式会社(E00060)\n                                                            有価証券報告書\n\n   【連結包括利益計算書】\n                                              (単位：百万円)\n                   前連結会計年度                当連結会計年度\n                 (自 平成28年４月１日           (自 平成29年４月１日\n                  至 平成29年３月31日)          至 平成30年３月31日)\n当期純利益                       18,848                 16,855\nその他の包括利益\n  その他有価証券評価差額金                  △477                    4,074\n  為替換算調整勘定                      △216                      192\n  退職給付に係る調整額                    1,187                     668\n  その他の包括利益合計              ※1,※2   492          ※1,※2    4,934\n包括利益                          19,341                   21,790\n（内訳）\n  親会社株主に係る包括利益                19,789                   21,721\n  非支配株主に係る包括利益                 △448                        68\n\n\n\n\n                 46/110\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2018,
+    "sourceDocumentId": "S100G0K4",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100G0K4.pdf",
+    "sourceSha256": "3685eaf2c215b67c967ad399f38cfe8246195312473247eb60fa4ab38838f82c",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 72.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "72",
+          "normalized": 72000000.0,
+          "htmlSHA": "6ab623a6aed2e9d19581995ffa0365d38c689c957bca6f3a43aabd24daa8338f"
+        },
+        "pdfCell": {
+          "pdfPage": 54,
+          "bbox": [
+            494.95001,
+            706.338351,
+            503.95001,
+            715.329351
+          ],
+          "raw": "72",
+          "row": "非支配株主に帰属する当期純利益又は△5972非支配株主に帰属する当期純損失(△)",
+          "quote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2017年４月１日              (自 2018年４月１日\n                           至 2018年３月31日)             至 2019年３月31日)\n売上高\n 完成工事高                                   273,738                 338,334\n 不動産事業等売上高                                10,673                  10,984\n 売上高合計                                   284,412                 349,318\n売上原価\n 完成工事原価                                  236,596           ※1    298,043\n 不動産事業等売上原価                                7,390                   7,851\n 売上原価合計                                  243,986                 305,895\n売上総利益\n 完成工事総利益                                  37,142                  40,290\n 不動産事業等総利益                                 3,282                   3,133\n 売上総利益合計                                  40,425                  43,423\n販売費及び一般管理費                          ※2    17,673            ※2    18,495\n営業利益                                      22,752                  24,928\n営業外収益\n 受取利息                                         95                      81\n 受取配当金                                       914                   1,126\n 貸倒引当金戻入額                                     14                       2\n 匿名組合投資利益                                     62                     254\n その他                                         362                     265\n 営業外収益合計                                   1,448                   1,731\n営業外費用\n 支払利息                                        415                     439\n 為替差損                                         99                      10\n 資金調達費用                                       29                      71\n その他                                         107                     151\n 営業外費用合計                                     652                     673\n経常利益                                      23,548                  25,985\n特別利益\n 固定資産売却益                                 ※4   21                  ※4   0\n 投資有価証券売却益                                 1,328                   1,208\n 受取補償金                                        59                      14\n 特別利益合計                                    1,410                   1,223\n特別損失\n 固定資産売却損                                  ※5   0                 ※5   84\n 固定資産除却損                                  ※6   7                 ※6   31\n 減損損失                                    ※7   39                      −\n じん肺訴訟和解金                                     62                       6\n 建物建替損失                                      344                     147\n 子会社清算損                                       −                       21\n その他                                           9                       1\n 特別損失合計                                      462                     292\n税金等調整前当期純利益                              24,495                   26,916\n法人税、住民税及び事業税                              7,652                    7,590\n法人税等調整額                                     △12                      469\n法人税等合計                                    7,640                    8,060\n当期純利益                                    16,855                   18,856\n非支配株主に帰属する当期純利益又は\n                                              △59                      72\n非支配株主に帰属する当期純損失（△）\n親会社株主に帰属する当期純利益                           16,914                  18,784\n\n\n\n\n                           54/119\n",
+          "multilineLabel": true
+        }
+      },
+      "comprehensiveParent": {
+        "value": 19280.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "19,280",
+          "normalized": 19280000000.0,
+          "htmlSHA": "cf6e0832c87aed7a72288c056658a4fdbb1288064e28a903b8dbc1cee00e174d"
+        },
+        "pdfCell": {
+          "pdfPage": 55,
+          "bbox": [
+            476.95001,
+            207.907751,
+            503.95001,
+            216.898751
+          ],
+          "raw": "19,280",
+          "row": "親会社株主に係る包括利益21,72119,280",
+          "quote": "                                                               EDINET提出書類\n                                                           西松建設株式会社(E00060)\n                                                                有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2017年４月１日               (自 2018年４月１日\n                  至 2018年３月31日)              至 2019年３月31日)\n当期純利益                        16,855                     18,856\nその他の包括利益\n その他有価証券評価差額金                       4,074                  1,009\n 為替換算調整勘定                             192                   △77\n 退職給付に係る調整額                           668                  △459\n その他の包括利益合計                ※1,※2    4,934            ※1,※2   472\n包括利益                               21,790                19,328\n（内訳）\n 親会社株主に係る包括利益                      21,721                19,280\n 非支配株主に係る包括利益                          68                    48\n\n\n\n\n                  55/119\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 48.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "48",
+          "normalized": 48000000.0,
+          "htmlSHA": "cf6e0832c87aed7a72288c056658a4fdbb1288064e28a903b8dbc1cee00e174d"
+        },
+        "pdfCell": {
+          "pdfPage": 55,
+          "bbox": [
+            494.95001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "48",
+          "row": "非支配株主に係る包括利益6848",
+          "quote": "                                                               EDINET提出書類\n                                                           西松建設株式会社(E00060)\n                                                                有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2017年４月１日               (自 2018年４月１日\n                  至 2018年３月31日)              至 2019年３月31日)\n当期純利益                        16,855                     18,856\nその他の包括利益\n その他有価証券評価差額金                       4,074                  1,009\n 為替換算調整勘定                             192                   △77\n 退職給付に係る調整額                           668                  △459\n その他の包括利益合計                ※1,※2    4,934            ※1,※2   472\n包括利益                               21,790                19,328\n（内訳）\n 親会社株主に係る包括利益                      21,721                19,280\n 非支配株主に係る包括利益                          68                    48\n\n\n\n\n                  55/119\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": 0.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2019,
+    "sourceDocumentId": "S100IUSU",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100IUSU.pdf",
+    "sourceSha256": "2e14a2981283730f395f05530890423fc985dba5e2bc7f07e6254d4c1e1fdefa",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 186.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "186",
+          "normalized": 186000000.0,
+          "htmlSHA": "b2882bf217432401c0c576fd87dff216fcd010a2a0e3f0488e9def029950e661"
+        },
+        "pdfCell": {
+          "pdfPage": 56,
+          "bbox": [
+            490.45001,
+            702.361481,
+            503.95001,
+            711.352481
+          ],
+          "raw": "186",
+          "row": "非支配株主に帰属する当期純利益72186",
+          "quote": "                                                                          EDINET提出書類\n                                                                      西松建設株式会社(E00060)\n                                                                           有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                           (単位：百万円)\n                            前連結会計年度                   当連結会計年度\n                          (自 2018年４月１日              (自 2019年４月１日\n                           至 2019年３月31日)             至 2020年３月31日)\n売上高\n 完成工事高                                    338,334                379,962\n 不動産事業等売上高                                 10,984                 11,658\n 売上高合計                                    349,318                391,621\n売上原価\n 完成工事原価                             ※1    298,043          ※1    339,325\n 不動産事業等売上原価                                 7,851                  8,357\n 売上原価合計                                   305,895                347,683\n売上総利益\n 完成工事総利益                                   40,290                 40,636\n 不動産事業等総利益                                  3,133                  3,301\n 売上総利益合計                                   43,423                 43,938\n販売費及び一般管理費                           ※2    18,495           ※2    18,624\n営業利益                                       24,928                 25,313\n営業外収益\n 受取利息                                          81                    109\n 受取配当金                                      1,126                  1,051\n 貸倒引当金戻入額                                       2                      4\n 匿名組合投資利益                                     254                     81\n その他                                          265                    370\n 営業外収益合計                                    1,731                  1,617\n営業外費用\n 支払利息                                         439                    473\n 為替差損                                          10                    328\n 資金調達費用                                        71                    106\n その他                                          151                    183\n 営業外費用合計                                      673                  1,092\n経常利益                                       25,985                 25,838\n特別利益\n 固定資産売却益                                   ※4   0                ※4   82\n 投資有価証券売却益                                  1,208                    912\n 受取補償金                                         14                    188\n 特別利益合計                                     1,223                  1,184\n特別損失\n 固定資産売却損                                  ※5   84                ※5   56\n 固定資産除却損                                  ※6   31                 ※6   5\n 投資有価証券評価損                                     −                   1,235\n 建物建替損失                                       147                     −\n 本社移転費用                                        −                     219\n 子会社清算損                                        21                     −\n その他                                            7                     69\n 特別損失合計                                       292                  1,587\n税金等調整前当期純利益                                26,916                 25,435\n法人税、住民税及び事業税                                7,590                  5,803\n法人税等調整額                                       469                    723\n法人税等合計                                      8,060                  6,526\n当期純利益                                      18,856                 18,908\n非支配株主に帰属する当期純利益                                72                    186\n親会社株主に帰属する当期純利益                            18,784                 18,721\n\n\n\n\n                           56/123\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 5380.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "5,380",
+          "normalized": 5380000000.0,
+          "htmlSHA": "7fdfd048e4bf56e10cbf06d05797eae7ddd01a76ea60c5856dcb6fef8cd97a95"
+        },
+        "pdfCell": {
+          "pdfPage": 57,
+          "bbox": [
+            481.45001,
+            207.907751,
+            503.95001,
+            216.898751
+          ],
+          "raw": "5,380",
+          "row": "親会社株主に係る包括利益19,2805,380",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n   【連結包括利益計算書】\n                                                (単位：百万円)\n                   前連結会計年度                 当連結会計年度\n                 (自 2018年４月１日            (自 2019年４月１日\n                  至 2019年３月31日)           至 2020年３月31日)\n当期純利益                        18,856                  18,908\nその他の包括利益\n その他有価証券評価差額金                    1,009                △12,674\n 為替換算調整勘定                         △77                     247\n 退職給付に係る調整額                      △459                   △774\n その他の包括利益合計                ※1,※2   472        ※1,※2   △13,201\n包括利益                           19,328                   5,706\n（内訳）\n 親会社株主に係る包括利益                  19,280                   5,380\n 非支配株主に係る包括利益                      48                     325\n\n\n\n\n                  57/123\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 325.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "325",
+          "normalized": 325000000.0,
+          "htmlSHA": "7fdfd048e4bf56e10cbf06d05797eae7ddd01a76ea60c5856dcb6fef8cd97a95"
+        },
+        "pdfCell": {
+          "pdfPage": 57,
+          "bbox": [
+            490.45001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "325",
+          "row": "非支配株主に係る包括利益48325",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n   【連結包括利益計算書】\n                                                (単位：百万円)\n                   前連結会計年度                 当連結会計年度\n                 (自 2018年４月１日            (自 2019年４月１日\n                  至 2019年３月31日)           至 2020年３月31日)\n当期純利益                        18,856                  18,908\nその他の包括利益\n その他有価証券評価差額金                    1,009                △12,674\n 為替換算調整勘定                         △77                     247\n 退職給付に係る調整額                      △459                   △774\n その他の包括利益合計                ※1,※2   472        ※1,※2   △13,201\n包括利益                           19,328                   5,706\n（内訳）\n 親会社株主に係る包括利益                  19,280                   5,380\n 非支配株主に係る包括利益                      48                     325\n\n\n\n\n                  57/123\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 1.0,
+    "profitMinusParentMinusNonControlling": 1.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2020,
+    "sourceDocumentId": "S100LR42",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100LR42.pdf",
+    "sourceSha256": "ef187ce2aa6e85d1f94230d0874cef53f7df05eeb37285f4852589c17cf9cfd6",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": -724.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "724",
+          "normalized": -724000000.0,
+          "htmlSHA": "b0321757bc45fdd8114751ffa4ea53c7a669cf102edd16239090f069bb8a7e55"
+        },
+        "pdfCell": {
+          "pdfPage": 64,
+          "bbox": [
+            481.45001,
+            743.838351,
+            503.95001,
+            752.829351
+          ],
+          "raw": "△724",
+          "row": "非支配株主に帰属する当期純利益又は186△724非支配株主に帰属する当期純損失(△)",
+          "quote": "                                                                             EDINET提出書類\n                                                                         西松建設株式会社(E00060)\n                                                                              有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                             (単位：百万円)\n                            前連結会計年度                     当連結会計年度\n                          (自 2019年４月１日                (自 2020年４月１日\n                           至 2020年３月31日)               至 2021年３月31日)\n売上高\n 完成工事高                                    379,962                   321,338\n 不動産事業等売上高                                 11,658                    14,902\n 売上高合計                                    391,621                   336,241\n売上原価\n 完成工事原価                             ※1    339,325            ※1     286,541\n 不動産事業等売上原価                                 8,357                     9,938\n 売上原価合計                                   347,683                   296,479\n売上総利益\n 完成工事総利益                                   40,636                    34,797\n 不動産事業等総利益                                  3,301                     4,964\n 売上総利益合計                                   43,938                    39,761\n販売費及び一般管理費                           ※2    18,624             ※2     18,810\n営業利益                                       25,313                    20,950\n営業外収益\n 受取利息                                         109                        62\n 受取配当金                                      1,051                       932\n 貸倒引当金戻入額                                       4                         5\n 匿名組合投資利益                                      81                        54\n その他                                          370                       461\n 営業外収益合計                                    1,617                     1,516\n営業外費用\n 支払利息                                         473                       443\n 為替差損                                         328                        91\n 資金調達費用                                       106                       168\n その他                                          183                       201\n 営業外費用合計                                    1,092                       905\n経常利益                                       25,838                    21,561\n特別利益\n 固定資産売却益                                  ※4   82                   ※4   11\n 投資有価証券売却益                                    912                    15,242\n 受取補償金                                        188                        −\n 環境対策引当金戻入額                                    −                         66\n 特別利益合計                                     1,184                    15,320\n特別損失\n 固定資産売却損                                  ※5   56              ※5     1,948\n 固定資産除却損                                   ※6   5                   ※6   54\n 減損損失                                          −                   ※7   280\n 投資有価証券売却損                                     −                        443\n 投資有価証券評価損                                  1,235                        53\n 本社移転費用                                       219                       112\n 感染症関連費用                                       −                        684\n 完成工事補償引当金繰入額                                  −                      9,049\n その他                                           69                       256\n 特別損失合計                                     1,587                   12,883\n税金等調整前当期純利益                                25,435                   23,998\n法人税、住民税及び事業税                                5,803                   10,031\n法人税等調整額                                       723                  △2,475\n法人税等合計                                      6,526                     7,556\n当期純利益                                      18,908                   16,442\n非支配株主に帰属する当期純利益又は\n                                                186                   △724\n非支配株主に帰属する当期純損失（△）\n親会社株主に帰属する当期純利益                            18,721                    17,166\n\n\n\n\n                           64/137\n",
+          "multilineLabel": true
+        }
+      },
+      "comprehensiveParent": {
+        "value": 14922.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "14,922",
+          "normalized": 14922000000.0,
+          "htmlSHA": "41dff35a24cf8a8b81e93595095057c4a926d4230c0735f76e3ef3dd6f3ea962"
+        },
+        "pdfCell": {
+          "pdfPage": 65,
+          "bbox": [
+            476.95001,
+            207.907751,
+            503.95001,
+            216.898751
+          ],
+          "raw": "14,922",
+          "row": "親会社株主に係る包括利益5,38014,922",
+          "quote": "                                                                 EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n   【連結包括利益計算書】\n                                                    (単位：百万円)\n                   前連結会計年度                     当連結会計年度\n                 (自 2019年４月１日                (自 2020年４月１日\n                  至 2020年３月31日)               至 2021年３月31日)\n当期純利益                        18,908                      16,442\nその他の包括利益\n その他有価証券評価差額金                      △12,674                 △2,509\n 為替換算調整勘定                              247                  △499\n 退職給付に係る調整額                          △774                     633\n その他の包括利益合計                ※1,※2   △13,201         ※1,※2   △2,375\n包括利益                                 5,706                 14,066\n（内訳）\n 親会社株主に係る包括利益                        5,380                 14,922\n 非支配株主に係る包括利益                          325                  △855\n\n\n\n\n                  65/137\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": -855.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "855",
+          "normalized": -855000000.0,
+          "htmlSHA": "41dff35a24cf8a8b81e93595095057c4a926d4230c0735f76e3ef3dd6f3ea962"
+        },
+        "pdfCell": {
+          "pdfPage": 65,
+          "bbox": [
+            481.45001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "△855",
+          "row": "非支配株主に係る包括利益325△855",
+          "quote": "                                                                 EDINET提出書類\n                                                             西松建設株式会社(E00060)\n                                                                  有価証券報告書\n   【連結包括利益計算書】\n                                                    (単位：百万円)\n                   前連結会計年度                     当連結会計年度\n                 (自 2019年４月１日                (自 2020年４月１日\n                  至 2020年３月31日)               至 2021年３月31日)\n当期純利益                        18,908                      16,442\nその他の包括利益\n その他有価証券評価差額金                      △12,674                 △2,509\n 為替換算調整勘定                              247                  △499\n 退職給付に係る調整額                          △774                     633\n その他の包括利益合計                ※1,※2   △13,201         ※1,※2   △2,375\n包括利益                                 5,706                 14,066\n（内訳）\n 親会社株主に係る包括利益                        5,380                 14,922\n 非支配株主に係る包括利益                          325                  △855\n\n\n\n\n                  65/137\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": -1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2021,
+    "sourceDocumentId": "S100OG1J",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100OG1J.pdf",
+    "sourceSha256": "87b3f2962def718846265bd7c46d4a90fa9c3ae24c812ba1d94867a66974b34b",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": -9.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "9",
+          "normalized": -9000000.0,
+          "htmlSHA": "4514b2da787e86bcb942525a8e57605a50a443d6aa8e6f201bf4491b13e438d5"
+        },
+        "pdfCell": {
+          "pdfPage": 63,
+          "bbox": [
+            490.45001,
+            742.061491,
+            503.95001,
+            751.052491
+          ],
+          "raw": "△9",
+          "row": "非支配株主に帰属する当期純損失(△)△724△9",
+          "quote": "                                                                            EDINET提出書類\n                                                                        西松建設株式会社(E00060)\n                                                                             有価証券報告書\n ② 【連結損益計算書及び連結包括利益計算書】\n   【連結損益計算書】\n                                                            (単位：百万円)\n                            前連結会計年度                    当連結会計年度\n                          (自 2020年４月１日               (自 2021年４月１日\n                           至 2021年３月31日)              至 2022年３月31日)\n売上高\n 完成工事高                                     321,338                 304,193\n 不動産事業等売上高                                  14,902                  19,560\n 売上高合計                                     336,241          ※1     323,754\n売上原価\n 完成工事原価                             ※2     286,541          ※2     267,729\n 不動産事業等売上原価                                  9,938                  12,251\n 売上原価合計                                    296,479                 279,981\n売上総利益\n 完成工事総利益                                    34,797                  36,463\n 不動産事業等総利益                                   4,964                   7,308\n 売上総利益合計                                    39,761                  43,772\n販売費及び一般管理費                           ※3     18,810           ※3     20,232\n営業利益                                        20,950                  23,540\n営業外収益\n 受取利息                                           62                      34\n 受取配当金                                         932                     658\n 為替差益                                           −                      424\n 貸倒引当金戻入額                                        5                     149\n 匿名組合投資利益                                       54                     134\n 受取遅延損害金                                        −                      498\n その他                                           461                     476\n 営業外収益合計                                     1,516                   2,374\n営業外費用\n 支払利息                                          443                     578\n 為替差損                                           91                      −\n 資金調達費用                                        168                     789\n アドバイザリー等費用                                     −                      631\n その他                                           201                     417\n 営業外費用合計                                       905                   2,417\n経常利益                                        21,561                  23,497\n特別利益\n 固定資産売却益                                   ※5   11            ※5     1,272\n 投資有価証券売却益                                  15,242                   2,107\n その他                                            66                      20\n 特別利益合計                                     15,320                   3,400\n特別損失\n 固定資産売却損                              ※6     1,948                 ※6   72\n 固定資産除却損                                   ※7   54                 ※7   24\n 減損損失                                     ※8   280                ※8   952\n 投資有価証券売却損                                     443                      −\n 本社移転費用                                        112                      −\n 感染症関連費用                                       684                      10\n 完成工事補償引当金繰入額                                9,049                   2,998\n その他                                           310                     143\n 特別損失合計                                    12,883                    4,201\n税金等調整前当期純利益                                23,998                  22,696\n法人税、住民税及び事業税                               10,031                    8,268\n法人税等調整額                                   △2,475                     △666\n法人税等合計                                       7,556                   7,602\n当期純利益                                      16,442                  15,093\n非支配株主に帰属する当期純損失（△）                           △724                      △9\n親会社株主に帰属する当期純利益                            17,166                  15,103\n\n\n\n\n                           63/140\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 11148.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "11,148",
+          "normalized": 11148000000.0,
+          "htmlSHA": "a80adcc35d6afb1370b5105280bf3ee0a7469e1920dda4828b3fdadc1eaca5d6"
+        },
+        "pdfCell": {
+          "pdfPage": 64,
+          "bbox": [
+            476.95001,
+            207.907751,
+            503.95001,
+            216.898751
+          ],
+          "raw": "11,148",
+          "row": "親会社株主に係る包括利益14,92211,148",
+          "quote": "                                                                EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2020年４月１日               (自 2021年４月１日\n                  至 2021年３月31日)              至 2022年３月31日)\n当期純利益                        16,442                     15,093\nその他の包括利益\n その他有価証券評価差額金                      △2,509                 △4,237\n 為替換算調整勘定                           △499                     638\n 退職給付に係る調整額                           633                  △340\n その他の包括利益合計                ※1,※2   △2,375         ※1,※2   △3,939\n包括利益                               14,066                 11,154\n（内訳）\n 親会社株主に係る包括利益                      14,922                 11,148\n 非支配株主に係る包括利益                       △855                       5\n\n\n\n\n                  64/140\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 5.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "5",
+          "normalized": 5000000.0,
+          "htmlSHA": "a80adcc35d6afb1370b5105280bf3ee0a7469e1920dda4828b3fdadc1eaca5d6"
+        },
+        "pdfCell": {
+          "pdfPage": 64,
+          "bbox": [
+            499.45001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "5",
+          "row": "非支配株主に係る包括利益△8555",
+          "quote": "                                                                EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2020年４月１日               (自 2021年４月１日\n                  至 2021年３月31日)              至 2022年３月31日)\n当期純利益                        16,442                     15,093\nその他の包括利益\n その他有価証券評価差額金                      △2,509                 △4,237\n 為替換算調整勘定                           △499                     638\n 退職給付に係る調整額                           633                  △340\n その他の包括利益合計                ※1,※2   △2,375         ※1,※2   △3,939\n包括利益                               14,066                 11,154\n（内訳）\n 親会社株主に係る包括利益                      14,922                 11,148\n 非支配株主に係る包括利益                       △855                       5\n\n\n\n\n                  64/140\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 1.0,
+    "profitMinusParentMinusNonControlling": -1.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2022,
+    "sourceDocumentId": "S100R536",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100R536.pdf",
+    "sourceSha256": "89a246657958e49e2bc1df2900d2fecabf57b41bd1c55cb6d7da2571755412f7",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 105.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "105",
+          "normalized": 105000000.0,
+          "htmlSHA": "99cc737d441c7eb6e115d3ecd4285aeabd79db6ac1742fca441370811267bf79"
+        },
+        "pdfCell": {
+          "pdfPage": 81,
+          "bbox": [
+            490.45001,
+            150.634621,
+            503.95001,
+            159.625621
+          ],
+          "raw": "105",
+          "row": "非支配株主に帰属する当期純利益又は△9105非支配株主に帰属する当期純損失(△)",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n                                                  (単位：百万円)\n                       前連結会計年度               当連結会計年度\n                     (自 2021年４月１日          (自 2022年４月１日\n                      至 2022年３月31日)         至 2023年３月31日)\n税金等調整前当期純利益                      22,696                13,595\n法人税、住民税及び事業税                      8,268                 4,185\n法人税等調整額                           △666                  △343\n法人税等合計                            7,602                 3,841\n当期純利益                            15,093                 9,754\n非支配株主に帰属する当期純利益又は\n                                     △9                   105\n非支配株主に帰属する当期純損失（△）\n親会社株主に帰属する当期純利益                   15,103                9,648\n\n\n\n\n                      81/156\n",
+          "multilineLabel": true
+        }
+      },
+      "comprehensiveParent": {
+        "value": 8326.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "8,326",
+          "normalized": 8326000000.0,
+          "htmlSHA": "7d370479760c3782e43338a38b0f0058ca95ed0ba9d892fabf8b7d927351fed0"
+        },
+        "pdfCell": {
+          "pdfPage": 82,
+          "bbox": [
+            481.45001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "8,326",
+          "row": "親会社株主に係る包括利益11,1488,326",
+          "quote": "                                                              EDINET提出書類\n                                                          西松建設株式会社(E00060)\n                                                               有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2021年４月１日               (自 2022年４月１日\n                  至 2022年３月31日)              至 2023年３月31日)\n当期純利益                        15,093                     9,754\nその他の包括利益\n その他有価証券評価差額金                      △4,237                △1,922\n 繰延ヘッジ損益                                -                    18\n 為替換算調整勘定                             638                 2,062\n 退職給付に係る調整額                         △340                  △719\n その他の包括利益合計                ※1,※2   △3,939          ※1,※2  △560\n包括利益                               11,154                 9,193\n（内訳）\n 親会社株主に係る包括利益                      11,148                 8,326\n 非支配株主に係る包括利益                           5                   867\n\n\n\n\n                  82/156\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 867.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "867",
+          "normalized": 867000000.0,
+          "htmlSHA": "7d370479760c3782e43338a38b0f0058ca95ed0ba9d892fabf8b7d927351fed0"
+        },
+        "pdfCell": {
+          "pdfPage": 82,
+          "bbox": [
+            490.45001,
+            234.907751,
+            503.95001,
+            243.898751
+          ],
+          "raw": "867",
+          "row": "非支配株主に係る包括利益5867",
+          "quote": "                                                              EDINET提出書類\n                                                          西松建設株式会社(E00060)\n                                                               有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                   前連結会計年度                    当連結会計年度\n                 (自 2021年４月１日               (自 2022年４月１日\n                  至 2022年３月31日)              至 2023年３月31日)\n当期純利益                        15,093                     9,754\nその他の包括利益\n その他有価証券評価差額金                      △4,237                △1,922\n 繰延ヘッジ損益                                -                    18\n 為替換算調整勘定                             638                 2,062\n 退職給付に係る調整額                         △340                  △719\n その他の包括利益合計                ※1,※2   △3,939          ※1,※2  △560\n包括利益                               11,154                 9,193\n（内訳）\n 親会社株主に係る包括利益                      11,148                 8,326\n 非支配株主に係る包括利益                           5                   867\n\n\n\n\n                  82/156\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 1.0,
+    "comprehensiveMinusParentMinusNonControlling": 0.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2023,
+    "sourceDocumentId": "S100TRPW",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100TRPW.pdf",
+    "sourceSha256": "ab883a91492f4b15a0cac4c836b991c4ee62c3ae6a7e2a246b1a599e4134fa44",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 184.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "184",
+          "normalized": 184000000.0,
+          "htmlSHA": "0040f42bdb1aeb32676ee9046e73d41e7a094ee4136d61243a4955d9ad5f8be4"
+        },
+        "pdfCell": {
+          "pdfPage": 83,
+          "bbox": [
+            490.45001,
+            146.557751,
+            503.95001,
+            155.548751
+          ],
+          "raw": "184",
+          "row": "非支配株主に帰属する当期純利益105184",
+          "quote": "                                                         EDINET提出書類\n                                                     西松建設株式会社(E00060)\n                                                          有価証券報告書\n                                              (単位：百万円)\n                    前連結会計年度              当連結会計年度\n                  (自 2022年４月１日         (自 2023年４月１日\n                   至 2023年３月31日)        至 2024年３月31日)\n税金等調整前当期純利益                   13,595               18,920\n法人税、住民税及び事業税                   4,185                3,997\n法人税等調整額                        △343                 2,350\n法人税等合計                         3,841                6,347\n当期純利益                          9,754               12,573\n非支配株主に帰属する当期純利益                  105                  184\n親会社株主に帰属する当期純利益                9,648               12,388\n\n\n\n\n                   83/157\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 26340.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "26,340",
+          "normalized": 26340000000.0,
+          "htmlSHA": "51fad2089f16a5ffcd19d63078c3aa56414a2fe954be3a5b0d0e00709c45bd9a"
+        },
+        "pdfCell": {
+          "pdfPage": 84,
+          "bbox": [
+            476.95001,
+            221.407751,
+            503.95001,
+            230.398751
+          ],
+          "raw": "26,340",
+          "row": "親会社株主に係る包括利益8,32626,340",
+          "quote": "                                                              EDINET提出書類\n                                                          西松建設株式会社(E00060)\n                                                               有価証券報告書\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                  当連結会計年度\n                 (自 2022年４月１日             (自 2023年４月１日\n                  至 2023年３月31日)            至 2024年３月31日)\n当期純利益                        9,754                    12,573\nその他の包括利益\n その他有価証券評価差額金                    △1,922                  12,438\n 繰延ヘッジ損益                             18                      20\n 為替換算調整勘定                         2,062                     958\n 退職給付に係る調整額                       △719                    1,086\n その他の包括利益合計                ※1,※2  △560           ※1,※2   14,504\n包括利益                              9,193                  27,077\n（内訳）\n 親会社株主に係る包括利益                     8,326                  26,340\n 非支配株主に係る包括利益                       867                     736\n\n\n\n\n                  84/157\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 736.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "736",
+          "normalized": 736000000.0,
+          "htmlSHA": "51fad2089f16a5ffcd19d63078c3aa56414a2fe954be3a5b0d0e00709c45bd9a"
+        },
+        "pdfCell": {
+          "pdfPage": 84,
+          "bbox": [
+            490.45001,
+            234.907751,
+            503.95001,
+            243.898751
+          ],
+          "raw": "736",
+          "row": "非支配株主に係る包括利益867736",
+          "quote": "                                                              EDINET提出書類\n                                                          西松建設株式会社(E00060)\n                                                               有価証券報告書\n   【連結包括利益計算書】\n                                                 (単位：百万円)\n                   前連結会計年度                  当連結会計年度\n                 (自 2022年４月１日             (自 2023年４月１日\n                  至 2023年３月31日)            至 2024年３月31日)\n当期純利益                        9,754                    12,573\nその他の包括利益\n その他有価証券評価差額金                    △1,922                  12,438\n 繰延ヘッジ損益                             18                      20\n 為替換算調整勘定                         2,062                     958\n 退職給付に係る調整額                       △719                    1,086\n その他の包括利益合計                ※1,※2  △560           ※1,※2   14,504\n包括利益                              9,193                  27,077\n（内訳）\n 親会社株主に係る包括利益                     8,326                  26,340\n 非支配株主に係る包括利益                       867                     736\n\n\n\n\n                  84/157\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 1.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2024,
+    "sourceDocumentId": "S100W4Y9",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W4Y9.pdf",
+    "sourceSha256": "89083364a5bc4ee7fa26f39506d9da6f3f81efda2f64f539f36f5db2fd8bf88c",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": 36.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "36",
+          "normalized": 36000000.0,
+          "htmlSHA": "d05627426ca50447ffa767547ef167ef0936c51901130472ee7e7a5bc84f8773"
+        },
+        "pdfCell": {
+          "pdfPage": 98,
+          "bbox": [
+            494.95001,
+            146.557751,
+            503.95001,
+            155.548751
+          ],
+          "raw": "36",
+          "row": "非支配株主に帰属する当期純利益18436",
+          "quote": "                                                         EDINET提出書類\n                                                     西松建設株式会社(E00060)\n                                                          有価証券報告書\n                                              (単位：百万円)\n                    前連結会計年度              当連結会計年度\n                  (自 2023年４月１日         (自 2024年４月１日\n                   至 2024年３月31日)        至 2025年３月31日)\n税金等調整前当期純利益                   18,920               24,540\n法人税、住民税及び事業税                   3,997                5,399\n法人税等調整額                        2,350                1,561\n法人税等合計                         6,347                6,961\n当期純利益                         12,573               17,579\n非支配株主に帰属する当期純利益                  184                   36\n親会社株主に帰属する当期純利益               12,388               17,543\n\n\n\n\n                   98/171\n"
+        }
+      },
+      "comprehensiveParent": {
+        "value": 12849.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "12,849",
+          "normalized": 12849000000.0,
+          "htmlSHA": "0b925f13472103041a636091dcca89bb32c59d81b07c4e314b0109ad4b4ca321"
+        },
+        "pdfCell": {
+          "pdfPage": 99,
+          "bbox": [
+            476.95001,
+            234.907751,
+            503.95001,
+            243.898751
+          ],
+          "raw": "12,849",
+          "row": "親会社株主に係る包括利益26,34012,849",
+          "quote": "                                                               EDINET提出書類\n                                                           西松建設株式会社(E00060)\n                                                                有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                      前連結会計年度                 当連結会計年度\n                    (自 2023年４月１日            (自 2024年４月１日\n                     至 2024年３月31日)           至 2025年３月31日)\n当期純利益                           12,573                  17,579\nその他の包括利益\n その他有価証券評価差額金                      12,438                △6,078\n 繰延ヘッジ損益                               20                  △28\n 為替換算調整勘定                             958                 2,881\n 退職給付に係る調整額                         1,086                 △327\n 持分法適用会社に対する持分相当額                       -                 △196\n その他の包括利益合計                   ※1   14,504           ※1   △3,750\n包括利益                               27,077                13,829\n（内訳）\n 親会社株主に係る包括利益                      26,340                12,849\n 非支配株主に係る包括利益                         736                   979\n\n\n\n\n                     99/171\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 979.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "979",
+          "normalized": 979000000.0,
+          "htmlSHA": "0b925f13472103041a636091dcca89bb32c59d81b07c4e314b0109ad4b4ca321"
+        },
+        "pdfCell": {
+          "pdfPage": 99,
+          "bbox": [
+            490.45001,
+            248.407751,
+            503.95001,
+            257.398751
+          ],
+          "raw": "979",
+          "row": "非支配株主に係る包括利益736979",
+          "quote": "                                                               EDINET提出書類\n                                                           西松建設株式会社(E00060)\n                                                                有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                      前連結会計年度                 当連結会計年度\n                    (自 2023年４月１日            (自 2024年４月１日\n                     至 2024年３月31日)           至 2025年３月31日)\n当期純利益                           12,573                  17,579\nその他の包括利益\n その他有価証券評価差額金                      12,438                △6,078\n 繰延ヘッジ損益                               20                  △28\n 為替換算調整勘定                             958                 2,881\n 退職給付に係る調整額                         1,086                 △327\n 持分法適用会社に対する持分相当額                       -                 △196\n その他の包括利益合計                   ※1   14,504           ※1   △3,750\n包括利益                               27,077                13,829\n（内訳）\n 親会社株主に係る包括利益                      26,340                12,849\n 非支配株主に係る包括利益                         736                   979\n\n\n\n\n                     99/171\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 0.0,
+    "profitMinusParentMinusNonControlling": 0.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  },
+  {
+    "fiscalYear": 2025,
+    "sourceDocumentId": "S100YEDU",
+    "sourceURL": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YEDU.pdf",
+    "sourceSha256": "d6962d2e687210839360197411a769c531ca72cc720b4416fdcb4d76d8d5c821",
+    "supportDirectPDFVerified": {
+      "profitNonControlling": {
+        "value": -213.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ProfitLossAttributableToNonControllingInterests",
+          "sign": "-",
+          "unitref": "JPY",
+          "raw": "213",
+          "normalized": -213000000.0,
+          "htmlSHA": "75adc4ccba085042b9823a26766c65a53dd2016712e10513ae68a8959f0d4ae9"
+        },
+        "pdfCell": {
+          "pdfPage": 100,
+          "bbox": [
+            481.45001,
+            150.634621,
+            503.95001,
+            159.625621
+          ],
+          "raw": "△213",
+          "row": "非支配株主に帰属する当期純利益又は36△213非支配株主に帰属する当期純損失(△)",
+          "quote": "                                                             EDINET提出書類\n                                                         西松建設株式会社(E00060)\n                                                              有価証券報告書\n                                                  (単位：百万円)\n                       前連結会計年度               当連結会計年度\n                     (自 2024年４月１日          (自 2025年４月１日\n                      至 2025年３月31日)         至 2026年３月31日)\n税金等調整前当期純利益                      24,540                33,986\n法人税、住民税及び事業税                      5,399                10,193\n法人税等調整額                           1,561                  △59\n法人税等合計                            6,961                10,133\n当期純利益                            17,579                23,852\n非支配株主に帰属する当期純利益又は\n                                      36                 △213\n非支配株主に帰属する当期純損失（△）\n親会社株主に帰属する当期純利益                   17,543                24,066\n\n\n\n\n                     100/169\n",
+          "multilineLabel": true
+        }
+      },
+      "comprehensiveParent": {
+        "value": 31607.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToOwnersOfTheParent",
+          "unitref": "JPY",
+          "raw": "31,607",
+          "normalized": 31607000000.0,
+          "htmlSHA": "59ab85599992ce895565db1ff8b68668ea0a340ab04682cfca12638936f43e33"
+        },
+        "pdfCell": {
+          "pdfPage": 101,
+          "bbox": [
+            476.95001,
+            234.907751,
+            503.95001,
+            243.898751
+          ],
+          "raw": "31,607",
+          "row": "親会社株主に係る包括利益12,84931,607",
+          "quote": "                                                                EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                      前連結会計年度                 当連結会計年度\n                    (自 2024年４月１日            (自 2025年４月１日\n                     至 2025年３月31日)           至 2026年３月31日)\n当期純利益                           17,579                  23,852\nその他の包括利益\n その他有価証券評価差額金                      △6,078                   3,458\n 繰延ヘッジ損益                             △28                     △10\n 為替換算調整勘定                           2,881                   2,514\n 退職給付に係る調整額                         △327                    1,976\n 持分法適用会社に対する持分相当額                   △196                      352\n その他の包括利益合計                   ※1   △3,750             ※1    8,292\n包括利益                               13,829                  32,145\n（内訳）\n 親会社株主に係る包括利益                      12,849                  31,607\n 非支配株主に係る包括利益                         979                     537\n\n\n\n\n                    101/169\n"
+        }
+      },
+      "comprehensiveNonControlling": {
+        "value": 537.0,
+        "nativeFact": {
+          "contextref": "CurrentYearDuration",
+          "decimals": "-6",
+          "scale": "6",
+          "format": "ixt:numdotdecimal",
+          "name": "jppfs_cor:ComprehensiveIncomeAttributableToNonControllingInterests",
+          "unitref": "JPY",
+          "raw": "537",
+          "normalized": 537000000.0,
+          "htmlSHA": "59ab85599992ce895565db1ff8b68668ea0a340ab04682cfca12638936f43e33"
+        },
+        "pdfCell": {
+          "pdfPage": 101,
+          "bbox": [
+            490.45001,
+            248.407751,
+            503.95001,
+            257.398751
+          ],
+          "raw": "537",
+          "row": "非支配株主に係る包括利益979537",
+          "quote": "                                                                EDINET提出書類\n                                                            西松建設株式会社(E00060)\n                                                                 有価証券報告書\n   【連結包括利益計算書】\n                                                   (単位：百万円)\n                      前連結会計年度                 当連結会計年度\n                    (自 2024年４月１日            (自 2025年４月１日\n                     至 2025年３月31日)           至 2026年３月31日)\n当期純利益                           17,579                  23,852\nその他の包括利益\n その他有価証券評価差額金                      △6,078                   3,458\n 繰延ヘッジ損益                             △28                     △10\n 為替換算調整勘定                           2,881                   2,514\n 退職給付に係る調整額                         △327                    1,976\n 持分法適用会社に対する持分相当額                   △196                      352\n その他の包括利益合計                   ※1   △3,750             ※1    8,292\n包括利益                               13,829                  32,145\n（内訳）\n 親会社株主に係る包括利益                      12,849                  31,607\n 非支配株主に係る包括利益                         979                     537\n\n\n\n\n                    101/169\n"
+        }
+      }
+    },
+    "beforeTaxMinusTaxMinusProfit": 1.0,
+    "profitMinusParentMinusNonControlling": -1.0,
+    "comprehensiveMinusParentMinusNonControlling": 1.0,
+    "allValuesDirectNotGenerated": true,
+    "displayedResidualNotCorrected": true,
+    "notProvenRoundingCause": true
+  }
+]

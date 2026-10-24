@@ -1,0 +1,2280 @@
+[
+  {
+    "seriesId": "PENTA:segment_depreciation_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_domestic_building_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      242.875,
+      219.010201,
+      256.375,
+      228.001201
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 30,
+    "savedRawToken": "583",
+    "newRawToken": "583",
+    "newValueBBox": [
+      262.23,
+      232.349,
+      275.73,
+      241.34
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_domestic_building_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      239.175,
+      316.927721,
+      252.675,
+      325.918721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 57,
+    "savedRawToken": "579",
+    "newRawToken": "579",
+    "newValueBBox": [
+      258.53,
+      332.299,
+      272.03,
+      341.29
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_domestic_civil_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      190.375,
+      219.010201,
+      212.875,
+      228.001201
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 29,
+    "savedRawToken": "3,757",
+    "newRawToken": "3,757",
+    "newValueBBox": [
+      209.73,
+      232.349,
+      232.23,
+      241.34
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_domestic_civil_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      187.175,
+      316.927721,
+      209.675,
+      325.918721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 56,
+    "savedRawToken": "3,379",
+    "newRawToken": "3,379",
+    "newValueBBox": [
+      206.53,
+      332.299,
+      229.03,
+      341.29
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_other_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      371.175,
+      219.010201,
+      384.675,
+      228.001201
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 33,
+    "savedRawToken": "442",
+    "newRawToken": "442",
+    "newValueBBox": [
+      390.53,
+      232.349,
+      404.03,
+      241.34
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_other_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      367.17501,
+      316.927721,
+      380.67501,
+      325.918721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 60,
+    "savedRawToken": "452",
+    "newRawToken": "452",
+    "newValueBBox": [
+      386.53,
+      332.299,
+      400.03,
+      341.29
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_overseas_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      277.375,
+      219.010201,
+      299.875,
+      228.001201
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 31,
+    "savedRawToken": "4,304",
+    "newRawToken": "4,304",
+    "newValueBBox": [
+      296.73,
+      232.349,
+      319.23,
+      241.34
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_depreciation_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_depreciation_overseas_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      273.175,
+      316.927721,
+      295.675,
+      325.918721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 58,
+    "savedRawToken": "2,078",
+    "newRawToken": "2,078",
+    "newValueBBox": [
+      292.53,
+      332.299,
+      315.03,
+      341.29
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_domestic_building_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      224.875,
+      123.643961,
+      256.375,
+      132.634961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 1,
+    "savedRawToken": "197,013",
+    "newRawToken": "197,013",
+    "newValueBBox": [
+      244.23,
+      138.749,
+      275.73,
+      147.74
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_domestic_building_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      221.175,
+      224.802721,
+      252.675,
+      233.793721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 28,
+    "savedRawToken": "153,443",
+    "newRawToken": "153,443",
+    "newValueBBox": [
+      240.53,
+      240.549,
+      272.03,
+      249.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_domestic_civil_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      181.375,
+      123.643961,
+      212.875,
+      132.634961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 0,
+    "savedRawToken": "210,740",
+    "newRawToken": "210,740",
+    "newValueBBox": [
+      200.73,
+      138.749,
+      232.23,
+      147.74
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_domestic_civil_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      178.175,
+      224.802721,
+      209.675,
+      233.793721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 27,
+    "savedRawToken": "176,940",
+    "newRawToken": "176,940",
+    "newValueBBox": [
+      197.53,
+      240.549,
+      229.03,
+      249.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_other_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      362.175,
+      123.643961,
+      384.675,
+      132.634961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 4,
+    "savedRawToken": "8,464",
+    "newRawToken": "8,464",
+    "newValueBBox": [
+      381.53,
+      138.749,
+      404.03,
+      147.74
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_other_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      358.17501,
+      224.802721,
+      380.67501,
+      233.793721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 31,
+    "savedRawToken": "7,586",
+    "newRawToken": "7,586",
+    "newValueBBox": [
+      377.53,
+      240.549,
+      400.03,
+      249.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_overseas_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      268.375,
+      123.643961,
+      299.875,
+      132.634961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 2,
+    "savedRawToken": "157,624",
+    "newRawToken": "157,624",
+    "newValueBBox": [
+      287.73,
+      138.749,
+      319.23,
+      147.74
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_external_sales_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_external_sales_overseas_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      264.175,
+      224.802721,
+      295.675,
+      233.793721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 29,
+    "savedRawToken": "120,261",
+    "newRawToken": "120,261",
+    "newValueBBox": [
+      283.53,
+      240.549,
+      315.03,
+      249.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_domestic_building_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      251.875,
+      144.043961,
+      256.375,
+      153.034961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 8,
+    "savedRawToken": "0",
+    "newRawToken": "0",
+    "newValueBBox": [
+      271.23,
+      159.149,
+      275.73,
+      168.14
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_domestic_building_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      248.175,
+      244.765221,
+      252.675,
+      253.756221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 35,
+    "savedRawToken": "1",
+    "newRawToken": "1",
+    "newValueBBox": [
+      267.53,
+      260.699,
+      272.03,
+      269.69
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_domestic_civil_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      199.375,
+      144.043961,
+      212.875,
+      153.034961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 7,
+    "savedRawToken": "249",
+    "newRawToken": "249",
+    "newValueBBox": [
+      218.73,
+      159.149,
+      232.23,
+      168.14
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_domestic_civil_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      196.175,
+      244.765221,
+      209.675,
+      253.756221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 34,
+    "savedRawToken": "241",
+    "newRawToken": "241",
+    "newValueBBox": [
+      215.53,
+      260.699,
+      229.03,
+      269.69
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_other_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      362.175,
+      144.043961,
+      384.675,
+      153.034961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 10,
+    "savedRawToken": "2,176",
+    "newRawToken": "2,176",
+    "newValueBBox": [
+      381.53,
+      159.149,
+      404.03,
+      168.14
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_internal_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_internal_sales_other_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      358.17501,
+      244.765221,
+      380.67501,
+      253.756221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 37,
+    "savedRawToken": "3,115",
+    "newRawToken": "3,115",
+    "newValueBBox": [
+      377.53,
+      260.699,
+      400.03,
+      269.69
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_domestic_building_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      233.875,
+      185.820831,
+      256.375,
+      194.811831
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 22,
+    "savedRawToken": "6,321",
+    "newRawToken": "6,321",
+    "newValueBBox": [
+      253.23,
+      199.949,
+      275.73,
+      208.94
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_domestic_building_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      230.175,
+      284.090221,
+      252.675,
+      293.081221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 49,
+    "savedRawToken": "3,648",
+    "newRawToken": "3,648",
+    "newValueBBox": [
+      249.53,
+      299.649,
+      272.03,
+      308.64
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_domestic_civil_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      185.875,
+      185.820831,
+      212.875,
+      194.811831
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 21,
+    "savedRawToken": "20,682",
+    "newRawToken": "20,682",
+    "newValueBBox": [
+      205.23,
+      199.949,
+      232.23,
+      208.94
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_domestic_civil_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      182.675,
+      284.090221,
+      209.675,
+      293.081221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 48,
+    "savedRawToken": "17,463",
+    "newRawToken": "17,463",
+    "newValueBBox": [
+      202.03,
+      299.649,
+      229.03,
+      308.64
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_other_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      362.175,
+      185.820831,
+      384.675,
+      194.811831
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 25,
+    "savedRawToken": "△157",
+    "newRawToken": "△157",
+    "newValueBBox": [
+      381.53,
+      199.949,
+      404.03,
+      208.94
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_other_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      367.17501,
+      284.090221,
+      380.67501,
+      293.081221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 52,
+    "savedRawToken": "801",
+    "newRawToken": "801",
+    "newValueBBox": [
+      386.53,
+      299.649,
+      400.03,
+      308.64
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_overseas_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      277.375,
+      185.820831,
+      299.875,
+      194.811831
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 23,
+    "savedRawToken": "6,312",
+    "newRawToken": "6,312",
+    "newValueBBox": [
+      296.73,
+      199.949,
+      319.23,
+      208.94
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_operating_profit_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_operating_profit_overseas_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      264.175,
+      284.090221,
+      295.675,
+      293.081221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 50,
+    "savedRawToken": "△5,976",
+    "newRawToken": "△5,976",
+    "newValueBBox": [
+      283.53,
+      299.649,
+      315.03,
+      308.64
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_domestic_building_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      224.875,
+      164.818961,
+      256.375,
+      173.809961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 14,
+    "savedRawToken": "197,014",
+    "newRawToken": "197,014",
+    "newValueBBox": [
+      244.23,
+      179.549,
+      275.73,
+      188.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_domestic_building_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_domestic_building_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      221.175,
+      265.290221,
+      252.675,
+      274.281221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 41,
+    "savedRawToken": "153,444",
+    "newRawToken": "153,444",
+    "newValueBBox": [
+      240.53,
+      280.849,
+      272.03,
+      289.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_domestic_civil_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      181.375,
+      164.818961,
+      212.875,
+      173.809961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 13,
+    "savedRawToken": "210,989",
+    "newRawToken": "210,989",
+    "newValueBBox": [
+      200.73,
+      179.549,
+      232.23,
+      188.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_domestic_civil_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_domestic_civil_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      178.175,
+      265.290221,
+      209.675,
+      274.281221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 40,
+    "savedRawToken": "177,182",
+    "newRawToken": "177,182",
+    "newValueBBox": [
+      197.53,
+      280.849,
+      229.03,
+      289.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_other_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      357.675,
+      164.818961,
+      384.675,
+      173.809961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 17,
+    "savedRawToken": "10,641",
+    "newRawToken": "10,641",
+    "newValueBBox": [
+      377.03,
+      179.549,
+      404.03,
+      188.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_other_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_other_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      353.67501,
+      265.290221,
+      380.67501,
+      274.281221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 44,
+    "savedRawToken": "10,702",
+    "newRawToken": "10,702",
+    "newValueBBox": [
+      373.03,
+      280.849,
+      400.03,
+      289.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_overseas_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 85,
+    "savedValueBBox": [
+      268.375,
+      164.818961,
+      299.875,
+      173.809961
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 15,
+    "savedRawToken": "157,624",
+    "newRawToken": "157,624",
+    "newValueBBox": [
+      287.73,
+      179.549,
+      319.23,
+      188.54
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:segment_total_sales_overseas_reported@FY2015_FY2025_SEGMENT",
+    "metricId": "segment_total_sales_overseas_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 91,
+    "savedValueBBox": [
+      264.175,
+      265.290221,
+      295.675,
+      274.281221
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 42,
+    "savedRawToken": "120,261",
+    "newRawToken": "120,261",
+    "newValueBBox": [
+      283.53,
+      280.849,
+      315.03,
+      289.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_age_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_age_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      250.875,
+      331.648321,
+      268.875,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 8,
+    "savedRawToken": "42.5",
+    "newRawToken": "42.5",
+    "newValueBBox": [
+      270.23,
+      346.599,
+      288.23,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_age_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_age_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      250.875,
+      331.648321,
+      268.875,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 8,
+    "savedRawToken": "41.9",
+    "newRawToken": "41.9",
+    "newValueBBox": [
+      270.23,
+      346.599,
+      288.23,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_annual_salary_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_annual_salary_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      453.375,
+      331.648321,
+      493.875,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 10,
+    "savedRawToken": "8,764,357",
+    "newRawToken": "8,764,357",
+    "newValueBBox": [
+      472.73,
+      346.599,
+      513.23,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_annual_salary_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_annual_salary_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      453.375,
+      331.648321,
+      493.875,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 10,
+    "savedRawToken": "8,605,186",
+    "newRawToken": "8,605,186",
+    "newValueBBox": [
+      472.73,
+      346.599,
+      513.23,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_other_workers_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "average_other_workers_consolidated",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      372.75,
+      219.490851,
+      440.25,
+      228.481851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,416 〔2,025〕",
+    "newRawToken": "3,416 〔2,025〕",
+    "newValueBBox": [
+      391.73,
+      236.099,
+      459.23,
+      245.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "合計 3,416 〔2,025〕"
+  },
+  {
+    "seriesId": "PENTA:average_other_workers_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "average_other_workers_consolidated",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      372.75,
+      219.490851,
+      440.25,
+      228.481851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,667 〔1,920〕",
+    "newRawToken": "3,667 〔1,920〕",
+    "newValueBBox": [
+      391.73,
+      236.099,
+      459.23,
+      245.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "合計 3,667 〔1,920〕"
+  },
+  {
+    "seriesId": "PENTA:average_other_workers_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_other_workers_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      86.25,
+      331.648321,
+      153.75,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "2,893 〔1,942〕",
+    "newRawToken": "2,893 〔1,942〕",
+    "newValueBBox": [
+      105.23,
+      346.599,
+      172.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "2,893 〔1,942〕 42.5 17.9 8,764,357"
+  },
+  {
+    "seriesId": "PENTA:average_other_workers_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_other_workers_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      86.25,
+      331.648321,
+      153.75,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,136 〔1,727〕",
+    "newRawToken": "3,136 〔1,727〕",
+    "newValueBBox": [
+      105.23,
+      346.599,
+      172.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "3,136 〔1,727〕 41.9 16.9 8,605,186"
+  },
+  {
+    "seriesId": "PENTA:average_service_years_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_service_years_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      363.375,
+      331.648321,
+      381.375,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 9,
+    "savedRawToken": "17.9",
+    "newRawToken": "17.9",
+    "newValueBBox": [
+      382.73,
+      346.599,
+      400.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_service_years_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_service_years_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      363.375,
+      331.648321,
+      381.375,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 9,
+    "savedRawToken": "16.9",
+    "newRawToken": "16.9",
+    "newValueBBox": [
+      382.73,
+      346.599,
+      400.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:average_temporary_employees_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "average_temporary_employees_consolidated",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      54.75,
+      238.990851,
+      495.75,
+      247.981851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,747人）及び臨時従業員（278人）は、年間の",
+    "newRawToken": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,747人）及び臨時従業員（278人）は、年間の",
+    "newValueBBox": [
+      73.73,
+      254.849,
+      514.73,
+      263.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,747人）及び臨時従業員（278人）は、年間の"
+  },
+  {
+    "seriesId": "PENTA:average_temporary_employees_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "average_temporary_employees_consolidated",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      54.75,
+      238.990851,
+      495.75,
+      247.981851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,703人）及び臨時従業員（217人）は、年間の",
+    "newRawToken": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,703人）及び臨時従業員（217人）は、年間の",
+    "newValueBBox": [
+      73.73,
+      254.849,
+      514.73,
+      263.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "(注) 従業員数は就業人員であり、海外の現地採用の従業員（1,703人）及び臨時従業員（217人）は、年間の"
+  },
+  {
+    "seriesId": "PENTA:average_temporary_employees_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_temporary_employees_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      50.25,
+      519.398321,
+      500.25,
+      528.389321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,681人）及び臨時従業員（261人）は、年間の",
+    "newRawToken": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,681人）及び臨時従業員（261人）は、年間の",
+    "newValueBBox": [
+      69.23,
+      532.849,
+      519.23,
+      541.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,681人）及び臨時従業員（261人）は、年間の"
+  },
+  {
+    "seriesId": "PENTA:average_temporary_employees_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "average_temporary_employees_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      50.25,
+      519.398321,
+      500.25,
+      528.389321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,525人）及び臨時従業員（202人）は、年間の",
+    "newRawToken": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,525人）及び臨時従業員（202人）は、年間の",
+    "newValueBBox": [
+      69.23,
+      532.849,
+      519.23,
+      541.84
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "(注)１ 従業員数は就業人員であり、海外の現地採用の従業員（1,525人）及び臨時従業員（202人）は、年間の"
+  },
+  {
+    "seriesId": "PENTA:employees_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "employees_consolidated",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      372.75,
+      219.490851,
+      440.25,
+      228.481851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,416 〔2,025〕",
+    "newRawToken": "3,416 〔2,025〕",
+    "newValueBBox": [
+      391.73,
+      236.099,
+      459.23,
+      245.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "合計 3,416 〔2,025〕"
+  },
+  {
+    "seriesId": "PENTA:employees_consolidated@FY2015_FY2025_PEOPLE",
+    "metricId": "employees_consolidated",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      372.75,
+      219.490851,
+      440.25,
+      228.481851
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,667 〔1,920〕",
+    "newRawToken": "3,667 〔1,920〕",
+    "newValueBBox": [
+      391.73,
+      236.099,
+      459.23,
+      245.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "合計 3,667 〔1,920〕"
+  },
+  {
+    "seriesId": "PENTA:employees_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "employees_standalone",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      86.25,
+      331.648321,
+      153.75,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "2,893 〔1,942〕",
+    "newRawToken": "2,893 〔1,942〕",
+    "newValueBBox": [
+      105.23,
+      346.599,
+      172.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "2,893 〔1,942〕 42.5 17.9 8,764,357"
+  },
+  {
+    "seriesId": "PENTA:employees_standalone@FY2015_FY2025_PEOPLE",
+    "metricId": "employees_standalone",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 8,
+    "savedValueBBox": [
+      86.25,
+      331.648321,
+      153.75,
+      340.639321
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 0,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "3,136 〔1,727〕",
+    "newRawToken": "3,136 〔1,727〕",
+    "newValueBBox": [
+      105.23,
+      346.599,
+      172.73,
+      355.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "3,136 〔1,727〕 41.9 16.9 8,605,186"
+  },
+  {
+    "seriesId": "PENTA:building_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "building_orders_competitive_ratio",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      397.27501,
+      649.977721,
+      415.27501,
+      658.968721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 69,
+    "savedRawToken": "54.6",
+    "newRawToken": "54.6",
+    "newValueBBox": [
+      416.63,
+      664.599,
+      434.63,
+      673.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:building_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "building_orders_competitive_ratio",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      397.27501,
+      658.431461,
+      415.27501,
+      667.422461
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 69,
+    "savedRawToken": "75.0",
+    "newRawToken": "75.0",
+    "newValueBBox": [
+      416.63,
+      672.599,
+      434.63,
+      681.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:building_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "building_orders_special_contract_ratio",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      310.97501,
+      649.977721,
+      328.97501,
+      658.968721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 68,
+    "savedRawToken": "45.4",
+    "newRawToken": "45.4",
+    "newValueBBox": [
+      330.33,
+      664.599,
+      348.33,
+      673.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:building_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "building_orders_special_contract_ratio",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      310.97501,
+      658.431461,
+      328.97501,
+      667.422461
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 68,
+    "savedRawToken": "25.0",
+    "newRawToken": "25.0",
+    "newValueBBox": [
+      330.33,
+      672.599,
+      348.33,
+      681.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:civil_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "civil_orders_competitive_ratio",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      397.27501,
+      630.852721,
+      415.27501,
+      639.843721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 66,
+    "savedRawToken": "73.7",
+    "newRawToken": "73.7",
+    "newValueBBox": [
+      416.63,
+      645.099,
+      434.63,
+      654.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:civil_orders_competitive_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "civil_orders_competitive_ratio",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      397.27501,
+      639.306461,
+      415.27501,
+      648.297461
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 66,
+    "savedRawToken": "65.1",
+    "newRawToken": "65.1",
+    "newValueBBox": [
+      416.63,
+      653.099,
+      434.63,
+      662.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:civil_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "civil_orders_special_contract_ratio",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      310.97501,
+      630.852721,
+      328.97501,
+      639.843721
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 65,
+    "savedRawToken": "26.3",
+    "newRawToken": "26.3",
+    "newValueBBox": [
+      330.33,
+      645.099,
+      348.33,
+      654.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:civil_orders_special_contract_ratio@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "civil_orders_special_contract_ratio",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 17,
+    "savedValueBBox": [
+      310.97501,
+      639.306461,
+      328.97501,
+      648.297461
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 65,
+    "savedRawToken": "34.9",
+    "newRawToken": "34.9",
+    "newValueBBox": [
+      330.33,
+      653.099,
+      348.33,
+      662.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:dividend_per_share_standalone_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "dividend_per_share_standalone_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 3,
+    "savedValueBBox": [
+      489.67502,
+      290.813351,
+      512.17502,
+      299.804351
+    ],
+    "numericSequenceIdentical": false,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "24.00",
+    "newRawToken": "24.00",
+    "newValueBBox": [
+      509.03,
+      305.499,
+      531.53,
+      314.49
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "6.00 12.00 14.00 19.00 24.00"
+  },
+  {
+    "seriesId": "PENTA:dividend_per_share_standalone_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "dividend_per_share_standalone_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 3,
+    "savedValueBBox": [
+      489.67502,
+      290.813351,
+      512.17502,
+      299.804351
+    ],
+    "numericSequenceIdentical": false,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "23.00",
+    "newRawToken": "23.00",
+    "newValueBBox": [
+      509.03,
+      305.499,
+      531.53,
+      314.49
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "14.00 19.00 24.00 28.00 23.00"
+  },
+  {
+    "seriesId": "PENTA:earnings_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "earnings_per_share_consolidated_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      489.67502,
+      353.450821,
+      512.17502,
+      362.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 40,
+    "savedRawToken": "81.83",
+    "newRawToken": "81.83",
+    "newValueBBox": [
+      509.03,
+      369.599,
+      531.53,
+      378.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:earnings_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "earnings_per_share_consolidated_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      489.67502,
+      353.450821,
+      512.17502,
+      362.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 40,
+    "savedRawToken": "37.72",
+    "newRawToken": "37.72",
+    "newValueBBox": [
+      509.03,
+      369.599,
+      531.53,
+      378.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:equity_ratio_consolidated@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "equity_ratio_consolidated",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      494.17502,
+      398.450821,
+      512.17502,
+      407.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 45,
+    "savedRawToken": "32.9",
+    "newRawToken": "32.9",
+    "newValueBBox": [
+      513.53,
+      414.599,
+      531.53,
+      423.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:equity_ratio_consolidated@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "equity_ratio_consolidated",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      494.17502,
+      398.450821,
+      512.17502,
+      407.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 45,
+    "savedRawToken": "34.1",
+    "newRawToken": "34.1",
+    "newValueBBox": [
+      513.53,
+      414.599,
+      531.53,
+      423.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:net_assets_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "net_assets_per_share_consolidated_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      485.17502,
+      330.950821,
+      512.17502,
+      339.941821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 35,
+    "savedRawToken": "494.70",
+    "newRawToken": "494.70",
+    "newValueBBox": [
+      504.53,
+      347.099,
+      531.53,
+      356.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:net_assets_per_share_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "net_assets_per_share_consolidated_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      485.17502,
+      330.950821,
+      512.17502,
+      339.941821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 35,
+    "savedRawToken": "559.85",
+    "newRawToken": "559.85",
+    "newValueBBox": [
+      504.53,
+      347.099,
+      531.53,
+      356.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:payout_ratio_standalone_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "payout_ratio_standalone_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 3,
+    "savedValueBBox": [
+      494.17502,
+      438.118961,
+      512.17502,
+      447.109961
+    ],
+    "numericSequenceIdentical": false,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "32.9",
+    "newRawToken": "32.9",
+    "newValueBBox": [
+      513.53,
+      453.599,
+      531.53,
+      462.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "配当性向 (％) 25.0 25.6 25.3 32.5 32.9"
+  },
+  {
+    "seriesId": "PENTA:payout_ratio_standalone_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "payout_ratio_standalone_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 3,
+    "savedValueBBox": [
+      494.17502,
+      438.118961,
+      512.17502,
+      447.109961
+    ],
+    "numericSequenceIdentical": false,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_full_native_row_anchor_verified",
+    "savedRawToken": "72.0",
+    "newRawToken": "72.0",
+    "newValueBBox": [
+      513.53,
+      453.599,
+      531.53,
+      462.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false,
+    "wholeNativeRowTextIdentical": true,
+    "nativeRowText": "配当性向 (％) 25.3 32.5 32.9 42.8 72.0"
+  },
+  {
+    "seriesId": "PENTA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "price_earnings_ratio_consolidated_reported",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      498.67502,
+      443.450821,
+      512.17502,
+      452.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 55,
+    "savedRawToken": "7.0",
+    "newRawToken": "7.0",
+    "newValueBBox": [
+      518.03,
+      459.599,
+      531.53,
+      468.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "price_earnings_ratio_consolidated_reported",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      494.17502,
+      443.450821,
+      512.17502,
+      452.441821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 55,
+    "savedRawToken": "16.3",
+    "newRawToken": "16.3",
+    "newValueBBox": [
+      513.53,
+      459.599,
+      531.53,
+      468.59
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:roe@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "roe",
+    "fiscalYear": 2019,
+    "documentId": "S100IX64",
+    "savedSha256": "9399756b804c420d369cb9413f520208a568d70736f11620cddddf366686ec5b",
+    "newOfficialSha256": "232b3c67d88491b0abc0f46b61c6d35bdf12d8db30b33f5d0c7dd2c7c425302b",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      494.17502,
+      420.950821,
+      512.17502,
+      429.941821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 50,
+    "savedRawToken": "17.4",
+    "newRawToken": "17.4",
+    "newValueBBox": [
+      513.53,
+      437.099,
+      531.53,
+      446.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  },
+  {
+    "seriesId": "PENTA:roe@FY2015_FY2025_ISSUER_RATIO",
+    "metricId": "roe",
+    "fiscalYear": 2021,
+    "documentId": "S100OETS",
+    "savedSha256": "4562ae2b3d31c4e6f44512195529415b596e67c291f9a859834f960aeb7589a6",
+    "newOfficialSha256": "35f5de4eb38c22e29bdc11c924eae366ec92b05101ca0d03b8fb5df94d09b4a8",
+    "pdfPage": 2,
+    "savedValueBBox": [
+      498.67502,
+      420.950821,
+      512.17502,
+      429.941821
+    ],
+    "numericSequenceIdentical": true,
+    "oldValueWordMatches": 1,
+    "status": "new_coordinate_numeric_sequence_anchor_verified",
+    "numericOrdinal": 50,
+    "savedRawToken": "6.8",
+    "newRawToken": "6.8",
+    "newValueBBox": [
+      518.03,
+      437.099,
+      531.53,
+      446.09
+    ],
+    "oldLocatorRetained": true,
+    "newLocatorReusedOldBBox": false
+  }
+]

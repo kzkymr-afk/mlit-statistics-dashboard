@@ -1,5 +1,5 @@
 import {REVIEWED_COMPANY_URL,reviewedCompanyCatalog,connectReviewedCompanySelection} from '../explorer/lib/reviewed-company-connection.mjs';
-import {humanizeHtml} from '../shared/display-text.mjs';
+import {humanizeHtml,axisTickLabel} from '../shared/display-text.mjs';
 import {installImeSearch} from '../shared/ime-search.mjs';
 import {workspaceIndex,workspaceSchema,workspaceSeries,fetchPublicJson} from './static-data.mjs';
 import {validatedPacket,serializeCsv} from '../explorer/data-view.mjs';
@@ -58,7 +58,7 @@ function chart(ss,indices,reference){
  const w=Math.max(1000,L+R+keys.length*68),position=new Map(keys.map((key,i)=>[key,i])),axisFor=i=>reference&&ss.length===2?(i===0?'left':'right'):(ss[i].axis||'left');
  const axes={};for(const a of ['left','right']){const g=ss.filter((s,i)=>axisFor(i)===a),values=g.flatMap(s=>s.points.filter(p=>plotPoint(p,s)).map(p=>p.numericValue));if(!values.length)continue;let max=Math.max(0,...values),min=Math.min(0,...values);if(max===min)max=min+1;axes[a]={min,max:max+(max-min)*.08,unit:[...new Set(g.map(s=>s.unit))].join(' / '),name:g.map(s=>s.metricName).join(' / ')};}
  if(Object.values(axes).some(a=>a.unit.includes(' / ')))return '<div class="empty">同じ軸に異なる単位が指定されています。系列の「表示軸」を左右に分けてください。</div>';
- const x=key=>keys.length===1?(L+w-R)/2:L+(position.get(key)/(keys.length-1))*(w-L-R),y=(v,a)=>h-B-(v-a.min)/(a.max-a.min)*(h-B-T),fmt=v=>Math.abs(v)>=10000?(v/10000).toFixed(1)+'万':Math.round(v).toLocaleString('ja-JP');
+ const x=key=>keys.length===1?(L+w-R)/2:L+(position.get(key)/(keys.length-1))*(w-L-R),y=(v,a)=>h-B-(v-a.min)/(a.max-a.min)*(h-B-T),fmt=axisTickLabel;
  const isNext=(prev,p,s)=>{if(prev.reviewWindow!==p.reviewWindow&&s.type==='verified')return false;if(s.cycle?.includes('月次')){const a=String(prev.timeCode).match(/^(\d{4})(\d{2})/),b=String(p.timeCode).match(/^(\d{4})(\d{2})/);return !!a&&!!b&&(+b[1]*12+(+b[2]))-(+a[1]*12+(+a[2]))===1;}return p.year-prev.year===1;};
  let svg=`<svg viewBox="0 0 ${w} ${h}" style="min-width:${w}px;height:${h}px" role="group" aria-label="${esc(ss.map(label).join('と'))}の推移。点から出典を確認できます。"><rect width="${w}" height="${h}" fill="white"/>`;
  const primary=axes.left||axes.right;

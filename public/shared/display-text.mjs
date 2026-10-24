@@ -19,3 +19,10 @@ export function metricDisplay(record={},fallback='資料に記載された指標
  const value=record.metricLabel||record.source_metric_label||record.source_label||record.reported_category_as_disclosed||record.source_metric_label_as_disclosed||record.source_row_label;
  const id=record.metricId||record.metric_id||'';const kind=/backlog|work_available/.test(id)?'繰越工事高':/orders/.test(id)?'受注高':/gross.*profit.*ratio|gross.*margin/.test(id)?'売上総利益率':/gross.*profit/.test(id)?'売上総利益':/operating.*income|operating.*profit/.test(id)?'営業利益':/ordinary.*profit|ordinary.*income/.test(id)?'経常利益':/assets/.test(id)?'資産':/sales|revenue/.test(id)?'売上高':/profit/.test(id)?'利益':fallback;return displayText(value||kind,kind);
 }
+
+/** Axis labels only; preserve fractional ratios without modifying observations. */
+export function axisTickLabel(value){
+ if(!Number.isFinite(value))return '';
+ if(Math.abs(value)>=10000)return (value/10000).toFixed(1)+'万';
+ return Number(value.toPrecision(4)).toLocaleString('ja-JP',{maximumFractionDigits:6});
+}
