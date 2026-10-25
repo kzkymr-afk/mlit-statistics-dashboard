@@ -1,0 +1,18 @@
+{
+  "companyId": "TOA",
+  "companyName": "東亜建設工業",
+  "fieldId": "average_tenure",
+  "fiscalYear": 2025,
+  "periodEnd": "2026-03-31",
+  "scope": "standalone",
+  "unit": "年",
+  "previousValue": 1,
+  "correctedValue": 17.8,
+  "sourceDocumentId": "S100YCGY",
+  "pdfPage": 89,
+  "sourcePDFSHA256": "2e9f3203add86a7ce7127f05e49ab4723e2c1b5053df61a711ba6ea1320cf02e",
+  "sourceConcept": "jpcrp_cor:AverageLengthOfServiceYearsInformationAboutReportingCompanyInformationAboutEmployees",
+  "sourceContext": "CurrentYearInstant_NonConsolidatedMember",
+  "reason": "人的資本の説明文にある章参照番号を誤抽出。提出会社の従業員表と同期間・単体のXBRL数値17.8年を照合して訂正。",
+  "approvedOn": "2026-10-25"
+}

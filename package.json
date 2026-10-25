@@ -14,7 +14,7 @@
     "test": "npm run build:pages && node --test tests/rendered-html.test.mjs tests/chart-scale.test.mjs tests/atlas-auth.test.mjs tests/statistics-favorites.test.mjs tests/statistics-navigation.test.mjs tests/statistics-series-compare.test.mjs tests/statistics-presets.test.mjs tests/nikkenren-group-orders.test.mjs tests/buildbase-company-data.test.mjs tests/statistics-ai.test.mjs tests/atlas-explorer.test.mjs tests/atlas-workspace.test.mjs tests/atlas-derived-indicators.test.mjs tests/atlas-quarterly-financials.test.mjs tests/atlas-quarterly-view.test.mjs tests/atlas-financial-usage.test.mjs tests/atlas-batch-1504-385.test.mjs",
     "test:data": "node --test tests/static-data.test.mjs",
     "test:system": "node --test tests/statistics-system.test.mjs tests/statistics-ai.test.mjs",
-    "test:system-public": "node --test tests/system-public-data.test.mjs tests/nikkenren-group-orders.test.mjs tests/atlas-financial-usage.test.mjs",
+    "test:system-public": "node --test tests/system-public-data.test.mjs tests/nikkenren-group-orders.test.mjs tests/atlas-financial-usage.test.mjs tests/buildbase-tenure-correction.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "db:build-local": "node --expose-gc scripts/build-local-database.mjs",
@@ -46,8 +46,9 @@
     "ai:mcp": "node scripts/mcp-statistics-server.mjs",
     "ai:company-charts:validate": "node scripts/statistics-ai.mjs company-charts validate",
     "postinstall": "node scripts/prepare-reviewed-company-data.mjs",
-    "prebuild:pages": "node scripts/prepare-reviewed-company-data.mjs",
-    "data:prepare-reviewed-company": "node scripts/prepare-reviewed-company-data.mjs"
+    "prebuild:pages": "node scripts/prepare-reviewed-company-data.mjs && node scripts/prepare-buildbase-corrections.mjs",
+    "data:prepare-reviewed-company": "node scripts/prepare-reviewed-company-data.mjs",
+    "pretest:system-public": "node scripts/prepare-buildbase-corrections.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
