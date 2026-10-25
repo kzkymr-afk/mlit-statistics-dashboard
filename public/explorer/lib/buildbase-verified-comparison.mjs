@@ -1,3 +1,4 @@
+import{validApprovedAnnualSeries,APPROVED_ANNUAL_MODE}from'./reviewed-approved-annual-policy.mjs';
 import{companyDisplayIdentityError}from'./reviewed-company-identity.mjs';
 import {validReviewedRestatement} from './reviewed-restatement.mjs';
 import {validReviewedPolicyGroups,reviewedPointDefinition} from './reviewed-policy-groups.mjs';
@@ -64,7 +65,7 @@ export async function seriesFromBuildBaseComparison(response) {
         !/^[a-f0-9]{64}$/.test(source?.documentVersionSha256 ?? "") ||
         !(source?.pdfPage||(payload.comparisonPolicyMode==='reported_investment_costs_with_groups'&&source?.sourceFormat==='issuer_csv'&&source.sourceLocator?.kind==='csv_cell'&&Number.isInteger(source.sourceLocator.csv_row)&&Number.isInteger(source.sourceLocator.csv_column))) || !source?.sourceQuote || !source?.comparisonVerificationId ||
         !reviewedPointDefinition(payload,point) ||
-        !source?.definitionReviewQuote || !(source?.sourceUrl?.startsWith("https://") || (payload.comparisonPolicyMode&&source?.sourceLinkStatus==="saved_document_identified_individual_url_unconfirmed"&&/^S100[A-Z0-9]{4}$/.test(source?.sourceDocumentId||"")&&source?.documentTitle) || (payload.comparisonPolicyMode==='reported_standalone_orders_with_groups'&&validReviewedPolicyGroups(payload)&&source?.sourceLinkStatus==='saved_factbook_identified_individual_url_unconfirmed'&&/^PENTA_FACTBOOK_20(?:1[6-9]|2[0-6])$/.test(source?.sourceDocumentId||'')&&source?.documentTitle))) {
+        !source?.definitionReviewQuote || !(source?.sourceUrl?.startsWith("https://") || (payload.comparisonPolicyMode===APPROVED_ANNUAL_MODE&&validApprovedAnnualSeries(payload)&&source?.sourceLinkStatus==="saved_document_identified_individual_url_unconfirmed"&&source?.documentTitle) || (payload.comparisonPolicyMode&&source?.sourceLinkStatus==="saved_document_identified_individual_url_unconfirmed"&&/^S100[A-Z0-9]{4}$/.test(source?.sourceDocumentId||"")&&source?.documentTitle) || (payload.comparisonPolicyMode==='reported_standalone_orders_with_groups'&&validReviewedPolicyGroups(payload)&&source?.sourceLinkStatus==='saved_factbook_identified_individual_url_unconfirmed'&&/^PENTA_FACTBOOK_20(?:1[6-9]|2[0-6])$/.test(source?.sourceDocumentId||'')&&source?.documentTitle))) {
       throw new Error("観測値の出典・期間・比較許可が未確認です。");
     }
     times.add(point.timeCode);

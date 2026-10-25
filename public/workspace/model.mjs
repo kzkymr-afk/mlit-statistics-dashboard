@@ -1,3 +1,4 @@
+import{approved223MetricLabels}from'./approved223-metric-labels.mjs';
 import {analysisFor,cellDisplay} from '../explorer/data-view.mjs';
 import {actualOverlayCompatibility,verifiedSeriesSelection} from '../explorer/lib/statistics-workbench.mjs';
 export const GP='consolidated_gross_profit_reported';
@@ -5,6 +6,7 @@ export const metricNames={interim_dividend_standalone_reported:"中間配当額"
 export const scopeName=x=>({consolidated:'連結',standalone:'単体',non_consolidated:'単体',segment:'セグメント'}[x]||x||'対象範囲未確認');
 export const cycleName=x=>({quarter_cumulative_3months:'Q1・3か月累計',quarter_cumulative_6months:'Q2・6か月累計',quarter_cumulative_9months:'Q3・9か月累計',quarter:'単独四半期',quarter_direct:'単独四半期',quarter_only_3months:'単独3か月',point_in_time:'期末時点',point_in_time_stock:'時点残高',fiscal_annual:'年度'}[x]||x);
 export const isNumeric=p=>p&&typeof p.numericValue==='number'&&Number.isFinite(p.numericValue)&&!p.implicitNumericZero&&['confirmed_value','reference','extracted'].includes(p.status)&&!p.conflict;
+for(const[id,label]of Object.entries(approved223MetricLabels))metricNames[id]??=label;
 export function makeVerified(series,names){
  const groups=new Map();
  for(const s of series){const basis=['INFR','SMCC'].includes(s.companyId)?s.accountingStandard:null,metric=s.comparisonIndicatorId||s.metricId,key=['v',s.companyId,metric,s.comparisonScope,s.unit,s.priceBasis,s.currency,...(basis?[basis]:[])].join(':');let g=groups.get(key);if(!g){g={id:key,type:'verified',companyId:s.companyId,name:names[s.companyId]||s.companyId,metricId:metric,metricName:(metricNames[metric]||metric)+(basis?' / '+(basis==='JGAAP'?'日本基準':basis==='IFRS'?'IFRS':'親会社資料・基準未明示'):''),unit:s.unit,scope:s.comparisonScope,cycle:'年度次',quality:basis==='not_stated_in_selected_parent_table'?'出典数値確認・基準未明示':'出典確認済み',accountingStandard:basis,originalSeries:[],points:[]};groups.set(key,g);}g.originalSeries.push(s);g.points.push(...s.points.map(p=>({...p,reviewWindow:s.reviewWindow||'default',year:p.fiscalYear??+p.periodStart.slice(0,4),numericValue:p.numericValue,seriesId:s.id})));}

@@ -1,18 +1,16 @@
 {
   "snapshot": {
-    "sourceSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8.json",
-    "sha256": "90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8",
-    "groups": 1137,
-    "points": 11644,
-    "primaryMaterialsVerified": 303,
-    "old1091SeriesExactlyUnchanged": true,
-    "newSeries": 46,
-    "newPoints": 467,
-    "unpublished": true,
-    "metadataOnlyOCRReferenceRepair": true,
-    "priorSnapshotRetained": true,
-    "repairPoints": 6,
-    "repairSeries": 3
+    "priorSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8.json",
+    "priorSHA256": "90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8",
+    "sourceSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298.json",
+    "sha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298",
+    "groups": 1361,
+    "points": 13916,
+    "newSeries": 224,
+    "newPoints": 2272,
+    "primaryMaterialsVerified": 337,
+    "old1137SeriesUnchanged": true,
+    "sourceCommitPush": false
   },
   "series": {
     "KUMAGAI:completed_work_cost_consolidated@FY2015_FY2025_REPORTED": {
@@ -7965,6 +7963,1576 @@
       "company": "TOA",
       "metric": "doe_consolidated_reported",
       "referenceSnapshotSha256": "90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8"
+    },
+    "TOKYU:cost_of_sales_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8b95f0cde098ed3bbaaeb2f76755ba0a528b8ebae87fb33090c64c7d38cd1f17",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "cost_of_sales_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:gross_profit_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "7baaff61042cfbeb4702fe4223022a829cea4e855e4264e941f1e6f67403705b",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "gross_profit_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:selling_general_administrative_expenses_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "903bcc2ee2b9c03eab17f023cea649f05b962bd78fbbab0987751c032c7b7c04",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "selling_general_administrative_expenses_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:non_operating_income_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fa86d92eeb7a69c055433d1a1f81a5ce01245f2c81b20333e43e61e4ecf03880",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "non_operating_income_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:non_operating_expenses_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a931f2e65076aca9151b4ee45db19881467b488bbdccf963e2235e192404fcca",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "non_operating_expenses_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:interest_income_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fe2f2b8864a6e70ef65e920a16d59a3b8ef424d621f06f530803d46db609f75a",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "interest_income_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:dividends_income_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "7496369a1ccc20b71ca17a781300fb5f8954b20d75313d4247250396b97bb933",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "dividends_income_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:interest_expenses_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "62755467640192abc7fceaa16730cf112edd73599659393ac7eb68d96e6969a3",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "interest_expenses_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:extraordinary_income_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8479e819f175745b2f04b3c6e4339cf8831390411ed599c0052aa8ead5451213",
+      "points": 9,
+      "company": "TOKYU",
+      "metric": "extraordinary_income_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:extraordinary_losses_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1f2090d26eaba1f72560a38f764ca0a43fa40aa993c803dbf600ac85ad533617",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "extraordinary_losses_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:income_before_taxes_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "42792c5b9860d002b6cda30a74e083f4ed27d512633b928fe0b295e2f9ffa2bf",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "income_before_taxes_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:income_taxes_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f0c52ff62da82f456d014317af63affde9617be046b8bf7c9a69704742bfe4dc",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "income_taxes_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:profit_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1d84fcc9cbcf21aa4af0fc49912cd0e4473df00a8d8dd8ad356e0826ec34ba4f",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "profit_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:profit_attributable_owners_parent@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f39f353ffa9960926fa28d6a2bdc1d5c226d72288bd5a7f8cc6199b89a6a5275",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "profit_attributable_owners_parent",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:comprehensive_income_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1226ce6c50a9e46016051d09c1d40b9d710499a737ad1eb4d8c279de84c0bc26",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "comprehensive_income_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:total_assets_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b695fe087f6bc79762c1083c6716deb0f9a8275509aa752e4fc9e03ba51a1362",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "total_assets_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:net_assets_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "cb0614082da76d8726c1e03f883b9a894c4554c3beec7240b887031d538a8bf8",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "net_assets_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:shareholders_equity_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9222800bf30eaecce41016d88f68a9fea800ab11fd2a75d3d05a38edbc39ea1e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "shareholders_equity_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:operating_cash_flow_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "98a6392d6facd02ede238de6cb58539fc564fdfa960ca8318947a57ac06256d5",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "operating_cash_flow_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:investing_cash_flow_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8a837129027166b2c13036f54189903446f4d25582c01ba621da79a7b34ee29c",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "investing_cash_flow_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:financing_cash_flow_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b3e0de06301c2325eb8100d312cf1c08d799122f491ccaec7436fbdbad3fbafd",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "financing_cash_flow_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:cash_equivalents_end_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "07b64fd2e8b4adbfc96ec4a834927ded8bdc1bc8d5ddb9008ed215c364018b30",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "cash_equivalents_end_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_age_standalone_reported_to_FY2022@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1b58a8a3292a7bc8c133cc74455c6065b54a7ad86ed183f06df2a681dd1f3d2a",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "average_age_standalone_reported_to_FY2022",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_service_years_standalone_reported_to_FY2022@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9cc66ea80e5819132237c0b351e42545362fd70ef04af5f8f05bf9370eab27a3",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "average_service_years_standalone_reported_to_FY2022",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_annual_salary_standalone_reported_to_FY2022@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "643d12767545ea352f785ef0a221eacfa08c4306a4eae593bef7fb1460106702",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "average_annual_salary_standalone_reported_to_FY2022",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:employees_consolidated_reported_to_FY2022@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4163de24e70658455e6c37350eaaac799e5ecc633b5219ccfd8be5f85759c217",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "employees_consolidated_reported_to_FY2022",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:temporary_employees_consolidated_annual_average_temporary@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "726d3e4469988ab10659fbfd8c255fc3f98aaedf3c1b9262187d324c82077802",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "temporary_employees_consolidated_annual_average_temporary",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:employees_standalone_reported_to_FY2022@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "3281a303f1f8689701b334e40c162ed045426c59f20abd3439fd2fe2ed9ac7f7",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "employees_standalone_reported_to_FY2022",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:temporary_employees_standalone_annual_average_temporary@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "39663d94d04630e410ae227d430c5dd66e480bca1770e5ca2f3816958a567fc1",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "temporary_employees_standalone_annual_average_temporary",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_age_standalone_FY2023_onwards_reported_population@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "919ca9b93fe132faaa5ed3ba8a2affb17fe2faae778ffa26d6b39497d64efb39",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "average_age_standalone_FY2023_onwards_reported_population",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_service_years_standalone_FY2023_onwards_reported_population@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "cf7f290ea66d798c6a0be5d25ba2a1b6f1f7880163e4dc8dde4e946da5116c61",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "average_service_years_standalone_FY2023_onwards_reported_population",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:average_annual_salary_standalone_FY2023_onwards_reported_population@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a1cc4bfbd60de86e63858769fda7383ac5d346d3b1a3b9b9481b37f2872b6c6a",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "average_annual_salary_standalone_FY2023_onwards_reported_population",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:employees_consolidated_FY2023_onwards_reported_population@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "2d62af1ca4afc8a4ac7e124473ab22e462b244efc7a0cc7439d319e87df54a4c",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "employees_consolidated_FY2023_onwards_reported_population",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:temporary_employees_consolidated_fixed_term_plus_annual_average_temporary@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9cad392b75ea03288a0c3eb5e0e38d94f056ccd9b3d05615118d0410b45c5def",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "temporary_employees_consolidated_fixed_term_plus_annual_average_temporary",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:employees_standalone_FY2023_onwards_reported_population@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "699ffa38d25dd256821d8d122a517cea6c376e8129f5e1ce789a2205364f2138",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "employees_standalone_FY2023_onwards_reported_population",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:temporary_employees_standalone_fixed_term_plus_annual_average_temporary@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ab8799edd9c8cdd54512eb62e1e97338944d3cacbe685c127040c7cc410292be",
+      "points": 3,
+      "company": "TOKYU",
+      "metric": "temporary_employees_standalone_fixed_term_plus_annual_average_temporary",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:capital_expenditure_construction_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0d1d096663b0571279f2cf63fcb386c4322b9637ab51fe4ac41067575c4eecfa",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "capital_expenditure_construction_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:capital_expenditure_real_estate_other_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a4c01ca7297526d6c767fc4b0fa997cfbe1276d49db1b23b2ac867f631af1be5",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "capital_expenditure_real_estate_other_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:capital_expenditure_corporate_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f565cabe6044177bd9a03f0f7f07357e6177bb97514df25aa1b4e7cc79961d84",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "capital_expenditure_corporate_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:research_development_expenses_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ed33b04c3adf7479b0780077cb1d84ee7a3275ca7646a7320eb3e48bc9d746e3",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "research_development_expenses_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:materials_completed_work_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4f609c78cea4ad9762697b78b60e03c57b2de4e9d0f282d991b2f5e136fa930d",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "materials_completed_work_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:labor_completed_work_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6cf228d693000549b4f124526b967227354b37feb7a9215bae77ce65643769a6",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "labor_completed_work_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:subcontract_completed_work_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4f18be64355341c380ed6293d07ce55d1175fa3bd1d3c61963e41c57790f5c02",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "subcontract_completed_work_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:overhead_completed_work_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c3a841011f0cf6ea974b6ce5b012d1d9522b4a26c7eaec71420515250333c203",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "overhead_completed_work_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:advertising_expenses_sga_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c0220ac2e81a290bdb2243d6916978249f2706f55d7c9e1375ec6266cb489d4e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "advertising_expenses_sga_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:entertainment_expenses_sga_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "acb7e9975f783b115c85bd772fa6bf5219d418e7f8427231d60cdb0ec60f5510",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "entertainment_expenses_sga_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:donations_sga_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d1e7c46f8e05d88a0ea206d752f15d694d96ec59f2bca0686223d4dce2690da8",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "donations_sga_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:depreciation_expenses_total_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5138bd92cdf38e06ca8cc280cd833e588adbeeed534a241dd1d61bef0c5b2468",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "depreciation_expenses_total_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:depreciation_expenses_construction_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "11d6fd78b54a2ee3b8a8e4c886fb52ed2f56b9e7614d94216eb7d09f39f8aa55",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "depreciation_expenses_construction_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:depreciation_expenses_real_estate_other_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4c7e851fea8daacb402382d79851ce9926d38f7191e99b97e87910e381995ca6",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "depreciation_expenses_real_estate_other_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:depreciation_expenses_corporate_adjustment_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b45a1fa5dbbcf0dfe81b3fd8c71ee2db23dd0c12a6a2f8d68636abf4f23af995",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "depreciation_expenses_corporate_adjustment_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:fixed_asset_increase_total_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5f10d2ff51565f65623fb8b34a46202d5cf43c6943721e04b12f2f87dbc06523",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "fixed_asset_increase_total_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:equity_issuer_reported_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "87a4730f6c44a51f4e44db30eb52ed3c4edad4d5e041922a738effd865566e65",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "equity_issuer_reported_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:interest_bearing_debt_issuer_reported_consolidated@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "3ac83205995f3c49a04f091fae26ab9bb0ab850b20e47fe6cea5b7cddd533f9f",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "interest_bearing_debt_issuer_reported_consolidated",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:opening_backlog_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "60f3e6705add5d413636d61ba0287a65dbfe15db80d0755e5633b147a9cc6433",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "opening_backlog_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:opening_backlog_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a80ef55711a13ed143c7f320fe989f3c50c24a6af2f49464110b1d21c32d2a24",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "opening_backlog_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:opening_backlog_total_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "2e0f43552c7fc688acf19967e1ed0244bbe60ef56784445a78e09c342730ace3",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "opening_backlog_total_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "892e0375e1958d032ffd7b1c03f510a41d4b6ae397ce46bdc68e22ea859251be",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "02221fca7e19accf75d21e954e9ca0338bd8224a7c905128d591c095624b4ed7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9a5e37329c9ddef309a5765ebc74f03ca2d0f40c72acb58192fef31989769ad7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_total_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_work_revenue_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c73e0a1bfdd6dd3b4672410abf7b277917de1aa8232551319e7967e506927c0c",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_work_revenue_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_work_revenue_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "55fee9129a34ba891c0845c5cd7ad8381492edd0ff0431eacf975afa5720ef76",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_work_revenue_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_work_revenue_total_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4ddde5eb3cb1595764853fbaea7a394b8f98e2a24e9be78325b672fc5d30c549",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_work_revenue_total_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8a67764707f3cf3d83a011b53bb1e8198548a0abd21f0cd9f52a7b518c15a26a",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "131e93b00f5c8816129ef6a5640c1f9c72fb9c6f379d1e1d2aed586326496f70",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_total_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "71559b3bf731cc11294d6ce486118324fda4dd896d36929705ccc5e93134d2a2",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_total_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:eps_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "496a730ab6d276e06b7cf45606cbd18e4356ee1ac46b97929c3e6aaf3cc3a5aa",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "eps_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:bps_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d02cbfeea013fa4a05bc9fea91c846ff66afba9fd96cd4d0295fe0466823e192",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "bps_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:roe_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9db82235dca14bb691fa3500d10d20e74b87fa64db4cad7e76018f46dd1349b2",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "roe_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:equity_ratio_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "097c7dd4bddcbed20826812e80fe616ad3bede8e2f42d89c7fe88e751bdd8802",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "equity_ratio_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:per_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4f98438c06ca6bc9b917b596061001d92d1f11d6f765c341ce4f07f9b13b4bad",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "per_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:eps_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e72c1feb149e2addd09c45eb0e17b840140eccb021716915905f7ef8a5702eef",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "eps_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:bps_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "bf4a663ebb0f7190462d73fee9341d695cf8bd6b1cfbf898d85093b8da6c247f",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "bps_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:roe_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4328b1a0f0dc88cbd1202fb4c496907b7d3d5b846996997823612661e78cff8b",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "roe_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:equity_ratio_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e657d70e1a839475f12dd4b53ac937ba79b679c9333dcf4c0449129cefb24fe8",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "equity_ratio_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:per_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "62ae2afaca3a4b01f0a68fcc079fa8c0743b1616e4a7eb1e88d82ca5c5aaf19b",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "per_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:dividend_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "695781c799c932862074fa67ff017d19c140e5932aee69aacb79de97ff8a5990",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "dividend_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:interim_dividend_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "40e9c8f6235527ef39641a55a8a10640545032963269f8e1d704300bd9369eb7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "interim_dividend_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:payout_ratio_standalone_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "391787cf0e407dce30f17106500604938a4f10d78b4016d5ab8d25b5bdd82ec8",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "payout_ratio_standalone_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_external_building_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b5b37d8e945f6a43f2495c7d8a94d26cb8145086096417822b326087efd9d1df",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_external_building_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_external_civil_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fd0cada25126f0012740885a02fa35f5db6b28ab9789b7a4dfd1530b20db91f7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_external_civil_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_external_real_estate_other_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "16ddae0a0a7f74506a5c7cfe49ab044f3cf0eecc313c0607bf5287a6a92f7fc8",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_external_real_estate_other_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_internal_building_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "3756b5a320d826ffc7f99076b750014e3f9cb1807f11470a7ba7549d2cb70628",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_internal_building_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_internal_real_estate_other_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e2222d16dd1a6d60a4febdf8b681595d3cf6ff7f975c881696517979d8d47e85",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_internal_real_estate_other_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_internal_segment_total_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "aaf7d9321209953a8a6a2e0df36af4015502e9ef1103e43cad1868675b5c06a0",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_internal_segment_total_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_internal_adjustment_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4645046524b49014c929e29cffca81938d5cb61600527651c0d2a5da7a5f5bba",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_internal_adjustment_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_total_sales_building_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c5e078ac07b1883a398e78f78aaeea1e9cd77dd3d288c87c942bb471beb672c9",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_total_sales_building_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_total_sales_civil_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a657290e1ed3b44633da6af6ea74c357fb7a5c9bb67607f91aaa2ef1c436d419",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_total_sales_civil_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_total_sales_real_estate_other_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9ef2b1d870821c275db966a2a732c534bbe3cd5cdc39f88e64950ecbe1daa678",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_total_sales_real_estate_other_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_total_sales_segment_total_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f5b402f1f5ca47d1d884a5957aea5ad3370f6d8b3eb3d16383567f1f6a167250",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_total_sales_segment_total_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_total_sales_adjustment_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "aae5a444d8ea333599b88ac87a6cc8723d76dfc0fcfaeaa279936c0edcc583f4",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_total_sales_adjustment_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_profit_building_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5ef0a03def604503efedaa5137615d89fc43833172b2c3bff1e699bb7021fc26",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_profit_building_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_profit_civil_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "abb66e089b83b455d8c0cac85a742a31a6ddf18f6e45a54047bab14ce6136a2e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_profit_civil_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_profit_real_estate_other_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d1fdfa5ffe1f1bb9b2d5e9a2472c9a8b493bf6cde1fa21ed01b9f8cd6a3007ab",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_profit_real_estate_other_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_profit_segment_total_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6965daa13041c33925e25deea1ea3987047879294028cc2f7becdc09ddbfbd43",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_profit_segment_total_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:segment_profit_adjustment_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "7ab930c19634e75154046be5f216921dad84fa24d2cfeb9b4e4ba7d1c6a14cef",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "segment_profit_adjustment_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ab0c7611c2cdf16cad783cdc02ae452b0966921cfdcbfba71faeff1cd75521a7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0684fa2549f331b3d38fa35606a91397cc1551d7739c97811db086553c0535a0",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0aa3610399f4e52fa2006871aeef1fc1dd2d64a5e66ac74f21e214bc6283159c",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4cfe6082c227b3d852c572daa43ef192fdf7de0f6336eace978afd46a72986c5",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_building_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "13f61d474098285e33314ba46cc1dbd3d3ce8ff6af101ab583c620f9895f5b0e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_building_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "912a2f7048dd0c8572ac81a5c9913fa21b0774ebd0dbeb0ca20bf70b052aae5e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "70235d5ca6e9c04ee3d52ca0e3158bbd7455923a82ca95e4da1d4404657d5a8b",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d94efdd15cf08655f083aa5e255fb64638bef38df2fb83ab952e6edcd2597176",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "462dc5585402d9123ea7293db87ebd087fed367f7fb7b7e5ca5661d612a148bd",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_civil_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e3ef6a89d46830125396b0845ff13bb24f5be61a369cb51757003f6973fb0011",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_civil_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "accfe8a6bc84f8c6ea81dc78161703f9a3744d5b23c3352b8021b36263e9bec6",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "orders_total_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b5f4e40728cea71649eb2e277233c7753c7319a8bf15e45439755d0b454fe9ef",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_total_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "2967be869e15ae6a9ce666e80e8e3f4d5ddc6bfc32098f960a92dca66fdd4939",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_total_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "28cc4939d2b2f717f4e970835612a68d906311568347c6920eddda924e8ae039",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_total_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_total_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e7db1fe201fc6676ab1a7b680639f7a5d4f77b41b3e11a55ffe02d76f2542769",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_total_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "211c486d733bf9753dfabbe0b34e141871dbee3e57071baea08613c8dedce2c5",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_building_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9ef3173b6555524aa8c08394556fd260d8cbe7fe41916a279318c50f39e73078",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_building_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "bd81ae787eafbc4e72a0dc02c48f0071988e71a37d5c9da69986af3f72213ee6",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_building_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8b5fba5829e2d24a39a0668cff068ea13c6119f69e9ab3ad89e1a664df565e74",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_building_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c701dbbeda5b8caa8b8cebbf7432c6a604a69a739312383ddd8e5c876684081c",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_building_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9704c7829c88bf06227d552f0c079059eb5c6deab43e5152aa2e6da8030d97b4",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_civil_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c9786b6a57ae2f42d56344a7ecabd13fa8acc6877344178d244d2927156af026",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_civil_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "58cd792c6ecae095ac1411598a1353adf2feae28b3b0458a0e341ae7d791248b",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_civil_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ed66cea85c9ad431c03f0a8f02b1caebb557f5428c85657595400791a94d0193",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_civil_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "e4638e59c2aebd713cf74108e9e90d6590317e240bf8f0ba0b66d2631a6399e8",
+      "points": 8,
+      "company": "TOKYU",
+      "metric": "completed_civil_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_government_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8805041fb076bc91acd18ac631176b6520ca1542b88b73c438c40ecf4f2fd93a",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_total_government_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b6ac464f344ba6fdfad8dfb1fc9eb955d84b38e5a645ffe841feadf90daea926",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_total_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_general_private_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "dcdecda416b7ffea73a5d9b64711702659a797903ded42df87c498c248962f74",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_total_general_private_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_tokyu_group_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "09a0228769d17a56e58c123b3b9e498edd83a0eb00eca295436c7d09cf8628e3",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_total_tokyu_group_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_overseas_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fd28a9c243dd61c5bd273fb37cc48823b1d9878cfacabad35429c769ce2c25d3",
+      "points": 6,
+      "company": "TOKYU",
+      "metric": "completed_total_overseas_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "864175a4ff15e9b40935ffdf30225d20dc39f631271eacb0eda76de3e22bf543",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_building_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_building_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "da566c61808e15246a91ddf76d2912a624da874ed61216321dfeea9b62f383f7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_building_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8fec1b0166bda2d71e148ef4041b1592069af89a8d7bc13986aa7f08d5f21f9e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_civil_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_civil_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "3defd6b9e6db9de12b8adad1107666c98889f41a0cf300d7c58f03455d44ac72",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_civil_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a6e40fb1b32605755e6026dbed67cbd29746792de3fdabbc21cc18d61a5ffe07",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_total_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:completed_total_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9bf2b469fccfe30db1ae101f64ad00133d80813b7f6761f39d7f14edb7cd41e7",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "completed_total_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_building_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "21c95bc691e5f9adf2f46af45e0edabf14d477e6690ea2e1d91a45f30a62a071",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_building_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_building_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f56cbbda5b84d8ed79358866b042a933df20898b82a45ea7bd96f8b2b6870940",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_building_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_civil_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "cd9f09ed7f6ecafe9a4b8756883aa30e2e825b1f7d50da0e150608b569fb390f",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_civil_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_civil_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "191e0e1b69ac7cf2fdab664ca532c4273ded4247248bddd9e1119fdea3dad8c2",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_civil_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_total_government_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8b9250e9fce3c906d117aacd08835cbfe4f326d06a848d555eb8f7ca0ae784e6",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_total_government_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:closing_backlog_total_private_all_regions_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c32eb4bc951e582fdce176a4e129c71b1c32facc41c5b462bf3a3720339d8efb",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "closing_backlog_total_private_all_regions_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_method_special_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0dc99ac6bac3bdd2b58b04d18207e01231efe2e3c2720f6962fdae1411e5193a",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_method_special_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_method_competitive_building_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "400185fc62b1ca64ef07cdb1a8ddd2a6efa67d8332c27d31f7fcc17f9693326d",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_method_competitive_building_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_method_special_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "dc0a4ba74c079a4e906c62ba65a3c5760a8536544b1624b70e594814e8a78a6e",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_method_special_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:orders_method_competitive_civil_standalone@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "37ef23a2dca58b0961f7dcb1e32b2e4c07fc05b1e20a35c2327bf5bd6fd59cfa",
+      "points": 11,
+      "company": "TOKYU",
+      "metric": "orders_method_competitive_civil_standalone",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:nonrecourse_loans_current_portion_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1c0720f75218da41862c1abad7c28a9326357bbab8907c7d113fed4f29fc0d6a",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "nonrecourse_loans_current_portion_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "TOKYU:nonrecourse_loans_long_term_consolidated_reported@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "405a6e57add079ff495162fd064f5b24d9795c0365a46e8cbb521869ae7da6be",
+      "points": 10,
+      "company": "TOKYU",
+      "metric": "nonrecourse_loans_long_term_consolidated_reported",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:advertising_expenses_s_g_a_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c7dd61333d5ec83b7611941fa794b1a52b6431d48a3ef933050864793c093b2d",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "advertising_expenses_s_g_a_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:assets_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b0e371d68198b92bb3300e0c8e7d60f286b2c411cc32dbd83b1cfd5c459a975f",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "assets_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:average_age_years_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4c0862f3d6e6216219a28657d32374e9f1b7ff1b5b9410362b5ac38183594644",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "average_age_years_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:average_annual_salary_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "298c0cd684f653c558bdcc43c7e24eb7eef83d15712d612b25d6026660a4364a",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "average_annual_salary_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:average_length_of_service_years_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "131f29a584aee196f61248611c23e8ef39ca0c06a1964c625eda0c3fe2e2226f",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "average_length_of_service_years_information_about_reporting_company_information_about_employees_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:basic_earnings_loss_per_share_summary_of_business_results_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d66e4aefb01539c6e3762f4425e26b1a6c9b2acd6fb3b0f3e44b82ee69f74bdf",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "basic_earnings_loss_per_share_summary_of_business_results_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:basic_earnings_loss_per_share_summary_of_business_results_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "3ee37096a81d2b8f970bd20a146dad31a871e06e0f1c1dc750d7e832be172e89",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "basic_earnings_loss_per_share_summary_of_business_results_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:capital_investment_as_disclosed_approximate_other@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "df7737e8555923dab61426e4ef356cb83d5c714aa2db9d0ed674deaea07554e5",
+      "points": 4,
+      "company": "ANDO_HAZAMA",
+      "metric": "capital_investment_as_disclosed_approximate_other",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:capital_investment_as_disclosed_approximate_group@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "94df9e8aa8cccedb00481bf533019feeac54e078e9690c385111896b89f28327",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "capital_investment_as_disclosed_approximate_group",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:capital_investment_as_disclosed_approximate_construction@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5dd953798c2c4556af5fd6a921e3d27e2e1e85cc4341ca1fe333618c31a045d5",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "capital_investment_as_disclosed_approximate_construction",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:cash_and_cash_equivalents_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f6b93aa93541a25f8c2a462510d8502cf1d4e40970ad962b9b069a8750511297",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "cash_and_cash_equivalents_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:comprehensive_income_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "edfba3a6b18e8ed753ec84545cf0caf44359d4c388325b891bcf6e2e323ff88a",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "comprehensive_income_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:cost_of_sales_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c7254203da3bb7bb51b75e614874c71b00b4006c95a1500cd085242dc708fe72",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "cost_of_sales_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:cost_of_sales_of_completed_construction_contracts_c_n_s_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1c3f0ab9d7236649cecdc8499847e7423428f13231115d594f8988e3944e56c5",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "cost_of_sales_of_completed_construction_contracts_c_n_s_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:cost_of_sales_of_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6cd418f3f8b103646945b471a7a9d943a061d254592340bf69766ebdac9a32f4",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "cost_of_sales_of_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d0538f405d719211109ff473263adb85ea6d3f92b24ccd56d4d0baf14814d073",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "73b95f092322b4b0e6f292d46a2c526f5890d51876b1b09eb02829fbad30f3e6",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_reconcilingitemsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "b2185a7ff8d157a79ac4881f5e9cb7a5146131adf4e14bfe9da76f3db18049a6",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_reconcilingitemsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_reportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9b9e21a76e49263a08bb16e759e0c34d6b345f47fc79ec28f6f6d9829ca5dc3b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_reportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_totalofreportablesegmentsandothersmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ce8180c6ed4f082cbaf496cb500ef67999c46ee400ca08e9c0b6dae16ffc129f",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_totalofreportablesegmentsandothersmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fec5d7446ca8c41b8a24327a4e615c80cef4ae97186a4fd7675629a216405ec6",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6b3e656174d227bfd34fafaa6e27653b36e34427eb49c7b9415518911fc76a47",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "364c3fa60216e921cd39e9ac7bfd4fef27a1743a78bf81f5632aab6b0583d4a7",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "depreciation_segment_information_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:dividend_paid_per_share_summary_of_business_results_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5fa8cef8be763acb8ce490dce048f539e72b9c00783f17b9f2bb43b5b764c18d",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "dividend_paid_per_share_summary_of_business_results_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:dividends_income_n_o_i_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "2f1151274a034c8a264a0b73ba6b892cf63676c5990ce5151b1934b2a2d1d6a8",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "dividends_income_n_o_i_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:entertainment_expenses_s_g_a_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "eddc8ff566351eda11598fb4aa074e6735161a087639ba67418f4a5f700275c4",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "entertainment_expenses_s_g_a_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:equity_to_asset_ratio_summary_of_business_results_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9a52e0476e3508058e0dc6451a59b8a6f95fc2ee07bcd8fe50e61d3de54c3b77",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "equity_to_asset_ratio_summary_of_business_results_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:equity_to_asset_ratio_summary_of_business_results_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "de2b5cd110a65110eb2cd345dfeeecb3776c8e3efe8405860e37de471dc83b2b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "equity_to_asset_ratio_summary_of_business_results_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:extraordinary_income_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "bfa21a8feef2cf351d2c490aa2bbbb1c6372fe2bfa4f678654445c286a3eb361",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "extraordinary_income_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:extraordinary_loss_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5c473da13dc2bf9724b99f36e4164c0b18a9cc5e16a5f42ced3704a8f08f793e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "extraordinary_loss_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:gross_profit_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "449712512ad521c5c0639ec56ae0629bb81f20c7e2e5ea1ec79746d83c57d927",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "gross_profit_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:gross_profit_on_completed_construction_contracts_c_n_s_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d90e0315790046ef3f270b6ba09a13c1c34458a9c3999c52295dacb70b250450",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "gross_profit_on_completed_construction_contracts_c_n_s_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:gross_profit_on_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fb4871b0c9bb6e1388e6403e2b57ee89c1e2ca7bebfb637a42840c4940f3af7b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "gross_profit_on_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:income_before_income_taxes_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8cf83d4312430794ac21fbf4e702a5484f78727ec48737f7d6a3afc03802bd5c",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "income_before_income_taxes_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:income_taxes_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6bc536981df2a14b1404aecaec7b40d5ca1485f4abeaf60c441c35305e7b4725",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "income_taxes_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "964bbc9e0ef404f93f177768080b7933ac9ceb904ff58b721e4499e4278d3a3e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c1658e0d5040c7e685f3de816cd46b857b5b87a033c1cf2562c2dcf2b77fae26",
+      "points": 9,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_reconcilingitemsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "91000f318b0e25adb31b89bcd7d2d46afdf433fbb6411574a7dc33f0fd28e84e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_reconcilingitemsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_reportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "583b71b60465518db85fe60b5d4e1e0bafb4ce71dcf7428e7e4c0b15519500bb",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_reportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_totalofreportablesegmentsandothersmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "8195bf0cf67f4b0c06351171bb563f5d203b2709394c6d21b6d2e28469cbb988",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_totalofreportablesegmentsandothersmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ecc9bac3f2010ee06c41023b765b151650d27686ba31fb51c89f6cb48f99c36b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "increase_in_property_plant_and_equipment_and_intangible_assets_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:interest_expenses_n_o_e_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "f54acfe92fbef9cffaeeb11e021c0dd6e7cd5fdaf870d109f74ab09b18d678b6",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "interest_expenses_n_o_e_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:interest_income_n_o_i_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4744bf881c7134bc2d09769396934da02154c7cf6db3489a4ea327fe1b0842b3",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "interest_income_n_o_i_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_assets_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d24f0cef37deacbaa54acab3b533e17ba3032964ef9d2c8e4a74d59181348fa4",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_assets_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_assets_per_share_summary_of_business_results_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "94f57a89ea6e64a24ec2da309c26e48a57265e863c68ab1ee1b6599f8f222015",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_assets_per_share_summary_of_business_results_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_assets_per_share_summary_of_business_results_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5dc8068ba0fc4a77d9a9fbbbaaa61ad124384019e66532e0abd28e3acb076868",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_assets_per_share_summary_of_business_results_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_cash_provided_by_used_in_financing_activities_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ecc390ddf37903559ff4c49f55b101fdbf21c759d426ec933e972f8ec7f9f52b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_cash_provided_by_used_in_financing_activities_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_cash_provided_by_used_in_investment_activities_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0281f648168bd02cbb4e27051ad2401c1f817dd5c4d6eb0cc14297d456c2db0e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_cash_provided_by_used_in_investment_activities_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_cash_provided_by_used_in_operating_activities_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a119c9b2837f72c97a5a8f39904ff339592f8869f21e105a92bf638a2cad1c88",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_cash_provided_by_used_in_operating_activities_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_sales_of_completed_construction_contracts_c_n_s_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "bd9609863eaf7b4fa6bc61f40eee9ac47015d0adcf1fd06d9891bf0d44ba655a",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_sales_of_completed_construction_contracts_c_n_s_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:net_sales_of_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "593a5e119a73cba1b3a78da328650e99b9eb2515c86da824d1a6359b477e105a",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "net_sales_of_completed_construction_contracts_c_n_s_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:non_operating_expenses_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "134f6a8515cb0311a2173a8997294fd0bff1122755ab25557e3b2a7de9c22565",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "non_operating_expenses_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:non_operating_income_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "980fefee86b3b2a4a85b4ebfaff90ce4542df0c2088ac0be7b135f4bddcb9ff9",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "non_operating_income_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "0c4450b0c39af6ce907fe15a27f9756af5cf8fb5166f9e04bc71e37090021f39",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_corporatesharedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9aad4d64856b52003de6fe5ffd431c1ca62b544261c2625534b5d9ef606ea268",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_corporatesharedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ff1c3c980e185c4be11101b0356c741d9608d9bb05716b46a6e788526079cd2b",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_nonconsolidatedmember_corporatesharedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "56e056f64513bd54e45c84e0be2cbd65df389e09a449396d469b096fb24d5192",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_nonconsolidatedmember_corporatesharedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4d6de4ca1dd8b881a300439c2edbbbc47d206a3250b930772280596366951bd8",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "6ba2416ed0f1b854ca2e2421e3a610238fe083b675bd7d3ab7666262bc0416da",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d59da19bd49dfdef0b531b8418ff8135e0879b090f075275871a61f2da8b2a8c",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "9e0a940dfa625022c3ed4b8f2df43917850dbb18bf35cbc70dbbd39c70ea7100",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "591743c28c995978b00826f1e8130b7d092c033f436f53bc1b91fac65a8ac285",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "number_of_employees_currentyearinstant_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:payout_ratio_summary_of_business_results_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "c020e5243a50f4f34d1ac451d810d2e565355d85b67e033ec804913520cbe858",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "payout_ratio_summary_of_business_results_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:price_earnings_ratio_summary_of_business_results_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "5d2939b348210b2f3a9a73d261cc91b1011937f6ba13d163c468cd119d3fe17e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "price_earnings_ratio_summary_of_business_results_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:price_earnings_ratio_summary_of_business_results_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ba1bea4ec74be0356cb4f398181e3585ae51561fe72ccb02d5196b81ccdc4eca",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "price_earnings_ratio_summary_of_business_results_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:profit_loss_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "fddc4f30eb9377a2d7984c3273eb264fef783cfec5ea278ad9c3ba636af6d665",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "profit_loss_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:profit_loss_attributable_to_owners_of_parent_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "83f1fcc7b8a02f295a9532f805e94281a06f5c68058fee678a099c30440a295d",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "profit_loss_attributable_to_owners_of_parent_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:rate_of_return_on_equity_summary_of_business_results_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "4ab6f0b7253305caed9cb37b5fabd0203822b53b89fd6066aee2cf3059cf0082",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "rate_of_return_on_equity_summary_of_business_results_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:rate_of_return_on_equity_summary_of_business_results_currentyearduration_nonconsolidatedmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "1cb3ee696c65a82429637843e6e220d4af92ffd000e8db5c0926e9cf3b6f1a4e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "rate_of_return_on_equity_summary_of_business_results_currentyearduration_nonconsolidatedmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:research_and_development_expenses_included_in_general_and_administrative_expenses_and_manufacturing_cost_for_current_period_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "338d0018ac6e5102823f9fcdcc7ece41325e8cacee42af3e8b72f93db250341c",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "research_and_development_expenses_included_in_general_and_administrative_expenses_and_manufacturing_cost_for_current_period_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:research_and_development_expenses_research_and_development_activities_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "212df2f32921ad51a89ca4851dc02c9e753b086939ff0cad7047985a0d8b504a",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "research_and_development_expenses_research_and_development_activities_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:research_and_development_expenses_research_and_development_activities_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "76921e4db674176a40f0e351bb386a231563bcbb2d16480b67ed5e36b18c77d5",
+      "points": 8,
+      "company": "ANDO_HAZAMA",
+      "metric": "research_and_development_expenses_research_and_development_activities_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "ee91bed329bcd23c03bf1facd700729dbdf5ecf3222d5e884be74ef7d3c683a5",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_reportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "7c5298fbb2f2b9ad3ed5c07fdba562619451d805cd71fd8d374bab2cce74f43c",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_reportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "dcdac95f94eac8ba1cb66f900b4ae7d1454dfa87212de9aefa2ee9a76be22a8d",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000buildingconstructionreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "50b2a3dbf6cac729e3514988efd2557d64743be8789351c3b077ef90e5a6c72e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000civilengineeringreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "aaaea57410318ebbf539282b1a194695bd5c87806e8f8ee9c9abcfcbccad968e",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_jpcrp030000_asr_e00317_000consolidatedsubsidiariesreportablesegmentsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:selling_general_and_administrative_expenses_currentyearduration@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "a2f4a5eb70b0ddd0e1a8e454e6a04627c7e0ae59eeadb7c2eb1e090dc750e350",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "selling_general_and_administrative_expenses_currentyearduration",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "ANDO_HAZAMA:shareholders_equity_currentyearinstant@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "46117c6a6ff8f56dcd8d1af6ba32300abf07e9536859e27c53fe6826772b0e26",
+      "points": 11,
+      "company": "ANDO_HAZAMA",
+      "metric": "shareholders_equity_currentyearinstant",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    }
+  },
+  "retainedNonNumericSeries": {
+    "ANDO_HAZAMA:revenues_from_external_customers_currentyearduration_reconcilingitemsmember@FY2015_FY2025_APPROVED224_20261025": {
+      "hash": "d6810dc6816cc08426ff5ceacdb5412c942669a80442b7e4ad9be504a82e862d",
+      "points": 0,
+      "company": "ANDO_HAZAMA",
+      "metric": "revenues_from_external_customers_currentyearduration_reconcilingitemsmember",
+      "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
     }
   }
 }
