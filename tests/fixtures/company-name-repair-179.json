@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "NISHIMATSU:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:orders_total_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:orders_building_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:orders_civil_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:orders_total_standalone@FY2015_FY2025_REPORTED_ORDERS",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_revenue_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_revenue_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_revenue_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_government_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_government_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_government_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_private_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_private_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_domestic_private_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_overseas_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_overseas_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_overseas_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_cost_consolidated@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_cost_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_gross_profit_consolidated@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_gross_profit_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_government_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_government_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_government_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_private_building_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_private_civil_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_private_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:completed_work_revenue_total_standalone@FY2015_FY2025_REPORTED_COMPLETED",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_beginning_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_beginning_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_beginning_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_end_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_end_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:backlog_end_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_beginning_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_beginning_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_beginning_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_government_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_government_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_government_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_private_building_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_private_civil_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_private_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:backlog_end_total_standalone@FY2015_FY2025_REPORTED_BACKLOG",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_03415f2655_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_0a7b57b7b3_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_109bd4eb00_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_11bdda3f1c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_532305ba7a_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_8a88dd304d_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 7
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_accefa4f51_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_c98f2a6a01_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_depreciation_faa9e1ef59_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_03415f2655_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_0a7b57b7b3_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_109bd4eb00_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_11bdda3f1c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_532305ba7a_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_8a88dd304d_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 7
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_accefa4f51_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_c98f2a6a01_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_external_sales_faa9e1ef59_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_03415f2655_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_109bd4eb00_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_11bdda3f1c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 4
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_532305ba7a_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_58bf4e0cf9_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_8a88dd304d_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 7
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_accefa4f51_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_internal_sales_c98f2a6a01_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_03415f2655_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_0a7b57b7b3_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_109bd4eb00_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_11bdda3f1c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_532305ba7a_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_58bf4e0cf9_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_8a88dd304d_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 7
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_accefa4f51_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_c98f2a6a01_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_profit_faa9e1ef59_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_03415f2655_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_0a7b57b7b3_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_109bd4eb00_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_11bdda3f1c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_532305ba7a_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_8a88dd304d_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 7
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_accefa4f51_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 1
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_c98f2a6a01_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:segment_total_sales_faa9e1ef59_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_building_total_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_civil_total_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_domestic_building_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_domestic_civil_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_domestic_construction_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_overseas_building_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 10
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_overseas_civil_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 10
+  },
+  {
+    "id": "NISHIMATSU:supplementary_gross_profit_overseas_construction_standalone_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_assets_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_assets_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_assets_58bf4e0cf9_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_depreciation_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_depreciation_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_external_sales_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_external_sales_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_fixed_asset_increase_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_fixed_asset_increase_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_profit_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_profit_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_profit_58bf4e0cf9_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_total_sales_18e6ab0e0e_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:segment_total_sales_236eedf87c_reported@FY2015_FY2025_REPORTED_SEGMENT",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:average_age_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:average_annual_salary_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:average_service_years_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:employees_consolidated@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:employees_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:average_age_standalone_before2016_population_change@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 1
+  },
+  {
+    "id": "ZENITAKA:average_age_standalone_general_career_2016_onwards@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 10
+  },
+  {
+    "id": "ZENITAKA:average_annual_salary_standalone_before2016_population_change@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 1
+  },
+  {
+    "id": "ZENITAKA:average_annual_salary_standalone_general_career_2016_onwards@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 10
+  },
+  {
+    "id": "ZENITAKA:average_service_years_standalone_before2016_population_change@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 1
+  },
+  {
+    "id": "ZENITAKA:average_service_years_standalone_general_career_2016_onwards@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 10
+  },
+  {
+    "id": "ZENITAKA:employees_consolidated@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:employees_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:temporary_employees_consolidated@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:temporary_employees_standalone@FY2015_FY2025_REPORTED_PEOPLE",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:building_orders_competitive_ratio@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:building_orders_special_contract_ratio@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:civil_orders_competitive_ratio@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:civil_orders_special_contract_ratio@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:bps_consolidated_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:bps_consolidated_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 2
+  },
+  {
+    "id": "NISHIMATSU:bps_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:bps_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 2
+  },
+  {
+    "id": "NISHIMATSU:dividend_per_share_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:dividend_per_share_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 2
+  },
+  {
+    "id": "NISHIMATSU:eps_consolidated_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:eps_consolidated_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 2
+  },
+  {
+    "id": "NISHIMATSU:eps_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 9
+  },
+  {
+    "id": "NISHIMATSU:eps_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 2
+  },
+  {
+    "id": "NISHIMATSU:equity_ratio_consolidated_reported_after2018_tax_presentation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:equity_ratio_consolidated_reported_before2018_tax_presentation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:equity_ratio_standalone_reported_after2018_tax_presentation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 8
+  },
+  {
+    "id": "NISHIMATSU:equity_ratio_standalone_reported_before2018_tax_presentation@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 3
+  },
+  {
+    "id": "NISHIMATSU:payout_ratio_standalone_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:roe_consolidated_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:roe_standalone_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_gross_profit_margin_consolidated_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:completed_work_gross_profit_margin_standalone_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:operating_profit_margin_consolidated_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "NISHIMATSU:operating_profit_margin_standalone_reported@FY2015_FY2025_REPORTED_ISSUER_RATIO",
+    "companyId": "NISHIMATSU",
+    "before": "松井建設",
+    "after": "西松建設",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:bps_consolidated_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 9
+  },
+  {
+    "id": "ZENITAKA:bps_consolidated_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 2
+  },
+  {
+    "id": "ZENITAKA:bps_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 9
+  },
+  {
+    "id": "ZENITAKA:bps_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 2
+  },
+  {
+    "id": "ZENITAKA:dividend_per_share_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 9
+  },
+  {
+    "id": "ZENITAKA:dividend_per_share_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 2
+  },
+  {
+    "id": "ZENITAKA:eps_consolidated_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 9
+  },
+  {
+    "id": "ZENITAKA:eps_consolidated_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 2
+  },
+  {
+    "id": "ZENITAKA:eps_standalone_reported_after2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 9
+  },
+  {
+    "id": "ZENITAKA:eps_standalone_reported_before2017_share_consolidation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 2
+  },
+  {
+    "id": "ZENITAKA:equity_ratio_consolidated_reported_after2018_tax_presentation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 8
+  },
+  {
+    "id": "ZENITAKA:equity_ratio_consolidated_reported_before2018_tax_presentation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 3
+  },
+  {
+    "id": "ZENITAKA:equity_ratio_standalone_reported_after2018_tax_presentation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 8
+  },
+  {
+    "id": "ZENITAKA:equity_ratio_standalone_reported_before2018_tax_presentation@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 3
+  },
+  {
+    "id": "ZENITAKA:payout_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:price_earnings_ratio_consolidated_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:price_earnings_ratio_standalone_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:roe_consolidated_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:roe_standalone_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:doe_consolidated_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  },
+  {
+    "id": "ZENITAKA:operating_profit_margin_consolidated_reported@FY2015_FY2025_REPORTED_RATIO",
+    "companyId": "ZENITAKA",
+    "before": "松井建設",
+    "after": "錢高組",
+    "points": 11
+  }
+]

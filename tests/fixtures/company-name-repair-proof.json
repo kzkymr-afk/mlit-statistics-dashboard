@@ -1,0 +1,21 @@
+{
+  "repairedSeries": 179,
+  "repairedPointCount": 1483,
+  "currentSeries": 1111,
+  "unaffectedCurrentSeriesExactlyUnchanged": 932,
+  "published840HashesExactlyUnchanged": true,
+  "allSourceSeries": 960,
+  "all9927SourcePointObjectsExactlyUnchanged": true,
+  "sourceOther781SeriesExactlyUnchanged": true,
+  "onlyAllowedDelta": [
+    "179payload.companyName",
+    "179payload point Source-snapshot reference refresh",
+    "required wrapper/root hashes"
+  ],
+  "allNumbersIDsPeriodsUnitsScopesEvidenceRestrictionsUnchanged": true,
+  "currentNameMismatchCount": 0,
+  "sourceNameMismatchCount": 0,
+  "northFY2020HoldAndFY2021BoundaryUnchanged": true,
+  "oldCandidateGzipRetained": true,
+  "oldSourceSnapshotRetained": true
+}

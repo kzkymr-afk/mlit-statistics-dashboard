@@ -1,0 +1,288 @@
+[
+  {
+    "fiscalYear": 2015,
+    "exchangeEffect": -461.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 49,
+      "bbox": [
+        489.4,
+        193.65778,
+        511.9,
+        202.64878
+      ],
+      "raw": "△461",
+      "row": "現金及び現金同等物に係る換算差額267△461",
+      "quote": "                                                           EDINET提出書類\n                                                     東亜建設工業株式会社(E00080)\n                                                            有価証券報告書\n                                                   (単位：百万円)\n                        前連結会計年度                当連結会計年度\n                      (自 平成26年４月１日           (自 平成27年４月１日\n                       至 平成27年３月31日)          至 平成28年３月31日)\n財務活動によるキャッシュ・フロー\n  短期借入金の純増減額（△は減少）                 △1,480                  △14\n  長期借入れによる収入                        3,745                 6,477\n  長期借入金の返済による支出                    △5,271                △5,839\n  自己株式の取得による支出                        △0                    △0\n  配当金の支払額                           △415                  △416\n  その他                               △141                  △141\n  財務活動によるキャッシュ・フロー                 △3,563                    65\n現金及び現金同等物に係る換算差額                       267                △461\n現金及び現金同等物の増減額（△は減少）               △20,105                16,986\n現金及び現金同等物の期首残高                      43,014               22,909\n現金及び現金同等物の期末残高                 ※１   22,909          ※１   39,896\n\n\n\n\n                      49/112\n"
+    },
+    "netChange": 16986.0,
+    "cashBeginning": 22909.0,
+    "cashEnd": 39896.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 1.0,
+    "endMinusBeginningMinusNetChange": 1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2016,
+    "exchangeEffect": -37.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 51,
+      "bbox": [
+        493.9,
+        193.430881,
+        511.9,
+        202.421881
+      ],
+      "raw": "△37",
+      "row": "現金及び現金同等物に係る換算差額△461△37",
+      "quote": "                                                           EDINET提出書類\n                                                     東亜建設工業株式会社(E00080)\n                                                            有価証券報告書\n                                                   (単位：百万円)\n                        前連結会計年度                当連結会計年度\n                      (自 平成27年４月１日           (自 平成28年４月１日\n                       至 平成28年３月31日)          至 平成29年３月31日)\n財務活動によるキャッシュ・フロー\n  短期借入金の純増減額（△は減少）                    △14                  87\n  長期借入れによる収入                         6,477              4,947\n  長期借入金の返済による支出                     △5,839             △5,744\n  自己株式の取得による支出                         △0                 △2\n  配当金の支払額                            △416               △832\n  その他                                △141                △94\n  財務活動によるキャッシュ・フロー                      65              △1,639\n現金及び現金同等物に係る換算差額                     △461                  △37\n現金及び現金同等物の増減額（△は減少）                 16,986             △11,709\n現金及び現金同等物の期首残高                      22,909               39,896\n現金及び現金同等物の期末残高                 ※1   39,896          ※1   28,187\n\n\n\n\n                      51/104\n"
+    },
+    "netChange": -11709.0,
+    "cashBeginning": 39896.0,
+    "cashEnd": 28187.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 1.0,
+    "endMinusBeginningMinusNetChange": 0.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2017,
+    "exchangeEffect": -74.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 52,
+      "bbox": [
+        493.9,
+        193.430881,
+        511.9,
+        202.421881
+      ],
+      "raw": "△74",
+      "row": "現金及び現金同等物に係る換算差額△37△74",
+      "quote": "                                                           EDINET提出書類\n                                                     東亜建設工業株式会社(E00080)\n                                                            有価証券報告書\n                                                   (単位：百万円)\n                        前連結会計年度                当連結会計年度\n                      (自 平成28年４月１日           (自 平成29年４月１日\n                       至 平成29年３月31日)          至 平成30年３月31日)\n財務活動によるキャッシュ・フロー\n  短期借入金の純増減額（△は減少）                    87                     52\n  長期借入れによる収入                       4,947                  4,920\n  長期借入金の返済による支出                   △5,744                 △5,535\n  自己株式の取得による支出                       △2                     △1\n  配当金の支払額                          △832                     △0\n  その他                               △94                   △109\n  財務活動によるキャッシュ・フロー                 △1,639                 △674\n現金及び現金同等物に係る換算差額                      △37                  △74\n現金及び現金同等物の増減額（△は減少）               △11,709                 8,464\n現金及び現金同等物の期首残高                      39,896               28,187\n現金及び現金同等物の期末残高                 ※1   28,187          ※1   36,652\n\n\n\n\n                      52/107\n"
+    },
+    "netChange": 8464.0,
+    "cashBeginning": 28187.0,
+    "cashEnd": 36652.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 2.0,
+    "endMinusBeginningMinusNetChange": 1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2018,
+    "exchangeEffect": 34.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 54,
+      "bbox": [
+        494.95001,
+        193.657751,
+        503.95001,
+        202.648751
+      ],
+      "raw": "34",
+      "row": "現金及び現金同等物に係る換算差額△7434",
+      "quote": "                                                                EDINET提出書類\n                                                          東亜建設工業株式会社(E00080)\n                                                                 有価証券報告書\n                                                     (単位：百万円)\n                        前連結会計年度                 当連結会計年度\n                      (自 2017年４月１日            (自 2018年４月１日\n                       至 2018年３月31日)           至 2019年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                        52                  242\n 長期借入れによる収入                           4,920                4,790\n 長期借入金の返済による支出                       △5,535               △5,412\n 自己株式の取得による支出                           △1                   △1\n 配当金の支払額                                △0                 △418\n その他                                  △109                 △243\n 財務活動によるキャッシュ・フロー                     △674                △1,042\n現金及び現金同等物に係る換算差額                       △74                     34\n現金及び現金同等物の増減額（△は減少）                   8,464               △4,852\n現金及び現金同等物の期首残高                       28,187                36,652\n現金及び現金同等物の期末残高                  ※1   36,652          ※1    31,799\n\n\n\n\n                       54/112\n"
+    },
+    "netChange": -4852.0,
+    "cashBeginning": 36652.0,
+    "cashEnd": 31799.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 1.0,
+    "endMinusBeginningMinusNetChange": -1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2019,
+    "exchangeEffect": -71.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 59,
+      "bbox": [
+        485.95001,
+        220.657751,
+        503.95001,
+        229.648751
+      ],
+      "raw": "△71",
+      "row": "現金及び現金同等物に係る換算差額34△71",
+      "quote": "                                                                 EDINET提出書類\n                                                           東亜建設工業株式会社(E00080)\n                                                                  有価証券報告書\n                                                      (単位：百万円)\n                        前連結会計年度                  当連結会計年度\n                      (自 2018年４月１日             (自 2019年４月１日\n                       至 2019年３月31日)            至 2020年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                       242                 △122\n 長期借入れによる収入                           4,790                 4,580\n 長期借入金の返済による支出                       △5,412                △5,238\n 社債の発行による収入                              −                  7,000\n 自己株式の処分による収入                            −                    129\n 自己株式の取得による支出                           △1                 △2,130\n 配当金の支払額                              △418                  △624\n その他                                  △243                  △220\n 財務活動によるキャッシュ・フロー                    △1,042                  3,373\n現金及び現金同等物に係る換算差額                          34                  △71\n現金及び現金同等物の増減額（△は減少）                  △4,852                 11,946\n現金及び現金同等物の期首残高                        36,652                31,799\n現金及び現金同等物の期末残高                  ※1    31,799          ※1    43,746\n\n\n\n\n                       59/120\n"
+    },
+    "netChange": 11946.0,
+    "cashBeginning": 31799.0,
+    "cashEnd": 43746.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 1.0,
+    "endMinusBeginningMinusNetChange": 1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2020,
+    "exchangeEffect": 77.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 61,
+      "bbox": [
+        494.95001,
+        220.657751,
+        503.95001,
+        229.648751
+      ],
+      "raw": "77",
+      "row": "現金及び現金同等物に係る換算差額△7177",
+      "quote": "                                                             EDINET提出書類\n                                                       東亜建設工業株式会社(E00080)\n                                                              有価証券報告書\n                                                     (単位：百万円)\n                        前連結会計年度                 当連結会計年度\n                      (自 2019年４月１日            (自 2020年４月１日\n                       至 2020年３月31日)           至 2021年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                     △122              △4,520\n 長期借入れによる収入                           4,580              4,900\n 長期借入金の返済による支出                       △5,238             △6,100\n 社債の発行による収入                           7,000                 −\n 自己株式の処分による収入                           129                 −\n 自己株式の取得による支出                        △2,130             △1,194\n 配当金の支払額                              △624               △981\n その他                                  △220               △358\n 財務活動によるキャッシュ・フロー                     3,373              △8,254\n現金及び現金同等物に係る換算差額                       △71                    77\n現金及び現金同等物の増減額（△は減少）                  11,946             △11,436\n現金及び現金同等物の期首残高                       31,799               43,746\n現金及び現金同等物の期末残高                  ※1   43,746          ※1   32,310\n\n\n\n\n                       61/125\n"
+    },
+    "netChange": -11436.0,
+    "cashBeginning": 43746.0,
+    "cashEnd": 32310.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": -1.0,
+    "endMinusBeginningMinusNetChange": 0.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2021,
+    "exchangeEffect": 219.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 62,
+      "bbox": [
+        490.45001,
+        193.657751,
+        503.95001,
+        202.648751
+      ],
+      "raw": "219",
+      "row": "現金及び現金同等物に係る換算差額77219",
+      "quote": "                                                                EDINET提出書類\n                                                          東亜建設工業株式会社(E00080)\n                                                                 有価証券報告書\n                                                     (単位：百万円)\n                        前連結会計年度                 当連結会計年度\n                      (自 2020年４月１日            (自 2021年４月１日\n                       至 2021年３月31日)           至 2022年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                  △4,520                  9,801\n 長期借入れによる収入                         4,900                  4,010\n 長期借入金の返済による支出                     △6,100                 △5,749\n 自己株式の取得による支出                      △1,194                 △1,306\n 配当金の支払額                            △981                  △1,531\n その他                                △358                   △672\n 財務活動によるキャッシュ・フロー                   △8,254                  4,550\n現金及び現金同等物に係る換算差額                         77                   219\n現金及び現金同等物の増減額（△は減少）                △11,436                  △293\n現金及び現金同等物の期首残高                       43,746                32,310\n現金及び現金同等物の期末残高                  ※1   32,310          ※1    32,017\n\n\n\n\n                       62/131\n"
+    },
+    "netChange": -293.0,
+    "cashBeginning": 32310.0,
+    "cashEnd": 32017.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 0.0,
+    "endMinusBeginningMinusNetChange": 0.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2022,
+    "exchangeEffect": 63.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 76,
+      "bbox": [
+        494.95001,
+        240.657751,
+        503.95001,
+        249.648751
+      ],
+      "raw": "63",
+      "row": "現金及び現金同等物に係る換算差額21963",
+      "quote": "                                                                  EDINET提出書類\n                                                            東亜建設工業株式会社(E00080)\n                                                                   有価証券報告書\n                                                       (単位：百万円)\n                          前連結会計年度                 当連結会計年度\n                        (自 2021年４月１日            (自 2022年４月１日\n                         至 2022年３月31日)           至 2023年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                       9,801                12,221\n コマーシャル・ペーパーの純増減額（△は減\n                                           −                  6,000\n 少）\n 長期借入れによる収入                             4,010                3,960\n 長期借入金の返済による支出                         △5,749               △4,958\n 自己株式の処分による収入                              −                 1,193\n 自己株式の取得による支出                          △1,306               △3,042\n 配当金の支払額                               △1,531               △1,964\n 非支配株主への配当金の支払額                            −                  △21\n その他                                    △672                 △665\n 財務活動によるキャッシュ・フロー                       4,550                12,723\n現金及び現金同等物に係る換算差額                          219                    63\n現金及び現金同等物の増減額（△は減少）                     △293                △3,738\n現金及び現金同等物の期首残高                         32,310                32,017\n現金及び現金同等物の期末残高                    ※1   32,017          ※1    28,278\n\n\n\n\n                         76/144\n"
+    },
+    "netChange": -3738.0,
+    "cashBeginning": 32017.0,
+    "cashEnd": 28278.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": -1.0,
+    "endMinusBeginningMinusNetChange": -1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2023,
+    "exchangeEffect": 548.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 78,
+      "bbox": [
+        490.45001,
+        254.157751,
+        503.95001,
+        263.148751
+      ],
+      "raw": "548",
+      "row": "現金及び現金同等物に係る換算差額63548",
+      "quote": "                                                                   EDINET提出書類\n                                                             東亜建設工業株式会社(E00080)\n                                                                    有価証券報告書\n                                                        (単位：百万円)\n                          前連結会計年度                  当連結会計年度\n                        (自 2022年４月１日             (自 2023年４月１日\n                         至 2023年３月31日)            至 2024年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                       12,221                 △606\n コマーシャル・ペーパーの純増減額（△は減\n                                         6,000                 2,000\n 少）\n 長期借入れによる収入                             3,960                 3,750\n 長期借入金の返済による支出                         △4,958                △4,561\n 自己株式の処分による収入                           1,193                   837\n 自己株式の取得による支出                          △3,042                △7,469\n 配当金の支払額                               △1,964                △2,004\n 非支配株主からの払込みによる収入                          −                    259\n 非支配株主への配当金の支払額                          △21                     −\n その他                                    △665                  △698\n 財務活動によるキャッシュ・フロー                       12,723               △8,493\n現金及び現金同等物に係る換算差額                            63                   548\n現金及び現金同等物の増減額（△は減少）                    △3,738                 28,765\n現金及び現金同等物の期首残高                          32,017                28,278\n現金及び現金同等物の期末残高                    ※1    28,278          ※1    57,044\n\n\n\n\n                         78/148\n"
+    },
+    "netChange": 28765.0,
+    "cashBeginning": 28278.0,
+    "cashEnd": 57044.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 1.0,
+    "endMinusBeginningMinusNetChange": 1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2024,
+    "exchangeEffect": -48.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 95,
+      "bbox": [
+        485.95001,
+        254.157751,
+        503.95001,
+        263.148751
+      ],
+      "raw": "△48",
+      "row": "現金及び現金同等物に係る換算差額548△48",
+      "quote": "                                                                EDINET提出書類\n                                                          東亜建設工業株式会社(E00080)\n                                                                 有価証券報告書\n                                                        (単位：百万円)\n                          前連結会計年度                  当連結会計年度\n                        (自 2023年４月１日             (自 2024年４月１日\n                         至 2024年３月31日)            至 2025年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                        △606                △253\n コマーシャル・ペーパーの純増減額（△は減\n                                         2,000             △2,000\n 少）\n 長期借入れによる収入                             3,750               4,295\n 長期借入金の返済による支出                         △4,561              △4,278\n 社債の発行による収入                                −                5,000\n 自己株式の処分による収入                             837                 242\n 自己株式の取得による支出                          △7,469               △242\n 配当金の支払額                               △2,004              △3,261\n 非支配株主からの払込みによる収入                         259                  −\n その他                                    △698                △751\n 財務活動によるキャッシュ・フロー                      △8,493               △1,250\n現金及び現金同等物に係る換算差額                           548                 △48\n現金及び現金同等物の増減額（△は減少）                     28,765             △15,460\n現金及び現金同等物の期首残高                          28,278               57,044\n現金及び現金同等物の期末残高                    ※1    57,044          ※1   41,583\n\n\n\n\n                         95/164\n"
+    },
+    "netChange": -15460.0,
+    "cashBeginning": 57044.0,
+    "cashEnd": 41583.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 0.0,
+    "endMinusBeginningMinusNetChange": -1.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  },
+  {
+    "fiscalYear": 2025,
+    "exchangeEffect": 306.0,
+    "exchangeEffectState": "direct_CF_statement_reported_line_verified",
+    "exchangeEffectCell": {
+      "pdfPage": 100,
+      "bbox": [
+        490.45001,
+        260.657751,
+        503.95001,
+        269.648751
+      ],
+      "raw": "306",
+      "row": "現金及び現金同等物に係る換算差額△48306",
+      "quote": "                                                                EDINET提出書類\n                                                          東亜建設工業株式会社(E00080)\n                                                                 有価証券報告書\n                                                        (単位：百万円)\n                           前連結会計年度                 当連結会計年度\n                         (自 2024年４月１日            (自 2025年４月１日\n                          至 2025年３月31日)           至 2026年３月31日)\n財務活動によるキャッシュ・フロー\n 短期借入金の純増減額（△は減少）                       △253              △19,342\n コマーシャル・ペーパーの純増減額（△は減\n                                      △2,000               △6,000\n 少）\n 長期借入れによる収入                            4,295                4,125\n 長期借入金の返済による支出                        △4,278               △4,140\n 社債の発行による収入                            5,000                   −\n 自己株式の処分による収入                            242                6,919\n 自己株式の取得による支出                          △242                △6,920\n 自己株式取得目的の金銭の信託の設定による支\n                                           −               △4,000\n 出\n 配当金の支払額                              △3,261               △9,248\n その他                                   △751                 △513\n 財務活動によるキャッシュ・フロー                      △1,250              △39,122\n現金及び現金同等物に係る換算差額                          △48                  306\n現金及び現金同等物の増減額（△は減少）                   △15,460                7,648\n現金及び現金同等物の期首残高                          57,044              41,583\n現金及び現金同等物の期末残高                     ※1   41,583          ※1  49,231\n\n\n\n\n                         100/169\n"
+    },
+    "netChange": 7648.0,
+    "cashBeginning": 41583.0,
+    "cashEnd": 49231.0,
+    "scopeChangeFacts": [],
+    "flowSumMinusNetChange": 0.0,
+    "endMinusBeginningMinusNetChange": 0.0,
+    "generatedCorrectionApplied": false,
+    "missingScopeChangeNotZero": true,
+    "notBankDepositsSubstitution": true
+  }
+]

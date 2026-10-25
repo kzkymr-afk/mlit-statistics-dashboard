@@ -1,0 +1,112 @@
+[
+  {
+    "fiscalYear": 2015,
+    "reportedCompletedWorkCostTotal": 60824.952,
+    "fourComponentsSum": 60824.952,
+    "totalMinusComponents": 0.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 78,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2016,
+    "reportedCompletedWorkCostTotal": 58822.232,
+    "fourComponentsSum": 58822.232,
+    "totalMinusComponents": 0.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 77,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2017,
+    "reportedCompletedWorkCostTotal": 71141.511,
+    "fourComponentsSum": 71141.51,
+    "totalMinusComponents": 0.001,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 80,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2018,
+    "reportedCompletedWorkCostTotal": 64970.098,
+    "fourComponentsSum": 64970.097,
+    "totalMinusComponents": 0.001,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 81,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2019,
+    "reportedCompletedWorkCostTotal": 51202.074,
+    "fourComponentsSum": 51202.072,
+    "totalMinusComponents": 0.002,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 82,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2020,
+    "reportedCompletedWorkCostTotal": 65871.982,
+    "fourComponentsSum": 65871.981,
+    "totalMinusComponents": 0.001,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 81,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2021,
+    "reportedCompletedWorkCostTotal": 51588.0,
+    "fourComponentsSum": 51586.0,
+    "totalMinusComponents": 2.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 86,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2022,
+    "reportedCompletedWorkCostTotal": 73536.0,
+    "fourComponentsSum": 73535.0,
+    "totalMinusComponents": 1.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 87,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2023,
+    "reportedCompletedWorkCostTotal": 71987.0,
+    "fourComponentsSum": 71985.0,
+    "totalMinusComponents": 2.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 90,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2024,
+    "reportedCompletedWorkCostTotal": 68405.0,
+    "fourComponentsSum": 68402.0,
+    "totalMinusComponents": 3.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 99,
+    "exactDecimalResidual": true
+  },
+  {
+    "fiscalYear": 2025,
+    "reportedCompletedWorkCostTotal": 64347.0,
+    "fourComponentsSum": 64345.0,
+    "totalMinusComponents": 2.0,
+    "sumNotCorrected": true,
+    "nestedLaborAndOverheadPersonnelNotAddedAgain": true,
+    "sourcePDFPage": 96,
+    "exactDecimalResidual": true
+  }
+]

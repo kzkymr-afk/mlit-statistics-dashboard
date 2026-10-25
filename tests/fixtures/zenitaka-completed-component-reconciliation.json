@@ -1,0 +1,123 @@
+[
+  {
+    "fiscalYear": 2015,
+    "completedSales": 112701.0,
+    "completedCost": 104187.0,
+    "completedGrossProfit": 8513.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": 0.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2016,
+    "completedSales": 109255.0,
+    "completedCost": 100763.0,
+    "completedGrossProfit": 8491.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2017,
+    "completedSales": 122996.0,
+    "completedCost": 111912.0,
+    "completedGrossProfit": 11084.0,
+    "salesMinusCostMinusGrossProfit": 0.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2018,
+    "completedSales": 125461.0,
+    "completedCost": 115673.0,
+    "completedGrossProfit": 9787.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": 0.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2019,
+    "completedSales": 130481.0,
+    "completedCost": 120293.0,
+    "completedGrossProfit": 10187.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2020,
+    "completedSales": 102710.0,
+    "completedCost": 94542.0,
+    "completedGrossProfit": 8168.0,
+    "salesMinusCostMinusGrossProfit": 0.0,
+    "completedAndRealEstateCostMinusTotal": 0.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2021,
+    "completedSales": 99305.0,
+    "completedCost": 92720.0,
+    "completedGrossProfit": 6585.0,
+    "salesMinusCostMinusGrossProfit": 0.0,
+    "completedAndRealEstateCostMinusTotal": 0.0,
+    "completedAndRealEstateGrossProfitMinusTotal": 0.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2022,
+    "completedSales": 105256.0,
+    "completedCost": 99418.0,
+    "completedGrossProfit": 5838.0,
+    "salesMinusCostMinusGrossProfit": 0.0,
+    "completedAndRealEstateCostMinusTotal": 0.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2023,
+    "completedSales": 118285.0,
+    "completedCost": 110460.0,
+    "completedGrossProfit": 7824.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2024,
+    "completedSales": 118204.0,
+    "completedCost": 109363.0,
+    "completedGrossProfit": 8840.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": -1.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  },
+  {
+    "fiscalYear": 2025,
+    "completedSales": 122803.0,
+    "completedCost": 111803.0,
+    "completedGrossProfit": 10999.0,
+    "salesMinusCostMinusGrossProfit": 1.0,
+    "completedAndRealEstateCostMinusTotal": 0.0,
+    "completedAndRealEstateGrossProfitMinusTotal": -1.0,
+    "noGeneratedCorrection": true,
+    "otherNativeComponentsNotAdoptedAsNewMetrics": true
+  }
+]
