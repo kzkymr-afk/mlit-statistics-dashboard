@@ -26,7 +26,8 @@ export function pointKey(p,reference=false){return reference?String(p.year):p.pe
 export function pointLabel(p){if(p.asOf&&p.periodStart===p.periodEnd)return p.timeLabel;return p.periodStart&&p.periodEnd?`${p.periodStart} ～ ${p.periodEnd}`:p.timeLabel||p.timeCode||`${p.year}年`;}
 export function periodRows(series){return [...new Set(series.flatMap(s=>s.points.map(p=>pointKey(p))))].sort();}
 export function reviewSpanNote(series){
- const policyNotes=[...new Set(series.flatMap(s=>(s.originalSeries||[]).flatMap(o=>o.policyNotes||[])))];
+ if(series.length&&series.every(s=>s.type==='reported_state'))return '原資料の表示状態です。数値0への変換・補間・集計・相関は行いません。';
+ const policyNotes=[...new Set(series.flatMap(s=>(s.originalSeries||[]).flatMap(o=>(o.policyNotes||[]).map(n=>o.registrationStatus==='registered_local_unpublished'?n.replace(/^Source正本登録済み・Atlasローカル反映用。未公開。/,'Source正本登録済み。'):n))))];
  if(policyNotes.length)return "資料に記載された数値の推移です。会計方針の変更前後を同じ条件とみなした指数・相関の計算はしません。 "+policyNotes.join(" ");
  const windows=new Map();
  for(const s of series.filter(s=>s.type==='verified'))for(const o of s.originalSeries||[]){const active=o.points.filter(p=>s.points.some(q=>pointKey(q)===pointKey(p)));if(!active.length)continue;const start=Math.min(...active.map(p=>+p.periodStart.slice(0,4))),end=Math.max(...active.map(p=>+p.periodStart.slice(0,4)));if(Number.isFinite(start)&&Number.isFinite(end))windows.set(`${start}-${end}`,`${start}–${end}年度`);}
@@ -62,7 +63,9 @@ export function correlation(series,from,to){
  if(result.ok&&result.n!==result.commonPeriods.length)return {ok:false,reason:'計算結果と対応期間の件数が一致しません。',n:0};
  return {...result,pairs:(result.commonPeriods||[]).map(t=>t.replace('/', ' ～ ')),excluded:result.omittedPairs||0};
 }
-export function display(p){if(!p)return cellDisplay(p);if(p?.conflict)return {text:'値が競合・保留',state:'held'};if(p?.reference)return cellDisplay(p);if(isNumeric(p))return {text:p.numericValue.toLocaleString('ja-JP'),state:p.status==='extracted'?'raw':'confirmed',detail:p.status==='extracted'?'開示原値・比較未審査':'出典確認済み'};return cellDisplay(p);}
+export function display(p){if(p?.status==='explicit_original_dash'&&p.numericValue===null)return {text:p.rawDisplay||'−',state:'reported_state',detail:'原資料のダッシュ表示。数値0・非開示とは判定しません。'};if(!p)return cellDisplay(p);if(p?.conflict)return {text:'値が競合・保留',state:'held'};if(p?.reference)return cellDisplay(p);if(isNumeric(p))return {text:p.numericValue.toLocaleString('ja-JP'),state:p.status==='extracted'?'raw':'confirmed',detail:p.status==='extracted'?'開示原値・比較未審査':'出典確認済み'};return cellDisplay(p);}
 
 /** Group only same-indicator reviewed series; leave every reference visible separately. */
 export function automaticChartGroups(series){const groups=[];for(const s of series){const group=s.type==='verified'?groups.find(g=>g.every(x=>x.type==='verified'&&x.metricId===s.metricId)&&compatible([...g,s]).ok):null;if(group)group.push(s);else groups.push([s]);}return groups;}
+
+export function makeReportedStates(series,names){return series.map(s=>({id:'state:'+s.id,type:'reported_state',companyId:s.companyId,name:names[s.companyId]||s.companyName,metricId:s.metricId,metricName:s.metricLabelAsDisclosed,unit:s.unit,scope:s.comparisonScope,cycle:s.cycle,quality:'原資料の状態確認済み',originalSeries:[s],points:s.states.map(p=>({year:p.fiscalYear,timeCode:p.periodStart+'/'+p.periodEnd,timeLabel:p.fiscalYear+'年度',periodStart:p.periodStart,periodEnd:p.periodEnd,numericValue:null,value:null,status:p.state,rawDisplay:p.rawDisplay,provenance:p.provenance,implicitNumericZero:false})),calculationAllowed:false}));}

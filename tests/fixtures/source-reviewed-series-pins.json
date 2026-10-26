@@ -1,16 +1,17 @@
 {
   "snapshot": {
-    "priorSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8.json",
-    "priorSHA256": "90271fe50266ef8ecb02e9b8692410b5159bf0472ff7f35b48b048787ef370c8",
-    "sourceSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298.json",
-    "sha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298",
-    "groups": 1361,
-    "points": 13916,
-    "newSeries": 224,
-    "newPoints": 2272,
-    "primaryMaterialsVerified": 337,
+    "priorSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298.json",
+    "priorSHA256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298",
+    "sourceSnapshot": "data/marts/reviewed_annual_financials/series_snapshots/e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954.json",
+    "sha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954",
+    "groups": 1427,
+    "points": 14597,
+    "newSeries": 66,
+    "newPoints": 681,
+    "primaryMaterialsVerified": 351,
     "old1137SeriesUnchanged": true,
-    "sourceCommitPush": false
+    "sourceCommitPush": false,
+    "old1361SeriesUnchanged": true
   },
   "series": {
     "KUMAGAI:completed_work_cost_consolidated@FY2015_FY2025_REPORTED": {
@@ -9524,6 +9525,461 @@
       "company": "ANDO_HAZAMA",
       "metric": "shareholders_equity_currentyearinstant",
       "referenceSnapshotSha256": "60e64bcabb0eaa65a125485a115e4677ddf71bdc842261f74761d1d733b08298"
+    },
+    "SHIMIZU:advertisingexpensessga_currentyearduration_nonconsolidatedmember_04dda82ef432@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "801ea738b19ce32fe747f8d3aa4962215f8a3551e10b038b7dea0db446273f17",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "advertisingexpensessga_currentyearduration_nonconsolidatedmember_04dda82ef432",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:assets_currentyearinstant_f37ebfe3e4d0@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "57e0e7b071e175bcb91fa9b9db3876c44bbe0635e72612a137f952db642bb107",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "assets_currentyearinstant_f37ebfe3e4d0",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:averageageyearsinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_fb0acda838c4@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "f89c79e37de6efe553f07ed00a708402e1dd1535298cd26b7eaa18ed68b15153",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "averageageyearsinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_fb0acda838c4",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:averageannualsalaryinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_bc1a6e09afcc@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "1c5424f564214e5e3c8722f7438c0f169cd1def50b05e517cd88a3c9e2dfadaa",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "averageannualsalaryinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_bc1a6e09afcc",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:averagelengthofserviceyearsinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_8f8d238239c1@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "5754565deff579af4faaa518dd1f6dcf06d4ec58d1c1565fd26807fb40eea49f",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "averagelengthofserviceyearsinformationaboutreportingcompanyinformationaboutemployees_currentyearinstant_nonconsolidatedmember_8f8d238239c1",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:basicearningslosspersharesummaryofbusinessresults_currentyearduration_a3a582a7d293@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "1977941e501b87b844f34bc55bfd8b070b7e1944fadee848fa837d10874aa504",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "basicearningslosspersharesummaryofbusinessresults_currentyearduration_a3a582a7d293",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:basicearningslosspersharesummaryofbusinessresults_currentyearduration_nonconsolidatedmember_5dc2d6feab5e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "286eb62b92571766598d27035177aa39d86b8671b52e0f015fa0ee18af4c1b37",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "basicearningslosspersharesummaryofbusinessresults_currentyearduration_nonconsolidatedmember_5dc2d6feab5e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:cashandcashequivalents_currentyearinstant_786b36be986e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "fef3e92a47168b65bdc1cf4f26236249f586d5bd2a4e00ba2ef632bccf6eb829",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "cashandcashequivalents_currentyearinstant_786b36be986e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:comprehensiveincome_currentyearduration_a96f76517caa@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2a30728c93400c95bcac6bf8e2945c873cb371a89fc27a3c6ee82a954044a57a",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "comprehensiveincome_currentyearduration_a96f76517caa",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:costofsales_currentyearduration_f47a1027b8c1@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "8cb8966601b117e5a7fe260fc0006fdfcbace38aa590bd2818075234a64df19a",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "costofsales_currentyearduration_f47a1027b8c1",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:costofsalesofcompletedconstructioncontractscns_currentyearduration_a353972d3b70@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "e44e4ec6c1a8eb90701a32a95561085c0c57ba0cec134baa2113914848377af3",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "costofsalesofcompletedconstructioncontractscns_currentyearduration_a353972d3b70",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:costofsalesofcompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_37c10bb88fe1@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "bfa4e127bc2d0b292159706bc44e80a530b1a9dd98063cf1542c432bf8a70c65",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "costofsalesofcompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_37c10bb88fe1",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:dividendpaidpersharesummaryofbusinessresults_currentyearduration_nonconsolidatedmember_b543d65e6601@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "390650dcbb4b669aff87deb117f3a980f97ad91d545a87e269cc7d6271317ab3",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "dividendpaidpersharesummaryofbusinessresults_currentyearduration_nonconsolidatedmember_b543d65e6601",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:dividendsincomenoi_currentyearduration_208b0541719a@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "9d385f5105035d8b65f8181343defed4ed226a55f7151b410dc560286981fce9",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "dividendsincomenoi_currentyearduration_208b0541719a",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:entertainmentexpensessga_currentyearduration_nonconsolidatedmember_9ba787eb4381@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "c125a9a3701d6a9d29bbdba1ae71b8513fe7b2bc0cb4b762bc763b409324e1f8",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "entertainmentexpensessga_currentyearduration_nonconsolidatedmember_9ba787eb4381",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:equitytoassetratiosummaryofbusinessresults_currentyearinstant_ba3a1aedc624@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "7e5b246d1c1c77df093a55ddffc17795ba87f215b251afe4c01b6550e36ab685",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "equitytoassetratiosummaryofbusinessresults_currentyearinstant_ba3a1aedc624",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:equitytoassetratiosummaryofbusinessresults_currentyearinstant_nonconsolidatedmember_b079fd815667@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "4a49fe6fe1bdddb5f65eafb150ecf1c4803314357e58979a6b5439923e0ada2c",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "equitytoassetratiosummaryofbusinessresults_currentyearinstant_nonconsolidatedmember_b079fd815667",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:extraordinaryincome_currentyearduration_d07234f67806@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "6e1afd5b8298ec5909c8f6aeb58a297e701062dee07c76e11dabbe0c06937fd6",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "extraordinaryincome_currentyearduration_d07234f67806",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:extraordinaryloss_currentyearduration_daa05444988b@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "cd5f0f1d5ba16570c2cee62b1f6cc884be3581a7ad09889758a9604a0d892645",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "extraordinaryloss_currentyearduration_daa05444988b",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:grossprofit_currentyearduration_71f64344b02e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "e941ea6832c1516f5d4b525d3c4d1dacde5da658d34371ae1fc6014a22e18e42",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "grossprofit_currentyearduration_71f64344b02e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:grossprofitoncompletedconstructioncontractscns_currentyearduration_c64d3167e6dc@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "4e08e1c6a937b41a7987e0dbab7f9678ac2849c974a882102e106010066d9b03",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "grossprofitoncompletedconstructioncontractscns_currentyearduration_c64d3167e6dc",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:grossprofitoncompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_e67f47277af2@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "53a6a0ed270b4afec734e81e1d13d83e056871ec29945b7f0ff6f064d67a1095",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "grossprofitoncompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_e67f47277af2",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:incomebeforeincometaxes_currentyearduration_c9087c043438@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "87f6b5f8cbf5e1ba910320af80b4936b3061316893aa0224c2291e3312a2bafc",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "incomebeforeincometaxes_currentyearduration_c9087c043438",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:incometaxes_currentyearduration_535b94891126@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "fa258b10ef241b81756f61261a6a4838fc2c1ab8d668ce9d3dc9fda4fe5629ad",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "incometaxes_currentyearduration_535b94891126",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:interestexpensesnoe_currentyearduration_995801f3ecce@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "14ecb52f0a310b9fb3dc2c01b0e1e6a2136523a2ef31b83fdc13a924fb3fb42d",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "interestexpensesnoe_currentyearduration_995801f3ecce",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:interestincomenoi_currentyearduration_34185521e12e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "604a9de6a5126343a6df769fa9e9e3f5bea074427fd1c3e581d84af7a4498cc2",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "interestincomenoi_currentyearduration_34185521e12e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netassets_currentyearinstant_191bb0be5611@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "9acc9ae4ef35af289a3de5a1bdd6db09d839ed90f986270cb06c2fae03c09f54",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netassets_currentyearinstant_191bb0be5611",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netassetspersharesummaryofbusinessresults_currentyearinstant_9ef010d3e526@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "293a9d61b3da65abe6ca1d35e587352e5cb96847b2397c00f94b5e7650a6692b",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netassetspersharesummaryofbusinessresults_currentyearinstant_9ef010d3e526",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netassetspersharesummaryofbusinessresults_currentyearinstant_nonconsolidatedmember_6de15b7fbc31@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "49b0241ba66c034f55f21673a5f7f6d34e7c0ccbd1a3e00ab83f44a0727dfd0f",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netassetspersharesummaryofbusinessresults_currentyearinstant_nonconsolidatedmember_6de15b7fbc31",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netcashprovidedbyusedinfinancingactivities_currentyearduration_c2a215e805dc@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "247e93c7dc07191b604033f580d3b9e3f5eb3b062352aaa855aa9fddbcf1de9c",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netcashprovidedbyusedinfinancingactivities_currentyearduration_c2a215e805dc",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netcashprovidedbyusedininvestmentactivities_currentyearduration_500a99cf2de8@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "f702632ef0df3841137edfc19a82d35a73463adae95bd9b6e2db7cd9ce4137af",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netcashprovidedbyusedininvestmentactivities_currentyearduration_500a99cf2de8",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netcashprovidedbyusedinoperatingactivities_currentyearduration_82cf65614f7e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "85d92ddca90811c150f338b6cc27ba4decaec896e7146a9a9ccf6897d278344e",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netcashprovidedbyusedinoperatingactivities_currentyearduration_82cf65614f7e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netsalesofcompletedconstructioncontractscns_currentyearduration_3abd1bf3a037@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "bd02c52fac8979bb02659e01260bca06efbdcfb53dff95f8a4cfbf4e8e7d1807",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netsalesofcompletedconstructioncontractscns_currentyearduration_3abd1bf3a037",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:netsalesofcompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_ab4d4443831c@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "cdef5169d532c591aca3a116ef1152267a41d342b9c5146c10e5a735c9f1a3e7",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "netsalesofcompletedconstructioncontractscns_currentyearduration_nonconsolidatedmember_ab4d4443831c",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:nonoperatingexpenses_currentyearduration_1d028096c80e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "35455ebc9e7e7bfd438b2a1b9e8f7be805db9ea4753b01fe5b6d2f214faec611",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "nonoperatingexpenses_currentyearduration_1d028096c80e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:nonoperatingincome_currentyearduration_4202c00c0f11@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "3b773ad83fea648b62bf3fbfe5fa7dae22e9ac17a3d1d4c8e54e027165125592",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "nonoperatingincome_currentyearduration_4202c00c0f11",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_37cbde3f4bf2@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "182f4a819e4b1660e004066c1d01d8dd20b2e8779ac38ee4808e64aa2ca25885",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_37cbde3f4bf2",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_nonconsolidatedmember_c6bff64ba1a4@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "b57ac004389a35cfcf0cc42ff20936051e57dd1d484e56c727b50ff3c5231cc1",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_nonconsolidatedmember_c6bff64ba1a4",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_nonconsolidatedmember_otheroperatingsegmentsaxismember_b83ea8c2cdda@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "a8da4f762b8247f5585dc2280be0d28596353cf6dcacff6afb0322d897569119",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_nonconsolidatedmember_otheroperatingsegmentsaxismember_b83ea8c2cdda",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_1ccd21c44127@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2fc9f1330028768194e33eb4e81114c21c99a182e0f9424fc40d5c949a9e7306",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_1ccd21c44127",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_6d6deae5d1a4@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2979765fdeb51ab29b38b3b3cec89c9a3e8ba9d96f9e0414dcd0cbff5820c303",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_nonconsolidatedmember_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_6d6deae5d1a4",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_otheroperatingsegmentsaxismember_3947cd919921@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2fc3c0345aae0b3cf543e19808e91ad3e35c2c6149542b82929fc0b45c279e92",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_otheroperatingsegmentsaxismember_3947cd919921",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_f74bf177eaf0@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "b919f49ea355a6000b84486fd4b45c1396692c5f510905483762b69cd779133c",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_f74bf177eaf0",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_7270c4b30890@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2f90fdbbc209c6d4c622260d0f88f07b4dfbb40715efbeea68598af828bb34f4",
+      "points": 8,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_7270c4b30890",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000roadconstructionandpavingworkmember_345cb995e4d7@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "be44de4007cbe37a69124b38233626c119dfc367525cfc53f0f8095c07661815",
+      "points": 3,
+      "company": "SHIMIZU",
+      "metric": "numberofemployees_currentyearinstant_jpcrp030000_asr_e00053_000roadconstructionandpavingworkmember_345cb995e4d7",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:payoutratiosummaryofbusinessresults_currentyearduration_nonconsolidatedmember_e9b403860156@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "1065e0a6b0d3d344ee48ce9b4d8a00a56cedf71c9cfca4dd8c5fb57b79c5c7bd",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "payoutratiosummaryofbusinessresults_currentyearduration_nonconsolidatedmember_e9b403860156",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:priceearningsratiosummaryofbusinessresults_currentyearduration_e4e4df6ccf7e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "f462e51dc265ef786c1c2e206b7b9d862b96de655827db492bf7aae652def19f",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "priceearningsratiosummaryofbusinessresults_currentyearduration_e4e4df6ccf7e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:priceearningsratiosummaryofbusinessresults_currentyearduration_nonconsolidatedmember_bff5f35854f0@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "fff60d345706281194cdd376683b7d40a772a2d745044618db4270b8c3984b93",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "priceearningsratiosummaryofbusinessresults_currentyearduration_nonconsolidatedmember_bff5f35854f0",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:profitloss_currentyearduration_c6d68a6511da@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "34735f9e4e14796fc0e4762e63df8c94dca675df24f27fd15f9c95d4b518cad5",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "profitloss_currentyearduration_c6d68a6511da",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:profitlossattributabletoownersofparent_currentyearduration_a4da09f84559@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2093f4176dee54194c4bef59c1eea4cabcad56dfc853163885591cac3b466fbe",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "profitlossattributabletoownersofparent_currentyearduration_a4da09f84559",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:rateofreturnonequitysummaryofbusinessresults_currentyearduration_055696bef22c@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "b051207d165eac2eaf24cb65f2baf24c39a742961bce3ad3f160dedeb7d03b49",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "rateofreturnonequitysummaryofbusinessresults_currentyearduration_055696bef22c",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:rateofreturnonequitysummaryofbusinessresults_currentyearduration_nonconsolidatedmember_36775a21fcfb@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "2dc490a38b990b69bd263134eadf69f58444ca1354f07a3bafc2cc7531005ffa",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "rateofreturnonequitysummaryofbusinessresults_currentyearduration_nonconsolidatedmember_36775a21fcfb",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:researchanddevelopmentexpensesincludedingeneralandadministrativeexpensesandmanufacturingcostforcurrentperiod_currentyearduration_81a76b0a80aa@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "567960b9b6bcf3b9ae1947a0b9c04ffccd021e40b9f15108fbc667a7b7ec197d",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "researchanddevelopmentexpensesincludedingeneralandadministrativeexpensesandmanufacturingcostforcurrentperiod_currentyearduration_81a76b0a80aa",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:revenuesfromexternalcustomers_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember_7d4aad0839d7@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "00a5e899644b6b0c73ab20380f834837fdc414aa58f2db20ca927cf6b0e1a809",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "revenuesfromexternalcustomers_currentyearduration_operatingsegmentsnotincludedinreportablesegmentsandotherrevenuegeneratingbusinessactivitiesmember_7d4aad0839d7",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_db8d9a19f68c@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "e9e4284de5e47d427afa7e1d5249919688032d8bf774f02d2f0b70261a97cf3a",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000constructionbusinessofthecorporationreportablesegmentsmember_db8d9a19f68c",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_9693ed9e6e58@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "467f2c88dde1e949fd67c1f82fbeab91555e36a7f0830de7b636a6adce6b818d",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000realestatebusinessofthecorporationreportablesegmentsmember_9693ed9e6e58",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000roadconstructionandpavingworkmember_8438bb549320@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "e36dc292a1e5eebf6b1bb464b3500590acea5a85c4985f815033a0ca09dadd7c",
+      "points": 3,
+      "company": "SHIMIZU",
+      "metric": "revenuesfromexternalcustomers_currentyearduration_jpcrp030000_asr_e00053_000roadconstructionandpavingworkmember_8438bb549320",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:sellinggeneralandadministrativeexpenses_currentyearduration_c77a4b25c5bd@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "32346ffe5eb4826c88549be63a25f7265ce95a930f8f1b81cb2ef26a79134bdf",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "sellinggeneralandadministrativeexpenses_currentyearduration_c77a4b25c5bd",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:shareholdersequity_currentyearinstant_93b6de7215ff@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "cd9fc157ad2287d5d8b56ff6cf11e38b4ac44f18762bd1aa31e79f82da87cee8",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "shareholdersequity_currentyearinstant_93b6de7215ff",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:capital_investment_direct_total_currentyearduration_f9984c65252e@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "ab27f1885ee0fd863cc1bafa3655957c8ce97318b42bc199664090972275113b",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "capital_investment_direct_total_currentyearduration_f9984c65252e",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:capital_investment_direct_total_currentyearduration_nonconsolidatedmember_d9f682b5dd1d@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "a030ac0d627ccb869fc8abadb1b8ec760522897a7aebafe56c906657590343d4",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "capital_investment_direct_total_currentyearduration_nonconsolidatedmember_d9f682b5dd1d",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:completed_work_cost_currentyearduration_nonconsolidatedmember_7aa19cb9b707@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "cdcf9ae57424a8c22cb3e65eb9d28d80171e2a780b30be183e3d7b692ee5bf51",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "completed_work_cost_currentyearduration_nonconsolidatedmember_7aa19cb9b707",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:completed_work_cost_currentyearduration_nonconsolidatedmember_a5e288ff4955@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "3b0cfcd0a6590dee99e88f8690ffb605d1a980ea25f9b9d083fa4f00121a5a31",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "completed_work_cost_currentyearduration_nonconsolidatedmember_a5e288ff4955",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:completed_work_cost_currentyearduration_nonconsolidatedmember_432a7315bcdd@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "f36d67e5ea40fec11d8be9d70b9e738459edbfcabe908e8c21d88fe4cde5083e",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "completed_work_cost_currentyearduration_nonconsolidatedmember_432a7315bcdd",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
+    },
+    "SHIMIZU:completed_work_cost_currentyearduration_nonconsolidatedmember_ebb1ffe10c04@FY2015_FY2025_STAGED_SHIMIZU": {
+      "hash": "977d2a5957c50916b30d5b1c10c87a81dec7c514debe2035608b40b70bc227d6",
+      "points": 11,
+      "company": "SHIMIZU",
+      "metric": "completed_work_cost_currentyearduration_nonconsolidatedmember_ebb1ffe10c04",
+      "referenceSnapshotSha256": "e64b4713ec7c3ba3130ee897baefc99146816dd828225e655ba2d2968c50e954"
     }
   },
   "retainedNonNumericSeries": {
